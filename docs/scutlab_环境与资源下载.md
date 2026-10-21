@@ -44,6 +44,8 @@ CL_BINDING_MULTIPART=1 bash scripts/setup_scutlab.sh > .server/setup.log 2>&1
 ```bash
 cd ~/cl_binding
 .venv/bin/python scripts/verify_scutlab.py
+# 进一步核对四个任务能否复位、载入初态并生成双相机图像（无需策略权重）
+.venv/bin/python scripts/verify_scutlab.py --render-smoke
 ```
 
 验收程序禁止 Hub 在线获取模型，仅检查 Python 包、两张卡的 CUDA 运算、SmolVLA 导入、LIBERO 四任务注册及资源位置，并记录视频解码可用性。结果在 `.server/environment_check.json`，实际安装版本在 `.server/requirements.freeze.txt`。这些是机器本地记录，不加入 Git。

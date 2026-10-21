@@ -1,5 +1,6 @@
 """Check the local environment without fetching model weights or datasets."""
 
+import argparse
 import importlib.metadata
 import importlib.util
 import json
@@ -10,6 +11,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / ".server"
 STATE.mkdir(exist_ok=True)
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--render-smoke", action="store_true", help="Also reset and render all four tasks without a policy")
+args = parser.parse_args()
 os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 os.environ.setdefault("MUJOCO_GL", "egl")
@@ -91,3 +95,34 @@ if not all(task["definition_exists"] and task["initial_state_exists"] for task i
     raise RuntimeError("LIBERO task definitions or initial states are incomplete; see environment_check.json")
 if not Path(config_paths["assets"]).is_dir():
     raise RuntimeError("The installed LIBERO asset directory is missing")
+
+if args.render_smoke:
+    from libero.libero.envs import OffScreenRenderEnv
+
+    report["render_smoke"] = []
+    for item in tasks:
+        task = suite.tasks[item["task_id"]]
+        definition = Path(config_paths["bddl_files"]) / task.problem_folder / task.bddl_file
+        initial_state = Path(config_paths["init_states"]) / task.problem_folder / task.init_states_file
+        env = None
+        result = {"goal": item["goal"]}
+        try:
+            env = OffScreenRenderEnv(bddl_file_name=str(definition), camera_heights=64, camera_widths=64)
+            env.seed(0)
+            env.reset()
+            states = torch.load(initial_state, map_location="cpu", weights_only=False)
+            env.set_init_state(states[0])
+            observation, _, _, _ = env.step([0, 0, 0, 0, 0, 0, -1])
+            cameras = {key: list(observation[key].shape) for key in ("agentview_image", "robot0_eye_in_hand_image")}
+            if any(shape != [64, 64, 3] for shape in cameras.values()):
+                raise RuntimeError(f"Unexpected camera observation: {cameras}")
+            result.update(status="ok", cameras=cameras)
+        except Exception as error:
+            result.update(status="failed", error=f"{type(error).__name__}: {error}")
+            raise
+        finally:
+            report["render_smoke"].append(result)
+            (STATE / "environment_check.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            if env is not None:
+                env.close()
+        print(json.dumps(result), flush=True)

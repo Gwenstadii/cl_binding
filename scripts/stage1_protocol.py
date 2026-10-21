@@ -1,8 +1,35 @@
 """Pure, testable data-access and behavioral-label rules for stage one."""
 
 import random
+from pathlib import Path
+import xml.etree.ElementTree as ET
 
 GOALS = ("front", "left", "right", "back")
+
+
+def remap_demo_xml(xml, assets_root, robosuite_root):
+    tree = ET.fromstring(xml)
+    for element in tree.findall(".//asset/*"):
+        value = element.get("file")
+        if not value:
+            continue
+        if "/robosuite/" in value:
+            value = str(Path(robosuite_root) / value.rsplit("/robosuite/", 1)[1])
+        elif "/assets/" in value:
+            value = str(Path(assets_root) / value.split("/assets/", 1)[1])
+        if not Path(value).is_file():
+            raise FileNotFoundError(value)
+        element.set("file", value)
+    return ET.tostring(tree, encoding="unicode")
+
+
+def balanced_indices(groups, per_goal, seed, step):
+    if not groups or per_goal < 1 or any(not values for values in groups.values()):
+        raise ValueError("Each goal needs nonempty support")
+    rng = random.Random((seed << 32) + step)
+    indices = [rng.choice(values) for values in groups.values() for _ in range(per_goal)]
+    rng.shuffle(indices)
+    return indices
 
 
 def split_trajectories(names, train_count, seed):

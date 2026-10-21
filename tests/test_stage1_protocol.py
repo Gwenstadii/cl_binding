@@ -1,6 +1,7 @@
 import importlib.util
 from pathlib import Path
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -25,6 +26,26 @@ class Stage1ProtocolTests(unittest.TestCase):
     def test_split_rejects_duplicate_trajectory_ids(self):
         with self.assertRaises(ValueError):
             self.protocol().split_trajectories(["demo_0", "demo_0", "demo_1"], 1, 0)
+
+    def test_balanced_batch_is_reproducible_after_resume(self):
+        p = self.protocol()
+        groups = {"front": list(range(10)), "left": list(range(10, 20)), "right": list(range(20, 30))}
+        batch = p.balanced_indices(groups, 2, 17, 100)
+        self.assertEqual(batch, p.balanced_indices(groups, 2, 17, 100))
+        self.assertEqual(len(batch), 6)
+        self.assertEqual([sum(i in values for i in batch) for values in groups.values()], [2, 2, 2])
+
+    def test_saved_demo_xml_maps_assets_without_changing_scene_geometry(self):
+        p=self.protocol()
+        self.assertTrue(hasattr(p, "remap_demo_xml"), "Saved-scene restoration needs portable asset mapping")
+        with tempfile.TemporaryDirectory() as tmp:
+            assets=Path(tmp)/"assets"; assets.mkdir(); (assets/"book.obj").write_text("mesh")
+            robots=Path(tmp)/"robosuite"; robots.mkdir(); (robots/"arm.stl").write_text("mesh")
+            xml='<mujoco><asset><mesh file="/old/chiliocosm/assets/book.obj"/><mesh file="/old/robosuite/arm.stl"/></asset><worldbody><body pos="1 2 3"/></worldbody></mujoco>'
+            result=p.remap_demo_xml(xml,assets,robots)
+            self.assertIn(str(assets/"book.obj"),result)
+            self.assertIn(str(robots/"arm.stl"),result)
+            self.assertIn('pos="1 2 3"',result)
 
     def test_correct_then_wrong_is_recorded_as_late_destruction(self):
         p = self.protocol()

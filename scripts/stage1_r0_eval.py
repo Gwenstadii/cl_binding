@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import time
 
-from stage1_protocol import GOALS, qualification, summarize_events
+from stage1_protocol import GOALS, qualification, summarize_events, remap_demo_xml
 from stage1_smoke import ROOT, CAMERAS, dump, load_policy, sources, task_name
 
 
@@ -43,6 +43,8 @@ def reset_common(env, state, seed, settle):
 def verify(args, config):
     import h5py
     import numpy as np
+    import robosuite
+    from libero.libero import get_libero_path
     tasks,paths,predicates,states=task_resources()
     if args.output.exists(): raise FileExistsError(args.output)
     args.output.mkdir(parents=True)
@@ -53,10 +55,12 @@ def verify(args, config):
         try:
             with h5py.File(path) as h:
                 demo=h["data/demo_0"]
-                env.reset(); env.set_init_state(demo["states"][-1])
+                xml=remap_demo_xml(demo.attrs['model_file'],get_libero_path('assets'),Path(robosuite.__file__).parent)
+                env.seed(config['seed']);env.reset();env.reset_from_xml_string(xml);env.sim.reset()
+                env.set_init_state(demo["states"][-1])
                 terminal=events(env,predicates)
                 assert terminal[goal] and sum(terminal.values())==1,(goal,terminal)
-                env.reset();env.set_init_state(demo["states"][0])
+                env.reset_from_xml_string(xml);env.sim.reset();env.set_init_state(demo["states"][0])
                 trace=[events(env,predicates)]
                 for action in demo["actions"][:]:
                     env.step(action); trace.append(events(env,predicates))

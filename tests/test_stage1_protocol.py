@@ -60,6 +60,7 @@ class Stage1ProtocolTests(unittest.TestCase):
         r = self.protocol().summarize_events("left", [{}, {"left": True, "front": True}])
         self.assertEqual(r["terminal_category"], "ambiguous")
         self.assertIsNone(r["terminal_goal"])
+        self.assertFalse(r["correct_then_destroyed"], "Ambiguity does not prove the correct goal was destroyed")
 
     def test_initial_success_is_rejected_as_invalid_reset(self):
         with self.assertRaises(ValueError):

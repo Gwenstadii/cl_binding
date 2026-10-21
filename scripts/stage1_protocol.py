@@ -54,7 +54,7 @@ def summarize_events(requested, events):
     return {"requested_goal": requested, "first_goal": first[0] if len(first) == 1 else None,
             "first_goal_times": first_times, "terminal_goal": terminal, "terminal_category": category,
             "correct_ever": first_times[requested] is not None,
-            "correct_then_destroyed": first_times[requested] is not None and terminal != requested}
+            "correct_then_destroyed": first_times[requested] is not None and not events[-1].get(requested, False)}
 
 
 def qualification(rows, goals, expected_count, required_correct):

@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 import time
 
@@ -177,6 +178,7 @@ def evaluate(args, config):
     minimum=e["qualification_required_correct"] if args.partition=="qualification" else (len(indices) if args.partition=="screen" else e["development_required_correct"])
     q=qualification(rows,config["old_goals"],len(indices),minimum)
     report={"status":"complete","partition":args.partition,"checkpoint":str(args.checkpoint),
+            "git_commit":subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
             "counts":q["counts"],"passed_gate":q["qualified"],"seconds":time.monotonic()-start,
             "horizon":e["horizon"],"n_action_steps":policy.config.n_action_steps,
             "qualified_R0":bool(q["qualified"] and args.partition=="qualification" and not args.limit)}

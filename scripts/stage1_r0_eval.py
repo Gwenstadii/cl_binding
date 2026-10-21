@@ -31,9 +31,18 @@ def events(env, predicates):
     return {g:bool(all(env.env._eval_predicate(p) for p in parts)) for g,parts in predicates.items()}
 
 
-def reset_common(env, state, seed, settle):
+def canonical_scene(path, seed):
+    env=make_env(path)
+    try:
+        env.seed(seed);env.reset()
+        return env.sim.model.get_xml()
+    finally:env.close()
+
+
+def reset_common(env, state, seed, settle, scene_xml):
     import numpy as np
-    env.seed(seed); env.reset(); obs=env.set_init_state(state)
+    env.seed(seed);env.reset();env.reset_from_xml_string(scene_xml);env.sim.reset()
+    obs=env.set_init_state(state)
     for _ in range(settle):
         obs,_,_,_=env.step([0,0,0,0,0,0,-1])
     flat=np.asarray(env.get_sim_state(),dtype=np.float64)
@@ -78,13 +87,14 @@ def verify(args, config):
     groups=[set(e[k]) for k in ("development_indices","qualification_indices","paired_indices","reserve_indices")]
     assert all(not a&b for i,a in enumerate(groups) for b in groups[i+1:])
     common=states[e["common_state_source_goal"]]
+    scene_xml=canonical_scene(paths[e['common_state_source_goal']],config['seed'])
     assert set.union(*groups)==set(range(len(common)))
     reset_rows=[]
     for goal in config["old_goals"]:
         env=make_env(paths[goal])
         try:
             for idx in e["screen_indices"]:
-                _,flat=reset_common(env,common[idx],config["seed"]+idx,e["settle_steps"])
+                _,flat=reset_common(env,common[idx],config["seed"]+idx,e["settle_steps"],scene_xml)
                 flags=events(env,predicates)
                 assert not any(flags.values()),flags
                 reset_rows.append({"goal":goal,"index":idx,"state":flat.tolist()})
@@ -102,6 +112,7 @@ def verify(args, config):
         report['qualification_min_train_state_distances']=distances
     report.update(status="pass",common_reset_checks=reset_rows,
                   init_states_sha256=hashlib.sha256(np.asarray(common).tobytes()).hexdigest())
+    report['canonical_scene_xml_sha256']=hashlib.sha256(scene_xml.encode()).hexdigest()
     report['open_loop_replay_failures']=[{'goal':r['goal'],'demo':r['demo']} for r in report['replays'] if not r['action_replay']['correct_ever']]
     report['scope']='Predicate and interface checks pass; open-loop replay failures remain reported, not discarded.'
     dump(args.output/"predicate_checks.json",report)
@@ -127,6 +138,7 @@ def evaluate(args, config):
     pre,post=make_pre_post_processors(policy.config,pretrained_path=args.checkpoint)
     tasks,paths,predicates,states=task_resources()
     common=states[e["common_state_source_goal"]]
+    scene_xml=canonical_scene(paths[e['common_state_source_goal']],config['seed'])
     rows=[]; start=time.monotonic()
     hashes={}
     for goal in config["old_goals"]:
@@ -135,7 +147,7 @@ def evaluate(args, config):
             for idx in indices:
                 seed=config["seed"]+idx
                 torch.manual_seed(seed);np.random.seed(seed)
-                obs,flat=reset_common(env,common[idx],seed,e["settle_steps"])
+                obs,flat=reset_common(env,common[idx],seed,e["settle_steps"],scene_xml)
                 if idx in hashes:assert np.allclose(hashes[idx],flat,atol=1e-10,rtol=0)
                 hashes[idx]=flat
                 policy.reset();trace=[events(env,predicates)];clipped_steps=0
@@ -153,6 +165,7 @@ def evaluate(args, config):
                     trace.append(events(env,predicates))
                 row={**summarize_events(goal,trace),"init_index":idx,"seed":seed,
                      "initial_state_sha256":hashlib.sha256(flat.tobytes()).hexdigest(),
+                     "scene_xml_sha256":hashlib.sha256(scene_xml.encode()).hexdigest(),
                      "steps":e["horizon"],"clipped_steps":clipped_steps}
                 rows.append(row)
                 with (args.output/"episodes.jsonl").open("a") as f:f.write(json.dumps(row)+"\n")

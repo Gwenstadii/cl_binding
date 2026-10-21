@@ -125,8 +125,9 @@ def train(args,config):
         assert torch.isfinite(loss)
         loss.backward();norm=torch.nn.utils.clip_grad_norm_(params,policy.config.optimizer_grad_clip_norm,error_if_nonfinite=True)
         assert norm.item()>0
+        used_lr=optimizer.param_groups[0]['lr']
         optimizer.step();scheduler.step();last_step=step+1
-        row={'step':last_step,'loss':loss.item(),'gradient_norm':norm.item(),'lr':optimizer.param_groups[0]['lr'],
+        row={'step':last_step,'loss':loss.item(),'gradient_norm':norm.item(),'lr':used_lr,
              'step_seconds':time.monotonic()-tick,'batch_indices':ids,'samples_per_goal':c['samples_per_goal']}
         with (run/'train_steps.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')
         if last_step<=3 or last_step%c['log_every']==0:print(json.dumps(row),flush=True)

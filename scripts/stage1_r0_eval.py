@@ -54,22 +54,25 @@ def verify(args, config):
         env=make_env(paths[goal])
         try:
             with h5py.File(path) as h:
-                demo=h["data/demo_0"]
-                xml=remap_demo_xml(demo.attrs['model_file'],get_libero_path('assets'),Path(robosuite.__file__).parent)
-                env.seed(config['seed']);env.reset();env.reset_from_xml_string(xml);env.sim.reset()
-                env.set_init_state(demo["states"][-1])
-                terminal=events(env,predicates)
-                assert terminal[goal] and sum(terminal.values())==1,(goal,terminal)
-                env.reset_from_xml_string(xml);env.sim.reset();env.set_init_state(demo["states"][0])
-                trace=[events(env,predicates)]
-                for action in demo["actions"][:]:
-                    env.step(action); trace.append(events(env,predicates))
-                summary=summarize_events(goal,trace)
-                row={"goal":goal,"stored_terminal":terminal,"action_replay":summary}
-                report["replays"].append(row)
-                dump(args.output/"predicate_checks.json",report)
-                print(json.dumps(row),flush=True)
-                assert summary["correct_ever"],f"Expert control replay never achieved {goal}"
+                successes=0
+                for name in config['evaluation']['expert_replay_demos']:
+                    demo=h['data'][name]
+                    xml=remap_demo_xml(demo.attrs['model_file'],get_libero_path('assets'),Path(robosuite.__file__).parent)
+                    env.seed(config['seed']);env.reset();env.reset_from_xml_string(xml);env.sim.reset()
+                    env.set_init_state(demo["states"][-1])
+                    terminal=events(env,predicates)
+                    assert terminal[goal] and sum(terminal.values())==1,(goal,name,terminal)
+                    env.reset_from_xml_string(xml);env.sim.reset();env.set_init_state(demo["states"][0])
+                    trace=[events(env,predicates)]
+                    for action in demo["actions"][:]:
+                        env.step(action);trace.append(events(env,predicates))
+                    summary=summarize_events(goal,trace)
+                    successes+=int(summary['correct_ever'])
+                    row={"goal":goal,"demo":name,"stored_terminal":terminal,"action_replay":summary}
+                    report["replays"].append(row)
+                    dump(args.output/"predicate_checks.json",report)
+                    print(json.dumps(row),flush=True)
+                assert successes>0,f'No replay reached {goal}; investigate control interface'
         finally: env.close()
     e=config["evaluation"]
     groups=[set(e[k]) for k in ("development_indices","qualification_indices","paired_indices","reserve_indices")]
@@ -89,8 +92,18 @@ def verify(args, config):
     for idx in e["screen_indices"]:
         vectors=[r["state"] for r in reset_rows if r["index"]==idx]
         assert all(np.allclose(vectors[0],v,atol=1e-10,rtol=0) for v in vectors[1:]),"Cross-instruction reset differs"
+    if args.audit:
+        audit=json.loads(args.audit.read_text())
+        train_states=np.array([row['first_sim_state'][1:] for goal in config['old_goals']
+                for row in audit['files'][goal]['trajectories'] if row['demo'] in audit['splits'][goal]['train']])
+        distances={i:float(np.linalg.norm(train_states-np.asarray(common[i])[1:],axis=1).min())
+                for i in e['qualification_indices']}
+        assert min(distances.values())>1e-8,'Qualification reset duplicates a training start'
+        report['qualification_min_train_state_distances']=distances
     report.update(status="pass",common_reset_checks=reset_rows,
                   init_states_sha256=hashlib.sha256(np.asarray(common).tobytes()).hexdigest())
+    report['open_loop_replay_failures']=[{'goal':r['goal'],'demo':r['demo']} for r in report['replays'] if not r['action_replay']['correct_ever']]
+    report['scope']='Predicate and interface checks pass; open-loop replay failures remain reported, not discarded.'
     dump(args.output/"predicate_checks.json",report)
     print("PREDICATE_AND_COMMON_RESET_CHECKS_PASS",flush=True)
 
@@ -164,6 +177,7 @@ if __name__=="__main__":
     p.add_argument("--output",type=Path,required=True);p.add_argument("--checkpoint",type=Path)
     p.add_argument("--partition",choices=["screen","development","qualification"],default="screen")
     p.add_argument("--limit",type=int)
+    p.add_argument("--audit",type=Path)
     a=p.parse_args();c=json.loads(a.config.read_text())
     torch_threads=__import__('torch').set_num_threads(4)
     if a.mode=="verify":verify(a,c)

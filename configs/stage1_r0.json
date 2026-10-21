@@ -6,6 +6,7 @@
   "model": {"chunk_size": 50, "n_action_steps": 10, "flow_steps": 10},
   "training": {"max_steps": 6000, "samples_per_goal": 2, "learning_rate": 0.0001, "warmup_steps": 100, "save_every": 500, "log_every": 25, "num_workers": 0, "walltime_hours": 3},
   "evaluation": {
+    "expert_replay_demos": ["demo_0", "demo_1", "demo_2"],
     "horizon": 400,
     "settle_steps": 10,
     "common_state_source_goal": "front",

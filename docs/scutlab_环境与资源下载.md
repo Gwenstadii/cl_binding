@@ -2,6 +2,23 @@
 
 日期：2026-10-21。项目：[Gwenstadii/cl_binding](https://github.com/Gwenstadii/cl_binding)。
 
+## 本次实际完成的验收
+
+服务器独立环境已配置，安装脚本重新执行通过并复用现有 CUDA 依赖和素材。两张 3090 均通过 CUDA 数值运算；SmolVLA、PyAV、TorchCodec 导入通过；四任务均完成离线复位、初态加载及一步空动作，两个相机分别输出非恒定的 `64×64×3` 图像。任务编号为：前 78、左 79、右 80、后 77（`libero_90`）。
+
+| 项目 | 实际版本 |
+|---|---|
+| Python | 3.12.15 |
+| LeRobot | 0.6.2，本仓库固定源码 |
+| PyTorch / torchvision CUDA 构建 | 2.10.0+cu128 / 0.25.0+cu128 |
+| TorchCodec / PyAV | 0.10.0 / 15.1.0 |
+| Transformers / Accelerate | 5.5.4 / 1.15.0 |
+| hf-libero / MuJoCo / robosuite | 0.1.4 / 3.8.1 / 1.4.0 |
+
+仿真素材约 409MB，已取得全部 586 个上游文件。模型与演示的远程文件清单已核对，但没有新增下载策略权重或演示，没有开始训练；策略加载、视频实际解码及前反向仍属后续冒烟范围。
+
+源码内的 [资源版本清单](../configs/stage1_resources.json) 固定本次核对的模型、素材和演示 revision；已有机器记录优先用于续传。要升级版本，须同时检查清单与 `.server/resources.json` 的续传记录，不要在旧实验中途切换。
+
 ## 服务器位置与资源检查
 
 项目目录为 `$HOME/cl_binding`，独立环境为 `$HOME/cl_binding/.venv`。使用 `ssh scutlab` 连接后，在该项目内操作。
@@ -65,14 +82,14 @@ cd ~/cl_binding
 
 ## 下载缺失主基座及小型处理配置
 
-本次网络实测：Hugging Face 官方站直连拒绝连接，现有本地代理访问也超时；`hf-mirror.com` 公开模型 API 的 curl 探测返回 200，但 Python urllib 请求出现过 403，因此还不能视为下载链路已通。需要尝试镜像时，在当前终端先设置：
+本次网络实测：Hugging Face 官方站直连拒绝连接，现有本地代理访问也超时；镜像配合普通 HTTP 已实际下载完仿真素材，并通过 Hub 客户端核对了模型和四份演示的文件清单。需要使用镜像时，在当前终端先设置：
 
 ```bash
 export HF_ENDPOINT=https://hf-mirror.com
 export HF_HUB_DISABLE_XET=1
 ```
 
-实测 Hub 客户端可以通过此镜像获取元数据，但 Xet 传输曾返回 CAS 401；上面的第二行让其改用普通 HTTP。仿真素材已用这条 HTTP 路径实际开始续传，策略和演示的完整传输仍需后续验证。
+实测 Xet 传输曾返回 CAS 401；上面的第二行让其改用普通 HTTP。镜像还会返回 429 限流，素材下载曾等待后成功续传；遇到限流应等待后重试，不要清空缓存。策略和演示的完整传输仍需后续验证。
 
 这是第三方镜像，不是 Hugging Face 官方站。下载脚本对这些公开仓库显式使用 `token=False`，不向镜像发送保存的登录令牌；记录取得的 revision，正式实验前核对模型和数据版本。若之后官方站恢复可达，执行 `unset HF_ENDPOINT` 使用官方来源。策略权重地址经跳转后的 HEAD 探测返回 200，仍不等同于大文件传输已经验证。
 
@@ -111,6 +128,8 @@ STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_
 ```
 
 新数据保留在 `datasets/raw/` 对应的上游子目录下，实际路径写入资源清单。已存在且具有有效 HDF5 文件头的目标文件直接复用，不覆盖；若上游无法唯一定位某文件，脚本明确停止，不悄悄改成整包下载。
+
+本次远程清单已确认，这四份文件均位于 `libero_90/`。
 
 本次保留的上游 LIBERO 下载函数包含强制下载及删除已有目录的分支，因此这里使用单独的保守下载脚本。下载 HDF5 后还需核对演示和转换到当前 LeRobot 数据格式；本仓库尚未把这个转换与全部训练入口连成一键流程。
 

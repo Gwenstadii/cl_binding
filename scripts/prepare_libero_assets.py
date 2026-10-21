@@ -26,9 +26,10 @@ existing = next((path for path in (installed, cached) if populated(path) and not
 if existing:
     record.update(repo_id=repo_id, path=str(existing), status="reuse")
 else:
-    from huggingface_hub import HfApi, snapshot_download
+    from huggingface_hub import snapshot_download
 
-    revision = record.get("revision") or HfApi(token=False).dataset_info(repo_id).sha
+    pins = json.loads((ROOT / "configs" / "stage1_resources.json").read_text(encoding="utf-8"))
+    revision = record.get("revision") or pins["datasets"][repo_id]
     # Save revision before transfer so an interrupted run resumes the same snapshot.
     record.update(repo_id=repo_id, revision=revision, path=str(cached), status="downloading")
     record_path.write_text(json.dumps(record, indent=2) + "\n")

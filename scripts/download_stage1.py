@@ -17,6 +17,7 @@ FILENAMES = [
     f"STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_{goal}_compartment_of_the_caddy_demo.hdf5"
     for goal in GOALS
 ]
+PINS = json.loads((ROOT / "configs" / "stage1_resources.json").read_text(encoding="utf-8"))
 
 
 def complete_model(directory: Path) -> bool:
@@ -93,7 +94,7 @@ def main() -> None:
         api = HfApi(token=False)
         if args.models:
             if report["models"][BASE_ID]["status"] == "missing":
-                revision = record.get(BASE_ID, {}).get("revision") or api.model_info(BASE_ID).sha
+                revision = record.get(BASE_ID, {}).get("revision") or PINS["models"][BASE_ID]
                 destination = MODEL_ROOT / "smolvla_base"
                 record[BASE_ID] = {"revision": revision, "path": str(destination), "status": "downloading"}
                 record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -104,7 +105,7 @@ def main() -> None:
                 report["models"][BASE_ID] = {"status": "downloaded", "path": str(destination)}
             # A complete policy already contains VLM weights. Fetch its config and
             # tokenizer/processor only; load the full policy with load_vlm_weights=False.
-            revision = record.get(VLM_ID, {}).get("revision") or api.model_info(VLM_ID).sha
+            revision = record.get(VLM_ID, {}).get("revision") or PINS["models"][VLM_ID]
             record.setdefault(VLM_ID, {})["revision"] = revision
             record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             metadata_path = snapshot_download(
@@ -121,7 +122,7 @@ def main() -> None:
         if args.data:
             missing = [name for name, item in report["demonstrations"].items() if item["status"] == "missing"]
             if missing:
-                revision = record.get(DATA_ID, {}).get("revision") or api.dataset_info(DATA_ID).sha
+                revision = record.get(DATA_ID, {}).get("revision") or PINS["datasets"][DATA_ID]
                 repository_files = api.list_repo_files(DATA_ID, repo_type="dataset", revision=revision)
                 selected = []
                 for filename in missing:

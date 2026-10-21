@@ -1,0 +1,225 @@
+#!/usr/bin/env python
+
+# Copyright 2026 The HuggingFace Inc. team. All rights reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import logging
+import time
+from functools import cached_property
+
+from lerobot.cameras import DepthCamera, make_cameras_from_configs
+from lerobot.lerobot_types import RobotAction, RobotObservation
+from lerobot.motors import Motor, MotorNormMode, SerialMotorsBus
+from lerobot.utils.decorators import check_if_already_connected, check_if_not_connected
+
+from ..robot import Robot
+from ..utils import ensure_safe_goal_position
+from .config_so_follower import SOFollowerRobotConfig
+
+logger = logging.getLogger(__name__)
+
+_HOMING_POSITION_DIAGRAM = r"""
+       ╭─────┬────────────────────┬──────╮ ◉╲═════╗   ← moveable claw
+       │     │      forearm       │  ▤▤  │╤══╲════╝   ← fixed claw
+       ╰┬───┬┴────────────────────┴──────┴┴═══════╝
+        │   │
+        │   │
+        │   │
+        │   │   upper arm
+        │   │
+        │   │
+        │   │
+   ╭────┴───┴────╮
+   │   base ◉    │
+   ╰──┬───────┬──╯
+  ╭───┴───────┴───╮
+  │▓▓▓ C-clamp ▓▓▓│
+  ╰───────────────╯
+ ═══════════════════════════════════════════════════
+                table edge
+"""
+
+
+class SOFollower(Robot):
+    """
+    Generic SO follower base implementing common functionality for SO-100/101/10X.
+    Designed to be subclassed with a per-hardware-model `config_class` and `name`.
+    """
+
+    config_class = SOFollowerRobotConfig
+    name = "so_follower"
+    supports_position_hold = True
+
+    def __init__(self, config: SOFollowerRobotConfig):
+        super().__init__(config)
+        self.config = config
+        # choose normalization mode depending on config if available
+        norm_mode_body = MotorNormMode.DEGREES if config.use_degrees else MotorNormMode.RANGE_M100_100
+        self.bus = SerialMotorsBus(
+            port=self.config.port,
+            motors={
+                "shoulder_pan": Motor(1, "sts3215", norm_mode_body),
+                "shoulder_lift": Motor(2, "sts3215", norm_mode_body),
+                "elbow_flex": Motor(3, "sts3215", norm_mode_body),
+                "wrist_flex": Motor(4, "sts3215", norm_mode_body),
+                "wrist_roll": Motor(5, "sts3215", norm_mode_body),
+                "gripper": Motor(6, "sts3215", MotorNormMode.RANGE_0_100),
+            },
+            calibration=self.calibration,
+        )
+        self.cameras = make_cameras_from_configs(config.cameras)
+
+    @property
+    def _motors_ft(self) -> dict[str, type]:
+        return {f"{motor}.pos": float for motor in self.bus.motors}
+
+    @property
+    def _cameras_ft(self) -> dict[str, tuple]:
+        features: dict[str, tuple] = {}
+        for cam_key, cam in self.cameras.items():
+            if getattr(cam, "use_rgb", True):
+                features[cam_key] = (cam.height, cam.width, 3)
+            # Same predicate as get_observation(), so the two key sets always agree.
+            if isinstance(cam, DepthCamera) and cam.use_depth:
+                features[f"{cam_key}_depth"] = (cam.height, cam.width, 1)
+        return features
+
+    @cached_property
+    def observation_features(self) -> dict[str, type | tuple]:
+        return {**self._motors_ft, **self._cameras_ft}
+
+    @cached_property
+    def action_features(self) -> dict[str, type]:
+        return self._motors_ft
+
+    @property
+    def is_connected(self) -> bool:
+        return self.bus.is_connected and all(cam.is_connected for cam in self.cameras.values())
+
+    @check_if_already_connected
+    def connect(self, calibrate: bool = True) -> None:
+        """
+        We assume that at connection time, arm is in a rest position,
+        and torque can be safely disabled to run calibration.
+        """
+
+        self.bus.connect()
+        if not self.is_calibrated and calibrate:
+            logger.info(
+                "Mismatch between calibration values in the motor and the calibration file or no calibration file found"
+            )
+            self.calibrate()
+
+        for cam in self.cameras.values():
+            cam.connect()
+
+        self.configure()
+        logger.info(f"{self} connected.")
+
+    @property
+    def is_calibrated(self) -> bool:
+        return self.bus.is_calibrated
+
+    def calibrate(self) -> None:
+        if self._keep_calibration_file(self.bus):
+            return
+
+        print(_HOMING_POSITION_DIAGRAM)
+        print("Video walkthrough: https://huggingface.co/docs/lerobot/main/en/so101#calibration-video")
+        self.calibration = self.bus.record_calibration("position", full_turn_motors=["wrist_roll"])
+        self.bus.write_calibration(self.calibration)
+        self._save_calibration()
+        print("Calibration saved to", self.calibration_fpath)
+
+    def configure(self) -> None:
+        with self.bus.torque_disabled():
+            self.bus.configure_motors()
+            for motor in self.bus.motors:
+                self.bus.set_operating_mode("position", motor)
+                self.bus.write("P_Coefficient", motor, self.config.position_p_coefficient)
+                self.bus.write("I_Coefficient", motor, self.config.position_i_coefficient)
+                self.bus.write("D_Coefficient", motor, self.config.position_d_coefficient)
+
+                if motor == "gripper":
+                    self.bus.write("Max_Torque_Limit", motor, 500)  # 50% of max torque to avoid burnout
+                    self.bus.write("Protection_Current", motor, 250)  # 50% of max current to avoid burnout
+                    self.bus.write("Overload_Torque", motor, 25)  # 25% torque when overloaded
+
+    def setup_motors(self) -> None:
+        self.bus.setup_motors()
+
+    @check_if_not_connected
+    def get_observation(self) -> RobotObservation:
+        # Read arm position
+        start = time.perf_counter()
+        obs_dict = self.bus.sync_read("Present_Position", num_retry=self.config.num_read_retries)
+        obs_dict = {f"{motor}.pos": val for motor, val in obs_dict.items()}
+        dt_ms = (time.perf_counter() - start) * 1e3
+        logger.debug(f"{self} read state: {dt_ms:.1f}ms")
+
+        # Capture images from cameras
+        for cam_key, cam in self.cameras.items():
+            if getattr(cam, "use_rgb", True):
+                start = time.perf_counter()
+                obs_dict[cam_key] = cam.read_latest()
+                dt_ms = (time.perf_counter() - start) * 1e3
+                logger.debug(f"{self} read {cam_key}: {dt_ms:.1f}ms")
+
+            if isinstance(cam, DepthCamera) and cam.use_depth:
+                start = time.perf_counter()
+                obs_dict[f"{cam_key}_depth"] = cam.read_latest_depth()
+                dt_ms = (time.perf_counter() - start) * 1e3
+                logger.debug(f"{self} read {cam_key} depth: {dt_ms:.1f}ms")
+
+        return obs_dict
+
+    @check_if_not_connected
+    def send_action(self, action: RobotAction) -> RobotAction:
+        """Command arm to move to a target joint configuration.
+
+        The relative action magnitude may be clipped depending on the configuration parameter
+        `max_relative_target`. In this case, the action sent differs from original action.
+        Thus, this function always returns the action actually sent.
+
+        Raises:
+            RobotDeviceNotConnectedError: if robot is not connected.
+
+        Returns:
+            RobotAction: the action sent to the motors, potentially clipped.
+        """
+
+        goal_pos = {key.removesuffix(".pos"): val for key, val in action.items() if key.endswith(".pos")}
+
+        # Cap goal position when too far away from present position.
+        # /!\ Slower fps expected due to reading from the follower.
+        if self.config.max_relative_target is not None:
+            present_pos = self.bus.sync_read("Present_Position", num_retry=self.config.num_read_retries)
+            goal_present_pos = {key: (g_pos, present_pos[key]) for key, g_pos in goal_pos.items()}
+            goal_pos = ensure_safe_goal_position(goal_present_pos, self.config.max_relative_target)
+
+        # Send goal position to the arm
+        self.bus.sync_write("Goal_Position", goal_pos)
+        return {f"{motor}.pos": val for motor, val in goal_pos.items()}
+
+    @check_if_not_connected
+    def disconnect(self):
+        self.bus.disconnect(self.config.disable_torque_on_disconnect)
+        for cam in self.cameras.values():
+            cam.disconnect()
+
+        logger.info(f"{self} disconnected.")
+
+
+SO100Follower = SOFollower
+SO101Follower = SOFollower

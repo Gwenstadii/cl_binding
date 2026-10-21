@@ -1,3 +1,61 @@
+# Local upstream clone history is not part of the portable source snapshot.
+/.upstream_git/
+/essay/
+
+# Download these only on the training server.
+/weights/
+/models/
+/datasets/
+/downloads/
+/hf_cache/
+**/.cache/
+**/checkpoints/
+**/outputs/
+**/wandb/
+**/mlruns/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.memmap
+*.arrow
+*.parquet
+*.hdf5
+*.h5
+*.tfrecord*
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.msgpack
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.bag
+
+# Environments and generated files.
+/.venv/
+/venv/
+**/__pycache__/
+*.py[cod]
+**/*.egg-info/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# Existing GitHub Python template retained below.
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

@@ -1,0 +1,4 @@
+# CUDA 12.8 wheels; matched PyTorch / torchvision / TorchCodec versions.
+torch==2.10.0
+torchvision==0.25.0
+torchcodec==0.10.0

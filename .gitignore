@@ -1,6 +1,8 @@
 # Local upstream clone history is not part of the portable source snapshot.
 /.upstream_git/
 /essay/
+/.tools/
+/.server/
 
 # Download these only on the training server.
 /weights/

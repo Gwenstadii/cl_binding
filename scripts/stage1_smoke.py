@@ -36,8 +36,8 @@ def task_name(goal):
     return f"STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_{goal}_compartment_of_the_caddy"
 
 
-def sources():
-    result = {goal: find_demo(filename) for goal, filename in zip(GOALS, FILENAMES, strict=True)}
+def sources(goals=GOALS):
+    result = {goal: find_demo(filename) for goal, filename in zip(GOALS, FILENAMES, strict=True) if goal in goals}
     missing = [goal for goal, path in result.items() if path is None]
     if missing:
         raise RuntimeError(f"Missing raw demonstrations: {missing}. Finish download_stage1.py --data first.")
@@ -86,7 +86,7 @@ def convert(args):
     from lerobot.datasets import LeRobotDataset
     from PIL import Image
 
-    raw = sources()
+    raw = sources(args.goals)
     output = local_path(args.output)
     spec = {"goals": args.goals, "episodes_per_task": args.episodes_per_task, "fps": 20,
             "image_transform": "rotate_180", "state": "ee_states(6)+gripper_states(2)",

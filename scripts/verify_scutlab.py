@@ -87,3 +87,7 @@ report = {
 }
 (STATE / "environment_check.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 print(json.dumps(report, ensure_ascii=False, indent=2))
+if not all(task["definition_exists"] and task["initial_state_exists"] for task in tasks):
+    raise RuntimeError("LIBERO task definitions or initial states are incomplete; see environment_check.json")
+if not Path(config_paths["assets"]).is_dir():
+    raise RuntimeError("The installed LIBERO asset directory is missing")

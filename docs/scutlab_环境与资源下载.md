@@ -27,6 +27,14 @@ cd ~/cl_binding
 bash scripts/setup_scutlab.sh
 ```
 
+若 CUDA 大包单连接很慢，可用服务器已有的 aria2 分段续传；与普通安装二选一执行，不要同时启动两份安装：
+
+```bash
+CL_BINDING_MULTIPART=1 bash scripts/setup_scutlab.sh > .server/setup.log 2>&1
+```
+
+分段下载只涉及 Python/CUDA 环境依赖，使用官方 wheel 的 SHA-256 校验，不下载模型或演示数据。中断后可以用同一命令续传。另一终端用 `tail -n 25 ~/cl_binding/.server/setup.log` 查看进度。
+
 脚本使用项目内 uv 和 `.venv`，固定 CUDA 12.8 的 PyTorch 2.10.0、torchvision 0.25.0、TorchCodec 0.10.0，再安装当前固定 LeRobot 的 SmolVLA、训练、评估和 LIBERO 依赖。PyTorch/torchvision 对应关系见 [官方版本表](https://pytorch.org/get-started/previous-versions/)，TorchCodec 对应关系见 [官方说明](https://github.com/meta-pytorch/torchcodec)。
 
 网络探测时，服务器直连 PyPI 主站失败，清华 PyPI 镜像和 PyTorch 官方 CUDA 源可达；脚本只对本次安装指定这些来源。若 shell 继承了不可用的代理，可在本终端先执行 `unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy`，不需要修改全局设置。
@@ -53,7 +61,7 @@ cd ~/cl_binding
 
 ## 下载缺失主基座及小型处理配置
 
-本次网络实测：Hugging Face 官方站直连拒绝连接，现有本地代理访问也超时；`hf-mirror.com` 的公开模型 API 可达。需要使用镜像时，在当前终端先设置：
+本次网络实测：Hugging Face 官方站直连拒绝连接，现有本地代理访问也超时；`hf-mirror.com` 公开模型 API 的 curl 探测返回 200，但 Python urllib 请求出现过 403，因此还不能视为下载链路已通。需要尝试镜像时，在当前终端先设置：
 
 ```bash
 export HF_ENDPOINT=https://hf-mirror.com

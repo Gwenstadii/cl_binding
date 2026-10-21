@@ -4,6 +4,8 @@
 
 `essay/` 仅供本地阅读，不加入 Git；模型、数据、缓存和训练输出也不随源码上传。
 
+服务器位置、独立环境安装、已有权重复用和后续下载命令见 [scutlab 环境与资源下载](docs/scutlab_环境与资源下载.md)。
+
 ## 已取得的两个仓库
 
 | 目录 | 上游 | 固定提交 | 用途 |
@@ -39,7 +41,7 @@ STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy.
 ## 模型和数据留到服务器
 
 - 主训练基座：`lerobot/smolvla_base`，当前未下载。
-- 可选工程参照：`lerobot/smolvla_libero`，当前未下载，也不直接充当干净的 R0-small。
+- 可选工程参照：服务器 `$HOME/hf_models/smolvla_libero` 已有完整文件，可直接复用；它不直接充当干净的 R0-small。
 - 上述四条件的原始演示与转换后数据：当前未下载。
 - LIBERO 的初态、纹理、网格等运行资源：当前未下载。`LIBERO-reference` 因此仅作参考，不能直接当成已完整安装的仿真环境。
 - LeRobot 运行时优先采用其固定依赖中的 `hf-libero` 路线；在服务器核对运行资源、实际导入路径和四条件支持。不要同时把参考仓库安装进去覆盖同名 `libero` 包。

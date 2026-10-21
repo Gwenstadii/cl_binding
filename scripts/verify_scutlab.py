@@ -24,6 +24,9 @@ if libero_spec is None or not libero_spec.submodule_search_locations:
     raise RuntimeError("The selected LIBERO runtime is not installed")
 libero_outer = Path(next(iter(libero_spec.submodule_search_locations)))
 libero_root = libero_outer / "libero"
+assets_root = libero_root / "assets"
+if not assets_root.is_dir():
+    assets_root = Path.home() / ".cache" / "libero" / "assets"
 config_dir = STATE / "libero"
 config_dir.mkdir(exist_ok=True)
 os.environ["LIBERO_CONFIG_PATH"] = str(config_dir)
@@ -31,7 +34,7 @@ config_paths = {
     "benchmark_root": str(libero_root),
     "bddl_files": str(libero_root / "bddl_files"),
     "init_states": str(libero_root / "init_files"),
-    "assets": str(libero_root / "assets"),
+    "assets": str(assets_root),
     "datasets": str(ROOT / "datasets" / "raw"),
 }
 import yaml

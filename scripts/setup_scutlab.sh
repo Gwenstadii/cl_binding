@@ -36,5 +36,6 @@ fi
     --constraint requirements/scutlab-cu128.txt \
     -e './third_party/lerobot[smolvla,training,evaluation,libero]' h5py
 "$uv_bin" pip check --python .venv/bin/python
+.venv/bin/python scripts/prepare_libero_assets.py
 .venv/bin/python scripts/verify_scutlab.py
 "$uv_bin" pip freeze --python .venv/bin/python > .server/requirements.freeze.txt

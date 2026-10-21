@@ -35,7 +35,9 @@ CL_BINDING_MULTIPART=1 bash scripts/setup_scutlab.sh > .server/setup.log 2>&1
 
 分段下载只涉及 Python/CUDA 环境依赖，使用官方 wheel 的 SHA-256 校验，不下载模型或演示数据。中断后可以用同一命令续传。另一终端用 `tail -n 25 ~/cl_binding/.server/setup.log` 查看进度。
 
-脚本使用项目内 uv 和 `.venv`，固定 CUDA 12.8 的 PyTorch 2.10.0、torchvision 0.25.0、TorchCodec 0.10.0，再安装当前固定 LeRobot 的 SmolVLA、训练、评估和 LIBERO 依赖。PyTorch/torchvision 对应关系见 [官方版本表](https://pytorch.org/get-started/previous-versions/)，TorchCodec 对应关系见 [官方说明](https://github.com/meta-pytorch/torchcodec)。
+脚本使用项目内 uv 和 `.venv`，固定 CUDA 12.8 的 PyTorch 2.10.0、torchvision 0.25.0、TorchCodec 0.10.0，再安装当前固定 LeRobot 的 SmolVLA、训练、评估和 LIBERO 依赖。另按需取得 `lerobot/libero-assets` 的仿真网格与纹理，保存在 `$HOME/.cache/libero/assets`，复用已有完整素材。该步骤不获取策略或演示数据，版本记录在 `.server/libero_assets.json`。PyTorch/torchvision 对应关系见 [官方版本表](https://pytorch.org/get-started/previous-versions/)，TorchCodec 对应关系见 [官方说明](https://github.com/meta-pytorch/torchcodec)。
+
+若首次安装在获取仿真素材时遇到 Hub 连接失败，可按下文设置当前终端的下载来源，再执行 `.venv/bin/python scripts/prepare_libero_assets.py`，随后重新运行安装脚本。
 
 网络探测时，服务器直连 PyPI 主站失败，清华 PyPI 镜像和 PyTorch 官方 CUDA 源可达；脚本只对本次安装指定这些来源。若 shell 继承了不可用的代理，可在本终端先执行 `unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy`，不需要修改全局设置。
 
@@ -69,7 +71,7 @@ cd ~/cl_binding
 export HF_ENDPOINT=https://hf-mirror.com
 ```
 
-这是第三方镜像，不是 Hugging Face 官方站。下载脚本对这些公开仓库显式使用 `token=False`，不向镜像发送保存的登录令牌；记录取得的 revision，正式实验前核对模型和数据版本。若之后官方站恢复可达，执行 `unset HF_ENDPOINT` 使用官方来源。此次只探测了小型 API，未声称大文件传输已经验证。
+这是第三方镜像，不是 Hugging Face 官方站。下载脚本对这些公开仓库显式使用 `token=False`，不向镜像发送保存的登录令牌；记录取得的 revision，正式实验前核对模型和数据版本。若之后官方站恢复可达，执行 `unset HF_ENDPOINT` 使用官方来源。策略权重地址经跳转后的 HEAD 探测返回 200，仍不等同于大文件传输已经验证。
 
 确认清单和下载来源后执行：
 

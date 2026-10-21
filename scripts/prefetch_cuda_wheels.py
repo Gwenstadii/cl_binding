@@ -50,7 +50,10 @@ def wheel_for(item):
             continue
         if candidate_version not in SpecifierSet("==" + version) or not tags.intersection(COMPATIBLE_TAGS):
             continue
-        if parsed.hostname not in {"download.pytorch.org", "download-r2.pytorch.org"}:
+        allowed_hosts = {"download.pytorch.org", "download-r2.pytorch.org"}
+        if name.startswith("nvidia-"):
+            allowed_hosts.add("pypi.nvidia.com")
+        if parsed.hostname not in allowed_hosts:
             raise RuntimeError(f"Unexpected wheel host for {name}: {parsed.hostname}")
         checksum = parse_qs(parsed.fragment).get("sha256", [None])[0]
         if not checksum or len(checksum) != 64:

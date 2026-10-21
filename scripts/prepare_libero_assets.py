@@ -32,7 +32,7 @@ else:
     # Save revision before transfer so an interrupted run resumes the same snapshot.
     record.update(repo_id=repo_id, revision=revision, path=str(cached), status="downloading")
     record_path.write_text(json.dumps(record, indent=2) + "\n")
-    snapshot_download(repo_id, repo_type="dataset", revision=revision, local_dir=cached, token=False, force_download=False)
+    snapshot_download(repo_id, repo_type="dataset", revision=revision, local_dir=cached, token=False, force_download=False, max_workers=2)
     if not populated(cached):
         raise RuntimeError("LIBERO simulation assets are incomplete")
     record["status"] = "ready"

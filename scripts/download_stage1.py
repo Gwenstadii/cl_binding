@@ -95,6 +95,8 @@ def main() -> None:
             if report["models"][BASE_ID]["status"] == "missing":
                 revision = record.get(BASE_ID, {}).get("revision") or api.model_info(BASE_ID).sha
                 destination = MODEL_ROOT / "smolvla_base"
+                record[BASE_ID] = {"revision": revision, "path": str(destination), "status": "downloading"}
+                record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                 snapshot_download(repo_id=BASE_ID, revision=revision, local_dir=destination, force_download=False, token=False)
                 if not complete_model(destination):
                     raise RuntimeError("The base policy is incomplete; do not train from it")
@@ -103,6 +105,8 @@ def main() -> None:
             # A complete policy already contains VLM weights. Fetch its config and
             # tokenizer/processor only; load the full policy with load_vlm_weights=False.
             revision = record.get(VLM_ID, {}).get("revision") or api.model_info(VLM_ID).sha
+            record.setdefault(VLM_ID, {})["revision"] = revision
+            record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             metadata_path = snapshot_download(
                 repo_id=VLM_ID,
                 revision=revision,
@@ -128,6 +132,8 @@ def main() -> None:
                         raise RuntimeError(f"Expected one exact remote file for {filename}; found {matches}. No bulk fallback was started.")
                     selected.append(matches[0])
                 destination = ROOT / "datasets" / "raw"
+                record[DATA_ID] = {"revision": revision, "directory": str(destination), "selected_files": selected, "status": "downloading"}
+                record_path.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                 snapshot_download(repo_id=DATA_ID, repo_type="dataset", revision=revision, local_dir=destination, allow_patterns=selected, force_download=False, token=False)
                 record[DATA_ID] = {"revision": revision, "directory": str(destination), "selected_files": selected}
                 for filename in missing:

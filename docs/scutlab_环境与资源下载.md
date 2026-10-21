@@ -69,7 +69,10 @@ cd ~/cl_binding
 
 ```bash
 export HF_ENDPOINT=https://hf-mirror.com
+export HF_HUB_DISABLE_XET=1
 ```
+
+实测 Hub 客户端可以通过此镜像获取元数据，但 Xet 传输曾返回 CAS 401；上面的第二行让其改用普通 HTTP。仿真素材已用这条 HTTP 路径实际开始续传，策略和演示的完整传输仍需后续验证。
 
 这是第三方镜像，不是 Hugging Face 官方站。下载脚本对这些公开仓库显式使用 `token=False`，不向镜像发送保存的登录令牌；记录取得的 revision，正式实验前核对模型和数据版本。若之后官方站恢复可达，执行 `unset HF_ENDPOINT` 使用官方来源。策略权重地址经跳转后的 HEAD 探测返回 200，仍不等同于大文件传输已经验证。
 
@@ -88,6 +91,8 @@ cd ~/cl_binding
 4. 记录实际 Hub revision，使用默认缓存/本地下载元数据续传，不启用 `force_download=True`。
 
 加载**完整 SmolVLA 策略 checkpoint**时，使用 `load_vlm_weights=False` 避免构造阶段又下载同一 VLM 的独立权重；随后必须完整加载策略权重并检查 missing/unexpected keys。不能把这个设置用于“只有 VLM 初始化、尚无完整策略权重”的训练，然后误称已有预训练动作专家。
+
+VLM 小文件按固定 revision 存在缓存快照中；离线构造模型时，将配置里的 `vlm_model_name` 设置为 `.server/resources.json` 内记录的 `metadata_path`，避免默认 `main` 的缓存引用尚未建立而再次访问网络。
 
 ## 只下载本次缺失的四个原始演示
 

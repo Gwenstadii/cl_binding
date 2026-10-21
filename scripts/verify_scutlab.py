@@ -119,7 +119,10 @@ if args.render_smoke:
             cameras = {key: list(observation[key].shape) for key in ("agentview_image", "robot0_eye_in_hand_image")}
             if any(shape != [64, 64, 3] for shape in cameras.values()):
                 raise RuntimeError(f"Unexpected camera observation: {cameras}")
-            result.update(status="ok", cameras=cameras)
+            variation = {key: float(observation[key].std()) for key in cameras}
+            if any(value == 0 for value in variation.values()):
+                raise RuntimeError(f"A camera rendered a constant image: {variation}")
+            result.update(status="ok", cameras=cameras, pixel_standard_deviation=variation)
         except Exception as error:
             result.update(status="failed", error=f"{type(error).__name__}: {error}")
             raise

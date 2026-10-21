@@ -20,7 +20,7 @@ if [[ ! -x .venv/bin/python ]]; then
 fi
 
 # Avoid repeated GPU bootstrap once both pinned CUDA distributions are installed.
-if ! .venv/bin/python -c 'from importlib.metadata import version; assert version("torch") == "2.10.0+cu128" and version("torchvision") == "0.25.0+cu128"' 2>/dev/null; then
+if ! .venv/bin/python -c 'from importlib.metadata import version; import torch, torchvision; assert version("torch").split("+")[0] == "2.10.0" and version("torchvision").split("+")[0] == "0.25.0"; assert torch.version.cuda == "12.8" and torchvision.extension._check_cuda_version() == 12080' 2>/dev/null; then
     cuda_wheels=()
     if [[ "${CL_BINDING_MULTIPART:-0}" == 1 ]]; then
         .venv/bin/python scripts/prefetch_cuda_wheels.py --download

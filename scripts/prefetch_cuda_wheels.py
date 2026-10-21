@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 from email.parser import Parser
 from html.parser import HTMLParser
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -19,6 +20,20 @@ from pip._vendor.packaging.utils import canonicalize_name, parse_wheel_filename
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = "https://download.pytorch.org/whl/cu128/"
 COMPATIBLE_TAGS = set(sys_tags())
+
+
+def cached_wheel(name, version):
+    cache = Path(os.environ.get("UV_CACHE_DIR", Path.home() / ".cache" / "uv")) / "archive-v0"
+    if not cache.is_dir():
+        return False
+    for metadata_path in cache.glob("*/*.dist-info/METADATA"):
+        message = Parser().parsestr(metadata_path.read_text(errors="replace"))
+        if canonicalize_name(message.get("Name", "")) != canonicalize_name(name):
+            continue
+        candidate = message.get("Version", "")
+        if candidate in SpecifierSet("==" + version) and (name != "torch" or candidate.endswith("+cu128")):
+            return True
+    return False
 
 
 class Links(HTMLParser):
@@ -81,7 +96,8 @@ def main():
         pins = list(requirement.specifier)
         if len(pins) != 1 or pins[0].operator != "==":
             raise RuntimeError(f"Unpinned CUDA dependency: {entry}")
-        requested.append((requirement.name, pins[0].version))
+        if not cached_wheel(requirement.name, pins[0].version):
+            requested.append((requirement.name, pins[0].version))
     with ThreadPoolExecutor(max_workers=4) as pool:
         wheels = [torch_wheel] + list(pool.map(wheel_for, requested))
     directory = ROOT / ".server" / "wheels"

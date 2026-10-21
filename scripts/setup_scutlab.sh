@@ -19,10 +19,18 @@ if [[ ! -x .venv/bin/python ]]; then
     "$uv_bin" venv --python 3.12 --seed .venv
 fi
 
-# Install GPU wheels from the official source, then resolve the remaining stack.
-"$uv_bin" pip install --python .venv/bin/python \
-    --index-url https://download.pytorch.org/whl/cu128 \
-    'torch==2.10.0' 'torchvision==0.25.0'
+# Avoid repeated GPU bootstrap once both pinned CUDA distributions are installed.
+if ! .venv/bin/python -c 'from importlib.metadata import version; assert version("torch") == "2.10.0+cu128" and version("torchvision") == "0.25.0+cu128"' 2>/dev/null; then
+    cuda_wheels=()
+    if [[ "${CL_BINDING_MULTIPART:-0}" == 1 ]]; then
+        .venv/bin/python scripts/prefetch_cuda_wheels.py --download
+        shopt -s nullglob
+        cuda_wheels=("$project_root"/.server/wheels/*.whl)
+    fi
+    "$uv_bin" pip install --python .venv/bin/python \
+        --index-url https://download.pytorch.org/whl/cu128 \
+        "${cuda_wheels[@]}" 'torch==2.10.0' 'torchvision==0.25.0'
+fi
 "$uv_bin" pip install --python .venv/bin/python \
     --index-url "$UV_DEFAULT_INDEX" \
     --constraint requirements/scutlab-cu128.txt \

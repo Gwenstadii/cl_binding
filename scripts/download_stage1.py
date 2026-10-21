@@ -88,12 +88,14 @@ def main() -> None:
     if args.models or args.data:
         from huggingface_hub import HfApi, snapshot_download
 
-        api = HfApi()
+        # These repositories are public. Never forward stored credentials to a
+        # user-selected mirror through HF_ENDPOINT.
+        api = HfApi(token=False)
         if args.models:
             if report["models"][BASE_ID]["status"] == "missing":
                 revision = record.get(BASE_ID, {}).get("revision") or api.model_info(BASE_ID).sha
                 destination = MODEL_ROOT / "smolvla_base"
-                snapshot_download(repo_id=BASE_ID, revision=revision, local_dir=destination, force_download=False)
+                snapshot_download(repo_id=BASE_ID, revision=revision, local_dir=destination, force_download=False, token=False)
                 if not complete_model(destination):
                     raise RuntimeError("The base policy is incomplete; do not train from it")
                 record[BASE_ID] = {"revision": revision, "path": str(destination)}
@@ -106,6 +108,7 @@ def main() -> None:
                 revision=revision,
                 allow_patterns=["*.json", "*.txt", "tokenizer.model", "*.jinja", "*.tiktoken"],
                 force_download=False,
+                token=False,
             )
             record[VLM_ID] = {"revision": revision, "metadata_path": metadata_path, "weights_downloaded": False}
             report["vlm_metadata"] = record[VLM_ID]
@@ -125,7 +128,7 @@ def main() -> None:
                         raise RuntimeError(f"Expected one exact remote file for {filename}; found {matches}. No bulk fallback was started.")
                     selected.append(matches[0])
                 destination = ROOT / "datasets" / "raw"
-                snapshot_download(repo_id=DATA_ID, repo_type="dataset", revision=revision, local_dir=destination, allow_patterns=selected, force_download=False)
+                snapshot_download(repo_id=DATA_ID, repo_type="dataset", revision=revision, local_dir=destination, allow_patterns=selected, force_download=False, token=False)
                 record[DATA_ID] = {"revision": revision, "directory": str(destination), "selected_files": selected}
                 for filename in missing:
                     downloaded = find_demo(filename)

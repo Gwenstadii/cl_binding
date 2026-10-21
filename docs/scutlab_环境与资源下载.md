@@ -53,7 +53,15 @@ cd ~/cl_binding
 
 ## 下载缺失主基座及小型处理配置
 
-确认清单后执行：
+本次网络实测：Hugging Face 官方站直连拒绝连接，现有本地代理访问也超时；`hf-mirror.com` 的公开模型 API 可达。需要使用镜像时，在当前终端先设置：
+
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+```
+
+这是第三方镜像，不是 Hugging Face 官方站。下载脚本对这些公开仓库显式使用 `token=False`，不向镜像发送保存的登录令牌；记录取得的 revision，正式实验前核对模型和数据版本。若之后官方站恢复可达，执行 `unset HF_ENDPOINT` 使用官方来源。此次只探测了小型 API，未声称大文件传输已经验证。
+
+确认清单和下载来源后执行：
 
 ```bash
 cd ~/cl_binding

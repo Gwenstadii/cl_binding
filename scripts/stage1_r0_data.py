@@ -5,7 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from stage1_protocol import split_trajectories
+from stage1_protocol import observation_action_indices, split_trajectories
 from stage1_smoke import CAMERAS, ROOT, dump, sources
 
 
@@ -62,6 +62,11 @@ def convert(audit, split, output):
 
     spec = {"purpose": "R0_old_only", "split": split, "split_sha256": audit["split_sha256"],
             "goals": audit["config"]["old_goals"], "fps": audit["config"]["data"]["fps"], "image_transform": "rotate_180"}
+    alignment = audit["config"]["data"].get("action_alignment", "same_index_legacy")
+    observation_action_indices(2, alignment)  # Reject an unknown mode before creating a dataset.
+    if alignment != "same_index_legacy":
+        spec.update(action_alignment=alignment, observation_offset=0, action_offset=1,
+                    terminal_observations_dropped_per_trajectory=1)
     marker = output / "r0_conversion.json"
     if output.exists():
         if marker.is_file() and json.loads(marker.read_text()).get("spec") == spec:
@@ -83,13 +88,16 @@ def convert(audit, split, output):
                 for name in audit["splits"][goal][split]:
                     d=h["data"][name]; a=d["actions"][:].astype(np.float32)
                     state=np.concatenate((d["obs/ee_states"][:],d["obs/gripper_states"][:]),axis=1).astype(np.float32)
-                    for i,action in enumerate(a):
+                    obs_indices, action_indices = observation_action_indices(len(a), alignment)
+                    for i,j in zip(obs_indices, action_indices, strict=True):
                         frame={k:np.ascontiguousarray(d[f"obs/{raw}"][i][::-1,::-1]) for k,raw in CAMERAS.items()}
-                        frame.update({"observation.state":state[i],"action":action,"task":source["instruction"]})
+                        frame.update({"observation.state":state[i],"action":a[j],"task":source["instruction"]})
                         dataset.add_frame(frame)
                     dataset.save_episode()
-                    episodes.append({"goal":goal,"demo":name,"frames":len(a),"instruction":source["instruction"]})
-                    print(json.dumps({"split":split,**episodes[-1]}),flush=True)
+                    row={"goal":goal,"demo":name,"frames":len(obs_indices),"instruction":source["instruction"]}
+                    if alignment != "same_index_legacy":row.update(source_frames=len(a),observation_offset=0,action_offset=1)
+                    episodes.append(row)
+                    print(json.dumps({"split":split,**row}),flush=True)
     finally:
         dataset.finalize()
     dump(marker,{"status":"complete","spec":spec,"episodes":episodes})

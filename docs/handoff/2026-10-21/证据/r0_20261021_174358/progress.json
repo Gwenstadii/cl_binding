@@ -1,0 +1,55 @@
+{
+  "status": "pipeline_complete_R0_not_qualified",
+  "server_run_id": "r0_20261021_174358",
+  "training_code_commit": "460146ba426cc5117660164cbdcc8184ea9e215d",
+  "data": [
+    {
+      "goal": "front",
+      "demos": 50,
+      "frames": 7582,
+      "train": 40,
+      "validation": 10
+    },
+    {
+      "goal": "left",
+      "demos": 50,
+      "frames": 6104,
+      "train": 40,
+      "validation": 10
+    },
+    {
+      "goal": "right",
+      "demos": 50,
+      "frames": 7115,
+      "train": 40,
+      "validation": 10
+    },
+    {
+      "goal": "back",
+      "demos": 50,
+      "frames": 7336,
+      "train": 0,
+      "validation": 0
+    }
+  ],
+  "split_sha256": "55ce420cca19e20d01b884dbdd1f85c34c670c5fed5a4486a00dc8bdbb2f7111",
+  "predicate_checks_status": "pass",
+  "open_loop_replay_failures": [
+    {
+      "goal": "right",
+      "demo": "demo_0"
+    },
+    {
+      "goal": "right",
+      "demo": "demo_2"
+    }
+  ],
+  "common_reset_checks": 9,
+  "qualification_reset_count": 20,
+  "qualification_train_start_min_distance": 0.13546593579556132,
+  "qualification_started": false,
+  "r0_qualified": false,
+  "training_step": 6000,
+  "diagnostic_status": "complete",
+  "evidence_summary": "analysis_summary.json"
+}

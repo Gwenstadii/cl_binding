@@ -1,0 +1,122 @@
+{
+  "checked_at": "2026-10-21T22:07:30.273498+08:00",
+  "hostname": "ub-MS-7D31",
+  "user": "lzx",
+  "git_commit": "9224eaddf0fcf7cf8e53d313daf3ee7b76d86c45",
+  "git_status": "",
+  "exit_code": "0",
+  "pipeline_complete_marker": true,
+  "checkpoint_checks": [
+    {
+      "status": "pass",
+      "step": 500,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 1000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 1500,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 2000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 2500,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 3000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 3500,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 4000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 4500,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 5000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 5500,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    },
+    {
+      "status": "pass",
+      "step": 6000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true,
+      "model_bytes": 1197789256,
+      "training_state_bytes": 412764680
+    }
+  ],
+  "qualification_rollouts_created": false,
+  "gpu_processes": "",
+  "scope": "bounded R0 development complete, not qualified"
+}

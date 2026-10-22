@@ -1,0 +1,8 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"step": 1, "loss": 2.9294629096984863, "gradient_norm": 23.945457458496094, "lr": 2.0000000000000003e-06, "step_seconds": 0.3893555412068963, "batch_indices": [10317, 11580, 11152, 6142, 1271, 1306], "samples_per_goal": 2}
+{"step": 2, "loss": 1.6926865577697754, "gradient_norm": 13.596692085266113, "lr": 3e-06, "step_seconds": 0.1322977519594133, "batch_indices": [11521, 14031, 10376, 489, 304, 9227], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/pilot_20261021/checkpoints/000002", "step": 2, "reload_difference": 0.0}
+TRAINING_PROCESS_COMPLETE 2

@@ -1,0 +1,162 @@
+{
+  "front": {
+    "file": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy_demo.hdf5",
+    "bytes": 753310436,
+    "demos": 50,
+    "first_demo": "demo_0",
+    "frames": 133,
+    "instruction": "pick up the book and place it in the front compartment of the caddy",
+    "state_shape": [
+      133,
+      8
+    ],
+    "action_shape": [
+      133,
+      7
+    ],
+    "image_shape": [
+      133,
+      128,
+      128,
+      3
+    ],
+    "action_min": [
+      -0.46071428571428574,
+      -0.35357142857142865,
+      -0.8678571428571429,
+      -0.016071428571428573,
+      -0.007500000000000001,
+      -0.255,
+      -1.0
+    ],
+    "action_max": [
+      0.42589285714285713,
+      0.09910714285714287,
+      0.6482142857142857,
+      0.02142857142857143,
+      0.027857142857142858,
+      -0.0,
+      1.0
+    ]
+  },
+  "left": {
+    "file": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy_demo.hdf5",
+    "bytes": 607046484,
+    "demos": 50,
+    "first_demo": "demo_0",
+    "frames": 108,
+    "instruction": "pick up the book and place it in the left compartment of the caddy",
+    "state_shape": [
+      108,
+      8
+    ],
+    "action_shape": [
+      108,
+      7
+    ],
+    "image_shape": [
+      108,
+      128,
+      128,
+      3
+    ],
+    "action_min": [
+      -0.7392857142857142,
+      -0.8008928571428572,
+      -0.8089285714285713,
+      -0.053571428571428575,
+      -0.14357142857142857,
+      -0.1157142857142857,
+      -1.0
+    ],
+    "action_max": [
+      0.5571428571428572,
+      0.1392857142857143,
+      0.9160714285714286,
+      0.045,
+      0.09321428571428574,
+      -0.0,
+      1.0
+    ]
+  },
+  "right": {
+    "file": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy_demo.hdf5",
+    "bytes": 707095798,
+    "demos": 50,
+    "first_demo": "demo_0",
+    "frames": 161,
+    "instruction": "pick up the book and place it in the right compartment of the caddy",
+    "state_shape": [
+      161,
+      8
+    ],
+    "action_shape": [
+      161,
+      7
+    ],
+    "image_shape": [
+      161,
+      128,
+      128,
+      3
+    ],
+    "action_min": [
+      -0.4714285714285715,
+      -0.17410714285714288,
+      -0.6723214285714286,
+      -0.039642857142857146,
+      -0.12000000000000001,
+      -0.14892857142857144,
+      -1.0
+    ],
+    "action_max": [
+      0.41785714285714287,
+      0.14464285714285713,
+      0.9375,
+      0.060000000000000005,
+      0.056785714285714294,
+      -0.0,
+      1.0
+    ]
+  },
+  "back": {
+    "file": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_demo.hdf5",
+    "bytes": 728965938,
+    "demos": 50,
+    "first_demo": "demo_0",
+    "frames": 197,
+    "instruction": "pick up the book and place it in the back compartment of the caddy",
+    "state_shape": [
+      197,
+      8
+    ],
+    "action_shape": [
+      197,
+      7
+    ],
+    "image_shape": [
+      197,
+      128,
+      128,
+      3
+    ],
+    "action_min": [
+      -0.40178571428571436,
+      -0.39642857142857146,
+      -0.6883928571428571,
+      -0.16607142857142856,
+      -0.08357142857142857,
+      -0.2517857142857143,
+      -1.0
+    ],
+    "action_max": [
+      0.567857142857143,
+      0.20089285714285718,
+      0.9348214285714286,
+      0.12642857142857145,
+      0.09321428571428574,
+      0.12535714285714286,
+      1.0
+    ]
+  }
+}

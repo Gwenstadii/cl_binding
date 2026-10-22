@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "partition": "screen",
+  "checkpoint": "outputs/r0/r0_20261021_174358/checkpoints/002000",
+  "git_commit": "9224eaddf0fcf7cf8e53d313daf3ee7b76d86c45",
+  "counts": {
+    "front": {
+      "total": 3,
+      "correct": 0
+    },
+    "left": {
+      "total": 3,
+      "correct": 0
+    },
+    "right": {
+      "total": 3,
+      "correct": 0
+    }
+  },
+  "passed_gate": false,
+  "seconds": 99.72176560014486,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "qualified_R0": false
+}

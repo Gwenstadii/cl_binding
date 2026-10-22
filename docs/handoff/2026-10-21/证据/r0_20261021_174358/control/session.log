@@ -1,0 +1,36 @@
+{
+  "pipeline_status": "complete",
+  "r0_qualified": false,
+  "run_id": "r0_20261021_174358",
+  "training_dir": "outputs/r0/r0_20261021_174358",
+  "qualification": null,
+  "checkpoints": [
+    "000500",
+    "001000",
+    "001500",
+    "002000",
+    "002500",
+    "003000",
+    "003500",
+    "004000",
+    "004500",
+    "005000",
+    "005500",
+    "006000"
+  ],
+  "development_reports": [
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_000500_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_001000_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_001500_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_002000_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_002500_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_003000_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_003500_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_004000_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_004500_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_005000_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_005500_screen/evaluation.json",
+    "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_006000_screen/evaluation.json"
+  ],
+  "scope": "R0 development only; no FT/ER continuation launched"
+}

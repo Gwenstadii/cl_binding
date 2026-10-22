@@ -1,0 +1,41 @@
+{
+  "status": "complete",
+  "spec": {
+    "goals": [
+      "front",
+      "left",
+      "right"
+    ],
+    "episodes_per_task": 1,
+    "fps": 20,
+    "image_transform": "rotate_180",
+    "state": "ee_states(6)+gripper_states(2)",
+    "actions": "original_OSC_POSE_relative_7D",
+    "sources": {
+      "front": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy_demo.hdf5",
+      "left": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy_demo.hdf5",
+      "right": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy_demo.hdf5"
+    }
+  },
+  "episodes": [
+    {
+      "goal": "front",
+      "demo": "demo_0",
+      "frames": 133,
+      "instruction": "pick up the book and place it in the front compartment of the caddy"
+    },
+    {
+      "goal": "left",
+      "demo": "demo_0",
+      "frames": 108,
+      "instruction": "pick up the book and place it in the left compartment of the caddy"
+    },
+    {
+      "goal": "right",
+      "demo": "demo_0",
+      "frames": 161,
+      "instruction": "pick up the book and place it in the right compartment of the caddy"
+    }
+  ],
+  "purpose": "engineering_smoke_only_not_R0_or_success_rate_estimation"
+}

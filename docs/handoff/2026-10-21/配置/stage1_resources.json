@@ -1,0 +1,11 @@
+{
+  "verified_on": "2026-10-21",
+  "models": {
+    "lerobot/smolvla_base": "5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6",
+    "HuggingFaceTB/SmolVLM2-500M-Video-Instruct": "7b375e1b73b11138ff12fe22c8f2822d8fe03467"
+  },
+  "datasets": {
+    "yifengzhu-hf/LIBERO-datasets": "f13aa24a3da8c43c7225569f28c562979fa0e35a",
+    "lerobot/libero-assets": "0b3ea86be5fe169d0fd036ae63d1070ec09e90f6"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "purpose": "bounded_R0_development_and_independent_qualification",
+  "seed": 20261021,
+  "old_goals": ["front", "left", "right"],
+  "data": {"train_per_goal": 40, "fps": 20, "image_size": 128, "train_output": "datasets/stage1_r0_train_v1", "validation_output": "datasets/stage1_r0_validation_v1"},
+  "model": {"chunk_size": 50, "n_action_steps": 10, "flow_steps": 10},
+  "training": {"max_steps": 6000, "samples_per_goal": 2, "learning_rate": 0.0001, "warmup_steps": 100, "save_every": 500, "log_every": 25, "num_workers": 0, "walltime_hours": 3},
+  "evaluation": {
+    "expert_replay_demos": ["demo_0", "demo_1", "demo_2"],
+    "horizon": 400,
+    "settle_steps": 10,
+    "common_state_source_goal": "front",
+    "screen_indices": [0, 1, 2],
+    "development_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "qualification_indices": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29],
+    "paired_indices": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+    "reserve_indices": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+    "development_required_correct": 8,
+    "qualification_required_correct": 16
+  }
+}

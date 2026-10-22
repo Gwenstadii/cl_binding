@@ -1,0 +1,41 @@
+{
+  "status": "pass",
+  "compared_step": 3,
+  "continuous": {
+    "step": 3,
+    "loss": 1.773449182510376,
+    "gradient_norm": 14.377546310424805,
+    "lr": 3e-06,
+    "step_seconds": 0.12232645228505135,
+    "batch_indices": [
+      13296,
+      1331,
+      8940,
+      3000,
+      8184,
+      13774
+    ],
+    "samples_per_goal": 2
+  },
+  "resumed": {
+    "step": 3,
+    "loss": 1.773449182510376,
+    "gradient_norm": 14.377546310424805,
+    "lr": 4.000000000000001e-06,
+    "step_seconds": 0.41207647789269686,
+    "batch_indices": [
+      13296,
+      1331,
+      8940,
+      3000,
+      8184,
+      13774
+    ],
+    "samples_per_goal": 2
+  },
+  "comparison_fields": [
+    "loss",
+    "gradient_norm",
+    "batch_indices"
+  ]
+}

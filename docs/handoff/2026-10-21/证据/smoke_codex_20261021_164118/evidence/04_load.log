@@ -1,0 +1,18 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{
+  "status": "pass",
+  "strict_loading": true,
+  "checkpoint": "/home/lzx/hf_models/smolvla_base",
+  "total_parameters": 450046176,
+  "trainable_parameters": 99880992,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "allocated_mib": 1153.7919921875,
+  "vlm_initialization": "config_only_then_full_policy_checkpoint_strictly_loaded",
+  "inputs": "2 RGB cameras + 8D state",
+  "outputs": "7D action",
+  "max_projection_dims": [
+    32,
+    32
+  ]
+}

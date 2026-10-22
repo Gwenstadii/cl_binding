@@ -1,0 +1,114 @@
+[
+  {
+    "goal": "front",
+    "timing": "before_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.5848795572916666,
+        "mae_rot180": 36.375935872395836
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 4.23779296875,
+        "mae_rot180": 46.2386474609375
+      }
+    }
+  },
+  {
+    "goal": "front",
+    "timing": "after_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.4510904947916667,
+        "mae_rot180": 36.404093424479164
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 1.80780029296875,
+        "mae_rot180": 46.386983235677086
+      }
+    }
+  },
+  {
+    "goal": "left",
+    "timing": "before_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.7117106119791666,
+        "mae_rot180": 36.461751302083336
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 5.325887044270833,
+        "mae_rot180": 47.027018229166664
+      }
+    }
+  },
+  {
+    "goal": "left",
+    "timing": "after_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.24709065755208334,
+        "mae_rot180": 36.45867919921875
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 4.533467610677083,
+        "mae_rot180": 47.029764811197914
+      }
+    }
+  },
+  {
+    "goal": "right",
+    "timing": "before_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.20835367838541666,
+        "mae_rot180": 35.90264892578125
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 1.3749796549479167,
+        "mae_rot180": 48.517842610677086
+      }
+    }
+  },
+  {
+    "goal": "right",
+    "timing": "after_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.6258748372395834,
+        "mae_rot180": 35.87359619140625
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 3.4930826822916665,
+        "mae_rot180": 48.304239908854164
+      }
+    }
+  },
+  {
+    "goal": "back",
+    "timing": "before_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.4566243489583333,
+        "mae_rot180": 36.381917317708336
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 3.0416463216145835,
+        "mae_rot180": 47.075703938802086
+      }
+    }
+  },
+  {
+    "goal": "back",
+    "timing": "after_action",
+    "images": {
+      "agentview_rgb": {
+        "mae_raw": 0.6050618489583334,
+        "mae_rot180": 36.3992919921875
+      },
+      "eye_in_hand_rgb": {
+        "mae_raw": 3.29779052734375,
+        "mae_rot180": 46.991312662760414
+      }
+    }
+  }
+]

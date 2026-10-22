@@ -1,0 +1,99 @@
+{
+  "status": "pass",
+  "run_id": "codex_20261021_164118",
+  "git_commit": "5fe8cd2f0e011a28dd594d2a434a1683d7d1d645",
+  "strict_loading": true,
+  "train": {
+    "status": "pass",
+    "purpose": "engineering_smoke_not_R0",
+    "steps": [
+      {
+        "step": 1,
+        "loss": 3.9466238021850586,
+        "gradient_norm": 33.91608810424805
+      },
+      {
+        "step": 2,
+        "loss": 3.651888370513916,
+        "gradient_norm": 46.997196197509766
+      },
+      {
+        "step": 3,
+        "loss": 0.8704312443733215,
+        "gradient_norm": 17.270456314086914
+      },
+      {
+        "step": 4,
+        "loss": 2.1880578994750977,
+        "gradient_norm": 20.171396255493164
+      },
+      {
+        "step": 5,
+        "loss": 1.9392768144607544,
+        "gradient_norm": 19.70423126220703
+      }
+    ],
+    "decoded_cameras": {
+      "observation.images.image": {
+        "shape": [
+          1,
+          3,
+          128,
+          128
+        ],
+        "std": 0.14611481130123138
+      },
+      "observation.images.image2": {
+        "shape": [
+          1,
+          3,
+          128,
+          128
+        ],
+        "std": 0.14158165454864502
+      }
+    },
+    "updated_projection_max_delta": 5.015172064304352e-05,
+    "save_reload_max_difference": 0.0,
+    "action_shape": [
+      1,
+      50,
+      7
+    ],
+    "peak_training_allocated_mib": 1988.5703125,
+    "seconds": 12.891010647173971,
+    "checkpoint": "/home/lzx/cl_binding/outputs/smoke/train_codex_20261021_164118/checkpoint",
+    "normalization_source": "/home/lzx/cl_binding/datasets/stage1_smoke_old"
+  },
+  "rollout_tasks": [
+    {
+      "goal": "front",
+      "task_id": 78,
+      "status": "pass",
+      "policy_steps": 8,
+      "task_success": false
+    },
+    {
+      "goal": "left",
+      "task_id": 79,
+      "status": "pass",
+      "policy_steps": 8,
+      "task_success": false
+    },
+    {
+      "goal": "right",
+      "task_id": 80,
+      "status": "pass",
+      "policy_steps": 8,
+      "task_success": false
+    },
+    {
+      "goal": "back",
+      "task_id": 77,
+      "status": "pass",
+      "policy_steps": 8,
+      "task_success": false
+    }
+  ],
+  "scope": "Engineering data/model/update/reload/short-rollout smoke only; not R0 qualification or task success evaluation."
+}

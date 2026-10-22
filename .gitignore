@@ -278,3 +278,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Preserve selected research handoff logs; runtime logs elsewhere stay ignored.
+!/docs/handoff/2026-10-21/证据/**/*.log

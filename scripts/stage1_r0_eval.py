@@ -6,6 +6,7 @@ import json
 import subprocess
 from pathlib import Path
 import time
+from contextlib import ExitStack
 
 from stage1_protocol import GOALS, qualification, summarize_events, remap_demo_xml
 from stage1_smoke import ROOT, CAMERAS, dump, load_policy, sources, task_name
@@ -125,7 +126,7 @@ def evaluate(args, config):
     import torch
     from lerobot.policies import make_pre_post_processors
     from robosuite.utils.transform_utils import quat2axisangle
-    from PIL import Image
+    from PIL import Image, ImageDraw
 
     if args.output.exists():raise FileExistsError(args.output)
     args.output.mkdir(parents=True)
@@ -153,17 +154,46 @@ def evaluate(args, config):
                 hashes[idx]=flat
                 policy.reset();trace=[events(env,predicates)];clipped_steps=0
                 assert not any(trace[0].values()),"Already-successful reset"
-                for step in range(e["horizon"]):
-                    batch={"observation.state":torch.from_numpy(np.concatenate((obs["robot0_eef_pos"],quat2axisangle(obs["robot0_eef_quat"].copy()),obs["robot0_gripper_qpos"])).astype(np.float32)),"task":tasks[goal].language}
-                    for key,raw in zip(CAMERAS,("agentview_image","robot0_eye_in_hand_image"),strict=True):
-                        image=np.ascontiguousarray(obs[raw][::-1,::-1])
-                        batch[key]=torch.from_numpy(image).permute(2,0,1).float()/255
-                    with torch.no_grad(),torch.autocast("cuda",dtype=torch.bfloat16):
-                        action=post(policy.select_action(pre(batch))).float().cpu().numpy().reshape(-1)
-                    assert action.shape==(7,) and np.isfinite(action).all()
-                    clipped=np.clip(action,-1,1);clipped_steps+=int(np.any(clipped!=action))
-                    obs,_,_,_=env.step(clipped)
-                    trace.append(events(env,predicates))
+                with ExitStack() as stack:
+                    trace_file=None;video=None
+                    if args.trace:
+                        trace_file=stack.enter_context((args.output/f"{goal}_{idx:02d}_trace.jsonl").open("w"))
+                        if idx==indices[0]:
+                            import av
+                            video=stack.enter_context(av.open(str(args.output/f"{goal}_{idx:02d}.mp4"),mode="w"))
+                            stream=video.add_stream("libx264",rate=5)
+                            stream.width=256;stream.height=152;stream.pix_fmt="yuv420p"
+                            stream.options={"crf":"23","preset":"fast"}
+                    for step in range(e["horizon"]):
+                        inference_state=np.concatenate((obs["robot0_eef_pos"],quat2axisangle(obs["robot0_eef_quat"].copy()),obs["robot0_gripper_qpos"])).astype(np.float32)
+                        batch={"observation.state":torch.from_numpy(inference_state),"task":tasks[goal].language}
+                        for key,raw in zip(CAMERAS,("agentview_image","robot0_eye_in_hand_image"),strict=True):
+                            image=np.ascontiguousarray(obs[raw][::-1,::-1])
+                            batch[key]=torch.from_numpy(image).permute(2,0,1).float()/255
+                        with torch.no_grad(),torch.autocast("cuda",dtype=torch.bfloat16):
+                            action=post(policy.select_action(pre(batch))).float().cpu().numpy().reshape(-1)
+                        assert action.shape==(7,) and np.isfinite(action).all()
+                        clipped=np.clip(action,-1,1);clipped_steps+=int(np.any(clipped!=action))
+                        obs,_,_,_=env.step(clipped)
+                        flags=events(env,predicates);trace.append(flags)
+                        if trace_file:
+                            record={"step":step+1,"inference_state":inference_state.tolist(),
+                                    "action_unclipped":action.tolist(),"action_executed":clipped.tolist(),
+                                    "clipped_dimensions":(action!=clipped).tolist(),"predicates_after":flags,
+                                    "eef_position_after":np.asarray(obs["robot0_eef_pos"]).tolist(),
+                                    "gripper_position_after":np.asarray(obs["robot0_gripper_qpos"]).tolist(),
+                                    "object_positions_after":{k:np.asarray(v).tolist() for k,v in obs.items()
+                                                              if k.endswith("_pos") and not k.startswith("robot")}}
+                            trace_file.write(json.dumps(record)+"\n")
+                        if video and step%4==0:
+                            canvas=Image.new("RGB",(256,152),"white")
+                            ImageDraw.Draw(canvas).text((3,3),f"{goal} init={idx} step={step+1}",fill="black")
+                            for column,raw in enumerate(("agentview_image","robot0_eye_in_hand_image")):
+                                canvas.paste(Image.fromarray(np.ascontiguousarray(obs[raw][::-1,::-1])),(128*column,24))
+                            for packet in stream.encode(av.VideoFrame.from_ndarray(np.asarray(canvas),format="rgb24")):
+                                video.mux(packet)
+                    if video:
+                        for packet in stream.encode():video.mux(packet)
                 row={**summarize_events(goal,trace),"init_index":idx,"seed":seed,
                      "initial_state_sha256":hashlib.sha256(flat.tobytes()).hexdigest(),
                      "scene_xml_sha256":hashlib.sha256(scene_xml.encode()).hexdigest(),
@@ -181,6 +211,7 @@ def evaluate(args, config):
             "git_commit":subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
             "counts":q["counts"],"passed_gate":q["qualified"],"seconds":time.monotonic()-start,
             "horizon":e["horizon"],"n_action_steps":policy.config.n_action_steps,
+            "step_traces":args.trace,"videos_first_init_per_goal":args.trace,
             "qualified_R0":bool(q["qualified"] and args.partition=="qualification" and not args.limit)}
     dump(args.output/"evaluation.json",report)
     print(json.dumps(report),flush=True)
@@ -193,6 +224,7 @@ if __name__=="__main__":
     p.add_argument("--partition",choices=["screen","development","qualification"],default="screen")
     p.add_argument("--limit",type=int)
     p.add_argument("--audit",type=Path)
+    p.add_argument("--trace",action="store_true",help="Write per-step controls/predicates and a video for the first init per goal")
     a=p.parse_args();c=json.loads(a.config.read_text())
     torch_threads=__import__('torch').set_num_threads(4)
     if a.mode=="verify":verify(a,c)

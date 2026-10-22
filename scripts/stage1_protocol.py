@@ -7,6 +7,12 @@ import xml.etree.ElementTree as ET
 GOALS = ("front", "left", "right", "back")
 
 
+def normalization_stat_shape(shape):
+    """Scalar statistics may serialize as (), (1,) or singleton image axes."""
+    shape = tuple(shape)
+    return (1,) if all(dimension == 1 for dimension in shape) else shape
+
+
 def observation_action_indices(length, alignment):
     """Pair within a single trajectory; never borrow a terminal label from another."""
     if alignment not in ("same_index_legacy", "post_action_obs_to_next_action"):

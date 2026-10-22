@@ -174,6 +174,15 @@ class Stage1ProtocolTests(unittest.TestCase):
             row['seed']+=1
         with self.assertRaises(ValueError):compare_sequential(before,after,'left','right')
 
+    def test_scalar_normalization_statistics_allow_only_singleton_shape_equivalence(self):
+        canonical = self.protocol().normalization_stat_shape
+        self.assertEqual(canonical(()), (1,))
+        self.assertEqual(canonical((1,)), (1,))
+        self.assertEqual(canonical((1,1,1)), (1,))
+        self.assertNotEqual(canonical((2,3)), canonical((6,)))
+        self.assertNotEqual(canonical((3,1,1)), canonical((3,)))
+        self.assertNotEqual(canonical((0,)), canonical(()))
+
 
 if __name__ == "__main__":
     unittest.main()

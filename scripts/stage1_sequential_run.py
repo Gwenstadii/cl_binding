@@ -10,7 +10,7 @@ import subprocess
 import sys
 import time
 
-from stage1_protocol import GOALS
+from stage1_protocol import GOALS, normalization_stat_shape
 from stage1_single_task_benchmark_followup import metric_summary
 from stage1_smoke import ROOT, dump
 
@@ -69,7 +69,7 @@ def processor_hashes(checkpoint):
         digest = hashlib.sha256()
         for name, tensor in sorted(load_file(path).items()):
             digest.update(name.encode())
-            digest.update(str((tensor.dtype, tuple(tensor.shape))).encode())
+            digest.update(str((tensor.dtype, normalization_stat_shape(tensor.shape))).encode())
             digest.update(tensor.reshape(-1).contiguous().view(torch.uint8).numpy().tobytes())
         result[path.name] = digest.hexdigest()
     return result
@@ -104,7 +104,7 @@ def main():
         'status': 'running', 'purpose': config['purpose'], 'run_dir': str(run),
         'training_dir': str(train), 'initial_checkpoint': str(parent),
         'initial_model_sha256': parent_model_hash, 'parent_processor_sha256': parent_hashes,
-        'processor_hash_kind': 'sorted_tensor_names_dtypes_shapes_and_values',
+        'processor_hash_kind': 'sorted_tensor_names_dtypes_shapes_and_values_with_singleton_shape_canonicalization',
         'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
         'started_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'selection_rule': 'Always evaluate the fixed +6000 endpoint, including low-new-task-success outcomes; no checkpoint selection using old or paired scores.',

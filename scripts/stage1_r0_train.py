@@ -83,7 +83,9 @@ def train(args,config):
         start_step=saved['step']
         assert original_frozen==saved['frozen_hash']
         dump(run/f'resume_{start_step:06d}.json',{'status':'pass','restored_step':start_step,
-                'optimizer_state_entries':len(optimizer.state),'scheduler_last_epoch':scheduler.last_epoch})
+                'optimizer_state_entries':len(optimizer.state),'scheduler_last_epoch':scheduler.last_epoch,
+                'training_config_unchanged':True,'requested_maximum_step':args.max_steps or c['max_steps'],
+                'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()})
         print('COMPLETE_TRAINING_STATE_RESTORED',start_step,flush=True)
     else:
         manifest={'config':config,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
@@ -153,7 +155,8 @@ def train(args,config):
              'step_seconds':time.monotonic()-tick,'batch_indices':ids,'samples_per_goal':c['samples_per_goal']}
         with (run/'train_steps.jsonl').open('a') as f:f.write(json.dumps(row)+'\n')
         if last_step<=3 or last_step%c['log_every']==0:print(json.dumps(row),flush=True)
-        stop=(run/'STOP_REQUESTED.json').exists() or time.monotonic()-started>c['walltime_hours']*3600
+        stop_file=args.stop_file or run/'STOP_REQUESTED.json'
+        stop=stop_file.exists() or time.monotonic()-started>c['walltime_hours']*3600
         if last_step%c['save_every']==0 or last_step==maximum or stop:checkpoint(last_step,raw)
         if stop:break
     dump(run/f'training_finished_{last_step:06d}.json',{'status':'complete','step':last_step,'target':maximum,
@@ -169,4 +172,5 @@ if __name__=='__main__':
     initialization.add_argument('--resume',type=Path,help='Resume this run including optimizer, scheduler and RNG')
     initialization.add_argument('--init-checkpoint',type=Path,help='Start a new task from verified parent weights/processors with a fresh optimizer')
     p.add_argument('--max-steps',type=int)
+    p.add_argument('--stop-file',type=Path,help='Optional run-specific stop request; defaults to run-dir/STOP_REQUESTED.json')
     a=p.parse_args();train(a,json.loads(a.config.read_text()))

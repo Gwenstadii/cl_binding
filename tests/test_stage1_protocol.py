@@ -183,6 +183,24 @@ class Stage1ProtocolTests(unittest.TestCase):
         self.assertNotEqual(canonical((3,1,1)), canonical((3,)))
         self.assertNotEqual(canonical((0,)), canonical(()))
 
+    def test_new_goal_development_gate_keeps_failures_and_rejects_late_destruction(self):
+        gate=self.protocol().new_goal_development_gate
+        rows=[{'requested_goal':'right','init_index':i,'correct_ever':True,
+               'terminal_category':'correct' if i<15 else 'unfinished'} for i in range(20)]
+        self.assertFalse(gate(rows,'right',20,16)['passed'])
+        rows[15]['terminal_category']='correct'
+        self.assertTrue(gate(rows,'right',20,16)['passed'])
+        self.assertEqual(gate(rows,'right',20,16)['total'],20)
+
+    def test_new_goal_gate_never_uses_old_goal_scores_and_rejects_repeated_states(self):
+        gate=self.protocol().new_goal_development_gate
+        rows=[{'requested_goal':'right','init_index':i,'correct_ever':i<16,
+               'terminal_category':'correct' if i<16 else 'unfinished'} for i in range(20)]
+        old=[{'requested_goal':'left','init_index':i,'correct_ever':False,
+              'terminal_category':'unfinished'} for i in range(20)]
+        self.assertEqual(gate(rows+old,'right',20,16),gate(rows,'right',20,16))
+        with self.assertRaises(ValueError):gate(rows[:-1]+[rows[0]],'right',20,16)
+
 
 if __name__ == "__main__":
     unittest.main()

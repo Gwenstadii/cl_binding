@@ -13,6 +13,19 @@ def normalization_stat_shape(shape):
     return (1,) if all(dimension == 1 for dimension in shape) else shape
 
 
+def new_goal_development_gate(rows, goal, expected, required):
+    """Use only the new goal, retaining failures and rejecting repeated initial states."""
+    if goal not in GOALS or not 0 < required <= expected:
+        raise ValueError('Invalid development gate')
+    selected = [row for row in rows if row['requested_goal'] == goal]
+    if len(selected) != expected or len({row['init_index'] for row in selected}) != expected:
+        raise ValueError('Development requires exactly the expected unique initial states')
+    ever = sum(row['correct_ever'] for row in selected)
+    terminal = sum(row['terminal_category'] == 'correct' for row in selected)
+    return {'goal':goal,'total':expected,'success_ever':ever,'terminal_correct':terminal,
+            'required':required,'passed':ever >= required and terminal >= required}
+
+
 def observation_action_indices(length, alignment):
     """Pair within a single trajectory; never borrow a terminal label from another."""
     if alignment not in ("same_index_legacy", "post_action_obs_to_next_action"):

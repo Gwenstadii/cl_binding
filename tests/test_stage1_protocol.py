@@ -13,6 +13,17 @@ class Stage1ProtocolTests(unittest.TestCase):
         import stage1_protocol
         return stage1_protocol
 
+    def test_post_action_observations_predict_next_action_without_crossing_trajectory(self):
+        obs, actions = self.protocol().observation_action_indices(4, "post_action_obs_to_next_action")
+        self.assertEqual(list(zip(obs, actions)), [(0, 1), (1, 2), (2, 3)])
+        self.assertNotIn(3, obs, "The last observation has no next recorded action")
+
+    def test_legacy_pairing_is_preserved_and_unknown_alignment_rejected(self):
+        p = self.protocol()
+        self.assertEqual(list(zip(*p.observation_action_indices(3, "same_index_legacy"))), [(0, 0), (1, 1), (2, 2)])
+        with self.assertRaises(ValueError):p.observation_action_indices(3, "guess")
+        with self.assertRaises(ValueError):p.observation_action_indices(1, "post_action_obs_to_next_action")
+
     def test_split_is_reproducible_disjoint_and_uses_every_trajectory(self):
         p = self.protocol()
         demos = [f"demo_{i}" for i in range(50)]

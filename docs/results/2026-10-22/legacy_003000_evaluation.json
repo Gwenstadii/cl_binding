@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "partition": "development",
+  "checkpoint": "outputs/r0/r0_20261021_174358/checkpoints/003000",
+  "git_commit": "5f07ffb9748a3a6fe4ac45ee3e376a6c7857e113",
+  "counts": {
+    "front": {
+      "total": 10,
+      "correct": 2
+    },
+    "left": {
+      "total": 10,
+      "correct": 5
+    },
+    "right": {
+      "total": 10,
+      "correct": 3
+    }
+  },
+  "passed_gate": false,
+  "seconds": 326.37683871015906,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false
+}

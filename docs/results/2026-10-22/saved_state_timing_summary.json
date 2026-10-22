@@ -1,0 +1,200 @@
+{
+  "status": "complete",
+  "purpose": "saved_state_timing_without_control_replay",
+  "git_commit": "5f07ffb9748a3a6fe4ac45ee3e376a6c7857e113",
+  "script_sha256": "e2fb442789558565c7c4ad3984835b08638b6f239321da0b8d3d56679afe9822",
+  "split_sha256": "55ce420cca19e20d01b884dbdd1f85c34c670c5fed5a4486a00dc8bdbb2f7111",
+  "cases": [
+    {
+      "goal": "front",
+      "demo": "demo_6",
+      "samples": 9,
+      "median_proprio_error": {
+        "state_t": {
+          "eef_position_l2_m": 0.00488149279864165,
+          "eef_rotation_angle_rad": 0.008904099974832524,
+          "gripper_position_l2": 0.0006227437790061291
+        },
+        "state_t_plus_1": {
+          "eef_position_l2_m": 0.0001590094904228962,
+          "eef_rotation_angle_rad": 0.0005765625982006215,
+          "gripper_position_l2": 0.0
+        }
+      },
+      "median_image_mae": {
+        "state_t": {
+          "agentview_rgb": 1.135498046875,
+          "eye_in_hand_rgb": 3.0408528645833335
+        },
+        "state_t_plus_1": {
+          "agentview_rgb": 0.08601888020833333,
+          "eye_in_hand_rgb": 0.19246419270833334
+        }
+      },
+      "saved_time_delta_s_range": [
+        0.04999999999999449,
+        0.050000000000000044
+      ]
+    },
+    {
+      "goal": "front",
+      "demo": "demo_17",
+      "samples": 10,
+      "median_proprio_error": {
+        "state_t": {
+          "eef_position_l2_m": 0.0026205593763103403,
+          "eef_rotation_angle_rad": 0.007119951301187022,
+          "gripper_position_l2": 0.0006353507083671915
+        },
+        "state_t_plus_1": {
+          "eef_position_l2_m": 0.00010811482313725264,
+          "eef_rotation_angle_rad": 0.0003258096925544909,
+          "gripper_position_l2": 0.0
+        }
+      },
+      "median_image_mae": {
+        "state_t": {
+          "agentview_rgb": 0.619842529296875,
+          "eye_in_hand_rgb": 2.438405354817708
+        },
+        "state_t_plus_1": {
+          "agentview_rgb": 0.05820719401041667,
+          "eye_in_hand_rgb": 0.13331095377604166
+        }
+      },
+      "saved_time_delta_s_range": [
+        0.04999999999999449,
+        0.050000000000000044
+      ]
+    },
+    {
+      "goal": "left",
+      "demo": "demo_6",
+      "samples": 10,
+      "median_proprio_error": {
+        "state_t": {
+          "eef_position_l2_m": 0.005611906000913597,
+          "eef_rotation_angle_rad": 0.003470789152795065,
+          "gripper_position_l2": 0.00032480340471957976
+        },
+        "state_t_plus_1": {
+          "eef_position_l2_m": 0.00022640112496090072,
+          "eef_rotation_angle_rad": 0.00015209352031125928,
+          "gripper_position_l2": 0.0
+        }
+      },
+      "median_image_mae": {
+        "state_t": {
+          "agentview_rgb": 1.0108235677083333,
+          "eye_in_hand_rgb": 2.297119140625
+        },
+        "state_t_plus_1": {
+          "agentview_rgb": 0.08147176106770834,
+          "eye_in_hand_rgb": 0.13123575846354166
+        }
+      },
+      "saved_time_delta_s_range": [
+        0.04999999999999449,
+        0.050000000000000044
+      ]
+    },
+    {
+      "goal": "left",
+      "demo": "demo_17",
+      "samples": 10,
+      "median_proprio_error": {
+        "state_t": {
+          "eef_position_l2_m": 0.002726254102382682,
+          "eef_rotation_angle_rad": 0.006470842723434772,
+          "gripper_position_l2": 0.0001375562218055538
+        },
+        "state_t_plus_1": {
+          "eef_position_l2_m": 0.00011129375449552847,
+          "eef_rotation_angle_rad": 0.00022742474884744772,
+          "gripper_position_l2": 0.0
+        }
+      },
+      "median_image_mae": {
+        "state_t": {
+          "agentview_rgb": 0.7881571451822916,
+          "eye_in_hand_rgb": 2.0379740397135415
+        },
+        "state_t_plus_1": {
+          "agentview_rgb": 0.053995768229166664,
+          "eye_in_hand_rgb": 0.104949951171875
+        }
+      },
+      "saved_time_delta_s_range": [
+        0.04999999999999449,
+        0.050000000000000044
+      ]
+    },
+    {
+      "goal": "right",
+      "demo": "demo_6",
+      "samples": 13,
+      "median_proprio_error": {
+        "state_t": {
+          "eef_position_l2_m": 0.005875927930375088,
+          "eef_rotation_angle_rad": 0.012352850759947697,
+          "gripper_position_l2": 0.00029742590603180566
+        },
+        "state_t_plus_1": {
+          "eef_position_l2_m": 0.00023174234343957057,
+          "eef_rotation_angle_rad": 0.0005524357635244098,
+          "gripper_position_l2": 0.0
+        }
+      },
+      "median_image_mae": {
+        "state_t": {
+          "agentview_rgb": 0.9541015625,
+          "eye_in_hand_rgb": 2.2978719075520835
+        },
+        "state_t_plus_1": {
+          "agentview_rgb": 0.07082112630208333,
+          "eye_in_hand_rgb": 0.14503987630208334
+        }
+      },
+      "saved_time_delta_s_range": [
+        0.04999999999999449,
+        0.050000000000000044
+      ]
+    },
+    {
+      "goal": "right",
+      "demo": "demo_17",
+      "samples": 13,
+      "median_proprio_error": {
+        "state_t": {
+          "eef_position_l2_m": 0.0032220062654624883,
+          "eef_rotation_angle_rad": 0.006958443342312841,
+          "gripper_position_l2": 0.00026598698900339227
+        },
+        "state_t_plus_1": {
+          "eef_position_l2_m": 0.0001319659407636679,
+          "eef_rotation_angle_rad": 0.0005409709248384339,
+          "gripper_position_l2": 0.0
+        }
+      },
+      "median_image_mae": {
+        "state_t": {
+          "agentview_rgb": 0.4691162109375,
+          "eye_in_hand_rgb": 2.6799723307291665
+        },
+        "state_t_plus_1": {
+          "agentview_rgb": 0.053487141927083336,
+          "eye_in_hand_rgb": 0.16619873046875
+        }
+      },
+      "saved_time_delta_s_range": [
+        0.04999999999999449,
+        0.050000000000000044
+      ]
+    }
+  ],
+  "seconds": 9.972383744083345,
+  "limitations": [
+    "This checks temporal correspondence of stored observations and simulator states, not whether a one-step offset explains low policy success.",
+    "It does not change training examples or decide a new data protocol automatically."
+  ]
+}

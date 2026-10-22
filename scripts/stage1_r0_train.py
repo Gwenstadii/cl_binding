@@ -38,6 +38,7 @@ def train(args,config):
     data=ROOT/config['data']['train_output']
     conversion=json.loads((data/'r0_conversion.json').read_text())
     assert conversion['spec']['goals']==config['old_goals'] and conversion['spec']['split']=='train'
+    assert conversion['spec'].get('action_alignment','same_index_legacy')==config['data'].get('action_alignment','same_index_legacy'), 'Dataset alignment does not match config'
     policy=load_policy(args.resume)
     policy.config.n_action_steps=config['model']['n_action_steps']
     policy.config.num_steps=config['model']['flow_steps']
@@ -75,6 +76,7 @@ def train(args,config):
     else:
         dump(run/'manifest.json',{'config':config,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
               'split_sha256':conversion['spec']['split_sha256'],'normalization_source':str(data),
+              'conversion_spec':conversion['spec'],
               'frozen_hash':original_frozen,'purpose':'R0_development_not_qualified_until_holdout_passes'})
     maximum=args.max_steps or c['max_steps']
     if maximum<=start_step:raise ValueError('Target step must exceed resume step')

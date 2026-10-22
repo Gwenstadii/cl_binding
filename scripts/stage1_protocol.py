@@ -7,6 +7,16 @@ import xml.etree.ElementTree as ET
 GOALS = ("front", "left", "right", "back")
 
 
+def observation_action_indices(length, alignment):
+    """Pair within a single trajectory; never borrow a terminal label from another."""
+    if alignment not in ("same_index_legacy", "post_action_obs_to_next_action"):
+        raise ValueError(f"Unknown observation/action alignment: {alignment}")
+    offset = int(alignment == "post_action_obs_to_next_action")
+    if length <= offset:
+        raise ValueError("Trajectory has no usable observation/action pairs")
+    return range(length-offset), range(offset, length)
+
+
 def remap_demo_xml(xml, assets_root, robosuite_root):
     tree = ET.fromstring(xml)
     for element in tree.findall(".//asset/*"):

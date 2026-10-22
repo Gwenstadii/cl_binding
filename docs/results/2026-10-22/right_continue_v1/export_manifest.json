@@ -1,0 +1,127 @@
+{
+  "run_dir": "/home/lzx/cl_binding/.server/right_continue_20261022_01",
+  "source_files": [
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/run_summary.json",
+      "archived_file": "run_summary.json",
+      "sha256": "bc6106d72cc9c349fc553e8ca39033285374a868359cef19a16b678c28020701"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/COMPLETE.json",
+      "archived_file": "COMPLETE.json",
+      "sha256": "51741b831ee14140dc14b6cc00b98131f3263b7ed74fb0863e8d9d0f16e31cd2"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/plan.json",
+      "archived_file": "plan.json",
+      "sha256": "1719d269c5cd32e9d02c6c89bc4af388174c5b4b696b656fe0fd14b2eaca74f4"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/evaluation_config.json",
+      "archived_file": "evaluation_config.json",
+      "sha256": "b9b0447907d20f26d7c676fae96fee76f40a4f113c674ff4ad5bca62981a0536"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/episodes.jsonl",
+      "archived_file": "episodes.jsonl",
+      "sha256": "8d88bc52ee059048372e67fb413fd5013d5a7064fb2fe9f33d5a6386885fcfa3"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/STOP_REQUESTED.json",
+      "archived_file": "STOP_REQUESTED.json",
+      "sha256": "c8b65b0189f3f06c92ea13c40cf1a5c0896a933b83e3f07bb69c734f6285cc0b"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/comparison_to_original_left.json",
+      "archived_file": "comparison_to_original_left.json",
+      "sha256": "e008bb673faf8a2a96c2c8f70f5779e4b5e2d4549838b43f61095caa064d8772"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/comparison_to_right6000.json",
+      "archived_file": "comparison_to_right6000.json",
+      "sha256": "5f60a55e7ddc3dd8c0086bd1ec8536ade9593bc275298c579d63b7e2e5f4f7b0"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/dev_006000/evaluation.json",
+      "archived_file": "dev_006000_evaluation.json",
+      "sha256": "735ee1d57d69b6a24ecdfc4e720faf1f87333ae3fc0525b46444f44c5a04f087"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/dev_006000/episodes.jsonl",
+      "archived_file": "dev_006000_episodes.jsonl",
+      "sha256": "73dde5651774b3c76e20429590067654a702c38db47cbf735cd0bebe95960ce7"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/dev_009000/evaluation.json",
+      "archived_file": "dev_009000_evaluation.json",
+      "sha256": "e3deced617dd4db2a7c54efdbe7fd440bad3c9b72872165122579b5e70f9267d"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/dev_009000/episodes.jsonl",
+      "archived_file": "dev_009000_episodes.jsonl",
+      "sha256": "55291b4933802b026417bda33f1489426d7daf35edc63a2db5d816e399fcd184"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/paired20_part0/evaluation.json",
+      "archived_file": "paired_part0_evaluation.json",
+      "sha256": "cb7a0c97aec60e207d35b42ed31ea03f7cf6eb9c854ab5c5316c34cff173ffbf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/paired20_part0/episodes.jsonl",
+      "archived_file": "paired_part0_episodes.jsonl",
+      "sha256": "6b52e625e95150a3f3ace6e7f9f1381e17c671bdbbbfae77a5a0cccec9edcbed"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/paired20_part1/evaluation.json",
+      "archived_file": "paired_part1_evaluation.json",
+      "sha256": "22b5afcf06cf363ae9585822f32a10e1ec2878af761d70e8b94a0a86e71ea9a2"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/right_continue_20261022_01/paired20_part1/episodes.jsonl",
+      "archived_file": "paired_part1_episodes.jsonl",
+      "sha256": "90ff5fb65dfcb84107052f32941d02e55d94d8de0232315309554b0aa119860d"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/resume_006000.json",
+      "archived_file": "resume_verification.json",
+      "sha256": "e31ea0a743b767bd03ce0150605dd0a1d77001dba4775ad7b23f45b025687981"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/training_finished_010001.json",
+      "archived_file": "training_finished.json",
+      "sha256": "755c71a3dff4400065c77d32c8f7010f8351cf500277c75ae61143d4f68f2bcf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000/CHECKPOINT_COMPLETE.json",
+      "archived_file": "selected_checkpoint_verification.json",
+      "sha256": "bf55fa36136a8c946e7c7b3cc673d8b4ef7531bed97147f87541f0bcc800def2"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000/config.json",
+      "archived_file": "selected_model_config.json",
+      "sha256": "a887c16577320ab7e004a1ea4ee0a815bba5235a2ca5a791893926de3d446ec4"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000/policy_preprocessor.json",
+      "archived_file": "selected_preprocessor.json",
+      "sha256": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000/policy_postprocessor.json",
+      "archived_file": "selected_postprocessor.json",
+      "sha256": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a"
+    }
+  ],
+  "model_weights_exported": false,
+  "resume_model_sha256": "8a8bada5e5a6b8143ef1012d05e7f7bdd60735969234603157ab2fe0ae817f4b",
+  "selected_model_sha256": "97809078a6cece8bd410e2e2eeceea8fc439fd0b7cde726dad2a14c807210b01",
+  "new_rollouts": {
+    "baseline_right_development": 20,
+    "selected_right_development": 20,
+    "paired_four_instructions": 80
+  },
+  "cached_rollouts_reused": {
+    "original_left": 80,
+    "right6000": 80
+  }
+}

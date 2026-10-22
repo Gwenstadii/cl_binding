@@ -1,0 +1,566 @@
+{
+  "status": "complete",
+  "purpose": "P0_control_and_timing_no_training",
+  "git_commit": "d8588ec20e2475fa019173edd044a1ce44c3bd9f",
+  "script_sha256": "6784801b978c6f223151d333e9048aa0164072ba34b0c9069decd93153d9e2ea",
+  "raw_sources": {
+    "front": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy_demo.hdf5",
+    "left": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy_demo.hdf5",
+    "right": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy_demo.hdf5",
+    "back": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_demo.hdf5"
+  },
+  "settle_steps": 0,
+  "cases": [
+    {
+      "goal": "front",
+      "demo": "demo_1",
+      "repetition": 0,
+      "seed": 20261021,
+      "frames": 178,
+      "saved_terminal": {
+        "front": true,
+        "left": false,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "front",
+        "first_goal": "front",
+        "first_goal_times": {
+          "front": 174,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "front",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        44,
+        45,
+        46,
+        89,
+        133,
+        176,
+        177
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.0046068965804518455,
+          "eef_rotation_angle_rad": 0.012142876505387047,
+          "gripper_position_l2": 0.00028533708574116204
+        },
+        "after": {
+          "eef_position_l2_m": 0.006676036649909337,
+          "eef_rotation_angle_rad": 0.03713442150638142,
+          "gripper_position_l2": 0.006807390632834863
+        }
+      },
+      "first_qpos_divergence_action_index": 0,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "27cfb81fc953b3a3b0e67a7887f78cdae2bc12bb5ff439aa8eb6a088d8e150f7",
+      "scene_xml_sha256": "a075eec3468f45b1c1206f760565b34f7ec9b5d90e8f5ca87d920711b23f8654",
+      "replay_terminal_proprio": [
+        -0.3482654616475407,
+        -0.14346436189507025,
+        1.0268780711080763,
+        2.3424171618930942,
+        -2.1421099982566236,
+        -0.2839461618169192,
+        0.018913029285300437,
+        -0.01259339397171568
+      ],
+      "seconds": 11.271614822093397
+    },
+    {
+      "goal": "front",
+      "demo": "demo_1",
+      "repetition": 1,
+      "seed": 20261021,
+      "frames": 178,
+      "saved_terminal": {
+        "front": true,
+        "left": false,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "front",
+        "first_goal": "front",
+        "first_goal_times": {
+          "front": 174,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "front",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        44,
+        45,
+        46,
+        89,
+        133,
+        176,
+        177
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.0046068965804518455,
+          "eef_rotation_angle_rad": 0.012142876505387047,
+          "gripper_position_l2": 0.00028533708574116204
+        },
+        "after": {
+          "eef_position_l2_m": 0.006676036649909337,
+          "eef_rotation_angle_rad": 0.03713442150638142,
+          "gripper_position_l2": 0.006807390632834863
+        }
+      },
+      "first_qpos_divergence_action_index": 0,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "27cfb81fc953b3a3b0e67a7887f78cdae2bc12bb5ff439aa8eb6a088d8e150f7",
+      "scene_xml_sha256": "a075eec3468f45b1c1206f760565b34f7ec9b5d90e8f5ca87d920711b23f8654",
+      "replay_terminal_proprio": [
+        -0.3482654616475407,
+        -0.14346436189507025,
+        1.0268780711080763,
+        2.3424171618930942,
+        -2.1421099982566236,
+        -0.2839461618169192,
+        0.018913029285300437,
+        -0.01259339397171568
+      ],
+      "seconds": 11.111221374943852
+    },
+    {
+      "goal": "right",
+      "demo": "demo_1",
+      "repetition": 0,
+      "seed": 20261021,
+      "frames": 121,
+      "saved_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": "right",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": 110,
+          "back": null
+        },
+        "terminal_goal": "right",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        30,
+        42,
+        43,
+        44,
+        60,
+        82,
+        90,
+        119,
+        120
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.006889844418800621,
+          "eef_rotation_angle_rad": 0.012625148663793105,
+          "gripper_position_l2": 0.00030574497928868025
+        },
+        "after": {
+          "eef_position_l2_m": 0.006704724443925702,
+          "eef_rotation_angle_rad": 0.02201142371905869,
+          "gripper_position_l2": 0.0068027011208091695
+        }
+      },
+      "first_qpos_divergence_action_index": 0,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "6a3d119af51054373c3cb3526ae276fcaea0c96d319c07bd2c5617593d189c26",
+      "scene_xml_sha256": "78bff8566fcbc052c147d9cc978507b14023be47109e76c69c4b5aab6069e2d8",
+      "replay_terminal_proprio": [
+        -0.4351267985880938,
+        -0.027789468684713617,
+        1.062539903341929,
+        2.8315276906873406,
+        -1.7128990821756689,
+        -0.03757897994679071,
+        0.007001820361379349,
+        -0.022943290966015713
+      ],
+      "seconds": 12.706295352894813
+    },
+    {
+      "goal": "right",
+      "demo": "demo_1",
+      "repetition": 1,
+      "seed": 20261021,
+      "frames": 121,
+      "saved_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": "right",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": 110,
+          "back": null
+        },
+        "terminal_goal": "right",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        30,
+        42,
+        43,
+        44,
+        60,
+        82,
+        90,
+        119,
+        120
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.006889844418800621,
+          "eef_rotation_angle_rad": 0.012625148663793105,
+          "gripper_position_l2": 0.00030574497928868025
+        },
+        "after": {
+          "eef_position_l2_m": 0.006704724443925702,
+          "eef_rotation_angle_rad": 0.02201142371905869,
+          "gripper_position_l2": 0.0068027011208091695
+        }
+      },
+      "first_qpos_divergence_action_index": 0,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "6a3d119af51054373c3cb3526ae276fcaea0c96d319c07bd2c5617593d189c26",
+      "scene_xml_sha256": "78bff8566fcbc052c147d9cc978507b14023be47109e76c69c4b5aab6069e2d8",
+      "replay_terminal_proprio": [
+        -0.4351267985880938,
+        -0.027789468684713617,
+        1.062539903341929,
+        2.8315276906873406,
+        -1.7128990821756689,
+        -0.03757897994679071,
+        0.007001820361379349,
+        -0.022943290966015713
+      ],
+      "seconds": 12.651873166207224
+    },
+    {
+      "goal": "right",
+      "demo": "demo_0",
+      "repetition": 0,
+      "seed": 20261021,
+      "frames": 161,
+      "saved_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        40,
+        46,
+        47,
+        48,
+        80,
+        91,
+        120,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.005026242107636213,
+          "eef_rotation_angle_rad": 0.004977061094335337,
+          "gripper_position_l2": 0.0018974871764698424
+        },
+        "after": {
+          "eef_position_l2_m": 0.009086635362380687,
+          "eef_rotation_angle_rad": 0.018511958786886343,
+          "gripper_position_l2": 0.005545491577644947
+        }
+      },
+      "first_qpos_divergence_action_index": 1,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "cd892035b885674989fb0ac320648023f6442041ecd4146bfd48c467eb97659d",
+      "scene_xml_sha256": "6b83a0e34515078efdeb32ef0f2ccd42454c39f06400562b3fe370f0fde96c65",
+      "replay_terminal_proprio": [
+        -0.3609118430839597,
+        0.00028957056874453525,
+        1.1542023403480761,
+        2.591950008949577,
+        -1.8003166435348021,
+        0.20462929762614673,
+        0.024729077952576686,
+        -0.014015229648217976
+      ],
+      "seconds": 15.787297680042684
+    },
+    {
+      "goal": "right",
+      "demo": "demo_0",
+      "repetition": 1,
+      "seed": 20261021,
+      "frames": 161,
+      "saved_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        40,
+        46,
+        47,
+        48,
+        80,
+        91,
+        120,
+        156,
+        157,
+        158,
+        159,
+        160
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.005026242107636213,
+          "eef_rotation_angle_rad": 0.004977061094335337,
+          "gripper_position_l2": 0.0018974871764698424
+        },
+        "after": {
+          "eef_position_l2_m": 0.009086635362380687,
+          "eef_rotation_angle_rad": 0.018511958786886343,
+          "gripper_position_l2": 0.005545491577644947
+        }
+      },
+      "first_qpos_divergence_action_index": 1,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "cd892035b885674989fb0ac320648023f6442041ecd4146bfd48c467eb97659d",
+      "scene_xml_sha256": "6b83a0e34515078efdeb32ef0f2ccd42454c39f06400562b3fe370f0fde96c65",
+      "replay_terminal_proprio": [
+        -0.3609118430839597,
+        0.00028957056874453525,
+        1.1542023403480761,
+        2.591950008949577,
+        -1.8003166435348021,
+        0.20462929762614673,
+        0.024729077952576686,
+        -0.014015229648217976
+      ],
+      "seconds": 15.761094307061285
+    },
+    {
+      "goal": "right",
+      "demo": "demo_2",
+      "repetition": 0,
+      "seed": 20261021,
+      "frames": 123,
+      "saved_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        30,
+        42,
+        43,
+        44,
+        61,
+        82,
+        92,
+        114,
+        115,
+        116,
+        121,
+        122
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.0047726854007576385,
+          "eef_rotation_angle_rad": 0.005570459219956513,
+          "gripper_position_l2": 0.00028425587354704337
+        },
+        "after": {
+          "eef_position_l2_m": 0.008180242663614055,
+          "eef_rotation_angle_rad": 0.02589962597377552,
+          "gripper_position_l2": 0.005343313430949908
+        }
+      },
+      "first_qpos_divergence_action_index": 0,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "f6a33f1719097f4fd00fc12750d65bca2e99ebb938f4c62004ac8de4f18a456c",
+      "scene_xml_sha256": "c3b655b86abbcfecb2343affdbb2e724673194164a1fd11cb9fac2db4d9f0c95",
+      "replay_terminal_proprio": [
+        -0.36670232345452713,
+        -0.06079933288903339,
+        1.1364044061237994,
+        3.010656083921564,
+        -1.0124968385222102,
+        -0.023434082165425446,
+        0.029646511395463655,
+        -0.0296672521648946
+      ],
+      "seconds": 15.606746879871935
+    },
+    {
+      "goal": "right",
+      "demo": "demo_2",
+      "repetition": 1,
+      "seed": 20261021,
+      "frames": 123,
+      "saved_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      },
+      "timing_indices": [
+        0,
+        1,
+        30,
+        42,
+        43,
+        44,
+        61,
+        82,
+        92,
+        114,
+        115,
+        116,
+        121,
+        122
+      ],
+      "timing_error_medians": {
+        "before": {
+          "eef_position_l2_m": 0.0047726854007576385,
+          "eef_rotation_angle_rad": 0.005570459219956513,
+          "gripper_position_l2": 0.00028425587354704337
+        },
+        "after": {
+          "eef_position_l2_m": 0.008180242663614055,
+          "eef_rotation_angle_rad": 0.02589962597377552,
+          "gripper_position_l2": 0.005343313430949908
+        }
+      },
+      "first_qpos_divergence_action_index": 0,
+      "qpos_divergence_threshold": 0.01,
+      "initial_state_sha256": "f6a33f1719097f4fd00fc12750d65bca2e99ebb938f4c62004ac8de4f18a456c",
+      "scene_xml_sha256": "c3b655b86abbcfecb2343affdbb2e724673194164a1fd11cb9fac2db4d9f0c95",
+      "replay_terminal_proprio": [
+        -0.36670232345452713,
+        -0.06079933288903339,
+        1.1364044061237994,
+        3.010656083921564,
+        -1.0124968385222102,
+        -0.023434082165425446,
+        0.029646511395463655,
+        -0.0296672521648946
+      ],
+      "seconds": 15.517383236903697
+    }
+  ],
+  "limitations": [
+    "Raw flattened simulator states do not restore all controller, observable, or contact-solver history.",
+    "Single-state timing probes reset controller history and are diagnostics, not exact expert continuation.",
+    "qpos/qvel L2 combine coordinates with different units; they are divergence diagnostics.",
+    "No labels or data conversion are changed by this audit."
+  ],
+  "seconds": 114.80025396496058
+}

@@ -201,6 +201,34 @@ class Stage1ProtocolTests(unittest.TestCase):
         self.assertEqual(gate(rows+old,'right',20,16),gate(rows,'right',20,16))
         with self.assertRaises(ValueError):gate(rows[:-1]+[rows[0]],'right',20,16)
 
+    def test_overnight_sequence_preserves_two_fixed_12000_task_budgets_and_order(self):
+        import copy
+        import json
+        from stage1_complete_sequence import validate_plan
+        path=Path(__file__).resolve().parents[1]/'configs/stage1_four_task_sequence_v1.json'
+        plan=json.loads(path.read_text())
+        validate_plan(plan)
+        changed=copy.deepcopy(plan);changed['stages'][0]['steps']=11999
+        with self.assertRaises(ValueError):validate_plan(changed)
+        changed=copy.deepcopy(plan);changed['stages'].reverse()
+        with self.assertRaises(ValueError):validate_plan(changed)
+
+    def test_three_task_summary_excludes_untrained_fourth_task_from_aggregate(self):
+        from stage1_complete_sequence import summarize_snapshot
+        rows=[]
+        for idx in range(20):
+            for goal in self.protocol().GOALS:
+                actual='back' if goal=='back' else 'front'
+                rows.append({'requested_goal':goal,'init_index':idx,'seed':42+idx,
+                             'initial_state_sha256':f'state{idx}','scene_xml_sha256':'scene',
+                             'first_goal':actual,'first_goal_times':{g:(1 if g==actual else None) for g in self.protocol().GOALS},
+                             'correct_ever':goal==actual,'terminal_goal':actual,
+                             'terminal_category':'correct' if goal==actual else 'wrong_goal'})
+        summary=summarize_snapshot(rows,['left','right','front'],'front')
+        self.assertEqual(summary['exposed_task_aggregate'],{'episodes':60,'success_ever':20,'terminal_correct':20})
+        self.assertEqual(summary['task_success_counts']['back']['terminal_correct'],20)
+        with self.assertRaises(ValueError):summarize_snapshot(rows[:40],['left','right','front'],'front')
+
 
 if __name__ == "__main__":
     unittest.main()

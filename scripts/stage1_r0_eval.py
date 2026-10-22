@@ -218,7 +218,7 @@ def evaluate(args, config):
     report={"status":"complete","partition":args.partition,"checkpoint":str(args.checkpoint) if args.checkpoint else None,
             "policy_source":"base_with_training_stats" if args.base_policy else "checkpoint",
             "instruction_goals":instruction_goals,"gate_goals":config['old_goals'],
-            "normalization_source":config['data']['train_output'],
+            "normalization_source":config['data'].get('normalization_source',config['data']['train_output']),
             "git_commit":subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
             "counts":counts,"passed_gate":q["qualified"],"seconds":time.monotonic()-start,
             "horizon":e["horizon"],"n_action_steps":policy.config.n_action_steps,

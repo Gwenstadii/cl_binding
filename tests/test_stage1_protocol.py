@@ -133,6 +133,47 @@ class Stage1ProtocolTests(unittest.TestCase):
         self.assertEqual(result['first_target_matrix']['front']['left'],2)
         self.assertEqual(result['other_instruction_intrusion']['trained_goal_ever_without_requested_success'],2)
 
+    def test_sequential_comparison_separates_new_target_replacement_from_late_destruction(self):
+        import copy
+        from stage1_sequential_run import compare_sequential
+        before=self.response_rows()
+        for row in before:
+            goal=row['requested_goal']
+            row.update(steps=400,first_goal='left',correct_ever=goal=='left',
+                       first_goal_times={g:(1 if g=='left' else None) for g in self.protocol().GOALS},
+                       terminal_goal='left',terminal_category='correct' if goal=='left' else 'wrong_goal')
+        after=copy.deepcopy(before)
+        for row in after:
+            goal=row['requested_goal']
+            row.update(first_goal='right',terminal_goal='right',
+                       terminal_category='correct' if goal=='right' else 'wrong_goal',
+                       correct_ever=goal=='right',
+                       first_goal_times={g:(1 if g=='right' else None) for g in self.protocol().GOALS})
+        late=next(row for row in after if row['init_index']==1 and row['requested_goal']=='left')
+        late.update(first_goal='left',correct_ever=True)
+        late['first_goal_times']['left']=0
+        result=compare_sequential(before,after,'left','right')
+        old=result['old_goal_previously_successful_ever']
+        self.assertEqual(old['total'],2)
+        self.assertEqual(old['lost_success_ever'],1)
+        self.assertEqual(old['lost_and_first_new_goal'],1)
+        self.assertEqual(old['lost_and_terminal_new_goal'],1)
+        self.assertEqual(old['retained_success_ever'],1)
+        self.assertEqual(result['old_goal_previously_terminal_correct']['lost_and_terminal_new_goal'],2)
+        self.assertEqual(result['after']['task_success_counts']['right']['success_ever'],2)
+
+    def test_sequential_comparison_rejects_changed_pre_post_conditions(self):
+        import copy
+        from stage1_sequential_run import compare_sequential
+        before=self.response_rows()
+        for row in before:
+            row.update(steps=400,first_goal=row['terminal_goal'],correct_ever=row['terminal_category']=='correct',
+                       first_goal_times={g:(1 if row['terminal_goal']==g else None) for g in self.protocol().GOALS})
+        after=copy.deepcopy(before)
+        for row in after:
+            row['seed']+=1
+        with self.assertRaises(ValueError):compare_sequential(before,after,'left','right')
+
 
 if __name__ == "__main__":
     unittest.main()

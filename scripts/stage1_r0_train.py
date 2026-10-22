@@ -39,13 +39,22 @@ def train(args,config):
     conversion=json.loads((data/'r0_conversion.json').read_text())
     assert conversion['spec']['goals']==config['old_goals'] and conversion['spec']['split']=='train'
     assert conversion['spec'].get('action_alignment','same_index_legacy')==config['data'].get('action_alignment','same_index_legacy'), 'Dataset alignment does not match config'
-    policy=load_policy(args.resume)
+    initial=args.resume or args.init_checkpoint
+    initial_manifest=None
+    if args.init_checkpoint:
+        marker=json.loads((args.init_checkpoint/'CHECKPOINT_COMPLETE.json').read_text())
+        if marker['status']!='pass':raise ValueError('Initialization checkpoint is not verified')
+        initial_manifest=json.loads((args.init_checkpoint.parent.parent/'manifest.json').read_text())
+        expected=config['data'].get('normalization_source')
+        if not expected or (ROOT/expected).resolve()!=Path(initial_manifest['normalization_source']).resolve():
+            raise ValueError('Sequential adaptation must explicitly preserve the parent normalization source')
+    policy=load_policy(initial)
     policy.config.n_action_steps=config['model']['n_action_steps']
     policy.config.num_steps=config['model']['flow_steps']
     dataset=LeRobotDataset('local/cl_binding_r0_train',root=data,video_backend='pyav',
             delta_timestamps={'action':[i/config['data']['fps'] for i in range(policy.config.chunk_size)]})
-    if args.resume:
-        pre,post=make_pre_post_processors(policy.config,pretrained_path=args.resume)
+    if initial:
+        pre,post=make_pre_post_processors(policy.config,pretrained_path=initial)
     else:
         pre,post=make_pre_post_processors(policy.config,dataset_stats=dataset.meta.stats)
     groups={g:[] for g in config['old_goals']};offset=0
@@ -56,6 +65,9 @@ def train(args,config):
     assert not any('.vlm.' in name for name in names), 'VLM must be frozen'
     dump(run/'trainable_parameters.json',{'names':names,'count':sum(p.numel() for p in policy.parameters() if p.requires_grad)})
     original_frozen=frozen_hash(policy)
+    if args.init_checkpoint:
+        assert marker['frozen_hash_unchanged'] is True
+        assert original_frozen==initial_manifest['frozen_hash'], 'Initialization changed frozen parameters'
     params=[p for p in policy.parameters() if p.requires_grad]
     c=config['training']
     optimizer=torch.optim.AdamW(params,lr=c['learning_rate'],betas=policy.config.optimizer_betas,
@@ -74,10 +86,18 @@ def train(args,config):
                 'optimizer_state_entries':len(optimizer.state),'scheduler_last_epoch':scheduler.last_epoch})
         print('COMPLETE_TRAINING_STATE_RESTORED',start_step,flush=True)
     else:
-        dump(run/'manifest.json',{'config':config,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-              'split_sha256':conversion['spec']['split_sha256'],'normalization_source':str(data),
+        manifest={'config':config,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+              'split_sha256':conversion['spec']['split_sha256'],'normalization_source':initial_manifest['normalization_source'] if initial_manifest else str(data),
               'conversion_spec':conversion['spec'],
-              'frozen_hash':original_frozen,'purpose':'R0_development_not_qualified_until_holdout_passes'})
+              'frozen_hash':original_frozen,'purpose':config.get('purpose','R0_development_not_qualified_until_holdout_passes')}
+        if args.init_checkpoint:
+            manifest.update(initialization_checkpoint=str(args.init_checkpoint.resolve()),
+                initialization_model_sha256=hashlib.sha256((args.init_checkpoint/'model.safetensors').read_bytes()).hexdigest(),
+                initialization_step=marker['step'], optimizer_reset=True, scheduler_reset=True,
+                normalization_policy='inherit_parent_pre_and_post_processors',
+                parent_processor_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest()
+                    for p in args.init_checkpoint.glob('*processor*.safetensors')})
+        dump(run/'manifest.json',manifest)
     maximum=args.max_steps or c['max_steps']
     if maximum<=start_step:raise ValueError('Target step must exceed resume step')
     torch.cuda.reset_peak_memory_stats()
@@ -144,6 +164,9 @@ def train(args,config):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--config',type=Path,default=ROOT/'configs/stage1_r0.json')
-    p.add_argument('--run-dir',type=Path,required=True);p.add_argument('--resume',type=Path)
+    p.add_argument('--run-dir',type=Path,required=True)
+    initialization=p.add_mutually_exclusive_group()
+    initialization.add_argument('--resume',type=Path,help='Resume this run including optimizer, scheduler and RNG')
+    initialization.add_argument('--init-checkpoint',type=Path,help='Start a new task from verified parent weights/processors with a fresh optimizer')
     p.add_argument('--max-steps',type=int)
     a=p.parse_args();train(a,json.loads(a.config.read_text()))

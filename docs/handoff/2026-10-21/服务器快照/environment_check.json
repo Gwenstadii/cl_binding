@@ -1,0 +1,147 @@
+{
+  "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+  "versions": {
+    "lerobot": "0.6.2",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0",
+    "torchcodec": "0.10.0",
+    "transformers": "5.5.4",
+    "accelerate": "1.15.0",
+    "huggingface-hub": "1.33.0",
+    "hf-libero": "0.1.4",
+    "mujoco": "3.8.1",
+    "robosuite": "1.4.0",
+    "av": "15.1.0",
+    "h5py": "3.16.0"
+  },
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 3090"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 3090"
+    }
+  ],
+  "lerobot_import": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/__init__.py",
+  "libero_paths": {
+    "benchmark_root": "/home/lzx/cl_binding/.venv/lib/python3.12/site-packages/libero/libero",
+    "bddl_files": "/home/lzx/cl_binding/.venv/lib/python3.12/site-packages/libero/libero/bddl_files",
+    "init_states": "/home/lzx/cl_binding/.venv/lib/python3.12/site-packages/libero/libero/init_files",
+    "assets": "/home/lzx/.cache/libero/assets",
+    "datasets": "/home/lzx/cl_binding/datasets/raw"
+  },
+  "task_checks": [
+    {
+      "goal": "front",
+      "task_id": 78,
+      "definition_exists": true,
+      "initial_state_exists": true
+    },
+    {
+      "goal": "left",
+      "task_id": 79,
+      "definition_exists": true,
+      "initial_state_exists": true
+    },
+    {
+      "goal": "right",
+      "task_id": 80,
+      "definition_exists": true,
+      "initial_state_exists": true
+    },
+    {
+      "goal": "back",
+      "task_id": 77,
+      "definition_exists": true,
+      "initial_state_exists": true
+    }
+  ],
+  "pyav_import": "ok",
+  "torchcodec": "import_ok",
+  "model_weights_downloaded_by_check": false,
+  "smolvla_import": "SmolVLAPolicy",
+  "render_smoke": [
+    {
+      "goal": "front",
+      "status": "ok",
+      "cameras": {
+        "agentview_image": [
+          64,
+          64,
+          3
+        ],
+        "robot0_eye_in_hand_image": [
+          64,
+          64,
+          3
+        ]
+      },
+      "pixel_standard_deviation": {
+        "agentview_image": 36.20108092083119,
+        "robot0_eye_in_hand_image": 40.93879566390949
+      }
+    },
+    {
+      "goal": "left",
+      "status": "ok",
+      "cameras": {
+        "agentview_image": [
+          64,
+          64,
+          3
+        ],
+        "robot0_eye_in_hand_image": [
+          64,
+          64,
+          3
+        ]
+      },
+      "pixel_standard_deviation": {
+        "agentview_image": 36.785511489756466,
+        "robot0_eye_in_hand_image": 40.96864066524418
+      }
+    },
+    {
+      "goal": "right",
+      "status": "ok",
+      "cameras": {
+        "agentview_image": [
+          64,
+          64,
+          3
+        ],
+        "robot0_eye_in_hand_image": [
+          64,
+          64,
+          3
+        ]
+      },
+      "pixel_standard_deviation": {
+        "agentview_image": 36.307786994239976,
+        "robot0_eye_in_hand_image": 40.93001456479003
+      }
+    },
+    {
+      "goal": "back",
+      "status": "ok",
+      "cameras": {
+        "agentview_image": [
+          64,
+          64,
+          3
+        ],
+        "robot0_eye_in_hand_image": [
+          64,
+          64,
+          3
+        ]
+      },
+      "pixel_standard_deviation": {
+        "agentview_image": 35.95269323746713,
+        "robot0_eye_in_hand_image": 41.19348607334129
+      }
+    }
+  ]
+}

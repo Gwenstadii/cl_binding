@@ -7,3 +7,6 @@
 *.yml text eol=lf
 *.json text eol=lf
 *.md text eol=lf
+
+# Preserve archived evidence bytes and their SHA256 values across platforms.
+docs/handoff/2026-10-21/** -text -whitespace

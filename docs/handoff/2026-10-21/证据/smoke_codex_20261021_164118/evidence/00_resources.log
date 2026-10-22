@@ -1,0 +1,31 @@
+{
+  "mode": "plan",
+  "models": {
+    "lerobot/smolvla_base": {
+      "status": "reuse",
+      "path": "/home/lzx/hf_models/smolvla_base"
+    },
+    "lerobot/smolvla_libero": {
+      "status": "reuse",
+      "path": "/home/lzx/hf_models/smolvla_libero"
+    }
+  },
+  "demonstrations": {
+    "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy_demo.hdf5": {
+      "status": "reuse",
+      "path": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy_demo.hdf5"
+    },
+    "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy_demo.hdf5": {
+      "status": "reuse",
+      "path": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy_demo.hdf5"
+    },
+    "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy_demo.hdf5": {
+      "status": "reuse",
+      "path": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy_demo.hdf5"
+    },
+    "STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_demo.hdf5": {
+      "status": "reuse",
+      "path": "/home/lzx/cl_binding/datasets/raw/libero_90/STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_demo.hdf5"
+    }
+  }
+}

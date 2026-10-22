@@ -1,0 +1,201 @@
+{
+  "pipeline_status": "complete",
+  "r0_qualified": false,
+  "qualification_started": false,
+  "training": {
+    "status": "complete",
+    "step": 6000,
+    "target": 6000,
+    "seconds": 2620.63172353385,
+    "peak_allocated_mib": 3154.4130859375,
+    "frozen_parameters_unchanged": true
+  },
+  "training_record_exposures": 36000,
+  "training_frames": 16634,
+  "frame_equivalent_passes": 2.1642419141517375,
+  "screening": [
+    {
+      "step": 500,
+      "front": 0,
+      "left": 1,
+      "right": 0,
+      "total_correct": 1,
+      "ever_correct": 1,
+      "correct_then_destroyed": 0,
+      "unfinished": 8,
+      "wrong_goal": 0,
+      "loss_last100": 0.7881245237588882
+    },
+    {
+      "step": 1000,
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "total_correct": 0,
+      "ever_correct": 0,
+      "correct_then_destroyed": 0,
+      "unfinished": 9,
+      "wrong_goal": 0,
+      "loss_last100": 0.681281141936779
+    },
+    {
+      "step": 1500,
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "total_correct": 0,
+      "ever_correct": 0,
+      "correct_then_destroyed": 0,
+      "unfinished": 9,
+      "wrong_goal": 0,
+      "loss_last100": 0.6322203993797302
+    },
+    {
+      "step": 2000,
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "total_correct": 0,
+      "ever_correct": 0,
+      "correct_then_destroyed": 0,
+      "unfinished": 9,
+      "wrong_goal": 0,
+      "loss_last100": 0.606763644516468
+    },
+    {
+      "step": 2500,
+      "front": 0,
+      "left": 1,
+      "right": 0,
+      "total_correct": 1,
+      "ever_correct": 2,
+      "correct_then_destroyed": 1,
+      "unfinished": 8,
+      "wrong_goal": 0,
+      "loss_last100": 0.5904220169782639
+    },
+    {
+      "step": 3000,
+      "front": 1,
+      "left": 2,
+      "right": 2,
+      "total_correct": 5,
+      "ever_correct": 5,
+      "correct_then_destroyed": 0,
+      "unfinished": 4,
+      "wrong_goal": 0,
+      "loss_last100": 0.5642689096927643
+    },
+    {
+      "step": 3500,
+      "front": 0,
+      "left": 2,
+      "right": 1,
+      "total_correct": 3,
+      "ever_correct": 3,
+      "correct_then_destroyed": 0,
+      "unfinished": 6,
+      "wrong_goal": 0,
+      "loss_last100": 0.549766982793808
+    },
+    {
+      "step": 4000,
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "total_correct": 0,
+      "ever_correct": 2,
+      "correct_then_destroyed": 2,
+      "unfinished": 9,
+      "wrong_goal": 0,
+      "loss_last100": 0.5328519070148467
+    },
+    {
+      "step": 4500,
+      "front": 0,
+      "left": 2,
+      "right": 0,
+      "total_correct": 2,
+      "ever_correct": 2,
+      "correct_then_destroyed": 0,
+      "unfinished": 7,
+      "wrong_goal": 0,
+      "loss_last100": 0.509137655198574
+    },
+    {
+      "step": 5000,
+      "front": 0,
+      "left": 2,
+      "right": 0,
+      "total_correct": 2,
+      "ever_correct": 3,
+      "correct_then_destroyed": 1,
+      "unfinished": 7,
+      "wrong_goal": 0,
+      "loss_last100": 0.49230045154690744
+    },
+    {
+      "step": 5500,
+      "front": 0,
+      "left": 2,
+      "right": 1,
+      "total_correct": 3,
+      "ever_correct": 5,
+      "correct_then_destroyed": 2,
+      "unfinished": 6,
+      "wrong_goal": 0,
+      "loss_last100": 0.5144736397266388
+    },
+    {
+      "step": 6000,
+      "front": 1,
+      "left": 2,
+      "right": 1,
+      "total_correct": 4,
+      "ever_correct": 5,
+      "correct_then_destroyed": 1,
+      "unfinished": 5,
+      "wrong_goal": 0,
+      "loss_last100": 0.4913907462358475
+    }
+  ],
+  "offline_diagnostic": [
+    {
+      "model": "base",
+      "split": "train",
+      "flow_matching_loss_mean": 3.7781204539868565,
+      "xyz_first10_mae_mean": 0.2789814099113388
+    },
+    {
+      "model": "base",
+      "split": "validation",
+      "flow_matching_loss_mean": 3.4793685492542052,
+      "xyz_first10_mae_mean": 0.28192311307426865
+    },
+    {
+      "model": "003000",
+      "split": "train",
+      "flow_matching_loss_mean": 0.5886676005191274,
+      "xyz_first10_mae_mean": 0.1538578533652145
+    },
+    {
+      "model": "003000",
+      "split": "validation",
+      "flow_matching_loss_mean": 0.697253407082624,
+      "xyz_first10_mae_mean": 0.15129612520905747
+    },
+    {
+      "model": "006000",
+      "split": "train",
+      "flow_matching_loss_mean": 0.47766852678938043,
+      "xyz_first10_mae_mean": 0.12905295188166307
+    },
+    {
+      "model": "006000",
+      "split": "validation",
+      "flow_matching_loss_mean": 0.6785809056212505,
+      "xyz_first10_mae_mean": 0.13252143852637407
+    }
+  ],
+  "conclusion": "Engineering pipeline complete; R0 has not passed its preregistered development/qualification gates."
+}

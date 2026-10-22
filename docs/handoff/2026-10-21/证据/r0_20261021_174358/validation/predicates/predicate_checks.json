@@ -1,0 +1,173 @@
+{
+  "predicates": {
+    "front": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_front_contain_region"
+      ]
+    ],
+    "left": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_left_contain_region"
+      ]
+    ],
+    "right": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_right_contain_region"
+      ]
+    ],
+    "back": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_back_contain_region"
+      ]
+    ]
+  },
+  "replays": [
+    {
+      "goal": "front",
+      "stored_terminal": {
+        "front": true,
+        "left": false,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "front",
+        "first_goal": "front",
+        "first_goal_times": {
+          "front": 122,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "front",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "left",
+      "stored_terminal": {
+        "front": false,
+        "left": true,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "left",
+        "first_goal": "left",
+        "first_goal_times": {
+          "front": null,
+          "left": 97,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "left",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "right",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      }
+    }
+  ],
+  "reset_partitions": {
+    "horizon": 400,
+    "settle_steps": 10,
+    "common_state_source_goal": "front",
+    "screen_indices": [
+      0,
+      1,
+      2
+    ],
+    "development_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "qualification_indices": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "paired_indices": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "reserve_indices": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "development_required_correct": 8,
+    "qualification_required_correct": 16
+  }
+}

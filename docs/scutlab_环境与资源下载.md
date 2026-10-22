@@ -1,5 +1,7 @@
 # scutlab：环境、已有资源与后续下载
 
+> 历史环境/冒烟记录。当前R0进度和接手说明请看[科研交接](handoff/2026-10-21/先读这个_科研交接.md)。不要按旧示例直接pull main或重跑已有输出目录。
+
 日期：2026-10-21。项目：[Gwenstadii/cl_binding](https://github.com/Gwenstadii/cl_binding)。
 
 ## 本次实际完成的验收

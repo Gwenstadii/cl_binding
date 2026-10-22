@@ -1,0 +1,73 @@
+{
+  "verified_at": "2026-10-21T22:25:09.232141+08:00",
+  "hostname": "ub-MS-7D31",
+  "user": "lzx",
+  "project": "/home/lzx/cl_binding",
+  "git_branch": "codex/stage1-r0-20261021",
+  "git_commit": "9224eaddf0fcf7cf8e53d313daf3ee7b76d86c45",
+  "git_status": "",
+  "gpu_status": "0, NVIDIA GeForce RTX 3090, 708 MiB, 0 %\n1, NVIDIA GeForce RTX 3090, 37 MiB, 0 %",
+  "gpu_processes": "",
+  "disk": "文件系统        容量  已用  可用 已用% 挂载点\n/dev/nvme0n1p2  916G  375G  494G   44% /",
+  "run_id": "r0_20261021_174358",
+  "pipeline_summary": {
+    "pipeline_status": "complete",
+    "r0_qualified": false,
+    "run_id": "r0_20261021_174358",
+    "training_dir": "outputs/r0/r0_20261021_174358",
+    "qualification": null,
+    "checkpoints": [
+      "000500",
+      "001000",
+      "001500",
+      "002000",
+      "002500",
+      "003000",
+      "003500",
+      "004000",
+      "004500",
+      "005000",
+      "005500",
+      "006000"
+    ],
+    "development_reports": [
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_000500_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_001000_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_001500_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_002000_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_002500_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_003000_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_003500_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_004000_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_004500_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_005000_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_005500_screen/evaluation.json",
+      "/home/lzx/cl_binding/.server/r0_20261021_174358/eval_006000_screen/evaluation.json"
+    ],
+    "scope": "R0 development only; no FT/ER continuation launched"
+  },
+  "training_finished": {
+    "status": "complete",
+    "step": 6000,
+    "target": 6000,
+    "seconds": 2620.63172353385,
+    "peak_allocated_mib": 3154.4130859375,
+    "frozen_parameters_unchanged": true
+  },
+  "checkpoint_markers": [
+    "outputs/r0/r0_20261021_174358/checkpoints/000500/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/001000/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/001500/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/002000/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/002500/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/003000/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/003500/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/004000/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/004500/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/005000/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/005500/CHECKPOINT_COMPLETE.json",
+    "outputs/r0/r0_20261021_174358/checkpoints/006000/CHECKPOINT_COMPLETE.json"
+  ],
+  "main_run_tmux_session_present": false,
+  "note": "Read-only handoff audit; no training/evaluation/installation/deletion started."
+}

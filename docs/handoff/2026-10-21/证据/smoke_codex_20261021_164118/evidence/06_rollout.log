@@ -1,0 +1,11 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+{"goal": "front", "task_id": 78, "status": "pass", "policy_steps": 8, "task_success": false}
+{"goal": "left", "task_id": 79, "status": "pass", "policy_steps": 8, "task_success": false}
+{"goal": "right", "task_id": 80, "status": "pass", "policy_steps": 8, "task_success": false}
+{"goal": "back", "task_id": 77, "status": "pass", "policy_steps": 8, "task_success": false}

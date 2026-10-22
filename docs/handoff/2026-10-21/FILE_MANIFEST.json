@@ -1,0 +1,1051 @@
+{
+  "historical_execution_commit": "9224eaddf0fcf7cf8e53d313daf3ee7b76d86c45",
+  "archive_byte_policy": "Git attributes disable newline normalization for this archive",
+  "files": [
+    {
+      "path": "先读这个_科研交接.md",
+      "bytes": 22528,
+      "sha256": "5d50fbaa73dcbfcc6d5aab62f92e6b97fc0ba92fd92c2b702c0c4c2359a7ac2f"
+    },
+    {
+      "path": "参考方案/2026-10-21_v3_审核与最小起步计划.md",
+      "bytes": 20136,
+      "sha256": "f415f1bdd231ea76d5231971507ae9202d3e0145e2e14e515cf80c1cbad1b927"
+    },
+    {
+      "path": "可直接转发给同学.txt",
+      "bytes": 1121,
+      "sha256": "2c984cc60b005fdb9fcb60411aaa0952c936a2c98135e33b5877a923298e2584"
+    },
+    {
+      "path": "接手只读检查.sh",
+      "bytes": 1497,
+      "sha256": "de348891e2b7f937f4846afdbee30cbe33a92f9603899b2bf847cc766caccdb4"
+    },
+    {
+      "path": "服务器快照/environment_check.json",
+      "bytes": 3355,
+      "sha256": "ee0b0d300a2aeab83d634d2d9fc7159ac93cab62268cda6ebc9fb74130971374"
+    },
+    {
+      "path": "服务器快照/handoff_state.json",
+      "bytes": 3587,
+      "sha256": "863d461ff53849cdc17409881b3c3ccd266c446deb92cac595705621cb27afe7"
+    },
+    {
+      "path": "服务器快照/requirements.freeze.txt",
+      "bytes": 4045,
+      "sha256": "a3477b0ebc3e211b13e0b8759db5e9c47416f43cdc332d8932c00a9ca5a7e9bb"
+    },
+    {
+      "path": "服务器快照/resources.json",
+      "bytes": 2578,
+      "sha256": "6547af839e25caff163c1f264130725581652f184f27ecc16fba3150165abeaa"
+    },
+    {
+      "path": "证据/r0_20261021_174358/analysis_summary.json",
+      "bytes": 4885,
+      "sha256": "9cef992314b263c49274382ecb8a6719ed2925f3c8f67214bd933f9dd367a1e0"
+    },
+    {
+      "path": "证据/r0_20261021_174358/checkpoint_screening.csv",
+      "bytes": 599,
+      "sha256": "15af5b252a41de643d1c8c2f6a44443965385dc58ede34976b3995cddb695edc"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/commands.sh",
+      "bytes": 2930,
+      "sha256": "54542a0df5d57f1f147c0e6cdfc300a96763eaf93008255f64345ce49af57d45"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/config_snapshot.json",
+      "bytes": 1132,
+      "sha256": "836a5625c6f1ed8a69179a332a68e6233f9ff855e2375d10690d172910314c7f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/episodes.jsonl",
+      "bytes": 4432,
+      "sha256": "bae6cca246816ff17540b26f3779e87875d963bc4c9b3b0751fe06a5d78a9ee9"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/evaluation.json",
+      "bytes": 497,
+      "sha256": "e86eb904a187246bd655b2b6baed92b4fb69b7d7b09d46b54c33c537c2705b2a"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/front_agentview_image_terminal.png",
+      "bytes": 21713,
+      "sha256": "310cc0d5bf8506c1b25b7a109d8534175035dc00f7596d758e62e0bf75e020ba"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 13202,
+      "sha256": "180f14c22d8381bd49bb6d7c13de3255d5652e963ee5e5a739c34034a69444c6"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/left_agentview_image_terminal.png",
+      "bytes": 21038,
+      "sha256": "67afedcc62947c3bcaa077aacbf2970e941f2f6226d95aa01ca790ef1cee1f42"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 12955,
+      "sha256": "7098b7abce0dfb439f583e8e75e0312b6fb97b5fa1c3abeac9a9d298f2ee9bb0"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/right_agentview_image_terminal.png",
+      "bytes": 20197,
+      "sha256": "e37d86133a1814df7f36df33764168a2c47fd42fec3a16bd1ae1ad1344ef0d3c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 8818,
+      "sha256": "cec91e9680fd45d90c163f0a7296397a348a822fcc6bc658bfaf32a1b0396def"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_000500_screen.log",
+      "bytes": 5589,
+      "sha256": "7a2f3dd9356601332606b6cc5b88336d41c2712cd525e46ee8072f0c0f146082"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/episodes.jsonl",
+      "bytes": 4431,
+      "sha256": "d328c6150ed371e8fc22403f7785180310046c65a9a78872775bebdbdb20bb94"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/evaluation.json",
+      "bytes": 497,
+      "sha256": "ead49ab65505c1d319628409ebab0b6e8490af3040b40cdfe47d7924e653a716"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/front_agentview_image_terminal.png",
+      "bytes": 19234,
+      "sha256": "abc335db76fe83ca088b26dbf6dc133e8af9360ad0e91d44c6c902fbbbdce165"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 16440,
+      "sha256": "bd04ac2f88cf422a3306f6869b41698806b67cc031e6b9ad0a7cb07fd3c5863e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/left_agentview_image_terminal.png",
+      "bytes": 20244,
+      "sha256": "5cd614519f74d46de9e977dad020f1f43255421d2c62ba22dd36910e71de5808"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 15102,
+      "sha256": "8cee6e21aad9f9d8ffad9e3bc0defee6ab64f7e99febfc68cae60fe396f4cd3f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/right_agentview_image_terminal.png",
+      "bytes": 19277,
+      "sha256": "e48752b04366bca3be3546ffc036f2dc37fd1e77eea4bb9bf0feb3991ce8ff44"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 17765,
+      "sha256": "18938eb615af967635822d4a4a95a58c5ac19770413d26dae0bf8f4beabebe04"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001000_screen.log",
+      "bytes": 5588,
+      "sha256": "b1f9d896a95ef4ef9b6d8f3bb55f5e8fe5d254d77753ff9813dda9be2b21d76f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/episodes.jsonl",
+      "bytes": 4429,
+      "sha256": "3701673280a7b1a87dace07fac9cf8a92e88aeae6c6f606e9a270124d0f51b40"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/evaluation.json",
+      "bytes": 496,
+      "sha256": "6e55d4727ec28f4624b5f4b2429cba3ce63b78d75244c53d9a67acae63e51d35"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/front_agentview_image_terminal.png",
+      "bytes": 21792,
+      "sha256": "ced16cc1c312868867bfc05426eee12fa6fcff90ffda0aa015d069b4dc734988"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 11566,
+      "sha256": "25d0b279a5791f9e4efb4b95969f45d2a5c998a076209c0f2216d27f67ca7674"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/left_agentview_image_terminal.png",
+      "bytes": 21025,
+      "sha256": "3150dc84ed1e34ffa87f0ea9bbc089bd318eeddffd8f3ab450e2f1edd6a44034"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 13996,
+      "sha256": "c9e668df5afd63ec0a11e8f8d707e224186864839c18b82d0fc43086368377ac"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/right_agentview_image_terminal.png",
+      "bytes": 20058,
+      "sha256": "40007a745c7b2aba60af8eb4fdcb8e12dfb61bd25d458624af8006fc04d2ad01"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 9257,
+      "sha256": "769cc2b759970cca10aae8cca29c4b5998b5d1a64f82c067c795dc039b19d416"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_001500_screen.log",
+      "bytes": 5585,
+      "sha256": "f31803d7c4392813e8676b3997ec90189f2cdb061c187d5281fabe43a2be243e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/episodes.jsonl",
+      "bytes": 4428,
+      "sha256": "dba0f5957b11aa8101fbe6dff4659f7d5d1b1dd43d10310bd01eb6c6096b99cc"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/evaluation.json",
+      "bytes": 497,
+      "sha256": "43a4c208f9f029c2e4cda481a59dd851364438e77519509ecab92fe33acfade5"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/front_agentview_image_terminal.png",
+      "bytes": 21445,
+      "sha256": "832191458f512a583e8a390f9e35984d2674cd8fe28cc96efde4529d28891cb0"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 11344,
+      "sha256": "c8dbd5ae093edbf9567f59359875f84e3009c3a90e965aa258ab768d7282c8ca"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/left_agentview_image_terminal.png",
+      "bytes": 20052,
+      "sha256": "d85bdc8da2ca06d29e960d7b50a0ae15cc6a6c49e19147265a1c04b3c014ba21"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 9585,
+      "sha256": "8b1f960aa891b0c40db83d5bb2e243e8775ded5b2d414e51400db4a68ea91717"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/right_agentview_image_terminal.png",
+      "bytes": 20113,
+      "sha256": "15048d130ec7de08dd69790df5f0f6c17590d818ca49e4288c138e22fa0ccb00"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 6379,
+      "sha256": "33c676a1c31ed0bd2ec1dadb5a47a7c16c4626e92dab5b1bd0ae23d558675b3a"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002000_screen.log",
+      "bytes": 5585,
+      "sha256": "023cbac77c41c636662cf0b005e82fba41f8b05ff370c57f340fc9066f99fb75"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/episodes.jsonl",
+      "bytes": 4429,
+      "sha256": "28e75fd93e4230400edefb5b125cacf09c4ef26987a29d8d3c18f9a94e21a949"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/evaluation.json",
+      "bytes": 497,
+      "sha256": "583e0bcb95a012d74ae743b04b28b82d06cc6b6de9b70b43ead4bc3a65b72681"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/front_agentview_image_terminal.png",
+      "bytes": 20610,
+      "sha256": "64c734589d0fc63a2b77cb4ca15f7cf3cb10c4905fc2e88493f6e32130c6b46e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 9047,
+      "sha256": "ee4955f245597f0eb07cfe8c9071e864e1bcf9cf1b5bc5d75d47e3bbcced73d8"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/left_agentview_image_terminal.png",
+      "bytes": 20333,
+      "sha256": "697f46990b2278fc1c3e71f39484546eb2fc1f4649008209940e1f2641fa27f7"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 6854,
+      "sha256": "b3f2c3024612347b1f66195429ea0cd8dc7bf087aa6e76f27c85891031f1f279"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/right_agentview_image_terminal.png",
+      "bytes": 19562,
+      "sha256": "deae2636ee3985559c6b3c4a4744cfc5bbd6b491b107a4a5442c662221c0ff5c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 12105,
+      "sha256": "09a38189d1c5561fc7651325c58b245bd8f1142735e1b78db5b28c00152155af"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_002500_screen.log",
+      "bytes": 5586,
+      "sha256": "e762e6152eb69abca40ea920cde632f6f7d0d2de74d648d317faaf8b8b2687d8"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/episodes.jsonl",
+      "bytes": 4434,
+      "sha256": "5f96b69c139ce3dc4109fd040471b42a5795eab73867f5f21feb47c60c772e92"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/evaluation.json",
+      "bytes": 498,
+      "sha256": "e5c94d881ee7b83e6dac697d58cb03f17ab8a7eb90893b577d8522ce534c000e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/front_agentview_image_terminal.png",
+      "bytes": 20316,
+      "sha256": "d164d0904916c03da0bfbaac95869cb15181671153ba1547e2da14ceaaf180da"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 8254,
+      "sha256": "01a433e09e8cc2b1be040fa46a41712137d59814aa2f33f7bd51740521e8a88f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/left_agentview_image_terminal.png",
+      "bytes": 20352,
+      "sha256": "1f0f7390115ae98424ac39c798502e395c342f2f983a20f7766157e0cb72f7d1"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 9183,
+      "sha256": "7bd1fab8d828357ffd6b5990a088a6a9180c67eb09c6a088f31d4aba4a318aa1"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/right_agentview_image_terminal.png",
+      "bytes": 19981,
+      "sha256": "fde1c2044aafc169b3d11fc606b0ad8f125c5b6d0cd5e2bac454b5dec4b77c57"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 12593,
+      "sha256": "071940a043271457ab450ae6ea00fd24027a8199b31145a8ca0fd79ce022d723"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003000_screen.log",
+      "bytes": 5592,
+      "sha256": "cf14ba1b80794944f5fd5aa6717af68ad03d29ebe4e166f1954136a1acc00c48"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/episodes.jsonl",
+      "bytes": 4428,
+      "sha256": "82fb6236a44a9f2665e3b9af33399a61e4532741fb1cd79ea255327090e41efb"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/evaluation.json",
+      "bytes": 498,
+      "sha256": "9909376c05aef85c5e5a0442a9fa96f2ba3a54627306718b96dce5918e472a55"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/front_agentview_image_terminal.png",
+      "bytes": 20498,
+      "sha256": "6c55012d7b2467500a4d0ce4dadf46e202f85766f1549096dbfe3a27446d0473"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 14898,
+      "sha256": "e33092f697b2462a87c605effca4fa08de29295f7302d33e6769f70833151ede"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/left_agentview_image_terminal.png",
+      "bytes": 20469,
+      "sha256": "be337dadbc20f947277f7258f9e2abc27845bb97166d4185f7fcae56756417ad"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 9807,
+      "sha256": "e14671b352fa11b968fa6e085ffbd4da9a8ec21f61003fc15f043d559400f77a"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/right_agentview_image_terminal.png",
+      "bytes": 20110,
+      "sha256": "5a1fdecab43e68b0e273241a4eecf9767b7f376c83b0f4649c6f24868373b160"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 12691,
+      "sha256": "93dd7468bdbf7c60d43302e7f6e22c23288954ed0c9ff1e350ee639a0bb33c76"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_003500_screen.log",
+      "bytes": 5586,
+      "sha256": "7e19aee9b83c4edace479d0efc2afe61b848d6f0bf111d039a27e8d6d9ad55ef"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/episodes.jsonl",
+      "bytes": 4432,
+      "sha256": "7206244faaf313f551ff48c55b93609f897e700e8bc419115cd19a51ca081952"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/evaluation.json",
+      "bytes": 498,
+      "sha256": "0b6155de675fcf7571d17e5c6d4bcd84ac384d926623e91d9a97627fabff9308"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/front_agentview_image_terminal.png",
+      "bytes": 21296,
+      "sha256": "be371c25095b8435091bd1db646d55dfd655e8a1ad7a43dcf285c953a48b0ff3"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 12601,
+      "sha256": "2303ba8d6e800424d159244e1d0dfe6448c2ae3769f954e77e24b3b4202c89bc"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/left_agentview_image_terminal.png",
+      "bytes": 19901,
+      "sha256": "ca9986927c92c28e294d918d769927f11c8cf9229967584ca5750b5b2608729e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 15632,
+      "sha256": "a7dea193922fd7b0b7728a6eaf4b4bde370a781f81a7535799777d9ad984a466"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/right_agentview_image_terminal.png",
+      "bytes": 20561,
+      "sha256": "73fba1c60eafcada8ceebf6e0c0df36cde198823a46f43b1a11b6f59b7f02151"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 10167,
+      "sha256": "5d33afe7b9eff48e818894f6fdf4cee527d4ab0dbc8332890d4be09d4533e5f6"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004000_screen.log",
+      "bytes": 5590,
+      "sha256": "cdae8681e8e1bb0c303441c3d477e1dd7c7335ea86effbca1577bc47e49941dd"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/episodes.jsonl",
+      "bytes": 4432,
+      "sha256": "355cacf32f303e7ba134bb2d9de194ad01819b03d2e583f3a6d2f75721a99f2c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/evaluation.json",
+      "bytes": 498,
+      "sha256": "70ebdff6af3d683fef6c0b5d87248b220a8cb391af61acba8953577d2707b00c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/front_agentview_image_terminal.png",
+      "bytes": 20714,
+      "sha256": "9b4e99fbd9965cff7936456d88134bdc575cac1248d91287ac69c2066c9fa854"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 13821,
+      "sha256": "c10921a529723f19526f25272f27d375df0fd9581cf96ef58fc0392baeacfb93"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/left_agentview_image_terminal.png",
+      "bytes": 21154,
+      "sha256": "5d042a75990b8a1c5a8530862c9161c3754cb8d370bc2a17f7b598c58c79e399"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 17070,
+      "sha256": "7a762cd792991fa8da05c184ce2d318641c8afef15a3853285fe1f1b3ae7f970"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/right_agentview_image_terminal.png",
+      "bytes": 19895,
+      "sha256": "7c36099a5707273dbc16a11c5ed170c296e385e232f0da9d51ae066b404d7694"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 10145,
+      "sha256": "51a227baeaa0734355c38051153bb827732a71be4e202bb1939dc94721f2deda"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_004500_screen.log",
+      "bytes": 5590,
+      "sha256": "6ef62136a264744944230666b8f4493ebff9dfe26640b22a985c02a5a43093a8"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/episodes.jsonl",
+      "bytes": 4429,
+      "sha256": "88af8ddc9cf6fd8ac4cc866eb43303299373470bb98d0dfdb624151d80f7225b"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/evaluation.json",
+      "bytes": 498,
+      "sha256": "99e851ee61f7df4693d8198ac75c80f468bcd8ea4a7beb53dd05e93e063cdd20"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/front_agentview_image_terminal.png",
+      "bytes": 20873,
+      "sha256": "9de54211579fa38f9c51a91e814618fab1e115ba982f9178543862f37a0266cd"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 10229,
+      "sha256": "6ff7f3d0e08728b14b5129c992786ac55535dacaef1f72b274615c1d4976b674"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/left_agentview_image_terminal.png",
+      "bytes": 20247,
+      "sha256": "4ec37220b3a1fc217bfc7829f19412d8096ea853472567b35efbcca176c2089f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 8287,
+      "sha256": "7f7ced2ff46a2cd55d7fc6828e02e20fee752eb77e11a0e9b4cbd1cc6baa0b04"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/right_agentview_image_terminal.png",
+      "bytes": 20128,
+      "sha256": "2850a09be1efe2d850a1d664f6f4578a2a20de7e7e5ec935828346f2797a0f1d"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 13840,
+      "sha256": "39fa397ced54f239378e3146335ea6c60bbb040675fabe344c105782398eb600"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005000_screen.log",
+      "bytes": 5587,
+      "sha256": "fd75246a68b5723aa666a44ec9d9ee6ef0cba9d2549642f83229375cbf37a5a7"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/episodes.jsonl",
+      "bytes": 4433,
+      "sha256": "6051e9779aa0f352f4c87f6c3f566eeb15bc3ba77fc858cf546f250c5108538c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/evaluation.json",
+      "bytes": 498,
+      "sha256": "1fcfbf5a333aecf26faae29a6f8b936481bb8c6dd4566d1688082f2489d530dc"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/front_agentview_image_terminal.png",
+      "bytes": 21133,
+      "sha256": "af5ef12220418e4e385131d6cd64f6a1d079b749604fb473cf27cb3418626256"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 11068,
+      "sha256": "3450864e667f7b0a5c4232de7a72288c31a95b0cef0b2f4c50a6c22cf4a9d77e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/left_agentview_image_terminal.png",
+      "bytes": 20441,
+      "sha256": "a3ea4ca522e0ce703d63f0ecbc2e90c77f05c714e2c76ab55c6250d806d96c25"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 10520,
+      "sha256": "f840a67268179aa8c9415fe1a609643a584ea6942057d4a8957a61d905b3a38b"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/right_agentview_image_terminal.png",
+      "bytes": 20004,
+      "sha256": "8d9c2b51feda78c17ba02a6eb6a03f89daaace1b0397ef7e39237b63e5cd1f91"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 9725,
+      "sha256": "b7fd33c44b6ade873bbfe0592873bde6a8277fdc40ccf72336572cc0a3aa7272"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_005500_screen.log",
+      "bytes": 5591,
+      "sha256": "6bb0fd19e2f9fae67a5b57a3a48247e8448129652d4d4ece37bc8ec4d18cade4"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/episodes.jsonl",
+      "bytes": 4429,
+      "sha256": "51364a1f5fb4b0580c1a0da1baa6507821700342946cf701d750f15c986baa06"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/evaluation.json",
+      "bytes": 497,
+      "sha256": "938ac0672450824980a3ba01de0e1c9e2e261c30c40c22c4dcd8c7eb1bd164a4"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/front_agentview_image_terminal.png",
+      "bytes": 21257,
+      "sha256": "2df7db05a1d061c7ee3e1df780d1dbd182e0032a79851d9a0f55b28c6bfbd13f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/front_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 13170,
+      "sha256": "580c06ed6037ed5db397c4785753c3ee1910a2444a7e551a044189f987ec72c7"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/left_agentview_image_terminal.png",
+      "bytes": 20546,
+      "sha256": "3e1bf50eafadb57305e23789244e0723fe4dc447428a0f7ae94d17eaa754babe"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/left_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 16495,
+      "sha256": "fb9d4247f302b744d9d87418ad6ba7512854af67d9e531b5e3a0a7226c67f104"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/right_agentview_image_terminal.png",
+      "bytes": 19081,
+      "sha256": "d810c4901c8df24e7acbb5048f4f2e616155bf1091f87917b4f300cf506ee77b"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen/right_robot0_eye_in_hand_image_terminal.png",
+      "bytes": 15427,
+      "sha256": "55b6074fd86d315da9a96c563420da1ef3efab2051aa9e515b10aa98f6a98005"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/eval_006000_screen.log",
+      "bytes": 5586,
+      "sha256": "612f9db946175a582b99a6f3ef7f6612c8f18c1cc65f7591cb367023fc3c7d7f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/exit_code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/final_verification.json",
+      "bytes": 3294,
+      "sha256": "2f35e6dae76dbf980c50eb477fe79ceb1afc302d21a539e2c03bd4dc1b865c0a"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/finished_at.txt",
+      "bytes": 26,
+      "sha256": "b41a37633393bdd776cc2d2a28ac3d94ef9a663ff0788e6d062cd41e2400fa59"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/observation_alignment_check.json",
+      "bytes": 2475,
+      "sha256": "ae811c410bc6060040a3739323a6e534efa20ccbd758738ff843507585adb1fe"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/offline_action_diagnostic.json",
+      "bytes": 16109,
+      "sha256": "422828eddede3fed101169246ea870e2f273fc4136143847ad45ed3cc1ffbdf8"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/offline_action_diagnostic.log",
+      "bytes": 9491,
+      "sha256": "764d5ca4586217427a4480cc63767628141c94a95916332a396d85f478eda396"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/PIPELINE_COMPLETE",
+      "bytes": 33,
+      "sha256": "5ab18a6fcd6af1c8c64bbcc99807460e108bc8f3caf67636cf092c59c9cf448f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/result_summary.json",
+      "bytes": 1539,
+      "sha256": "83ee704461f65969b0aa39047e8b6aa467a894ae15f6a71240250acec898518f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/resume_equivalence_check.json",
+      "bytes": 735,
+      "sha256": "76bc7259ef2d1d7eede63c6fed1771e01be69b2650a57c275f668e750eda425b"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/run.sh",
+      "bytes": 3939,
+      "sha256": "5512ccac6e8b51274c1d9f9576c64014792b5ebe76218fe64155c3871a8a758e"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/session.log",
+      "bytes": 1539,
+      "sha256": "83ee704461f65969b0aa39047e8b6aa467a894ae15f6a71240250acec898518f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/train.log",
+      "bytes": 53542,
+      "sha256": "6c46cae62dae01668935401e62cd6651c09637f7fdaf14e02c6332e10926e059"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/train_exit_code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "证据/r0_20261021_174358/control/training_wrapper_pid.txt",
+      "bytes": 7,
+      "sha256": "edfacf1f7e12b7cd7a96dffbcc8fa419768e61449130e10ed04718db2b0faaf9"
+    },
+    {
+      "path": "证据/r0_20261021_174358/data_audit/audit.json",
+      "bytes": 343046,
+      "sha256": "efddceba6b53cdbc50406036dfead9ee4e708d5b28b0de24619170a56550f456"
+    },
+    {
+      "path": "证据/r0_20261021_174358/data_audit/COMPLETE.json",
+      "bytes": 109,
+      "sha256": "b272a1c9decc0e1e3d0ffbb580127e007b29a04b1f4e466c4baa9377d64462ea"
+    },
+    {
+      "path": "证据/r0_20261021_174358/diagnostic_commands.sh",
+      "bytes": 602,
+      "sha256": "a340d1d67315fe8acfeffd545e752c689cfd3df2438bc338439520715179002f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/offline_action_diagnostic.py",
+      "bytes": 4099,
+      "sha256": "9a98a2e10e18fb29fc1f15d2c8d94365b6a8340e7c57787b024f5bcbbd5ad84c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/plot_diagnostics.py",
+      "bytes": 1613,
+      "sha256": "4b49b557f1d0376fec88c603f28980db65e984a757707b6ccb8838cad3213a6d"
+    },
+    {
+      "path": "证据/r0_20261021_174358/progress.json",
+      "bytes": 1279,
+      "sha256": "b9d095b1dc2b7d491dd87e142f622b7a8963b5b8ac42dbda781ecd932db1f763"
+    },
+    {
+      "path": "证据/r0_20261021_174358/r0_diagnostics.pdf",
+      "bytes": 50767,
+      "sha256": "7aa80078660b7a1c881c86b001429d8eecfed1507fe8e23a4eadba365e6076f1"
+    },
+    {
+      "path": "证据/r0_20261021_174358/r0_diagnostics.png",
+      "bytes": 139718,
+      "sha256": "6e1d7a7bc84b3f565992b1ed161cd9f071f534c352c0cdb7214bbffd1407c05c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/R0运行验收与诊断.md",
+      "bytes": 7064,
+      "sha256": "f77e4508c5021d0a65a6ad66b3a094fbe46766e665224be06c3f911cf42a474a"
+    },
+    {
+      "path": "证据/r0_20261021_174358/summarize_run.py",
+      "bytes": 9792,
+      "sha256": "a54676a2376430fe952ea6b615b27f538a2da352eb42975c90db07a081c6b5b1"
+    },
+    {
+      "path": "证据/r0_20261021_174358/train_steps.jsonl",
+      "bytes": 1260528,
+      "sha256": "1484c04c72a5551abe9c3a3eef66c79119cc6812d19e6999b30a85f43e76e8da"
+    },
+    {
+      "path": "证据/r0_20261021_174358/training_finished_006000.json",
+      "bytes": 172,
+      "sha256": "1563795c6a8f4370da0a7e20ce234f4c415653aa569f6a95face38f8f3489c1d"
+    },
+    {
+      "path": "证据/r0_20261021_174358/training_manifest.json",
+      "bytes": 2197,
+      "sha256": "8a148a3c2f908c21bcd8a597b9fc4919e90f53840d22c89c12cdf7cbb4649eb5"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/exit_code.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/pilot.log",
+      "bytes": 728,
+      "sha256": "36c6ba8a92a85589f4a683a68bf57629b4103064864cf1fc0f2d18971f463e1f"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/pilot_exit_code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/predicates/predicate_checks.json",
+      "bytes": 3020,
+      "sha256": "43e8cd75cae468ec7746550627465d06d48a9a2a76d63cb23f45db956b469d85"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/predicates.log",
+      "bytes": 1930,
+      "sha256": "4ceff1e7475025f32a1bf43b5efad51531b0fcff30a2780c23bfa9207c0a5d58"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/predicates_v3/predicate_checks.json",
+      "bytes": 22491,
+      "sha256": "ee132f96f2745898657ae06cb2410e2331d7c39ec61e933c68d791c74d6eb845"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/predicates_v3.log",
+      "bytes": 4974,
+      "sha256": "8b0313bc0ecdd275bf2991e032346f23598bffe494eec6a658e55de016f31e2d"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/resume.log",
+      "bytes": 556,
+      "sha256": "0e357ed4710066ea3abc8caf853e94c39a3ba662825f6daf399d67629f23e04c"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/run.sh",
+      "bytes": 939,
+      "sha256": "4d225afeb1dde3050b9fa74d2b4762784e8f97f1ca96986cbb43a4c50c2fac51"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/session.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "证据/r0_20261021_174358/validation/train_only.sh",
+      "bytes": 690,
+      "sha256": "118e70f8fdd2f9977ceb3d3fc2f21fa123fe4a3b37d0cb3f809110aa1e6089d0"
+    },
+    {
+      "path": "证据/r0_20261021_174358/下一轮单任务诊断_待确认.md",
+      "bytes": 2037,
+      "sha256": "ab45c439916b0ca76dce78b3deeb7d92f446fa289fdc65d7b9d54fb48f918139"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/00_resources.log",
+      "bytes": 1419,
+      "sha256": "6bec95e73a996ff65e0270922b4f7b37658546b6d95a12108f468a8158e7d12b"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/01_inspect.log",
+      "bytes": 3558,
+      "sha256": "a79e8983ed29fd4be6e8ad8ff6b9071e0d9d90033543a6ce7a7b6b424e013288"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/02_convert_old.log",
+      "bytes": 78,
+      "sha256": "b67de34d2cbb847381fa0cf8049159a46584ed661a0c0e34eb6899043e91c1ae"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/03_convert_n1.log",
+      "bytes": 77,
+      "sha256": "051fa932d96f9205ee7107f20d2eef6cbee5b428e9e323dd09af2b642eba7ea0"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/04_load.log",
+      "bytes": 519,
+      "sha256": "f97ca5db40062433f56739dd027ad3d07a94af0f1dc2650e4a2f9d887760dbaa"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/05_train.log",
+      "bytes": 1863,
+      "sha256": "c212e715c5b028aef73bc2ba038936b696718537532a7c8259a283b112d37f59"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/06_rollout.log",
+      "bytes": 866,
+      "sha256": "dabff8f348a6d671211f59539333cf6885bd75204ff26c47af3c0256be88e695"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/commands.sh",
+      "bytes": 871,
+      "sha256": "13a3c649e8604b84aa8939c01f998453677ff76e93689c80f90044dce2146b2f"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/COMPLETE",
+      "bytes": 26,
+      "sha256": "f36c49bf6eec569c3b08c859be61413cfec2bdcfbdd4c96f6f6e5d4a0af3674f"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/completion.json",
+      "bytes": 2284,
+      "sha256": "c39b9cca6b68914c3042c3ff1c32d2c85f7d0f7d36bf872d0782a48780e591de"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/conversion_n1.json",
+      "bytes": 690,
+      "sha256": "e5b218742b4cea9be96bb451f10a43b64a0fb4c96c8d642ab9b9809d39e6bd00"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/conversion_old.json",
+      "bytes": 1370,
+      "sha256": "c9e983dbd4ef98cd1cc04d8070ff3ddf34ff18355243b8dfa36234c0ddbd5f41"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/exit_code.txt",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/finished_at.txt",
+      "bytes": 26,
+      "sha256": "76229fdd37fed139078eeb5cb3f0acb17206cb816fe43d66ad978692620c34b1"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/git_status_after.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/git_status_before.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/gpu_after.txt",
+      "bytes": 2974,
+      "sha256": "46eb11a70ca2d5ee1e8c0b93cb54bc889e7e9565995bd642b51589b2ae29e42b"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/gpu_before.txt",
+      "bytes": 2974,
+      "sha256": "69878b62c67a267c36e1920243016f70d84e09a84e0e5284ca57d37ac6ac6e59"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/gpu_samples.csv",
+      "bytes": 10102,
+      "sha256": "393854c99c2791057f698df6f79b6d1a6731594393e62e046a2db154b3dc3420"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/manifest.json",
+      "bytes": 3571,
+      "sha256": "cd2e87d9585a90f989dbcf9bc763ba3264230c4372637d853617a3b3b9c2b1ec"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/model_load.json",
+      "bytes": 438,
+      "sha256": "4ba614ab4f60bddbc590d5242deea47466f5b61215cfaf28548dc0b8f27cad61"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/prior_shared_reports/model_load.json",
+      "bytes": 438,
+      "sha256": "4ba614ab4f60bddbc590d5242deea47466f5b61215cfaf28548dc0b8f27cad61"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/prior_shared_reports/raw_inspection.json",
+      "bytes": 3558,
+      "sha256": "a79e8983ed29fd4be6e8ad8ff6b9071e0d9d90033543a6ce7a7b6b424e013288"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/prior_shared_reports/resources.json",
+      "bytes": 2578,
+      "sha256": "6547af839e25caff163c1f264130725581652f184f27ecc16fba3150165abeaa"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/raw_inspection.json",
+      "bytes": 3558,
+      "sha256": "a79e8983ed29fd4be6e8ad8ff6b9071e0d9d90033543a6ce7a7b6b424e013288"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/run.sh",
+      "bytes": 6233,
+      "sha256": "4d9e9b3c9211aa0e3e754bd515224714b1f09846ba3590823dd4895fc28b4d9f"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/evidence/session.log",
+      "bytes": 8431,
+      "sha256": "635c9a383c43030745dbd97db388c4765b9ca581aab45d15cc70b4e73b1ef3c1"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/handoff/scutlab_环境与资源下载.md",
+      "bytes": 9600,
+      "sha256": "098618011b61f35073c0dae0665082cc23a9e7d345e06c654a767c0da08d5ff7"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/handoff/下一步冒烟的服务器操作指引.md",
+      "bytes": 12143,
+      "sha256": "89f7b623e57746c4eefe56b7f141531a4a856a847f16f2d5e51fab4427a3f571"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/local_manifest.json",
+      "bytes": 8015,
+      "sha256": "80528d5ca394c4f8137351aa94f9ae327f509eb31e7a7580f8963e249aa9de66"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/back_step0_image.png",
+      "bytes": 19528,
+      "sha256": "96a7417e9f6c46e4e30f0dec35904e85049fbe2d69b7bf90b0e7de6864f9765a"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/back_step0_image2.png",
+      "bytes": 15638,
+      "sha256": "b987742d455d175d4fb8d6d074edb00d37e5a9e1f750234e76444bf07e2bf32e"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/back_step7_image.png",
+      "bytes": 19836,
+      "sha256": "3299d0f4756584750f65068bc368e7cc49d94b9569b2326378e76e25b0d2a2e0"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/back_step7_image2.png",
+      "bytes": 15179,
+      "sha256": "b5bfc9f178c6179e556deb892b880ad3998188b51305abd50f6b0f26f9a9e26c"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/front_step0_image.png",
+      "bytes": 19646,
+      "sha256": "dbd8f3d744fc9b19c4f7283fcf1b858df3dfaff9b208409b8fff410ebd1dacb0"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/front_step0_image2.png",
+      "bytes": 15479,
+      "sha256": "391535805a157405de1e5e9bd3d5fffe38428f45b56586d85f542f8430d60ce7"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/front_step7_image.png",
+      "bytes": 19820,
+      "sha256": "c57e8084cd54252410fee92d665f63c25fab7d2b40a54b5d4376b89500c29b23"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/front_step7_image2.png",
+      "bytes": 15591,
+      "sha256": "19cf4acf6a145df0dc0d246781aa1ff0bb5783d4f2fee503e4bc201f37157cec"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/left_step0_image.png",
+      "bytes": 19783,
+      "sha256": "f5b800756c799f36ff15a22c437b6b0a16f9f06e0eb137220ee4f6f866859b88"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/left_step0_image2.png",
+      "bytes": 15724,
+      "sha256": "37b284850eb72eecd467c92d5f261ab7d2a7b83afd11848ee2c342496b979fff"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/left_step7_image.png",
+      "bytes": 19898,
+      "sha256": "0ccdb492bc9d2ea22bda1f47842f3a7759c032f30ed8ac82dbb651c53a410557"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/left_step7_image2.png",
+      "bytes": 15505,
+      "sha256": "617a0de2c0f1791ef1c4fc282945d2b6af99a84fc0a1e1440e73175e6126d10f"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/right_step0_image.png",
+      "bytes": 19652,
+      "sha256": "adda4962c4d0d318dcded8e8672cc166e4bbbf911a6d40393d91026c39688fe5"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/right_step0_image2.png",
+      "bytes": 15872,
+      "sha256": "52d8c3e188757d3bd7d14a26dde9fc5131469cca98267f03e3d13c1a3f0cfb4a"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/right_step7_image.png",
+      "bytes": 19912,
+      "sha256": "ccc07d6d21f77923a2a40649b76a6179b8e7af03f0da086cc189a6cb0fd0ebaa"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/right_step7_image2.png",
+      "bytes": 15777,
+      "sha256": "1fab798018d552086d7bb348feb39f0db5770f695d1bef5fb0fca6740ba235ac"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/rollout/rollout_smoke.json",
+      "bytes": 18512,
+      "sha256": "148a0ba726d2a2e8d590179bdb215f22ac344349eed58059b6afe86d7dc5a0eb"
+    },
+    {
+      "path": "证据/smoke_codex_20261021_164118/冒烟验收记录.md",
+      "bytes": 6742,
+      "sha256": "244f0c24a70430fc17750a5ef4f05168c57e11098af668e417c41cced3039202"
+    },
+    {
+      "path": "配置/stage1_r0.json",
+      "bytes": 1132,
+      "sha256": "836a5625c6f1ed8a69179a332a68e6233f9ff855e2375d10690d172910314c7f"
+    },
+    {
+      "path": "配置/stage1_resources.json",
+      "bytes": 391,
+      "sha256": "126dc7c8075de057d9feaac66353e470e52b104a4394dd88ad8d9541d52ece24"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+{"goal": "front", "stored_terminal": {"front": true, "left": false, "right": false, "back": false}, "action_replay": {"requested_goal": "front", "first_goal": "front", "first_goal_times": {"front": 122, "left": null, "right": null, "back": null}, "terminal_goal": "front", "terminal_category": "correct", "correct_ever": true, "correct_then_destroyed": false}}
+{"goal": "left", "stored_terminal": {"front": false, "left": true, "right": false, "back": false}, "action_replay": {"requested_goal": "left", "first_goal": "left", "first_goal_times": {"front": null, "left": 97, "right": null, "back": null}, "terminal_goal": "left", "terminal_category": "correct", "correct_ever": true, "correct_then_destroyed": false}}
+{"goal": "right", "stored_terminal": {"front": false, "left": false, "right": true, "back": false}, "action_replay": {"requested_goal": "right", "first_goal": null, "first_goal_times": {"front": null, "left": null, "right": null, "back": null}, "terminal_goal": null, "terminal_category": "unfinished", "correct_ever": false, "correct_then_destroyed": false}}
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/scripts/stage1_r0_eval.py", line 169, in <module>
+    if a.mode=="verify":verify(a,c)
+                        ^^^^^^^^^^^
+  File "/home/lzx/cl_binding/scripts/stage1_r0_eval.py", line 72, in verify
+    assert summary["correct_ever"],f"Expert control replay never achieved {goal}"
+           ~~~~~~~^^^^^^^^^^^^^^^^
+AssertionError: Expert control replay never achieved right

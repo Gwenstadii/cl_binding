@@ -1,0 +1,282 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"step": 1, "loss": 2.9294629096984863, "gradient_norm": 23.945457458496094, "lr": 1.0000000000000002e-06, "step_seconds": 0.3997617238201201, "batch_indices": [10317, 11580, 11152, 6142, 1271, 1306], "samples_per_goal": 2}
+{"step": 2, "loss": 1.6926865577697754, "gradient_norm": 13.596692085266113, "lr": 2.0000000000000003e-06, "step_seconds": 0.12211538106203079, "batch_indices": [11521, 14031, 10376, 489, 304, 9227], "samples_per_goal": 2}
+{"step": 3, "loss": 1.773449182510376, "gradient_norm": 14.377546310424805, "lr": 3e-06, "step_seconds": 0.12232645228505135, "batch_indices": [13296, 1331, 8940, 3000, 8184, 13774], "samples_per_goal": 2}
+{"step": 25, "loss": 1.8178293704986572, "gradient_norm": 11.665376663208008, "lr": 2.5e-05, "step_seconds": 0.1226848466321826, "batch_indices": [12848, 1890, 11851, 5054, 7696, 8043], "samples_per_goal": 2}
+{"step": 50, "loss": 1.4059829711914062, "gradient_norm": 8.707101821899414, "lr": 5e-05, "step_seconds": 0.12189846811816096, "batch_indices": [16578, 12172, 1580, 8115, 7048, 32], "samples_per_goal": 2}
+{"step": 75, "loss": 1.298993468284607, "gradient_norm": 7.998851776123047, "lr": 7.500000000000001e-05, "step_seconds": 0.1219691182486713, "batch_indices": [2282, 6758, 13707, 5739, 14603, 10894], "samples_per_goal": 2}
+{"step": 100, "loss": 1.1284170150756836, "gradient_norm": 7.789268493652344, "lr": 0.0001, "step_seconds": 0.12198642501607537, "batch_indices": [2003, 4541, 8657, 6823, 16470, 13250], "samples_per_goal": 2}
+{"step": 125, "loss": 0.8916079998016357, "gradient_norm": 6.864687442779541, "lr": 0.0001, "step_seconds": 0.12223185924813151, "batch_indices": [3808, 11838, 9245, 13896, 8244, 2555], "samples_per_goal": 2}
+{"step": 150, "loss": 0.8910821676254272, "gradient_norm": 8.534499168395996, "lr": 0.0001, "step_seconds": 0.12219584593549371, "batch_indices": [9584, 9907, 5687, 14114, 5765, 11513], "samples_per_goal": 2}
+{"step": 175, "loss": 0.8010914325714111, "gradient_norm": 10.984128952026367, "lr": 0.0001, "step_seconds": 0.12355772219598293, "batch_indices": [2463, 11002, 14023, 8338, 260, 14011], "samples_per_goal": 2}
+{"step": 200, "loss": 1.1441911458969116, "gradient_norm": 9.80557918548584, "lr": 0.0001, "step_seconds": 0.122252375818789, "batch_indices": [15732, 640, 7012, 9853, 5975, 15680], "samples_per_goal": 2}
+{"step": 225, "loss": 0.6528104543685913, "gradient_norm": 4.382628440856934, "lr": 0.0001, "step_seconds": 0.12325410777702928, "batch_indices": [13355, 6796, 8578, 2978, 2484, 11815], "samples_per_goal": 2}
+{"step": 250, "loss": 0.6326940059661865, "gradient_norm": 5.540341377258301, "lr": 0.0001, "step_seconds": 0.12283150479197502, "batch_indices": [7983, 5586, 1322, 16421, 12415, 7642], "samples_per_goal": 2}
+{"step": 275, "loss": 0.6425943970680237, "gradient_norm": 2.7230138778686523, "lr": 0.0001, "step_seconds": 0.12293010484427214, "batch_indices": [11175, 8697, 5951, 11978, 2398, 6169], "samples_per_goal": 2}
+{"step": 300, "loss": 0.6339192986488342, "gradient_norm": 5.649328231811523, "lr": 0.0001, "step_seconds": 0.12299906089901924, "batch_indices": [10415, 15774, 5287, 8488, 15976, 5023], "samples_per_goal": 2}
+{"step": 325, "loss": 0.7179028391838074, "gradient_norm": 5.250279426574707, "lr": 0.0001, "step_seconds": 0.12331434618681669, "batch_indices": [13590, 10633, 7203, 13355, 2046, 4434], "samples_per_goal": 2}
+{"step": 350, "loss": 0.6970920562744141, "gradient_norm": 4.1254072189331055, "lr": 0.0001, "step_seconds": 0.12321470165625215, "batch_indices": [13317, 6350, 10399, 2311, 11758, 1169], "samples_per_goal": 2}
+{"step": 375, "loss": 0.9140292406082153, "gradient_norm": 6.634921550750732, "lr": 0.0001, "step_seconds": 0.1236567460000515, "batch_indices": [1910, 9780, 8474, 16148, 2273, 11107], "samples_per_goal": 2}
+{"step": 400, "loss": 0.5335565805435181, "gradient_norm": 3.5794339179992676, "lr": 0.0001, "step_seconds": 0.12315843906253576, "batch_indices": [11041, 8664, 11273, 6817, 3453, 4240], "samples_per_goal": 2}
+{"step": 425, "loss": 0.7575218081474304, "gradient_norm": 4.311100006103516, "lr": 0.0001, "step_seconds": 0.12318860832601786, "batch_indices": [16085, 9953, 6293, 2090, 2307, 12891], "samples_per_goal": 2}
+{"step": 450, "loss": 0.6936327219009399, "gradient_norm": 3.3801047801971436, "lr": 0.0001, "step_seconds": 0.12287219800055027, "batch_indices": [14883, 331, 15342, 8828, 3402, 10916], "samples_per_goal": 2}
+{"step": 475, "loss": 0.7296215891838074, "gradient_norm": 5.375827789306641, "lr": 0.0001, "step_seconds": 0.12352238362655044, "batch_indices": [12577, 7340, 1604, 11366, 7119, 1595], "samples_per_goal": 2}
+{"step": 500, "loss": 0.8777636289596558, "gradient_norm": 3.037012815475464, "lr": 0.0001, "step_seconds": 0.12298029800876975, "batch_indices": [893, 7969, 11627, 3380, 15194, 6598], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/000500", "step": 500, "reload_difference": 0.0}
+{"step": 525, "loss": 0.6452235579490662, "gradient_norm": 4.330552577972412, "lr": 0.0001, "step_seconds": 0.12441595504060388, "batch_indices": [465, 4309, 9492, 16152, 10396, 12607], "samples_per_goal": 2}
+{"step": 550, "loss": 0.6368497610092163, "gradient_norm": 4.2413225173950195, "lr": 0.0001, "step_seconds": 0.1275160820223391, "batch_indices": [6254, 6551, 5968, 2749, 13917, 16312], "samples_per_goal": 2}
+{"step": 575, "loss": 0.6898797750473022, "gradient_norm": 5.72125768661499, "lr": 0.0001, "step_seconds": 0.12399041093885899, "batch_indices": [14404, 11284, 104, 9757, 3515, 8751], "samples_per_goal": 2}
+{"step": 600, "loss": 0.802813708782196, "gradient_norm": 4.684825897216797, "lr": 0.0001, "step_seconds": 0.1240804991684854, "batch_indices": [11648, 6450, 1396, 2773, 13495, 6934], "samples_per_goal": 2}
+{"step": 625, "loss": 0.5133318901062012, "gradient_norm": 3.2340147495269775, "lr": 0.0001, "step_seconds": 0.12366481684148312, "batch_indices": [1036, 10312, 3357, 14704, 7440, 16277], "samples_per_goal": 2}
+{"step": 650, "loss": 0.5313607454299927, "gradient_norm": 4.780595302581787, "lr": 0.0001, "step_seconds": 0.14822949096560478, "batch_indices": [3022, 12224, 11572, 7960, 5409, 6761], "samples_per_goal": 2}
+{"step": 675, "loss": 0.9888896942138672, "gradient_norm": 5.060123920440674, "lr": 0.0001, "step_seconds": 0.12542025092989206, "batch_indices": [4413, 12676, 10515, 10298, 14730, 3128], "samples_per_goal": 2}
+{"step": 700, "loss": 0.7886439561843872, "gradient_norm": 4.506449222564697, "lr": 0.0001, "step_seconds": 0.12412810977548361, "batch_indices": [15143, 6450, 884, 10070, 3868, 12940], "samples_per_goal": 2}
+{"step": 725, "loss": 0.6473656296730042, "gradient_norm": 5.915548324584961, "lr": 0.0001, "step_seconds": 0.13153659086674452, "batch_indices": [11432, 15146, 4027, 3023, 6645, 8498], "samples_per_goal": 2}
+{"step": 750, "loss": 0.8085613250732422, "gradient_norm": 7.2257256507873535, "lr": 0.0001, "step_seconds": 0.12601730972528458, "batch_indices": [11264, 2418, 3295, 14311, 8994, 7162], "samples_per_goal": 2}
+{"step": 775, "loss": 0.5973289012908936, "gradient_norm": 6.047112464904785, "lr": 0.0001, "step_seconds": 0.12645495403558016, "batch_indices": [16618, 10619, 10431, 1607, 1158, 12260], "samples_per_goal": 2}
+{"step": 800, "loss": 0.5294963717460632, "gradient_norm": 3.091658115386963, "lr": 0.0001, "step_seconds": 0.12570095993578434, "batch_indices": [12491, 10687, 12434, 5669, 1473, 7546], "samples_per_goal": 2}
+{"step": 825, "loss": 0.6495357155799866, "gradient_norm": 2.8446619510650635, "lr": 0.0001, "step_seconds": 0.12401847494766116, "batch_indices": [1551, 6889, 1636, 9660, 15573, 14677], "samples_per_goal": 2}
+{"step": 850, "loss": 0.7614433169364929, "gradient_norm": 7.270533561706543, "lr": 0.0001, "step_seconds": 0.12369378982111812, "batch_indices": [3757, 6806, 3388, 13452, 7634, 14710], "samples_per_goal": 2}
+{"step": 875, "loss": 0.5688452124595642, "gradient_norm": 2.650191307067871, "lr": 0.0001, "step_seconds": 0.12410276476293802, "batch_indices": [9802, 1152, 444, 15436, 6598, 13012], "samples_per_goal": 2}
+{"step": 900, "loss": 0.8797802329063416, "gradient_norm": 8.330097198486328, "lr": 0.0001, "step_seconds": 0.12400134699419141, "batch_indices": [6723, 4945, 21, 14589, 14453, 10478], "samples_per_goal": 2}
+{"step": 925, "loss": 0.5991834998130798, "gradient_norm": 3.574604034423828, "lr": 0.0001, "step_seconds": 0.12381659634411335, "batch_indices": [2829, 10817, 10560, 16176, 4488, 13809], "samples_per_goal": 2}
+{"step": 950, "loss": 0.6127893328666687, "gradient_norm": 4.056764602661133, "lr": 0.0001, "step_seconds": 0.1241183658130467, "batch_indices": [9884, 10994, 12366, 15858, 3196, 4527], "samples_per_goal": 2}
+{"step": 975, "loss": 0.6076378226280212, "gradient_norm": 4.58191442489624, "lr": 0.0001, "step_seconds": 0.1239077658392489, "batch_indices": [13354, 2858, 14216, 2180, 9163, 6204], "samples_per_goal": 2}
+{"step": 1000, "loss": 0.8648048639297485, "gradient_norm": 4.095156192779541, "lr": 0.0001, "step_seconds": 0.1239335392601788, "batch_indices": [13638, 5843, 12959, 504, 6542, 7329], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/001000", "step": 1000, "reload_difference": 0.0}
+{"step": 1025, "loss": 0.71489018201828, "gradient_norm": 4.119974136352539, "lr": 0.0001, "step_seconds": 0.12443980621173978, "batch_indices": [7797, 11103, 1190, 3, 6801, 15466], "samples_per_goal": 2}
+{"step": 1050, "loss": 0.5066078901290894, "gradient_norm": 3.684971809387207, "lr": 0.0001, "step_seconds": 0.12636099010705948, "batch_indices": [15195, 6896, 12567, 2126, 2476, 9100], "samples_per_goal": 2}
+{"step": 1075, "loss": 1.1114418506622314, "gradient_norm": 9.218195915222168, "lr": 0.0001, "step_seconds": 0.12435486214235425, "batch_indices": [8092, 12656, 2493, 6578, 14097, 2378], "samples_per_goal": 2}
+{"step": 1100, "loss": 0.469880074262619, "gradient_norm": 2.3539583683013916, "lr": 0.0001, "step_seconds": 0.12497493298724294, "batch_indices": [12130, 3042, 4324, 9741, 14761, 10877], "samples_per_goal": 2}
+{"step": 1125, "loss": 0.725948691368103, "gradient_norm": 5.837902545928955, "lr": 0.0001, "step_seconds": 0.12488176673650742, "batch_indices": [12162, 2379, 7765, 10458, 5558, 12266], "samples_per_goal": 2}
+{"step": 1150, "loss": 0.6843900680541992, "gradient_norm": 5.467651844024658, "lr": 0.0001, "step_seconds": 0.12451268685981631, "batch_indices": [4151, 11935, 14873, 7807, 8190, 97], "samples_per_goal": 2}
+{"step": 1175, "loss": 0.590599000453949, "gradient_norm": 3.8912789821624756, "lr": 0.0001, "step_seconds": 0.12541205994784832, "batch_indices": [11340, 15824, 9538, 2732, 1934, 8181], "samples_per_goal": 2}
+{"step": 1200, "loss": 0.4820878505706787, "gradient_norm": 2.7810380458831787, "lr": 0.0001, "step_seconds": 0.1254532211460173, "batch_indices": [7707, 8488, 5827, 11320, 3675, 12907], "samples_per_goal": 2}
+{"step": 1225, "loss": 0.8068307638168335, "gradient_norm": 4.314910888671875, "lr": 0.0001, "step_seconds": 0.1241975761950016, "batch_indices": [8011, 3287, 6829, 5335, 11547, 16324], "samples_per_goal": 2}
+{"step": 1250, "loss": 0.6046096682548523, "gradient_norm": 2.824388027191162, "lr": 0.0001, "step_seconds": 0.12692773900926113, "batch_indices": [10146, 783, 14266, 16063, 4823, 9394], "samples_per_goal": 2}
+{"step": 1275, "loss": 0.7601685523986816, "gradient_norm": 4.283578395843506, "lr": 0.0001, "step_seconds": 0.13272681972011924, "batch_indices": [15689, 274, 10626, 2911, 7519, 15056], "samples_per_goal": 2}
+{"step": 1300, "loss": 0.6436886191368103, "gradient_norm": 3.194866418838501, "lr": 0.0001, "step_seconds": 0.12412759894505143, "batch_indices": [726, 8304, 14539, 4392, 8439, 11191], "samples_per_goal": 2}
+{"step": 1325, "loss": 0.5249600410461426, "gradient_norm": 4.3985395431518555, "lr": 0.0001, "step_seconds": 0.1247805617749691, "batch_indices": [12752, 11875, 8332, 4179, 7483, 5339], "samples_per_goal": 2}
+{"step": 1350, "loss": 0.5667211413383484, "gradient_norm": 3.837012767791748, "lr": 0.0001, "step_seconds": 0.12386617111042142, "batch_indices": [6353, 4214, 8668, 2601, 16511, 16377], "samples_per_goal": 2}
+{"step": 1375, "loss": 1.0103455781936646, "gradient_norm": 8.107664108276367, "lr": 0.0001, "step_seconds": 0.1243882137350738, "batch_indices": [7380, 1295, 12714, 11158, 86, 8274], "samples_per_goal": 2}
+{"step": 1400, "loss": 0.6880504488945007, "gradient_norm": 5.017313480377197, "lr": 0.0001, "step_seconds": 0.12420222396031022, "batch_indices": [4500, 11047, 2597, 12675, 9602, 6593], "samples_per_goal": 2}
+{"step": 1425, "loss": 0.5009454488754272, "gradient_norm": 2.5878000259399414, "lr": 0.0001, "step_seconds": 0.12391769979149103, "batch_indices": [8688, 761, 6303, 16028, 5819, 12411], "samples_per_goal": 2}
+{"step": 1450, "loss": 0.5899307131767273, "gradient_norm": 3.0244901180267334, "lr": 0.0001, "step_seconds": 0.12429100694134831, "batch_indices": [8884, 6953, 559, 14581, 16305, 1443], "samples_per_goal": 2}
+{"step": 1475, "loss": 0.5164988040924072, "gradient_norm": 5.749931812286377, "lr": 0.0001, "step_seconds": 0.1243154089897871, "batch_indices": [894, 5432, 7059, 8600, 11715, 16472], "samples_per_goal": 2}
+{"step": 1500, "loss": 0.533659040927887, "gradient_norm": 4.2705793380737305, "lr": 0.0001, "step_seconds": 0.1242240909487009, "batch_indices": [15892, 4569, 10750, 10361, 2392, 16319], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/001500", "step": 1500, "reload_difference": 0.0}
+{"step": 1525, "loss": 0.820620059967041, "gradient_norm": 6.679665565490723, "lr": 0.0001, "step_seconds": 0.12517838086932898, "batch_indices": [627, 11001, 14766, 1670, 8544, 11127], "samples_per_goal": 2}
+{"step": 1550, "loss": 0.5806413888931274, "gradient_norm": 2.4863109588623047, "lr": 0.0001, "step_seconds": 0.12583307875320315, "batch_indices": [8886, 4360, 9804, 15400, 12970, 3418], "samples_per_goal": 2}
+{"step": 1575, "loss": 1.0409313440322876, "gradient_norm": 5.685425281524658, "lr": 0.0001, "step_seconds": 0.12472196575254202, "batch_indices": [16096, 5854, 8279, 5280, 10780, 12066], "samples_per_goal": 2}
+{"step": 1600, "loss": 0.6313033103942871, "gradient_norm": 4.2329535484313965, "lr": 0.0001, "step_seconds": 0.12447718717157841, "batch_indices": [8092, 2885, 5395, 11348, 9323, 13282], "samples_per_goal": 2}
+{"step": 1625, "loss": 0.8010722994804382, "gradient_norm": 5.375887393951416, "lr": 0.0001, "step_seconds": 0.12933662114664912, "batch_indices": [8541, 16125, 472, 7362, 386, 13163], "samples_per_goal": 2}
+{"step": 1650, "loss": 0.5466595888137817, "gradient_norm": 5.03532075881958, "lr": 0.0001, "step_seconds": 0.12483183480799198, "batch_indices": [5997, 7495, 1174, 15332, 11015, 13431], "samples_per_goal": 2}
+{"step": 1675, "loss": 0.4661858081817627, "gradient_norm": 3.6720476150512695, "lr": 0.0001, "step_seconds": 0.12524889409542084, "batch_indices": [10785, 8734, 4970, 14037, 4680, 13912], "samples_per_goal": 2}
+{"step": 1700, "loss": 0.7745538949966431, "gradient_norm": 6.682432651519775, "lr": 0.0001, "step_seconds": 0.12471253098919988, "batch_indices": [12107, 6239, 12181, 2608, 7315, 1156], "samples_per_goal": 2}
+{"step": 1725, "loss": 0.674728512763977, "gradient_norm": 4.468459606170654, "lr": 0.0001, "step_seconds": 0.12451672973111272, "batch_indices": [6153, 15038, 12061, 2580, 657, 6527], "samples_per_goal": 2}
+{"step": 1750, "loss": 0.5690152049064636, "gradient_norm": 4.329840183258057, "lr": 0.0001, "step_seconds": 0.12502356572076678, "batch_indices": [9030, 11645, 15997, 9132, 934, 3856], "samples_per_goal": 2}
+{"step": 1775, "loss": 0.8722754716873169, "gradient_norm": 4.55543851852417, "lr": 0.0001, "step_seconds": 0.12395130284130573, "batch_indices": [12847, 220, 1433, 10287, 12423, 8467], "samples_per_goal": 2}
+{"step": 1800, "loss": 0.5707260370254517, "gradient_norm": 3.010698080062866, "lr": 0.0001, "step_seconds": 0.12480485392734408, "batch_indices": [2007, 9743, 1606, 8260, 15225, 16630], "samples_per_goal": 2}
+{"step": 1825, "loss": 0.7531794905662537, "gradient_norm": 6.776161193847656, "lr": 0.0001, "step_seconds": 0.12450253590941429, "batch_indices": [2618, 11268, 16516, 6261, 8969, 5714], "samples_per_goal": 2}
+{"step": 1850, "loss": 0.5013264417648315, "gradient_norm": 3.7993314266204834, "lr": 0.0001, "step_seconds": 0.1251013008877635, "batch_indices": [6768, 1796, 1901, 9269, 15334, 14183], "samples_per_goal": 2}
+{"step": 1875, "loss": 0.5656567215919495, "gradient_norm": 4.578892230987549, "lr": 0.0001, "step_seconds": 0.18482082523405552, "batch_indices": [6187, 10315, 12757, 14865, 695, 3403], "samples_per_goal": 2}
+{"step": 1900, "loss": 0.4973369538784027, "gradient_norm": 3.6084654331207275, "lr": 0.0001, "step_seconds": 0.13127136882394552, "batch_indices": [977, 1026, 8150, 6541, 14675, 11324], "samples_per_goal": 2}
+{"step": 1925, "loss": 0.6072746515274048, "gradient_norm": 3.956592559814453, "lr": 0.0001, "step_seconds": 0.12475651875138283, "batch_indices": [8386, 13295, 5592, 10876, 15895, 1380], "samples_per_goal": 2}
+{"step": 1950, "loss": 0.6748930811882019, "gradient_norm": 5.129770755767822, "lr": 0.0001, "step_seconds": 0.12393590109422803, "batch_indices": [14006, 9950, 126, 9692, 12243, 3538], "samples_per_goal": 2}
+{"step": 1975, "loss": 0.4947008490562439, "gradient_norm": 3.632157802581787, "lr": 0.0001, "step_seconds": 0.12480391934514046, "batch_indices": [8990, 12469, 4568, 3912, 12529, 10444], "samples_per_goal": 2}
+{"step": 2000, "loss": 0.5291627049446106, "gradient_norm": 2.344758987426758, "lr": 0.0001, "step_seconds": 0.12441174779087305, "batch_indices": [5158, 8343, 11595, 789, 7894, 12150], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/002000", "step": 2000, "reload_difference": 0.0}
+{"step": 2025, "loss": 0.3944515585899353, "gradient_norm": 3.22934889793396, "lr": 0.0001, "step_seconds": 0.12469601398333907, "batch_indices": [11513, 12599, 3852, 8171, 5391, 10981], "samples_per_goal": 2}
+{"step": 2050, "loss": 0.3828010559082031, "gradient_norm": 3.784506320953369, "lr": 0.0001, "step_seconds": 0.12559903087094426, "batch_indices": [12215, 3704, 11318, 9563, 3914, 8243], "samples_per_goal": 2}
+{"step": 2075, "loss": 0.8976418375968933, "gradient_norm": 6.441709518432617, "lr": 0.0001, "step_seconds": 0.12455693120136857, "batch_indices": [5265, 15172, 152, 10542, 16115, 8394], "samples_per_goal": 2}
+{"step": 2100, "loss": 0.4929141402244568, "gradient_norm": 3.4768106937408447, "lr": 0.0001, "step_seconds": 0.1246400810778141, "batch_indices": [7422, 15613, 6119, 4811, 12611, 10756], "samples_per_goal": 2}
+{"step": 2125, "loss": 0.5799014568328857, "gradient_norm": 1.9694205522537231, "lr": 0.0001, "step_seconds": 0.12846458284184337, "batch_indices": [1583, 9104, 2664, 14847, 14265, 7788], "samples_per_goal": 2}
+{"step": 2150, "loss": 0.6238840818405151, "gradient_norm": 2.682044267654419, "lr": 0.0001, "step_seconds": 0.12519248574972153, "batch_indices": [2489, 13398, 11003, 6841, 5404, 13408], "samples_per_goal": 2}
+{"step": 2175, "loss": 0.6333074569702148, "gradient_norm": 3.4946866035461426, "lr": 0.0001, "step_seconds": 0.12559407576918602, "batch_indices": [410, 12692, 10365, 7688, 819, 13765], "samples_per_goal": 2}
+{"step": 2200, "loss": 0.6397987604141235, "gradient_norm": 4.885119915008545, "lr": 0.0001, "step_seconds": 0.12481876788660884, "batch_indices": [2380, 11962, 9700, 8784, 1281, 12000], "samples_per_goal": 2}
+{"step": 2225, "loss": 0.4650554358959198, "gradient_norm": 3.2962093353271484, "lr": 0.0001, "step_seconds": 0.1246887231245637, "batch_indices": [5221, 16506, 16054, 8154, 3771, 8308], "samples_per_goal": 2}
+{"step": 2250, "loss": 0.6598650217056274, "gradient_norm": 5.2107462882995605, "lr": 0.0001, "step_seconds": 0.12470485595986247, "batch_indices": [7206, 4453, 8479, 11852, 12587, 913], "samples_per_goal": 2}
+{"step": 2275, "loss": 0.3662413954734802, "gradient_norm": 3.3371741771698, "lr": 0.0001, "step_seconds": 0.12543043121695518, "batch_indices": [12619, 6863, 7850, 5017, 14655, 314], "samples_per_goal": 2}
+{"step": 2300, "loss": 0.6781741976737976, "gradient_norm": 2.3871123790740967, "lr": 0.0001, "step_seconds": 0.1243118648417294, "batch_indices": [7028, 15084, 3179, 10103, 14248, 5510], "samples_per_goal": 2}
+{"step": 2325, "loss": 0.5405789613723755, "gradient_norm": 4.270219326019287, "lr": 0.0001, "step_seconds": 0.12456758506596088, "batch_indices": [4345, 9222, 10637, 15224, 12987, 5261], "samples_per_goal": 2}
+{"step": 2350, "loss": 0.48983439803123474, "gradient_norm": 3.775087356567383, "lr": 0.0001, "step_seconds": 0.12447185209020972, "batch_indices": [10685, 14890, 4295, 1532, 12194, 7399], "samples_per_goal": 2}
+{"step": 2375, "loss": 0.5379526615142822, "gradient_norm": 2.8969860076904297, "lr": 0.0001, "step_seconds": 0.12768635991960764, "batch_indices": [11873, 4811, 690, 10700, 15602, 7035], "samples_per_goal": 2}
+{"step": 2400, "loss": 0.5324026346206665, "gradient_norm": 5.04577112197876, "lr": 0.0001, "step_seconds": 0.12437181221321225, "batch_indices": [16222, 14383, 6724, 6862, 5856, 1258], "samples_per_goal": 2}
+{"step": 2425, "loss": 0.7454131841659546, "gradient_norm": 4.568061828613281, "lr": 0.0001, "step_seconds": 0.12424735398963094, "batch_indices": [12527, 230, 1104, 13230, 7605, 8846], "samples_per_goal": 2}
+{"step": 2450, "loss": 0.7775461673736572, "gradient_norm": 4.544732093811035, "lr": 0.0001, "step_seconds": 0.1237719189375639, "batch_indices": [1170, 15671, 8721, 11354, 8539, 4064], "samples_per_goal": 2}
+{"step": 2475, "loss": 0.7312104105949402, "gradient_norm": 2.62022066116333, "lr": 0.0001, "step_seconds": 0.12391807092353702, "batch_indices": [10942, 3160, 4092, 9861, 15053, 14488], "samples_per_goal": 2}
+{"step": 2500, "loss": 0.8157014846801758, "gradient_norm": 4.722825527191162, "lr": 0.0001, "step_seconds": 0.12385786604136229, "batch_indices": [9953, 326, 8925, 13280, 11144, 2301], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/002500", "step": 2500, "reload_difference": 0.0}
+{"step": 2525, "loss": 0.49884361028671265, "gradient_norm": 3.6897101402282715, "lr": 0.0001, "step_seconds": 0.12422904185950756, "batch_indices": [7685, 5142, 7488, 13344, 5437, 11365], "samples_per_goal": 2}
+{"step": 2550, "loss": 0.7188085317611694, "gradient_norm": 4.399834156036377, "lr": 0.0001, "step_seconds": 0.12624929612502456, "batch_indices": [6802, 15686, 3162, 10893, 11888, 3700], "samples_per_goal": 2}
+{"step": 2575, "loss": 0.5561007261276245, "gradient_norm": 2.7989604473114014, "lr": 0.0001, "step_seconds": 0.12440878059715033, "batch_indices": [8573, 9660, 12954, 1153, 5748, 14984], "samples_per_goal": 2}
+{"step": 2600, "loss": 0.8195050954818726, "gradient_norm": 5.8546977043151855, "lr": 0.0001, "step_seconds": 0.12483601411804557, "batch_indices": [12407, 6477, 5872, 6523, 14592, 3253], "samples_per_goal": 2}
+{"step": 2625, "loss": 0.5081047415733337, "gradient_norm": 3.0728251934051514, "lr": 0.0001, "step_seconds": 0.12407062388956547, "batch_indices": [10133, 750, 9527, 14406, 13139, 3861], "samples_per_goal": 2}
+{"step": 2650, "loss": 0.5844869613647461, "gradient_norm": 4.924968242645264, "lr": 0.0001, "step_seconds": 0.12445600191131234, "batch_indices": [14568, 6699, 4447, 7495, 14059, 5364], "samples_per_goal": 2}
+{"step": 2675, "loss": 0.6868646144866943, "gradient_norm": 5.3371500968933105, "lr": 0.0001, "step_seconds": 0.1251923181116581, "batch_indices": [3634, 7509, 14877, 11530, 9345, 874], "samples_per_goal": 2}
+{"step": 2700, "loss": 0.55462646484375, "gradient_norm": 4.129080772399902, "lr": 0.0001, "step_seconds": 0.13061657268553972, "batch_indices": [11924, 2692, 10755, 7774, 2560, 15744], "samples_per_goal": 2}
+{"step": 2725, "loss": 0.5430123805999756, "gradient_norm": 3.570767402648926, "lr": 0.0001, "step_seconds": 0.12563240993767977, "batch_indices": [3617, 332, 15384, 9949, 9881, 11664], "samples_per_goal": 2}
+{"step": 2750, "loss": 0.45499905943870544, "gradient_norm": 3.6808691024780273, "lr": 0.0001, "step_seconds": 0.12523681111633778, "batch_indices": [14062, 9415, 2395, 7381, 12531, 1541], "samples_per_goal": 2}
+{"step": 2775, "loss": 0.5377450585365295, "gradient_norm": 3.411005735397339, "lr": 0.0001, "step_seconds": 0.12482159491628408, "batch_indices": [356, 15062, 16491, 9578, 6079, 8350], "samples_per_goal": 2}
+{"step": 2800, "loss": 0.6948752403259277, "gradient_norm": 6.144692420959473, "lr": 0.0001, "step_seconds": 0.1243183552287519, "batch_indices": [10513, 6103, 10319, 1839, 14765, 11985], "samples_per_goal": 2}
+{"step": 2825, "loss": 0.7457610964775085, "gradient_norm": 4.5597991943359375, "lr": 0.0001, "step_seconds": 0.12448194669559598, "batch_indices": [7815, 4525, 14910, 7833, 11267, 2523], "samples_per_goal": 2}
+{"step": 2850, "loss": 0.5126241445541382, "gradient_norm": 3.250694990158081, "lr": 0.0001, "step_seconds": 0.12413291912525892, "batch_indices": [2678, 10682, 13676, 7057, 1115, 12211], "samples_per_goal": 2}
+{"step": 2875, "loss": 0.41607457399368286, "gradient_norm": 3.5138285160064697, "lr": 0.0001, "step_seconds": 0.12433988321572542, "batch_indices": [4736, 15042, 16544, 2572, 7879, 10242], "samples_per_goal": 2}
+{"step": 2900, "loss": 0.5425605773925781, "gradient_norm": 3.794412136077881, "lr": 0.0001, "step_seconds": 0.12413382204249501, "batch_indices": [11501, 6372, 5996, 15353, 4107, 8738], "samples_per_goal": 2}
+{"step": 2925, "loss": 0.5210122466087341, "gradient_norm": 3.1234335899353027, "lr": 0.0001, "step_seconds": 0.12395800929516554, "batch_indices": [6071, 15873, 3303, 15039, 7203, 7132], "samples_per_goal": 2}
+{"step": 2950, "loss": 0.4903807044029236, "gradient_norm": 4.274568557739258, "lr": 0.0001, "step_seconds": 0.1240191557444632, "batch_indices": [8773, 815, 11061, 3851, 14776, 8805], "samples_per_goal": 2}
+{"step": 2975, "loss": 0.4912664294242859, "gradient_norm": 4.8748016357421875, "lr": 0.0001, "step_seconds": 0.12439499888569117, "batch_indices": [14189, 3784, 2768, 9282, 14376, 6967], "samples_per_goal": 2}
+{"step": 3000, "loss": 0.4222092628479004, "gradient_norm": 3.104644536972046, "lr": 0.0001, "step_seconds": 0.12438709381967783, "batch_indices": [13124, 3461, 14669, 7973, 5635, 10141], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/003000", "step": 3000, "reload_difference": 0.0}
+{"step": 3025, "loss": 0.5503287315368652, "gradient_norm": 6.068882465362549, "lr": 0.0001, "step_seconds": 0.12463867198675871, "batch_indices": [8552, 15576, 2876, 8192, 15316, 2860], "samples_per_goal": 2}
+{"step": 3050, "loss": 0.6309613585472107, "gradient_norm": 3.729102611541748, "lr": 0.0001, "step_seconds": 0.12673322996124625, "batch_indices": [8450, 8662, 13171, 4822, 12653, 2455], "samples_per_goal": 2}
+{"step": 3075, "loss": 0.48611482977867126, "gradient_norm": 3.334697723388672, "lr": 0.0001, "step_seconds": 0.12477573286741972, "batch_indices": [11951, 3093, 14746, 8670, 1749, 6490], "samples_per_goal": 2}
+{"step": 3100, "loss": 0.612180769443512, "gradient_norm": 6.195901870727539, "lr": 0.0001, "step_seconds": 0.12555832508951426, "batch_indices": [11001, 9398, 16276, 4489, 1853, 13122], "samples_per_goal": 2}
+{"step": 3125, "loss": 0.6221993565559387, "gradient_norm": 5.356167793273926, "lr": 0.0001, "step_seconds": 0.12563821580260992, "batch_indices": [7130, 14124, 10561, 15404, 4959, 376], "samples_per_goal": 2}
+{"step": 3150, "loss": 0.5397191047668457, "gradient_norm": 3.171736001968384, "lr": 0.0001, "step_seconds": 0.1251506181433797, "batch_indices": [7353, 3310, 10175, 1380, 12641, 14471], "samples_per_goal": 2}
+{"step": 3175, "loss": 0.5909194350242615, "gradient_norm": 3.149059772491455, "lr": 0.0001, "step_seconds": 0.12537152087315917, "batch_indices": [11230, 11142, 1709, 7678, 7138, 1914], "samples_per_goal": 2}
+{"step": 3200, "loss": 0.6133610606193542, "gradient_norm": 3.9522204399108887, "lr": 0.0001, "step_seconds": 0.13195325201377273, "batch_indices": [15901, 11047, 4083, 10076, 8065, 33], "samples_per_goal": 2}
+{"step": 3225, "loss": 0.4816250205039978, "gradient_norm": 4.432884693145752, "lr": 0.0001, "step_seconds": 0.12424759287387133, "batch_indices": [11580, 5125, 6164, 1904, 13794, 6275], "samples_per_goal": 2}
+{"step": 3250, "loss": 0.3817582130432129, "gradient_norm": 3.478240489959717, "lr": 0.0001, "step_seconds": 0.12486859411001205, "batch_indices": [5705, 5265, 11297, 9956, 9228, 14714], "samples_per_goal": 2}
+{"step": 3275, "loss": 0.538556694984436, "gradient_norm": 5.1527557373046875, "lr": 0.0001, "step_seconds": 0.12518557673320174, "batch_indices": [4211, 6800, 1325, 13470, 12187, 7642], "samples_per_goal": 2}
+{"step": 3300, "loss": 0.3962234854698181, "gradient_norm": 3.608394145965576, "lr": 0.0001, "step_seconds": 0.12451724708080292, "batch_indices": [6205, 12017, 11842, 3475, 619, 7703], "samples_per_goal": 2}
+{"step": 3325, "loss": 0.5249233245849609, "gradient_norm": 1.8764588832855225, "lr": 0.0001, "step_seconds": 0.12460653018206358, "batch_indices": [599, 12043, 8733, 14963, 9419, 4111], "samples_per_goal": 2}
+{"step": 3350, "loss": 0.604253351688385, "gradient_norm": 3.661895275115967, "lr": 0.0001, "step_seconds": 0.12413261504843831, "batch_indices": [13295, 7743, 10853, 3282, 14192, 5113], "samples_per_goal": 2}
+{"step": 3375, "loss": 0.5559014081954956, "gradient_norm": 4.393878936767578, "lr": 0.0001, "step_seconds": 0.12436909694224596, "batch_indices": [11975, 4008, 397, 8564, 13001, 10349], "samples_per_goal": 2}
+{"step": 3400, "loss": 0.6437727212905884, "gradient_norm": 4.9454193115234375, "lr": 0.0001, "step_seconds": 0.12431212095543742, "batch_indices": [9465, 2230, 8884, 3972, 15411, 15508], "samples_per_goal": 2}
+{"step": 3425, "loss": 0.46230196952819824, "gradient_norm": 3.2493741512298584, "lr": 0.0001, "step_seconds": 0.12425935128703713, "batch_indices": [3058, 3383, 10448, 10585, 12168, 13143], "samples_per_goal": 2}
+{"step": 3450, "loss": 0.6356469392776489, "gradient_norm": 1.6605106592178345, "lr": 0.0001, "step_seconds": 0.12398404814302921, "batch_indices": [1820, 9558, 856, 12151, 13196, 10481], "samples_per_goal": 2}
+{"step": 3475, "loss": 0.5612253546714783, "gradient_norm": 3.343311071395874, "lr": 0.0001, "step_seconds": 0.12426331220194697, "batch_indices": [5270, 12022, 9641, 5953, 11649, 8581], "samples_per_goal": 2}
+{"step": 3500, "loss": 0.4901212155818939, "gradient_norm": 3.151176929473877, "lr": 0.0001, "step_seconds": 0.12439880520105362, "batch_indices": [16540, 9670, 8213, 5633, 12810, 5473], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/003500", "step": 3500, "reload_difference": 0.0}
+{"step": 3525, "loss": 0.6612913608551025, "gradient_norm": 3.607523202896118, "lr": 0.0001, "step_seconds": 0.12645538104698062, "batch_indices": [7522, 4122, 12615, 7526, 5645, 15279], "samples_per_goal": 2}
+{"step": 3550, "loss": 0.6903449296951294, "gradient_norm": 2.876671075820923, "lr": 0.0001, "step_seconds": 0.12520482623949647, "batch_indices": [13823, 15673, 10347, 2954, 4468, 6837], "samples_per_goal": 2}
+{"step": 3575, "loss": 0.5702138543128967, "gradient_norm": 5.2438836097717285, "lr": 0.0001, "step_seconds": 0.12452835775911808, "batch_indices": [12629, 9256, 11942, 9465, 670, 2325], "samples_per_goal": 2}
+{"step": 3600, "loss": 0.3416770398616791, "gradient_norm": 1.6924606561660767, "lr": 0.0001, "step_seconds": 0.12433121865615249, "batch_indices": [5385, 11690, 8921, 3555, 16588, 7195], "samples_per_goal": 2}
+{"step": 3625, "loss": 0.5670024156570435, "gradient_norm": 2.9250588417053223, "lr": 0.0001, "step_seconds": 0.1254529170691967, "batch_indices": [14861, 6583, 4261, 5369, 11389, 7080], "samples_per_goal": 2}
+{"step": 3650, "loss": 0.7065185308456421, "gradient_norm": 3.1644513607025146, "lr": 0.0001, "step_seconds": 0.12489510327577591, "batch_indices": [1470, 16440, 6446, 12089, 111, 7425], "samples_per_goal": 2}
+{"step": 3675, "loss": 0.5536589622497559, "gradient_norm": 2.952543258666992, "lr": 0.0001, "step_seconds": 0.12460777070373297, "batch_indices": [7033, 14113, 13988, 8049, 4237, 6016], "samples_per_goal": 2}
+{"step": 3700, "loss": 0.4917587637901306, "gradient_norm": 3.8750979900360107, "lr": 0.0001, "step_seconds": 0.1268716431222856, "batch_indices": [9740, 3039, 11437, 12342, 3260, 9925], "samples_per_goal": 2}
+{"step": 3725, "loss": 0.4976310729980469, "gradient_norm": 3.816617250442505, "lr": 0.0001, "step_seconds": 0.12730804877355695, "batch_indices": [14703, 11644, 6784, 6235, 4258, 3171], "samples_per_goal": 2}
+{"step": 3750, "loss": 0.4935925006866455, "gradient_norm": 3.6714518070220947, "lr": 0.0001, "step_seconds": 0.1261596456170082, "batch_indices": [603, 2739, 11381, 11567, 9308, 9602], "samples_per_goal": 2}
+{"step": 3775, "loss": 0.5148196816444397, "gradient_norm": 2.794650077819824, "lr": 0.0001, "step_seconds": 0.12488513858988881, "batch_indices": [10293, 357, 10564, 12912, 5649, 11834], "samples_per_goal": 2}
+{"step": 3800, "loss": 0.43944868445396423, "gradient_norm": 3.0634334087371826, "lr": 0.0001, "step_seconds": 0.12439394695684314, "batch_indices": [174, 3836, 11922, 8438, 14993, 7790], "samples_per_goal": 2}
+{"step": 3825, "loss": 0.5057792663574219, "gradient_norm": 3.6984057426452637, "lr": 0.0001, "step_seconds": 0.12424926785752177, "batch_indices": [10963, 14449, 6833, 943, 11452, 4589], "samples_per_goal": 2}
+{"step": 3850, "loss": 0.5553076267242432, "gradient_norm": 3.9296109676361084, "lr": 0.0001, "step_seconds": 0.12385391118004918, "batch_indices": [9040, 9063, 14078, 13760, 3875, 2031], "samples_per_goal": 2}
+{"step": 3875, "loss": 0.3706953227519989, "gradient_norm": 3.7276296615600586, "lr": 0.0001, "step_seconds": 0.1243662852793932, "batch_indices": [5637, 3729, 9023, 16626, 13806, 9250], "samples_per_goal": 2}
+{"step": 3900, "loss": 0.4849369525909424, "gradient_norm": 3.426090955734253, "lr": 0.0001, "step_seconds": 0.12461016001179814, "batch_indices": [8704, 13919, 14961, 955, 1292, 7484], "samples_per_goal": 2}
+{"step": 3925, "loss": 0.378676176071167, "gradient_norm": 2.5890886783599854, "lr": 0.0001, "step_seconds": 0.1244531967677176, "batch_indices": [11327, 717, 12397, 2688, 9867, 8329], "samples_per_goal": 2}
+{"step": 3950, "loss": 0.5296435356140137, "gradient_norm": 4.166860580444336, "lr": 0.0001, "step_seconds": 0.12482439680024981, "batch_indices": [2915, 3242, 10959, 10859, 11983, 14860], "samples_per_goal": 2}
+{"step": 3975, "loss": 0.8891592025756836, "gradient_norm": 6.425058841705322, "lr": 0.0001, "step_seconds": 0.1241254205815494, "batch_indices": [2257, 12062, 14636, 3627, 9370, 6799], "samples_per_goal": 2}
+{"step": 4000, "loss": 0.9605388045310974, "gradient_norm": 8.063535690307617, "lr": 0.0001, "step_seconds": 0.12414996465668082, "batch_indices": [9471, 15193, 1056, 6541, 12496, 3306], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/004000", "step": 4000, "reload_difference": 0.0}
+{"step": 4025, "loss": 0.520180344581604, "gradient_norm": 3.0547361373901367, "lr": 0.0001, "step_seconds": 0.1246994030661881, "batch_indices": [11837, 3038, 4186, 6761, 9762, 15095], "samples_per_goal": 2}
+{"step": 4050, "loss": 0.41836923360824585, "gradient_norm": 3.8494174480438232, "lr": 0.0001, "step_seconds": 0.12543607084080577, "batch_indices": [2274, 10862, 14861, 15787, 3441, 10019], "samples_per_goal": 2}
+{"step": 4075, "loss": 0.6283748745918274, "gradient_norm": 7.312962055206299, "lr": 0.0001, "step_seconds": 0.12493909429758787, "batch_indices": [14561, 14642, 9943, 4645, 3678, 7437], "samples_per_goal": 2}
+{"step": 4100, "loss": 0.5212068557739258, "gradient_norm": 5.938159942626953, "lr": 0.0001, "step_seconds": 0.12427511811256409, "batch_indices": [5477, 6842, 11511, 13826, 1660, 6972], "samples_per_goal": 2}
+{"step": 4125, "loss": 0.7120425701141357, "gradient_norm": 5.988840103149414, "lr": 0.0001, "step_seconds": 0.1318567800335586, "batch_indices": [1611, 12774, 16509, 6750, 7577, 422], "samples_per_goal": 2}
+{"step": 4150, "loss": 0.4416908621788025, "gradient_norm": 4.110795021057129, "lr": 0.0001, "step_seconds": 0.1269873660057783, "batch_indices": [2388, 11247, 8237, 4591, 8964, 12329], "samples_per_goal": 2}
+{"step": 4175, "loss": 0.4335699677467346, "gradient_norm": 3.880110263824463, "lr": 0.0001, "step_seconds": 0.124769426882267, "batch_indices": [951, 12207, 7584, 15754, 9593, 5968], "samples_per_goal": 2}
+{"step": 4200, "loss": 0.6892961263656616, "gradient_norm": 4.556137561798096, "lr": 0.0001, "step_seconds": 0.13047501537948847, "batch_indices": [1121, 5884, 7898, 8441, 15132, 14438], "samples_per_goal": 2}
+{"step": 4225, "loss": 0.4648008346557617, "gradient_norm": 3.28908109664917, "lr": 0.0001, "step_seconds": 0.1250269734300673, "batch_indices": [5555, 1566, 10838, 16135, 11090, 9276], "samples_per_goal": 2}
+{"step": 4250, "loss": 0.5007108449935913, "gradient_norm": 2.3580164909362793, "lr": 0.0001, "step_seconds": 0.12745535327121615, "batch_indices": [14193, 7998, 7910, 5607, 14338, 1011], "samples_per_goal": 2}
+{"step": 4275, "loss": 0.38155239820480347, "gradient_norm": 3.330970287322998, "lr": 0.0001, "step_seconds": 0.12525228131562471, "batch_indices": [12419, 6133, 5389, 15900, 10984, 10642], "samples_per_goal": 2}
+{"step": 4300, "loss": 0.575180172920227, "gradient_norm": 3.390501022338867, "lr": 0.0001, "step_seconds": 0.12451862078160048, "batch_indices": [4128, 4487, 6162, 7792, 13767, 11241], "samples_per_goal": 2}
+{"step": 4325, "loss": 0.4184466302394867, "gradient_norm": 3.331045150756836, "lr": 0.0001, "step_seconds": 0.12405510991811752, "batch_indices": [9468, 4496, 15649, 4294, 6695, 11719], "samples_per_goal": 2}
+{"step": 4350, "loss": 0.41843920946121216, "gradient_norm": 3.1390554904937744, "lr": 0.0001, "step_seconds": 0.12392799090594053, "batch_indices": [13627, 16618, 2584, 7945, 3013, 9102], "samples_per_goal": 2}
+{"step": 4375, "loss": 0.5944079160690308, "gradient_norm": 5.331984996795654, "lr": 0.0001, "step_seconds": 0.12387534091249108, "batch_indices": [12773, 2555, 5106, 10292, 8076, 14303], "samples_per_goal": 2}
+{"step": 4400, "loss": 0.33747968077659607, "gradient_norm": 4.3083930015563965, "lr": 0.0001, "step_seconds": 0.12452831491827965, "batch_indices": [9156, 3015, 10714, 13908, 1879, 16117], "samples_per_goal": 2}
+{"step": 4425, "loss": 0.4039303660392761, "gradient_norm": 3.7956655025482178, "lr": 0.0001, "step_seconds": 0.12399314483627677, "batch_indices": [6746, 7983, 15942, 3574, 5033, 15272], "samples_per_goal": 2}
+{"step": 4450, "loss": 0.551048755645752, "gradient_norm": 5.231202125549316, "lr": 0.0001, "step_seconds": 0.12465119315311313, "batch_indices": [4937, 16342, 12249, 1433, 7910, 7788], "samples_per_goal": 2}
+{"step": 4475, "loss": 0.5217888355255127, "gradient_norm": 4.6252946853637695, "lr": 0.0001, "step_seconds": 0.12436453020200133, "batch_indices": [5178, 11206, 8890, 15725, 4607, 9328], "samples_per_goal": 2}
+{"step": 4500, "loss": 0.4935648441314697, "gradient_norm": 3.069262742996216, "lr": 0.0001, "step_seconds": 0.12432348588481545, "batch_indices": [10975, 7569, 4882, 2690, 15150, 11282], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/004500", "step": 4500, "reload_difference": 0.0}
+{"step": 4525, "loss": 0.48731812834739685, "gradient_norm": 3.381951093673706, "lr": 0.0001, "step_seconds": 0.12467522220686078, "batch_indices": [14185, 10877, 9372, 12007, 207, 3305], "samples_per_goal": 2}
+{"step": 4550, "loss": 0.6726827621459961, "gradient_norm": 7.042252540588379, "lr": 0.0001, "step_seconds": 0.12584251118823886, "batch_indices": [3503, 13760, 5527, 15065, 6974, 9219], "samples_per_goal": 2}
+{"step": 4575, "loss": 0.48339495062828064, "gradient_norm": 3.6547422409057617, "lr": 0.0001, "step_seconds": 0.12503281561657786, "batch_indices": [10458, 8261, 1169, 12155, 11251, 1350], "samples_per_goal": 2}
+{"step": 4600, "loss": 0.47565194964408875, "gradient_norm": 3.311173915863037, "lr": 0.0001, "step_seconds": 0.1425500139594078, "batch_indices": [9464, 3845, 15049, 11921, 6161, 4349], "samples_per_goal": 2}
+{"step": 4625, "loss": 0.47727951407432556, "gradient_norm": 2.5542843341827393, "lr": 0.0001, "step_seconds": 0.12531051272526383, "batch_indices": [248, 1334, 14710, 7017, 14155, 9369], "samples_per_goal": 2}
+{"step": 4650, "loss": 0.5593118071556091, "gradient_norm": 3.894726514816284, "lr": 0.0001, "step_seconds": 0.1255903816781938, "batch_indices": [6768, 6983, 16598, 4568, 12067, 1081], "samples_per_goal": 2}
+{"step": 4675, "loss": 0.5267411470413208, "gradient_norm": 4.884286880493164, "lr": 0.0001, "step_seconds": 0.12661398109048605, "batch_indices": [5108, 10148, 12331, 2031, 14847, 10197], "samples_per_goal": 2}
+{"step": 4700, "loss": 0.5347604751586914, "gradient_norm": 2.145200729370117, "lr": 0.0001, "step_seconds": 0.12475109938532114, "batch_indices": [7560, 10117, 14057, 13268, 384, 4238], "samples_per_goal": 2}
+{"step": 4725, "loss": 0.7069486379623413, "gradient_norm": 3.957977294921875, "lr": 0.0001, "step_seconds": 0.12664584070444107, "batch_indices": [9451, 16502, 2244, 4106, 15490, 9743], "samples_per_goal": 2}
+{"step": 4750, "loss": 0.7104153633117676, "gradient_norm": 4.6484503746032715, "lr": 0.0001, "step_seconds": 0.13479903200641274, "batch_indices": [2080, 3784, 6347, 14344, 13721, 8075], "samples_per_goal": 2}
+{"step": 4775, "loss": 0.45389580726623535, "gradient_norm": 4.132256031036377, "lr": 0.0001, "step_seconds": 0.12459268933162093, "batch_indices": [7333, 15007, 12483, 4439, 5123, 6963], "samples_per_goal": 2}
+{"step": 4800, "loss": 0.4439264237880707, "gradient_norm": 3.031282663345337, "lr": 0.0001, "step_seconds": 0.12418661499395967, "batch_indices": [1155, 1916, 15732, 15818, 10524, 10769], "samples_per_goal": 2}
+{"step": 4825, "loss": 0.3514193892478943, "gradient_norm": 2.7628252506256104, "lr": 0.0001, "step_seconds": 0.1241830657236278, "batch_indices": [12211, 2023, 10365, 6234, 5766, 13482], "samples_per_goal": 2}
+{"step": 4850, "loss": 0.43621671199798584, "gradient_norm": 2.20119309425354, "lr": 0.0001, "step_seconds": 0.12430749787017703, "batch_indices": [4464, 14863, 10040, 12209, 8138, 803], "samples_per_goal": 2}
+{"step": 4875, "loss": 0.5317485332489014, "gradient_norm": 3.1535587310791016, "lr": 0.0001, "step_seconds": 0.12528355605900288, "batch_indices": [2975, 8160, 13718, 2188, 14992, 8081], "samples_per_goal": 2}
+{"step": 4900, "loss": 0.7730369567871094, "gradient_norm": 4.414839744567871, "lr": 0.0001, "step_seconds": 0.12391313398256898, "batch_indices": [15088, 10616, 9729, 2247, 11657, 3541], "samples_per_goal": 2}
+{"step": 4925, "loss": 0.43476903438568115, "gradient_norm": 2.2291574478149414, "lr": 0.0001, "step_seconds": 0.12432726938277483, "batch_indices": [867, 15987, 7952, 8010, 15003, 4667], "samples_per_goal": 2}
+{"step": 4950, "loss": 0.7358506917953491, "gradient_norm": 4.91707181930542, "lr": 0.0001, "step_seconds": 0.12425097823143005, "batch_indices": [9641, 1302, 12300, 14215, 10537, 2501], "samples_per_goal": 2}
+{"step": 4975, "loss": 0.5642135143280029, "gradient_norm": 4.4696197509765625, "lr": 0.0001, "step_seconds": 0.1242279289290309, "batch_indices": [12752, 7972, 1524, 331, 12076, 7958], "samples_per_goal": 2}
+{"step": 5000, "loss": 0.30171167850494385, "gradient_norm": 3.5302531719207764, "lr": 0.0001, "step_seconds": 0.12434778595343232, "batch_indices": [4391, 14154, 3994, 6604, 9335, 16094], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/005000", "step": 5000, "reload_difference": 0.0}
+{"step": 5025, "loss": 0.5416913032531738, "gradient_norm": 4.140597820281982, "lr": 0.0001, "step_seconds": 0.13142840657383204, "batch_indices": [13114, 10134, 491, 2008, 12017, 7054], "samples_per_goal": 2}
+{"step": 5050, "loss": 0.5228327512741089, "gradient_norm": 1.9778625965118408, "lr": 0.0001, "step_seconds": 0.1243261182680726, "batch_indices": [14810, 722, 8303, 7195, 14074, 2834], "samples_per_goal": 2}
+{"step": 5075, "loss": 0.4362776279449463, "gradient_norm": 4.429498195648193, "lr": 0.0001, "step_seconds": 0.12672730395570397, "batch_indices": [12556, 9546, 16580, 6767, 5374, 5498], "samples_per_goal": 2}
+{"step": 5100, "loss": 0.4363442659378052, "gradient_norm": 4.458805561065674, "lr": 0.0001, "step_seconds": 0.12707179132848978, "batch_indices": [12929, 8594, 723, 4499, 7002, 12681], "samples_per_goal": 2}
+{"step": 5125, "loss": 0.4796094298362732, "gradient_norm": 2.7914204597473145, "lr": 0.0001, "step_seconds": 0.12436167104169726, "batch_indices": [11255, 13877, 8001, 5858, 1811, 8177], "samples_per_goal": 2}
+{"step": 5150, "loss": 0.44433093070983887, "gradient_norm": 4.112800121307373, "lr": 0.0001, "step_seconds": 0.1273799459449947, "batch_indices": [8244, 6118, 13207, 10734, 2131, 15868], "samples_per_goal": 2}
+{"step": 5175, "loss": 0.5826058983802795, "gradient_norm": 3.9757046699523926, "lr": 0.0001, "step_seconds": 0.1271812729537487, "batch_indices": [12894, 678, 14685, 1391, 7574, 7357], "samples_per_goal": 2}
+{"step": 5200, "loss": 0.35582435131073, "gradient_norm": 2.8088231086730957, "lr": 0.0001, "step_seconds": 0.12479751091450453, "batch_indices": [9152, 12605, 4287, 16563, 8382, 3598], "samples_per_goal": 2}
+{"step": 5225, "loss": 0.5000845789909363, "gradient_norm": 2.6052145957946777, "lr": 0.0001, "step_seconds": 0.12472989689558744, "batch_indices": [10281, 9604, 12158, 4111, 4220, 12681], "samples_per_goal": 2}
+{"step": 5250, "loss": 0.5719412565231323, "gradient_norm": 2.690128803253174, "lr": 0.0001, "step_seconds": 0.12645618105307221, "batch_indices": [13419, 15212, 6062, 9027, 7427, 2710], "samples_per_goal": 2}
+{"step": 5275, "loss": 0.4155005216598511, "gradient_norm": 2.0349478721618652, "lr": 0.0001, "step_seconds": 0.12690267572179437, "batch_indices": [4500, 2505, 11443, 6476, 14717, 6941], "samples_per_goal": 2}
+{"step": 5300, "loss": 0.44725584983825684, "gradient_norm": 4.431792259216309, "lr": 0.0001, "step_seconds": 0.1251610373146832, "batch_indices": [1285, 9231, 12899, 3422, 7165, 15543], "samples_per_goal": 2}
+{"step": 5325, "loss": 0.5210444927215576, "gradient_norm": 1.6337908506393433, "lr": 0.0001, "step_seconds": 0.1240662569180131, "batch_indices": [6346, 7067, 12541, 1295, 14518, 153], "samples_per_goal": 2}
+{"step": 5350, "loss": 0.410552978515625, "gradient_norm": 2.432389736175537, "lr": 0.0001, "step_seconds": 0.12362425122410059, "batch_indices": [15587, 3116, 6976, 2927, 16391, 9295], "samples_per_goal": 2}
+{"step": 5375, "loss": 0.4730134904384613, "gradient_norm": 3.663274049758911, "lr": 0.0001, "step_seconds": 0.124139703810215, "batch_indices": [7105, 6516, 11317, 15407, 2433, 275], "samples_per_goal": 2}
+{"step": 5400, "loss": 0.4845051169395447, "gradient_norm": 4.052953720092773, "lr": 0.0001, "step_seconds": 0.12381736561655998, "batch_indices": [8841, 13514, 11934, 8301, 452, 2719], "samples_per_goal": 2}
+{"step": 5425, "loss": 0.4669778048992157, "gradient_norm": 3.2123701572418213, "lr": 0.0001, "step_seconds": 0.12394839385524392, "batch_indices": [13995, 5264, 10252, 3801, 8492, 13205], "samples_per_goal": 2}
+{"step": 5450, "loss": 0.8286253213882446, "gradient_norm": 11.42284870147705, "lr": 0.0001, "step_seconds": 0.12416485091671348, "batch_indices": [2969, 14476, 3729, 13890, 10463, 10201], "samples_per_goal": 2}
+{"step": 5475, "loss": 0.6492547392845154, "gradient_norm": 6.295041561126709, "lr": 0.0001, "step_seconds": 0.12406893912702799, "batch_indices": [8369, 14475, 4792, 10535, 2856, 13212], "samples_per_goal": 2}
+{"step": 5500, "loss": 0.537407636642456, "gradient_norm": 3.9438858032226562, "lr": 0.0001, "step_seconds": 0.12451806711032987, "batch_indices": [12234, 10297, 2031, 266, 6789, 16164], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/005500", "step": 5500, "reload_difference": 0.0}
+{"step": 5525, "loss": 0.355089008808136, "gradient_norm": 2.8984270095825195, "lr": 0.0001, "step_seconds": 0.12580896075814962, "batch_indices": [11566, 13930, 1643, 10829, 7096, 1183], "samples_per_goal": 2}
+{"step": 5550, "loss": 0.47862374782562256, "gradient_norm": 5.075596332550049, "lr": 0.0001, "step_seconds": 0.12523160222917795, "batch_indices": [10324, 6875, 1862, 15327, 2180, 14519], "samples_per_goal": 2}
+{"step": 5575, "loss": 0.4140258729457855, "gradient_norm": 2.444941997528076, "lr": 0.0001, "step_seconds": 0.12429712107405066, "batch_indices": [5150, 10355, 15063, 15564, 9026, 4735], "samples_per_goal": 2}
+{"step": 5600, "loss": 0.4410937428474426, "gradient_norm": 4.358644962310791, "lr": 0.0001, "step_seconds": 0.12624042388051748, "batch_indices": [13080, 13850, 1157, 2648, 6783, 10791], "samples_per_goal": 2}
+{"step": 5625, "loss": 0.38418182730674744, "gradient_norm": 3.016167402267456, "lr": 0.0001, "step_seconds": 0.126258609816432, "batch_indices": [12200, 1154, 13203, 7214, 2671, 7741], "samples_per_goal": 2}
+{"step": 5650, "loss": 0.47667238116264343, "gradient_norm": 2.452226161956787, "lr": 0.0001, "step_seconds": 0.12671816488727927, "batch_indices": [2530, 8075, 9122, 13695, 11574, 1479], "samples_per_goal": 2}
+{"step": 5675, "loss": 0.44932717084884644, "gradient_norm": 4.0140299797058105, "lr": 0.0001, "step_seconds": 0.1250419057905674, "batch_indices": [10661, 2824, 12938, 2863, 14280, 6690], "samples_per_goal": 2}
+{"step": 5700, "loss": 0.3575764298439026, "gradient_norm": 3.059903860092163, "lr": 0.0001, "step_seconds": 0.12463606800884008, "batch_indices": [14348, 7142, 693, 11476, 4501, 6969], "samples_per_goal": 2}
+{"step": 5725, "loss": 0.5358049869537354, "gradient_norm": 4.688369274139404, "lr": 0.0001, "step_seconds": 0.12448022980242968, "batch_indices": [13420, 11441, 3655, 3213, 6879, 10959], "samples_per_goal": 2}
+{"step": 5750, "loss": 0.5523237586021423, "gradient_norm": 4.0026164054870605, "lr": 0.0001, "step_seconds": 0.12475896393880248, "batch_indices": [3325, 9386, 14614, 8559, 15574, 1192], "samples_per_goal": 2}
+{"step": 5775, "loss": 0.5115212202072144, "gradient_norm": 3.5972962379455566, "lr": 0.0001, "step_seconds": 0.12597777880728245, "batch_indices": [4373, 9571, 5865, 14420, 12416, 10272], "samples_per_goal": 2}
+{"step": 5800, "loss": 0.6629813313484192, "gradient_norm": 4.277896404266357, "lr": 0.0001, "step_seconds": 0.1273725749924779, "batch_indices": [11158, 10352, 1548, 2984, 13430, 9732], "samples_per_goal": 2}
+{"step": 5825, "loss": 0.49181586503982544, "gradient_norm": 2.62811279296875, "lr": 0.0001, "step_seconds": 0.1250794013030827, "batch_indices": [15309, 6925, 8953, 14204, 4425, 4329], "samples_per_goal": 2}
+{"step": 5850, "loss": 0.5073318481445312, "gradient_norm": 2.548748016357422, "lr": 0.0001, "step_seconds": 0.12398020504042506, "batch_indices": [642, 11968, 8214, 9525, 3025, 13112], "samples_per_goal": 2}
+{"step": 5875, "loss": 0.4721074104309082, "gradient_norm": 2.527153968811035, "lr": 0.0001, "step_seconds": 0.12460209988057613, "batch_indices": [4400, 12467, 6228, 2825, 10940, 13958], "samples_per_goal": 2}
+{"step": 5900, "loss": 0.4755226969718933, "gradient_norm": 2.867098093032837, "lr": 0.0001, "step_seconds": 0.12404907774180174, "batch_indices": [5891, 7528, 16552, 13169, 10354, 2123], "samples_per_goal": 2}
+{"step": 5925, "loss": 0.40503644943237305, "gradient_norm": 2.96923565864563, "lr": 0.0001, "step_seconds": 0.12439281400293112, "batch_indices": [14780, 12412, 9661, 10394, 2257, 2242], "samples_per_goal": 2}
+{"step": 5950, "loss": 0.5398664474487305, "gradient_norm": 4.103583812713623, "lr": 0.0001, "step_seconds": 0.12391832983121276, "batch_indices": [3243, 2753, 14234, 9929, 12039, 10281], "samples_per_goal": 2}
+{"step": 5975, "loss": 0.8109835386276245, "gradient_norm": 9.33204174041748, "lr": 0.0001, "step_seconds": 0.12460260698571801, "batch_indices": [3028, 7859, 11162, 12757, 1869, 8381], "samples_per_goal": 2}
+{"step": 6000, "loss": 0.3386382460594177, "gradient_norm": 2.737143039703369, "lr": 0.0001, "step_seconds": 0.12440363876521587, "batch_indices": [2717, 13919, 9215, 16552, 1041, 10998], "samples_per_goal": 2}
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+{"checkpoint_complete": "outputs/r0/r0_20261021_174358/checkpoints/006000", "step": 6000, "reload_difference": 0.0}
+TRAINING_PROCESS_COMPLETE 6000

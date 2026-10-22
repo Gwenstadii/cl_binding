@@ -73,3 +73,36 @@ def qualification(rows, goals, expected_count, required_correct):
         selected = [r for r in rows if r["requested_goal"] == goal]
         counts[goal] = {"total": len(selected), "correct": sum(r["terminal_category"] == "correct" for r in selected)}
     return {"qualified": all(c["total"] == expected_count and c["correct"] >= required_correct for c in counts.values()), "counts": counts}
+
+
+def instruction_response_summary(rows, trained_goal):
+    """All four requests on matched states; failures stay in every denominator."""
+    if trained_goal not in GOALS or not rows:raise ValueError('Known trained goal and nonempty rows required')
+    keyed={}
+    for row in rows:
+        key=(row['init_index'],row['requested_goal'])
+        if key in keyed:raise ValueError('Repeated initial-state/instruction pair')
+        keyed[key]=row
+    indices=sorted({r['init_index'] for r in rows})
+    for idx in indices:
+        if {g for i,g in keyed if i==idx}!=set(GOALS):raise ValueError('Every state needs four instructions')
+        for field in ('initial_state_sha256','scene_xml_sha256','seed'):
+            if len({keyed[idx,g][field] for g in GOALS})!=1:raise ValueError('Instructions have mismatched reset or inference seed')
+    columns=(*GOALS,'unfinished','ambiguous')
+    matrix={g:{c:0 for c in columns} for g in GOALS}
+    for r in rows:
+        outcome=r['terminal_category'] if r['terminal_category'] in ('unfinished','ambiguous') else r['terminal_goal']
+        if outcome not in columns:raise ValueError('Invalid terminal outcome')
+        matrix[r['requested_goal']][outcome]+=1
+    novel=[r for r in rows if r['requested_goal']!=trained_goal]
+    control_indices=[idx for idx in indices if keyed[idx,trained_goal]['terminal_category']=='correct']
+    conditioned=[r for r in novel if r['init_index'] in control_indices]
+    intrusion=sum(r['terminal_goal']==trained_goal for r in novel)
+    conditional_intrusion=sum(r['terminal_goal']==trained_goal for r in conditioned)
+    return {'trained_goal':trained_goal,'initial_states':len(indices),'episodes':len(rows),'terminal_matrix':matrix,
+            'trained_instruction_correct':len(control_indices),
+            'other_instructions':{'total':len(novel),'requested_goal_correct':sum(r['terminal_category']=='correct' for r in novel),
+                                  'trained_goal_terminal':intrusion,'trained_goal_terminal_rate':intrusion/len(novel)},
+            'conditioned_on_trained_instruction_success':{'control_indices':control_indices,'total':len(conditioned),
+                      'trained_goal_terminal':conditional_intrusion,
+                      'trained_goal_terminal_rate':conditional_intrusion/len(conditioned) if conditioned else None}}

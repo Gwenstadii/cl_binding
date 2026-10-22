@@ -85,6 +85,38 @@ class Stage1ProtocolTests(unittest.TestCase):
         rows[15] = {"requested_goal": "left", "terminal_category": "correct"}
         self.assertTrue(p.qualification(rows, ["left"], 20, 16)["qualified"])
 
+    def response_rows(self):
+        p=self.protocol();rows=[]
+        outcomes={0:{'front':'left','left':'left','right':'left','back':None},
+                  1:{'front':'left','left':None,'right':None,'back':'back'}}
+        for idx in (0,1):
+            for goal in p.GOALS:
+                terminal=outcomes[idx][goal]
+                rows.append({'init_index':idx,'requested_goal':goal,'terminal_goal':terminal,
+                             'terminal_category':'unfinished' if terminal is None else 'correct' if terminal==goal else 'wrong_goal',
+                             'initial_state_sha256':f'state{idx}','scene_xml_sha256':'scene','seed':42+idx})
+        return rows
+
+    def test_instruction_bias_keeps_failed_rollouts_in_denominator(self):
+        r=self.protocol().instruction_response_summary(self.response_rows(),'left')
+        self.assertEqual(r['other_instructions']['total'],6)
+        self.assertEqual(r['other_instructions']['trained_goal_terminal'],3)
+        self.assertEqual(r['conditioned_on_trained_instruction_success']['total'],3)
+        self.assertEqual(r['conditioned_on_trained_instruction_success']['trained_goal_terminal'],2)
+        self.assertEqual(r['terminal_matrix']['back']['unfinished'],1)
+
+    def test_instruction_comparison_rejects_missing_duplicate_or_mismatched_conditions(self):
+        p=self.protocol();rows=self.response_rows()
+        with self.assertRaises(ValueError):p.instruction_response_summary(rows[:-1],'left')
+        with self.assertRaises(ValueError):p.instruction_response_summary(rows+[rows[0]],'left')
+        rows[0]['initial_state_sha256']='different'
+        with self.assertRaises(ValueError):p.instruction_response_summary(rows,'left')
+
+    def test_single_task_batch_is_supported(self):
+        ids=self.protocol().balanced_indices({'left':[4,5,6]},6,19,1)
+        self.assertEqual(len(ids),6)
+        self.assertTrue(set(ids)<={4,5,6})
+
 
 if __name__ == "__main__":
     unittest.main()

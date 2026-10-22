@@ -117,6 +117,22 @@ class Stage1ProtocolTests(unittest.TestCase):
         self.assertEqual(len(ids),6)
         self.assertTrue(set(ids)<={4,5,6})
 
+    def test_accumulated_success_is_separate_from_terminal_and_first_target(self):
+        from stage1_single_task_benchmark_followup import metric_summary
+        rows=self.response_rows()
+        for row in rows:
+            row['first_goal']=row['terminal_goal']
+            row['first_goal_times']={g:(2 if row['terminal_goal']==g else None) for g in self.protocol().GOALS}
+            row['correct_ever']=row['terminal_category']=='correct'
+        rows[0].update(first_goal='left',correct_ever=True)
+        rows[0]['first_goal_times'].update(left=2,front=8)
+        rows[1].update(terminal_goal=None,terminal_category='unfinished')
+        result=metric_summary(rows,'left')
+        self.assertEqual(result['task_success_counts']['left']['success_ever'],1)
+        self.assertEqual(result['task_success_counts']['left']['terminal_correct'],0)
+        self.assertEqual(result['first_target_matrix']['front']['left'],2)
+        self.assertEqual(result['other_instruction_intrusion']['trained_goal_ever_without_requested_success'],2)
+
 
 if __name__ == "__main__":
     unittest.main()

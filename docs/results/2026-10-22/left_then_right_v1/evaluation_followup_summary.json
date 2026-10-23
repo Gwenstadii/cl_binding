@@ -1,0 +1,113 @@
+{
+  "status": "complete",
+  "training_source_commit": "2b0022d5e34b1b2c191c88c2ed8b4c8a039997c8",
+  "evaluation_source_commit": "c078cc2fa14233cdbe48222d52ee6a604f5d8fc5",
+  "started_at": "2026-10-22T13:33:47.876130+00:00",
+  "fixed_checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+  "original_run_summary_preserved": true,
+  "retrained": false,
+  "phases": [
+    {
+      "name": "after_paired20_part0",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "front",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20_part0",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 3811443,
+      "returncode": 0
+    },
+    {
+      "name": "after_paired20_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 3811444,
+      "returncode": 0
+    }
+  ],
+  "normalization_verification": {
+    "status": "pass",
+    "statistic_fingerprints_equal_after_singleton_canonicalization": true,
+    "processor_configs_equal": true,
+    "preprocessor_tensor_outputs_equal": [
+      "action",
+      "observation.state",
+      "observation.images.image",
+      "observation.images.image2",
+      "observation.language.tokens",
+      "observation.language.attention_mask"
+    ],
+    "postprocessor_outputs_equal": true,
+    "interpretation": "The original guard treated serialization changes of scalar/count metadata as changed normalization. Non-singleton shapes, dtypes and numerical values remain checked."
+  },
+  "seconds": 450.8763166880235,
+  "finished_at": "2026-10-22T13:41:18.751332+00:00",
+  "old_retention": {
+    "total": 20,
+    "retained_success_ever": 0,
+    "lost_success_ever": 20,
+    "lost_and_first_new_goal": 8,
+    "lost_and_terminal_new_goal": 7,
+    "lost_and_terminal_unfinished": 13,
+    "lost_and_terminal_ambiguous": 0,
+    "lost_and_terminal_other_wrong": 0,
+    "lost_initial_indices": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  "new_goal_counts": {
+    "total": 20,
+    "success_ever": 9,
+    "terminal_correct": 9
+  }
+}

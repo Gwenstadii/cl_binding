@@ -1,0 +1,112 @@
+{
+  "source_commit": "16eab1328b7480700a647d1131b7370422aae9fb",
+  "run_dir": "/home/lzx/cl_binding/.server/four_task_20261023_01",
+  "stage": "stage3_front",
+  "source_files": [
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/plan.json",
+      "archived_file": "plan.json",
+      "sha256": "2dfdfb0f5da17f7d90df2e76b28f21361b434a67a4bf8779133092dc5cb1eecd"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/run_summary.json",
+      "archived_file": "run_summary_stage3_snapshot.json",
+      "sha256": "38b37ba6a428fd37029da8100b12a3cf8b0732b0610f57cd2ab7c6b66f10ba25"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+      "archived_file": "config.json",
+      "sha256": "ffa0e2c90707661e205673d0626fe595dce49e40f10aee9f74661dd31a8982c3"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/summary.json",
+      "archived_file": "summary.json",
+      "sha256": "d15e9c61a18daaad2a0cdb96d03e9fa73c07fadad4739c21cdf96b11c18f8640"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/episodes.jsonl",
+      "archived_file": "episodes.jsonl",
+      "sha256": "8e623c7062284d6867366b2b7e49517ef07c159c5305cc304590d198b3eb2d2f"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/COMPLETE.json",
+      "archived_file": "COMPLETE.json",
+      "sha256": "ca3d602b6f0f7e37162ea0d2357bb40d0d6d8e4c8ec375747c3012ef4d51755a"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/comparison_to_previous.json",
+      "archived_file": "comparison_to_previous.json",
+      "sha256": "c0b9752215dff668c8da756f779a63b16d6c4d034993868e483dd29940a51bdc"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/comparison_to_acquisition.json",
+      "archived_file": "comparison_to_acquisition.json",
+      "sha256": "2291aa1f18437d911ac0f55e866d5ba68b679a39b04178c7de88a97d8c59ced2"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/alignment_verification.json",
+      "archived_file": "alignment_verification.json",
+      "sha256": "736ce86bef62d76b88d12d8e9f16065cf8ae9a16e42b442ecfc5ab62237f281c"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part0/episodes.jsonl",
+      "archived_file": "eval_part0_episodes.jsonl",
+      "sha256": "7bb76e4a3bfb9b2d38fe37a52a0002c037fc84647c393287f3cc6d74cc63e3e5"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part0/evaluation.json",
+      "archived_file": "eval_part0_evaluation.json",
+      "sha256": "9472d475a0d8584226d1f102fd59f744555ddedfd8afdea4b87ba8734d640491"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part1/episodes.jsonl",
+      "archived_file": "eval_part1_episodes.jsonl",
+      "sha256": "e24222261e41152e5ef87fbf0a2c9dee3e0f02cb30689fcabea06e5c4f7c1b0c"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part1/evaluation.json",
+      "archived_file": "eval_part1_evaluation.json",
+      "sha256": "cab2197f6f7469301a49ca3accb0194be3d78625dde10935724d2339e4073214"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/manifest.json",
+      "archived_file": "manifest.json",
+      "sha256": "86db7ae30f74abf2a89a68fb2c71408209735d20c48ea3147e234992f2bc2017"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/training_finished_012000.json",
+      "archived_file": "training_finished_012000.json",
+      "sha256": "7d6c4840acbc301ea5b120658a56e5503534f17d7dfc0183f8a6f266df8b5893"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+      "archived_file": "checkpoint_CHECKPOINT_COMPLETE.json",
+      "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000/config.json",
+      "archived_file": "checkpoint_config.json",
+      "sha256": "eb751b1241e5baf4ef98d07d26133534dbde75044f724a77799bbad8d5939af6"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000/policy_preprocessor.json",
+      "archived_file": "checkpoint_policy_preprocessor.json",
+      "sha256": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000/policy_postprocessor.json",
+      "archived_file": "checkpoint_policy_postprocessor.json",
+      "sha256": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/data/audit.json",
+      "archived_file": "data_audit.json",
+      "sha256": "1cbc7ec00b82cfaf496c7f62f19d538a699a6c7a2891b38d737b49c56f5c2c47"
+    }
+  ],
+  "model_weights_exported": false,
+  "parent_model_sha256": "97809078a6cece8bd410e2e2eeceea8fc439fd0b7cde726dad2a14c807210b01",
+  "final_model_sha256": "6bdd796a43f2db255e16137948afd75e895bea71b5e057b3935a95bc30bff9cc",
+  "new_evaluation_episodes": 80,
+  "whole_sequence_complete_at_export": false
+}

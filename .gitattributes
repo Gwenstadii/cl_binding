@@ -11,3 +11,4 @@
 # Preserve archived evidence bytes and their SHA256 values across platforms.
 docs/handoff/2026-10-21/** -text -whitespace
 docs/results/2026-10-23/dual12000_then_right_v1/** -text -whitespace
+docs/results/2026-10-23/dual_right_then_back_v1/** -text -whitespace

@@ -1,0 +1,206 @@
+[
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/config.json",
+    "archive_path": "config.json",
+    "bytes": 2887,
+    "sha256": "ad050b0195a6dab2a40ca50b2d2414fc858a68b7518106f3fafa9f9518c571d8"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/report.md",
+    "archive_path": "report.md",
+    "bytes": 593,
+    "sha256": "0c3ce23b95a3b545905ed2cfa1bb74431d2eb5fd6b85116a152d09de3a6aab23"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/alignment_verification.json",
+    "archive_path": "alignment_verification.json",
+    "bytes": 952,
+    "sha256": "f01ec736d1bac19db933ec0866ddb6307502f394519cc98ac7890037d69b3f19"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/run_summary.json",
+    "archive_path": "run_summary.json",
+    "bytes": 12633,
+    "sha256": "930dd2fbc7199d6fe6af27d9e78ef37d3dabb87f974f54a9deed56b3de1c6be4"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/comparison_to_previous.json",
+    "archive_path": "comparison_to_previous.json",
+    "bytes": 10308,
+    "sha256": "a058fe40d9039d9c9553c6319ac0ddf78249350b7fe8e2eeef0347132a9ae25d"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/parent_checkpoint_verification.json",
+    "archive_path": "parent_checkpoint_verification.json",
+    "bytes": 140,
+    "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/comparison_to_acquisition.json",
+    "archive_path": "comparison_to_acquisition.json",
+    "bytes": 5399,
+    "sha256": "f30e9229490923740432643f1c58a9be1f6b4e978eb86f50cee0a87664fbc6f7"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/before/summary.json",
+    "archive_path": "before/summary.json",
+    "bytes": 3119,
+    "sha256": "63996747fdf06eff080b8bd3a0584a0867e4e41bb8850c6c86110e4f5ae7d93e"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/before/episodes.jsonl",
+    "archive_path": "before/episodes.jsonl",
+    "bytes": 39606,
+    "sha256": "b4bedde8386c3b769dfec58baa826c6bd9c6b3d8f0f1c7510391a3bd734bc2a6"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/data/audit.json",
+    "archive_path": "data/audit.json",
+    "bytes": 342448,
+    "sha256": "7a3b6330e3bde6b4d14672671be8875427a0a55cde27dded2d65730c25f1e384"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/data/COMPLETE.json",
+    "archive_path": "data/COMPLETE.json",
+    "bytes": 109,
+    "sha256": "235c2af4a7e56c1d2dc614a070754b9f6efd94f6054012bd63d121652d9d8f7c"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after/summary.json",
+    "archive_path": "after/summary.json",
+    "bytes": 3063,
+    "sha256": "302eb7b047407569c0817db23a6c96a0c8c961da689e36408fe7a2ef60d57111"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after/episodes.jsonl",
+    "archive_path": "after/episodes.jsonl",
+    "bytes": 39493,
+    "sha256": "c2b73f7aea47a9f62af71c0d87bb3e8cbfd77323281b0752c8c0aca39e1c0672"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after_attempt1_part1/evaluation.json",
+    "archive_path": "after_attempt1_part1/evaluation.json",
+    "bytes": 744,
+    "sha256": "613f334649be308fd90a051ae54a30c6f3eec86321532f49b0afe7ca25d29f38"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after_attempt1_part1/episodes.jsonl",
+    "archive_path": "after_attempt1_part1/episodes.jsonl",
+    "bytes": 19724,
+    "sha256": "1972eb9df8b4846c1f4e796a7fd2707c3eba4ab2d79b003960d440150a403b84"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/parent_cached60.jsonl",
+    "archive_path": "baselines/parent_cached60.jsonl",
+    "bytes": 29696,
+    "sha256": "748c7127c5d0c8ebeefcb26fb2d761c375412e0bf9775299b02668d5749f7f3d"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/previous_config.json",
+    "archive_path": "baselines/previous_config.json",
+    "bytes": 2997,
+    "sha256": "25fca7418a7649a9c58daacf06c3739a3975a59f9bfd1a89a7a28e4bf4e70d4e"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/previous_evidence_manifest.json",
+    "archive_path": "baselines/previous_evidence_manifest.json",
+    "bytes": 5976,
+    "sha256": "d8c8b5783f9fd171403f756b25e9b52f3b61a18577f51c512e857e16964020d6"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/cached_eval_part0.json",
+    "archive_path": "baselines/cached_eval_part0.json",
+    "bytes": 745,
+    "sha256": "8e47b9485f62dfa23652e4adf84499deef4c2e077275e008568536449dcb7bee"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/joint_acquisition60.jsonl",
+    "archive_path": "baselines/joint_acquisition60.jsonl",
+    "bytes": 29634,
+    "sha256": "d91b2b0097c571ee0fdd1e2ec85f6ccd8fd3995d0f98208728d44264399bc56f"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/cached_eval_part1.json",
+    "archive_path": "baselines/cached_eval_part1.json",
+    "bytes": 675,
+    "sha256": "2ed8f09a868411f213db3e70ebdc8ee3734e58bb84e76d956d768be3cb1dce9f"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/source_files.json",
+    "archive_path": "baselines/source_files.json",
+    "bytes": 1578,
+    "sha256": "4e594c6536972d6189d480dd15e924f0a6c789fce1d2ef33c673ad92c49aceb3"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/baselines/previous_run_summary.json",
+    "archive_path": "baselines/previous_run_summary.json",
+    "bytes": 14038,
+    "sha256": "10c6582ebf5e414d93235341b919863c99e8b51597210cc4af0a52e9fad6f36a"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/before_back_attempt1_part1/evaluation.json",
+    "archive_path": "before_back_attempt1_part1/evaluation.json",
+    "bytes": 671,
+    "sha256": "a989a032441cd435740af68eb4e402e95f3e3c913487a50dc0556a9e3f8546bc"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/before_back_attempt1_part1/episodes.jsonl",
+    "archive_path": "before_back_attempt1_part1/episodes.jsonl",
+    "bytes": 9910,
+    "sha256": "3a9a95de407de04b18eaeb7828d0c145f96f65d1866b537ffd22ffac2d6e2f83"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after_attempt1_part0/evaluation.json",
+    "archive_path": "after_attempt1_part0/evaluation.json",
+    "bytes": 744,
+    "sha256": "0320bbfd6f572489e767c7ec2b3e26a567242e779abd720e55e8c13b63ea352c"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after_attempt1_part0/episodes.jsonl",
+    "archive_path": "after_attempt1_part0/episodes.jsonl",
+    "bytes": 19769,
+    "sha256": "b8fb34cbfa4c34dc96c426dfa3e5ee983707053f3227452b4ddd1a7c7f54e0f1"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/manifest.json",
+    "archive_path": "training/manifest.json",
+    "bytes": 4688,
+    "sha256": "cdb1bb837f7bea5c68c8ff391badd859561ca49f51d9666ce82647bd14fec3e4"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/trainable_parameters.json",
+    "archive_path": "training/trainable_parameters.json",
+    "bytes": 10802,
+    "sha256": "b0de50e57a5fb096c528efda3b9076c3b68165e44b9f0b593b37cfb3fd1b46b1"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/training_finished_012000.json",
+    "archive_path": "training/training_finished_012000.json",
+    "bytes": 177,
+    "sha256": "4a87589c37ec3847246df9c9560f3365dc01e37270ef1de0c396733fe5e3f906"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/003000/CHECKPOINT_COMPLETE.json",
+    "archive_path": "training/checkpoints/003000/CHECKPOINT_COMPLETE.json",
+    "bytes": 139,
+    "sha256": "b50954132f29501a2a81a82f2d7c42fe85c4a7a9eed1540f872c787f0f26426e"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/006000/CHECKPOINT_COMPLETE.json",
+    "archive_path": "training/checkpoints/006000/CHECKPOINT_COMPLETE.json",
+    "bytes": 139,
+    "sha256": "6497a744f4708f40feea4ee08261f0c033fa53f30992226cf04ecd7aca083a88"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/009000/CHECKPOINT_COMPLETE.json",
+    "archive_path": "training/checkpoints/009000/CHECKPOINT_COMPLETE.json",
+    "bytes": 139,
+    "sha256": "bf55fa36136a8c946e7c7b3cc673d8b4ef7531bed97147f87541f0bcc800def2"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "archive_path": "training/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "bytes": 140,
+    "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+  }
+]

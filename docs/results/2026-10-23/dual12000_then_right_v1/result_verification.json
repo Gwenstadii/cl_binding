@@ -1,0 +1,213 @@
+{
+  "sequence_audit": {
+    "status": "pass",
+    "source_file_hashes_verified": 22,
+    "matched_pairs": 60,
+    "old_goal_transitions": {
+      "left": {
+        "previously_successful_ever": {
+          "total": 20,
+          "retained": 0,
+          "lost": 20,
+          "lost_and_first_new_right": 14,
+          "lost_and_terminal_new_right": 14,
+          "lost_and_terminal_unfinished": 6,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "lost_and_first_new_right": 12,
+          "lost_and_terminal_new_right": 12,
+          "lost_and_terminal_unfinished": 4,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        }
+      },
+      "front": {
+        "previously_successful_ever": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "lost_and_first_new_right": 9,
+          "lost_and_terminal_new_right": 9,
+          "lost_and_terminal_unfinished": 7,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "lost_and_first_new_right": 9,
+          "lost_and_terminal_new_right": 9,
+          "lost_and_terminal_unfinished": 7,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        }
+      }
+    },
+    "previously_joint_correct_states": {
+      "total": 13,
+      "retained_joint_terminal_correct": 0,
+      "both_old_instructions_terminal_new_right": 5
+    },
+    "both_old_to_right_indices": [
+      31,
+      33,
+      36,
+      37,
+      38
+    ],
+    "joint_and_new_right_instruction_correct_after_indices": [
+      22,
+      26,
+      33,
+      36,
+      37,
+      38
+    ],
+    "source_commit": "5514c303d5b516a5b565ef777972d69f5bf83480",
+    "verified_at": "2026-10-23T13:37:09.596656+00:00"
+  },
+  "parent_four_instructions": {
+    "episodes": 80,
+    "initial_states": 20,
+    "task_success_counts": {
+      "front": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "front": 16,
+          "unreached": 4
+        },
+        "terminal_targets": {
+          "front": 16,
+          "unfinished": 4
+        },
+        "ever_reached_targets": {
+          "front": 16,
+          "left": 0,
+          "right": 0,
+          "back": 0
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 4,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "unfinished": 4,
+          "left": 16
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 20,
+          "right": 0,
+          "back": 0
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "unfinished": 18,
+          "left": 2
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 20,
+          "right": 0,
+          "back": 0
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "unreached": 11,
+          "left": 9
+        },
+        "terminal_targets": {
+          "unfinished": 14,
+          "left": 6
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 9,
+          "right": 0,
+          "back": 0
+        }
+      }
+    },
+    "joint_old_terminal_correct": 13,
+    "joint_old_terminal_correct_indices": [
+      22,
+      24,
+      25,
+      26,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "unseen_instructions": {
+      "total": 40,
+      "requested_success_ever": 0,
+      "requested_terminal_correct": 0,
+      "first_old_target": 29,
+      "old_target_ever_without_requested_success": 29,
+      "terminal_old_target": 8
+    },
+    "unseen_conditioned_on_both_old_instructions_correct": {
+      "control_indices": [
+        22,
+        24,
+        25,
+        26,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "total": 26,
+      "requested_success_ever": 0,
+      "requested_terminal_correct": 0,
+      "first_old_target": 17,
+      "old_target_ever_without_requested_success": 17,
+      "terminal_old_target": 5
+    },
+    "interpretation": "Untrained right/back failures measure generalization and old-target bias, not forgetting. First arrival and terminal target are separate."
+  },
+  "supplement_source_sha256": {
+    "episodes.jsonl": "863c0d66a554aaf8870c9f7d922626da95dacb1ba02b3eb01dece430b2989eb8",
+    "evaluation.json": "526536967f470346498eae8e6b37ff121ec9ca1b0febbf161f559a2eb4f8b11b",
+    "launch_server.sh": "2f73496db77fed189f9344a0bf3ad4d725e0faf6f9ba5860a6207d61d659532e"
+  },
+  "analysis_script_sha256": "eec66cbb4771438ae5049861d40abaef0c3581f5d888192ef9e9d206323fb472"
+}

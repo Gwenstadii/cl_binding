@@ -1,0 +1,13 @@
+{
+  "checked_date": "2026-10-23",
+  "runtime": "/home/lzx/cl_binding/.venv/bin/python",
+  "runtime_module": "libero.libero.envs.predicates.base_predicates.In",
+  "runtime_source_observed": "class In(BinaryAtomic):\n    def __call__(self, arg1, arg2):\n        return arg2.check_contact(arg1) and arg2.check_contain(arg1)\n",
+  "back_task_goal": "(In black_book_1 desk_caddy_1_back_contain_region)",
+  "explicit_release_or_stationarity_requirement_in_this_predicate": false,
+  "evaluation_ignore_done": true,
+  "evaluation_horizon": 400,
+  "evaluation_control_hz": 20,
+  "policy_is_not_stopped_at_first_success": true,
+  "interpretation": "Success at a step does not independently certify release or persistent placement. This explains how ever and terminal metrics differ; it is not a causal diagnosis of every failed rollout."
+}

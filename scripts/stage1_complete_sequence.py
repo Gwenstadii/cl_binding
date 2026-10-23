@@ -251,6 +251,9 @@ def main():
             acquisition[item['goal']]=item['name']
             stage.update(status='complete',counts=snapshot['task_success_counts'],
                          checkpoint_model_sha256=sha256(checkpoint/'model.safetensors'))
+            dump(folder/'COMPLETE.json',{'status':'complete','stage':item['name'],
+                 'checkpoint':str(checkpoint),'training_steps':12000,'evaluation_episodes':80,
+                 'finished_at':datetime.datetime.now(datetime.timezone.utc).isoformat()})
             parent=checkpoint;previous=item['name'];save()
         report.update(status='complete',seconds=time.monotonic()-started,
                       finished_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),new_evaluation_episodes=160)

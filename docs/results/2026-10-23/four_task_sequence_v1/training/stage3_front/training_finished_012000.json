@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "step": 12000,
+  "target": 12000,
+  "seconds": 3185.5770700830035,
+  "peak_allocated_mib": 3159.7333984375,
+  "frozen_parameters_unchanged": true
+}

@@ -6,7 +6,6 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 session_name=stage2b-20261024
-alias_arg="d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050=642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc"
 runs=(stage2b_seed2_20261024_01 stage2b_seed3_20261024_01 stage2b_mem064_20261024_01 stage2b_mem016_20261024_01
       stage2b_mem004_20261024_01 stage2b_mem001_20261024_01)
 for run in "${runs[@]}"; do test ! -e ".server/$run"; done
@@ -17,13 +16,8 @@ if tmux has-session -t "$session_name" 2>/dev/null; then
   exit 1
 fi
 .venv/bin/python -m unittest discover -s tests -p 'test_stage*.py' -q
-run() { .venv/bin/python -u scripts/stage2_run.py --config "configs/$1.json" --run-dir ".server/$2" --branches $3 --gpus $4 --scene-alias "$alias_arg" > ".server/$2.launcher.log" 2>&1; }
-export -f run; export alias_arg
-tmux new-session -d -s "$session_name" bash -c '
-  run stage2b_seed2_v1 stage2b_seed2_20261024_01 "ft4 er" "0 1" & run stage2b_seed3_v1 stage2b_seed3_20261024_01 "ft4 er" "1 0" & wait
-  run stage2b_er_mem064_v1 stage2b_mem064_20261024_01 er 0 & run stage2b_er_mem016_v1 stage2b_mem016_20261024_01 er 1 &
-  run stage2b_er_mem004_v1 stage2b_mem004_20261024_01 er 0 & run stage2b_er_mem001_v1 stage2b_mem001_20261024_01 er 1 & wait
-  date -Is > .server/stage2b_20261024.waves_done'
+test ! -e .server/stage2b_20261024.waves.log
+tmux new-session -d -s "$session_name" "bash scripts/stage2b_waves.sh"
 date -Is
 git rev-parse HEAD
 tmux list-panes -t "$session_name" -F '#{pane_pid} #{pane_current_command}'

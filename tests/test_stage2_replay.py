@@ -77,6 +77,45 @@ class LossAndExposureTests(unittest.TestCase):
         self.assertAlmostEqual(flow_time_from_uniform(0.5), 0.5 ** (2 / 3) * 0.999 + 0.001)
 
 
+def episode(index, goal, first, terminal, ever):
+    category = 'correct' if terminal == goal else 'unfinished' if terminal is None else 'wrong_goal'
+    return {'init_index': index, 'requested_goal': goal, 'seed': 20261021 + index, 'steps': 400,
+            'initial_state_sha256': f's{index}', 'scene_xml_sha256': 'x', 'first_goal': first,
+            'terminal_goal': terminal, 'terminal_category': category, 'correct_ever': ever,
+            'correct_then_destroyed': ever and terminal != goal}
+
+
+class ComparisonTests(unittest.TestCase):
+    def rows(self, outcome):
+        return [episode(i, g, *outcome(i, g)) for i in (20, 21) for g in ('left', 'front', 'right', 'back')]
+
+    def test_replacement_unfinished_and_retention_are_separated_on_prior_success(self):
+        from stage2_compare import compare
+        parent = self.rows(lambda i, g: (g, g, True) if g in ('left', 'front') else ('left', None, False))
+        def branch(i, g):
+            if g == 'left':
+                return ('left', 'left', True) if i == 20 else ('right', 'right', False)
+            if g == 'front':
+                return (None, None, False)
+            return ('right', 'right', True)
+        result = compare(parent, self.rows(branch), [20, 21], 20261021)
+        left = result['old_goal_transitions']['left']['previously_terminal_correct']
+        self.assertEqual((left['total'], left['retained'], left['lost_and_terminal_new_right']), (2, 1, 1))
+        front = result['old_goal_transitions']['front']['previously_terminal_correct']
+        self.assertEqual((front['lost'], front['lost_and_terminal_unfinished']), (2, 2))
+        self.assertEqual(result['previously_joint_correct_states']['total'], 2)
+        self.assertEqual(result['previously_joint_correct_states']['retained_joint_terminal_correct'], 0)
+        self.assertEqual(result['new_right_gain'], {'success_ever': 2, 'terminal_correct': 2})
+
+    def test_mismatched_reset_is_rejected(self):
+        from stage2_compare import compare
+        parent = self.rows(lambda i, g: (g, g, True))
+        branch = self.rows(lambda i, g: (g, g, True))
+        branch[0]['initial_state_sha256'] = 'other'
+        with self.assertRaises(ValueError):
+            compare(parent, branch, [20, 21], 20261021)
+
+
 class ConfigTests(unittest.TestCase):
     def test_registered_config_matches_protocol(self):
         config = json.loads((ROOT / 'configs/stage2a_replay_v1.json').read_text())

@@ -1,0 +1,237 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-24T13:53:10.446615+00:00",
+  "source_commit": "4ffcc216275bc4baa38fe8dcdaf84b6a4ff8c50b",
+  "branches": [
+    "ft4",
+    "er"
+  ],
+  "gpus": [
+    1,
+    0
+  ],
+  "training_dirs": {
+    "ft4": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2b_seed3_20261024_01_ft4",
+    "er": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2b_seed3_20261024_01_er"
+  },
+  "parent_rows_reused": [
+    "/home/lzx/cl_binding_stage2a/.server/dual12000_then_right_20261023_01/before/episodes.jsonl",
+    "/home/lzx/cl_binding_stage2a/.server/dual_parent12000_unseen_back_20261023_01/episodes.jsonl"
+  ],
+  "parent_summary": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 16,
+        "success_then_lost": 4,
+        "success_then_lost_unfinished": 4
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 16,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 4
+      },
+      "right": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "back": {
+        "left": 9,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 11
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 16,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 16,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 2,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 18,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 6,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 14,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": [
+      22,
+      24,
+      25,
+      26,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "phases": [
+    {
+      "name": "ft4_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2b_seed3_20261024_01/config.json",
+        "--branch",
+        "ft4",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2b_seed3_20261024_01_ft4"
+      ],
+      "gpu": 1,
+      "pid": 1382605,
+      "started_elapsed_s": 0.0003724158741533756,
+      "returncode": 0,
+      "finished_elapsed_s": 3545.8737717899494
+    },
+    {
+      "name": "er_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2b_seed3_20261024_01/config.json",
+        "--branch",
+        "er",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2b_seed3_20261024_01_er"
+      ],
+      "gpu": 0,
+      "pid": 1382606,
+      "started_elapsed_s": 0.0008288449607789516,
+      "returncode": 0,
+      "finished_elapsed_s": 4861.042809886858
+    },
+    {
+      "name": "er_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2b_seed3_20261024_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2b_seed3_20261024_01_er/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2b_seed3_20261024_01/er_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 1817330,
+      "started_elapsed_s": 4861.567797845695,
+      "returncode": 0,
+      "finished_elapsed_s": 5965.493585777003
+    },
+    {
+      "name": "ft4_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2b_seed3_20261024_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2b_seed3_20261024_01_ft4/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2b_seed3_20261024_01/ft4_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 1817329,
+      "started_elapsed_s": 4861.568184635602,
+      "returncode": 0,
+      "finished_elapsed_s": 5952.021937713958
+    }
+  ],
+  "current_stage": "finished",
+  "finished_at": "2026-10-24T15:32:35.953721+00:00",
+  "seconds": 5965.507148372941,
+  "final_model_sha256": {
+    "ft4": "ba0d8be6fbfe2c0961fe57769d21120792d12bc8a546e0dbfdb5afbc20271885",
+    "er": "6524a5e181628147d6c9f7a555c38c3e8541957ced7d5e295d9c61839cd7d338"
+  },
+  "new_evaluation_episodes": 160,
+  "reused_parent_episodes": 80
+}

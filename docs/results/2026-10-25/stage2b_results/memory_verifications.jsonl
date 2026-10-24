@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "records": 2,
+  "records_per_goal": {
+    "left": 1,
+    "front": 1
+  },
+  "budget": {
+    "files": {
+      "memory_manifest.json": 1258,
+      "memory.npz": 201612
+    },
+    "total_bytes": 202870,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "exact_copy_of_parent_records": true,
+  "parent_memory": "outputs/stage2a/memory/left_front_uniform256_v1"
+}
+{
+  "status": "pass",
+  "records": 8,
+  "records_per_goal": {
+    "left": 4,
+    "front": 4
+  },
+  "budget": {
+    "files": {
+      "memory_manifest.json": 2073,
+      "memory.npz": 800400
+    },
+    "total_bytes": 802473,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "exact_copy_of_parent_records": true,
+  "parent_memory": "outputs/stage2a/memory/left_front_uniform256_v1"
+}
+{
+  "status": "pass",
+  "records": 32,
+  "records_per_goal": {
+    "left": 16,
+    "front": 16
+  },
+  "budget": {
+    "files": {
+      "memory_manifest.json": 5340,
+      "memory.npz": 3195552
+    },
+    "total_bytes": 3200892,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "exact_copy_of_parent_records": true,
+  "parent_memory": "outputs/stage2a/memory/left_front_uniform256_v1"
+}
+{
+  "status": "pass",
+  "records": 128,
+  "records_per_goal": {
+    "left": 64,
+    "front": 64
+  },
+  "budget": {
+    "files": {
+      "memory_manifest.json": 18409,
+      "memory.npz": 12776160
+    },
+    "total_bytes": 12794569,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "exact_copy_of_parent_records": true,
+  "parent_memory": "outputs/stage2a/memory/left_front_uniform256_v1"
+}
+{
+  "status": "pass",
+  "records": 512,
+  "records_per_goal": {
+    "left": 256,
+    "front": 256
+  },
+  "distinct_source_episodes_per_goal": {
+    "left": 40,
+    "front": 40
+  },
+  "max_abs_difference_vs_training_dataset": {
+    "image": 0.0,
+    "image2": 0.0,
+    "state": 0.0,
+    "action": 0.0
+  },
+  "mismatched_padding_masks": 0,
+  "budget": {
+    "files": {
+      "memory_manifest.json": 65697,
+      "memory.npz": 51098592
+    },
+    "total_bytes": 51164289,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "padded_chunk_records": 199,
+  "reads_full_old_videos_during_training": false,
+  "scope": "Verification is outside the memory directory and is not charged; ER reads memory only."
+}
+{
+  "status": "pass",
+  "records": 512,
+  "records_per_goal": {
+    "left": 256,
+    "front": 256
+  },
+  "distinct_source_episodes_per_goal": {
+    "left": 40,
+    "front": 40
+  },
+  "max_abs_difference_vs_training_dataset": {
+    "image": 0.0,
+    "image2": 0.0,
+    "state": 0.0,
+    "action": 0.0
+  },
+  "mismatched_padding_masks": 0,
+  "budget": {
+    "files": {
+      "memory_manifest.json": 65749,
+      "memory.npz": 51098592
+    },
+    "total_bytes": 51164341,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "padded_chunk_records": 190,
+  "reads_full_old_videos_during_training": false,
+  "scope": "Verification is outside the memory directory and is not charged; ER reads memory only."
+}

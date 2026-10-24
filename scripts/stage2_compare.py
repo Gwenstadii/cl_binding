@@ -1,4 +1,9 @@
-"""Paired four-instruction comparison of a stage 2A endpoint against the sealed dual-goal parent."""
+"""Paired four-instruction comparison of a stage 2A endpoint against the sealed dual-goal parent.
+
+Primary metric (2026-10-24 decision): the first goal reached and ever-success, which equal LIBERO's
+stop-on-success scoring because demonstrations end ~10 frames after success. Terminal state after the full
+400-step horizon is kept as a secondary metric; the episodes themselves are unchanged and stay paired.
+"""
 
 GOALS = ("left", "front", "right", "back")
 OLD = ("left", "front")
@@ -58,19 +63,29 @@ def compare(parent_rows, rows, indices, seed):
             old[goal][label] = {
                 "total": len(eligible), "retained": len(eligible) - len(lost), "lost": len(lost),
                 "lost_and_first_new_right": sum(r["first_goal"] == NEW for r in lost),
+                "lost_and_first_other_wrong": sum(r["first_goal"] not in (None, NEW, goal) for r in lost),
+                "lost_and_no_goal_first": sum(r["first_goal"] is None for r in lost),
                 "lost_and_terminal_new_right": sum(r["terminal_goal"] == NEW for r in lost),
                 "lost_and_terminal_other_wrong": sum(r["terminal_category"] == "wrong_goal" and r["terminal_goal"] != NEW for r in lost),
                 "lost_and_terminal_unfinished": sum(r["terminal_category"] == "unfinished" for r in lost),
                 "lost_after_reaching_old_goal": sum(r["correct_ever"] for r in lost)}
     joint = before["joint_old_terminal_correct_indices"]
+    joint_ever = [i for i in indices if all(pre[i, g]["correct_ever"] for g in OLD)]
     new_before, new_after = before["task_success_counts"][NEW], after["task_success_counts"][NEW]
-    return {"parent": before, "branch": after, "matched_pairs": len(pre), "old_goal_transitions": old,
+    return {"metric_policy": {"primary": "first goal reached + ever-success (stop-on-success equivalent)",
+                              "secondary": "terminal goal at 400 steps"},
+            "parent": before, "branch": after, "matched_pairs": len(pre), "old_goal_transitions": old,
+            "previously_joint_ever_states": {
+                "total": len(joint_ever),
+                "retained_joint_ever": sum(all(post[i, g]["correct_ever"] for g in OLD) for i in joint_ever),
+                "both_old_instructions_first_new_right": sum(all(post[i, g]["first_goal"] == NEW for g in OLD) for i in joint_ever)},
             "previously_joint_correct_states": {
                 "total": len(joint),
                 "retained_joint_terminal_correct": sum(all(post[i, g]["terminal_category"] == "correct" for g in OLD) for i in joint),
                 "both_old_instructions_terminal_new_right": sum(all(post[i, g]["terminal_goal"] == NEW for g in OLD) for i in joint),
                 "both_old_instructions_first_new_right": sum(all(post[i, g]["first_goal"] == NEW for g in OLD) for i in joint)},
             "new_right_gain": {k: new_after[k] - new_before[k] for k in ("success_ever", "terminal_correct")},
-            "new_right_descriptive_screen_16_of_20": all(new_after[k] >= 16 for k in ("success_ever", "terminal_correct")),
+            "new_right_descriptive_screen_16_of_20": {"ever_primary": new_after["success_ever"] >= 16,
+                                                      "terminal_secondary": new_after["terminal_correct"] >= 16},
             "interpretation": "Exploratory pilot on reused states 20-39 from a non-qualified parent. Report wrong-new-target, "
                               "late result loss and unfinished separately on actual pre-success denominators."}

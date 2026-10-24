@@ -33,13 +33,15 @@ def main():
     parser.add_argument("--config", type=Path, default=ROOT / "configs/stage2a_replay_v1.json")
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--branches", nargs="+", default=["ft4", "er"], choices=["ft4", "er", "full_replay"])
+    parser.add_argument("--gpus", nargs="+", type=int, help="One GPU per branch; defaults to 0, 1, ...")
     args = parser.parse_args()
+    gpus = args.gpus or list(range(len(args.branches)))
     config = json.loads(args.config.read_text())
     run = args.run_dir.resolve()
     if run.exists():
         raise FileExistsError("Use a new run directory; no implicit restart")
-    if len(args.branches) > 2:
-        raise ValueError("Two 3090s: launch at most two branches at once")
+    if len(args.branches) > 2 or len(gpus) != len(args.branches) or len(set(args.branches)) != len(args.branches):
+        raise ValueError("At most two distinct branches, each with exactly one GPU")
     e, indices = config["evaluation"], config["evaluation"]["paired_indices"]
     parent_rows = [r for path in PARENT_ROWS for r in read_rows(ROOT / path)]
     parent_summary = summarize(parent_rows, indices, config["seed"])
@@ -51,7 +53,7 @@ def main():
     dump(cfg, config)
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     report = {"status": "running", "started_at": datetime.now(timezone.utc).isoformat(), "source_commit": commit,
-              "branches": args.branches, "training_dirs": {b: str(p) for b, p in trains.items()},
+              "branches": args.branches, "gpus": gpus, "training_dirs": {b: str(p) for b, p in trains.items()},
               "parent_rows_reused": [str(ROOT / p) for p in PARENT_ROWS], "parent_summary": parent_summary,
               "phases": []}
     env = {**os.environ, "HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1", "MUJOCO_GL": "egl",
@@ -114,7 +116,7 @@ def main():
     try:
         save()
         trainers = {b: launch(f"{b}_train", "stage2_replay_train.py", ["--config", cfg, "--branch", b, "--run-dir", trains[b]], gpu)
-                    for gpu, b in enumerate(args.branches)}
+                    for gpu, b in zip(gpus, args.branches)}
         for b, worker in trainers.items():
             finish(f"{b}_train", worker, 3 * 3600 + 10 * 60)
         finals = {b: check_training(b)[0] for b in args.branches}
@@ -124,7 +126,7 @@ def main():
         report["current_stage"] = "evaluating_fixed_12000_endpoints"; save()
         from concurrent.futures import ThreadPoolExecutor
         with ThreadPoolExecutor(len(args.branches)) as pool:
-            futures = {b: pool.submit(evaluate, b, finals[b], gpu) for gpu, b in enumerate(args.branches)}
+            futures = {b: pool.submit(evaluate, b, finals[b], gpu) for gpu, b in zip(gpus, args.branches)}
             rows = {b: f.result() for b, f in futures.items()}
         comparisons = {b: compare(parent_rows, rows[b], indices, config["seed"]) for b in args.branches}
         for b in args.branches:
@@ -136,15 +138,18 @@ def main():
                       final_model_sha256={b: sha256(finals[b] / "model.safetensors") for b in args.branches},
                       new_evaluation_episodes=80 * len(args.branches), reused_parent_episodes=len(parent_rows))
         save()
-        lines = ["# 2A：封存双目标父模型 → 匹配FT4／普通ER（右格12000步）", "",
-                 "探索性先导：父模型未通过正式资格，配对初态20—39有历史使用。每模型四指令各20回合。", "",
-                 "| 模型 | 左 曾/终 | 前 曾/终 | 右 曾/终 | 后 曾/终 |", "|---|---|---|---|---|"]
+        lines = ["# 2A：封存双目标父模型 → " + "／".join(args.branches) + "（右格12000步）", "",
+                 "探索性先导：父模型未通过正式资格，配对初态20—39有历史使用。每模型四指令各20回合，均跑满400步。",
+                 "主指标为曾成功与首次到达目标（等价成功即停）；400步终态为副指标。", "",
+                 "| 模型 | 左 曾成功（终态） | 前 曾成功（终态） | 右 曾成功（终态） | 后 曾成功（终态） | 左／前指令首次到右 |",
+                 "|---|---|---|---|---|---|"]
         def line(name, summary):
-            c = summary["task_success_counts"]
-            return f"| {name} | " + " | ".join(f"{c[g]['success_ever']}/20、{c[g]['terminal_correct']}/20" for g in GOALS) + " |"
+            c, f = summary["task_success_counts"], summary["first_goal_matrix"]
+            cells = [f"{c[g]['success_ever']}/20（{c[g]['terminal_correct']}）" for g in GOALS]
+            return f"| {name} | " + " | ".join(cells) + f" | {f['left']['right']}／{f['front']['right']} |"
         lines.append(line("父模型（复用）", parent_summary))
         lines += [line(b, comparisons[b]["branch"]) for b in args.branches]
-        lines += ["", "原先成功分母上的保持、首次／最终转右、未完成，以及13个共同初态见各分支`comparison.json`。"]
+        lines += ["", "原先成功分母上的保持、首次转右、从未到达任一目标，以及共同初态见各分支`comparison.json`。"]
         (run / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
         dump(run / "COMPLETE.json", {"status": "complete", "branches": args.branches, "fixed_steps": 12000,
                                      "starting_point_formally_qualified": False})

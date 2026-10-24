@@ -140,5 +140,10 @@
     ],
     "retry_policy": "low scores are never rerun; a run error may be retried once with the original evidence kept"
   },
-  "endpoint_rule": "Train exactly 12000 updates per branch; never extend, retune or reselect a branch by its scores."
+  "endpoint_rule": "Train exactly 12000 updates per branch; never extend, retune or reselect a branch by its scores.",
+  "metric_policy": {
+    "primary": "first goal reached and ever-success within 400 steps (equivalent to LIBERO stop-on-success; demos end ~10 frames after success)",
+    "secondary": "terminal goal at step 400 with ignore_done=True",
+    "decided": "2026-10-24 by the researcher; episodes still run the full 400 steps so parent rows stay paired"
+  }
 }

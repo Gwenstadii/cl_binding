@@ -106,6 +106,10 @@ class ComparisonTests(unittest.TestCase):
         self.assertEqual(result['previously_joint_correct_states']['total'], 2)
         self.assertEqual(result['previously_joint_correct_states']['retained_joint_terminal_correct'], 0)
         self.assertEqual(result['new_right_gain'], {'success_ever': 2, 'terminal_correct': 2})
+        ever = result['old_goal_transitions']['front']['previously_successful_ever']
+        self.assertEqual((ever['total'], ever['lost_and_no_goal_first'], ever['lost_and_first_new_right']), (2, 2, 0))
+        self.assertEqual(result['previously_joint_ever_states']['both_old_instructions_first_new_right'], 0)
+        self.assertTrue(result['metric_policy']['primary'].startswith('first goal'))
 
     def test_mismatched_reset_is_rejected(self):
         from stage2_compare import compare
@@ -126,6 +130,7 @@ class ConfigTests(unittest.TestCase):
         self.assertEqual(config['data']['normalization_source'], config['memory']['source_dataset'])
         self.assertEqual(config['parent']['model_sha256'], '15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7')
         self.assertEqual(config['evaluation']['paired_indices'], list(range(20, 40)))
+        self.assertIn('stop-on-success', config['metric_policy']['primary'])
         seeds = config['seeds']
         self.assertEqual((seeds['split_and_inference'], seeds['memory'], seeds['new_samples'], seeds['old_samples']),
                          (20261021, 20261024, 20261024, 20261025))

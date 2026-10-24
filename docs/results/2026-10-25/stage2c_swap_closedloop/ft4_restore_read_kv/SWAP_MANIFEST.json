@@ -1,0 +1,30 @@
+{
+ "base": "outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+ "base_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+ "donor": "outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+ "donor_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+ "group": "read_kv",
+ "swapped_tensors": [
+  "model.vlm_with_expert.lm_expert.layers.1.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.1.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.11.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.11.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.13.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.13.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.15.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.15.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.3.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.3.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.5.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.5.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.7.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.7.self_attn.v_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.9.self_attn.k_proj.weight",
+  "model.vlm_with_expert.lm_expert.layers.9.self_attn.v_proj.weight"
+ ],
+ "swapped_tensor_count": 16,
+ "swapped_tensors_that_differ": 16,
+ "model_sha256": "654afa545482495d0ce0c1b0292a763dee47b39272ea6f177a783c2d63182197",
+ "scope": "evaluation-only hybrid; processors/config from base",
+ "swapped_parameters": 1638400
+}

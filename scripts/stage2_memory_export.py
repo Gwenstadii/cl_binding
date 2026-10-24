@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 from stage1_smoke import ROOT, CAMERAS, dump
-from stage2_protocol import OLD_GOALS, check_budget, memory_record_bytes, select_memory
+from stage2_protocol import OLD_GOALS, check_budget, memory_record_bytes, nested_subset, select_memory
 
 ARRAYS = ("image", "image2", "state", "action", "action_is_pad", "goal_index", "frame_index", "episode_index")
 
@@ -89,6 +89,41 @@ def export(config, output):
     verify(config, output, dataset, budget)
 
 
+def export_subset(config, output):
+    """Smaller self-contained memory made only from a parent memory's records (no access to old videos)."""
+    import numpy as np
+    m = config["memory"]
+    if output.exists():
+        raise FileExistsError(f"Refusing to overwrite memory: {output}")
+    parent_dir = ROOT / m["subset_of"]
+    arrays, parent_manifest, _ = load_memory(parent_dir, m["budget_bytes"])
+    positions = {goal: [int(i) for i in np.flatnonzero(arrays["goal_index"] == g)] for g, goal in enumerate(OLD_GOALS)}
+    chosen = nested_subset(positions, m["per_goal"], m["subset_seed"])
+    order = chosen["left"] + chosen["front"]
+    output.mkdir(parents=True)
+    np.savez(output / "memory.npz", **{key: value[order] for key, value in arrays.items()})
+    records = [parent_manifest["records"][i] for i in order]
+    manifest = {"purpose": "stage2a_er_budget_sweep_nested_subset", "source_dataset": parent_manifest["source_dataset"],
+                "source_split_sha256": parent_manifest["source_split_sha256"], "goals": list(OLD_GOALS),
+                "instructions": parent_manifest["instructions"], "per_goal": m["per_goal"],
+                "selection": "prefix_of_fixed_per_goal_permutation_of_parent_memory", "subset_seed": m["subset_seed"],
+                "parent_memory": m["subset_of"], "parent_memory_npz_sha256": parent_manifest["memory_npz_sha256"],
+                "parent_positions": chosen, "records": records,
+                "dataset_indices": {goal: [r["dataset_index"] for r in records if r["goal"] == goal] for goal in OLD_GOALS},
+                "memory_npz_sha256": sha256(output / "memory.npz")}
+    dump(output / "memory_manifest.json", manifest)
+    budget = check_budget({p.name: p.stat().st_size for p in output.iterdir()}, m["budget_bytes"])
+    reloaded, _, _ = load_memory(output, m["budget_bytes"])
+    exact = all(np.array_equal(reloaded[k], arrays[k][order]) for k in ARRAYS)
+    report = {"status": "pass" if exact and budget["within_budget"] else "fail", "records": len(order),
+              "records_per_goal": {goal: len(chosen[goal]) for goal in OLD_GOALS}, "budget": budget,
+              "exact_copy_of_parent_records": exact, "parent_memory": m["subset_of"]}
+    dump(output.parent / f"{output.name}_verification.json", report)
+    print(json.dumps(report), flush=True)
+    if report["status"] != "pass":
+        raise RuntimeError("Subset memory failed verification")
+
+
 def load_memory(directory, budget_bytes):
     """Read only the memory directory; refuse anything over budget or not matching its manifest."""
     import numpy as np
@@ -153,4 +188,4 @@ if __name__ == "__main__":
     p.add_argument("--output", type=Path, help="Defaults to config memory.output")
     a = p.parse_args()
     c = json.loads(a.config.read_text())
-    export(c, a.output or ROOT / c["memory"]["output"])
+    (export_subset if c["memory"].get("subset_of") else export)(c, a.output or ROOT / c["memory"]["output"])

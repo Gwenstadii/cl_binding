@@ -22,6 +22,15 @@ class MemorySelectionTests(unittest.TestCase):
             self.assertTrue(set(first[goal]) <= set(groups[goal]))
         self.assertNotEqual(first, select_memory(groups, 256, 20261025))
 
+    def test_budget_sweep_memories_are_nested(self):
+        from stage2_protocol import nested_subset
+        positions = {'left': list(range(256)), 'front': list(range(256, 512))}
+        sizes = [nested_subset(positions, k, 20261026) for k in (1, 4, 16, 64, 256)]
+        for small, large in zip(sizes, sizes[1:]):
+            for goal in OLD_GOALS:
+                self.assertTrue(set(small[goal]) <= set(large[goal]))
+        self.assertEqual(sizes[-1]['left'], positions['left'])
+
     def test_memory_refuses_new_goal_or_overdraw(self):
         with self.assertRaises(ValueError):
             select_memory({'left': [1, 2], 'right': [3, 4]}, 1, 1)

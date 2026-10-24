@@ -46,6 +46,20 @@ def select_memory(groups, per_goal, seed):
     return selected
 
 
+def nested_subset(positions_by_goal, per_goal, seed):
+    """Prefix of one fixed per-goal permutation, so smaller budgets are subsets of larger ones (4 in 16 in 64 ...)."""
+    if set(positions_by_goal) != set(OLD_GOALS) or per_goal < 1:
+        raise ValueError("Subset covers exactly the left/front old goals with a positive budget")
+    chosen = {}
+    for goal in OLD_GOALS:
+        positions = sorted(positions_by_goal[goal])
+        if len(positions) < per_goal:
+            raise ValueError(f"Parent memory has too few {goal} records")
+        order = stream_rng(f"subset-{goal}", seed).sample(positions, len(positions))
+        chosen[goal] = sorted(order[:per_goal])
+    return chosen
+
+
 def step_indices(population, count, seed, step, stream):
     """Uniform draws with replacement for one update; identical for every branch that uses this stream."""
     population = list(population)

@@ -1,0 +1,144 @@
+{
+  "purpose": "stage2a_matched_ft4_vs_ordinary_er_from_dual12000_exploratory_pilot",
+  "seed": 20261021,
+  "seeds": {
+    "split_and_inference": 20261021,
+    "memory": 20261024,
+    "new_samples": 20261024,
+    "old_samples": 20261025
+  },
+  "old_goals": [
+    "right"
+  ],
+  "data": {
+    "train_per_goal": 40,
+    "fps": 20,
+    "image_size": 128,
+    "train_output": "datasets/stage1_single_right_train_aligned_v1",
+    "validation_output": "datasets/stage1_single_right_validation_aligned_v1",
+    "action_alignment": "post_action_obs_to_next_action",
+    "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1"
+  },
+  "memory": {
+    "source_dataset": "datasets/stage1_dual_left_front_train_aligned_v1",
+    "per_goal": 256,
+    "budget_bytes": 67108864,
+    "output": "outputs/stage2a/memory/left_front_uniform256_v1"
+  },
+  "parent": {
+    "checkpoint": "outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "status": "user-selected exploratory joint left+front 12000; not a formally qualified R0"
+  },
+  "model": {
+    "chunk_size": 50,
+    "n_action_steps": 10,
+    "flow_steps": 10
+  },
+  "training": {
+    "max_steps": 12000,
+    "new_per_step": 4,
+    "old_per_goal_per_step": 1,
+    "loss_denominator": 6,
+    "learning_rate": 0.0001,
+    "warmup_steps": 100,
+    "save_every": 3000,
+    "log_every": 25,
+    "walltime_hours": 3
+  },
+  "branches": {
+    "ft4": "4 right records, loss sum/6, no old data",
+    "er": "same 4 right records + 1 left + 1 front from the 64MiB self-contained memory, loss sum/6",
+    "full_replay": "same 4 right records + 1 left + 1 front from the complete old training split (ceiling, not a memory method)"
+  },
+  "evaluation": {
+    "expert_replay_demos": [
+      "demo_0",
+      "demo_1",
+      "demo_2"
+    ],
+    "horizon": 400,
+    "settle_steps": 10,
+    "common_state_source_goal": "front",
+    "screen_indices": [
+      0,
+      1,
+      2
+    ],
+    "development_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "qualification_indices": [],
+    "paired_indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "reserve_indices": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "development_required_correct": 16,
+    "qualification_required_correct": 16
+  },
+  "evaluation_protocol": {
+    "instruction_goals": [
+      "left",
+      "front",
+      "right",
+      "back"
+    ],
+    "partition": "paired",
+    "fixed_endpoint_step": 12000,
+    "parent_rows_reused_from": [
+      "E007 before (left/front/right)",
+      "E008 parent_unseen_back"
+    ],
+    "retry_policy": "low scores are never rerun; a run error may be retried once with the original evidence kept"
+  },
+  "endpoint_rule": "Train exactly 12000 updates per branch; never extend, retune or reselect a branch by its scores."
+}

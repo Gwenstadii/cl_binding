@@ -1,0 +1,444 @@
+{
+  "status": "running",
+  "purpose": "joint_left_front_R0_acquisition_before_continual_adaptation",
+  "started_at": "2026-10-23T06:29:03.539065+00:00",
+  "source_commit": "addd9028e2529061fd3cc27905f95496acc3b559",
+  "base_checkpoint": "/home/lzx/hf_models/smolvla_base",
+  "base_model_sha256": "7cd549ac2351fb069c0ddb3c34ad2d09cfc92b56a15dccdfc2e41467aaca01eb",
+  "initialization": "Original smolvla_base; no adapted checkpoint; fresh optimizer/scheduler/RNG.",
+  "training_run": "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01",
+  "normalization_source": "/home/lzx/cl_binding/datasets/stage1_dual_left_front_train_aligned_v1",
+  "maximum_training_steps": 18000,
+  "batch_size": 6,
+  "samples_per_goal": 3,
+  "selection_rule": "First of 6000/12000/18000 with >=16/20 terminal-correct left, front and same-state joint successes on development. Pause training for each evaluation; if none passes, evaluate fixed 18000 as unqualified. Final scores never change selection or training budget.",
+  "optimizer_scheduler_rng_restored_between_candidates": [
+    {
+      "status": "pass",
+      "restored_step": 6000,
+      "optimizer_state_entries": 155,
+      "scheduler_last_epoch": 6000,
+      "training_config_unchanged": true,
+      "requested_maximum_step": 12000,
+      "git_commit": "addd9028e2529061fd3cc27905f95496acc3b559"
+    }
+  ],
+  "candidate_reports": [
+    {
+      "step": 6000,
+      "summary": {
+        "initial_states": 20,
+        "episodes": 40,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "task_success_counts": {
+          "left": {
+            "total": 20,
+            "success_ever": 19,
+            "terminal_correct": 15,
+            "correct_then_destroyed": 4
+          },
+          "front": {
+            "total": 20,
+            "success_ever": 8,
+            "terminal_correct": 8,
+            "correct_then_destroyed": 0
+          }
+        },
+        "terminal_matrix": {
+          "left": {
+            "front": 0,
+            "left": 15,
+            "right": 0,
+            "back": 0,
+            "unfinished": 5,
+            "ambiguous": 0
+          },
+          "front": {
+            "front": 8,
+            "left": 0,
+            "right": 0,
+            "back": 0,
+            "unfinished": 12,
+            "ambiguous": 0
+          }
+        },
+        "joint_success_ever": 8,
+        "joint_terminal_correct": 6,
+        "joint_terminal_correct_indices": [
+          0,
+          2,
+          3,
+          11,
+          14,
+          16
+        ],
+        "required_correct": 16,
+        "passed": false,
+        "paired_reset_and_inference_seed_verified": true,
+        "joint_definition": "Both left and front instructions finish correctly from the same initial state; denominator is initial states, not episodes."
+      },
+      "training_completed": {
+        "status": "complete",
+        "step": 6000,
+        "target": 6000,
+        "seconds": 2098.5238898079842,
+        "peak_allocated_mib": 3150.94677734375,
+        "frozen_parameters_unchanged": true
+      },
+      "checkpoint_verification": {
+        "status": "pass",
+        "step": 6000,
+        "reload_max_difference": 0.0,
+        "frozen_hash_unchanged": true,
+        "optimizer_and_rng_saved": true
+      },
+      "checkpoint_model_sha256": "19eb6715dadaf8aa0ed667c6936552b460c63da60cca8a3baa84682b5d9b9f18"
+    },
+    {
+      "step": 12000,
+      "summary": {
+        "initial_states": 20,
+        "episodes": 40,
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "task_success_counts": {
+          "left": {
+            "total": 20,
+            "success_ever": 19,
+            "terminal_correct": 19,
+            "correct_then_destroyed": 0
+          },
+          "front": {
+            "total": 20,
+            "success_ever": 17,
+            "terminal_correct": 16,
+            "correct_then_destroyed": 1
+          }
+        },
+        "terminal_matrix": {
+          "left": {
+            "front": 0,
+            "left": 19,
+            "right": 0,
+            "back": 0,
+            "unfinished": 1,
+            "ambiguous": 0
+          },
+          "front": {
+            "front": 16,
+            "left": 0,
+            "right": 0,
+            "back": 0,
+            "unfinished": 4,
+            "ambiguous": 0
+          }
+        },
+        "joint_success_ever": 16,
+        "joint_terminal_correct": 15,
+        "joint_terminal_correct_indices": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          12,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "required_correct": 16,
+        "passed": false,
+        "paired_reset_and_inference_seed_verified": true,
+        "joint_definition": "Both left and front instructions finish correctly from the same initial state; denominator is initial states, not episodes."
+      },
+      "training_completed": {
+        "status": "complete",
+        "step": 12000,
+        "target": 12000,
+        "seconds": 1997.2283262312412,
+        "peak_allocated_mib": 3145.63720703125,
+        "frozen_parameters_unchanged": true
+      },
+      "checkpoint_verification": {
+        "status": "pass",
+        "step": 12000,
+        "reload_max_difference": 0.0,
+        "frozen_hash_unchanged": true,
+        "optimizer_and_rng_saved": true
+      },
+      "checkpoint_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7"
+    }
+  ],
+  "phases": [
+    {
+      "name": "data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/data"
+      ],
+      "gpu": null,
+      "pid": 3672867,
+      "started_elapsed_s": 0.0004103872925043106,
+      "returncode": 0,
+      "finished_elapsed_s": 69.62118147918954
+    },
+    {
+      "name": "alignment",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 3675664,
+      "started_elapsed_s": 69.62198292929679,
+      "returncode": 0,
+      "finished_elapsed_s": 69.9440399883315
+    },
+    {
+      "name": "predicate_reset_verify",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "verify",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--audit",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/predicate_verification"
+      ],
+      "gpu": 0,
+      "pid": 3675676,
+      "started_elapsed_s": 69.9449682100676,
+      "returncode": 0,
+      "finished_elapsed_s": 107.0254965131171
+    },
+    {
+      "name": "train_to_006000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01",
+        "--max-steps",
+        "6000"
+      ],
+      "gpu": 0,
+      "pid": 3676421,
+      "started_elapsed_s": 107.02606994938105,
+      "returncode": 0,
+      "finished_elapsed_s": 2221.5284816110507
+    },
+    {
+      "name": "development_006000_attempt1_left",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/006000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/development_006000_attempt1_left",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 347700,
+      "started_elapsed_s": 2222.2704902281985,
+      "returncode": 0,
+      "finished_elapsed_s": 2463.583130985964
+    },
+    {
+      "name": "development_006000_attempt1_front",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/006000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "front",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/development_006000_attempt1_front",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 347701,
+      "started_elapsed_s": 2222.270842514001,
+      "returncode": 0,
+      "finished_elapsed_s": 2463.5921992002986
+    },
+    {
+      "name": "train_to_012000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01",
+        "--max-steps",
+        "12000",
+        "--resume",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/006000"
+      ],
+      "gpu": 0,
+      "pid": 348789,
+      "started_elapsed_s": 2464.2029728130437,
+      "returncode": 0,
+      "finished_elapsed_s": 4478.176485273056
+    },
+    {
+      "name": "development_012000_attempt1_left",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/development_012000_attempt1_left",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 1212926,
+      "started_elapsed_s": 4478.258649602067,
+      "returncode": 0,
+      "finished_elapsed_s": 4716.817305425182
+    },
+    {
+      "name": "development_012000_attempt1_front",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "front",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/development_012000_attempt1_front",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 1212927,
+      "started_elapsed_s": 4478.2591411033645,
+      "returncode": 0,
+      "finished_elapsed_s": 4722.139927198179
+    },
+    {
+      "name": "train_to_018000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01",
+        "--max-steps",
+        "18000",
+        "--resume",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000"
+      ],
+      "gpu": 0,
+      "pid": 1214012,
+      "started_elapsed_s": 4722.751933135092
+    }
+  ],
+  "qualified_R0": false,
+  "final_evaluation_episodes_planned": 40,
+  "final_mixed_set_disclosure": "States 20..29 are the qualification subset; 30..39 were previously evaluated in older experiments. Development 0..19 is disjoint from all final states.",
+  "data_alignment_predicates_reset_and_training_start_separation_verified": true,
+  "current_stage": "training_to_18000",
+  "normalization_processor_fingerprints": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "c10e05d5f5c0b4fcee32596e2c4721c204e15737e6dfa406c557397dd2a67e89",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "c10e05d5f5c0b4fcee32596e2c4721c204e15737e6dfa406c557397dd2a67e89"
+  },
+  "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e"
+}

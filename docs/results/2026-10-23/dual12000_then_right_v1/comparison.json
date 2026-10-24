@@ -1,0 +1,219 @@
+{
+  "before": {
+    "episodes": 60,
+    "initial_states": 20,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 4
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "front": 0,
+        "left": 16,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "front": {
+        "front": 16,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 2,
+        "right": 0,
+        "back": 0,
+        "unfinished": 18,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct": 13,
+    "joint_old_terminal_correct_indices": [
+      22,
+      24,
+      25,
+      26,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "scope": "Exploratory checkpoint selected after development review; not a formally qualified R0."
+  },
+  "after": {
+    "episodes": 60,
+    "initial_states": 20,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 13,
+        "terminal_correct": 12,
+        "correct_then_destroyed": 1
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 14,
+        "back": 0,
+        "unfinished": 6,
+        "ambiguous": 0
+      },
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 11,
+        "back": 0,
+        "unfinished": 9,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 12,
+        "back": 0,
+        "unfinished": 8,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct": 0,
+    "joint_old_terminal_correct_indices": [],
+    "scope": "Exploratory checkpoint selected after development review; not a formally qualified R0."
+  },
+  "matched_pairs": 60,
+  "old_goal_transitions": {
+    "left": {
+      "previously_successful_ever": {
+        "total": 20,
+        "retained": 0,
+        "lost": 20,
+        "lost_and_first_new_right": 14,
+        "lost_and_terminal_new_right": 14,
+        "lost_and_terminal_unfinished": 6,
+        "lost_and_terminal_ambiguous": 0,
+        "lost_and_terminal_other_wrong": 0
+      },
+      "previously_terminal_correct": {
+        "total": 16,
+        "retained": 0,
+        "lost": 16,
+        "lost_and_first_new_right": 12,
+        "lost_and_terminal_new_right": 12,
+        "lost_and_terminal_unfinished": 4,
+        "lost_and_terminal_ambiguous": 0,
+        "lost_and_terminal_other_wrong": 0
+      }
+    },
+    "front": {
+      "previously_successful_ever": {
+        "total": 16,
+        "retained": 0,
+        "lost": 16,
+        "lost_and_first_new_right": 9,
+        "lost_and_terminal_new_right": 9,
+        "lost_and_terminal_unfinished": 7,
+        "lost_and_terminal_ambiguous": 0,
+        "lost_and_terminal_other_wrong": 0
+      },
+      "previously_terminal_correct": {
+        "total": 16,
+        "retained": 0,
+        "lost": 16,
+        "lost_and_first_new_right": 9,
+        "lost_and_terminal_new_right": 9,
+        "lost_and_terminal_unfinished": 7,
+        "lost_and_terminal_ambiguous": 0,
+        "lost_and_terminal_other_wrong": 0
+      }
+    }
+  },
+  "previously_joint_correct_states": {
+    "total": 13,
+    "retained_joint_terminal_correct": 0,
+    "both_old_instructions_terminal_new_right": 5
+  },
+  "interpretation": "Report each old skill on its actual pre-success denominator. Wrong-new-target, late result destruction and unfinished are distinct. This exploratory branch alone does not prove an internal causal pathway."
+}

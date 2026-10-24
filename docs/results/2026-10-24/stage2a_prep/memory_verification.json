@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "records": 512,
+  "records_per_goal": {
+    "left": 256,
+    "front": 256
+  },
+  "distinct_source_episodes_per_goal": {
+    "left": 40,
+    "front": 40
+  },
+  "max_abs_difference_vs_training_dataset": {
+    "image": 0.0,
+    "image2": 0.0,
+    "state": 0.0,
+    "action": 0.0
+  },
+  "mismatched_padding_masks": 0,
+  "budget": {
+    "files": {
+      "memory_manifest.json": 65743,
+      "memory.npz": 51098592
+    },
+    "total_bytes": 51164335,
+    "limit_bytes": 67108864,
+    "within_budget": true
+  },
+  "padded_chunk_records": 184,
+  "reads_full_old_videos_during_training": false,
+  "scope": "Verification is outside the memory directory and is not charged; ER reads memory only."
+}

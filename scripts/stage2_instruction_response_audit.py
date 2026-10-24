@@ -87,6 +87,11 @@ def rms(x):
 def main(args):
     if args.output.exists():
         raise FileExistsError(args.output)
+    for item in args.extra or []:
+        name, rel = item.split("=", 1)
+        if name in CHECKPOINTS:
+            raise ValueError(f"Duplicate checkpoint name {name}")
+        CHECKPOINTS[name] = rel
     torch.set_num_threads(4)
     frames, instructions = collect_frames(args.phases)
     generator = torch.Generator().manual_seed(args.seed)
@@ -182,4 +187,5 @@ if __name__ == "__main__":
     p.add_argument("--noise-samples", type=int, default=2)
     p.add_argument("--batch-size", type=int, default=50)
     p.add_argument("--seed", type=int, default=20261024)
+    p.add_argument("--extra", nargs="+", help="Additional name=repo-relative-checkpoint entries, e.g. er_12k=outputs/...")
     main(p.parse_args())

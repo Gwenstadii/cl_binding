@@ -16,7 +16,7 @@ import sys
 import time
 
 from stage1_dual_goal_run import read_rows
-from stage2_compare import GOALS, compare, summarize
+from stage2_compare import GOALS, compare, report_lines, summarize
 from stage2_memory_export import sha256
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,8 +34,11 @@ def main():
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--branches", nargs="+", default=["ft4", "er"], choices=["ft4", "er", "full_replay"])
     parser.add_argument("--gpus", nargs="+", type=int, help="One GPU per branch; defaults to 0, 1, ...")
+    parser.add_argument("--scene-alias", nargs="*", default=[],
+                        help="BRANCH_HASH=PARENT_HASH pairs verified by stage2_scene_equivalence.py (path-only XML diff)")
     args = parser.parse_args()
     gpus = args.gpus or list(range(len(args.branches)))
+    scene_aliases = dict(item.split("=", 1) for item in args.scene_alias)
     config = json.loads(args.config.read_text())
     run = args.run_dir.resolve()
     if run.exists():
@@ -128,7 +131,7 @@ def main():
         with ThreadPoolExecutor(len(args.branches)) as pool:
             futures = {b: pool.submit(evaluate, b, finals[b], gpu) for gpu, b in zip(gpus, args.branches)}
             rows = {b: f.result() for b, f in futures.items()}
-        comparisons = {b: compare(parent_rows, rows[b], indices, config["seed"]) for b in args.branches}
+        comparisons = {b: compare(parent_rows, rows[b], indices, config["seed"], scene_aliases) for b in args.branches}
         for b in args.branches:
             folder = run / b; folder.mkdir()
             (folder / "episodes.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows[b]))
@@ -138,18 +141,7 @@ def main():
                       final_model_sha256={b: sha256(finals[b] / "model.safetensors") for b in args.branches},
                       new_evaluation_episodes=80 * len(args.branches), reused_parent_episodes=len(parent_rows))
         save()
-        lines = ["# 2A：封存双目标父模型 → " + "／".join(args.branches) + "（右格12000步）", "",
-                 "探索性先导：父模型未通过正式资格，配对初态20—39有历史使用。每模型四指令各20回合，均跑满400步。",
-                 "主指标为曾成功与首次到达目标（等价成功即停）；400步终态为副指标。", "",
-                 "| 模型 | 左 曾成功（终态） | 前 曾成功（终态） | 右 曾成功（终态） | 后 曾成功（终态） | 左／前指令首次到右 |",
-                 "|---|---|---|---|---|---|"]
-        def line(name, summary):
-            c, f = summary["task_success_counts"], summary["first_goal_matrix"]
-            cells = [f"{c[g]['success_ever']}/20（{c[g]['terminal_correct']}）" for g in GOALS]
-            return f"| {name} | " + " | ".join(cells) + f" | {f['left']['right']}／{f['front']['right']} |"
-        lines.append(line("父模型（复用）", parent_summary))
-        lines += [line(b, comparisons[b]["branch"]) for b in args.branches]
-        lines += ["", "原先成功分母上的保持、首次转右、从未到达任一目标，以及共同初态见各分支`comparison.json`。"]
+        lines = report_lines(args.branches, parent_summary, comparisons)
         (run / "report.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
         dump(run / "COMPLETE.json", {"status": "complete", "branches": args.branches, "fixed_steps": 12000,
                                      "starting_point_formally_qualified": False})

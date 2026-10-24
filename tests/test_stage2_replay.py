@@ -111,6 +111,17 @@ class ComparisonTests(unittest.TestCase):
         self.assertEqual(result['previously_joint_ever_states']['both_old_instructions_first_new_right'], 0)
         self.assertTrue(result['metric_policy']['primary'].startswith('first goal'))
 
+    def test_verified_scene_alias_is_accepted_but_unlisted_hash_is_not(self):
+        from stage2_compare import compare
+        parent = self.rows(lambda i, g: (g, g, True))
+        branch = self.rows(lambda i, g: (g, g, True))
+        for r in branch:
+            r['scene_xml_sha256'] = 'worktree'
+        with self.assertRaises(ValueError):
+            compare(parent, branch, [20, 21], 20261021)
+        result = compare(parent, branch, [20, 21], 20261021, {'worktree': 'x'})
+        self.assertEqual(result['scene_xml_aliases'], {'worktree': 'x'})
+
     def test_mismatched_reset_is_rejected(self):
         from stage2_compare import compare
         parent = self.rows(lambda i, g: (g, g, True))

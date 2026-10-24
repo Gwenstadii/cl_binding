@@ -46,12 +46,17 @@ def summarize(rows, indices, seed):
             "joint_old_terminal_correct_indices": joint}
 
 
-def compare(parent_rows, rows, indices, seed):
+def compare(parent_rows, rows, indices, seed, scene_aliases=None):
+    """scene_aliases maps a branch scene-XML hash to the parent hash it was verified identical to (path-only diff)."""
+    scene_aliases = scene_aliases or {}
     before, after = summarize(parent_rows, indices, seed), summarize(rows, indices, seed)
     pre, post = keyed_rows(parent_rows, indices, seed), keyed_rows(rows, indices, seed)
     for key in pre:
         for field in FIELDS:
-            if pre[key][field] != post[key][field]:
+            value = post[key][field]
+            if field == "scene_xml_sha256":
+                value = scene_aliases.get(value, value)
+            if pre[key][field] != value:
                 raise ValueError(f"Parent/branch mismatch: {key} {field}")
     old = {}
     for goal in OLD:
@@ -72,7 +77,7 @@ def compare(parent_rows, rows, indices, seed):
     joint = before["joint_old_terminal_correct_indices"]
     joint_ever = [i for i in indices if all(pre[i, g]["correct_ever"] for g in OLD)]
     new_before, new_after = before["task_success_counts"][NEW], after["task_success_counts"][NEW]
-    return {"metric_policy": {"primary": "first goal reached + ever-success (stop-on-success equivalent)",
+    return {"scene_xml_aliases": scene_aliases, "metric_policy": {"primary": "first goal reached + ever-success (stop-on-success equivalent)",
                               "secondary": "terminal goal at 400 steps"},
             "parent": before, "branch": after, "matched_pairs": len(pre), "old_goal_transitions": old,
             "previously_joint_ever_states": {
@@ -89,3 +94,20 @@ def compare(parent_rows, rows, indices, seed):
                                                       "terminal_secondary": new_after["terminal_correct"] >= 16},
             "interpretation": "Exploratory pilot on reused states 20-39 from a non-qualified parent. Report wrong-new-target, "
                               "late result loss and unfinished separately on actual pre-success denominators."}
+
+
+def report_lines(branches, parent_summary, comparisons):
+    lines = ["# 2A：封存双目标父模型 → " + "／".join(branches) + "（右格12000步）", "",
+             "探索性先导：父模型未通过正式资格，配对初态20—39有历史使用。每模型四指令各20回合，均跑满400步。",
+             "主指标为曾成功与首次到达目标（等价成功即停）；400步终态为副指标。", "",
+             "| 模型 | 左 曾成功（终态） | 前 曾成功（终态） | 右 曾成功（终态） | 后 曾成功（终态） | 左／前指令首次到右 |",
+             "|---|---|---|---|---|---|"]
+
+    def line(name, summary):
+        c, f = summary["task_success_counts"], summary["first_goal_matrix"]
+        cells = [f"{c[g]['success_ever']}/20（{c[g]['terminal_correct']}）" for g in GOALS]
+        return f"| {name} | " + " | ".join(cells) + f" | {f['left']['right']}／{f['front']['right']} |"
+    lines.append(line("父模型（复用）", parent_summary))
+    lines += [line(b, comparisons[b]["branch"]) for b in branches]
+    lines += ["", "原先成功分母上的保持、首次转右、从未到达任一目标，以及共同初态见各分支`comparison.json`。"]
+    return lines

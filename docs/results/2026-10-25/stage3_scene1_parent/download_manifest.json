@@ -1,0 +1,26 @@
+{
+ "revision": "f13aa24a3da8c43c7225569f28c562979fa0e35a",
+ "endpoint": "https://hf-mirror.com",
+ "files": [
+  {
+   "path": "libero_90/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_front_compartment_of_the_caddy_demo.hdf5",
+   "bytes": 868488676,
+   "sha256": "be189a6bff1ebdc093f8a3a45839fcb2f458bafda6ba9cf1f62d3f89d90dafee"
+  },
+  {
+   "path": "libero_90/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_left_compartment_of_the_caddy_demo.hdf5",
+   "bytes": 788923228,
+   "sha256": "4483158ffcf75e24687ec341d77342655efb71b12bc7b4093cd763b8e1ff2ae2"
+  },
+  {
+   "path": "libero_90/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_right_compartment_of_the_caddy_demo.hdf5",
+   "bytes": 778334366,
+   "sha256": "c666a62e2e5fbf398ebf1be19635a51e226b28acbb9ddf8a888078e6a8619891"
+  },
+  {
+   "path": "libero_10/STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy_demo.hdf5",
+   "bytes": 940528916,
+   "sha256": "2e0127d0cf73afceacc2c0854e505d5743b6d3d5aaf5572c842f84c6a1c8173b"
+  }
+ ]
+}

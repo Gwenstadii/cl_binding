@@ -1,0 +1,194 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-24T11:19:12.019472+00:00",
+  "source_commit": "5267e00ec6e64eb648443c0597dc0c9adff494bc",
+  "branches": [
+    "full_replay"
+  ],
+  "gpus": [
+    0
+  ],
+  "training_dirs": {
+    "full_replay": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_full_replay_20261024_01_full_replay"
+  },
+  "parent_rows_reused": [
+    "/home/lzx/cl_binding_stage2a/.server/dual12000_then_right_20261023_01/before/episodes.jsonl",
+    "/home/lzx/cl_binding_stage2a/.server/dual_parent12000_unseen_back_20261023_01/episodes.jsonl"
+  ],
+  "parent_summary": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 16,
+        "success_then_lost": 4,
+        "success_then_lost_unfinished": 4
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 16,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 4
+      },
+      "right": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "back": {
+        "left": 9,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 11
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 16,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 16,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 2,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 18,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 6,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 14,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": [
+      22,
+      24,
+      25,
+      26,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "phases": [
+    {
+      "name": "full_replay_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2a_full_replay_20261024_01/config.json",
+        "--branch",
+        "full_replay",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_full_replay_20261024_01_full_replay"
+      ],
+      "gpu": 0,
+      "pid": 1429619,
+      "started_elapsed_s": 0.00031011132523417473,
+      "returncode": 0,
+      "finished_elapsed_s": 4193.47081763437
+    },
+    {
+      "name": "full_replay_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2a_full_replay_20261024_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_full_replay_20261024_01_full_replay/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2a_full_replay_20261024_01/full_replay_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 1274798,
+      "started_elapsed_s": 4193.794118904043,
+      "returncode": 0,
+      "finished_elapsed_s": 5060.541080737021
+    }
+  ],
+  "current_stage": "finished_offline_after_scene_alias",
+  "seconds": 5060.542581578251,
+  "original_failure": {
+    "error": "Parent/branch mismatch: (20, 'left') scene_xml_sha256",
+    "seconds": 5060.542581578251
+  },
+  "finalized_at": "2026-10-24T13:40:24.284784+00:00",
+  "scene_xml_aliases": {
+    "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050": "642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc"
+  },
+  "schedule_reference": "outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/train_steps.jsonl",
+  "final_model_sha256": {
+    "full_replay": "8905ed450f9aeaf73c9cb29d2a68cc6a6a093293e602818f7120415455b01ae2"
+  },
+  "new_evaluation_episodes": 80,
+  "reused_parent_episodes": 80
+}

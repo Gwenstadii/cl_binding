@@ -1,0 +1,16 @@
+{
+ "xml_a": ".server/stage2a_scene_equivalence_20261024/scene_main_checkout.xml",
+ "xml_b": ".server/stage2a_scene_equivalence_20261024/scene_stage2a_worktree.xml",
+ "root_a": "/home/lzx/cl_binding",
+ "root_b": "/home/lzx/cl_binding_stage2a",
+ "sha256_a": "642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc",
+ "sha256_b": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+ "identical_after_root_normalization": true,
+ "normalized_sha256": "5900b04fcb3a0564e110ad28e6d1503b2e191a14d400408385b8f4f59754032b",
+ "changed_lines_each_side": 64,
+ "every_changed_line_mentions_a_root": true,
+ "examples": [
+  "-    <mesh name=\"robot0_link0\" file=\"/home/lzx/cl_binding/.venv/lib/python3.12/site-packages/robosuite/models/assets/robots/panda/meshes/link0.stl\"/>",
+  "-    <mesh name=\"robot0_link1\" file=\"/home/lzx/cl_binding/.venv/lib/python3.12/site-packages/robosuite/models/assets/robots/panda/meshes/link1.stl\"/>"
+ ]
+}

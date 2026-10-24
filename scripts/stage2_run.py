@@ -46,7 +46,7 @@ def main():
     if len(args.branches) > 2 or len(gpus) != len(args.branches) or len(set(args.branches)) != len(args.branches):
         raise ValueError("At most two distinct branches, each with exactly one GPU")
     e, indices = config["evaluation"], config["evaluation"]["paired_indices"]
-    parent_rows = [r for path in PARENT_ROWS for r in read_rows(ROOT / path)]
+    parent_rows = [r for path in config.get("parent_rows", PARENT_ROWS) for r in read_rows(ROOT / path)]
     parent_summary = summarize(parent_rows, indices, config["seed"])
     trains = {b: ROOT / "outputs/stage2a" / f"{run.name}_{b}" for b in args.branches}
     if any(path.exists() for path in trains.values()):
@@ -57,7 +57,7 @@ def main():
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
     report = {"status": "running", "started_at": datetime.now(timezone.utc).isoformat(), "source_commit": commit,
               "branches": args.branches, "gpus": gpus, "training_dirs": {b: str(p) for b, p in trains.items()},
-              "parent_rows_reused": [str(ROOT / p) for p in PARENT_ROWS], "parent_summary": parent_summary,
+              "parent_rows_reused": [str(ROOT / p) for p in config.get("parent_rows", PARENT_ROWS)], "parent_summary": parent_summary,
               "phases": []}
     env = {**os.environ, "HF_HUB_OFFLINE": "1", "TRANSFORMERS_OFFLINE": "1", "MUJOCO_GL": "egl",
            "LIBERO_CONFIG_PATH": str(ROOT / ".server/libero"), "TOKENIZERS_PARALLELISM": "false", "OMP_NUM_THREADS": "4"}

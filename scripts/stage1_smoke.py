@@ -32,12 +32,15 @@ def local_path(value):
     return path if path.is_absolute() else ROOT / path
 
 
-def task_name(goal):
-    return f"STUDY_SCENE2_pick_up_the_book_and_place_it_in_the_{goal}_compartment_of_the_caddy"
+DEFAULT_SCENE = "STUDY_SCENE2"
 
 
-def sources(goals=GOALS):
-    result = {goal: find_demo(filename) for goal, filename in zip(GOALS, FILENAMES, strict=True) if goal in goals}
+def task_name(goal, scene=DEFAULT_SCENE):
+    return f"{scene}_pick_up_the_book_and_place_it_in_the_{goal}_compartment_of_the_caddy"
+
+
+def sources(goals=GOALS, scene=DEFAULT_SCENE):
+    result = {goal: find_demo(f"{task_name(goal, scene)}_demo.hdf5") for goal in GOALS if goal in goals}
     missing = [goal for goal, path in result.items() if path is None]
     if missing:
         raise RuntimeError(f"Missing raw demonstrations: {missing}. Finish download_stage1.py --data first.")

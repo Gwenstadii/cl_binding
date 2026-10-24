@@ -166,6 +166,23 @@ class ParameterGroupTests(unittest.TestCase):
         self.assertEqual(len(depth), 16 * 9)
 
 
+class SceneOneConfigTests(unittest.TestCase):
+    def test_second_family_configs_chain_parent_data_memory_and_rows(self):
+        load = lambda name: json.loads((ROOT / 'configs' / f'{name}.json').read_text())
+        parent, right, replay = load('stage3_scene1_dual_left_front_v1'), load('stage3_scene1_right_data_v1'), load('stage3_scene1_replay_v1')
+        self.assertEqual({parent['scene'], right['scene'], replay['scene']}, {'STUDY_SCENE1'})
+        self.assertEqual(parent['training']['max_steps'], 12000)
+        self.assertEqual(replay['data']['normalization_source'], parent['data']['train_output'])
+        self.assertEqual(replay['memory']['source_dataset'], parent['data']['train_output'])
+        self.assertEqual(replay['data']['train_output'], right['data']['train_output'])
+        self.assertTrue(replay['parent']['checkpoint'].endswith('checkpoints/012000'))
+        self.assertIsNone(replay['parent']['model_sha256'])
+        for k in (16, 1):
+            sub = load(f'stage3_scene1_er_mem{k:03d}_v1')
+            self.assertEqual((sub['memory']['per_goal'], sub['memory']['subset_of']), (k, replay['memory']['output']))
+        self.assertEqual(parent['evaluation']['paired_indices'], list(range(20, 40)))
+
+
 class ConfigTests(unittest.TestCase):
     def test_registered_config_matches_protocol(self):
         config = json.loads((ROOT / 'configs/stage2a_replay_v1.json').read_text())

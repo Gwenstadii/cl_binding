@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from stage1_protocol import observation_action_indices, split_trajectories
-from stage1_smoke import CAMERAS, ROOT, dump, sources
+from stage1_smoke import CAMERAS, DEFAULT_SCENE, ROOT, dump, sources
 
 
 def prepare(config, output):
@@ -17,7 +17,7 @@ def prepare(config, output):
         raise FileExistsError(f"Audit output already exists: {output}")
     output.mkdir(parents=True)
     result = {"config": config, "files": {}, "splits": {}}
-    for goal, path in sources().items():
+    for goal, path in sources(scene=config.get("scene", DEFAULT_SCENE)).items():
         with h5py.File(path) as h:
             data = h["data"]
             names = sorted(data, key=lambda x: int(x.split("_")[-1]))

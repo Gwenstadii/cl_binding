@@ -9,15 +9,16 @@ import time
 from contextlib import ExitStack
 
 from stage1_protocol import GOALS, qualification, summarize_events, remap_demo_xml
-from stage1_smoke import ROOT, CAMERAS, dump, load_policy, sources, task_name
+from stage1_smoke import DEFAULT_SCENE, ROOT, CAMERAS, dump, load_policy, sources, task_name
 
 
-def task_resources():
+def task_resources(scene=DEFAULT_SCENE):
     import torch
     from libero.libero import benchmark, get_libero_path
     from libero.libero.envs.bddl_utils import robosuite_parse_problem
-    suite=benchmark.get_benchmark_dict()["libero_90"]()
-    tasks={g:next(t for t in suite.tasks if t.name==task_name(g)) for g in GOALS}
+    # STUDY_SCENE1's back variant lives in libero_10; every other book/caddy task is in libero_90.
+    pool=[t for suite in ("libero_90","libero_10") for t in benchmark.get_benchmark_dict()[suite]().tasks]
+    tasks={g:next(t for t in pool if t.name==task_name(g,scene)) for g in GOALS}
     paths={g:Path(get_libero_path("bddl_files"))/t.problem_folder/t.bddl_file for g,t in tasks.items()}
     predicates={g:robosuite_parse_problem(str(p))["goal_state"] for g,p in paths.items()}
     states={g:torch.load(Path(get_libero_path("init_states"))/t.problem_folder/t.init_states_file,weights_only=False) for g,t in tasks.items()}
@@ -56,12 +57,13 @@ def verify(args, config):
     import numpy as np
     import robosuite
     from libero.libero import get_libero_path
-    tasks,paths,predicates,states=task_resources()
+    scene=config.get("scene",DEFAULT_SCENE)
+    tasks,paths,predicates,states=task_resources(scene)
     if args.output.exists(): raise FileExistsError(args.output)
     args.output.mkdir(parents=True)
     report={"predicates":predicates,"replays":[],"reset_partitions":config["evaluation"]}
     # Judge independently using saved simulator states and replaying real controls.
-    for goal,path in sources().items():
+    for goal,path in sources(scene=scene).items():
         env=make_env(paths[goal])
         try:
             with h5py.File(path) as h:
@@ -145,7 +147,7 @@ def evaluate(args, config):
         pre,post=make_pre_post_processors(policy.config,dataset_stats=metadata.stats)
     else:
         pre,post=make_pre_post_processors(policy.config,pretrained_path=args.checkpoint)
-    tasks,paths,predicates,states=task_resources()
+    tasks,paths,predicates,states=task_resources(config.get("scene",DEFAULT_SCENE))
     common=states[e["common_state_source_goal"]]
     scene_xml=canonical_scene(paths[e['common_state_source_goal']],config['seed'])
     rows=[]; start=time.monotonic()

@@ -25,6 +25,10 @@ GROUPS = {
     "action_io": lambda k, i: re.match(r"model\.(action_in_proj|action_out_proj|action_time_mlp_in|action_time_mlp_out)\.", k),
     "early_expert": lambda k, i: i is not None and i < 8,
     "late_expert": lambda k, i: i is not None and i >= 8,
+    "layers_8_11": lambda k, i: i is not None and 8 <= i < 12,
+    "layers_12_15": lambda k, i: i is not None and i >= 12,
+    "late_attn": lambda k, i: i is not None and i >= 8 and re.match(LAYER + r"self_attn\.", k),
+    "late_mlp": lambda k, i: i is not None and i >= 8 and re.match(LAYER + r"mlp\.", k),
 }
 
 

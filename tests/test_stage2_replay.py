@@ -140,6 +140,32 @@ class ComparisonTests(unittest.TestCase):
             compare(parent, branch, [20, 21], 20261021)
 
 
+class ParameterGroupTests(unittest.TestCase):
+    def keys(self):
+        names = []
+        for i in range(16):
+            prefix = f'model.vlm_with_expert.lm_expert.layers.{i}.'
+            names += [prefix + f'self_attn.{p}_proj.weight' for p in 'qkvo']
+            names += [prefix + f'mlp.{p}_proj.weight' for p in ('gate', 'up', 'down')]
+            names += [prefix + 'input_layernorm.weight', prefix + 'post_attention_layernorm.weight']
+        names.append('model.vlm_with_expert.lm_expert.norm.weight')
+        for m in ('state_proj', 'action_in_proj', 'action_out_proj', 'action_time_mlp_in', 'action_time_mlp_out'):
+            names += [f'model.{m}.weight', f'model.{m}.bias']
+        return names
+
+    def test_functional_groups_partition_all_trainable_tensors(self):
+        from stage2_param_swap import group_keys
+        keys = self.keys()
+        self.assertEqual(len(keys), 155)
+        functional = ('read_kv', 'queries', 'self_kv', 'attn_out', 'mlp', 'norms', 'state_proj', 'action_io')
+        covered = [k for g in functional for k in group_keys(keys, g)]
+        self.assertEqual(sorted(covered), sorted(keys))
+        self.assertEqual(len(group_keys(keys, 'read_kv')), 16)
+        self.assertTrue(all(int(k.split('.')[4]) % 2 == 1 for k in group_keys(keys, 'read_kv')))
+        depth = group_keys(keys, 'early_expert') + group_keys(keys, 'late_expert')
+        self.assertEqual(len(depth), 16 * 9)
+
+
 class ConfigTests(unittest.TestCase):
     def test_registered_config_matches_protocol(self):
         config = json.loads((ROOT / 'configs/stage2a_replay_v1.json').read_text())

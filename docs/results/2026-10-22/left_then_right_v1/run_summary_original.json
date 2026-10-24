@@ -1,0 +1,101 @@
+{
+  "status": "failed",
+  "purpose": "single_left_then_right_sequential_finetuning_fixed_6000_paired20",
+  "run_dir": "/home/lzx/cl_binding/.server/left_then_right_20261022_01",
+  "training_dir": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01",
+  "initial_checkpoint": "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000",
+  "initial_model_sha256": "2a8a0655667b4247d4d75ece56c8bf402b64e251f6fd0449c68aac90328e11e2",
+  "parent_processor_sha256": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "5960eb15c6c289c14ccbe221200fab1a79d61590833c1f0db6a491d706e9d91f",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "7d3223e0779bd0cc40f7dcf494480325000dad5b2ad89ecaaf51feeb02443d8c"
+  },
+  "processor_hash_kind": "sorted_tensor_names_dtypes_shapes_and_values",
+  "source_commit": "2b0022d5e34b1b2c191c88c2ed8b4c8a039997c8",
+  "started_at": "2026-10-22T10:29:30.009280+00:00",
+  "selection_rule": "Always evaluate the fixed +6000 endpoint, including low-new-task-success outcomes; no checkpoint selection using old or paired scores.",
+  "phases": [
+    {
+      "name": "data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/data"
+      ],
+      "gpu": null,
+      "pid": 2941782,
+      "started_elapsed_s": 0.0013311682268977165,
+      "returncode": 0,
+      "finished_elapsed_s": 35.02502027200535
+    },
+    {
+      "name": "alignment_verify",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 2943172,
+      "started_elapsed_s": 35.02570736501366,
+      "returncode": 0,
+      "finished_elapsed_s": 35.347965714056045
+    },
+    {
+      "name": "train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01",
+        "--init-checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000"
+      ],
+      "gpu": 0,
+      "pid": 2943184,
+      "started_elapsed_s": 35.34856693726033,
+      "returncode": 0,
+      "finished_elapsed_s": 1577.3432360263541
+    },
+    {
+      "name": "before_paired20",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "front",
+        "left",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/before_paired20",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 2943185,
+      "started_elapsed_s": 35.34917796822265,
+      "returncode": 0,
+      "finished_elapsed_s": 961.84680682607
+    }
+  ],
+  "error": "Normalization changed across tasks",
+  "seconds": 1577.362006498035
+}

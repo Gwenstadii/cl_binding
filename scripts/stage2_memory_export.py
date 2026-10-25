@@ -20,11 +20,13 @@ def sha256(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def old_groups(conversion):
+def old_groups(conversion, min_relative_position=0.0):
+    """Frame indices per old goal; optionally only frames at or after a fraction of their own trajectory."""
     groups = {goal: [] for goal in OLD_GOALS}
     offset = 0
     for episode in conversion["episodes"]:
-        groups[episode["goal"]].extend(range(offset, offset + episode["frames"]))
+        start = offset + int(-(-episode["frames"] * min_relative_position // 1))
+        groups[episode["goal"]].extend(range(start, offset + episode["frames"]))
         offset += episode["frames"]
     return groups, offset
 
@@ -49,6 +51,9 @@ def export(config, output):
     estimate = 2 * per_goal * memory_record_bytes((3, 128, 128), len(CAMERAS), chunk, 7, 8)
     if estimate > m["budget_bytes"]:
         raise ValueError(f"Raw payload {estimate} already exceeds the budget; lower per_goal before export")
+    phase = m.get("min_relative_position", 0.0)
+    if phase:
+        groups, _ = old_groups(conversion, phase)
     selected = select_memory(groups, per_goal, config["seeds"]["memory"])
     instructions = {e["goal"]: e["instruction"] for e in conversion["episodes"]}
     rows = {key: [] for key in ARRAYS}
@@ -73,7 +78,7 @@ def export(config, output):
     episodes = [{"goal": e["goal"], "demo": e["demo"]} for e in conversion["episodes"]]
     manifest = {"purpose": "stage2a_ordinary_er_self_contained_memory", "source_dataset": m["source_dataset"],
                 "source_split_sha256": conversion["spec"]["split_sha256"], "goals": list(OLD_GOALS),
-                "instructions": instructions, "per_goal": per_goal, "selection": "uniform_without_replacement_per_goal",
+                "instructions": instructions, "per_goal": per_goal, "selection": "uniform_without_replacement_per_goal", "min_relative_position": phase,
                 "memory_seed": config["seeds"]["memory"], "dataset_indices": selected,
                 "records": [{"goal": OLD_GOALS[g], "dataset_index": i, "demo": episodes[e]["demo"], "frame_index": f}
                             for g, i, e, f in zip(arrays["goal_index"].tolist(), selected["left"] + selected["front"],

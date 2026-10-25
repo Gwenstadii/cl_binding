@@ -16,8 +16,8 @@ def task_resources(scene=DEFAULT_SCENE):
     import torch
     from libero.libero import benchmark, get_libero_path
     from libero.libero.envs.bddl_utils import robosuite_parse_problem
-    # STUDY_SCENE1's back variant lives in libero_10; every other book/caddy task is in libero_90.
-    pool=[t for suite in ("libero_90","libero_10") for t in benchmark.get_benchmark_dict()[suite]().tasks]
+    # STUDY_SCENE1's back variant lives in libero_10; mapped goal slots may name libero_goal tasks.
+    pool=[t for suite in ("libero_90","libero_10","libero_goal") for t in benchmark.get_benchmark_dict()[suite]().tasks]
     tasks={g:next(t for t in pool if t.name==task_name(g,scene)) for g in GOALS}
     paths={g:Path(get_libero_path("bddl_files"))/t.problem_folder/t.bddl_file for g,t in tasks.items()}
     predicates={g:robosuite_parse_problem(str(p))["goal_state"] for g,p in paths.items()}

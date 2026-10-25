@@ -36,6 +36,9 @@ DEFAULT_SCENE = "STUDY_SCENE2"
 
 
 def task_name(goal, scene=DEFAULT_SCENE):
+    """A scene prefix names the book/caddy family; a mapping assigns each goal slot to any LIBERO task name."""
+    if isinstance(scene, dict):
+        return scene[goal]
     return f"{scene}_pick_up_the_book_and_place_it_in_the_{goal}_compartment_of_the_caddy"
 
 

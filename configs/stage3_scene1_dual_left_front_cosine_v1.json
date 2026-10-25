@@ -1,0 +1,121 @@
+{
+  "purpose": "stage3_STUDY_SCENE1_option_B_parent_cosine_recipe",
+  "scene": "STUDY_SCENE1",
+  "seed": 20261021,
+  "old_goals": [
+    "left",
+    "front"
+  ],
+  "data": {
+    "train_per_goal": 40,
+    "fps": 20,
+    "image_size": 128,
+    "train_output": "datasets/scene1_dual_left_front_train_aligned_v1",
+    "validation_output": "datasets/scene1_dual_left_front_validation_aligned_v1",
+    "action_alignment": "post_action_obs_to_next_action"
+  },
+  "model": {
+    "chunk_size": 50,
+    "n_action_steps": 10,
+    "flow_steps": 10
+  },
+  "training": {
+    "max_steps": 18000,
+    "samples_per_goal": 3,
+    "learning_rate": 0.0001,
+    "warmup_steps": 100,
+    "save_every": 6000,
+    "log_every": 25,
+    "num_workers": 0,
+    "walltime_hours": 6,
+    "schedule": {
+      "type": "cosine",
+      "final_learning_rate": 1e-05
+    }
+  },
+  "evaluation": {
+    "expert_replay_demos": [
+      "demo_0",
+      "demo_1",
+      "demo_2"
+    ],
+    "horizon": 400,
+    "settle_steps": 10,
+    "common_state_source_goal": "front",
+    "screen_indices": [
+      0,
+      1,
+      2
+    ],
+    "development_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "qualification_indices": [],
+    "paired_indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "reserve_indices": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "development_required_correct": 16,
+    "qualification_required_correct": 16
+  },
+  "parent_protocol": {
+    "recipe": "handoff 2B candidate: warmup 100, cosine 1e-4 -> 1e-5, max 18000",
+    "candidates": [
+      6000,
+      12000,
+      18000
+    ],
+    "selection": "development indices 0-19 only, left and front x20 each: first candidate with per-goal terminal >=16/20 and same-state joint terminal >=16/20; if none, the candidate with the most front ever-successes on development (later step on ties)",
+    "gate": "registered original gate on paired 20-39: left and front ever-success >= 10/20",
+    "registered": "2026-10-25 before training the option B parent"
+  }
+}

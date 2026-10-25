@@ -4,6 +4,7 @@ import argparse
 import copy
 import hashlib
 import json
+import math
 import random
 import subprocess
 import time
@@ -72,7 +73,18 @@ def train(args,config):
     c=config['training']
     optimizer=torch.optim.AdamW(params,lr=c['learning_rate'],betas=policy.config.optimizer_betas,
             eps=policy.config.optimizer_eps,weight_decay=policy.config.optimizer_weight_decay)
-    scheduler=torch.optim.lr_scheduler.LambdaLR(optimizer,lambda step:min(1.0,(step+1)/c['warmup_steps']))
+    schedule=c.get('schedule',{'type':'constant_after_warmup'})
+    if schedule['type']=='cosine':
+        # Warmup, then cosine from the base rate to final_learning_rate at max_steps (registered 2B parent candidate).
+        floor=schedule['final_learning_rate']/c['learning_rate'];span=max(1,c['max_steps']-c['warmup_steps'])
+        def factor(step):
+            if step<c['warmup_steps']:return (step+1)/c['warmup_steps']
+            progress=min(1.0,(step-c['warmup_steps'])/span)
+            return floor+(1-floor)*0.5*(1+math.cos(math.pi*progress))
+    elif schedule['type']=='constant_after_warmup':
+        factor=lambda step:min(1.0,(step+1)/c['warmup_steps'])
+    else:raise ValueError(f"Unknown schedule {schedule['type']}")
+    scheduler=torch.optim.lr_scheduler.LambdaLR(optimizer,factor)
     start_step=0
     if args.resume:
         saved=torch.load(args.resume/'training_state.pt',map_location='cpu',weights_only=False)

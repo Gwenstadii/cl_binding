@@ -26,9 +26,13 @@ def load(folder):
     return rows, traces
 
 
+OBJECT = "black_book_1"
+
+
 def book(trace):
-    position = np.array([s["object_positions_after"]["black_book_1_pos"] for s in trace])
-    to_eef = np.array([s["object_positions_after"]["black_book_1_to_robot0_eef_pos"] for s in trace])
+    """Trajectory of the manipulated object (the book by default; --object overrides, e.g. akita_black_bowl_1)."""
+    position = np.array([s["object_positions_after"][f"{OBJECT}_pos"] for s in trace])
+    to_eef = np.array([s["object_positions_after"][f"{OBJECT}_to_robot0_eef_pos"] for s in trace])
     return position, np.linalg.norm(to_eef, axis=1)
 
 
@@ -67,6 +71,8 @@ def classify(trace, requested, centre):
 
 
 def main(args):
+    global OBJECT
+    OBJECT = args.object
     sources = {label: load(Path(folder)) for label, folder in (item.split("=", 1) for item in args.eval)}
     centre, support = centres(sources.values())
     report = {"thresholds_m": {"lift": LIFT_M, "near": NEAR_M, "held": HELD_M},
@@ -95,4 +101,5 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--eval", nargs="+", required=True, help="label=evaluation folder holding episodes.jsonl and *_trace.jsonl")
     p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--object", default="black_book_1")
     main(p.parse_args())

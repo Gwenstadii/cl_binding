@@ -1,0 +1,26 @@
+{
+ "original_gate": {
+  "ever_success": {
+   "left": 18,
+   "front": 3,
+   "right": 0,
+   "back": 0
+  },
+  "terminal_correct": {
+   "left": 16,
+   "front": 3,
+   "right": 0,
+   "back": 0
+  },
+  "rule": "left and front ever-success >= 10/20",
+  "passed": false
+ },
+ "amended_rule": "goal-directed >= 10/20 for left and front",
+ "goal_directed": {
+  "left": 18,
+  "front": 14
+ },
+ "passed": true,
+ "decided_by": "researcher, 2026-10-25, after seeing the parent evaluation",
+ "disclosure": "post hoc amendment; report the failed registered gate alongside every SCENE1 adaptation result"
+}

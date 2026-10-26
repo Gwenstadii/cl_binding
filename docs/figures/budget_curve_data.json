@@ -1,0 +1,97 @@
+{
+ "note": "counts over 40 old-instruction episodes; substituted = first goal or carried nearest to the new goal; success = ever-success of the requested old goal",
+ "settings": {
+  "SCENE2（书/格子）": {
+   "0": {
+    "substituted": 37,
+    "success": 0
+   },
+   "1": {
+    "substituted": 31,
+    "success": 0
+   },
+   "4": {
+    "substituted": 4,
+    "success": 17
+   },
+   "16": {
+    "substituted": 0,
+    "success": 26
+   },
+   "64": {
+    "substituted": 0,
+    "success": 27
+   },
+   "256": {
+    "substituted": 0,
+    "success": 28
+   }
+  },
+  "SCENE1 方案A": {
+   "0": {
+    "substituted": 36,
+    "success": 0
+   },
+   "1": {
+    "substituted": 22,
+    "success": 0
+   },
+   "16": {
+    "substituted": 3,
+    "success": 12
+   },
+   "256": {
+    "substituted": 0,
+    "success": 28
+   }
+  },
+  "SCENE1 方案B": {
+   "0": {
+    "substituted": 37,
+    "success": 0
+   },
+   "1": {
+    "substituted": 18,
+    "success": 0
+   },
+   "16": {
+    "substituted": 1,
+    "success": 17
+   },
+   "256": {
+    "substituted": 0,
+    "success": 28
+   }
+  },
+  "LIBERO-Goal（碗）": {
+   "0": {
+    "substituted": 40,
+    "success": 0
+   },
+   "1": {
+    "substituted": 36,
+    "success": 0
+   },
+   "16": {
+    "substituted": 4,
+    "success": 33
+   },
+   "256": {
+    "substituted": 0,
+    "success": 39
+   }
+  }
+ },
+ "extra_points": {
+  "SCENE2 只回放后半段": {
+   "4": {
+    "substituted": 31,
+    "success": 1
+   },
+   "16": {
+    "substituted": 8,
+    "success": 5
+   }
+  }
+ }
+}

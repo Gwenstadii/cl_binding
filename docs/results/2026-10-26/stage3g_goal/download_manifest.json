@@ -1,0 +1,26 @@
+{
+ "revision": "f13aa24a3da8c43c7225569f28c562979fa0e35a",
+ "endpoint": "https://hf-mirror.com",
+ "files": [
+  {
+   "path": "libero_goal/put_the_bowl_on_the_stove_demo.hdf5",
+   "bytes": 509123820,
+   "sha256": "ff77d3bf0f89a147d423840ecbd842cd63c3c55aeead91f88dbc0917be473e99"
+  },
+  {
+   "path": "libero_goal/put_the_bowl_on_top_of_the_cabinet_demo.hdf5",
+   "bytes": 510414285,
+   "sha256": "e14c84ebc820a13ef9a92ca82a7f04bb299f0ee96dfe9cc907bab71aeb2683b2"
+  },
+  {
+   "path": "libero_goal/put_the_bowl_on_the_plate_demo.hdf5",
+   "bytes": 468246288,
+   "sha256": "e69528b0cf10dfc59b20698e12ec2affc03f3887309034d3eb74cac3ec929406"
+  },
+  {
+   "path": "libero_goal/open_the_top_drawer_and_put_the_bowl_inside_demo.hdf5",
+   "bytes": 1017886342,
+   "sha256": "1b50d99a053a7e4547c9ae9ccd2e3cd762543d27be78f240f13440d7ae487ae8"
+  }
+ ]
+}

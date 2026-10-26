@@ -1,0 +1,186 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-25T13:26:51.778832+00:00",
+  "source_commit": "5e9d6ad1d5f279912dc1d96de39fb231c88f3c01",
+  "branches": [
+    "er"
+  ],
+  "gpus": [
+    0
+  ],
+  "training_dirs": {
+    "er": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2d_late016_20261025_01_er"
+  },
+  "parent_rows_reused": [
+    "/home/lzx/cl_binding_stage2a/.server/dual12000_then_right_20261023_01/before/episodes.jsonl",
+    "/home/lzx/cl_binding_stage2a/.server/dual_parent12000_unseen_back_20261023_01/episodes.jsonl"
+  ],
+  "parent_summary": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 16,
+        "success_then_lost": 4,
+        "success_then_lost_unfinished": 4
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 16,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 4
+      },
+      "right": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "back": {
+        "left": 9,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 11
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 16,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 16,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 2,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 18,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 6,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 14,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": [
+      22,
+      24,
+      25,
+      26,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  },
+  "phases": [
+    {
+      "name": "er_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2d_late016_20261025_01/config.json",
+        "--branch",
+        "er",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2d_late016_20261025_01_er"
+      ],
+      "gpu": 0,
+      "pid": 3378011,
+      "started_elapsed_s": 0.0003059813752770424,
+      "returncode": 0,
+      "finished_elapsed_s": 2763.581564131193
+    },
+    {
+      "name": "er_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2d_late016_20261025_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2d_late016_20261025_01_er/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2d_late016_20261025_01/er_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 1491056,
+      "started_elapsed_s": 2763.859837043099,
+      "returncode": 0,
+      "finished_elapsed_s": 3873.1849794611335
+    }
+  ],
+  "current_stage": "finished",
+  "finished_at": "2026-10-25T14:31:24.973278+00:00",
+  "seconds": 3873.1943940273486,
+  "final_model_sha256": {
+    "er": "e509981ee691bd0f0b5e58d1c5f66f2d80d4d81c9297dd4131308be4adc7127b"
+  },
+  "new_evaluation_episodes": 80,
+  "reused_parent_episodes": 80
+}

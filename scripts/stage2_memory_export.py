@@ -54,7 +54,10 @@ def export(config, output):
     phase = m.get("min_relative_position", 0.0)
     if phase:
         groups, _ = old_groups(conversion, phase)
-    selected = select_memory(groups, per_goal, config["seeds"]["memory"])
+    if m.get("decision_scores"):
+        selected = decision_select(conversion, np.load(ROOT / m["decision_scores"])["score"], per_goal)
+    else:
+        selected = select_memory(groups, per_goal, config["seeds"]["memory"])
     instructions = {e["goal"]: e["instruction"] for e in conversion["episodes"]}
     rows = {key: [] for key in ARRAYS}
     for goal_index, goal in enumerate(OLD_GOALS):
@@ -78,7 +81,8 @@ def export(config, output):
     episodes = [{"goal": e["goal"], "demo": e["demo"]} for e in conversion["episodes"]]
     manifest = {"purpose": "stage2a_ordinary_er_self_contained_memory", "source_dataset": m["source_dataset"],
                 "source_split_sha256": conversion["spec"]["split_sha256"], "goals": list(OLD_GOALS),
-                "instructions": instructions, "per_goal": per_goal, "selection": "uniform_without_replacement_per_goal", "min_relative_position": phase,
+                "instructions": instructions, "per_goal": per_goal, "selection": "decision_score_top_one_per_demo" if m.get("decision_scores") else "uniform_without_replacement_per_goal",
+                "min_relative_position": phase, "decision_scores": m.get("decision_scores"),
                 "memory_seed": config["seeds"]["memory"], "dataset_indices": selected,
                 "records": [{"goal": OLD_GOALS[g], "dataset_index": i, "demo": episodes[e]["demo"], "frame_index": f}
                             for g, i, e, f in zip(arrays["goal_index"].tolist(), selected["left"] + selected["front"],
@@ -127,6 +131,26 @@ def export_subset(config, output):
     print(json.dumps(report), flush=True)
     if report["status"] != "pass":
         raise RuntimeError("Subset memory failed verification")
+
+
+def decision_select(conversion, scores, per_goal):
+    """Highest parent left-vs-front response difference first, at most one frame per demonstration."""
+    owner, offset = [], 0
+    for number, episode in enumerate(conversion["episodes"]):
+        owner += [(episode["goal"], number)] * episode["frames"]
+        offset += episode["frames"]
+    if len(scores) != offset:
+        raise ValueError("Decision scores do not cover the old training split")
+    selected = {}
+    for goal in OLD_GOALS:
+        used, chosen = set(), []
+        for index in sorted((i for i in range(offset) if owner[i][0] == goal), key=lambda i: -float(scores[i])):
+            if owner[index][1] not in used:
+                used.add(owner[index][1]); chosen.append(index)
+            if len(chosen) == per_goal:
+                break
+        selected[goal] = sorted(chosen)
+    return selected
 
 
 def load_memory(directory, budget_bytes):

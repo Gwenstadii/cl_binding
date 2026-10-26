@@ -13,6 +13,11 @@ BRANCHES = {
     "ft4": {"new": 4, "old_per_goal": 0, "old_source": None},
     "er": {"new": 4, "old_per_goal": 1, "old_source": "memory"},
     "full_replay": {"new": 4, "old_per_goal": 1, "old_source": "full_old_train_split"},
+    # Counterfactual instruction distillation: the old slots hold parent actions for NEW-task frames under the old
+    # instructions (labelled offline once); no old data is stored or read.
+    "cid": {"new": 4, "old_per_goal": 1, "old_source": "pseudo"},
+    # Each old slot is a parent pseudo-label or a memory record with probability 1/2 (own stream).
+    "cid_er": {"new": 4, "old_per_goal": 1, "old_source": "pseudo_or_memory"},
 }
 LOSS_DENOMINATOR = 6
 # SmolVLA flow-time recipe: Beta(1.5, 1.0) * 0.999 + 0.001. Beta(a, 1) has CDF x**a, so u**(1/a) is exact.

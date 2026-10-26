@@ -32,7 +32,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, default=ROOT / "configs/stage2a_replay_v1.json")
     parser.add_argument("--run-dir", type=Path, required=True)
-    parser.add_argument("--branches", nargs="+", default=["ft4", "er"], choices=["ft4", "er", "full_replay"])
+    parser.add_argument("--branches", nargs="+", default=["ft4", "er"], choices=["ft4", "er", "full_replay", "cid", "cid_er"])
     parser.add_argument("--gpus", nargs="+", type=int, help="One GPU per branch; defaults to 0, 1, ...")
     parser.add_argument("--scene-alias", nargs="*", default=[],
                         help="BRANCH_HASH=PARENT_HASH pairs verified by stage2_scene_equivalence.py (path-only XML diff)")

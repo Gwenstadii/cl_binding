@@ -18,7 +18,7 @@ from stage1_r0_train import frozen_hash
 from stage1_smoke import ROOT, dump, load_policy
 from stage2_memory_export import load_memory, memory_sample, old_groups, sha256
 from stage2_protocol import (BRANCHES, LOSS_DENOMINATOR, OLD_GOALS, exposures, flow_time_from_uniform, loss_weights,
-                             step_plan, stream_seed)
+                             step_indices, step_plan, stream_rng, stream_seed)
 
 KEYS = ("observation.images.image", "observation.images.image2", "observation.state", "action", "action_is_pad", "task")
 
@@ -94,6 +94,18 @@ def train(args, config):
         memory = (arrays, memory_manifest)
         for goal_index, goal in enumerate(OLD_GOALS):
             old_pools[goal] = [int(i) for i in np.flatnonzero(arrays["goal_index"] == goal_index)]
+    pseudo = mem_pools = None
+    if spec["old_source"] in ("pseudo", "pseudo_or_memory"):
+        labels = np.load(ROOT / config["pseudo_labels"]["directory"] / "pseudo_labels.npz")
+        label_manifest = json.loads((ROOT / config["pseudo_labels"]["directory"] / "manifest.json").read_text())
+        if label_manifest["parent_model_sha256"] != config["parent"]["model_sha256"] or label_manifest["frames"] != len(new_data):
+            raise ValueError("Pseudo-labels do not come from this parent or do not cover the new split")
+        pseudo = ({goal: torch.from_numpy(labels[goal]) for goal in OLD_GOALS}, label_manifest["instructions"])
+        old_pools = {goal: list(range(len(new_data))) for goal in OLD_GOALS}
+    if spec["old_source"] == "pseudo_or_memory":
+        arrays, memory_manifest, memory_budget = load_memory(ROOT / config["memory"]["output"], config["memory"]["budget_bytes"])
+        memory = (arrays, memory_manifest)
+        mem_pools = {goal: [int(i) for i in np.flatnonzero(arrays["goal_index"] == g)] for g, goal in enumerate(OLD_GOALS)}
     elif spec["old_source"] == "full_old_train_split":
         old_root = ROOT / config["memory"]["source_dataset"]
         old_conversion = json.loads((old_root / "r0_conversion.json").read_text())
@@ -138,6 +150,7 @@ def train(args, config):
             "memory": None if memory is None else {"directory": config["memory"]["output"], "budget": memory_budget,
                                                     "memory_npz_sha256": memory[1]["memory_npz_sha256"]},
             "old_data_access": spec["old_source"], "teacher_calls": 0,
+            "pseudo_labels": config.get("pseudo_labels") if pseudo is not None else None,
             "matching": "same new indices, noise and time per step across branches; FLOPs and post-AdamW/clipping "
                         "new-gradient contribution are not matched"})
     maximum = args.max_steps or t["max_steps"]
@@ -190,7 +203,17 @@ def train(args, config):
         for goal in OLD_GOALS:
             if not plan[goal]:
                 continue
-            if memory is not None:
+            if pseudo is not None:
+                use_memory = mem_pools is not None and stream_rng(f"mix-{goal}", seeds["old_samples"], step).random() < 0.5
+                if use_memory:
+                    samples += [memory_sample(*memory, i) for i in step_indices(mem_pools[goal], len(plan[goal]), seeds["old_samples"], step, f"mem-{goal}")]
+                else:
+                    for s_, i in zip(new_data.__getitems__(plan[goal]), plan[goal], strict=True):
+                        record = {k: s_[k] for k in KEYS}
+                        record.update(task=pseudo[1][goal], action=pseudo[0][goal][i].clone(),
+                                      action_is_pad=torch.zeros_like(record["action_is_pad"]))
+                        samples.append(record)
+            elif memory is not None:
                 samples += [memory_sample(*memory, i) for i in plan[goal]]
             else:
                 samples += [{k: s[k] for k in KEYS} for s in old_data.__getitems__(plan[goal])]

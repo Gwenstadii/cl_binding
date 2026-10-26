@@ -1,0 +1,143 @@
+{
+  "purpose": "stage2a_ordinary_er_self_contained_memory",
+  "source_dataset": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "source_split_sha256": "48ff917f2b85b39ff3942e590811f66ccd05b39d7f307498e1d987de9f29a6eb",
+  "goals": [
+    "left",
+    "front"
+  ],
+  "instructions": {
+    "left": "pick up the book and place it in the left compartment of the caddy",
+    "front": "pick up the book and place it in the front compartment of the caddy"
+  },
+  "per_goal": 4,
+  "selection": "decision_score_top_one_per_demo",
+  "min_relative_position": 0.0,
+  "decision_scores": "outputs/stage2a/teacher/decision_scores_v1/decision_scores.npz",
+  "memory_seed": 20261024,
+  "dataset_indices": {
+    "left": [
+      418,
+      3989,
+      4085,
+      4441
+    ],
+    "front": [
+      5050,
+      5665,
+      7993,
+      8917
+    ]
+  },
+  "records": [
+    {
+      "goal": "left",
+      "dataset_index": 418,
+      "demo": "demo_16",
+      "frame_index": 35
+    },
+    {
+      "goal": "left",
+      "dataset_index": 3989,
+      "demo": "demo_33",
+      "frame_index": 73
+    },
+    {
+      "goal": "left",
+      "dataset_index": 4085,
+      "demo": "demo_3",
+      "frame_index": 47
+    },
+    {
+      "goal": "left",
+      "dataset_index": 4441,
+      "demo": "demo_46",
+      "frame_index": 69
+    },
+    {
+      "goal": "front",
+      "dataset_index": 5050,
+      "demo": "demo_17",
+      "frame_index": 77
+    },
+    {
+      "goal": "front",
+      "dataset_index": 5665,
+      "demo": "demo_43",
+      "frame_index": 51
+    },
+    {
+      "goal": "front",
+      "dataset_index": 7993,
+      "demo": "demo_47",
+      "frame_index": 80
+    },
+    {
+      "goal": "front",
+      "dataset_index": 8917,
+      "demo": "demo_9",
+      "frame_index": 71
+    }
+  ],
+  "arrays": {
+    "image": {
+      "shape": [
+        8,
+        3,
+        128,
+        128
+      ],
+      "dtype": "uint8"
+    },
+    "image2": {
+      "shape": [
+        8,
+        3,
+        128,
+        128
+      ],
+      "dtype": "uint8"
+    },
+    "state": {
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "float32"
+    },
+    "action": {
+      "shape": [
+        8,
+        50,
+        7
+      ],
+      "dtype": "float32"
+    },
+    "action_is_pad": {
+      "shape": [
+        8,
+        50
+      ],
+      "dtype": "bool"
+    },
+    "goal_index": {
+      "shape": [
+        8
+      ],
+      "dtype": "int32"
+    },
+    "frame_index": {
+      "shape": [
+        8
+      ],
+      "dtype": "int32"
+    },
+    "episode_index": {
+      "shape": [
+        8
+      ],
+      "dtype": "int32"
+    }
+  },
+  "memory_npz_sha256": "c3be60bda9c2f1d3510563ce99185171df42875a3539bb97d844aecc519724c6"
+}

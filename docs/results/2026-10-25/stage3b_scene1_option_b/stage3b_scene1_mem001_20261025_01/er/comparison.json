@@ -1,0 +1,285 @@
+{
+  "scene_xml_aliases": {},
+  "metric_policy": {
+    "primary": "first goal reached + ever-success (stop-on-success equivalent)",
+    "secondary": "terminal goal at 400 steps"
+  },
+  "parent": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 18,
+        "success_then_lost": 2,
+        "success_then_lost_unfinished": 2
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 10,
+        "terminal_correct": 9,
+        "success_then_lost": 1,
+        "success_then_lost_unfinished": 1
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 10,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 10
+      },
+      "right": {
+        "left": 14,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 6
+      },
+      "back": {
+        "left": 6,
+        "front": 2,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 12
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 18,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 2,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 9,
+        "right": 0,
+        "back": 0,
+        "unfinished": 11,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 3,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 17,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 2,
+        "front": 2,
+        "right": 0,
+        "back": 0,
+        "unfinished": 16,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": [
+      20,
+      22,
+      23,
+      25,
+      26,
+      32,
+      36,
+      39
+    ]
+  },
+  "branch": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 8,
+        "terminal_correct": 8,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 0,
+        "front": 0,
+        "right": 0,
+        "back": 2,
+        "none_or_tied": 18
+      },
+      "front": {
+        "left": 0,
+        "front": 0,
+        "right": 1,
+        "back": 0,
+        "none_or_tied": 19
+      },
+      "right": {
+        "left": 0,
+        "front": 0,
+        "right": 8,
+        "back": 0,
+        "none_or_tied": 12
+      },
+      "back": {
+        "left": 0,
+        "front": 0,
+        "right": 4,
+        "back": 0,
+        "none_or_tied": 16
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 0,
+        "front": 0,
+        "right": 0,
+        "back": 1,
+        "unfinished": 19,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 0,
+        "right": 1,
+        "back": 0,
+        "unfinished": 19,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 0,
+        "front": 0,
+        "right": 8,
+        "back": 0,
+        "unfinished": 12,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 0,
+        "front": 0,
+        "right": 4,
+        "back": 0,
+        "unfinished": 16,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": []
+  },
+  "matched_pairs": 80,
+  "old_goal_transitions": {
+    "left": {
+      "previously_successful_ever": {
+        "total": 20,
+        "retained": 0,
+        "lost": 20,
+        "lost_and_first_new_right": 0,
+        "lost_and_first_other_wrong": 2,
+        "lost_and_no_goal_first": 18,
+        "lost_and_terminal_new_right": 0,
+        "lost_and_terminal_other_wrong": 1,
+        "lost_and_terminal_unfinished": 19,
+        "lost_after_reaching_old_goal": 0
+      },
+      "previously_terminal_correct": {
+        "total": 18,
+        "retained": 0,
+        "lost": 18,
+        "lost_and_first_new_right": 0,
+        "lost_and_first_other_wrong": 2,
+        "lost_and_no_goal_first": 16,
+        "lost_and_terminal_new_right": 0,
+        "lost_and_terminal_other_wrong": 1,
+        "lost_and_terminal_unfinished": 17,
+        "lost_after_reaching_old_goal": 0
+      }
+    },
+    "front": {
+      "previously_successful_ever": {
+        "total": 10,
+        "retained": 0,
+        "lost": 10,
+        "lost_and_first_new_right": 0,
+        "lost_and_first_other_wrong": 0,
+        "lost_and_no_goal_first": 10,
+        "lost_and_terminal_new_right": 0,
+        "lost_and_terminal_other_wrong": 0,
+        "lost_and_terminal_unfinished": 10,
+        "lost_after_reaching_old_goal": 0
+      },
+      "previously_terminal_correct": {
+        "total": 9,
+        "retained": 0,
+        "lost": 9,
+        "lost_and_first_new_right": 0,
+        "lost_and_first_other_wrong": 0,
+        "lost_and_no_goal_first": 9,
+        "lost_and_terminal_new_right": 0,
+        "lost_and_terminal_other_wrong": 0,
+        "lost_and_terminal_unfinished": 9,
+        "lost_after_reaching_old_goal": 0
+      }
+    }
+  },
+  "previously_joint_ever_states": {
+    "total": 10,
+    "retained_joint_ever": 0,
+    "both_old_instructions_first_new_right": 0
+  },
+  "previously_joint_correct_states": {
+    "total": 8,
+    "retained_joint_terminal_correct": 0,
+    "both_old_instructions_terminal_new_right": 0,
+    "both_old_instructions_first_new_right": 0
+  },
+  "new_right_gain": {
+    "success_ever": 8,
+    "terminal_correct": 8
+  },
+  "new_right_descriptive_screen_16_of_20": {
+    "ever_primary": false,
+    "terminal_secondary": false
+  },
+  "interpretation": "Exploratory pilot on reused states 20-39 from a non-qualified parent. Report wrong-new-target, late result loss and unfinished separately on actual pre-success denominators."
+}

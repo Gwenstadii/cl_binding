@@ -1,0 +1,10 @@
+{
+ "ever_success": {
+  "left": 16,
+  "front": 15,
+  "right": 0,
+  "back": 0
+ },
+ "rule": "left and front ever-success >= 10/20",
+ "passed": true
+}

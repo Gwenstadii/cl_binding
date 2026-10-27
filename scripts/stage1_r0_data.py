@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 from stage1_protocol import observation_action_indices, split_trajectories
-from stage1_smoke import CAMERAS, ROOT, dump, sources
+from stage1_smoke import CAMERAS, DEFAULT_SCENE, ROOT, dump, sources
 
 
 def prepare(config, output):
@@ -17,15 +17,20 @@ def prepare(config, output):
         raise FileExistsError(f"Audit output already exists: {output}")
     output.mkdir(parents=True)
     result = {"config": config, "files": {}, "splits": {}}
-    for goal, path in sources().items():
+    for goal, path in sources(scene=config.get("scene", DEFAULT_SCENE)).items():
         with h5py.File(path) as h:
             data = h["data"]
             names = sorted(data, key=lambda x: int(x.split("_")[-1]))
             language = json.loads(data.attrs["problem_info"])["language_instruction"]
+            demo_language = language
+            if isinstance(config.get("scene"), dict):
+                # Train on the exact string the evaluator sends (LIBERO derives it from the task name).
+                language = " ".join(config["scene"][goal].split("_"))
             env_args = json.loads(data.attrs["env_args"])
             assert env_args["env_kwargs"]["control_freq"] == config["data"]["fps"]
             assert env_args["env_kwargs"]["controller_configs"]["type"] == "OSC_POSE"
-            assert f"{goal} compartment" in language
+            if not isinstance(config.get("scene"), dict):
+                assert f"{goal} compartment" in language
             rows = []
             for name in names:
                 d = data[name]
@@ -41,7 +46,7 @@ def prepare(config, output):
                 rows.append({"demo": name, "frames": len(state), "first_sim_state": d["states"][0].tolist(),
                              "last_reward": float(d["rewards"][-1])})
             result["files"][goal] = {"path": str(path), "bytes": path.stat().st_size,
-                                     "instruction": language, "trajectories": rows}
+                                     "instruction": language, "demo_language": demo_language, "trajectories": rows}
             if goal in config["old_goals"]:
                 result["splits"][goal] = split_trajectories(names, config["data"]["train_per_goal"], config["seed"])
         print(json.dumps({"goal": goal, "audited_trajectories": len(rows), "frames": sum(r["frames"] for r in rows)}), flush=True)

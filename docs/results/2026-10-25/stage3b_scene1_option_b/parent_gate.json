@@ -1,0 +1,11 @@
+{
+ "selected_step": "012000",
+ "ever_success": {
+  "left": 20,
+  "front": 10,
+  "right": 0,
+  "back": 0
+ },
+ "rule": "registered original gate: left and front ever-success >= 10/20",
+ "passed": true
+}

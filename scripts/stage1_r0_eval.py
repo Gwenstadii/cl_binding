@@ -9,15 +9,16 @@ import time
 from contextlib import ExitStack
 
 from stage1_protocol import GOALS, qualification, summarize_events, remap_demo_xml
-from stage1_smoke import ROOT, CAMERAS, dump, load_policy, sources, task_name
+from stage1_smoke import DEFAULT_SCENE, ROOT, CAMERAS, dump, load_policy, sources, task_name
 
 
-def task_resources():
+def task_resources(scene=DEFAULT_SCENE):
     import torch
     from libero.libero import benchmark, get_libero_path
     from libero.libero.envs.bddl_utils import robosuite_parse_problem
-    suite=benchmark.get_benchmark_dict()["libero_90"]()
-    tasks={g:next(t for t in suite.tasks if t.name==task_name(g)) for g in GOALS}
+    # STUDY_SCENE1's back variant lives in libero_10; mapped goal slots may name libero_goal tasks.
+    pool=[t for suite in ("libero_90","libero_10","libero_goal") for t in benchmark.get_benchmark_dict()[suite]().tasks]
+    tasks={g:next(t for t in pool if t.name==task_name(g,scene)) for g in GOALS}
     paths={g:Path(get_libero_path("bddl_files"))/t.problem_folder/t.bddl_file for g,t in tasks.items()}
     predicates={g:robosuite_parse_problem(str(p))["goal_state"] for g,p in paths.items()}
     states={g:torch.load(Path(get_libero_path("init_states"))/t.problem_folder/t.init_states_file,weights_only=False) for g,t in tasks.items()}
@@ -56,12 +57,13 @@ def verify(args, config):
     import numpy as np
     import robosuite
     from libero.libero import get_libero_path
-    tasks,paths,predicates,states=task_resources()
+    scene=config.get("scene",DEFAULT_SCENE)
+    tasks,paths,predicates,states=task_resources(scene)
     if args.output.exists(): raise FileExistsError(args.output)
     args.output.mkdir(parents=True)
     report={"predicates":predicates,"replays":[],"reset_partitions":config["evaluation"]}
     # Judge independently using saved simulator states and replaying real controls.
-    for goal,path in sources().items():
+    for goal,path in sources(scene=scene).items():
         env=make_env(paths[goal])
         try:
             with h5py.File(path) as h:
@@ -133,17 +135,24 @@ def evaluate(args, config):
     e=config["evaluation"]
     indices=e[args.partition+"_indices"]
     if args.limit:indices=indices[:args.limit]
+    instruction_goals=args.instruction_goals or config["old_goals"]
+    if len(set(instruction_goals))!=len(instruction_goals):raise ValueError('Repeated instruction goals')
     policy=load_policy(args.checkpoint)
     policy.config.n_action_steps=config["model"]["n_action_steps"]
     policy.config.num_steps=config["model"]["flow_steps"]
     policy.eval()
-    pre,post=make_pre_post_processors(policy.config,pretrained_path=args.checkpoint)
-    tasks,paths,predicates,states=task_resources()
+    if args.base_policy:
+        from lerobot.datasets import LeRobotDatasetMetadata
+        metadata=LeRobotDatasetMetadata('local/cl_binding_r0_train',root=ROOT/config['data']['train_output'])
+        pre,post=make_pre_post_processors(policy.config,dataset_stats=metadata.stats)
+    else:
+        pre,post=make_pre_post_processors(policy.config,pretrained_path=args.checkpoint)
+    tasks,paths,predicates,states=task_resources(config.get("scene",DEFAULT_SCENE))
     common=states[e["common_state_source_goal"]]
     scene_xml=canonical_scene(paths[e['common_state_source_goal']],config['seed'])
     rows=[]; start=time.monotonic()
     hashes={}
-    for goal in config["old_goals"]:
+    for goal in instruction_goals:
         env=make_env(paths[goal])
         try:
             for idx in indices:
@@ -207,9 +216,13 @@ def evaluate(args, config):
         finally:env.close()
     minimum=e["qualification_required_correct"] if args.partition=="qualification" else (len(indices) if args.partition=="screen" else e["development_required_correct"])
     q=qualification(rows,config["old_goals"],len(indices),minimum)
-    report={"status":"complete","partition":args.partition,"checkpoint":str(args.checkpoint),
+    counts=qualification(rows,instruction_goals,len(indices),minimum)['counts']
+    report={"status":"complete","partition":args.partition,"checkpoint":str(args.checkpoint) if args.checkpoint else None,
+            "policy_source":"base_with_training_stats" if args.base_policy else "checkpoint",
+            "instruction_goals":instruction_goals,"gate_goals":config['old_goals'],
+            "normalization_source":config['data'].get('normalization_source',config['data']['train_output']),
             "git_commit":subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
-            "counts":q["counts"],"passed_gate":q["qualified"],"seconds":time.monotonic()-start,
+            "counts":counts,"passed_gate":q["qualified"],"seconds":time.monotonic()-start,
             "horizon":e["horizon"],"n_action_steps":policy.config.n_action_steps,
             "step_traces":args.trace,"videos_first_init_per_goal":args.trace,
             "qualified_R0":bool(q["qualified"] and args.partition=="qualification" and not args.limit)}
@@ -221,13 +234,15 @@ if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("mode",choices=["verify","evaluate"])
     p.add_argument("--config",type=Path,default=ROOT/"configs/stage1_r0.json")
     p.add_argument("--output",type=Path,required=True);p.add_argument("--checkpoint",type=Path)
-    p.add_argument("--partition",choices=["screen","development","qualification"],default="screen")
+    p.add_argument("--partition",choices=["screen","development","qualification","paired"],default="screen")
     p.add_argument("--limit",type=int)
     p.add_argument("--audit",type=Path)
     p.add_argument("--trace",action="store_true",help="Write per-step controls/predicates and a video for the first init per goal")
+    p.add_argument("--instruction-goals",nargs="+",choices=GOALS,help="Instructions to test; capability gate still applies only to config old_goals")
+    p.add_argument("--base-policy",action="store_true",help="Evaluate the base with this config's training-only normalization statistics")
     a=p.parse_args();c=json.loads(a.config.read_text())
     torch_threads=__import__('torch').set_num_threads(4)
     if a.mode=="verify":verify(a,c)
     else:
-        if not a.checkpoint:p.error("evaluate requires --checkpoint")
+        if bool(a.checkpoint)==a.base_policy:p.error("evaluate requires exactly one of --checkpoint or --base-policy")
         evaluate(a,c)

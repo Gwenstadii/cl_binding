@@ -1,0 +1,236 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-25T15:23:33.344514+00:00",
+  "source_commit": "b856dd622ae8f01dd5e1ac89556957438fb3cab2",
+  "branches": [
+    "ft4",
+    "er"
+  ],
+  "gpus": [
+    0,
+    1
+  ],
+  "training_dirs": {
+    "ft4": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3g_goal_ft4_er_20261025_01_ft4",
+    "er": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3g_goal_ft4_er_20261025_01_er"
+  },
+  "parent_rows_reused": [
+    "/home/lzx/cl_binding_stage2a/.server/stage3g_goal_20261025/parent_eval/episodes.jsonl"
+  ],
+  "parent_summary": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 15,
+        "terminal_correct": 15,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 16,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 4
+      },
+      "front": {
+        "left": 0,
+        "front": 15,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 5
+      },
+      "right": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "back": {
+        "left": 9,
+        "front": 6,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 5
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 16,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 15,
+        "right": 0,
+        "back": 0,
+        "unfinished": 5,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 0,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 9,
+        "front": 6,
+        "right": 0,
+        "back": 0,
+        "unfinished": 5,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": [
+      20,
+      21,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      36,
+      37,
+      39
+    ]
+  },
+  "phases": [
+    {
+      "name": "ft4_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage3g_goal_ft4_er_20261025_01/config.json",
+        "--branch",
+        "ft4",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3g_goal_ft4_er_20261025_01_ft4"
+      ],
+      "gpu": 0,
+      "pid": 3280918,
+      "started_elapsed_s": 0.0004050391726195812,
+      "returncode": 0,
+      "finished_elapsed_s": 3304.070364599116
+    },
+    {
+      "name": "er_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage3g_goal_ft4_er_20261025_01/config.json",
+        "--branch",
+        "er",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3g_goal_ft4_er_20261025_01_er"
+      ],
+      "gpu": 1,
+      "pid": 3280920,
+      "started_elapsed_s": 0.0008957991376519203,
+      "returncode": 0,
+      "finished_elapsed_s": 3512.5859443950467
+    },
+    {
+      "name": "ft4_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage3g_goal_ft4_er_20261025_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3g_goal_ft4_er_20261025_01_ft4/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage3g_goal_ft4_er_20261025_01/ft4_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 3698195,
+      "started_elapsed_s": 3512.9721673070453,
+      "returncode": 0,
+      "finished_elapsed_s": 4776.976004013792
+    },
+    {
+      "name": "er_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage3g_goal_ft4_er_20261025_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3g_goal_ft4_er_20261025_01_er/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage3g_goal_ft4_er_20261025_01/er_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 3698196,
+      "started_elapsed_s": 3512.97232461581,
+      "returncode": 0,
+      "finished_elapsed_s": 4813.6352917179465
+    }
+  ],
+  "current_stage": "finished",
+  "finished_at": "2026-10-25T16:43:46.982488+00:00",
+  "seconds": 4813.6379052419215,
+  "final_model_sha256": {
+    "ft4": "641133c88c856860379ec5a760dd9800abbbe6f958209de8c6012217f36985cf",
+    "er": "c563c01f40d95e8916fee4efc9882acf70ef88bad14b92a99649a1e61132030f"
+  },
+  "new_evaluation_episodes": 160,
+  "reused_parent_episodes": 80
+}

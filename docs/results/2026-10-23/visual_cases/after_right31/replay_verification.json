@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "purpose": "render_original_actions_without_policy_or_training",
+  "requested_goal": "right",
+  "init_index": 31,
+  "seed": 20261052,
+  "config_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+  "episodes_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/episodes.jsonl",
+  "trace_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part1/right_31_trace.jsonl",
+  "trace_sha256": "ab96c92537a6f9712b5bea2df6be2c9af9846ee9f146a4106c3b0bed38f97038",
+  "initial_state_sha256": "97351a5eb91cfce9589447cb7e2e1ead9932c98ba755d8ea6d4ac5ac69321c7b",
+  "scene_xml_sha256": "642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc",
+  "steps": 400,
+  "fps": 20,
+  "predicate_mismatches": 0,
+  "maximum_position_errors": {
+    "eef": 0.0,
+    "gripper": 0.0,
+    "objects": 0.0
+  },
+  "position_atol": 1e-07,
+  "summary": {
+    "requested_goal": "right",
+    "first_goal": "front",
+    "first_goal_times": {
+      "front": 118,
+      "left": null,
+      "right": null,
+      "back": null
+    },
+    "terminal_goal": "front",
+    "terminal_category": "wrong_goal",
+    "correct_ever": false,
+    "correct_then_destroyed": false
+  },
+  "original_episode": {
+    "requested_goal": "right",
+    "first_goal": "front",
+    "first_goal_times": {
+      "front": 118,
+      "left": null,
+      "right": null,
+      "back": null
+    },
+    "terminal_goal": "front",
+    "terminal_category": "wrong_goal",
+    "correct_ever": false,
+    "correct_then_destroyed": false,
+    "init_index": 31,
+    "seed": 20261052,
+    "initial_state_sha256": "97351a5eb91cfce9589447cb7e2e1ead9932c98ba755d8ea6d4ac5ac69321c7b",
+    "scene_xml_sha256": "642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc",
+    "steps": 400,
+    "clipped_steps": 219
+  },
+  "new_policy_rollouts": 0,
+  "training_updates": 0,
+  "renderer_sha256": "e7637eaa81378fd4ca2f391c433f88c67ef12b3ed4be558536a6ff8016609ae5",
+  "video_sha256": "e3c62df1a2dc12352b1ee8f8bd0bbbc1fd733740ccc7c325dc9dc14bc7955ea1"
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/plan.json",
+    "archive_path": "plan.json",
+    "bytes": 1131,
+    "sha256": "2dfdfb0f5da17f7d90df2e76b28f21361b434a67a4bf8779133092dc5cb1eecd"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/run_summary.json",
+    "archive_path": "run_summary.json",
+    "bytes": 10765,
+    "sha256": "aa31719346253ba9531ac1202d242c1438fa9a2311feb50fa22d327b057fd031"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/sequence_summary.json",
+    "archive_path": "sequence_summary.json",
+    "bytes": 13710,
+    "sha256": "61aa20583957c67fbcb7de7b9a04745a71ad39c81d4089332e526589c9e3d7fb"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/report.md",
+    "archive_path": "report.md",
+    "bytes": 2782,
+    "sha256": "7df8dc00ec1f16472e4dcc6ff793f3be6ac6f30eba445bfa1c48073585beae08"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/baselines/left_episodes.jsonl",
+    "archive_path": "baselines/left_episodes.jsonl",
+    "bytes": 39570,
+    "sha256": "a1bea3ec7a025486029f3e227efa6e3d78a6d0babd1c626b07dcea6534088320"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/baselines/left_right_episodes.jsonl",
+    "archive_path": "baselines/left_right_episodes.jsonl",
+    "bytes": 39632,
+    "sha256": "8d88bc52ee059048372e67fb413fd5013d5a7064fb2fe9f33d5a6386885fcfa3"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+    "archive_path": "stage3_front/config.json",
+    "bytes": 1962,
+    "sha256": "ffa0e2c90707661e205673d0626fe595dce49e40f10aee9f74661dd31a8982c3"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/alignment_verification.json",
+    "archive_path": "stage3_front/alignment_verification.json",
+    "bytes": 951,
+    "sha256": "736ce86bef62d76b88d12d8e9f16065cf8ae9a16e42b442ecfc5ab62237f281c"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/summary.json",
+    "archive_path": "stage3_front/summary.json",
+    "bytes": 3133,
+    "sha256": "d15e9c61a18daaad2a0cdb96d03e9fa73c07fadad4739c21cdf96b11c18f8640"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/comparison_to_previous.json",
+    "archive_path": "stage3_front/comparison_to_previous.json",
+    "bytes": 15485,
+    "sha256": "c0b9752215dff668c8da756f779a63b16d6c4d034993868e483dd29940a51bdc"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/COMPLETE.json",
+    "archive_path": "stage3_front/COMPLETE.json",
+    "bytes": 276,
+    "sha256": "ca3d602b6f0f7e37162ea0d2357bb40d0d6d8e4c8ec375747c3012ef4d51755a"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/comparison_to_acquisition.json",
+    "archive_path": "stage3_front/comparison_to_acquisition.json",
+    "bytes": 16365,
+    "sha256": "2291aa1f18437d911ac0f55e866d5ba68b679a39b04178c7de88a97d8c59ced2"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/episodes.jsonl",
+    "archive_path": "stage3_front/episodes.jsonl",
+    "bytes": 39748,
+    "sha256": "8e623c7062284d6867366b2b7e49517ef07c159c5305cc304590d198b3eb2d2f"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/data/audit.json",
+    "archive_path": "stage3_front/data/audit.json",
+    "bytes": 341492,
+    "sha256": "1cbc7ec00b82cfaf496c7f62f19d538a699a6c7a2891b38d737b49c56f5c2c47"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/data/COMPLETE.json",
+    "archive_path": "stage3_front/data/COMPLETE.json",
+    "bytes": 109,
+    "sha256": "3fb78ceb2f90f1d7777eae17051958b5d4280cd5af1f5371e359492b903156d2"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/manifest.json",
+    "archive_path": "training/stage3_front/manifest.json",
+    "bytes": 3732,
+    "sha256": "86db7ae30f74abf2a89a68fb2c71408209735d20c48ea3147e234992f2bc2017"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/training_finished_012000.json",
+    "archive_path": "training/stage3_front/training_finished_012000.json",
+    "bytes": 176,
+    "sha256": "7d6c4840acbc301ea5b120658a56e5503534f17d7dfc0183f8a6f266df8b5893"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "archive_path": "training/stage3_front/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "bytes": 140,
+    "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/config.json",
+    "archive_path": "stage4_back/config.json",
+    "bytes": 1972,
+    "sha256": "9e2a18f976cd4a6fcdf21b82a61f531ac19e0400599d2d4ec0a856a07326830f"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/alignment_verification.json",
+    "archive_path": "stage4_back/alignment_verification.json",
+    "bytes": 948,
+    "sha256": "faace85cca53d7695ffd1d3773f1b81f10cc12e32d25c7ca87cc7d99cc0ba458"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/summary.json",
+    "archive_path": "stage4_back/summary.json",
+    "bytes": 2964,
+    "sha256": "03de680144ce6e8918c41ae5c63741c97512fa7b64a93532df440d4589d5fda3"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/comparison_to_previous.json",
+    "archive_path": "stage4_back/comparison_to_previous.json",
+    "bytes": 22282,
+    "sha256": "f588a2ae1f013b0826c71eae66a998ef581c1681d8bbb1ba3d07dbd3f732c25c"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/COMPLETE.json",
+    "archive_path": "stage4_back/COMPLETE.json",
+    "bytes": 274,
+    "sha256": "02df0fc62504815adbe016ab251c317a21eaec314c5cf57fb0f95720874f7643"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/comparison_to_acquisition.json",
+    "archive_path": "stage4_back/comparison_to_acquisition.json",
+    "bytes": 23823,
+    "sha256": "32b8cc6effbc3ea94c71d9541edf4ffee741631d38efceb23e503effa363d97a"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/episodes.jsonl",
+    "archive_path": "stage4_back/episodes.jsonl",
+    "bytes": 39471,
+    "sha256": "a1acb4b775e9f7d6ebaf03c5feac16a0ddb6101cb9723c1aa0703006bd8ae82e"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/data/audit.json",
+    "archive_path": "stage4_back/data/audit.json",
+    "bytes": 341503,
+    "sha256": "f57ef8b2e90df0631401e3f60f263f29392bf7adda95a419aa77a71748c9da31"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/data/COMPLETE.json",
+    "archive_path": "stage4_back/data/COMPLETE.json",
+    "bytes": 109,
+    "sha256": "235c2af4a7e56c1d2dc614a070754b9f6efd94f6054012bd63d121652d9d8f7c"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/manifest.json",
+    "archive_path": "training/stage4_back/manifest.json",
+    "bytes": 3751,
+    "sha256": "a4d0517a4343bd947d44053e6f9cdd019516f40d063e2404fbd9c1e79e619bc0"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/training_finished_012000.json",
+    "archive_path": "training/stage4_back/training_finished_012000.json",
+    "bytes": 174,
+    "sha256": "7671611f622cbee5af6ebc2177fa7d007477681a16a3249f9fda3c2a0da77f92"
+  },
+  {
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "archive_path": "training/stage4_back/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "bytes": 140,
+    "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+  }
+]

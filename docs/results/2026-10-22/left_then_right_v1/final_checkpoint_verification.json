@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "step": 6000,
+  "reload_max_difference": 0.0,
+  "frozen_hash_unchanged": true,
+  "optimizer_and_rng_saved": true
+}

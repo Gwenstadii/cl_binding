@@ -1,0 +1,25 @@
+{
+ "development": {
+  "006000": {
+   "left_terminal": 7,
+   "front_terminal": 4,
+   "joint_terminal": 2,
+   "front_ever": 6
+  },
+  "012000": {
+   "left_terminal": 19,
+   "front_terminal": 7,
+   "joint_terminal": 6,
+   "front_ever": 7
+  },
+  "018000": {
+   "left_terminal": 18,
+   "front_terminal": 6,
+   "joint_terminal": 6,
+   "front_ever": 6
+  }
+ },
+ "passing": [],
+ "selected": "012000",
+ "rule": "first passing candidate; otherwise most front ever-successes on development, later on ties"
+}

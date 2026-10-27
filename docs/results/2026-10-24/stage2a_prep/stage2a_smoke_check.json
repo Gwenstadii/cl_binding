@@ -1,0 +1,92 @@
+{
+ "ft4": {
+  "steps": 20,
+  "exposures": {
+   "new": 80,
+   "left": 0,
+   "front": 0
+  },
+  "peak_allocated_mib": 3091.0,
+  "frozen_parameters_unchanged": true,
+  "reload_max_difference": 0.0,
+  "git_commit": "043333e37dd3e72925a6fbe0f90c1e15350df9d5",
+  "step1_loss": 1.703620195388794,
+  "step1_new_record_losses": [
+   1.3390111923217773,
+   3.2695860862731934,
+   1.8723220825195312,
+   3.7408015727996826
+  ],
+  "step1_old_record_losses": [],
+  "memory": null
+ },
+ "er": {
+  "steps": 20,
+  "exposures": {
+   "new": 80,
+   "left": 20,
+   "front": 20
+  },
+  "peak_allocated_mib": 3152.0,
+  "frozen_parameters_unchanged": true,
+  "reload_max_difference": 0.0,
+  "git_commit": "043333e37dd3e72925a6fbe0f90c1e15350df9d5",
+  "step1_loss": 1.8135192394256592,
+  "step1_new_record_losses": [
+   1.3398678302764893,
+   3.264155387878418,
+   1.8738377094268799,
+   3.725396156311035
+  ],
+  "step1_old_record_losses": [
+   0.5124162435531616,
+   0.16544213891029358
+  ],
+  "memory": {
+   "directory": "outputs/stage2a/memory/left_front_uniform256_v1",
+   "budget": {
+    "files": {
+     "memory_manifest.json": 65743,
+     "memory.npz": 51098592
+    },
+    "total_bytes": 51164335,
+    "limit_bytes": 67108864,
+    "within_budget": true
+   },
+   "memory_npz_sha256": "759ff7725b65c7e8c2591418a47ffc94552e25d4392827ed14861c529aead9f5"
+  }
+ },
+ "full_replay": {
+  "steps": 20,
+  "exposures": {
+   "new": 80,
+   "left": 20,
+   "front": 20
+  },
+  "peak_allocated_mib": 3152.0,
+  "frozen_parameters_unchanged": true,
+  "reload_max_difference": 0.0,
+  "git_commit": "043333e37dd3e72925a6fbe0f90c1e15350df9d5",
+  "step1_loss": 1.8678557872772217,
+  "step1_new_record_losses": [
+   1.3398678302764893,
+   3.264155387878418,
+   1.8738377094268799,
+   3.725396156311035
+  ],
+  "step1_old_record_losses": [
+   0.5788325071334839,
+   0.42504578828811646
+  ],
+  "memory": null
+ },
+ "matching": {
+  "identical_new_indices_all_steps": true,
+  "identical_new_noise_time_checksums_all_steps": true,
+  "step1_max_relative_new_loss_difference_ft4_vs_er": 0.0041182126848598845,
+  "step1_er_vs_full_replay_new_losses_equal": true,
+  "ft4_loss_equals_sum_over_6": true,
+  "note": "FT4 vs ER step-1 gap comes from BF16 kernels at batch 4 vs 6 with identical weights; ER and full replay (both batch 6) match exactly."
+ },
+ "scope": "20-step engineering smoke per branch; not training results."
+}

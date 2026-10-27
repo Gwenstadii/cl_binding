@@ -1,0 +1,6672 @@
+{
+ "thresholds_m": {
+  "lift": 0.05,
+  "near": 0.06,
+  "held": 0.06
+ },
+ "compartment_centres": {
+  "left": [
+   -0.4030368368988704,
+   -0.26146939451142753,
+   1.0069856181596468
+  ],
+  "front": [
+   -0.36304219151446804,
+   -0.13820120176083098,
+   0.9600072424531757
+  ],
+  "right": [
+   -0.40489831035816326,
+   -0.012544882440354049,
+   1.0106768767504206
+  ],
+  "back": [
+   -0.4243348839423438,
+   -0.14423777670633436,
+   1.0322630327969171
+  ]
+ },
+ "centre_support": {
+  "left": 40,
+  "front": 11,
+  "right": 71,
+  "back": 4
+ },
+ "models": {
+  "uniform16": {
+   "summary": {
+    "back": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "near_other_front": 5,
+      "lifted_never_near_any": 3,
+      "near_requested_not_satisfied": 1,
+      "near_other_right": 10,
+      "never_lifted": 1
+     },
+     "failures_lifted": 19,
+     "failures_held_at_end": 0
+    },
+    "front": {
+     "episodes": 20,
+     "never_requested_success": 12,
+     "failure_categories": {
+      "near_requested_not_satisfied": 9,
+      "lifted_never_near_any": 1,
+      "never_lifted": 2
+     },
+     "failures_lifted": 10,
+     "failures_held_at_end": 0
+    },
+    "left": {
+     "episodes": 20,
+     "never_requested_success": 2,
+     "failure_categories": {
+      "never_lifted": 2
+     },
+     "failures_lifted": 0,
+     "failures_held_at_end": 0
+    },
+    "right": {
+     "episodes": 20,
+     "never_requested_success": 8,
+     "failure_categories": {
+      "near_requested_not_satisfied": 6,
+      "never_lifted": 2
+     },
+     "failures_lifted": 6,
+     "failures_held_at_end": 0
+    }
+   },
+   "episodes": {
+    "back": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.20422680709761287,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.17748769391909255,
+       "front": 0.04889450550136475,
+       "right": 0.08488301485433017,
+       "back": 0.08437062626482547
+      },
+      "final_book_position": [
+       -0.3623265770194923,
+       -0.085980389732818,
+       1.0520859043373771
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.21769405988164747,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.15823880961228387,
+       "front": 0.029626314566977292,
+       "right": 0.08752681804298189,
+       "back": 0.06591761147313842
+      },
+      "final_book_position": [
+       -0.359717671213752,
+       -0.10811954870493456,
+       1.0403144022674014
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.19628110139762045,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21685134575326104,
+       "front": 0.08733631986758172,
+       "right": 0.07047366545994863,
+       "back": 0.124706744856486
+      },
+      "final_book_position": [
+       -0.3315595340113638,
+       -0.05673663863946645,
+       1.0539349459030845
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.22506115263593385,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.13360260515692352,
+       "front": 0.0046333576026035975,
+       "right": 0.07453807300003483,
+       "back": 0.03605356527588312
+      },
+      "final_book_position": [
+       -0.3575864659310516,
+       -0.13552472479933836,
+       1.083158299037562
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22969574889217204,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19706628453043504,
+       "front": 0.07336627964311569,
+       "right": 0.045588826569700376,
+       "back": 0.09138550562008263
+      },
+      "final_book_position": [
+       -0.3897813589141592,
+       -0.05555440332866252,
+       1.0563968016005076
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.225937170520479,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.17668835863604307,
+       "front": 0.05171418044833493,
+       "right": 0.07852646444479426,
+       "back": 0.07671745541111945
+      },
+      "final_book_position": [
+       -0.3729822517302792,
+       -0.08717900644286417,
+       1.0518312824998002
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22881217841862767,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22089685531043898,
+       "front": 0.09308923324994778,
+       "right": 0.05018472993176228,
+       "back": 0.11923594661728928
+      },
+      "final_book_position": [
+       -0.3584009068525956,
+       -0.04223763033040759,
+       1.0436773903388017
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21498510785870106,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21540557984335176,
+       "front": 0.08803489300300414,
+       "right": 0.057137993212679004,
+       "back": 0.11313980884312969
+      },
+      "final_book_position": [
+       -0.34643716523989493,
+       -0.04549595477997088,
+       1.0544136657349106
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.23498218760554057,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18278925991948605,
+       "front": 0.05855935269365756,
+       "right": 0.06768740578890825,
+       "back": 0.07714256526114509
+      },
+      "final_book_position": [
+       -0.3842641103000095,
+       -0.07701049102657945,
+       1.0577442098980991
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.24520208031059487,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20107117896828453,
+       "front": 0.07193691770176669,
+       "right": 0.06348869823237778,
+       "back": 0.10461588920004429
+      },
+      "final_book_position": [
+       -0.35068585307807665,
+       -0.0673275249063948,
+       1.0692199727274676
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23186165699107064,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22865761751056843,
+       "front": 0.09985194264801096,
+       "right": 0.04940992457585883,
+       "back": 0.12454445161877702
+      },
+      "final_book_position": [
+       -0.3483100527189279,
+       -0.03944202731566557,
+       1.0550903847576096
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2212737515407588,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.207694509371622,
+       "front": 0.0844855580113105,
+       "right": 0.048093925830240705,
+       "back": 0.09992327175591112
+      },
+      "final_book_position": [
+       -0.37365813302345097,
+       -0.05091868542275796,
+       1.0491438113195721
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.2107875064375273,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21476614125434437,
+       "front": 0.08529244907374996,
+       "right": 0.06479300411825951,
+       "back": 0.12085525082230475
+      },
+      "final_book_position": [
+       -0.3423299395231618,
+       -0.05546170523674008,
+       1.0555404962595976
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22664139414513462,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19458416538580725,
+       "front": 0.08108151316373298,
+       "right": 0.037366910827406286,
+       "back": 0.07868895598001566
+      },
+      "final_book_position": [
+       -0.4604608849556085,
+       0.02094921356534115,
+       1.0440801448982053
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23628972872774612,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21763007261369835,
+       "front": 0.0961262215107733,
+       "right": 0.03737328964698083,
+       "back": 0.10715812452932477
+      },
+      "final_book_position": [
+       -0.3703413596544406,
+       -0.0348826748521793,
+       1.0549848690271642
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01765193711604074,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.20118011384373655,
+       -0.05348107266545304,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21699623908758858,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1999823737034514,
+       "front": 0.0832418330276903,
+       "right": 0.04472340684027418,
+       "back": 0.08406692274049017
+      },
+      "final_book_position": [
+       -0.41891114881529307,
+       -0.05930936076943649,
+       1.051999983657761
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.24002801357995063,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.17303588229688338,
+       "front": 0.0512988564820635,
+       "right": 0.0778351204661283,
+       "back": 0.06986615463051132
+      },
+      "final_book_position": [
+       -0.3803911689319938,
+       -0.08992176181253292,
+       1.0585489091734677
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21926189064692947,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20283140146469406,
+       "front": 0.0754581562033025,
+       "right": 0.056382256884219384,
+       "back": 0.10049027480542365
+      },
+      "final_book_position": [
+       -0.2169961778368396,
+       -0.1091771507302389,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23846117853382898,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21808819457076503,
+       "front": 0.0943834969641723,
+       "right": 0.014955885869729303,
+       "back": 0.10427940582611742
+      },
+      "final_book_position": [
+       -0.41446686968444657,
+       -0.024039280839912216,
+       1.1059374821621402
+      ]
+     }
+    ],
+    "front": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.16720087172109854,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.12923279402053287,
+       "front": 0.027645461576298828,
+       "right": 0.14889366390221379,
+       "back": 0.0881840379056893
+      },
+      "final_book_position": [
+       -0.3137643798054401,
+       -0.1679512121483466,
+       0.9219536982103875
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.1690532487598384,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11588543410540596,
+       "front": 0.009813256451363897,
+       "right": 0.14219141235402075,
+       "back": 0.0588338991590041
+      },
+      "final_book_position": [
+       -0.36589539932354403,
+       -0.15169714185786976,
+       0.9581854826201637
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.17650828276480524,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.17269916504852015,
+       "front": 0.06054238958390145,
+       "right": 0.12201806790689579,
+       "back": 0.1161639271714497
+      },
+      "final_book_position": [
+       -0.25472022508886066,
+       -0.16463223004050986,
+       0.8989104905998119
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.1783755518347132,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.10896640078768607,
+       "front": 0.026698294030504888,
+       "right": 0.15914121888107935,
+       "back": 0.07211938508171029
+      },
+      "final_book_position": [
+       -0.3375937646467428,
+       -0.16903252064977062,
+       0.961570414599558
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.18127904617445778,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.14886751896331277,
+       "front": 0.022974412228036922,
+       "right": 0.1196415032865031,
+       "back": 0.08168847696793387
+      },
+      "final_book_position": [
+       -0.29336809383825024,
+       -0.1371021971766788,
+       0.9744358340957119
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.17098885744990178,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.12764834931328498,
+       "front": 0.012106288159581815,
+       "right": 0.14165921169375092,
+       "back": 0.07183204450184119
+      },
+      "final_book_position": [
+       -0.35248679755042955,
+       -0.14415743193022962,
+       0.9625433168139559
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19302225605946322,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.16561858376079883,
+       "front": 0.04003788802887107,
+       "right": 0.12100992276438886,
+       "back": 0.09664498647912646
+      },
+      "final_book_position": [
+       -0.3335339842894296,
+       -0.11114019320282252,
+       0.9609271971991012
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.18699412944092564,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.15531633931369268,
+       "front": 0.0336320809931358,
+       "right": 0.1311935558509951,
+       "back": 0.09366529623527554
+      },
+      "final_book_position": [
+       -0.31970271313236825,
+       -0.12373189619354742,
+       0.9653012671998037
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.16273215313097322,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.10645836725255482,
+       "front": 0.006375952985431203,
+       "right": 0.13397094421560243,
+       "back": 0.03908940807161879
+      },
+      "final_book_position": [
+       -0.3870593754394162,
+       -0.1562168188498719,
+       0.9058206648989003
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20024053368988814,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11048779525994397,
+       "front": 0.008247592657439323,
+       "right": 0.1346842573994257,
+       "back": 0.04339346566194485
+      },
+      "final_book_position": [
+       -0.3627208336475526,
+       -0.14691627415907588,
+       0.9002894039830076
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01605275257968941,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31052259103847824,
+       "front": 0.20415006847936357,
+       "right": 0.2243850547263906,
+       "back": 0.2621995883095526
+      },
+      "final_book_position": [
+       -0.17347790572835425,
+       -0.026632805162250944,
+       0.8829599203541995
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.17674714775596967,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11067995953128101,
+       "front": 0.012091693207021616,
+       "right": 0.13400759344651803,
+       "back": 0.03800284632312784
+      },
+      "final_book_position": [
+       -0.38704223991097,
+       -0.15195123935420873,
+       0.9058177233792346
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.16797194592319675,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.13896657424550404,
+       "front": 0.03344182795210792,
+       "right": 0.14879606832466924,
+       "back": 0.09436333491684211
+      },
+      "final_book_position": [
+       -0.3066912865977985,
+       -0.15740952825068433,
+       0.94320976116689
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.18343780750747274,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.13483116231267167,
+       "front": 0.0217568175733649,
+       "right": 0.14364540188635355,
+       "back": 0.08284649109395756
+      },
+      "final_book_position": [
+       -0.33804566688414917,
+       -0.1412037243108506,
+       0.9692192681920717
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.18384766466365288,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1760192195581175,
+       "front": 0.0551646900453222,
+       "right": 0.11217249345802317,
+       "back": 0.11239185893240534
+      },
+      "final_book_position": [
+       -0.32391688572631294,
+       -0.09105510362447684,
+       0.957718527966366
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.016980000441040533,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26688309952879635,
+       "front": 0.1621730797823077,
+       "right": 0.19909877520493638,
+       "back": 0.22146590338569527
+      },
+      "final_book_position": [
+       -0.20267666382438734,
+       -0.05532858454144145,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.1720603272018264,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1417649571155741,
+       "front": 0.01786228916867356,
+       "right": 0.13112551031159977,
+       "back": 0.07860668201241916
+      },
+      "final_book_position": [
+       -0.34411448958383634,
+       -0.1317411730715645,
+       0.9684181298475095
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.19446247498521618,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11307675657037167,
+       "front": 0.007073260040443379,
+       "right": 0.13511790552568345,
+       "back": 0.04595189057802599
+      },
+      "final_book_position": [
+       -0.3680570358653287,
+       -0.15280260394906162,
+       0.9015221103702845
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.1727832496650128,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.14571571015641893,
+       "front": 0.024093739129058628,
+       "right": 0.13388487149092504,
+       "back": 0.08512457809334993
+      },
+      "final_book_position": [
+       -0.3403135030196219,
+       -0.12982498954280916,
+       0.9596553215987607
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20021989612805047,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.17177945050107524,
+       "front": 0.044882435240113386,
+       "right": 0.11629353813471127,
+       "back": 0.09915738763402854
+      },
+      "final_book_position": [
+       -0.33292296538156213,
+       -0.10444596198436745,
+       0.9586418560615324
+      ]
+     }
+    ],
+    "left": [
+     {
+      "init_index": 20,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23275411597937545,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.021201342982409683,
+       "front": 0.1342822251630865,
+       "right": 0.22408178463982587,
+       "back": 0.1397105120889059
+      },
+      "final_book_position": [
+       -0.40195221244499724,
+       -0.3083246804300473,
+       0.9037240184181858
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.204696407076572,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.020654863891685023,
+       "front": 0.1257614155170423,
+       "right": 0.22572831989404243,
+       "back": 0.12914688490223603
+      },
+      "final_book_position": [
+       -0.3942787336458723,
+       -0.30071043172364675,
+       0.9020434456427424
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21509701499302092,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.007373725094910074,
+       "front": 0.09859901801026479,
+       "right": 0.18576367440077235,
+       "back": 0.1164131236921325
+      },
+      "final_book_position": [
+       -0.4459151747458707,
+       -0.2838656530133543,
+       0.912855911046216
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2272893122255233,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.023221975722952756,
+       "front": 0.13447314836368557,
+       "right": 0.22038200259998492,
+       "back": 0.14166799991180878
+      },
+      "final_book_position": [
+       -0.40913795363854233,
+       -0.29744530515199663,
+       0.9054691336622275
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2451981857205423,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.0013716179803243407,
+       "front": 0.10721631024536633,
+       "right": 0.1944238391824471,
+       "back": 0.11742474871345862
+      },
+      "final_book_position": [
+       -0.41509554278060135,
+       -0.29759746002113013,
+       0.90286991718274
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2417144026534287,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.036823228330270436,
+       "front": 0.16145014284462908,
+       "right": 0.22617754117216143,
+       "back": 0.1558349584137777
+      },
+      "final_book_position": [
+       -0.3968495354487009,
+       -0.29949701196387973,
+       0.9010540970208325
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2377087306816188,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.03405655620894789,
+       "front": 0.1523745300444587,
+       "right": 0.20918153022511904,
+       "back": 0.15320046016349312
+      },
+      "final_book_position": [
+       -0.4015130183055347,
+       -0.30236222577222244,
+       0.9003144019629021
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23815945768007496,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.019724116412477427,
+       "front": 0.1353524233560296,
+       "right": 0.1996823167548469,
+       "back": 0.1388057330173477
+      },
+      "final_book_position": [
+       -0.39883732972553065,
+       -0.3077796817038876,
+       0.8988434306446876
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21461347223658922,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.013615363090054216,
+       "front": 0.12332958801871761,
+       "right": 0.21384708338228736,
+       "back": 0.13211410264069995
+      },
+      "final_book_position": [
+       -0.40134223665157925,
+       -0.284466275365153,
+       0.9305730136853123
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.256044493395848,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.0298521685951652,
+       "front": 0.1502884064038723,
+       "right": 0.22788867869201207,
+       "back": 0.1487573341882852
+      },
+      "final_book_position": [
+       -0.3842001052572154,
+       -0.28747923351269394,
+       0.9036434764088446
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01698000044104042,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31052259103847824,
+       "front": 0.20415006847936357,
+       "right": 0.22390264701024418,
+       "back": 0.2621995883095526
+      },
+      "final_book_position": [
+       -0.17197145502972472,
+       -0.02788332172273866,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23073931273254278,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.02412034948649507,
+       "front": 0.1403225675278771,
+       "right": 0.19979754387861975,
+       "back": 0.1408700058283465
+      },
+      "final_book_position": [
+       -0.3814695356856858,
+       -0.2784276439128929,
+       0.9109844311207688
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24911734935679197,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.010298024891682262,
+       "front": 0.1046223409902098,
+       "right": 0.2018068515180497,
+       "back": 0.12220877992880222
+      },
+      "final_book_position": [
+       -0.39919426335092495,
+       -0.3001220766475271,
+       0.9066157713377477
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23248712037988395,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.009731890058272645,
+       "front": 0.1211702595933813,
+       "right": 0.20677914725138594,
+       "back": 0.1212621187756733
+      },
+      "final_book_position": [
+       -0.4029329216375084,
+       -0.2809613229419459,
+       0.9144092839897008
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24620006841897712,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.015040867696196317,
+       "front": 0.1314855372647526,
+       "right": 0.21369437128101834,
+       "back": 0.13398396644250274
+      },
+      "final_book_position": [
+       -0.40204368792402584,
+       -0.3002110610747388,
+       0.898634716785949
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017229593643602548,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.2006979289171259,
+       -0.05387348482983343,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2454231897744692,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.013605999063387044,
+       "front": 0.13848034709547583,
+       "right": 0.19440277886154086,
+       "back": 0.1326088308349921
+      },
+      "final_book_position": [
+       -0.4022730142100718,
+       -0.30150999040564364,
+       0.8999011950672632
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.25796027867145743,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.021502719966778088,
+       "front": 0.1423019505569129,
+       "right": 0.2158633291327574,
+       "back": 0.14051903342016417
+      },
+      "final_book_position": [
+       -0.40048834039204734,
+       -0.28677603987723993,
+       0.8987163023612833
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23345043269008436,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.013706679908148956,
+       "front": 0.13120436370813507,
+       "right": 0.21061368962534044,
+       "back": 0.13275523385821386
+      },
+      "final_book_position": [
+       -0.3801880656190312,
+       -0.2820136394573794,
+       0.9146479615950623
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2352557187670753,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.023289894661653203,
+       "front": 0.13560803284757014,
+       "right": 0.19388304351271002,
+       "back": 0.1424323780523249
+      },
+      "final_book_position": [
+       -0.3907919225486452,
+       -0.30177990600533705,
+       0.899199397861863
+      ]
+     }
+    ],
+    "right": [
+     {
+      "init_index": 20,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23208463027064974,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24357379252881148,
+       "front": 0.12933854975655137,
+       "right": 0.0020286545472899555,
+       "back": 0.1267484453596396
+      },
+      "final_book_position": [
+       -0.420337066488398,
+       -0.0035984569610265304,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.23384057654869728,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23827716711009242,
+       "front": 0.11401546952729796,
+       "right": 0.029656565965973145,
+       "back": 0.12843922011119943
+      },
+      "final_book_position": [
+       -0.37777373218216387,
+       -0.02453526040221222,
+       1.0290135489241945
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20489118173975163,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24287403548745562,
+       "front": 0.12956154606194703,
+       "right": 0.0025963833094145446,
+       "back": 0.12590044870778333
+      },
+      "final_book_position": [
+       -0.415801426979762,
+       -0.010561070927144431,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.23719766537035647,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2324893713885498,
+       "front": 0.10850310862737936,
+       "right": 0.030041222813829364,
+       "back": 0.12274289353812247
+      },
+      "final_book_position": [
+       -0.16981569890619624,
+       -0.042932316382683876,
+       0.8989999207952399
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22568482153509772,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24632555049358495,
+       "front": 0.1333472736382335,
+       "right": 0.006850175005064141,
+       "back": 0.12856972214031917
+      },
+      "final_book_position": [
+       -0.4200939197179227,
+       -0.015725739494516434,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22612120531080004,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24059297886584607,
+       "front": 0.11438066689653675,
+       "right": 0.002330914620598061,
+       "back": 0.12485370133880597
+      },
+      "final_book_position": [
+       -0.4073398655819025,
+       -0.0129040151357123,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.24189573239570228,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2674230599180327,
+       "front": 0.14738653634557689,
+       "right": 0.01901276913017949,
+       "back": 0.15209651268838298
+      },
+      "final_book_position": [
+       -0.3934715374188472,
+       0.062203926813681636,
+       1.0432500243734966
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22694673124322562,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23414368218682202,
+       "front": 0.10931054602258339,
+       "right": 0.007053174140194265,
+       "back": 0.1250469045292441
+      },
+      "final_book_position": [
+       -0.43905858360362576,
+       -0.012121111373715486,
+       0.9110637156188073
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.28096130942563746,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2327444485083136,
+       "front": 0.10844122821986545,
+       "right": 0.004891898026524782,
+       "back": 0.11706630769290428
+      },
+      "final_book_position": [
+       -0.41231752062595045,
+       0.10983237235203622,
+       0.9524699219430951
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2463196792753971,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24124380165862702,
+       "front": 0.11660140719921418,
+       "right": 0.002217871991842169,
+       "back": 0.13081306381345734
+      },
+      "final_book_position": [
+       -0.4109115118541158,
+       -0.013988200873762844,
+       0.9022336748815166
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01698000044104042,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.3099922461661118,
+       "front": 0.20254224981447927,
+       "right": 0.22105546457161598,
+       "back": 0.26027990844245535
+      },
+      "final_book_position": [
+       -0.1753473384805777,
+       -0.03039459239724579,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22575497885803286,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25040879572200603,
+       "front": 0.13002502029425378,
+       "right": 0.0033153150775344755,
+       "back": 0.1316692136078671
+      },
+      "final_book_position": [
+       -0.41201503717291166,
+       -0.008040615024035148,
+       0.9024275981625387
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23926478326997458,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24482422718246843,
+       "front": 0.128928205326578,
+       "right": 0.0037393776535182125,
+       "back": 0.12887508189936014
+      },
+      "final_book_position": [
+       -0.40460347081827397,
+       -0.008808020108968495,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23203969532576485,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24019865074599484,
+       "front": 0.12193205624047454,
+       "right": 0.006816111660624715,
+       "back": 0.1248659035831013
+      },
+      "final_book_position": [
+       -0.39698258228236194,
+       -0.0037753421748669726,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.251981954984555,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.272744451619528,
+       "front": 0.15135004155319923,
+       "right": 0.024593810137067816,
+       "back": 0.15764869838813875
+      },
+      "final_book_position": [
+       -0.45095603026880926,
+       0.038429882665300945,
+       1.0331519780159149
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.016980001120591615,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.2024884080887483,
+       -0.055146852162835665,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22546393092468575,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24655322694512574,
+       "front": 0.125173994525985,
+       "right": 0.0071593220504332245,
+       "back": 0.12866350727591794
+      },
+      "final_book_position": [
+       -0.41851328719073405,
+       -0.007512496994862834,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.234162260995598,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23853133726974843,
+       "front": 0.11660688639152574,
+       "right": 0.0013563323074688874,
+       "back": 0.1231425488329188
+      },
+      "final_book_position": [
+       -0.40632716443572053,
+       -0.0115456343579771,
+       0.8987251394350645
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22775780753457875,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2433332834297013,
+       "front": 0.12250774181866703,
+       "right": 0.0006945834157572032,
+       "back": 0.12587673620326015
+      },
+      "final_book_position": [
+       -0.41313903794829987,
+       -0.010192680072841277,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.24895345940857216,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2709194221355512,
+       "front": 0.1478736115365531,
+       "right": 0.022464969034990543,
+       "back": 0.1553053556744125
+      },
+      "final_book_position": [
+       -0.4257967480391626,
+       0.03765638653348343,
+       1.0672447665867757
+      ]
+     }
+    ]
+   }
+  },
+  "late16": {
+   "summary": {
+    "back": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "lifted_never_near_any": 3,
+      "near_other_right": 10,
+      "reached_some_goal": 4,
+      "never_lifted": 3
+     },
+     "failures_lifted": 17,
+     "failures_held_at_end": 0
+    },
+    "front": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "near_requested_not_satisfied": 3,
+      "lifted_never_near_any": 12,
+      "never_lifted": 3,
+      "near_other_right": 2
+     },
+     "failures_lifted": 17,
+     "failures_held_at_end": 0
+    },
+    "left": {
+     "episodes": 20,
+     "never_requested_success": 15,
+     "failure_categories": {
+      "near_other_front": 6,
+      "near_requested_not_satisfied": 2,
+      "reached_some_goal": 6,
+      "never_lifted": 1
+     },
+     "failures_lifted": 14,
+     "failures_held_at_end": 0
+    },
+    "right": {
+     "episodes": 20,
+     "never_requested_success": 8,
+     "failure_categories": {
+      "near_requested_not_satisfied": 7,
+      "never_lifted": 1
+     },
+     "failures_lifted": 7,
+     "failures_held_at_end": 0
+    }
+   },
+   "episodes": {
+    "back": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.19154534243347088,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20979450991828594,
+       "front": 0.0812707001712481,
+       "right": 0.0877748674353043,
+       "back": 0.12652082598180903
+      },
+      "final_book_position": [
+       -0.3225999473199005,
+       -0.06770757374501757,
+       1.0615276839479533
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21444075400867946,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1998808603610303,
+       "front": 0.07070576648571898,
+       "right": 0.04355262300597135,
+       "back": 0.10288922293598562
+      },
+      "final_book_position": [
+       -0.3504226933053533,
+       -0.06860031576741955,
+       1.069304308373955
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.19904067830500582,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21378460857000273,
+       "front": 0.08419150115765915,
+       "right": 0.07323938750998181,
+       "back": 0.12284628999210226
+      },
+      "final_book_position": [
+       -0.33657201746522364,
+       -0.05827912250245063,
+       1.061396125796007
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23215049559774448,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2043720245827117,
+       "front": 0.07670288203052661,
+       "right": 0.05878322505849889,
+       "back": 0.10418271170454041
+      },
+      "final_book_position": [
+       -0.36257645599151556,
+       -0.053905464203260284,
+       1.0434661747154075
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21971311209033084,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24044518647600172,
+       "front": 0.11992222416054305,
+       "right": 0.0067675135984762765,
+       "back": 0.12493518865691595
+      },
+      "final_book_position": [
+       -0.44085692466039567,
+       -0.008272209409527624,
+       0.9007574194836904
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21913185695106796,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20622897004333196,
+       "front": 0.08072086972729994,
+       "right": 0.046324666724307226,
+       "back": 0.10181548682832013
+      },
+      "final_book_position": [
+       -0.37052170839211385,
+       -0.05779575565568845,
+       1.0435454240095585
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23612662781746097,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26318796919621257,
+       "front": 0.13936340163702768,
+       "right": 0.024941806771477382,
+       "back": 0.1517603839299097
+      },
+      "final_book_position": [
+       -0.38756141884222306,
+       0.05176200712974152,
+       1.0337466931327373
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.010885133697179472,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.27737926111268074,
+       "front": 0.1705078118033474,
+       "right": 0.20007090408014355,
+       "back": 0.2290508007408513
+      },
+      "final_book_position": [
+       -0.2106516902816743,
+       -0.06052358323107975,
+       0.8829599203541995
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23389327490106415,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1980198356910676,
+       "front": 0.07275118709261222,
+       "right": 0.058373129680723945,
+       "back": 0.09437468436984188
+      },
+      "final_book_position": [
+       -0.36985472642319417,
+       -0.06080448873272508,
+       1.0468135711002404
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2287517025269593,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20801075539006608,
+       "front": 0.08080237420743895,
+       "right": 0.052112816941064635,
+       "back": 0.10634721088890102
+      },
+      "final_book_position": [
+       -0.36138329696842514,
+       -0.05739760007627768,
+       1.047498617415965
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.232514391960703,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22147919500891552,
+       "front": 0.0983951454529004,
+       "right": 0.018119469150706398,
+       "back": 0.10908791441030712
+      },
+      "final_book_position": [
+       -0.42672253429157925,
+       -0.015825811196962625,
+       1.0691458476845703
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2251097710436578,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24087615874397758,
+       "front": 0.11586906286985466,
+       "right": 0.0052204750486455325,
+       "back": 0.1263065424498094
+      },
+      "final_book_position": [
+       -0.43825937156219436,
+       -0.011464019271634979,
+       0.9001522624622745
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.21865566965392946,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22147003917419542,
+       "front": 0.09274406879713813,
+       "right": 0.06044706167568656,
+       "back": 0.12170219860315058
+      },
+      "final_book_position": [
+       -0.3516610868178942,
+       -0.045632273710255855,
+       1.0524241635543192
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.04755966707395398,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.28846492763073556,
+       "front": 0.1835719740328659,
+       "right": 0.21277880702552832,
+       "back": 0.24240713915728232
+      },
+      "final_book_position": [
+       -0.15862522747106228,
+       -0.06611284169470766,
+       0.9300137669681404
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23171200738665343,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23357834158816562,
+       "front": 0.11093849126760658,
+       "right": 0.013124123305792497,
+       "back": 0.11938824905820382
+      },
+      "final_book_position": [
+       -0.4148044425681953,
+       -0.022844803069714953,
+       1.0537557953705
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.016980000441040533,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2669261321607203,
+       "front": 0.16220902828559536,
+       "right": 0.1979607923497912,
+       "back": 0.22149939840798957
+      },
+      "final_book_position": [
+       -0.20169593377715841,
+       -0.052001469222643884,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2777736517563092,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22849315307779727,
+       "front": 0.10517891640288764,
+       "right": 0.003297118856697452,
+       "back": 0.11497759530236544
+      },
+      "final_book_position": [
+       -0.43240179031915915,
+       0.17644415630279564,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.24477384390553514,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21640642891108497,
+       "front": 0.09328462909918347,
+       "right": 0.025915463042143497,
+       "back": 0.10650983951252978
+      },
+      "final_book_position": [
+       -0.3837175918292168,
+       -0.045733343953733664,
+       1.0366234959206306
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2283933415404198,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24046410118317696,
+       "front": 0.11090533804945445,
+       "right": 0.0055104764719325116,
+       "back": 0.12403352738495062
+      },
+      "final_book_position": [
+       -0.4217914502465418,
+       -0.00818114511742262,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2408226221403228,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24290510790449088,
+       "front": 0.12596879851451637,
+       "right": 0.002621000890615947,
+       "back": 0.12497553016244088
+      },
+      "final_book_position": [
+       -0.4225957545237257,
+       -0.015737406558500623,
+       0.8986399203541994
+      ]
+     }
+    ],
+    "front": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.18112932278518767,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.161171983839461,
+       "front": 0.05375185096287198,
+       "right": 0.1370545534647242,
+       "back": 0.1152949180696951
+      },
+      "final_book_position": [
+       -0.2792499434097703,
+       -0.13091294687894536,
+       0.8999026791514126
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19715434970567203,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18427821420293836,
+       "front": 0.057302322843125655,
+       "right": 0.11226405859751962,
+       "back": 0.10963120877072942
+      },
+      "final_book_position": [
+       -0.32702132953922197,
+       -0.09340536939237327,
+       1.0484655713726554
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19063920949183477,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.13191530132811036,
+       "front": 0.04129773548621338,
+       "right": 0.1264219067987191,
+       "back": 0.10058600983797807
+      },
+      "final_book_position": [
+       -0.30112016765516897,
+       -0.17461017153210065,
+       0.9281699219430951
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.2036048503393102,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19955397676684825,
+       "front": 0.07352006287553005,
+       "right": 0.1017816720529355,
+       "back": 0.1253363754535944
+      },
+      "final_book_position": [
+       -0.30961156286300867,
+       -0.06550785300963916,
+       0.8829599203541993
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.19392702344571777,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24818816850058678,
+       "front": 0.11859438071084304,
+       "right": 0.07932224581192379,
+       "back": 0.15409305669477452
+      },
+      "final_book_position": [
+       -0.323104982193862,
+       -0.026182540105612773,
+       1.0529614195971175
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20056552373531844,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22649114007999543,
+       "front": 0.09742631661250499,
+       "right": 0.0899372264201267,
+       "back": 0.13984525847747153
+      },
+      "final_book_position": [
+       -0.32041463624244193,
+       -0.05054395028176413,
+       1.058764845924022
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20194522377626667,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24593620506174207,
+       "front": 0.11634746519826529,
+       "right": 0.07702073921328949,
+       "back": 0.15244711666083016
+      },
+      "final_book_position": [
+       -0.3240616730200047,
+       -0.028377391253154857,
+       1.0547282443594619
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.2002301585431583,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22209275311394336,
+       "front": 0.09498337464254138,
+       "right": 0.09156206386049567,
+       "back": 0.14192994126488026
+      },
+      "final_book_position": [
+       -0.3069675134018256,
+       -0.06097286575415191,
+       0.8829599203541995
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20419921059883828,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19411827912409624,
+       "front": 0.06789667122096131,
+       "right": 0.10001535576789387,
+       "back": 0.12005485554292077
+      },
+      "final_book_position": [
+       -0.304986085556192,
+       -0.035929637554268284,
+       0.8829599203541993
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.21372016972677443,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2096442377149035,
+       "front": 0.08005018807971431,
+       "right": 0.0825614401798773,
+       "back": 0.11885549459425053
+      },
+      "final_book_position": [
+       -0.3385380404032156,
+       -0.06198493338790389,
+       1.056812169739412
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01698000044104042,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.30734496989425486,
+       "front": 0.20004814087553763,
+       "right": 0.21957605804920613,
+       "back": 0.2578804347275558
+      },
+      "final_book_position": [
+       -0.17785037941113363,
+       -0.034260437823661546,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.1885393697780191,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18922685403662254,
+       "front": 0.0641602328348314,
+       "right": 0.09061306573457575,
+       "back": 0.11816820391354872
+      },
+      "final_book_position": [
+       -0.3181733264481319,
+       -0.09233917614505326,
+       0.8993250274571333
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.19036310077981566,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21056430731551107,
+       "front": 0.08637274121888651,
+       "right": 0.09707380574857172,
+       "back": 0.1372855544497318
+      },
+      "final_book_position": [
+       -0.2879882386610793,
+       -0.056850233011833964,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.0029967706127042026,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.28846492763073556,
+       "front": 0.1835719740328659,
+       "right": 0.21277880702552832,
+       "back": 0.24240713915728232
+      },
+      "final_book_position": [
+       -0.19450583308441102,
+       -0.05341998418273986,
+       0.8829599203541995
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20846603290222654,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20607941537220859,
+       "front": 0.07840885294663634,
+       "right": 0.08207442859069862,
+       "back": 0.12692469624830077
+      },
+      "final_book_position": [
+       -0.3191173895122204,
+       -0.07325075406437279,
+       0.9217650615806267
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017368579117419847,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19751793407542415,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.19980841575009817,
+       -0.04915052322747273,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.18583656805619397,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2366859012643603,
+       "front": 0.1070918602171503,
+       "right": 0.07848860570424634,
+       "back": 0.1433002100803589
+      },
+      "final_book_position": [
+       -0.33008668251511253,
+       -0.03628686139893139,
+       1.0622852455849456
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22784010766980023,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.210193737249271,
+       "front": 0.08245863646438621,
+       "right": 0.04713785202142831,
+       "back": 0.1095923651671289
+      },
+      "final_book_position": [
+       -0.35964049862921627,
+       -0.055184601990098996,
+       1.0457286835597037
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.1895744631351739,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22010778121780103,
+       "front": 0.09147217000285328,
+       "right": 0.08584283147870037,
+       "back": 0.13613319309953245
+      },
+      "final_book_position": [
+       -0.3191168246524086,
+       -0.05638870647891804,
+       0.8990286181807399
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2113795355997471,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24026377260157733,
+       "front": 0.11173327838226717,
+       "right": 0.04802952987839215,
+       "back": 0.13746418627493684
+      },
+      "final_book_position": [
+       -0.35811376152129815,
+       -0.023409583562352187,
+       1.0491054512006457
+      ]
+     }
+    ],
+    "left": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.2181438859436745,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.06911923659960013,
+       "front": 0.03259746074771598,
+       "right": 0.16447272246630806,
+       "back": 0.0531148284471447
+      },
+      "final_book_position": [
+       -0.2706264235020683,
+       -0.30381112900267193,
+       0.888817590121366
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.21567792487902349,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.06995544885624619,
+       "front": 0.03478198942448078,
+       "right": 0.16714368207661284,
+       "back": 0.06611856658979699
+      },
+      "final_book_position": [
+       -0.2343921530954447,
+       -0.34275556363972776,
+       0.9301459774675821
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.17956059985895867,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.05475339282680787,
+       "front": 0.02300229564273178,
+       "right": 0.15421749691472328,
+       "back": 0.039020606705868544
+      },
+      "final_book_position": [
+       -0.30281764495568086,
+       -0.18565754310073132,
+       0.9524699219430952
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21264696977694442,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.01602923681909731,
+       "front": 0.08599575989920254,
+       "right": 0.21546501651265407,
+       "back": 0.09196880918789964
+      },
+      "final_book_position": [
+       -0.42325125070885444,
+       -0.299017111276949,
+       0.9122863190431125
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22697957436220206,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.03425368551649241,
+       "front": 0.029394976037645664,
+       "right": 0.16145891863220044,
+       "back": 0.04975025905264624
+      },
+      "final_book_position": [
+       -0.388966769742168,
+       -0.22015200903897858,
+       1.012900400795253
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22890933311705008,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.023318896353753782,
+       "front": 0.07445439607856631,
+       "right": 0.20353264239559332,
+       "back": 0.07750074156158258
+      },
+      "final_book_position": [
+       -0.4130338794728319,
+       -0.23405070718791218,
+       0.9895677494519998
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": "back",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23495980184647935,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11942731351634617,
+       "front": 0.013193673709640924,
+       "right": 0.10429600598456099,
+       "back": 0.003453885235397822
+      },
+      "final_book_position": [
+       -0.2189399777551234,
+       -0.10097002473014485,
+       0.8989999207952397
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21265688940350813,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.03642215986866078,
+       "front": 0.059151060112770125,
+       "right": 0.18899216226031854,
+       "back": 0.07874430009668004
+      },
+      "final_book_position": [
+       -0.3804099152779528,
+       -0.21948958265874693,
+       0.9716543795887286
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21321555941575665,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.03554478294744249,
+       "front": 0.07218624821932353,
+       "right": 0.19883677463977073,
+       "back": 0.07652962943550673
+      },
+      "final_book_position": [
+       -0.368155049347096,
+       -0.22318000043201064,
+       0.9553773256009485
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.22564143711314133,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.004344471980986289,
+       "front": 0.005582491728300634,
+       "right": 0.13604288949419732,
+       "back": 0.04260629255685244
+      },
+      "final_book_position": [
+       -0.3987903716194381,
+       -0.2541658231610871,
+       1.0373799203541987
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.004943467336783969,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31048274734256204,
+       "front": 0.20411060412901508,
+       "right": 0.2243690690541418,
+       "back": 0.26216091720319334
+      },
+      "final_book_position": [
+       -0.18225179429610772,
+       -0.04162588268579388,
+       0.8829599203541993
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.19482990434778147,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.08591862431267405,
+       "front": 0.002407829478940258,
+       "right": 0.132395005136167,
+       "back": 0.025567520930757055
+      },
+      "final_book_position": [
+       -0.23495087721387983,
+       -0.1909975549787904,
+       0.9281699219430952
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.21937779179473393,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.06565543088574488,
+       "front": 0.018664423149018856,
+       "right": 0.15094052717608206,
+       "back": 0.03274469743923756
+      },
+      "final_book_position": [
+       -0.24911174652178095,
+       -0.3689902193578884,
+       0.8907494321887861
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.22121735302399892,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.08241634059710833,
+       "front": 0.010832448130582829,
+       "right": 0.10445453337778436,
+       "back": 0.04154161219384618
+      },
+      "final_book_position": [
+       -0.364857451252372,
+       -0.10928878875250106,
+       0.975821637302224
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": "back",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2605821920480933,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.09572523586582676,
+       "front": 0.006417395270524833,
+       "right": 0.09383973853190074,
+       "back": 0.002813719942450502
+      },
+      "final_book_position": [
+       -0.3395981833063284,
+       -0.18720192029941243,
+       1.0164852610433202
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": "back",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2408755752961098,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.09173428331973384,
+       "front": 0.019227996637683535,
+       "right": 0.15048145756287226,
+       "back": 0.026134703046236055
+      },
+      "final_book_position": [
+       -0.3914850454157122,
+       -0.164108397535402,
+       0.9882845499577693
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21626668958092354,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.09263017730408339,
+       "front": 0.009374045971731103,
+       "right": 0.11689390665312205,
+       "back": 0.03110619525630132
+      },
+      "final_book_position": [
+       -0.3796446180757562,
+       -0.12686195556263008,
+       0.9596141552538158
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.23093919428334608,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.08340032030856881,
+       "front": 0.004937788470350904,
+       "right": 0.12236711381393128,
+       "back": 0.035359473477416234
+      },
+      "final_book_position": [
+       -0.334595316645449,
+       -0.12510551001288325,
+       0.9803368363484362
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22267585883926144,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.07905781580933012,
+       "front": 0.005385823635201956,
+       "right": 0.12632492223787156,
+       "back": 0.038914289618232165
+      },
+      "final_book_position": [
+       -0.37649874389745785,
+       -0.13590306867141966,
+       0.9524503918833507
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": "back",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2276676551390674,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11761663499029429,
+       "front": 0.0068188178717523045,
+       "right": 0.11015963182067802,
+       "back": 0.002291738990724473
+      },
+      "final_book_position": [
+       -0.33840386704247266,
+       -0.16212437650730852,
+       0.9701101253887084
+      ]
+     }
+    ],
+    "right": [
+     {
+      "init_index": 20,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21093989132409574,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24411406803578267,
+       "front": 0.13206237419333047,
+       "right": 0.0034504441074422773,
+       "back": 0.12579096207688736
+      },
+      "final_book_position": [
+       -0.4237831243079362,
+       -0.003659535702137117,
+       0.8986655303235768
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22842646838605885,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24008926239812162,
+       "front": 0.12167967911098622,
+       "right": 0.004239636846428001,
+       "back": 0.12202624139768257
+      },
+      "final_book_position": [
+       -0.4243730627939359,
+       -0.022128074884698177,
+       1.0120335657906667
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.19823300871393656,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2460592899006443,
+       "front": 0.12887462644145872,
+       "right": 0.005977379431473543,
+       "back": 0.12951264598911882
+      },
+      "final_book_position": [
+       -0.43598260683640455,
+       -0.012783306905923062,
+       0.9043624421363351
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22224795207788417,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24260093171320493,
+       "front": 0.11610159241977291,
+       "right": 0.0024032329163821637,
+       "back": 0.12542522263562608
+      },
+      "final_book_position": [
+       -0.4141239612464873,
+       -0.012395502080438906,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.2252427766093894,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2835818941112113,
+       "front": 0.15755030639200535,
+       "right": 0.03474872569411288,
+       "back": 0.16747176216383722
+      },
+      "final_book_position": [
+       -0.39350817076276545,
+       0.051453730480105084,
+       1.0297739140291586
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22450331057402872,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24307766453848612,
+       "front": 0.11533138905311426,
+       "right": 0.0012600785883295166,
+       "back": 0.12646235324691182
+      },
+      "final_book_position": [
+       -0.3984498526437137,
+       -0.01088496910311745,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.26474836081453135,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.30148441811430365,
+       "front": 0.17737481657039395,
+       "right": 0.053549398349712556,
+       "back": 0.18657893642477902
+      },
+      "final_book_position": [
+       -0.4042565360662732,
+       0.05212632950053928,
+       1.0355359419652757
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.2131779110532932,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25003560069795067,
+       "front": 0.12246828447239291,
+       "right": 0.04529732872257429,
+       "back": 0.14446511141505136
+      },
+      "final_book_position": [
+       -0.34303215446388746,
+       -0.0031740358677859798,
+       1.0413062545682448
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23333008130344635,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2413297855554256,
+       "front": 0.11505552661349043,
+       "right": 0.0031729997922657657,
+       "back": 0.12557841513786905
+      },
+      "final_book_position": [
+       -0.44910521987288676,
+       -0.0024637244023251277,
+       0.9095297412001868
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22852173082311433,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24052186791904676,
+       "front": 0.11479315611201078,
+       "right": 0.028253224783083453,
+       "back": 0.13191657780822372
+      },
+      "final_book_position": [
+       -0.3727340476476736,
+       -0.022832104704060167,
+       1.011881728564069
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24762497349529744,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2429500086851266,
+       "front": 0.12133608481939118,
+       "right": 0.005891584982325989,
+       "back": 0.12700033997940013
+      },
+      "final_book_position": [
+       -0.40579404424861903,
+       -0.01845320641755115,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21858146714697457,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2641881001075454,
+       "front": 0.13513599890835373,
+       "right": 0.0238763206294254,
+       "back": 0.15643375475267104
+      },
+      "final_book_position": [
+       -0.4057386127403578,
+       0.0496128359150408,
+       1.0282893517213392
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23415741557704695,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2429399132449364,
+       "front": 0.12651187855434207,
+       "right": 0.0026732955030302707,
+       "back": 0.1254468556436286
+      },
+      "final_book_position": [
+       -0.42617563777619666,
+       -0.01871253262477915,
+       0.8986551622336229
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24491086528163453,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2428417831515466,
+       "front": 0.11738423299537554,
+       "right": 0.0036426599421183967,
+       "back": 0.12541201684517858
+      },
+      "final_book_position": [
+       -0.4476111788382535,
+       -0.009558333101156972,
+       0.9119253707894688
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.24797337914336692,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26849930017630125,
+       "front": 0.14374707857709165,
+       "right": 0.028316893035886297,
+       "back": 0.15749931122328129
+      },
+      "final_book_position": [
+       -0.378393176691073,
+       0.03698977327235193,
+       1.021172407870833
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017712295923347887,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.19663398498816556,
+       -0.052186070189078976,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21494574555487778,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25699757398812345,
+       "front": 0.13024799509039786,
+       "right": 0.012817230879123991,
+       "back": 0.1395970921625183
+      },
+      "final_book_position": [
+       -0.41683262293845197,
+       -0.004842122424000101,
+       0.8989513064325795
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24127669107192284,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25375862670262356,
+       "front": 0.12990732561403215,
+       "right": 0.005556991930232664,
+       "back": 0.1374922583213354
+      },
+      "final_book_position": [
+       -0.3997741298010788,
+       -0.0050583998895724425,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.26426552192579056,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26354408446432614,
+       "front": 0.13419050471478816,
+       "right": 0.0389224007514008,
+       "back": 0.14463756239710454
+      },
+      "final_book_position": [
+       -0.48025371008914874,
+       0.029759570541848687,
+       1.070191102639573
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.2409967550504014,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.28126627362772155,
+       "front": 0.15217969871660295,
+       "right": 0.0401640841541479,
+       "back": 0.16239293671688595
+      },
+      "final_book_position": [
+       -0.4038725686082098,
+       0.06045004586415362,
+       1.0685609261107254
+      ]
+     }
+    ]
+   }
+  },
+  "uniform4": {
+   "summary": {
+    "back": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "near_other_right": 11,
+      "lifted_never_near_any": 1,
+      "reached_some_goal": 6,
+      "never_lifted": 2
+     },
+     "failures_lifted": 18,
+     "failures_held_at_end": 0
+    },
+    "front": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "near_requested_not_satisfied": 14,
+      "lifted_never_near_any": 3,
+      "never_lifted": 2,
+      "near_other_right": 1
+     },
+     "failures_lifted": 18,
+     "failures_held_at_end": 0
+    },
+    "left": {
+     "episodes": 20,
+     "never_requested_success": 3,
+     "failure_categories": {
+      "near_requested_not_satisfied": 2,
+      "never_lifted": 1
+     },
+     "failures_lifted": 2,
+     "failures_held_at_end": 0
+    },
+    "right": {
+     "episodes": 20,
+     "never_requested_success": 8,
+     "failure_categories": {
+      "near_requested_not_satisfied": 6,
+      "never_lifted": 2
+     },
+     "failures_lifted": 6,
+     "failures_held_at_end": 0
+    }
+   },
+   "episodes": {
+    "back": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21339568868423353,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20182792883540618,
+       "front": 0.07903777673742722,
+       "right": 0.04817538435970741,
+       "back": 0.09403628315475351
+      },
+      "final_book_position": [
+       -0.3793254608743979,
+       -0.05820934134356315,
+       1.0450747527285558
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2256660438632616,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2009780151815442,
+       "front": 0.07496352247208814,
+       "right": 0.029812628810998335,
+       "back": 0.0916070729839214
+      },
+      "final_book_position": [
+       -0.4023561074229363,
+       -0.05061600935388652,
+       1.045543997371128
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.19063537825586896,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21445388135024135,
+       "front": 0.08629328201154259,
+       "right": 0.06051753533315814,
+       "back": 0.11439500012346226
+      },
+      "final_book_position": [
+       -0.3576904405252313,
+       -0.051260713863554574,
+       1.063663352523492
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21483341005700152,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2043065492840839,
+       "front": 0.07571053952356689,
+       "right": 0.05478075113125793,
+       "back": 0.10086226682402152
+      },
+      "final_book_position": [
+       -0.21702149726737308,
+       -0.05989442476985873,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22851026881239722,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20467115822896242,
+       "front": 0.08631905197265922,
+       "right": 0.035174115630196255,
+       "back": 0.09279559714630935
+      },
+      "final_book_position": [
+       -0.39251317555439996,
+       -0.05706896505323908,
+       1.0429094095582017
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22294206481532852,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19838292889415515,
+       "front": 0.0782958551654875,
+       "right": 0.03209979066923791,
+       "back": 0.08626499673156011
+      },
+      "final_book_position": [
+       -0.38718562569953735,
+       -0.06372072789596768,
+       1.0692199613902176
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23929255585205467,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24536646359578984,
+       "front": 0.1386404871706359,
+       "right": 0.0062959207078685485,
+       "back": 0.126259174815373
+      },
+      "final_book_position": [
+       -0.44765525514415394,
+       -0.010875778174744317,
+       0.8988888897313869
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20976321745677118,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22987074437366667,
+       "front": 0.102328702922959,
+       "right": 0.003906948159787593,
+       "back": 0.1216231879381205
+      },
+      "final_book_position": [
+       -0.4266706404397582,
+       -0.011272979069906678,
+       0.8989959480713959
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2297899486142817,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1985954802726978,
+       "front": 0.07206653078296384,
+       "right": 0.03730404923078656,
+       "back": 0.08751990668103268
+      },
+      "final_book_position": [
+       -0.21914855866657448,
+       -0.08908453975657912,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23883554235620263,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23069024766798138,
+       "front": 0.1018225045594914,
+       "right": 0.007544145280052318,
+       "back": 0.12259178933330958
+      },
+      "final_book_position": [
+       -0.42328701469379637,
+       -0.006992915395750973,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01698000044104042,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31052259103847824,
+       "front": 0.20415006847936357,
+       "right": 0.22437020328598864,
+       "back": 0.2621995883095526
+      },
+      "final_book_position": [
+       -0.17096664877450116,
+       -0.026044566266887878,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2254129021906146,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2365514278163062,
+       "front": 0.11326613210915017,
+       "right": 0.006641592495669171,
+       "back": 0.12280743909517847
+      },
+      "final_book_position": [
+       -0.4039074630949769,
+       -0.0023521637862016355,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21644254778101568,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2242064770468924,
+       "front": 0.09870671448263282,
+       "right": 0.03161826127228173,
+       "back": 0.11785080000275036
+      },
+      "final_book_position": [
+       -0.36411029828639824,
+       -0.03089076995146885,
+       1.052014772311939
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22626720407184409,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1948877103660079,
+       "front": 0.0823585104045695,
+       "right": 0.03468456684863802,
+       "back": 0.08032654886666046
+      },
+      "final_book_position": [
+       -0.4037939338209561,
+       -0.06658197318245952,
+       1.0692199725322482
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22144927236935996,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23664203306441936,
+       "front": 0.11307831461177663,
+       "right": 0.002532557350127808,
+       "back": 0.12411933336843821
+      },
+      "final_book_position": [
+       -0.4369633691843746,
+       -0.009010476568756321,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017202246616350947,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.2020324915697905,
+       -0.055991171259618326,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2113854123156731,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21889596764973587,
+       "front": 0.1051756313360703,
+       "right": 0.019494187577328074,
+       "back": 0.10276581875331102
+      },
+      "final_book_position": [
+       -0.4216440392305309,
+       -0.022525058482549154,
+       1.085808538456056
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22462286035305157,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2043151843703144,
+       "front": 0.08390880655030855,
+       "right": 0.031000159863832144,
+       "back": 0.09416655591376323
+      },
+      "final_book_position": [
+       -0.3869805184690522,
+       -0.05777729004762453,
+       1.0433615237547154
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2564283303610131,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22690615738743644,
+       "front": 0.1059174268507007,
+       "right": 0.010230855676073677,
+       "back": 0.11495189608282762
+      },
+      "final_book_position": [
+       -0.4266508058000484,
+       0.1024719766119727,
+       0.9524699219430951
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22520252220791426,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2433559996569558,
+       "front": 0.1250052610229153,
+       "right": 0.0015088718261845268,
+       "back": 0.12523417930079594
+      },
+      "final_book_position": [
+       -0.4217777264601411,
+       -0.016097209793295673,
+       0.8986399203541995
+      ]
+     }
+    ],
+    "front": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20612395343426082,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.16365780541766003,
+       "front": 0.03413205708163111,
+       "right": 0.08904842931802374,
+       "back": 0.07538973395400209
+      },
+      "final_book_position": [
+       -0.22738129348443809,
+       -0.10595644100344234,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20462797056014015,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.15828589435879695,
+       "front": 0.028691955602592994,
+       "right": 0.08464738521700672,
+       "back": 0.07339227738845702
+      },
+      "final_book_position": [
+       -0.22063251905744907,
+       -0.08997443534589891,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19202076805909507,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.14446134204313052,
+       "front": 0.0292871885423156,
+       "right": 0.0769982208074949,
+       "back": 0.08396556747008051
+      },
+      "final_book_position": [
+       -0.28566501973881325,
+       -0.17422937244502304,
+       0.9277321656164491
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21814340574047852,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1101404654723926,
+       "front": 0.0020227188165574637,
+       "right": 0.09348842317022744,
+       "back": 0.05593822771294507
+      },
+      "final_book_position": [
+       -0.22796024725317787,
+       -0.09049678345870156,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20983374351210982,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1561855716826896,
+       "front": 0.03244656217127885,
+       "right": 0.08554555915805818,
+       "back": 0.07884121498276812
+      },
+      "final_book_position": [
+       -0.20889889091864322,
+       -0.16635266291137799,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20661338010204633,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1464679226404192,
+       "front": 0.02010281139445169,
+       "right": 0.10086812847510587,
+       "back": 0.07045761211963113
+      },
+      "final_book_position": [
+       -0.21091217664994522,
+       -0.11637411814376358,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.22057991014144473,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20308169752606045,
+       "front": 0.07545398251104979,
+       "right": 0.06666342712240061,
+       "back": 0.10315097586202936
+      },
+      "final_book_position": [
+       -0.361060446508372,
+       -0.06277324829854605,
+       1.05256192206542
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19807246489075991,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1385175758384581,
+       "front": 0.042767269111310034,
+       "right": 0.07870641502421594,
+       "back": 0.10424076801638227
+      },
+      "final_book_position": [
+       -0.30871129069640224,
+       -0.16003069307174506,
+       0.977306199433657
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20630365320480248,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1500675591545819,
+       "front": 0.02458861306182938,
+       "right": 0.09433753813870611,
+       "back": 0.06885338075475822
+      },
+      "final_book_position": [
+       -0.30103884647055074,
+       -0.132227353191953,
+       0.9366926028236922
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.22468052340147426,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19597863395951326,
+       "front": 0.06748827730661752,
+       "right": 0.07024459535340549,
+       "back": 0.09953661643597868
+      },
+      "final_book_position": [
+       -0.3583891190312882,
+       -0.06628646711413176,
+       1.0604584392177143
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.016028175346250895,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31052259103847824,
+       "front": 0.20415006847936357,
+       "right": 0.22439069455180063,
+       "back": 0.2621995883095526
+      },
+      "final_book_position": [
+       -0.179091947763551,
+       -0.03353824231044753,
+       0.8829599203541995
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.2030261799233395,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1706510979132192,
+       "front": 0.04270555598093571,
+       "right": 0.06880382073503198,
+       "back": 0.07244176788359133
+      },
+      "final_book_position": [
+       -0.3657106270124381,
+       -0.08242581366134819,
+       0.9971593999026597
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19829219523960595,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.14873980477348273,
+       "front": 0.02003579849270994,
+       "right": 0.09868725377670802,
+       "back": 0.07185169103438147
+      },
+      "final_book_position": [
+       -0.21436190170955788,
+       -0.08576843298299903,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21215855739043255,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.17905161306231976,
+       "front": 0.054133213897896174,
+       "right": 0.07362115644444144,
+       "back": 0.07783963747990101
+      },
+      "final_book_position": [
+       -0.3785036469658149,
+       -0.08127185255123226,
+       1.055427566318312
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.198444864687932,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2063764335234199,
+       "front": 0.07754806797005158,
+       "right": 0.07057027775499768,
+       "back": 0.1096413996048547
+      },
+      "final_book_position": [
+       -0.3516752531399164,
+       -0.05888568824647634,
+       1.052812992477608
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01709855306474639,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.20034838266683475,
+       -0.05496436957663031,
+       0.8999399207952398
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20534210681426535,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18409449404169576,
+       "front": 0.056146963350025635,
+       "right": 0.07584101027091754,
+       "back": 0.08722261910373459
+      },
+      "final_book_position": [
+       -0.367182875219702,
+       -0.07834509695027296,
+       1.054805522424929
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21996022730491105,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.1764751295842013,
+       "front": 0.05086419643922925,
+       "right": 0.0736326106577965,
+       "back": 0.0764428802795327
+      },
+      "final_book_position": [
+       -0.3722632310747073,
+       -0.0853638099167268,
+       1.0675060580679008
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21601595904636772,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.16989710112314008,
+       "front": 0.0420398871691485,
+       "right": 0.07686551404917555,
+       "back": 0.07003258501238233
+      },
+      "final_book_position": [
+       -0.37709303437754055,
+       -0.08977598556762552,
+       1.0534550356629677
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22271514164308825,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21515259711441043,
+       "front": 0.08753197206929864,
+       "right": 0.05678276139140527,
+       "back": 0.11369068999114312
+      },
+      "final_book_position": [
+       -0.3596609187928007,
+       -0.05073456166803797,
+       1.0390120406396757
+      ]
+     }
+    ],
+    "left": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21441424764682904,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.05550367873449278,
+       "front": 0.037338815737633646,
+       "right": 0.15849673131440722,
+       "back": 0.043398438265310105
+      },
+      "final_book_position": [
+       -0.3372116990964371,
+       -0.29646899575324887,
+       1.0188697972977496
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.19183628309763034,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.0013955860759522923,
+       "front": 0.1118258775511222,
+       "right": 0.2252221624294156,
+       "back": 0.11824948040207874
+      },
+      "final_book_position": [
+       -0.3713935775065485,
+       -0.29377477546457553,
+       0.9006287854031706
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.20882532831433442,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.05704169323463554,
+       "front": 0.03614334662692539,
+       "right": 0.16659470300371387,
+       "back": 0.05379929747223414
+      },
+      "final_book_position": [
+       -0.3170162314904694,
+       -0.2359168375525238,
+       1.011928882230584
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20942094779964937,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.004091297338773872,
+       "front": 0.1020580423784817,
+       "right": 0.22146253302425453,
+       "back": 0.11256180799858718
+      },
+      "final_book_position": [
+       -0.4162439083888555,
+       -0.2964351876709179,
+       0.911676937744541
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.1726065735763056,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.017044824859494687,
+       "front": 0.07367607386040649,
+       "right": 0.17998998504304245,
+       "back": 0.08319823324967202
+      },
+      "final_book_position": [
+       -0.3615920464448082,
+       -0.22051889625707974,
+       0.994525854541791
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20821588307187244,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.009948740645902005,
+       "front": 0.10777107529534988,
+       "right": 0.2195099356378465,
+       "back": 0.12515972275915743
+      },
+      "final_book_position": [
+       -0.38764546031194785,
+       -0.28145163717835714,
+       0.9143954980692985
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22922380617298432,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.007375896922110873,
+       "front": 0.09303358503238399,
+       "right": 0.2080935722057198,
+       "back": 0.10864476294038398
+      },
+      "final_book_position": [
+       -0.21832115839151395,
+       -0.20957118156928206,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21412982928893198,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.011289770216960824,
+       "front": 0.09098618685115338,
+       "right": 0.19967915316719448,
+       "back": 0.10632087091681147
+      },
+      "final_book_position": [
+       -0.4381854357993571,
+       -0.28153117933701555,
+       0.915193600831341
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.19007754909314512,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.0018495160043706664,
+       "front": 0.09482405808423085,
+       "right": 0.21718365357156685,
+       "back": 0.1185563802217349
+      },
+      "final_book_position": [
+       -0.41874505036613324,
+       -0.2926874873257963,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2198784582593013,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.033240808184271546,
+       "front": 0.08355998063872361,
+       "right": 0.2103853538705311,
+       "back": 0.08186045870480552
+      },
+      "final_book_position": [
+       -0.20121636078659902,
+       -0.19459851306601392,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.004234350849833812,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31050349928473536,
+       "front": 0.2041239639903021,
+       "right": 0.22437266027320446,
+       "back": 0.26217178868448765
+      },
+      "final_book_position": [
+       -0.18119682285112437,
+       -0.0374972702161042,
+       0.8829599203541993
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21236245654124275,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.0030211509321965238,
+       "front": 0.0782299760244495,
+       "right": 0.199638413046061,
+       "back": 0.10031197780206685
+      },
+      "final_book_position": [
+       -0.28758531520659986,
+       -0.24674047091317985,
+       0.9524699219430952
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2208622606169497,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.027825065842331208,
+       "front": 0.06482239460241108,
+       "right": 0.1969710856331072,
+       "back": 0.0710752733950706
+      },
+      "final_book_position": [
+       -0.20730243738899157,
+       -0.20609756500530504,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2057583565039518,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.034423066829073146,
+       "front": 0.07914545714901113,
+       "right": 0.2069788464992208,
+       "back": 0.08076131805758893
+      },
+      "final_book_position": [
+       -0.22105141462622188,
+       -0.38976282357640474,
+       0.9524699219430952
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21618881482062946,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.0071898130132700775,
+       "front": 0.08061150713015891,
+       "right": 0.2098918582601119,
+       "back": 0.10865897938660168
+      },
+      "final_book_position": [
+       -0.31975204186361483,
+       -0.2676101014623864,
+       0.9684015910714886
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2011207175940759,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.005227227211447027,
+       "front": 0.08406242234073556,
+       "right": 0.19899495923989508,
+       "back": 0.0839017075318368
+      },
+      "final_book_position": [
+       -0.3959098864270158,
+       -0.22779217265489712,
+       1.0177814766196938
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.1932009930301124,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.023397302482241807,
+       "front": 0.07824689575956731,
+       "right": 0.18064847581865448,
+       "back": 0.08503517412360698
+      },
+      "final_book_position": [
+       -0.20365735478328656,
+       -0.17036275923925237,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21462460828721786,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.024751736717025446,
+       "front": 0.07255332283790147,
+       "right": 0.2037123689622487,
+       "back": 0.07447561936550713
+      },
+      "final_book_position": [
+       -0.3886327571816803,
+       -0.23712392222523854,
+       1.0039900060388447
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20099333995452517,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.010740008994622147,
+       "front": 0.08056037094003392,
+       "right": 0.2069629407142,
+       "back": 0.09720349955977925
+      },
+      "final_book_position": [
+       -0.2381940213960067,
+       -0.1714665184532614,
+       0.8989999207952398
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": true,
+      "first_goal": "left",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21739050834033968,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.019838563067381056,
+       "front": 0.0778831767575575,
+       "right": 0.19388145408266533,
+       "back": 0.08781302151284599
+      },
+      "final_book_position": [
+       -0.2405429090021731,
+       -0.1702160024505154,
+       0.8989999207952398
+      ]
+     }
+    ],
+    "right": [
+     {
+      "init_index": 20,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2197972707389283,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24343522359658426,
+       "front": 0.12878848180423885,
+       "right": 0.001842410793077243,
+       "back": 0.12659502534011965
+      },
+      "final_book_position": [
+       -0.4288773417432094,
+       -0.015623016106175473,
+       0.8995639610986217
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.22990080861477136,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23750492340169513,
+       "front": 0.112990036501409,
+       "right": 0.011285653537750047,
+       "back": 0.12194858911647241
+      },
+      "final_book_position": [
+       -0.4045664735555362,
+       -0.023825884235953814,
+       1.0214981861765762
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20022096092901265,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24323743789947425,
+       "front": 0.12738338584705408,
+       "right": 0.006927235720875401,
+       "back": 0.12599775331807542
+      },
+      "final_book_position": [
+       -0.4150803879262543,
+       -0.01649592304388684,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23304746950177813,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23764804728674468,
+       "front": 0.11229613068526428,
+       "right": 0.003008992533352093,
+       "back": 0.12832519609216067
+      },
+      "final_book_position": [
+       -0.40196157594863885,
+       -0.011254996106660944,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.2179994158143952,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2629475727925742,
+       "front": 0.14109846292298076,
+       "right": 0.014204033395087415,
+       "back": 0.147322371253535
+      },
+      "final_book_position": [
+       -0.4245935882669461,
+       0.017527097556116162,
+       1.0691831284498579
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21614882452990358,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2415566510582804,
+       "front": 0.1175622212317239,
+       "right": 0.0073176285107445305,
+       "back": 0.1250503376083744
+      },
+      "final_book_position": [
+       -0.44573731119923893,
+       -0.003485205825694315,
+       0.8988235852384969
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.2524207155691667,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.28539501959956304,
+       "front": 0.1636714545435526,
+       "right": 0.03650246479404145,
+       "back": 0.1689723231492767
+      },
+      "final_book_position": [
+       -0.4294510811468392,
+       0.05668562022644429,
+       1.0484232742883322
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21396502805018325,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2428854491832235,
+       "front": 0.1145560764442873,
+       "right": 0.0008750913013138107,
+       "back": 0.12627347190559163
+      },
+      "final_book_position": [
+       -0.43587327573473345,
+       -0.002988120535490557,
+       0.9040821799880185
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24580200898051852,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24064463547763998,
+       "front": 0.11912360456098321,
+       "right": 0.00223440003979462,
+       "back": 0.12412722755743319
+      },
+      "final_book_position": [
+       -0.446818648853792,
+       -0.0077712147833865946,
+       0.8987702326944214
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.25412986137839566,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24270817154010374,
+       "front": 0.11412432087361077,
+       "right": 0.007847782915373453,
+       "back": 0.12608488117512384
+      },
+      "final_book_position": [
+       -0.4143693984054244,
+       -0.0177063057222388,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.01698000044104042,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.30874808179158825,
+       "front": 0.20190100869904307,
+       "right": 0.22182409156524913,
+       "back": 0.2598428409351957
+      },
+      "final_book_position": [
+       -0.17563332075178786,
+       -0.03126182632325793,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.23794082082239343,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26826229441363486,
+       "front": 0.13886283987795237,
+       "right": 0.023462697799636056,
+       "back": 0.1562816775548402
+      },
+      "final_book_position": [
+       -0.42843216437737547,
+       0.058890144272504746,
+       1.0453354815737421
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22419277327222575,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24264985593200786,
+       "front": 0.12560022081949063,
+       "right": 0.0011765260291278906,
+       "back": 0.12565038581141186
+      },
+      "final_book_position": [
+       -0.4135785680096751,
+       -0.01904863531574384,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22244567690629435,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2429983360265482,
+       "front": 0.11446059737349377,
+       "right": 0.0036018143965649233,
+       "back": 0.12650859111076718
+      },
+      "final_book_position": [
+       -0.44352599647855867,
+       -0.014568233887368606,
+       0.8986640326520791
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.23570202165123155,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2679194127239911,
+       "front": 0.14586706779392217,
+       "right": 0.0189920867231817,
+       "back": 0.15185430483044907
+      },
+      "final_book_position": [
+       -0.4271390728895716,
+       0.02207046278985181,
+       1.069219904429008
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017059718160585935,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.2011705343561976,
+       -0.054849163250808734,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22302715580526278,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24318640078202441,
+       "front": 0.1253536782688243,
+       "right": 0.004818848443841771,
+       "back": 0.12575966344213077
+      },
+      "final_book_position": [
+       -0.41897636030467195,
+       -0.01782190173244765,
+       0.899233971184591
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23938324406490152,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24099526039320296,
+       "front": 0.1179869600543536,
+       "right": 0.0016013294838971048,
+       "back": 0.12465666714038393
+      },
+      "final_book_position": [
+       -0.40736648611718035,
+       -0.01578213098831028,
+       0.8995575877458679
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2316674834586847,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24453739413585543,
+       "front": 0.12916415375011456,
+       "right": 0.007457728950248615,
+       "back": 0.12608671648827754
+      },
+      "final_book_position": [
+       -0.4191272746535689,
+       -0.011719210967210429,
+       0.9021592990378865
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.243847433104443,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2810962461676917,
+       "front": 0.1515544278803173,
+       "right": 0.03864129641334972,
+       "back": 0.170439141251417
+      },
+      "final_book_position": [
+       -0.43094608612577434,
+       0.04412954961652267,
+       1.0387958726374822
+      ]
+     }
+    ]
+   }
+  },
+  "late4": {
+   "summary": {
+    "back": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "near_other_right": 11,
+      "reached_some_goal": 7,
+      "never_lifted": 2
+     },
+     "failures_lifted": 18,
+     "failures_held_at_end": 0
+    },
+    "front": {
+     "episodes": 20,
+     "never_requested_success": 19,
+     "failure_categories": {
+      "near_requested_not_satisfied": 1,
+      "lifted_never_near_any": 7,
+      "reached_some_goal": 2,
+      "near_other_right": 7,
+      "never_lifted": 2
+     },
+     "failures_lifted": 17,
+     "failures_held_at_end": 1
+    },
+    "left": {
+     "episodes": 20,
+     "never_requested_success": 20,
+     "failure_categories": {
+      "near_other_front": 2,
+      "near_other_right": 15,
+      "reached_some_goal": 2,
+      "never_lifted": 1
+     },
+     "failures_lifted": 19,
+     "failures_held_at_end": 0
+    },
+    "right": {
+     "episodes": 20,
+     "never_requested_success": 6,
+     "failure_categories": {
+      "near_requested_not_satisfied": 5,
+      "never_lifted": 1
+     },
+     "failures_lifted": 5,
+     "failures_held_at_end": 0
+    }
+   },
+   "episodes": {
+    "back": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.20218870835245462,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22843154908188568,
+       "front": 0.1000632076746837,
+       "right": 0.05245091164040193,
+       "back": 0.12765663422944085
+      },
+      "final_book_position": [
+       -0.35747174494384143,
+       -0.03494619992192872,
+       1.045002063832399
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.28583496145169596,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22590431049845433,
+       "front": 0.10180149194620434,
+       "right": 0.014611165379203747,
+       "back": 0.11212604285030535
+      },
+      "final_book_position": [
+       -0.1919146389344859,
+       0.06160412402888585,
+       0.9281699219430951
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.20448326549390683,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.236739811575854,
+       "front": 0.10829221827055359,
+       "right": 0.0571459530158999,
+       "back": 0.13550705381610084
+      },
+      "final_book_position": [
+       -0.3280948380713698,
+       -0.03271931906280958,
+       1.0565576279086208
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22415279315024605,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2029967336064749,
+       "front": 0.08303273751939622,
+       "right": 0.032145077783465814,
+       "back": 0.09260949070148296
+      },
+      "final_book_position": [
+       -0.38809034628956934,
+       -0.058996614173201976,
+       1.044627105019693
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2039310802658263,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23997324265285072,
+       "front": 0.1182653224911705,
+       "right": 0.001950164908833153,
+       "back": 0.12680159571305555
+      },
+      "final_book_position": [
+       -0.42412463272746076,
+       -0.01215401193429025,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.20856675012522363,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2383727911148716,
+       "front": 0.11039496586826283,
+       "right": 0.006289472655902169,
+       "back": 0.1252886617302921
+      },
+      "final_book_position": [
+       -0.42157373346069643,
+       -0.017764929613251917,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2593027705929247,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2714393529952072,
+       "front": 0.15105323810086477,
+       "right": 0.024020269306176224,
+       "back": 0.15686478597751105
+      },
+      "final_book_position": [
+       -0.3759798442008259,
+       0.06176245762516475,
+       1.0450545109554517
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21720780998544575,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2473448020454733,
+       "front": 0.11951566903062534,
+       "right": 0.049650960464297685,
+       "back": 0.14358932205200575
+      },
+      "final_book_position": [
+       -0.3549861342204193,
+       -0.008411583752845219,
+       1.0474665335770739
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.24250717850572967,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2098030072224314,
+       "front": 0.08655032338502283,
+       "right": 0.030791957840377155,
+       "back": 0.10191573134076612
+      },
+      "final_book_position": [
+       -0.37867509433930424,
+       -0.05299927877990378,
+       1.0432140798431602
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23084970104004376,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2374534151404046,
+       "front": 0.1079271637301805,
+       "right": 0.005116891408050164,
+       "back": 0.12534809825270307
+      },
+      "final_book_position": [
+       -0.4274180905447317,
+       -0.01311261415690888,
+       0.8997119453554482
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2155901581568226,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24266289851462702,
+       "front": 0.11598631865669069,
+       "right": 0.0012930428029208742,
+       "back": 0.12622060045672462
+      },
+      "final_book_position": [
+       -0.4209013928168401,
+       -0.018061998153410943,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24051451629626008,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23875538187600515,
+       "front": 0.11435621216890657,
+       "right": 0.0017070825946778247,
+       "back": 0.12511171798140783
+      },
+      "final_book_position": [
+       -0.3914907234774004,
+       -0.009931752101231513,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22322651424220985,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22775890715747305,
+       "front": 0.09816541576736859,
+       "right": 0.037617095136434214,
+       "back": 0.12889222606324696
+      },
+      "final_book_position": [
+       -0.33316653217635966,
+       -0.04469241162913461,
+       1.0641699826175048
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.04765396994505644,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.28846492763073556,
+       "front": 0.1835719740328659,
+       "right": 0.21277880702552832,
+       "back": 0.24240713915728232
+      },
+      "final_book_position": [
+       -0.15657785454677509,
+       -0.06497841824619019,
+       0.9302926509683405
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.24501113103002847,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23203679980148553,
+       "front": 0.1073123645129695,
+       "right": 0.021526187123413226,
+       "back": 0.11926051902091117
+      },
+      "final_book_position": [
+       -0.3916802949798203,
+       -0.029534903085723818,
+       1.045000618301687
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017782875846964252,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.266928424317303,
+       "front": 0.16220565326476116,
+       "right": 0.1968630438108054,
+       "back": 0.22149471104137552
+      },
+      "final_book_position": [
+       -0.20305363144973482,
+       -0.05265941857764652,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21224506682238276,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24810096821262148,
+       "front": 0.12302403201170212,
+       "right": 0.0009387749567879641,
+       "back": 0.13060569929181134
+      },
+      "final_book_position": [
+       -0.41757674279092555,
+       -0.01375774607419237,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2336400918493975,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2397547860166272,
+       "front": 0.11039971862567594,
+       "right": 0.001809477603835754,
+       "back": 0.13024628382965275
+      },
+      "final_book_position": [
+       -0.4225635039296154,
+       -0.013937433611559885,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22371080205523053,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25407703454999125,
+       "front": 0.12802342244668496,
+       "right": 0.020030470810707645,
+       "back": 0.14493414954667871
+      },
+      "final_book_position": [
+       -0.40590335490246854,
+       0.015076038988926265,
+       1.077772801780817
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.25157895505158956,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2628443239639781,
+       "front": 0.14176418304875787,
+       "right": 0.013919411867455695,
+       "back": 0.14656491715165645
+      },
+      "final_book_position": [
+       -0.40770375357320043,
+       0.052701804364163496,
+       1.0678648115890454
+      ]
+     }
+    ],
+    "front": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.19721158494385016,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18711350587953599,
+       "front": 0.05798849849340067,
+       "right": 0.09862425770940425,
+       "back": 0.10390935279345992
+      },
+      "final_book_position": [
+       -0.33858684243875936,
+       -0.0855485359866311,
+       1.0502614724686257
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20110639762930171,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.211840114967071,
+       "front": 0.08225399963038119,
+       "right": 0.08367903539338921,
+       "back": 0.12157152323227931
+      },
+      "final_book_position": [
+       -0.33623656162916105,
+       -0.06042803439292755,
+       1.0610402397561285
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": true,
+      "first_goal": "front",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.19116618481324243,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.13672594057676524,
+       "front": 0.007736361158389328,
+       "right": 0.1150854942635797,
+       "back": 0.05449671426587112
+      },
+      "final_book_position": [
+       -0.3734934803546397,
+       -0.1245794558597644,
+       0.9621366220162667
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.1982867222417679,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2126661257768017,
+       "front": 0.08544315378313935,
+       "right": 0.08383719865721323,
+       "back": 0.13092020242586944
+      },
+      "final_book_position": [
+       -0.3135683244902088,
+       -0.06853866512832586,
+       1.0524671244080699
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20933031108513256,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21058043667474072,
+       "front": 0.0814623934892473,
+       "right": 0.07115625763016217,
+       "back": 0.11461981976098388
+      },
+      "final_book_position": [
+       -0.34666001420397813,
+       -0.05342903414963425,
+       1.0530264423618105
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20509006504920213,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22972551608438213,
+       "front": 0.10027134609478479,
+       "right": 0.07178438424279791,
+       "back": 0.134106931256624
+      },
+      "final_book_position": [
+       -0.33800300498544017,
+       -0.04060627098935632,
+       1.0535239021522542
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22516854257684016,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24360046993927945,
+       "front": 0.12086174227310668,
+       "right": 0.0016308242832329643,
+       "back": 0.12499931107601985
+      },
+      "final_book_position": [
+       -0.43001743747544147,
+       -0.01936746439983854,
+       0.8994749292874099
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.2084683588595142,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21538853902636484,
+       "front": 0.0871113948474591,
+       "right": 0.07376681250613733,
+       "back": 0.12845736876506184
+      },
+      "final_book_position": [
+       -0.3183506551420194,
+       -0.0634277994780672,
+       1.0516527084736451
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.19031240068804112,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21724987524695943,
+       "front": 0.08850074402601715,
+       "right": 0.049526454533253376,
+       "back": 0.11794132529581938
+      },
+      "final_book_position": [
+       -0.36214548320161516,
+       -0.03861354686789016,
+       1.0595644167903349
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.20879079355517527,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22551920321410363,
+       "front": 0.09628801550201864,
+       "right": 0.06845991790904157,
+       "back": 0.12860310082805668
+      },
+      "final_book_position": [
+       -0.3439974473398023,
+       -0.0438153996047942,
+       1.058259608980963
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.018109370519883372,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.31052259103847824,
+       "front": 0.20415006847936357,
+       "right": 0.22043593050086027,
+       "back": 0.2621769190661651
+      },
+      "final_book_position": [
+       -0.17399548711751808,
+       -0.029090378660190687,
+       0.8999399207952401
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2062139550333344,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2264542071555416,
+       "front": 0.09718378288090813,
+       "right": 0.05033628594191152,
+       "back": 0.12556227438436265
+      },
+      "final_book_position": [
+       -0.3602678028188126,
+       -0.035825821241420384,
+       1.0546493891073316
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "lifted_never_near_any",
+      "lifted": true,
+      "max_lift_m": 0.18998743120337092,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18355530079298138,
+       "front": 0.06355449973413678,
+       "right": 0.10576989578714097,
+       "back": 0.12147026889176013
+      },
+      "final_book_position": [
+       -0.2941630367533015,
+       -0.09159139711551537,
+       0.8954058776399666
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21425603544759952,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2262672424593896,
+       "front": 0.09771678962814068,
+       "right": 0.0387480619970315,
+       "back": 0.12333370853279374
+      },
+      "final_book_position": [
+       -0.3695056305334477,
+       -0.028317343356487872,
+       1.081318247880047
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2284532918656763,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2354071684058803,
+       "front": 0.10740589503703904,
+       "right": 0.053830534146903225,
+       "back": 0.13297826855975003
+      },
+      "final_book_position": [
+       -0.3411954812102594,
+       -0.02482386157915181,
+       1.0543516980572032
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.017451132731495234,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.19736525386205006,
+       -0.049218818223199,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.19322520766172913,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23350701749441166,
+       "front": 0.10496255180357503,
+       "right": 0.05355946940208321,
+       "back": 0.13153250260544858
+      },
+      "final_book_position": [
+       -0.3549937395416939,
+       -0.03219463580223317,
+       1.0547673541409894
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21824507049669628,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2395517645128099,
+       "front": 0.11075417001083564,
+       "right": 0.05669372272031595,
+       "back": 0.13933995485430017
+      },
+      "final_book_position": [
+       -0.3179210407933648,
+       -0.025414456687480172,
+       0.964055451986981
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.20325725135693884,
+      "held_at_end": true,
+      "closest_xy_m": {
+       "left": 0.19070729397096847,
+       "front": 0.07186523793551938,
+       "right": 0.04650039840436178,
+       "back": 0.1280347082225364
+      },
+      "final_book_position": [
+       -0.3025701304866945,
+       -0.09937154481434163,
+       1.0221119712003461
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22868305149571422,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24925588106444116,
+       "front": 0.12123333306698203,
+       "right": 0.007326065361795442,
+       "back": 0.13418238357849774
+      },
+      "final_book_position": [
+       -0.43152113639095446,
+       -0.010244362697610256,
+       0.8994261132504086
+      ]
+     }
+    ],
+    "left": [
+     {
+      "init_index": 20,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.21082405009254745,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.18798730685724935,
+       "front": 0.05858444676048031,
+       "right": 0.07711301099176449,
+       "back": 0.09725201967314075
+      },
+      "final_book_position": [
+       -0.3504650275697429,
+       -0.0809827401479996,
+       1.0540205077739475
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2178071894829341,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20116109262585202,
+       "front": 0.07315079333876315,
+       "right": 0.04598841652634658,
+       "back": 0.10196691290969417
+      },
+      "final_book_position": [
+       -0.2951029809861075,
+       -0.09041759550596924,
+       0.9281699219430953
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_front",
+      "lifted": true,
+      "max_lift_m": 0.20738339484890322,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.11691488820653004,
+       "front": 0.003582430754327622,
+       "right": 0.07042095540450906,
+       "back": 0.04808506790808002
+      },
+      "final_book_position": [
+       -0.31744953096783524,
+       -0.18105897256646467,
+       1.0082076774940496
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2330285473636855,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20121978659630457,
+       "front": 0.07901423000079265,
+       "right": 0.03625945535252735,
+       "back": 0.08727968972285481
+      },
+      "final_book_position": [
+       -0.40053699568293366,
+       -0.06026513062260812,
+       1.0692199707958263
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.221575489532851,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22280459671564523,
+       "front": 0.10155265773712553,
+       "right": 0.013733926762399365,
+       "back": 0.10715908304342359
+      },
+      "final_book_position": [
+       -0.3993014753322013,
+       -0.027594062556051926,
+       1.1045354098870503
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23008912879803012,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19837144908741544,
+       "front": 0.07375013914884225,
+       "right": 0.038452454378258824,
+       "back": 0.08991943060953834
+      },
+      "final_book_position": [
+       -0.3950626855217199,
+       -0.05786464745476426,
+       1.0453862637928528
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.27314006221449083,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23966360522085353,
+       "front": 0.12091352286500083,
+       "right": 0.00853025767097116,
+       "back": 0.1246418420937522
+      },
+      "final_book_position": [
+       -0.4219218483661136,
+       -0.008660799166144853,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.221473443639147,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2265824794857981,
+       "front": 0.10075740719365633,
+       "right": 0.0444023938423768,
+       "back": 0.12051906570721416
+      },
+      "final_book_position": [
+       -0.3415699605681995,
+       -0.03212253526014847,
+       1.0563567886482295
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.21863514448788102,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2120183241153824,
+       "front": 0.08484174162042979,
+       "right": 0.03458992923253953,
+       "back": 0.09744685108644038
+      },
+      "final_book_position": [
+       -0.4304205997068623,
+       -0.03907393174982636,
+       1.0691510596528613
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.236303410189591,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20577662925046705,
+       "front": 0.07764162756235278,
+       "right": 0.01959134870301042,
+       "back": 0.08791619007104566
+      },
+      "final_book_position": [
+       -0.4281358999666406,
+       -0.055300322237267684,
+       1.0629407157652302
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.23902099252101017,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20484999843431342,
+       "front": 0.08047753466008216,
+       "right": 0.01982617339928474,
+       "back": 0.09415991355556282
+      },
+      "final_book_position": [
+       -0.4171213349987462,
+       -0.031272280666278275,
+       1.031281859246659
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2361328332141761,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.13953983968545822,
+       "front": 0.07052212074739912,
+       "right": 0.020408496368534375,
+       "back": 0.028142163739237443
+      },
+      "final_book_position": [
+       -0.45264222512121244,
+       -0.1310444263544289,
+       1.0494471608812248
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22266061107802648,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.19022927630032607,
+       "front": 0.06471989443600465,
+       "right": 0.05437050865363465,
+       "back": 0.08825097390359439
+      },
+      "final_book_position": [
+       -0.3709483992371225,
+       -0.07396603526105591,
+       1.0610330908988315
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22776698068340306,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20396786464353633,
+       "front": 0.08314246780991996,
+       "right": 0.03681212527987921,
+       "back": 0.09340668675453961
+      },
+      "final_book_position": [
+       -0.385230094348647,
+       -0.05699682358326528,
+       1.0427307756405557
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": false,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2643881582045231,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.23107207089295018,
+       "front": 0.1135617006243528,
+       "right": 0.004585162203384841,
+       "back": 0.1162100772216109
+      },
+      "final_book_position": [
+       -0.44657863603046116,
+       -0.00415243509769038,
+       0.8986934306084025
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.016980000441040533,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.1984200931178171,
+       -0.05293593050386354,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2788627427764059,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.22120223418732451,
+       "front": 0.09314269464434946,
+       "right": 0.0006363653749730765,
+       "back": 0.11135653795086987
+      },
+      "final_book_position": [
+       -0.40230292954479197,
+       0.12718540825426647,
+       0.9535541042178624
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2409758455280897,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.21234993049757125,
+       "front": 0.0860342088532063,
+       "right": 0.017733281070549216,
+       "back": 0.09811288593283825
+      },
+      "final_book_position": [
+       -0.3969226444076503,
+       -0.04665603188325041,
+       1.0352312400162251
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.22513197987430722,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.20213274193292205,
+       "front": 0.08889865201199525,
+       "right": 0.024918403877816398,
+       "back": 0.08723570691424098
+      },
+      "final_book_position": [
+       -0.40408293819695584,
+       -0.0592979838001598,
+       1.0486656976867403
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_other_right",
+      "lifted": true,
+      "max_lift_m": 0.2730079664868684,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2507699546238684,
+       "front": 0.12358349143458906,
+       "right": 0.005256493025409054,
+       "back": 0.13187161137970213
+      },
+      "final_book_position": [
+       -0.4218536117313285,
+       0.045455847561581116,
+       1.0692197746504923
+      ]
+     }
+    ],
+    "right": [
+     {
+      "init_index": 20,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2094184254333481,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24753883735011123,
+       "front": 0.1300436181581035,
+       "right": 0.003874537365743124,
+       "back": 0.12943026042067995
+      },
+      "final_book_position": [
+       -0.43341043788776223,
+       -0.0023548899741476985,
+       0.8986399203541994
+      ]
+     },
+     {
+      "init_index": 21,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2274174615907658,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24019411988695472,
+       "front": 0.12021885697894172,
+       "right": 0.002616579661227524,
+       "back": 0.12219203560751814
+      },
+      "final_book_position": [
+       -0.39965419315847245,
+       -0.00777187283428943,
+       0.9030467138630782
+      ]
+     },
+     {
+      "init_index": 22,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.1981782269732817,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25261284339060347,
+       "front": 0.13107127378273473,
+       "right": 0.0047710931987332795,
+       "back": 0.13436682836136238
+      },
+      "final_book_position": [
+       -0.4363946366480362,
+       -0.009053506597218857,
+       0.9079093406533879
+      ]
+     },
+     {
+      "init_index": 23,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21843517106991373,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2425001349848134,
+       "front": 0.12064373686969031,
+       "right": 0.006697976727553073,
+       "back": 0.12505056199151698
+      },
+      "final_book_position": [
+       -0.4189183553086743,
+       -0.005971773252526312,
+       0.8999168881979556
+      ]
+     },
+     {
+      "init_index": 24,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2000011437298208,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24531910154553774,
+       "front": 0.11994150536752778,
+       "right": 0.0034993963942916684,
+       "back": 0.13458497199690347
+      },
+      "final_book_position": [
+       -0.3697609420237491,
+       -0.018408449606802758,
+       0.9070574488041553
+      ]
+     },
+     {
+      "init_index": 25,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.21271447992730874,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2428952974838221,
+       "front": 0.12405277721949401,
+       "right": 0.002623934661635516,
+       "back": 0.1251278571039742
+      },
+      "final_book_position": [
+       -0.4520552902549904,
+       -0.008746696812672284,
+       0.905573550785861
+      ]
+     },
+     {
+      "init_index": 26,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.26780152580684,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.29281427454645925,
+       "front": 0.17276534739270122,
+       "right": 0.04431986045566207,
+       "back": 0.1774392666229597
+      },
+      "final_book_position": [
+       -0.3781660728974249,
+       0.0635890638232535,
+       1.0692199797071544
+      ]
+     },
+     {
+      "init_index": 27,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.22404526277625902,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25922013800444116,
+       "front": 0.1315825531298602,
+       "right": 0.05109743986084628,
+       "back": 0.15427419834344688
+      },
+      "final_book_position": [
+       -0.3540487390565605,
+       -0.0032513032080027033,
+       1.0500247113978756
+      ]
+     },
+     {
+      "init_index": 28,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22328050683078982,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24269532065774527,
+       "front": 0.12183478472974295,
+       "right": 0.004294244051848679,
+       "back": 0.1275648987199021
+      },
+      "final_book_position": [
+       -0.4252635388022912,
+       -0.006625439329891441,
+       0.8991979431112356
+      ]
+     },
+     {
+      "init_index": 29,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24497037907097152,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24327392829127886,
+       "front": 0.12580000232906613,
+       "right": 0.018303832798176864,
+       "back": 0.12433335079303326
+      },
+      "final_book_position": [
+       -0.447473004930323,
+       -0.014955495612443918,
+       0.9093278787750044
+      ]
+     },
+     {
+      "init_index": 30,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22797853497402476,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.25092267427104903,
+       "front": 0.13381465325119674,
+       "right": 0.004512795367951455,
+       "back": 0.1329105547300662
+      },
+      "final_book_position": [
+       -0.42267196522924083,
+       -0.011008347759580959,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 31,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.23564268606297478,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24201613041442857,
+       "front": 0.12544594657363956,
+       "right": 0.006546108421579967,
+       "back": 0.1264771480268458
+      },
+      "final_book_position": [
+       -0.4114397374305026,
+       -0.017675245670893392,
+       0.9038289389905144
+      ]
+     },
+     {
+      "init_index": 32,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.22328456624517634,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2423201722683166,
+       "front": 0.12803100797295572,
+       "right": 0.000478412520006233,
+       "back": 0.1254614379528069
+      },
+      "final_book_position": [
+       -0.41251271542171114,
+       -0.019334569229381426,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 33,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2365079125479721,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24120565609516512,
+       "front": 0.12196639203081439,
+       "right": 0.0047190385485829075,
+       "back": 0.1253372720450283
+      },
+      "final_book_position": [
+       -0.4153899017488068,
+       -0.015438537976401115,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 34,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.24871778053869686,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24722167022443872,
+       "front": 0.1336616657973214,
+       "right": 0.0026522723546970484,
+       "back": 0.1285760208905588
+      },
+      "final_book_position": [
+       -0.4227936379867911,
+       -0.00664084267784659,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 35,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "never_lifted",
+      "lifted": false,
+      "max_lift_m": 0.0172550916241907,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.26693797216154336,
+       "front": 0.16221745083362832,
+       "right": 0.19910727586437524,
+       "back": 0.2215068176966808
+      },
+      "final_book_position": [
+       -0.19612820070862544,
+       -0.050975459823464936,
+       0.8999399207952399
+      ]
+     },
+     {
+      "init_index": 36,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.21674965437167137,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2572353189761194,
+       "front": 0.1276576804218253,
+       "right": 0.02184226959218436,
+       "back": 0.1497087574574923
+      },
+      "final_book_position": [
+       -0.41182572269529083,
+       0.01933009169146333,
+       1.06921990337228
+      ]
+     },
+     {
+      "init_index": 37,
+      "correct_ever": true,
+      "first_goal": "right",
+      "category": "reached_some_goal",
+      "lifted": true,
+      "max_lift_m": 0.2345291044855995,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.24388575101525342,
+       "front": 0.12156218630548883,
+       "right": 0.0036738245714498484,
+       "back": 0.1260559592101667
+      },
+      "final_book_position": [
+       -0.4203120794582117,
+       -0.006312671530014677,
+       0.8986399203541995
+      ]
+     },
+     {
+      "init_index": 38,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.26600566917030144,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.2636597820811751,
+       "front": 0.1341429083694555,
+       "right": 0.020770286353750233,
+       "back": 0.15096776841039644
+      },
+      "final_book_position": [
+       -0.32271217582469375,
+       0.05901287633045008,
+       1.093513469722274
+      ]
+     },
+     {
+      "init_index": 39,
+      "correct_ever": false,
+      "first_goal": null,
+      "category": "near_requested_not_satisfied",
+      "lifted": true,
+      "max_lift_m": 0.25400830813281006,
+      "held_at_end": false,
+      "closest_xy_m": {
+       "left": 0.28250952560788173,
+       "front": 0.1529184730932314,
+       "right": 0.03864466711771615,
+       "back": 0.17041084117049055
+      },
+      "final_book_position": [
+       -0.4293841045023022,
+       0.04427087165974196,
+       1.0324727892613919
+      ]
+     }
+    ]
+   }
+  }
+ }
+}

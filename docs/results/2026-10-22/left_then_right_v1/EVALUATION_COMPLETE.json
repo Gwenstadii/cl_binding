@@ -1,0 +1,6 @@
+{
+  "status": "complete",
+  "retrained": false,
+  "episodes_before": 80,
+  "episodes_after": 80
+}

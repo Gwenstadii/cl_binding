@@ -1,0 +1,180 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-25T08:02:22.630535+00:00",
+  "source_commit": "5f482a3f50d6ac3f094aa18beadf925c0fdfa1f0",
+  "branches": [
+    "er"
+  ],
+  "gpus": [
+    0
+  ],
+  "training_dirs": {
+    "er": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3b_scene1_mem001_20261025_01_er"
+  },
+  "parent_rows_reused": [
+    "/home/lzx/cl_binding_stage2a/.server/stage3b_scene1_20261025/parent_eval/episodes.jsonl"
+  ],
+  "parent_summary": {
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 18,
+        "success_then_lost": 2,
+        "success_then_lost_unfinished": 2
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 10,
+        "terminal_correct": 9,
+        "success_then_lost": 1,
+        "success_then_lost_unfinished": 1
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "success_then_lost": 0,
+        "success_then_lost_unfinished": 0
+      }
+    },
+    "first_goal_matrix": {
+      "left": {
+        "left": 20,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 10,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 10
+      },
+      "right": {
+        "left": 14,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 6
+      },
+      "back": {
+        "left": 6,
+        "front": 2,
+        "right": 0,
+        "back": 0,
+        "none_or_tied": 12
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "left": 18,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 2,
+        "ambiguous": 0
+      },
+      "front": {
+        "left": 0,
+        "front": 9,
+        "right": 0,
+        "back": 0,
+        "unfinished": 11,
+        "ambiguous": 0
+      },
+      "right": {
+        "left": 3,
+        "front": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 17,
+        "ambiguous": 0
+      },
+      "back": {
+        "left": 2,
+        "front": 2,
+        "right": 0,
+        "back": 0,
+        "unfinished": 16,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct_indices": [
+      20,
+      22,
+      23,
+      25,
+      26,
+      32,
+      36,
+      39
+    ]
+  },
+  "phases": [
+    {
+      "name": "er_train",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage2_replay_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage3b_scene1_mem001_20261025_01/config.json",
+        "--branch",
+        "er",
+        "--run-dir",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3b_scene1_mem001_20261025_01_er"
+      ],
+      "gpu": 0,
+      "pid": 2945353,
+      "started_elapsed_s": 0.00027416227385401726,
+      "returncode": 0,
+      "finished_elapsed_s": 3762.2655842020176
+    },
+    {
+      "name": "er_eval_attempt1",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage3b_scene1_mem001_20261025_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage3b_scene1_mem001_20261025_01_er/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage3b_scene1_mem001_20261025_01/er_eval_attempt1",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 3363254,
+      "started_elapsed_s": 3762.6728742090054,
+      "returncode": 0,
+      "finished_elapsed_s": 4898.460441938136
+    }
+  ],
+  "current_stage": "finished",
+  "finished_at": "2026-10-25T09:24:01.093905+00:00",
+  "seconds": 4898.46332541341,
+  "final_model_sha256": {
+    "er": "9abb3d832d148c5f3beab15e8c9feaa3ffd336afeae06b2e02bb6b0efd96f93c"
+  },
+  "new_evaluation_episodes": 80,
+  "reused_parent_episodes": 80
+}

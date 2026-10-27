@@ -1,0 +1,15 @@
+{
+  "mode": "pseudo",
+  "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "parent_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "dataset": "/home/lzx/cl_binding_stage2a/datasets/stage1_single_right_train_aligned_v1",
+  "split_sha256": "b925a1a23eee66a0a5354ca16bac5fb40d02d7d33c28fda7397c8d1b607b9730",
+  "frames": 5577,
+  "instructions": {
+    "left": "pick up the book and place it in the left compartment of the caddy",
+    "front": "pick up the book and place it in the front compartment of the caddy"
+  },
+  "flow_steps": 10,
+  "noise": "stream_seed(teacher-<mode>, memory seed, batch start)",
+  "scope": "offline parent queries; no old demonstrations are stored by pseudo mode"
+}

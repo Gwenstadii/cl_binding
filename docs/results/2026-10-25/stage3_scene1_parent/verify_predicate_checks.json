@@ -1,0 +1,718 @@
+{
+  "predicates": {
+    "front": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_front_contain_region"
+      ]
+    ],
+    "left": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_left_contain_region"
+      ]
+    ],
+    "right": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_right_contain_region"
+      ]
+    ],
+    "back": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_back_contain_region"
+      ]
+    ]
+  },
+  "replays": [
+    {
+      "goal": "front",
+      "demo": "demo_0",
+      "stored_terminal": {
+        "front": true,
+        "left": false,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "front",
+        "first_goal": "front",
+        "first_goal_times": {
+          "front": 157,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "front",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "front",
+      "demo": "demo_1",
+      "stored_terminal": {
+        "front": true,
+        "left": false,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "front",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "front",
+      "demo": "demo_2",
+      "stored_terminal": {
+        "front": true,
+        "left": false,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "front",
+        "first_goal": "front",
+        "first_goal_times": {
+          "front": 144,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "front",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "left",
+      "demo": "demo_0",
+      "stored_terminal": {
+        "front": false,
+        "left": true,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "left",
+        "first_goal": "left",
+        "first_goal_times": {
+          "front": null,
+          "left": 135,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "left",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "left",
+      "demo": "demo_1",
+      "stored_terminal": {
+        "front": false,
+        "left": true,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "left",
+        "first_goal": "left",
+        "first_goal_times": {
+          "front": null,
+          "left": 138,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "left",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "left",
+      "demo": "demo_2",
+      "stored_terminal": {
+        "front": false,
+        "left": true,
+        "right": false,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "left",
+        "first_goal": "left",
+        "first_goal_times": {
+          "front": null,
+          "left": 126,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": "left",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "right",
+      "demo": "demo_0",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": "right",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": 129,
+          "back": null
+        },
+        "terminal_goal": "right",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "right",
+      "demo": "demo_1",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": "right",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": 144,
+          "back": null
+        },
+        "terminal_goal": "right",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "right",
+      "demo": "demo_2",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": true,
+        "back": false
+      },
+      "action_replay": {
+        "requested_goal": "right",
+        "first_goal": null,
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": null
+        },
+        "terminal_goal": null,
+        "terminal_category": "unfinished",
+        "correct_ever": false,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "back",
+      "demo": "demo_0",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": false,
+        "back": true
+      },
+      "action_replay": {
+        "requested_goal": "back",
+        "first_goal": "back",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": 223
+        },
+        "terminal_goal": "back",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "back",
+      "demo": "demo_1",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": false,
+        "back": true
+      },
+      "action_replay": {
+        "requested_goal": "back",
+        "first_goal": "back",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": 170
+        },
+        "terminal_goal": "back",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    },
+    {
+      "goal": "back",
+      "demo": "demo_2",
+      "stored_terminal": {
+        "front": false,
+        "left": false,
+        "right": false,
+        "back": true
+      },
+      "action_replay": {
+        "requested_goal": "back",
+        "first_goal": "back",
+        "first_goal_times": {
+          "front": null,
+          "left": null,
+          "right": null,
+          "back": 171
+        },
+        "terminal_goal": "back",
+        "terminal_category": "correct",
+        "correct_ever": true,
+        "correct_then_destroyed": false
+      }
+    }
+  ],
+  "reset_partitions": {
+    "expert_replay_demos": [
+      "demo_0",
+      "demo_1",
+      "demo_2"
+    ],
+    "horizon": 400,
+    "settle_steps": 10,
+    "common_state_source_goal": "front",
+    "screen_indices": [
+      0,
+      1,
+      2
+    ],
+    "development_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "qualification_indices": [],
+    "paired_indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "reserve_indices": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "development_required_correct": 16,
+    "qualification_required_correct": 16
+  },
+  "status": "pass",
+  "common_reset_checks": [
+    {
+      "goal": "left",
+      "index": 0,
+      "state": [
+        0.5000000000000003,
+        -0.01248558643490883,
+        -0.1779338474444461,
+        0.014696525590501695,
+        -2.4965819486894394,
+        0.0021658428806759036,
+        2.2591505175895827,
+        0.7853854996640058,
+        0.03872648880876414,
+        -0.03873186444481998,
+        -0.22032463840348554,
+        0.14933614699712291,
+        0.8829599203541995,
+        -0.39929216666040324,
+        1.0257973137083997e-08,
+        -4.7457520648241554e-08,
+        0.9168237375000932,
+        -0.11484192367926145,
+        0.004013095748829929,
+        0.8852270555869101,
+        -0.7071067534950678,
+        -1.336653659641797e-06,
+        5.317094916568932e-07,
+        0.7071068088765627,
+        0.0204975508334375,
+        -0.03658552058741043,
+        -0.02255298104909136,
+        -0.06544557985448649,
+        0.00449856401195429,
+        0.08075997980000033,
+        -1.785751489835842e-05,
+        0.003208226311683357,
+        -0.003167836300955795,
+        -4.681518081484242e-18,
+        4.054286133625088e-18,
+        1.6032889083581084e-14,
+        -9.987046696385011e-16,
+        1.6819614373840156e-17,
+        -2.740353726563647e-18,
+        -2.2915767408306887e-17,
+        -6.358097325799922e-17,
+        2.3649637513235068e-14,
+        2.881317946643959e-14,
+        8.48948613930625e-14,
+        -7.097001327261262e-18
+      ]
+    },
+    {
+      "goal": "left",
+      "index": 1,
+      "state": [
+        0.5000000000000003,
+        -0.012101282181390411,
+        -0.1476217428616037,
+        0.010132884493285641,
+        -2.420254719510762,
+        0.002063538143611225,
+        2.217493708545301,
+        0.7811342537339901,
+        0.03872934976729383,
+        -0.038728992245738336,
+        -0.20105845258785865,
+        0.1608209952721233,
+        0.8829599203541993,
+        -0.4569980187449616,
+        1.3266228308440226e-08,
+        -4.670598960951981e-08,
+        0.8894677120970598,
+        -0.0888214821889331,
+        -0.004129725591977889,
+        0.8852270555869102,
+        -0.7071067534950679,
+        -1.3366536595539248e-06,
+        5.317094917442363e-07,
+        0.7071068088765626,
+        0.01649988099152157,
+        0.007013526851047976,
+        -0.015927470272161216,
+        0.010870387537424798,
+        -0.0025952225791029695,
+        -0.016453424887432254,
+        0.006172290411587707,
+        0.0031859180847680886,
+        -0.003190260735448962,
+        2.956517798044826e-18,
+        5.932342744053777e-18,
+        2.470730791806741e-14,
+        -9.835566243996303e-16,
+        6.809952075020628e-17,
+        -1.675145557083147e-17,
+        2.1395485956802535e-17,
+        6.756568370482109e-17,
+        1.0762193916973474e-14,
+        -3.228268930654757e-14,
+        -1.1111979208204293e-13,
+        2.1816425642791623e-18
+      ]
+    },
+    {
+      "goal": "left",
+      "index": 2,
+      "state": [
+        0.5000000000000003,
+        0.01923289486426859,
+        -0.1683045795856941,
+        -0.013195934109395771,
+        -2.441859253339495,
+        -0.0027635250681038647,
+        2.217758973990389,
+        0.7920212572400941,
+        0.038728584506904334,
+        -0.038729751818010076,
+        -0.1766658225909895,
+        0.12821128688155053,
+        0.8829599203541993,
+        -0.5817067467853353,
+        1.9929179871044704e-08,
+        -4.4274937252167486e-08,
+        0.8133985866378305,
+        -0.11967608814590859,
+        -0.013662949671485174,
+        0.8852270555869102,
+        -0.7071067534950678,
+        -1.3366536597188286e-06,
+        5.317094916209637e-07,
+        0.7071068088765626,
+        -0.02982381823104334,
+        0.00896616982497211,
+        0.02739976040257763,
+        0.014942913006673305,
+        0.00793742675954842,
+        -0.01893922131269463,
+        2.1548725221596336e-05,
+        0.0031972941708009696,
+        -0.0031789073050767884,
+        -6.936819577013584e-18,
+        -1.7916236834502844e-18,
+        2.643370701257042e-14,
+        -8.671309813564921e-16,
+        1.1084222201046175e-17,
+        1.2478614407421935e-17,
+        -1.4201042755498401e-18,
+        -9.586139989386435e-18,
+        9.671038861381698e-15,
+        3.5121293113119297e-14,
+        8.325497182433103e-14,
+        1.600131220724132e-17
+      ]
+    },
+    {
+      "goal": "front",
+      "index": 0,
+      "state": [
+        0.5000000000000003,
+        -0.01248558643490883,
+        -0.1779338474444461,
+        0.014696525590501695,
+        -2.4965819486894394,
+        0.0021658428806759036,
+        2.2591505175895827,
+        0.7853854996640058,
+        0.03872648880876414,
+        -0.03873186444481998,
+        -0.22032463840348554,
+        0.14933614699712291,
+        0.8829599203541995,
+        -0.39929216666040324,
+        1.0257973137083997e-08,
+        -4.7457520648241554e-08,
+        0.9168237375000932,
+        -0.11484192367926145,
+        0.004013095748829929,
+        0.8852270555869101,
+        -0.7071067534950678,
+        -1.336653659641797e-06,
+        5.317094916568932e-07,
+        0.7071068088765627,
+        0.0204975508334375,
+        -0.03658552058741043,
+        -0.02255298104909136,
+        -0.06544557985448649,
+        0.00449856401195429,
+        0.08075997980000033,
+        -1.785751489835842e-05,
+        0.003208226311683357,
+        -0.003167836300955795,
+        -4.681518081484242e-18,
+        4.054286133625088e-18,
+        1.6032889083581084e-14,
+        -9.987046696385011e-16,
+        1.6819614373840156e-17,
+        -2.740353726563647e-18,
+        -2.2915767408306887e-17,
+        -6.358097325799922e-17,
+        2.3649637513235068e-14,
+        2.881317946643959e-14,
+        8.48948613930625e-14,
+        -7.097001327261262e-18
+      ]
+    },
+    {
+      "goal": "front",
+      "index": 1,
+      "state": [
+        0.5000000000000003,
+        -0.012101282181390411,
+        -0.1476217428616037,
+        0.010132884493285641,
+        -2.420254719510762,
+        0.002063538143611225,
+        2.217493708545301,
+        0.7811342537339901,
+        0.03872934976729383,
+        -0.038728992245738336,
+        -0.20105845258785865,
+        0.1608209952721233,
+        0.8829599203541993,
+        -0.4569980187449616,
+        1.3266228308440226e-08,
+        -4.670598960951981e-08,
+        0.8894677120970598,
+        -0.0888214821889331,
+        -0.004129725591977889,
+        0.8852270555869102,
+        -0.7071067534950679,
+        -1.3366536595539248e-06,
+        5.317094917442363e-07,
+        0.7071068088765626,
+        0.01649988099152157,
+        0.007013526851047976,
+        -0.015927470272161216,
+        0.010870387537424798,
+        -0.0025952225791029695,
+        -0.016453424887432254,
+        0.006172290411587707,
+        0.0031859180847680886,
+        -0.003190260735448962,
+        2.956517798044826e-18,
+        5.932342744053777e-18,
+        2.470730791806741e-14,
+        -9.835566243996303e-16,
+        6.809952075020628e-17,
+        -1.675145557083147e-17,
+        2.1395485956802535e-17,
+        6.756568370482109e-17,
+        1.0762193916973474e-14,
+        -3.228268930654757e-14,
+        -1.1111979208204293e-13,
+        2.1816425642791623e-18
+      ]
+    },
+    {
+      "goal": "front",
+      "index": 2,
+      "state": [
+        0.5000000000000003,
+        0.01923289486426859,
+        -0.1683045795856941,
+        -0.013195934109395771,
+        -2.441859253339495,
+        -0.0027635250681038647,
+        2.217758973990389,
+        0.7920212572400941,
+        0.038728584506904334,
+        -0.038729751818010076,
+        -0.1766658225909895,
+        0.12821128688155053,
+        0.8829599203541993,
+        -0.5817067467853353,
+        1.9929179871044704e-08,
+        -4.4274937252167486e-08,
+        0.8133985866378305,
+        -0.11967608814590859,
+        -0.013662949671485174,
+        0.8852270555869102,
+        -0.7071067534950678,
+        -1.3366536597188286e-06,
+        5.317094916209637e-07,
+        0.7071068088765626,
+        -0.02982381823104334,
+        0.00896616982497211,
+        0.02739976040257763,
+        0.014942913006673305,
+        0.00793742675954842,
+        -0.01893922131269463,
+        2.1548725221596336e-05,
+        0.0031972941708009696,
+        -0.0031789073050767884,
+        -6.936819577013584e-18,
+        -1.7916236834502844e-18,
+        2.643370701257042e-14,
+        -8.671309813564921e-16,
+        1.1084222201046175e-17,
+        1.2478614407421935e-17,
+        -1.4201042755498401e-18,
+        -9.586139989386435e-18,
+        9.671038861381698e-15,
+        3.5121293113119297e-14,
+        8.325497182433103e-14,
+        1.600131220724132e-17
+      ]
+    }
+  ],
+  "init_states_sha256": "dbc26897ea3a77f767a037d196da6e36ad2c61fc62b5da2e272cc782cc617a65",
+  "canonical_scene_xml_sha256": "d9c4ed6ec422f9e7e19320fb50c0461e9b6c0f4b8ed6f819ea56a83c2120c950",
+  "open_loop_replay_failures": [
+    {
+      "goal": "front",
+      "demo": "demo_1"
+    },
+    {
+      "goal": "right",
+      "demo": "demo_2"
+    }
+  ],
+  "scope": "Predicate and interface checks pass; open-loop replay failures remain reported, not discarded."
+}

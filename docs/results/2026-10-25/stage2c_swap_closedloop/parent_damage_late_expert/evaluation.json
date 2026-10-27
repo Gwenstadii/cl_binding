@@ -1,0 +1,42 @@
+{
+  "status": "complete",
+  "partition": "paired",
+  "checkpoint": "outputs/stage2a/hybrids/parent_damage_late_expert",
+  "policy_source": "checkpoint",
+  "instruction_goals": [
+    "left",
+    "front",
+    "right",
+    "back"
+  ],
+  "gate_goals": [
+    "right"
+  ],
+  "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "git_commit": "7c1179ae062c9801cc1a62f52205fdea6fd3e43c",
+  "counts": {
+    "left": {
+      "total": 20,
+      "correct": 0
+    },
+    "front": {
+      "total": 20,
+      "correct": 1
+    },
+    "right": {
+      "total": 20,
+      "correct": 0
+    },
+    "back": {
+      "total": 20,
+      "correct": 0
+    }
+  },
+  "passed_gate": false,
+  "seconds": 895.7184815909714,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false
+}

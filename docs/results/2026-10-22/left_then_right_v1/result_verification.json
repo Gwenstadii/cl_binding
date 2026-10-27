@@ -1,0 +1,189 @@
+{
+  "verified_at_utc": "2026-10-22T13:43:54.592845+00:00",
+  "matched_pre_post_pairs": 80,
+  "same_state_xml_seed_across_both_models_and_four_instructions": true,
+  "all_160_episodes_400_steps": true,
+  "recomputed_metrics": {
+    "before": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 17,
+          "unfinished": 3
+        },
+        "correct_then_destroyed": 0
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 19,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 19,
+          "unfinished": 1
+        },
+        "correct_then_destroyed": 1
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 18,
+          "unfinished": 2
+        },
+        "correct_then_destroyed": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "left": 16,
+          "unfinished": 4
+        },
+        "correct_then_destroyed": 0
+      }
+    },
+    "after": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 12,
+          "right": 8
+        },
+        "terminal_targets": {
+          "unfinished": 12,
+          "right": 8
+        },
+        "correct_then_destroyed": 0
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 12,
+          "right": 8
+        },
+        "terminal_targets": {
+          "unfinished": 13,
+          "right": 7
+        },
+        "correct_then_destroyed": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 9,
+        "terminal_correct": 9,
+        "first_targets": {
+          "unreached_or_ambiguous": 11,
+          "right": 9
+        },
+        "terminal_targets": {
+          "unfinished": 11,
+          "right": 9
+        },
+        "correct_then_destroyed": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 13,
+          "right": 7
+        },
+        "terminal_targets": {
+          "unfinished": 14,
+          "right": 6
+        },
+        "correct_then_destroyed": 0
+      }
+    }
+  },
+  "final_model_differs_from_parent": true,
+  "old_goal_previously_successful_ever": {
+    "total": 20,
+    "retained_success_ever": 0,
+    "lost_success_ever": 20,
+    "lost_and_first_new_goal": 8,
+    "lost_and_terminal_new_goal": 7,
+    "lost_and_terminal_unfinished": 13,
+    "lost_and_terminal_ambiguous": 0,
+    "lost_and_terminal_other_wrong": 0,
+    "lost_initial_indices": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  "terminal_categories_before": {
+    "wrong_goal": 51,
+    "unfinished": 10,
+    "correct": 19
+  },
+  "terminal_categories_after": {
+    "unfinished": 50,
+    "wrong_goal": 21,
+    "correct": 9
+  },
+  "source_file_hashes_verified": 19,
+  "previous_10_state_baseline_repeat": {
+    "episodes": 40,
+    "differences": []
+  },
+  "exploratory_conditioned_on_post_new_task_success": {
+    "control_indices": [
+      33,
+      34,
+      36,
+      37,
+      38,
+      39,
+      44,
+      46,
+      48
+    ],
+    "total": 9,
+    "old_instruction_first_new_goal": 7,
+    "old_instruction_terminal_new_goal": 6,
+    "old_instruction_terminal_unfinished": 3,
+    "old_instruction_correct_ever": 0
+  },
+  "training_source_commit": "2b0022d5e34b1b2c191c88c2ed8b4c8a039997c8",
+  "evaluation_source_commit": "c078cc2fa14233cdbe48222d52ee6a604f5d8fc5"
+}

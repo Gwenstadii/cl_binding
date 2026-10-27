@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "new_training_tasks": 2,
+  "steps_each": 12000,
+  "evaluation_episodes_each": 80,
+  "evidence_archive_ready": true
+}

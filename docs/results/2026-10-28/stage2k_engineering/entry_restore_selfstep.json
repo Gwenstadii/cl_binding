@@ -1,0 +1,80 @@
+{
+  "source": "R0 front init0 fixed planning step120, all planning boundaries refreshed",
+  "runtime": {
+    "python": "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "loaded_sources": {
+      "lerobot.policies.common.flow_matching": {
+        "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/common/flow_matching.py",
+        "sha256": "73f3e5525e492286729e42b68b0057167bef1ad4d5a4d76bd44073c3a50ac48a"
+      },
+      "lerobot.policies.smolvla.modeling_smolvla": {
+        "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+        "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+      },
+      "lerobot.policies.smolvla.smolvlm_with_expert": {
+        "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+        "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+      },
+      "stage1_protocol": {
+        "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_protocol.py",
+        "sha256": "b9ba0fd4ecc0d9a98fc4348588b892bcb0e16e9479abe7d730b72ad79741eca6"
+      },
+      "stage1_r0_eval": {
+        "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+      },
+      "stage1_smoke": {
+        "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_smoke.py",
+        "sha256": "432164e3bfb8e747d172ef3b876b7ab5098ab017578f716cbbb4ad91ff4b8d09"
+      }
+    },
+    "diagnostic_source": {
+      "path": "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_01/entry_restore_debug_v2/stage2k_entry_handoff.py",
+      "sha256": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d"
+    },
+    "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+    "runtime_dirty": true,
+    "runtime_status": [
+      "?? .server",
+      "?? MUJOCO_LOG.TXT",
+      "?? datasets",
+      "?? outputs",
+      "?? scripts/run_stage2h_gate_rep_v1.sh",
+      "?? scripts/run_stage2i_v2_tail.sh",
+      "?? scripts/run_stage2i_v3_rerun.sh",
+      "?? scripts/stage2_language_decay.py"
+    ]
+  },
+  "restore_check": {
+    "sim_state_max_abs": 0.0,
+    "observation_max_abs": {
+      "agentview_image": 0.0,
+      "robot0_eye_in_hand_image": 0.0,
+      "robot0_eef_pos": 0.0,
+      "robot0_eef_quat": 0.0,
+      "robot0_gripper_qpos": 0.0
+    }
+  },
+  "first_action_max_abs": 0.0,
+  "first_next_state_max_abs": 0.0,
+  "source_action": [
+    -0.28304535150527954,
+    0.05233795940876007,
+    -0.161621555685997,
+    0.0378660187125206,
+    -0.0074952892027795315,
+    -0.10588380694389343,
+    1.0993249416351318
+  ],
+  "restored_action": [
+    -0.28304535150527954,
+    0.05233795940876007,
+    -0.161621555685997,
+    0.0378660187125206,
+    -0.0074952892027795315,
+    -0.10588380694389343,
+    1.0993249416351318
+  ],
+  "passed": true
+}

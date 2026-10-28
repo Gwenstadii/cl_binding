@@ -1,0 +1,10 @@
+[
+  {
+    "goal": "left",
+    "mode": "new",
+    "max_abs": 0.03271484375,
+    "rms": 0.011806445196270943,
+    "tolerance": 0.03,
+    "coordinate_system": "normalized actions"
+  }
+]

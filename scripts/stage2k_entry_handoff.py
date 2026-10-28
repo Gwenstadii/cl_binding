@@ -186,6 +186,21 @@ def _snapshot(env, obs):
     return arrays, meta
 
 
+def _fresh_observation(env):
+    """Synchronize observation kinematics with current qpos without a physics step.
+
+    robosuite step observations can be sampled before the final integration while
+    get_sim_state records the integrated qpos. Apply this at every planning boundary
+    in BOTH prefix and continuation; otherwise a reconstructed state gets fresher
+    inputs than the policy that originally reached it.
+    """
+    env.sim.forward()
+    env.check_success()
+    env._post_process()
+    env._update_observables(force=True)
+    return env.env._get_observations()
+
+
 def _restore_snapshot(env, scene_xml, arrays, meta, seed):
     import numpy as np
     import torch
@@ -293,6 +308,7 @@ def main(args):
                 "scene_xml_sha256": hashlib.sha256(scene_xml.encode()).hexdigest(),
                 "model_sha256": {k: _sha(v / "model.safetensors") for k, v in models.items()},
                 "snapshot_rng_rule": "both continuations restore the same source-boundary torch and numpy RNG",
+                "boundary_observation_rule": "sim.forward plus forced observable refresh at every planning boundary in both prefix and continuation; standardizes native step-observation lag without advancing physics",
                 "entry_rule": "first pre-action planning boundary: fixed radius/lift, requested goal uniquely nearest among all supplied centres, before any goal",
                 "natural_self_check": "source-policy first action and first physical next state compared after full restore",
                 "prefix_rows": [], "continuation_rows": []}
@@ -315,11 +331,16 @@ def main(args):
                         torch.manual_seed(seed); np.random.seed(seed)
                         obs, _ = reset_common(env, common[index], seed, e["settle_steps"], scene_xml)
                         actor.reset()
+                        obs = _fresh_observation(env)
                         initial_height = float(obs[f"{args.object}_pos"][2])
                         trace = [events(env, predicates)]
                         reached = any(trace[0].values())
                         snapshot = None
                         for step in range(args.horizon):
+                            if step > 0 and step % action_steps == 0:
+                                obs = _fresh_observation(env)
+                                trace[-1] = events(env, predicates)
+                                reached = reached or any(trace[-1].values())
                             position = np.asarray(obs[f"{args.object}_pos"])
                             if snapshot is None and entry_eligible(step, position, initial_height, centres[goal],
                                     trace[-1], reached, action_steps, args.entry_radius, args.min_lift, args.min_step,
@@ -370,6 +391,9 @@ def main(args):
                     first_action_error = first_state_error = None
                     closest = {g: float("inf") for g in OLD_GOALS}
                     for step in range(args.continuation):
+                        if step > 0 and step % action_steps == 0:
+                            obs = _fresh_observation(env)
+                            trace[-1] = events(env, predicates)
                         action = actor.action(obs, tasks[goal].language)
                         obs, _, _, _ = env.step(np.clip(action, -1, 1))
                         trace.append(events(env, predicates))

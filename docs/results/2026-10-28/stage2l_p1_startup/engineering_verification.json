@@ -1,0 +1,72 @@
+{
+  "status": "pass",
+  "timestamp": "2026-10-28T19:51:14.423749+08:00",
+  "source_selfcheck": [
+    {
+      "snapshot_id": "teacher_front_00",
+      "source_policy": "teacher",
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "first_action_max_abs": 0.0,
+      "first_next_state_max_abs": 0.0,
+      "passed": true
+    }
+  ],
+  "engineering_rows": [
+    {
+      "policy": "teacher",
+      "steps": 120,
+      "rgb_shapes": {
+        "agentview_image": [
+          121,
+          128,
+          128,
+          3
+        ],
+        "robot0_eye_in_hand_image": [
+          121,
+          128,
+          128,
+          3
+        ]
+      },
+      "noise_chunks": 12,
+      "book_free_joint_available": true,
+      "contacts": 1144,
+      "contact_force_available": 1144
+    },
+    {
+      "policy": "student",
+      "steps": 120,
+      "rgb_shapes": {
+        "agentview_image": [
+          121,
+          128,
+          128,
+          3
+        ],
+        "robot0_eye_in_hand_image": [
+          121,
+          128,
+          128,
+          3
+        ]
+      },
+      "noise_chunks": 12,
+      "book_free_joint_available": true,
+      "contacts": 1119,
+      "contact_force_available": 1119
+    }
+  ],
+  "same_noise": true,
+  "engineering_manifest_sha256": "9dac19e41f1c636825c9b683bb2e2126f19c4689e1ba26e5503f9b05ca3766a3",
+  "scope": "engineering validation; success scores are not confirmation findings"
+}

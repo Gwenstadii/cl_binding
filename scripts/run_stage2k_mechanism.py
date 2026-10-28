@@ -33,14 +33,14 @@ def main(args):
     current = subprocess.check_output(["nvidia-smi", "--query-gpu=index,memory.used,utilization.gpu",
                                        "--format=csv,noheader,nounits"], text=True)
     gpu_rows = [tuple(int(v.strip()) for v in line.split(",")) for line in current.splitlines()]
-    requested = {cfg["response_gpu"], cfg["entry_gpu"]}
-    if len(requested) != 2 or not requested <= {row[0] for row in gpu_rows}:
-        raise ValueError("Require two distinct existing GPUs")
+    requested = {cfg[name + "_gpu"] for name in args.arms}
+    if len(requested) != len(args.arms) or not requested <= {row[0] for row in gpu_rows}:
+        raise ValueError("Require one distinct existing GPU per requested arm")
     if any(mem > 1536 or util > 5 for gpu, mem, util in gpu_rows if gpu in requested):
         raise RuntimeError("GPU busy; no process is stopped or preempted")
     files = ["stage2k_response_swap.py", "stage2k_entry_handoff.py", "run_stage2k_mechanism.py"]
     registry = {"status": "running", "started_at": datetime.now(timezone.utc).isoformat(),
-                "configuration": cfg, "python": sys.executable, "gpu_before": current,
+                "configuration": cfg, "arms": args.arms, "python": sys.executable, "gpu_before": current,
                 "code_sha256": {name: hashlib.sha256((code / name).read_bytes()).hexdigest() for name in files}}
     dump(out / "registered_config.json", cfg)
     dump(out / "launcher.json", registry)
@@ -93,7 +93,8 @@ def main(args):
                                         *cfg["development_indices"]], cfg["entry_gpu"])
 
     with ThreadPoolExecutor(max_workers=2) as pool:
-        futures = {"response": pool.submit(response), "entry": pool.submit(entry)}
+        functions = {"response": response, "entry": entry}
+        futures = {name: pool.submit(functions[name]) for name in args.arms}
         outcomes = {}
         for name, future in futures.items():
             try:
@@ -113,4 +114,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path, required=True)
     parser.add_argument("--code-dir", type=Path, required=True)
+    parser.add_argument("--arms", nargs="+", choices=["response", "entry"], default=["response", "entry"])
     main(parser.parse_args())

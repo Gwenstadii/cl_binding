@@ -155,16 +155,25 @@ def main(args):
         else:
             shared_noise = noise[0:1].to(device=state.device, dtype=torch.float32)
         initial = shared_noise.expand(2, -1, -1).contiguous()
-        pad0, cache0 = prefix_cache(teacher.model, images, img_masks, lang_tokens, lang_masks, state)
-        pad1, cache1 = prefix_cache(student.model, images, img_masks, lang_tokens, lang_masks, state)
-        if cache0 is not None and cache0 is cache1:
-            raise AssertionError("Cross-checkpoint prefix cache alias")
+        # Singleton forwards avoid BF16 batch-size-dependent changes relative to
+        # the ordinary policy. A previous batch-2 smoke failed the locked gate.
+        prefixes0, prefixes1 = [], []
+        for i in range(2):
+            inputs = ([value[i:i + 1] for value in images], [value[i:i + 1] for value in img_masks],
+                      lang_tokens[i:i + 1], lang_masks[i:i + 1], state[i:i + 1])
+            prefixes0.append(prefix_cache(teacher.model, *inputs))
+            prefixes1.append(prefix_cache(student.model, *inputs))
+        caches = [cache for _, cache in (*prefixes0, *prefixes1) if cache is not None]
+        if len({id(cache) for cache in caches}) != len(caches):
+            raise AssertionError("Condition/checkpoint prefix cache alias")
 
         def velocity(x_t, timestep):
             # Return identical rows, so both conditions always share ONE action draft.
             shared = x_t[0:1].expand_as(x_t).contiguous()
-            v0 = teacher.model.denoise_step(pad0, cache0, shared, timestep)
-            v1 = student.model.denoise_step(pad1, cache1, shared, timestep)
+            v0 = torch.cat([teacher.model.denoise_step(pad, cache, shared[0:1], timestep[0:1])
+                            for pad, cache in prefixes0])
+            v1 = torch.cat([student.model.denoise_step(pad, cache, shared[0:1], timestep[0:1])
+                            for pad, cache in prefixes1])
             f0, f1 = v0.float(), v1.float()
             mu0, mu1 = f0.mean(dim=0, keepdim=True), f1.mean(dim=0, keepdim=True)
             r0, r1 = f0 - mu0, f1 - mu1

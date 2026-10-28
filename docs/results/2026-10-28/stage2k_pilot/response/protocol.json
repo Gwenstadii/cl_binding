@@ -1,0 +1,211 @@
+{
+  "status": "initializing",
+  "started_at": "2026-10-28T05:58:44.166150+00:00",
+  "scope": "exploratory functional intervention, not neural-module localization",
+  "source_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "script_sha256": "2292e5f99a022b6c899d5857888bc950ee401b02d4da989d47f8ffadf687cdcb",
+  "runtime_scripts": "/home/lzx/cl_binding_stage2a/scripts",
+  "runtime_source_hashes": {
+    "stage1_r0_eval.py": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9",
+    "stage1_smoke.py": "432164e3bfb8e747d172ef3b876b7ab5098ab017578f716cbbb4ad91ff4b8d09"
+  },
+  "runtime_dirty": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "actual_sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "flow_matching": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/common/flow_matching.py",
+      "sha256": "73f3e5525e492286729e42b68b0057167bef1ad4d5a4d76bd44073c3a50ac48a"
+    }
+  },
+  "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "teacher_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "student_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+  "processor_hashes": {
+    "policy_preprocessor.json": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+    "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "instructions": [
+    "pick up the book and place it in the left compartment of the caddy",
+    "pick up the book and place it in the front compartment of the caddy"
+  ],
+  "indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "horizon": 400,
+  "modes": [
+    "new",
+    "old_mean",
+    "old_difference",
+    "old"
+  ],
+  "parent_qualification": "user-selected exploratory joint left+front 12000; not a formally qualified R0",
+  "intervention_window": "all replanning/denoising steps; normal task starts",
+  "denominators": "all development conditions; no selection by post-test success",
+  "runs": [],
+  "config": {
+    "purpose": "stage2h_gcid_scene2_s1",
+    "seed": 20261021,
+    "seeds": {
+      "split_and_inference": 20261021,
+      "memory": 20261024,
+      "new_samples": 20261024,
+      "old_samples": 20261025
+    },
+    "old_goals": [
+      "left",
+      "front"
+    ],
+    "data": {
+      "train_per_goal": 40,
+      "fps": 20,
+      "image_size": 128,
+      "train_output": "datasets/stage1_single_right_train_aligned_v1",
+      "validation_output": "datasets/stage1_single_right_validation_aligned_v1",
+      "action_alignment": "post_action_obs_to_next_action",
+      "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1"
+    },
+    "memory": {
+      "source_dataset": "datasets/stage1_dual_left_front_train_aligned_v1",
+      "per_goal": 256,
+      "budget_bytes": 67108864,
+      "output": "outputs/stage2a/memory/left_front_uniform256_v1"
+    },
+    "parent": {
+      "checkpoint": "outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "status": "user-selected exploratory joint left+front 12000; not a formally qualified R0"
+    },
+    "model": {
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "flow_steps": 10
+    },
+    "training": {
+      "max_steps": 12000,
+      "new_per_step": 4,
+      "old_per_goal_per_step": 1,
+      "loss_denominator": 6,
+      "learning_rate": 0.0001,
+      "warmup_steps": 100,
+      "save_every": 3000,
+      "log_every": 25,
+      "walltime_hours": 3
+    },
+    "branches": {
+      "ft4": "4 right records, loss sum/6, no old data",
+      "er": "same 4 right records + 1 left + 1 front from the 64MiB self-contained memory, loss sum/6",
+      "full_replay": "same 4 right records + 1 left + 1 front from the complete old training split (ceiling, not a memory method)"
+    },
+    "evaluation": {
+      "expert_replay_demos": [
+        "demo_0",
+        "demo_1",
+        "demo_2"
+      ],
+      "horizon": 400,
+      "settle_steps": 10,
+      "common_state_source_goal": "front",
+      "screen_indices": [
+        0,
+        1,
+        2
+      ],
+      "development_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "qualification_indices": [],
+      "paired_indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "reserve_indices": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "development_required_correct": 16,
+      "qualification_required_correct": 16
+    },
+    "evaluation_protocol": {
+      "instruction_goals": [
+        "left",
+        "front",
+        "right",
+        "back"
+      ],
+      "partition": "paired",
+      "fixed_endpoint_step": 12000,
+      "parent_rows_reused_from": [
+        "E007 before (left/front/right)",
+        "E008 parent_unseen_back"
+      ],
+      "retry_policy": "low scores are never rerun; a run error may be retried once with the original evidence kept"
+    },
+    "endpoint_rule": "Train exactly 12000 updates per branch; never extend, retune or reselect a branch by its scores.",
+    "metric_policy": {
+      "primary": "first goal reached and ever-success within 400 steps (equivalent to LIBERO stop-on-success; demos end ~10 frames after success)",
+      "secondary": "terminal goal at step 400 with ignore_done=True",
+      "decided": "2026-10-24 by the researcher; episodes still run the full 400 steps so parent rows stay paired"
+    },
+    "pseudo_labels": {
+      "directory": "outputs/stage2a/teacher/pseudo_right_frames_v1",
+      "source": "parent actions for right-goal training frames under the left/front instructions",
+      "gate": {
+        "indices_file": "outputs/stage2a/teacher/gate_grasp30_v1/indices.json",
+        "rule": "frame <= first gripper-close + 30 within its demo (3046/5577 frames)",
+        "registered": "2026-10-27 before any gated training; margin chosen from parent label direction vs. phase, not from rollouts"
+      }
+    },
+    "method_protocol": {
+      "registered": "2026-10-27 before running",
+      "prediction": "vs CID s1 (0/40 substituted, 11/40 success): substitution stays ~0, old-task success rises",
+      "comparison_branch_stream": "identical new-sample, noise, time and teacher-label streams as stage2e; only the pseudo-label frame pool is gated"
+    }
+  }
+}

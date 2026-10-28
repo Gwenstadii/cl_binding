@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "partition": "development",
+  "checkpoint": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "policy_source": "checkpoint",
+  "instruction_goals": [
+    "left",
+    "front"
+  ],
+  "gate_goals": [
+    "left",
+    "front"
+  ],
+  "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "counts": {
+    "left": {
+      "total": 4,
+      "correct": 0
+    },
+    "front": {
+      "total": 4,
+      "correct": 0
+    }
+  },
+  "passed_gate": false,
+  "seconds": 222.77522630803287,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false
+}

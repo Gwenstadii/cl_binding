@@ -1,0 +1,265 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-28T05:58:44.166150+00:00",
+  "scope": "exploratory functional intervention, not neural-module localization",
+  "source_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "script_sha256": "2292e5f99a022b6c899d5857888bc950ee401b02d4da989d47f8ffadf687cdcb",
+  "runtime_scripts": "/home/lzx/cl_binding_stage2a/scripts",
+  "runtime_source_hashes": {
+    "stage1_r0_eval.py": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9",
+    "stage1_smoke.py": "432164e3bfb8e747d172ef3b876b7ab5098ab017578f716cbbb4ad91ff4b8d09"
+  },
+  "runtime_dirty": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "actual_sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "flow_matching": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/common/flow_matching.py",
+      "sha256": "73f3e5525e492286729e42b68b0057167bef1ad4d5a4d76bd44073c3a50ac48a"
+    },
+    "model": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "expert": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+    }
+  },
+  "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "teacher_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "student_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+  "processor_hashes": {
+    "policy_preprocessor.json": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+    "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "instructions": [
+    "pick up the book and place it in the left compartment of the caddy",
+    "pick up the book and place it in the front compartment of the caddy"
+  ],
+  "indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "horizon": 400,
+  "modes": [
+    "new",
+    "old_mean",
+    "old_difference",
+    "old"
+  ],
+  "parent_qualification": "user-selected exploratory joint left+front 12000; not a formally qualified R0",
+  "intervention_window": "all replanning/denoising steps; normal task starts",
+  "denominators": "all development conditions; no selection by post-test success",
+  "runs": [
+    {
+      "mode": "new",
+      "seconds_since_start": 211.69177157245576,
+      "velocity_calls": 3200,
+      "identity_error_max": 0.0,
+      "evaluation": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "policy_source": "checkpoint",
+        "instruction_goals": [
+          "left",
+          "front"
+        ],
+        "gate_goals": [
+          "left",
+          "front"
+        ],
+        "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "left": {
+            "total": 4,
+            "correct": 0
+          },
+          "front": {
+            "total": 4,
+            "correct": 0
+          }
+        },
+        "passed_gate": false,
+        "seconds": 204.24882739130408,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      }
+    },
+    {
+      "mode": "old_mean",
+      "seconds_since_start": 427.6763104032725,
+      "velocity_calls": 3200,
+      "identity_error_max": 0.0,
+      "evaluation": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "policy_source": "checkpoint",
+        "instruction_goals": [
+          "left",
+          "front"
+        ],
+        "gate_goals": [
+          "left",
+          "front"
+        ],
+        "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "left": {
+            "total": 4,
+            "correct": 1
+          },
+          "front": {
+            "total": 4,
+            "correct": 1
+          }
+        },
+        "passed_gate": false,
+        "seconds": 214.82418638374656,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      }
+    },
+    {
+      "mode": "old_difference",
+      "seconds_since_start": 651.738010076806,
+      "velocity_calls": 3200,
+      "identity_error_max": 0.0,
+      "evaluation": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "policy_source": "checkpoint",
+        "instruction_goals": [
+          "left",
+          "front"
+        ],
+        "gate_goals": [
+          "left",
+          "front"
+        ],
+        "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "left": {
+            "total": 4,
+            "correct": 0
+          },
+          "front": {
+            "total": 4,
+            "correct": 0
+          }
+        },
+        "passed_gate": false,
+        "seconds": 222.77522630803287,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      }
+    },
+    {
+      "mode": "old",
+      "seconds_since_start": 868.7677562665194,
+      "velocity_calls": 3200,
+      "identity_error_max": 0.0,
+      "evaluation": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "policy_source": "checkpoint",
+        "instruction_goals": [
+          "left",
+          "front"
+        ],
+        "gate_goals": [
+          "left",
+          "front"
+        ],
+        "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "left": {
+            "total": 4,
+            "correct": 4
+          },
+          "front": {
+            "total": 4,
+            "correct": 4
+          }
+        },
+        "passed_gate": false,
+        "seconds": 215.73018574621528,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      }
+    }
+  ],
+  "sampling_identity": [
+    {
+      "goal": "left",
+      "mode": "new",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "tolerance": 0.03,
+      "coordinate_system": "normalized actions"
+    },
+    {
+      "goal": "left",
+      "mode": "old",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "tolerance": 0.03,
+      "coordinate_system": "normalized actions"
+    },
+    {
+      "goal": "front",
+      "mode": "new",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "tolerance": 0.03,
+      "coordinate_system": "normalized actions"
+    },
+    {
+      "goal": "front",
+      "mode": "old",
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "tolerance": 0.03,
+      "coordinate_system": "normalized actions"
+    }
+  ],
+  "seconds": 868.7681994717568,
+  "finished_at": "2026-10-28T06:13:35.768393+00:00",
+  "new_episodes": 32
+}

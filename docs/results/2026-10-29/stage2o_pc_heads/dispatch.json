@@ -1,0 +1,18 @@
+{
+  "pid": 29842,
+  "command": [
+    "python3",
+    "/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01/code/run_stage2o_pc_heads.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01/code/stage2o_pc_heads_20261029.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01/code",
+    "--registered-commit",
+    "0055e35"
+  ],
+  "started_at": "2026-10-29T17:48:42.383253+08:00",
+  "registered_commit": "0055e35",
+  "bundle_sha256": "93dc59fb4ef26438d43d70f82df9e30ab9110039a9c28230e293b21d08d70de5",
+  "cpu_tests_passed": true,
+  "scope": "engineering then fixed P/C and true-head screen; no training/closed-loop/extra arms"
+}

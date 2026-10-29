@@ -1,0 +1,162 @@
+{
+  "ranking": [
+    {
+      "layer": 3,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.4245682888555402,
+          "median_rms_delta": 0.09145968797795556
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.3307803723214159,
+          "median_rms_delta": 0.07305327323115002
+        }
+      },
+      "eligible": true,
+      "score": 0.3307803723214159
+    },
+    {
+      "layer": 9,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.2371897149538837,
+          "median_rms_delta": 0.05516682123833652
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.22455741057976902,
+          "median_rms_delta": 0.053018039163620564
+        }
+      },
+      "eligible": true,
+      "score": 0.22455741057976902
+    },
+    {
+      "layer": 7,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.26143626556593036,
+          "median_rms_delta": 0.07117982526028716
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.2016045349325119,
+          "median_rms_delta": 0.047951404551651186
+        }
+      },
+      "eligible": true,
+      "score": 0.2016045349325119
+    },
+    {
+      "layer": 13,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.12501562253782775,
+          "median_rms_delta": 0.03747657624813643
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.12071532350319612,
+          "median_rms_delta": 0.03592206055271786
+        }
+      },
+      "eligible": true,
+      "score": 0.12071532350319612
+    },
+    {
+      "layer": 15,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.05606985975020658,
+          "median_rms_delta": 0.0272208280821098
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.05397026332329004,
+          "median_rms_delta": 0.026119114332597
+        }
+      },
+      "eligible": true,
+      "score": 0.05397026332329004
+    },
+    {
+      "layer": 11,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.028404378372425786,
+          "median_rms_delta": 0.01514582200008193
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.03045033978989479,
+          "median_rms_delta": 0.013904896448276959
+        }
+      },
+      "eligible": true,
+      "score": 0.028404378372425786
+    },
+    {
+      "layer": 5,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.025314503310855337,
+          "median_rms_delta": 0.014313405451433416
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.010999587950487322,
+          "median_rms_delta": 0.013829558292037542
+        }
+      },
+      "eligible": true,
+      "score": 0.010999587950487322
+    },
+    {
+      "layer": 1,
+      "directions": {
+        "left": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.03866080283512768,
+          "median_rms_delta": 0.013002204278403505
+        },
+        "front": {
+          "valid": 12,
+          "total": 12,
+          "median_T": 0.009212456053764147,
+          "median_rms_delta": 0.011024100755312552
+        }
+      },
+      "eligible": true,
+      "score": 0.009212456053764147
+    }
+  ],
+  "selected": [
+    3,
+    9
+  ],
+  "interpretation": "development ranking of velocity transfer, not causal localization/significance",
+  "no_followup_launched": true
+}

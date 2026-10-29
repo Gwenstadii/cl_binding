@@ -7,7 +7,10 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from audit_stage2m_cross_attention import active_vector, audit_prefix_inputs, indexed, transfer_metrics
+from audit_stage2m_cross_attention import (
+    active_vector, attention_mass_roundoff_bound, audit_prefix_inputs, indexed,
+    transfer_metrics, validate_attention_mass,
+)
 
 
 def velocity(dimensions=32):
@@ -109,6 +112,20 @@ class CrossAttentionAuditTests(unittest.TestCase):
         changed["prefix_input_hashes"][0]["FT4"]["left"]["language_tokens"] = "e"*64
         with self.assertRaisesRegex(ValueError, "Preprocessed input mismatch"):
             audit_prefix_inputs(changed)
+
+    def test_bf16_attention_rounding_allowed_but_larger_mass_errors_rejected(self):
+        bound = attention_mass_roundoff_bound(177, 10)
+        self.assertGreater(bound, 2**-8)
+        self.assertLess(bound, 0.004)
+        result = validate_attention_mass({"image": [1.0015], "text": [1e-6], "state": [1e-7]}, 177, 10)
+        self.assertGreater(result["max_group_mass"], 1+1e-6)
+        self.assertAlmostEqual(result["bound"], bound)
+        with self.assertRaisesRegex(ValueError, "modality mass exceeds"):
+            validate_attention_mass({"image": [1+bound*1.1], "text": [0], "state": [0]}, 177, 10)
+        with self.assertRaisesRegex(ValueError, "mass sum exceeds"):
+            validate_attention_mass({"image": [0.51], "text": [0.51], "state": [0.01]}, 177, 10)
+        with self.assertRaisesRegex(ValueError, "modality mass exceeds"):
+            validate_attention_mass({"image": [1], "text": [-1e-7], "state": [0]}, 177, 10)
 
 
 if __name__ == "__main__":

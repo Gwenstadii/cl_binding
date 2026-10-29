@@ -126,6 +126,51 @@ def pair_metrics(a, b, selection=(50, 0, 7)):
                       if norm_product > 1e-20 else None}
 
 
+def attention_mass_roundoff_bound(prefix_positions, query_count=10, group_count=3):
+    """Bound logged mass after FP32 normalization, BF16 cast and FP32 means.
+
+    BF16 round-to-nearest has unit roundoff 2**-8. Positive FP32 reductions
+    have the conservative sequential gamma_n bound, independent of whether
+    the implementation uses a more accurate tree reduction. Include two
+    roundings for reciprocal/multiply normalization and for the logged mean.
+    The tiny additive term covers BF16 subnormal rounding.
+    """
+    for name, value in (("prefix_positions", prefix_positions), ("query_count", query_count),
+                        ("group_count", group_count)):
+        require(type(value) is int and value > 0, f"Invalid {name}")
+    u32, u16, u64 = 2**-24, 2**-8, 2**-53
+
+    def gamma(count, unit):
+        require(count*unit < 0.5, "Reduction too large for this rounding bound")
+        return count*unit / (1-count*unit)
+
+    reduce32 = gamma(prefix_positions-1, u32)
+    mean32 = gamma(query_count-1, u32)
+    normalization_upper = (1+u32)**2 / (1-reduce32)
+    logging_upper = (1+reduce32)*(1+mean32)*(1+u32)**2*(1+gamma(group_count-1, u64))
+    return normalization_upper*(1+u16)*logging_upper - 1 + prefix_positions*2**-134*logging_upper
+
+
+def validate_attention_mass(masses, prefix_positions, query_count=10):
+    require(set(masses) in ({"image", "text", "state"}, {"image", "language", "state"}),
+            "Incomplete prefix modality groups")
+    lengths = {len(values) for values in masses.values()}
+    require(len(lengths) == 1 and next(iter(lengths)) > 0, "Different/empty head counts in modality mass")
+    bound = attention_mass_roundoff_bound(prefix_positions, query_count, len(masses))
+    maximum, maximum_sum_error, entries = 0.0, 0.0, 0
+    for mass in zip(*masses.values()):
+        values = [finite(value) for value in mass]
+        require(all(0 <= value <= 1+bound for value in values),
+                "Attention modality mass exceeds BF16/FP32 rounding bound")
+        error = abs(math.fsum(values)-1)
+        require(error <= bound, "Attention mass sum exceeds BF16/FP32 rounding bound")
+        maximum = max(maximum, *values)
+        maximum_sum_error = max(maximum_sum_error, error)
+        entries += len(values)
+    return {"bound": bound, "max_group_mass": maximum,
+            "max_absolute_sum_error": maximum_sum_error, "entries": entries}
+
+
 def audit_prefix_inputs(manifest):
     """Audit valid conditioning positions; keep masked-query differences visible."""
     input_tables, prefix_batches = [manifest[name] for name in ("prefix_input_hashes", "prefix_audit")]
@@ -235,6 +280,12 @@ def audit(run):
     baseline = indexed(baseline_rows, ("state_index", "noise_seed", "flow_index", "model", "goal"),
                        itertools.product(indices, seeds, flows, ROLES, GOALS))
     anchors, state_hashes = {}, {}
+    mass_validation = {"sets": 0, "entries": 0, "max_group_mass": 0.0,
+        "max_absolute_sum_error": 0.0, "bounds_by_prefix_and_query_count": {},
+        "bf16_unit_roundoff": 2**-8, "float32_unit_roundoff": 2**-24,
+        "basis": "FP32 positive normalization/reductions, BF16 round-to-nearest, FP32 logged mean; "
+                 "gamma_n worst-case reduction bound, not fitted to measured results",
+        "raw_masses_renormalized": False}
     for row in baseline_rows:
         finite_tree(row)
         key = anchor(row)
@@ -258,14 +309,15 @@ def audit(run):
                 require(math.isclose(stats["norm"], stats["rms"]*math.sqrt(count),
                                      rel_tol=1e-4, abs_tol=1e-5), f"Inconsistent {name} norm/RMS")
             masses = measures["P"]["mass_by_source"]
-            require(set(masses) in ({"image", "text", "state"}, {"image", "language", "state"}),
-                    "Incomplete prefix modality groups")
-            lengths = {len(values) for values in masses.values()}
-            require(len(lengths) == 1, "Different head counts in modality mass")
-            for mass in zip(*masses.values()):
-                require(all(-1e-6 <= value <= 1+1e-6 for value in mass), "Invalid attention mass")
-                require(math.isclose(math.fsum(mass), 1, rel_tol=0, abs_tol=0.01),
-                        "Prefix attention modality mass does not sum to one")
+            shape = measures["P"]["shape"]
+            require(len(shape) == 4, "Expected B/head/query/prefix attention tensor")
+            query_count = shape[0]*min(10, shape[2])
+            validation = validate_attention_mass(masses, shape[-1], query_count)
+            mass_validation["sets"] += 1
+            mass_validation["entries"] += validation["entries"]
+            for name in ("max_group_mass", "max_absolute_sum_error"):
+                mass_validation[name] = max(mass_validation[name], validation[name])
+            mass_validation["bounds_by_prefix_and_query_count"][f"{shape[-1]}/{query_count}"] = validation["bound"]
     swap_name = "swap.jsonl" if (run / "swap.jsonl").is_file() else "patches.jsonl"
     swap_rows = read_jsonl(run / swap_name)
     expected = ((i, seeds[0], f, role, goal, "front" if goal == "left" else "left", layer)
@@ -366,6 +418,7 @@ def audit(run):
         "registered_inputs": {"indices": indices, "seeds": seeds, "flow_indices": flows, "ca_layers": layers},
         "identity": {"threshold": 1e-5, "checks": len(checks), "repeat_v_rms": repeat, "cache_isolation": isolation},
         "prefix_input_validation": prefix_audit,
+        "attention_mass_validation": mass_validation,
         "source_files": files, "per_layer_direction": [],
         "selected_development_candidates": selected,
         "limits": ["Four development physical states; noise repeats are not independent training seeds.",

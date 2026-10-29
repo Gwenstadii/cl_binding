@@ -1,0 +1,165 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-29T14:25:28.468086+00:00",
+  "registered_commit": "96992346d9041eec1bb9059e47cd186e5cb724d0",
+  "configuration": {
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "prior_baseline_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/baseline.jsonl",
+    "prior_baseline_sha256": "5e483cab3e81fabe029f3753fa01ec83dbd9d0cabcce9d649630d899d44eea33",
+    "prior_candidates_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/candidates.json",
+    "prior_candidates_sha256": "a9fca67dd7aa49a63c57eec8155ad8409cee850a62371d8d82b6364756ec3ac2",
+    "registered_date": "2026-10-29",
+    "purpose": "Step5 development closed-loop test of fixed post-W_O CA message intervention",
+    "output_root": "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01",
+    "site": 9,
+    "site_selection": "highest full-M same-source conditional-error reduction among preregistered candidate sites in 36-input step3; no head selected",
+    "candidate_sites": [
+      3,
+      9
+    ],
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ],
+    "goals": [
+      "left",
+      "front"
+    ],
+    "horizon": 400,
+    "intervention_steps": 120,
+    "n_action_steps": 10,
+    "flow_steps": 10,
+    "noise_replan_stride": 1000003,
+    "roles_and_modes": {
+      "FT4": [
+        "native",
+        "cross_same",
+        "cross_wrong",
+        "random_delta"
+      ],
+      "R0": [
+        "native",
+        "cross_same",
+        "same_model_wrong",
+        "random_delta"
+      ]
+    },
+    "new_goal_check": {
+      "model": "FT4",
+      "mode": "native",
+      "goal": "right",
+      "indices": [
+        0,
+        1
+      ],
+      "seeds": [
+        2026102801,
+        2026102802
+      ]
+    },
+    "expected_episodes": 68,
+    "expected_replans": 2720,
+    "expected_recipient_denoise_calls": 29120,
+    "expected_patch_calls": 5760,
+    "expected_random_norm_records": 1920,
+    "identity_tolerance": 1e-05,
+    "save_videos": false,
+    "maximum_worker_minutes": 60,
+    "maximum_output_bytes": 2147483648,
+    "minimum_disk_free_bytes": 2147483648,
+    "random_seed_salt": 2026102905,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "result_scope": "development only: two physical states, two inference seeds; four episodes per old goal per arm, not independent confirmation",
+    "stop_on_error": true,
+    "no_followup": [
+      "additional layer or head",
+      "P/C closed-loop arms",
+      "intervention longer than 120 simulation steps",
+      "additional physical states or noise seeds",
+      "training or replay",
+      "claim teacher-assisted rescue is autonomous retention"
+    ],
+    "expected_recipient_integration_calls": 27200,
+    "expected_random_calibration_calls": 1920,
+    "expected_total_denoise_calls": 34880
+  },
+  "code_sha256": {
+    "run_stage2p_ca_closedloop.py": "4fff631d822287101a5688cebb4c590b6d82c320f82f952ef0d2f7da0cc27183",
+    "stage2p_ca_closedloop.py": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07",
+    "stage2n_cross_checkpoint.py": "756db032c3795f86cf485929b4e7cadbc57b8be77be070ac6ba7e459cb743650",
+    "audit_stage2p_ca_closedloop.py": "791d08de435f832a11aae4120708aa3ccc389edbfb159f411c19f8bfe9eb60b0",
+    "audit_stage2n_cross_checkpoint.py": "d5c7951808acf85acaf17913ff3988c66c04355dd690882ec093b9e45d31f52b",
+    "stage2m_cross_attention.py": "09a4eed9c0ed98e4371a524ff2f8ff8118a14750e86cd29af8da6e33ab8a7618",
+    "stage2k_entry_handoff.py": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d",
+    "stage2k_response_swap.py": "2292e5f99a022b6c899d5857888bc950ee401b02d4da989d47f8ffadf687cdcb"
+  },
+  "gpu_before": "0, 721, 0\n1, 37, 0\n",
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "runtime_dirty_before": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "phases": [
+    {
+      "name": "engineering",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code/stage2p_ca_closedloop.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code/stage2p_ca_closedloop_20261029.json",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--phase",
+        "engineering",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/engineering"
+      ],
+      "started_at": "2026-10-29T14:25:28.475316+00:00",
+      "returncode": 0,
+      "seconds": 33.879357979632914
+    },
+    {
+      "name": "evaluation",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code/stage2p_ca_closedloop.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code/stage2p_ca_closedloop_20261029.json",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--phase",
+        "evaluation",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/evaluation"
+      ],
+      "started_at": "2026-10-29T14:26:02.355226+00:00",
+      "returncode": 0,
+      "seconds": 826.7985216733068
+    }
+  ],
+  "finished_at": "2026-10-29T14:39:49.162684+00:00"
+}

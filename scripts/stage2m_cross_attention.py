@@ -549,12 +549,27 @@ def main(args):
 
         def prefixes(obs):
             result = {}
+            input_hashes = {}
             for role, policy in models.items():
                 result[role] = {}
+                input_hashes[role] = {}
                 for goal in GOALS:
                     inputs = make_inputs(policy, preprocessors[role], obs, instructions[goal],
                                          torch, np, quat2axisangle, constants)
+                    images, image_masks, tokens, language_mask, state = inputs
+                    input_hashes[role][goal] = {
+                        "images": [tensor_sha(value) for value in images],
+                        "image_masks": [tensor_sha(value) for value in image_masks],
+                        "language_tokens": tensor_sha(tokens),
+                        "language_mask": tensor_sha(language_mask),
+                        "state_before_projection": tensor_sha(state),
+                        "image_shapes": [list(value.shape) for value in images],
+                        "language_shape": list(tokens.shape), "state_shape": list(state.shape)}
                     result[role][goal] = (inputs, make_prefix(policy, inputs, make_att_2d_masks))
+            report.setdefault("prefix_input_hashes", []).append(input_hashes)
+            for goal in GOALS:
+                if input_hashes["R0"][goal] != input_hashes["FT4"][goal]:
+                    raise AssertionError(f"Preprocessed image/language/state inputs differ: {goal}")
             caches = [result[role][goal][1][1] for role in models for goal in GOALS]
             if len(set(map(id, caches))) != len(caches):
                 raise AssertionError("Independent prefix objects alias")
@@ -562,6 +577,8 @@ def main(args):
             if len(set(pointers)) != len(pointers):
                 raise AssertionError("Independent prefix storage aliases")
             prefix_rows = []
+            # Append before checks so any failure preserves the diagnostic rows.
+            report.setdefault("prefix_audit", []).append(prefix_rows)
             for goal in GOALS:
                 a, b = result["R0"][goal][1], result["FT4"][goal][1]
                 if a[2] != b[2] or not torch.equal(a[0], b[0]):
@@ -572,12 +589,30 @@ def main(args):
                         for group, (lo, hi) in a[2].items():
                             difference = old[:, :, lo:hi].float() - new[:, :, lo:hi].float()
                             max_abs = float(difference.abs().max())
+                            position_mask = a[0][:, lo:hi].bool()
+                            by_position = difference.permute(0, 2, 1, 3)
+                            subsets = {}
+                            for label, selector in (("active", position_mask),
+                                                    ("masked", ~position_mask)):
+                                values = by_position[selector]
+                                subsets[label] = {
+                                    "count": int(selector.sum()),
+                                    "element_count": values.numel(),
+                                    "max_abs": float(values.abs().max()) if values.numel() else 0.0,
+                                    "rms": rms(values) if values.numel() else 0.0}
                             row = {"goal": goal, "layer": layer_index, "tensor": kind,
-                                   "group": group, "max_abs": max_abs, "rms": rms(difference)}
+                                   "group": group, "max_abs": max_abs, "rms": rms(difference),
+                                   **subsets}
                             prefix_rows.append(row)
-                            if group in ("image", "text") and max_abs > args.identity_tolerance:
-                                raise AssertionError("Frozen image/language cache unexpectedly differs")
-            report.setdefault("prefix_audit", []).append(prefix_rows)
+                            # PAD query states are not valid conditioning material. They
+                            # remain reported, but only valid image/text positions gate.
+                            if (group in ("image", "text")
+                                    and subsets["active"]["max_abs"] > args.identity_tolerance):
+                                raise AssertionError(
+                                    f"Frozen valid prefix differs: goal={goal} layer={layer_index} "
+                                    f"tensor={kind} group={group} "
+                                    f"active_max={subsets['active']['max_abs']} "
+                                    f"masked_max={subsets['masked']['max_abs']}")
             return result
 
         def noise(seed):

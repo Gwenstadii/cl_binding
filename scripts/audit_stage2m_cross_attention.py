@@ -126,6 +126,78 @@ def pair_metrics(a, b, selection=(50, 0, 7)):
                       if norm_product > 1e-20 else None}
 
 
+def audit_prefix_inputs(manifest):
+    """Audit valid conditioning positions; keep masked-query differences visible."""
+    input_tables, prefix_batches = [manifest[name] for name in ("prefix_input_hashes", "prefix_audit")]
+    require(len(input_tables) == len(prefix_batches) == len(manifest["indices"]),
+            "Missing physical-state prefix/input audit")
+    prefix_layers = max(row["vlm_layer"] for row in manifest["layer_map"]["R0"]) + 1
+    expected = itertools.product(GOALS, range(prefix_layers), ("keys", "values"), ("image", "text", "state"))
+    expected = set(expected)
+    maxima = {kind: {group: 0.0 for group in ("image", "text", "state")}
+              for kind in ("all", "active", "masked")}
+    total_rows = 0
+    for inputs, rows in zip(input_tables, prefix_batches):
+        finite_tree(inputs)
+        require(set(inputs) == set(ROLES), "Missing preprocessed input model")
+        for role in ROLES:
+            require(set(inputs[role]) == set(GOALS), "Missing preprocessed input instruction")
+            token_hashes = set()
+            for goal in GOALS:
+                record = inputs[role][goal]
+                for name in ("images", "image_masks"):
+                    require(bool(record[name]), f"Empty {name}")
+                    for digest in record[name]:
+                        require(isinstance(digest, str) and len(digest) == 64
+                                and all(c in "0123456789abcdef" for c in digest), f"Invalid {name} hash")
+                for name in ("language_tokens", "language_mask", "state_before_projection"):
+                    digest = record[name]
+                    require(isinstance(digest, str) and len(digest) == 64
+                            and all(c in "0123456789abcdef" for c in digest), f"Invalid {name} hash")
+                token_hashes.add(record["language_tokens"])
+                for name in ("images", "image_masks", "state_before_projection", "image_shapes", "state_shape"):
+                    require(record[name] == inputs[role]["left"][name],
+                            f"Non-language input changed with instruction: {role}/{goal}/{name}")
+            require(len(token_hashes) == 3, f"Instructions collapsed in preprocessing: {role}")
+        for goal in GOALS:
+            require(inputs["R0"][goal] == inputs["FT4"][goal],
+                    f"Preprocessed input mismatch across models: {goal}")
+        indexed(rows, ("goal", "layer", "tensor", "group"), expected)
+        for row in rows:
+            finite_tree(row)
+            counts = []
+            squared = []
+            for label in ("active", "masked"):
+                subset = row[label]
+                count, elements = subset["count"], subset["element_count"]
+                require(type(count) is int and type(elements) is int and count >= 0 and elements >= 0,
+                        "Invalid prefix position/element count")
+                require((count == 0) == (elements == 0), "Prefix position/element emptiness differs")
+                require(elements == 0 or elements % count == 0, "Invalid prefix elements per position")
+                maximum, error = finite(subset["max_abs"]), finite(subset["rms"])
+                require(0 <= error <= maximum + 1e-7, "Invalid prefix error moments")
+                if elements == 0:
+                    require(maximum == error == 0, "Empty prefix subset has nonzero error")
+                counts.append(elements)
+                squared.append(elements * error * error)
+                maxima[label][row["group"]] = max(maxima[label][row["group"]], maximum)
+            require(sum(counts) > 0, "Empty prefix group")
+            close(row["max_abs"], max(row["active"]["max_abs"], row["masked"]["max_abs"]),
+                  "Prefix all-position maximum")
+            close(row["rms"], math.sqrt(math.fsum(squared) / sum(counts)), "Prefix partition RMS")
+            maxima["all"][row["group"]] = max(maxima["all"][row["group"]], row["max_abs"])
+            if row["group"] in ("image", "text"):
+                require(row["active"]["count"] > 0, "No valid image/text conditioning positions")
+                require(row["active"]["max_abs"] <= 1e-5, "Frozen valid image/text prefix differs")
+            total_rows += 1
+    return {"physical_input_tables": len(input_tables), "prefix_difference_records": total_rows,
+            "valid_image_text_threshold": 1e-5, "max_abs_by_position_subset": maxima,
+            "preprocessed_inputs_identical_across_models": True,
+            "nonlanguage_inputs_identical_across_instructions": True,
+            "instruction_token_hashes_distinct": True,
+            "masked_query_differences_are_not_valid_conditioning_differences": True}
+
+
 def audit(run):
     run = Path(run).resolve()
     manifest, complete, engineering = [read_json(run / f"{name}.json")
@@ -137,6 +209,7 @@ def audit(run):
     require(seeds == [2026102801, 2026102802, 2026102803], "Unexpected inference seeds")
     require(flows == [0, 4, 8], "Unexpected flow grid")
     require(tuple(manifest["roles"]) == ROLES, "Unexpected checkpoint roles")
+    prefix_audit = audit_prefix_inputs(manifest)
     layers = manifest["ca_layers"]
     for role in ROLES:
         require(bool(layers[role]) and len(layers[role]) == len(set(layers[role])), "Invalid CA layers")
@@ -292,6 +365,7 @@ def audit(run):
                    "paired_records": len(paired)},
         "registered_inputs": {"indices": indices, "seeds": seeds, "flow_indices": flows, "ca_layers": layers},
         "identity": {"threshold": 1e-5, "checks": len(checks), "repeat_v_rms": repeat, "cache_isolation": isolation},
+        "prefix_input_validation": prefix_audit,
         "source_files": files, "per_layer_direction": [],
         "selected_development_candidates": selected,
         "limits": ["Four development physical states; noise repeats are not independent training seeds.",

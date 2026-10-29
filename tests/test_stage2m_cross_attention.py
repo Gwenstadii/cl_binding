@@ -7,7 +7,7 @@ import sys
 import unittest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from audit_stage2m_cross_attention import active_vector, indexed, transfer_metrics
+from audit_stage2m_cross_attention import active_vector, audit_prefix_inputs, indexed, transfer_metrics
 
 
 def velocity(dimensions=32):
@@ -76,6 +76,39 @@ class CrossAttentionAuditTests(unittest.TestCase):
             active_vector([[0.0] * 7] * 49)
         with self.assertRaises(ValueError):
             transfer_metrics(velocity(), velocity(), velocity(), repeat_rms=-1)
+
+    def test_prefix_gate_excludes_masked_queries_but_requires_matching_inputs(self):
+        tokens = {goal: digit * 64 for goal, digit in
+                  (("left", "1"), ("front", "2"), ("right", "3"))}
+        inputs = {}
+        for role in ("R0", "FT4"):
+            inputs[role] = {}
+            for goal in tokens:
+                inputs[role][goal] = {"images": ["a"*64], "image_masks": ["b"*64],
+                    "language_tokens": tokens[goal], "language_mask": "c"*64,
+                    "state_before_projection": "d"*64, "image_shapes": [[1, 3, 128, 128]],
+                    "language_shape": [1, 2], "state_shape": [1, 7]}
+        rows = []
+        for goal in tokens:
+            for tensor in ("keys", "values"):
+                for group in ("image", "text", "state"):
+                    rows.append({"goal": goal, "layer": 0, "tensor": tensor, "group": group,
+                        "max_abs": 2.0, "rms": math.sqrt(2),
+                        "active": {"count": 1, "element_count": 1, "max_abs": 0.0, "rms": 0.0},
+                        "masked": {"count": 1, "element_count": 1, "max_abs": 2.0, "rms": 2.0}})
+        fixture = {"indices": [0], "prefix_input_hashes": [inputs], "prefix_audit": [rows],
+                   "layer_map": {"R0": [{"vlm_layer": 0, "expert_layer": 0, "kind": "SA"}]}}
+        result = audit_prefix_inputs(fixture)
+        self.assertEqual(result["max_abs_by_position_subset"]["all"]["text"], 2)
+        self.assertEqual(result["max_abs_by_position_subset"]["active"]["text"], 0)
+        changed = copy.deepcopy(fixture)
+        changed["prefix_audit"][0][0]["active"].update(max_abs=1e-4, rms=1e-4)
+        with self.assertRaisesRegex(ValueError, "Frozen valid"):
+            audit_prefix_inputs(changed)
+        changed = copy.deepcopy(fixture)
+        changed["prefix_input_hashes"][0]["FT4"]["left"]["language_tokens"] = "e"*64
+        with self.assertRaisesRegex(ValueError, "Preprocessed input mismatch"):
+            audit_prefix_inputs(changed)
 
 
 if __name__ == "__main__":

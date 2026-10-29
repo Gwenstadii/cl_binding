@@ -3,7 +3,12 @@
   "purpose": "steps 0-2 only: validate hooks, record condition messages, and test same-model message-to-velocity transfer",
   "runtime_root": "/home/lzx/cl_binding_stage2a",
   "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
-  "output_root": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_01",
+  "output_root": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02",
+  "engineering_repair": {
+    "preserved_attempt": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_01",
+    "reason": "all-position frozen-prefix check stopped before scored queries; separate valid and masked padding positions, preserving all-position diagnostics",
+    "unchanged": "checkpoints, states, noise, query matrix, identity threshold, native model computation"
+  },
   "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
   "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
   "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",

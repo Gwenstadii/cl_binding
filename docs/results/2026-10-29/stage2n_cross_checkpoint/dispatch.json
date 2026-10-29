@@ -1,0 +1,16 @@
+{
+  "pid": 27385,
+  "started_at": "2026-10-29T04:15:16.919606+00:00",
+  "registered_commit": "f3f7e2119fa5da22f994c1b284bc7792fbface7e",
+  "command": [
+    "/home/lzx/cl_binding/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding/.server/stage2n_cross_checkpoint_20261029_01/code/run_stage2n_cross_checkpoint.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2n_cross_checkpoint_20261029_01/code/stage2n_cross_checkpoint_20261029.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2n_cross_checkpoint_20261029_01/code",
+    "--registered-commit",
+    "f3f7e2119fa5da22f994c1b284bc7792fbface7e"
+  ]
+}

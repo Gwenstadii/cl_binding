@@ -83,6 +83,15 @@ class CrossCheckpointAuditTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not matched"):
             audit_random_norms(record, correct)
 
+    def test_zero_correct_difference_is_a_valid_null_random_control(self):
+        correct = {"effective_block_l2": blocks(0)}
+        record = {"target_block_l2": blocks(0), "desired_block_l2": blocks(0),
+                  "effective_block_l2": blocks(0), "cast_error_block_l2": blocks(0),
+                  "cast_input_block_l2": blocks(1)}
+        result = audit_random_norms(record, correct)
+        self.assertIsNone(result["global_effective_to_target_norm_ratio"])
+        self.assertEqual(result["max_absolute_actual_norm_difference"], 0)
+
     def test_duplicate_rows_cannot_cover_missing_conditions(self):
         rows = [{"goal": "left", "mode": "cross_same"}]*2
         with self.assertRaisesRegex(ValueError, "Duplicate"):

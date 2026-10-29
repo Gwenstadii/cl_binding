@@ -433,11 +433,11 @@ def audit(run, prior_baseline):
             "global_effective_to_target_norm_ratio_median":
                 median(r["global_effective_to_target_norm_ratio"] for r in random_summary),
             "global_effective_to_target_norm_ratio_min":
-                min(r["global_effective_to_target_norm_ratio"] for r in random_summary
-                    if r["global_effective_to_target_norm_ratio"] is not None),
+                min((r["global_effective_to_target_norm_ratio"] for r in random_summary
+                     if r["global_effective_to_target_norm_ratio"] is not None), default=None),
             "global_effective_to_target_norm_ratio_max":
-                max(r["global_effective_to_target_norm_ratio"] for r in random_summary
-                    if r["global_effective_to_target_norm_ratio"] is not None)},
+                max((r["global_effective_to_target_norm_ratio"] for r in random_summary
+                     if r["global_effective_to_target_norm_ratio"] is not None), default=None)},
         "per_condition": [], "paired_responses": paired, "source_files": files,
         "limits": [
             "Four reused development starts; inference seeds are not independent training seeds.",

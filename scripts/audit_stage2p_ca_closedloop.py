@@ -436,4 +436,3 @@ if __name__ == "__main__":
     result=audit(args.run)
     args.output.write_text(json.dumps(result,ensure_ascii=False,indent=2,allow_nan=False)+"\n",encoding="utf-8")
     print(json.dumps({"status":result["status"],"counts":result["counts"]}))
-

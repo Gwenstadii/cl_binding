@@ -1,0 +1,286 @@
+{
+  "status": "running",
+  "started_at": "2026-10-29T15:35:05.020609+00:00",
+  "registered_commit": "78ad7462237669fd142c244bcd3875ac7106d711",
+  "configuration": {
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ],
+    "horizon": 400,
+    "n_action_steps": 10,
+    "flow_steps": 10,
+    "noise_replan_stride": 1000003,
+    "random_seed_salt": 2026102905,
+    "identity_tolerance": 1e-05,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "output_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+    "sites": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "windows": [
+      120,
+      400
+    ],
+    "expected_episodes": 420,
+    "site": 1,
+    "intervention_steps": 120,
+    "save_videos": false,
+    "maximum_worker_minutes": 300,
+    "maximum_output_bytes": 4294967296,
+    "minimum_disk_free_bytes": 3221225472,
+    "total_deadline_seconds": 21600,
+    "primary_endpoint": "book centre overhead target region; lift >3cm; 5 consecutive steps; first target separately",
+    "movement_geometry": {
+      "canonical_scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+      "sites": {
+        "left": {
+          "centre": [
+            -0.410197,
+            -0.28346499999999997,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "front": {
+          "centre": [
+            -0.372867,
+            -0.137315,
+            0.92754
+          ],
+          "rotation": [
+            [
+              0.9999999999999998,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9999999999999998
+            ],
+            [
+              -0.0,
+              -0.9999999999999998,
+              0.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.03595,
+            0.06216
+          ]
+        },
+        "right": {
+          "centre": [
+            -0.410197,
+            0.005434999999999995,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "back": {
+          "centre": [
+            -0.437527,
+            -0.137315,
+            0.97258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.06216,
+            0.06046
+          ]
+        }
+      },
+      "source": "native fixed geometry, reset only; no model loaded"
+    },
+    "scope": "all-CA single-site M, two fixed windows, native/full-old positive controls; no training, no P/C/head combinations, no adaptive extension",
+    "expected_integrator_calls": 168000,
+    "expected_recipient_calls": 201280,
+    "expected_donor_calls": 99840,
+    "expected_norm_records": 33280
+  },
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "runtime_dirty_before": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "gpu_before": "0, 721, 0\n1, 37, 0",
+  "code_files": {
+    "stage2p_ca_closedloop.py": {
+      "bytes": 30324,
+      "sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07"
+    },
+    "audit_stage2n_cross_checkpoint.py": {
+      "bytes": 26144,
+      "sha256": "d5c7951808acf85acaf17913ff3988c66c04355dd690882ec093b9e45d31f52b"
+    },
+    "stage2k_response_swap.py": {
+      "bytes": 15657,
+      "sha256": "2292e5f99a022b6c899d5857888bc950ee401b02d4da989d47f8ffadf687cdcb"
+    },
+    "analyze_stage2p_movement.py": {
+      "bytes": 5997,
+      "sha256": "8f29879fa6982c1badb268944c4ef3dce9e304be70d4a546f9894b76ce67989a"
+    },
+    "stage2q_all_ca_overnight.py": {
+      "bytes": 8397,
+      "sha256": "1957853d8780d3024e4cbe72eb71186547b1a7c0d0ebe0ec89ee23edce27e6c3"
+    },
+    "stage2k_entry_handoff.py": {
+      "bytes": 24714,
+      "sha256": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d"
+    },
+    "stage2n_cross_checkpoint.py": {
+      "bytes": 43547,
+      "sha256": "756db032c3795f86cf485929b4e7cadbc57b8be77be070ac6ba7e459cb743650"
+    },
+    "audit_stage2p_ca_closedloop.py": {
+      "bytes": 25871,
+      "sha256": "791d08de435f832a11aae4120708aa3ccc389edbfb159f411c19f8bfe9eb60b0"
+    },
+    "audit_stage2q_all_ca.py": {
+      "bytes": 10628,
+      "sha256": "678d708681f9272a31a65bb8a76434422474911960a9fd497001ccf2d23d23ae"
+    },
+    "test_stage2q_all_ca.py": {
+      "bytes": 2000,
+      "sha256": "312397fec95006c009c21d2d714a7e57b8d10391e732b8b1efe77fe57a7a9ee7"
+    },
+    "run_stage2q_all_ca_overnight.py": {
+      "bytes": 4891,
+      "sha256": "cd242ac1522222647c8f120a16e400aebad33b9dffa44404ab1b78e9ed4aed0b"
+    },
+    "stage2m_cross_attention.py": {
+      "bytes": 41368,
+      "sha256": "09a4eed9c0ed98e4371a524ff2f8ff8118a14750e86cd29af8da6e33ab8a7618"
+    }
+  },
+  "phases": [
+    {
+      "name": "engineering",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code/stage2q_all_ca_overnight.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code/stage2q_all_ca_overnight_20261029.json",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--phase",
+        "engineering",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/engineering"
+      ],
+      "started_at": "2026-10-29T15:35:05.028080+00:00",
+      "returncode": 0,
+      "seconds": 57.16150389891118
+    },
+    {
+      "name": "evaluation",
+      "status": "running",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code/stage2q_all_ca_overnight.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code/stage2q_all_ca_overnight_20261029.json",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--phase",
+        "evaluation",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/evaluation"
+      ],
+      "started_at": "2026-10-29T15:36:02.190500+00:00"
+    }
+  ]
+}

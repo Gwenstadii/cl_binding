@@ -281,4 +281,14 @@ cat report.md
 
 只有控制器 `status: complete`、`COMPLETE.json` 存在且 `audit.json` 为 `passed`，才算整批验收通过。若没有完成，查看 `evaluation/progress.json` 的回合数；若为失败，查看 `FAILED.json` 及对应 `engineering.log`、`evaluation.log`、`audit.log`。不要直接重新执行控制器覆盖原目录。`results.csv` 可下载用于比较每条旧指令的正确搬运与首次错目标。
 
-启动状态：代码、固定表、5项CPU协议检查已就绪，待上传后先验收工程；不预写未运行的效果。
+### 实际派发与明早验收
+
+**已在北京时间 2026-10-29 23:35:03 派发**，控制器 PID **35299**，封存提交 `78ad7462237669fd142c244bcd3875ac7106d711`。本地与服务器5项CPU协议检查通过；全部8层的32组／320个逐flow工程检查通过，最大误差 **0**，工程worker耗时55.95秒（进程计57.16秒）。主组已开始，首次确认完成5/420回合、执行2340步，并继续推进。
+
+交接前再次确认：控制器仍为 `running`，已完成 **22/420 回合、8850 步**，前20个原生基线已结束，正在执行完整旧策略的120步阳性对照，未出现错误。后续自动进入全部CA层的固定队列。
+
+预计明日凌晨约 **01:35—03:35** 完成，约 **05:35** 达到6小时总时限；这是基于前批吞吐的估计，模型计算、日志与审计时间均在总预算中。断开SSH不停止任务，不需要手动接着跑下一层。worker运行中的旧状态字段可能仍显示 `initializing`，应结合控制器 `running`、`episodes_completed` 与 `steps_completed` 是否推进判断；全部完成后字段会变为 `complete`。
+
+已取回[派发记录](results/2026-10-29/stage2q_startup/dispatch.json)、[启动器快照](results/2026-10-29/stage2q_startup/launcher.json)、[全部层工程验收](results/2026-10-29/stage2q_startup/engineering.json)。这些是启动时的本地快照，**不是实时进度或夜间结果**；明早优先读取上述服务器目录中的文件。
+
+当前只确认挂起和工程通过，不预写420回合的效果。明早如果完成，`results.csv` 将包含105行逐指令条件统计，优先看 `box_correct`、`box_first_correct`、`first_right`，不要把 `terminal_correct` 当成当前研究的主指标。新批结果尚未取回本地，也没有声称找到有效层。

@@ -1,0 +1,311 @@
+{
+  "status": "passed",
+  "purpose": "render_original_executed_actions_no_policy_inference",
+  "source_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+  "renderer_sha256": "27597763cc89b6670f8ed9638d9599359871508a3e8a60cb78dba46d22b43d2f",
+  "source_events_sha256": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da",
+  "position_tolerance": 1e-07,
+  "policy_inference_calls": 0,
+  "training_updates": 0,
+  "right_is_FT4_native_not_R0_handoff": true,
+  "episodes": [
+    {
+      "file": "RIGHT_FT4_NATIVE_steps001-400_init00_seed2026102801_finalSUCCESS.mp4",
+      "episode_id": "j016|FT4|native|siteNone|w0|right|i0|s2026102801",
+      "requested_goal": "right",
+      "route": "FT4_NATIVE_steps001-400",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "right"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": null,
+        "right": 98,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "255ac830edef2e180eb276ac58691d1aaa2ca36b0c6102ac323c5b87bd6d8282",
+      "bytes": 636784
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_steps001-400_init00_seed2026102802_finalSUCCESS.mp4",
+      "episode_id": "j017|FT4|native|siteNone|w0|right|i0|s2026102802",
+      "requested_goal": "right",
+      "route": "FT4_NATIVE_steps001-400",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "right"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": null,
+        "right": 97,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "4bcf8aafcc3ebc33b6a183099fb38e49c9d28d4146458dee051cdab1f5e63d1b",
+      "bytes": 656809
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_steps001-400_init01_seed2026102801_finalFAIL.mp4",
+      "episode_id": "j018|FT4|native|siteNone|w0|right|i1|s2026102801",
+      "requested_goal": "right",
+      "route": "FT4_NATIVE_steps001-400",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "right"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": null,
+        "right": 107,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "3cb4ffa6a1be7400a45000f5ac48c4f7717c1242d49c11a8a3ad7533a2466cbb",
+      "bytes": 1042641
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_steps001-400_init01_seed2026102802_finalFAIL.mp4",
+      "episode_id": "j019|FT4|native|siteNone|w0|right|i1|s2026102802",
+      "requested_goal": "right",
+      "route": "FT4_NATIVE_steps001-400",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "right"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": null,
+        "right": 107,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "ed8b363ad28be3689bfbdd72bce7c6a7cf62a76f951a6411c98a9c656499cc3e",
+      "bytes": 1115775
+    },
+    {
+      "file": "LEFT_R0_steps001-120_then_FT4_steps121-400_init00_seed2026102801_finalSUCCESS.mp4",
+      "episode_id": "j020|FT4|full_old_response|siteNone|w120|left|i0|s2026102801",
+      "requested_goal": "left",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "left"
+      ],
+      "original_box_times": {
+        "left": 97,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "da56109e40620ff54a158a55f6b1e39b91dbd344820733398580f0f5a7eb4de5",
+      "bytes": 828211
+    },
+    {
+      "file": "LEFT_R0_steps001-120_then_FT4_steps121-400_init00_seed2026102802_finalSUCCESS.mp4",
+      "episode_id": "j021|FT4|full_old_response|siteNone|w120|left|i0|s2026102802",
+      "requested_goal": "left",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "left"
+      ],
+      "original_box_times": {
+        "left": 98,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "dc98d23b6a5806b4738147ef9c7748e554eaf20860b100e66035cd80345a64fe",
+      "bytes": 800357
+    },
+    {
+      "file": "LEFT_R0_steps001-120_then_FT4_steps121-400_init01_seed2026102801_finalSUCCESS.mp4",
+      "episode_id": "j022|FT4|full_old_response|siteNone|w120|left|i1|s2026102801",
+      "requested_goal": "left",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "left"
+      ],
+      "original_box_times": {
+        "left": 101,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "c997d092854f8f849a31b39b089420a2b5f954a4d9a6a24ab722126fc78ca199",
+      "bytes": 868537
+    },
+    {
+      "file": "LEFT_R0_steps001-120_then_FT4_steps121-400_init01_seed2026102802_finalSUCCESS.mp4",
+      "episode_id": "j023|FT4|full_old_response|siteNone|w120|left|i1|s2026102802",
+      "requested_goal": "left",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "left"
+      ],
+      "original_box_times": {
+        "left": 100,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "ee06dd6d29c5f2a1d7e9e5231cfebaf5da14b51010b3bfa9b35e201f46e57c23",
+      "bytes": 854918
+    },
+    {
+      "file": "FRONT_R0_steps001-120_then_FT4_steps121-400_init00_seed2026102801_finalSUCCESS.mp4",
+      "episode_id": "j024|FT4|full_old_response|siteNone|w120|front|i0|s2026102801",
+      "requested_goal": "front",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 119,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "6fe8dddec6e1a9b615639cb0f5b7bd5e04ed34f43b63e6c7adcfd8609490bba2",
+      "bytes": 804390
+    },
+    {
+      "file": "FRONT_R0_steps001-120_then_FT4_steps121-400_init00_seed2026102802_finalSUCCESS.mp4",
+      "episode_id": "j025|FT4|full_old_response|siteNone|w120|front|i0|s2026102802",
+      "requested_goal": "front",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 127,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "97168b2783222483afdd2fae2f304530efb6b9f0db2fca55098c848c27ec8a7c",
+      "bytes": 916359
+    },
+    {
+      "file": "FRONT_R0_steps001-120_then_FT4_steps121-400_init01_seed2026102801_finalSUCCESS.mp4",
+      "episode_id": "j026|FT4|full_old_response|siteNone|w120|front|i1|s2026102801",
+      "requested_goal": "front",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": true,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 130,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "772971287ef87307087d0a20840b9932f6a8cda45cc52d984d0f4f8fa1856106",
+      "bytes": 823064
+    },
+    {
+      "file": "FRONT_R0_steps001-120_then_FT4_steps121-400_init01_seed2026102802_finalFAIL.mp4",
+      "episode_id": "j027|FT4|full_old_response|siteNone|w120|front|i1|s2026102802",
+      "requested_goal": "front",
+      "route": "R0_steps001-120_then_FT4_steps121-400",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": false,
+      "original_box_correct": false,
+      "original_box_first_targets": [],
+      "original_box_times": {
+        "left": null,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "96db5d9e23676cfdcb7fd693b80589a76c22ce20d187d2612ee7c5e5893cdf39",
+      "bytes": 866264
+    }
+  ]
+}

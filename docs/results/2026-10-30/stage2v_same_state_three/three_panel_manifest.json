@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "order": [
+    "left",
+    "front",
+    "right"
+  ],
+  "videos": [
+    {
+      "file": "SAME_STATE_R0_LEFT80_then_FT4_LEFT_FRONT_RIGHT_init0_seed2026102801.mp4",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded": 400,
+      "sha256": "0501c69493bad6963b2dcbd7ae060c7875ef53e03b73a19381bea7a415225aa5",
+      "bytes": 1606622
+    },
+    {
+      "file": "SAME_STATE_R0_LEFT80_then_FT4_LEFT_FRONT_RIGHT_init0_seed2026102802.mp4",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded": 400,
+      "sha256": "a81b6e5f6e7fc8fdea623c55af0742df740fe273e598acb46a43eb39681b3d7a",
+      "bytes": 1605250
+    },
+    {
+      "file": "SAME_STATE_R0_LEFT80_then_FT4_LEFT_FRONT_RIGHT_init1_seed2026102801.mp4",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded": 400,
+      "sha256": "feeb95e7bf0d918bb89f4620621e9f25fd463584202c3fa04f665f0661603564",
+      "bytes": 1615579
+    },
+    {
+      "file": "SAME_STATE_R0_LEFT80_then_FT4_LEFT_FRONT_RIGHT_init1_seed2026102802.mp4",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded": 400,
+      "sha256": "f5c450810715fc1c5d1f1ffef7bc9bfb69f095c7258d64f846ad4a234047725e",
+      "bytes": 1687925
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "models": {
+    "teacher": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f"
+  },
+  "sources": {
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+  },
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "runtime_dirty": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "gpu_after": "0, 721, 0\n1, 37, 0",
+  "passed": true
+}

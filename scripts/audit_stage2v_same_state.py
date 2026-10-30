@@ -98,8 +98,8 @@ def audit(root,local_reference_base=None):
     return {'status':'passed','episodes':12,'replicated_LF_episodes':8,'new_Right_branches':4,'replay_position_max_abs':max_error,
             'per_condition':table,'direction_rows':directions,'video_checks':video_checks,
             'limits':['Two development starts and two noises, no parameter updates.',
-                'Same instruction throughout; this does not compare three instructions from the SAME handoff state.',
-                'R0 was not trained on Right; its Right prefix is exploratory.',
+                'R0 Left prefix is identical; FT4 continuation instruction varies from the SAME restored state.',
+                'R0 only supplies Left prefix; Right continuation uses FT4, which was trained on Right.',
                 'Command projections are sums of native Cartesian goal offsets, NOT integrated displacement or latent intentions.']}
 
 

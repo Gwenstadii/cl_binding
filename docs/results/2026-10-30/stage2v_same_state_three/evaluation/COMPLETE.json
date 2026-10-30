@@ -1,0 +1,434 @@
+{
+  "status": "complete",
+  "phase": "evaluation",
+  "started_at": "2026-10-30T10:05:35.985958+00:00",
+  "scope": "R0 Left80 saved full state, restored into FT4 Left/Front/Right; no training",
+  "configuration": {
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ],
+    "horizon": 400,
+    "n_action_steps": 10,
+    "flow_steps": 10,
+    "noise_replan_stride": 1000003,
+    "random_seed_salt": 2026102905,
+    "identity_tolerance": 1e-05,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "output_root": "/home/lzx/cl_binding/.server/stage2v_same_state_three_20261030_02",
+    "site": 1,
+    "intervention_steps": 120,
+    "save_videos": true,
+    "maximum_worker_minutes": 40,
+    "maximum_output_bytes": 1073741824,
+    "minimum_disk_free_bytes": 3221225472,
+    "total_deadline_seconds": 3600,
+    "primary_endpoint": "first transported target, whole path and continuation; commanded Cartesian delta and observed eef/book progress",
+    "movement_geometry": {
+      "canonical_scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+      "sites": {
+        "left": {
+          "centre": [
+            -0.410197,
+            -0.28346499999999997,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "front": {
+          "centre": [
+            -0.372867,
+            -0.137315,
+            0.92754
+          ],
+          "rotation": [
+            [
+              0.9999999999999998,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9999999999999998
+            ],
+            [
+              -0.0,
+              -0.9999999999999998,
+              0.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.03595,
+            0.06216
+          ]
+        },
+        "right": {
+          "centre": [
+            -0.410197,
+            0.005434999999999995,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "back": {
+          "centre": [
+            -0.437527,
+            -0.137315,
+            0.97258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.06216,
+            0.06046
+          ]
+        }
+      },
+      "source": "native fixed geometry, reset only; no model loaded"
+    },
+    "scope": "R0 Left prefix80 then saved full snapshot restored into FT4 Left/Front/Right branches",
+    "source_reference_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+    "source_reference_hashes": {
+      "manifest.json": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3",
+      "episodes.jsonl": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055",
+      "events.jsonl.gz": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da",
+      "replans.jsonl.gz": "2a22616ef17b57fe447c95a9e6c7d801709469832df4769978de6bb2f925aaec"
+    },
+    "boundaries": [
+      80
+    ],
+    "source_models": [
+      "R0",
+      "FT4"
+    ],
+    "prefix_goals": [
+      "left",
+      "front"
+    ],
+    "continuation_models": [
+      "R0",
+      "FT4"
+    ],
+    "continuation_goals": [
+      "left",
+      "front"
+    ],
+    "expected_episodes": 12,
+    "expected_continuation_steps": 61440,
+    "expected_replayed_prefix_steps": 15360,
+    "expected_continuation_replans": 6144,
+    "snapshot_rule": "deterministic full original-prefix action replay for each branch; compare sim, controller, image hashes; no partial-state restore",
+    "goals": [
+      "left",
+      "front",
+      "right"
+    ],
+    "references": {
+      "q": {
+        "server_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+        "files": {
+          "manifest.json": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3",
+          "episodes.jsonl": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055",
+          "events.jsonl.gz": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da"
+        }
+      },
+      "r": {
+        "server_root": "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+        "files": {
+          "manifest.json": "a17d5aceb7284c2dadc4c9324d49032ed28186572deda14abd027098ef6bd4f9",
+          "episodes.jsonl": "902e6349594f6c41d7980cc647048ab637f2d0fb723b75fb869e138807e4f008",
+          "events.jsonl.gz": "09e3741fa93d288ebc7c6cbb063dad810a5f27fc12182031dbc94645a5eff940"
+        }
+      }
+    },
+    "right_teacher_status": "R0 was not trained on Right; Right-prefix intervention is exploratory, not a qualified teacher or same-state instruction-switch test",
+    "direction_windows": [
+      10,
+      20,
+      40
+    ]
+  },
+  "script_sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07",
+  "config_sha256": "af632a5e5f00ede243ea78cd84aef52977410b43711fa976e98813a29f7c2b80",
+  "episodes_completed": 12,
+  "steps_completed": 4800,
+  "replans_completed": 0,
+  "no_early_stop_on_success": true,
+  "horizon": 400,
+  "processor_hashes": {
+    "policy_preprocessor.json": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+    "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "model_sha256": {
+    "R0": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "FT4": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f"
+  },
+  "layer_map": {
+    "R0": {
+      "site": 1,
+      "expert_layer": 1,
+      "o_in_features": 960,
+      "o_out_features": 720
+    },
+    "FT4": {
+      "site": 1,
+      "expert_layer": 1,
+      "o_in_features": 960,
+      "o_out_features": 720
+    }
+  },
+  "random_block_semantics": "15 contiguous post-W_O output coordinate blocks; NOT actual attention heads",
+  "sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "model": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "expert": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+    }
+  },
+  "instructions": {
+    "front": "pick up the book and place it in the front compartment of the caddy",
+    "left": "pick up the book and place it in the left compartment of the caddy",
+    "right": "pick up the book and place it in the right compartment of the caddy",
+    "back": "pick up the book and place it in the back compartment of the caddy"
+  },
+  "predicates": {
+    "front": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_front_contain_region"
+      ]
+    ],
+    "left": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_left_contain_region"
+      ]
+    ],
+    "right": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_right_contain_region"
+      ]
+    ],
+    "back": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_back_contain_region"
+      ]
+    ]
+  },
+  "scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+  "driver_sha256": "3f670644409cb85afc860c3be0bdb87d513ad356af39f98e680d891eb1839317",
+  "controller_source": {
+    "path": "/home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/controllers/osc.py",
+    "sha256": "cfa62a0e719bc53ef0c701efa66f7b3e2272d4fca2150ec73c05bb145eba85cb"
+  },
+  "counts": {
+    "denoise_calls_by_model": {
+      "R0": 0,
+      "FT4": 3840
+    },
+    "patch_flows": 0,
+    "donor_denoise_calls": 0,
+    "recipient_denoise_calls": 3840,
+    "prefix_builds": 384,
+    "integrator_velocity_calls": 3840,
+    "extra_random_recipient_calibration_calls": 0,
+    "official_engineering_flow_calls": 0,
+    "engineering_self_replacements": 0,
+    "episodes": 12,
+    "steps": 4800,
+    "replans": 0
+  },
+  "finished_at": "2026-10-30T10:08:51.403824+00:00",
+  "elapsed_seconds": 195.4178820019588,
+  "no_followup_launched": true,
+  "actual_message_witness_max_abs": 0.0,
+  "cache_isolation_checks": 3840,
+  "files": {
+    "engineering.json": {
+      "bytes": 9980,
+      "sha256": "cd6ffeb6f27876fc7236f46ca31c752390b8645c8c57b8e7a9c4523821a64684"
+    },
+    "events.jsonl.gz": {
+      "bytes": 2227272,
+      "sha256": "37945b1d4af5d0f5793c34b1f2ef9b170d633381e4dcd66f1b3d4dba5bbefb29"
+    },
+    "episodes.jsonl": {
+      "bytes": 26308,
+      "sha256": "8f47b75909729b12d09f205077878c30211bbf8f44950b5b34976fdb73374d29"
+    },
+    "replans.jsonl.gz": {
+      "bytes": 10440,
+      "sha256": "b59ee55d1ee0596f5f9f5c29253caf870b529168e581d977968e4c6a5519e61c"
+    },
+    "snapshots/i0_s2026102802.npz": {
+      "bytes": 171367,
+      "sha256": "df718ba84c034fd65aca1d575f8c8cc22db2a30c6dfe2ae2b8df971a70febcfe"
+    },
+    "snapshots/i1_s2026102801.npz": {
+      "bytes": 173370,
+      "sha256": "49fc7422937b1c3a5008f10b006ad6c9bf54933aea5e7d3ac75f4d28a11e9ed1"
+    },
+    "snapshots/i0_s2026102802.json": {
+      "bytes": 35457,
+      "sha256": "8f0f80aa4e38453d4f58cd857edbcafc06bb8f2cd2e8cf1a9467f779a2207cd6"
+    },
+    "snapshots/i0_s2026102801.json": {
+      "bytes": 35427,
+      "sha256": "2ffc76a42a1259e36927f195c85f22fafeb98500b34823b826995d552d4f8881"
+    },
+    "snapshots/i0_s2026102801.npz": {
+      "bytes": 173428,
+      "sha256": "290acae09a01ef44476554f63730c0ef88163ff39560ed0babe73a9e85f7e632"
+    },
+    "snapshots/i1_s2026102802.json": {
+      "bytes": 35416,
+      "sha256": "76b3e8cc420ef677e67b27991e052e58a17fc17ad78ac11730a51efdd77e40cd"
+    },
+    "snapshots/i1_s2026102801.json": {
+      "bytes": 35341,
+      "sha256": "5ea7f002acd9a975724a083016d5a05d037b94dc9b75c05bf516d3246d51291b"
+    },
+    "snapshots/i1_s2026102802.npz": {
+      "bytes": 170986,
+      "sha256": "b08d8c8e69580e692b68f54e1cd7a8d53e3a3cc8b320826ab2da982d6138572e"
+    },
+    "videos/FRONT_R0_LEFT_001-080_then_FT4_FRONT_081-400_init01_seed2026102801.mp4": {
+      "bytes": 882773,
+      "sha256": "8bd349ab9f79ce82025dc44739563073cc899dd1bb5b56236a1012afa8cd4cdb"
+    },
+    "videos/FRONT_R0_LEFT_001-080_then_FT4_FRONT_081-400_init00_seed2026102802.mp4": {
+      "bytes": 858560,
+      "sha256": "11f1d795befdabfe9d0d2e530e856796931a814b6e0d99952c4e9a8238d2f537"
+    },
+    "videos/RIGHT_R0_LEFT_001-080_then_FT4_RIGHT_081-400_init01_seed2026102802.mp4": {
+      "bytes": 866129,
+      "sha256": "d0ac7b6e02b6d495f35a756a9681b67254d26076069700a6d2f6323920443575"
+    },
+    "videos/RIGHT_R0_LEFT_001-080_then_FT4_RIGHT_081-400_init00_seed2026102802.mp4": {
+      "bytes": 837644,
+      "sha256": "27f676a94735eb4900f0d5f097b6834ea317c13f20fa51883ffa2b30012ef915"
+    },
+    "videos/LEFT_R0_LEFT_001-080_then_FT4_LEFT_081-400_init01_seed2026102801.mp4": {
+      "bytes": 865807,
+      "sha256": "c4d4d75ab571db47702c20e3723dc014083b9fb79e8c55c0792e49784c927987"
+    },
+    "videos/LEFT_R0_LEFT_001-080_then_FT4_LEFT_081-400_init00_seed2026102801.mp4": {
+      "bytes": 833463,
+      "sha256": "bade53c5cdcb755c882eebc06f9113a078d969813e3135df6c4fc24971d423ac"
+    },
+    "videos/FRONT_R0_LEFT_001-080_then_FT4_FRONT_081-400_init00_seed2026102801.mp4": {
+      "bytes": 877940,
+      "sha256": "dcd259736f494963ec32d850adb409889bb5259d24693bf7acb50e40c28e1956"
+    },
+    "videos/FRONT_R0_LEFT_001-080_then_FT4_FRONT_081-400_init01_seed2026102802.mp4": {
+      "bytes": 853364,
+      "sha256": "871b87ee13e370539fe9c26195378771730f4417a4f67cb9107157b599657512"
+    },
+    "videos/RIGHT_R0_LEFT_001-080_then_FT4_RIGHT_081-400_init00_seed2026102801.mp4": {
+      "bytes": 813075,
+      "sha256": "dd09b5e4d8b21924da8c48edbcaf6f1276773bc335d4594fc4b7ca1943490451"
+    },
+    "videos/RIGHT_R0_LEFT_001-080_then_FT4_RIGHT_081-400_init01_seed2026102801.mp4": {
+      "bytes": 788799,
+      "sha256": "749d876f6acb87ed98011ffaa0d6d74a00a40d56a373bf0e9455c8bf01c6594b"
+    },
+    "videos/LEFT_R0_LEFT_001-080_then_FT4_LEFT_081-400_init01_seed2026102802.mp4": {
+      "bytes": 907285,
+      "sha256": "96af571e43fa57d84942952dc8f0810f3a4190b5042cb5e19c8db687a63c886b"
+    },
+    "videos/LEFT_R0_LEFT_001-080_then_FT4_LEFT_081-400_init00_seed2026102802.mp4": {
+      "bytes": 832506,
+      "sha256": "dd739598cefb7fa0780edeac0ece247d2c8c6b32e769224a451230484e9ae741"
+    }
+  }
+}

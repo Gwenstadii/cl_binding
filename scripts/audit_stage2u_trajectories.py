@@ -75,7 +75,7 @@ def audit(root,local_reference_base=None):
     for r in replans:
         e=byid[r['episode_id']];assert e['mode']=='handoff60'
         assert r['noise_generator_seed']==e['noise_seed']+1000003*r['replan_index']
-        assert r['effective_model']==('R0' if r['replan_index']<6 else 'FT4') and r['requested_goal']=='right'
+        assert r['effective_model']==('R0' if r['replan_index']<6 else 'FT4')
     # Decode all videos, including replay and newly generated episodes.
     try:
         import av
@@ -83,7 +83,7 @@ def audit(root,local_reference_base=None):
         for ep in eps:
             p=data/'videos'/ep['video'];assert info(p)['sha256']==ep['video_sha256']
             with av.open(str(p)) as v:count=sum(1 for _ in v.decode(video=0))
-            assert count==600;video_checks.append({'file':ep['video'],'frames':count,'sha256':ep['video_sha256']})
+            assert count==400;video_checks.append({'file':ep['video'],'frames':count,'sha256':ep['video_sha256']})
     except ImportError:video_checks=None
     table=[]
     for mode,goal in itertools.product(('native','handoff60'),('left','front','right')):

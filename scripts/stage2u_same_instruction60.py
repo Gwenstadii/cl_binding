@@ -73,7 +73,7 @@ def sensor_details(env,obs,np):
 def validate(cfg):
     assert cfg['goals']==['left','front','right'] and cfg['boundaries']==[60]
     assert cfg['indices']==[0,1] and cfg['seeds']==[2026102801,2026102802]
-    assert cfg['horizon']==600 and cfg['n_action_steps']==cfg['flow_steps']==10 and cfg['expected_episodes']==24
+    assert cfg['horizon']==400 and cfg['n_action_steps']==cfg['flow_steps']==10 and cfg['expected_episodes']==24
 
 
 def protocol(report):

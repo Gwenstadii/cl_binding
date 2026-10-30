@@ -27,9 +27,9 @@ def main(root,output):
                         for packet in stream.encode(av.VideoFrame.from_ndarray(pixels,format='rgb24')):out.mux(packet)
                         count+=1
                     for packet in stream.encode():out.mux(packet)
-                assert count==600
+                assert count==400
                 with av.open(str(output/name)) as v:decoded=sum(1 for _ in v.decode(video=0))
-                assert decoded==600
+                assert decoded==400
                 row={'file':name,'requested_goal':goal,'init_index':index,'noise_seed':seed,'frames':count,
                      'decoded_frames':decoded,'left_native_source':a.name,'right_handoff_source':b.name,
                      'sha256':hashlib.sha256((output/name).read_bytes()).hexdigest(),'bytes':(output/name).stat().st_size}

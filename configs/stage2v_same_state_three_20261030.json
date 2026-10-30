@@ -25,7 +25,7 @@
   "random_seed_salt": 2026102905,
   "identity_tolerance": 1e-05,
   "parent_qualification": "historical exploratory LF12k, not formally qualified",
-  "output_root": "/home/lzx/cl_binding/.server/stage2v_same_state_three_20261030_01",
+  "output_root": "/home/lzx/cl_binding/.server/stage2v_same_state_three_20261030_02",
   "site": 1,
   "intervention_steps": 120,
   "save_videos": true,

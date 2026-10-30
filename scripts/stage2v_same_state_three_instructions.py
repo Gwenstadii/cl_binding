@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import stage2p_ca_closedloop as base
 from stage2r_early_handoff import physical_row, compare_state, signature
-from stage2k_entry_handoff import _snapshot, _restore_snapshot
+from stage2k_entry_handoff import _snapshot, _restore_snapshot, _numeric_attributes, _restore_attributes
 from stage2r_handoff_protocol import summarize_episode
 
 ORIGINAL_ENGINEERING=base.engineering
@@ -126,12 +126,22 @@ def evaluate(args,cfg,report,rt,evaluation,env,states,xml,instructions,root_cfg,
                             sid=f'i{index}_s{seed}'
                             if g=='left':
                                 arrays,meta_snapshot=_snapshot(env,obs)
+                                meta_snapshot['observables']={k:_numeric_attributes(v) for k,v in env.env._observables.items()}
+                                for k,v in env.env._obs_cache.items():arrays['cache_'+k]=rt.np.asarray(v).copy()
+                                for name,observable in env.env._observables.items():
+                                    for attr,value in vars(observable).items():
+                                        if isinstance(value,rt.np.ndarray):arrays['observable_'+name+'__'+attr]=value.copy()
                                 rt.np.savez_compressed(snapshots/(sid+'.npz'),**arrays)
                                 base.write(snapshots/(sid+'.json'),meta_snapshot)
                             with rt.np.load(snapshots/(sid+'.npz')) as saved:arrays={k:saved[k].copy() for k in saved.files}
                             meta_snapshot=json.loads((snapshots/(sid+'.json')).read_text())
                             witness.close()
                             obs,restore_check=_restore_snapshot(env,xml,arrays,meta_snapshot,root_cfg['seed']+index)
+                            env.env._obs_cache={k[6:]:value.copy() for k,value in arrays.items() if k.startswith('cache_')}
+                            for name,attrs in meta_snapshot['observables'].items():_restore_attributes(env.env._observables[name],attrs)
+                            for k,value in arrays.items():
+                                if k.startswith('observable_'):
+                                    name,attr=k[len('observable_'):].split('__',1);setattr(env.env._observables[name],attr,value.copy())
                             restored_signature=signature(env,obs,rt.np)
                             witness=ControlWitness(env,rt.np)
                         if replan<8:

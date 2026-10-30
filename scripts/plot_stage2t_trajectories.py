@@ -48,7 +48,7 @@ def plot(root):
                 ax.plot(steps,z,color=colors[mode],linestyle=style,label=mode+' '+entity)
         ax.axvline(40,color='#bf773c',linestyle='--');ax.set(xlim=(20,120),xlabel='Executed step',ylabel='World Z (m)',title=f'{g.upper()}: height around handoff')
     axes[0,0].legend(frameon=False,fontsize=8);axes[0,2].legend(frameon=False,fontsize=8)
-    fig.suptitle('SAME instruction throughout; init 0, noise 2026102801\nDashed = steps 1-40; star = step 40; arrow = actual displacement 40-90; Right R0 prefix is untrained',fontsize=12)
+    fig.suptitle('SAME instruction throughout; init 0, noise 2026102801\nDashed = steps 1-40; star = step 40; arrow = actual displacement 40-50; Right R0 prefix is untrained',fontsize=12)
     fig.tight_layout(rect=(0,0,1,.94));fig.savefig(root/'paired_paths_example.png',dpi=160,bbox_inches='tight');plt.close(fig)
     for entity in ('book','eef'):
         fig,axes=plt.subplots(4,3,figsize=(13,15))
@@ -56,7 +56,7 @@ def plot(root):
             for x,g in enumerate(('left','front','right')):
                 path(axes[y,x],g,index,seed,entity);axes[y,x].set_title(f'{g.upper()} | init {index} | noise {seed}')
         axes[0,0].legend(frameon=False,fontsize=8)
-        fig.suptitle(f'All paired {entity} XY trajectories: native FT4 vs same-instruction R0 first 40 -> FT4\nStars = step 40; arrows = actual motion 40-90. Right prefix is exploratory.',fontsize=12)
+        fig.suptitle(f'All paired {entity} XY trajectories: native FT4 vs same-instruction R0 first 40 -> FT4\nStars = step 40; arrows = actual motion 40-50. Right prefix is exploratory.',fontsize=12)
         fig.tight_layout(rect=(0,0,1,.95));fig.savefig(root/f'all_pairs_{entity}.png',dpi=150,bbox_inches='tight');plt.close(fig)
     audit=json.loads((root/'audit.json').read_text());ds=audit['direction_rows']
     fig,axes=plt.subplots(1,3,figsize=(14,4.5))

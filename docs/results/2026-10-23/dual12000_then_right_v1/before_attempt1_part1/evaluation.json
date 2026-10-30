@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "partition": "paired",
+  "checkpoint": "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "policy_source": "checkpoint",
+  "instruction_goals": [
+    "left",
+    "front",
+    "right"
+  ],
+  "gate_goals": [
+    "right"
+  ],
+  "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "git_commit": "5514c303d5b516a5b565ef777972d69f5bf83480",
+  "counts": {
+    "left": {
+      "total": 20,
+      "correct": 16
+    },
+    "front": {
+      "total": 20,
+      "correct": 16
+    },
+    "right": {
+      "total": 20,
+      "correct": 0
+    }
+  },
+  "passed_gate": false,
+  "seconds": 660.7511991108768,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false
+}

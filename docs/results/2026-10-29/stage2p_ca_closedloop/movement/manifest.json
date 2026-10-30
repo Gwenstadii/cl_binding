@@ -1,0 +1,20 @@
+{
+  "status": "verified_posthoc_supplement",
+  "original_data_unchanged": true,
+  "analysis_reproduced_exactly": true,
+  "script_sha256": "8f29879fa6982c1badb268944c4ef3dce9e304be70d4a546f9894b76ce67989a",
+  "files": {
+    "geometry.json": {
+      "bytes": 1886,
+      "sha256": "7a95c080d9ad8718f3d833a79ef671fa0d10dacf1992b2798cae1007c783fba8"
+    },
+    "results.json": {
+      "bytes": 351393,
+      "sha256": "bd9980cde348ef99e8ed02a8fa26145417d897ab1a9f24ef68a9f8651d1dec7c"
+    },
+    "transport_paths.png": {
+      "bytes": 108340,
+      "sha256": "9faf60973de88e4e5dc1c5614b764d9cfb8ad43952fd8d7fa2dfc2e78d1ea39d"
+    }
+  }
+}

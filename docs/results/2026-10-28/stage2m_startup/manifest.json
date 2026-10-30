@@ -1,0 +1,17 @@
+{
+  "purpose": "preserved engineering dispatch/failure evidence, not scored results",
+  "files": {
+    "dispatch.json": {
+      "bytes": 621,
+      "sha256": "809be05e485e7a8aed80cc969cb45a24735211b2473afd455b41ed740d1b82ce"
+    },
+    "launcher.json": {
+      "bytes": 5454,
+      "sha256": "df0c72c2cc99b87488521504b7f2f7e6676a5acd8c28b4d69b86766754f4c6c0"
+    },
+    "registered_config.json": {
+      "bytes": 3165,
+      "sha256": "36abe4c6ba12abe22747f46aed77ce91a7706bc1e0a12cab20bb8a7ba277805b"
+    }
+  }
+}

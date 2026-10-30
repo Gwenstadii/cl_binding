@@ -1,0 +1,41 @@
+{
+  "scope": "engineering validation only; no mechanism success claim",
+  "response_registration_commit": "ad104ec",
+  "entry_registration_commit": "99985fd",
+  "files": {
+    "entry_dispatch.json": {
+      "bytes": 582,
+      "sha256": "bf462efe515ac36f1a17f9b19e4b550ff7c1e7f436af939e8e373d2fb2a81f2b"
+    },
+    "entry_restore_failure_diagnosis.json": {
+      "bytes": 4698,
+      "sha256": "9825056a52105c7ae1139d45cdaed97c442b886999554f240f4b16a5b3eee7a9"
+    },
+    "entry_restore_selfstep.json": {
+      "bytes": 2973,
+      "sha256": "05bd6cd0e3f79e761493be5a38176c7cafa16254f64d87166d015701fe49c1c6"
+    },
+    "entry_smoke_manifest.json": {
+      "bytes": 16280,
+      "sha256": "5a9e793470385dd332a4fe6c473c20ac8c8d27aefc2324361741b0f6d773ec45"
+    },
+    "failed_batched_sampling_identity.json": {
+      "bytes": 183,
+      "sha256": "b2136516c1de55cd10fdc3a841b48b75d357cc14468b283aa165c14b160d1b0f"
+    },
+    "response_dispatch.json": {
+      "bytes": 530,
+      "sha256": "9ab136915b9dd0fab670ec63ff1d9eb099b6181910d2a9f151cd98382b8dabee"
+    },
+    "sampling_identity.json": {
+      "bytes": 617,
+      "sha256": "23dc04e63e37044ece02a0f0c164367164b050557897a7c5f69db1d22bbba0b1"
+    }
+  },
+  "entry_full_smoke": {
+    "prefixes": 4,
+    "snapshots": 3,
+    "continuations": 6,
+    "exact_restore_checks": true
+  }
+}

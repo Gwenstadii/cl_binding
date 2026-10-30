@@ -1,0 +1,185 @@
+{
+  "snapshot_step": 120,
+  "physical_state_max_error": 0.0,
+  "restored_errors": {
+    "robot0_joint_pos": {
+      "max": 0.0006687734811490209,
+      "mae": 0.00030702753449023915
+    },
+    "robot0_joint_pos_cos": {
+      "max": 0.0005131969314570856,
+      "mae": 0.0001868629297826437
+    },
+    "robot0_joint_pos_sin": {
+      "max": 0.0005605173959264409,
+      "mae": 0.0002029787990541388
+    },
+    "robot0_joint_vel": {
+      "max": 0.001649923526400865,
+      "mae": 0.0006228071944527179
+    },
+    "robot0_eef_pos": {
+      "max": 0.00035300903094298564,
+      "mae": 0.0002519770624450912
+    },
+    "robot0_eef_quat": {
+      "max": 0.0005469487609025547,
+      "mae": 0.00026386572192330354
+    },
+    "robot0_gripper_qpos": {
+      "max": 8.18473026452729e-07,
+      "mae": 5.702253213866332e-07
+    },
+    "robot0_gripper_qvel": {
+      "max": 2.360311392652736e-06,
+      "mae": 2.315495556301893e-06
+    },
+    "agentview_image": {
+      "max": 54.0,
+      "mae": 0.07246907552083333
+    },
+    "robot0_eye_in_hand_image": {
+      "max": 46.0,
+      "mae": 0.3402303059895833
+    },
+    "black_book_1_pos": {
+      "max": 0.00036816468565431526,
+      "mae": 0.0002692511545042779
+    },
+    "black_book_1_quat": {
+      "max": 0.0006684709330467831,
+      "mae": 0.000228609023777979
+    },
+    "black_book_1_to_robot0_eef_pos": {
+      "max": 7.4430681595849535e-06,
+      "mae": 3.494958993173943e-06
+    },
+    "black_book_1_to_robot0_eef_quat": {
+      "max": 2.958066761493683e-05,
+      "mae": 1.5080440789461136e-05
+    },
+    "red_coffee_mug_1_pos": {
+      "max": 0.0,
+      "mae": 0.0
+    },
+    "red_coffee_mug_1_quat": {
+      "max": 1.7490605674002702e-16,
+      "mae": 6.822339523387076e-17
+    },
+    "red_coffee_mug_1_to_robot0_eef_pos": {
+      "max": 0.00035133192926095624,
+      "mae": 0.00022747976400872005
+    },
+    "red_coffee_mug_1_to_robot0_eef_quat": {
+      "max": 0.0006835013628005981,
+      "mae": 0.00021087750792503357
+    },
+    "robot0_proprio-state": {
+      "max": 0.001649923526400865,
+      "mae": 0.00028345899285236006
+    },
+    "object-state": {
+      "max": 0.0006835013628005981,
+      "mae": 0.00011853376866031011
+    }
+  },
+  "repeated_fresh_errors": {
+    "robot0_joint_pos": {
+      "max": 0.0006687734811490209,
+      "mae": 0.00030702753449023915
+    },
+    "robot0_joint_pos_cos": {
+      "max": 0.0005131969314570856,
+      "mae": 0.0001868629297826437
+    },
+    "robot0_joint_pos_sin": {
+      "max": 0.0005605173959264409,
+      "mae": 0.0002029787990541388
+    },
+    "robot0_joint_vel": {
+      "max": 0.001649923526400865,
+      "mae": 0.0006228071944527179
+    },
+    "robot0_eef_pos": {
+      "max": 0.00035300903094298564,
+      "mae": 0.0002519770624450912
+    },
+    "robot0_eef_quat": {
+      "max": 0.0005469487609025547,
+      "mae": 0.00026386572192330354
+    },
+    "robot0_gripper_qpos": {
+      "max": 8.18473026452729e-07,
+      "mae": 5.702253213866332e-07
+    },
+    "robot0_gripper_qvel": {
+      "max": 2.360311392652736e-06,
+      "mae": 2.315495556301893e-06
+    },
+    "agentview_image": {
+      "max": 54.0,
+      "mae": 0.07246907552083333
+    },
+    "robot0_eye_in_hand_image": {
+      "max": 46.0,
+      "mae": 0.3402303059895833
+    },
+    "black_book_1_pos": {
+      "max": 0.00036816468565431526,
+      "mae": 0.0002692511545042779
+    },
+    "black_book_1_quat": {
+      "max": 0.0006684709330467831,
+      "mae": 0.000228609023777979
+    },
+    "black_book_1_to_robot0_eef_pos": {
+      "max": 7.4430681595849535e-06,
+      "mae": 3.494958993173943e-06
+    },
+    "black_book_1_to_robot0_eef_quat": {
+      "max": 2.958066761493683e-05,
+      "mae": 1.5080440789461136e-05
+    },
+    "red_coffee_mug_1_pos": {
+      "max": 0.0,
+      "mae": 0.0
+    },
+    "red_coffee_mug_1_quat": {
+      "max": 1.7490605674002702e-16,
+      "mae": 6.822339523387076e-17
+    },
+    "red_coffee_mug_1_to_robot0_eef_pos": {
+      "max": 0.00035133192926095624,
+      "mae": 0.00022747976400872005
+    },
+    "red_coffee_mug_1_to_robot0_eef_quat": {
+      "max": 0.0006835013628005981,
+      "mae": 0.00021087750792503357
+    },
+    "robot0_proprio-state": {
+      "max": 0.001649923526400865,
+      "mae": 0.00028345899285236006
+    },
+    "object-state": {
+      "max": 0.0006835013628005981,
+      "mae": 0.00011853376866031011
+    }
+  },
+  "render": {
+    "agentview_image": {
+      "vs_saved": 54.0,
+      "vs_fresh": 0.0
+    },
+    "robot0_eye_in_hand_image": {
+      "vs_saved": 46.0,
+      "vs_fresh": 0.0
+    }
+  },
+  "fresh_repeat_max": {
+    "agentview_image": 0.0,
+    "robot0_eye_in_hand_image": 0.0,
+    "robot0_eef_pos": 0.0,
+    "robot0_eef_quat": 0.0,
+    "robot0_gripper_qpos": 0.0
+  }
+}

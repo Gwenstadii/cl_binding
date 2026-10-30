@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "videos": [
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_80_FT4_init00_seed2026102801.mp4",
+      "requested_goal": "left",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init00_seed2026102801.mp4",
+      "right_handoff_source": "LEFT_R0_001-080_then_FT4_081-400_init00_seed2026102801.mp4",
+      "sha256": "d0bad72c21550793ae83b53615f0a62c7d5c36900dca567eb4610232e2560a7d",
+      "bytes": 1082059
+    },
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_80_FT4_init00_seed2026102802.mp4",
+      "requested_goal": "left",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init00_seed2026102802.mp4",
+      "right_handoff_source": "LEFT_R0_001-080_then_FT4_081-400_init00_seed2026102802.mp4",
+      "sha256": "0f716ba1a9459c4f13d3959127d249dc3a23d3cdb77af80517fc99a260e68bd4",
+      "bytes": 1097120
+    },
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_80_FT4_init01_seed2026102801.mp4",
+      "requested_goal": "left",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init01_seed2026102801.mp4",
+      "right_handoff_source": "LEFT_R0_001-080_then_FT4_081-400_init01_seed2026102801.mp4",
+      "sha256": "d1ca79ca3d05579bee9e038a06b320939388c1b9f50ff65eec2d0bfb6b6afa33",
+      "bytes": 1086158
+    },
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_80_FT4_init01_seed2026102802.mp4",
+      "requested_goal": "left",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init01_seed2026102802.mp4",
+      "right_handoff_source": "LEFT_R0_001-080_then_FT4_081-400_init01_seed2026102802.mp4",
+      "sha256": "dde6001f8363c4485ca85b804a62aacfd9d1af95fdafed929dc3d4dcf2de4424",
+      "bytes": 1343442
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_80_FT4_init00_seed2026102801.mp4",
+      "requested_goal": "front",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init00_seed2026102801.mp4",
+      "right_handoff_source": "FRONT_R0_001-080_then_FT4_081-400_init00_seed2026102801.mp4",
+      "sha256": "b34e92ee64992d65dc32f07039487775aa277d652198658883b8d78e6a5e2d2d",
+      "bytes": 911897
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_80_FT4_init00_seed2026102802.mp4",
+      "requested_goal": "front",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init00_seed2026102802.mp4",
+      "right_handoff_source": "FRONT_R0_001-080_then_FT4_081-400_init00_seed2026102802.mp4",
+      "sha256": "90a02f33d2b1e1370fe2e4cac40c62b509cf1d461ae735d03650d861e904177c",
+      "bytes": 858792
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_80_FT4_init01_seed2026102801.mp4",
+      "requested_goal": "front",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init01_seed2026102801.mp4",
+      "right_handoff_source": "FRONT_R0_001-080_then_FT4_081-400_init01_seed2026102801.mp4",
+      "sha256": "7f919a14c0233ed597b5c1f02f0726ed9dec95d16591dde9d4ed98e57a4467a1",
+      "bytes": 1137042
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_80_FT4_init01_seed2026102802.mp4",
+      "requested_goal": "front",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init01_seed2026102802.mp4",
+      "right_handoff_source": "FRONT_R0_001-080_then_FT4_081-400_init01_seed2026102802.mp4",
+      "sha256": "0e9095b374e425b639efb4b801ca52dfa1499b1f1da72b33af38b988223dc9d6",
+      "bytes": 1169361
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_80_FT4_init00_seed2026102801.mp4",
+      "requested_goal": "right",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init00_seed2026102801.mp4",
+      "right_handoff_source": "RIGHT_R0_001-080_then_FT4_081-400_init00_seed2026102801.mp4",
+      "sha256": "be5e54c3b359ea4587c5480446ec50c101b8312b54ce3064ac6bf2f682dd62b1",
+      "bytes": 913234
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_80_FT4_init00_seed2026102802.mp4",
+      "requested_goal": "right",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init00_seed2026102802.mp4",
+      "right_handoff_source": "RIGHT_R0_001-080_then_FT4_081-400_init00_seed2026102802.mp4",
+      "sha256": "c7d51150439d8a0a82a9b4c6f7dcd96ec93be7764fa355bcadfce1507fb1f04a",
+      "bytes": 994994
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_80_FT4_init01_seed2026102801.mp4",
+      "requested_goal": "right",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init01_seed2026102801.mp4",
+      "right_handoff_source": "RIGHT_R0_001-080_then_FT4_081-400_init01_seed2026102801.mp4",
+      "sha256": "a7bf75256bf220f7338b82308dc0e6c2925fac36c5b5a6b0769ed03d39709207",
+      "bytes": 1305965
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_80_FT4_init01_seed2026102802.mp4",
+      "requested_goal": "right",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init01_seed2026102802.mp4",
+      "right_handoff_source": "RIGHT_R0_001-080_then_FT4_081-400_init01_seed2026102802.mp4",
+      "sha256": "02b5fe21c05b9098faee4030d780fffba12eaf049521e7068dbf33bf0d1e1d0d",
+      "bytes": 1461342
+    }
+  ]
+}

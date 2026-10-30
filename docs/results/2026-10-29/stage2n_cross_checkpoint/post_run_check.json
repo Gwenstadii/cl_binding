@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-29T15:49:18.018115+08:00",
+  "models": {
+    "R0": {
+      "path": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/model.safetensors",
+      "sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "unchanged": true
+    },
+    "FT4": {
+      "path": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000/model.safetensors",
+      "sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+      "unchanged": true
+    }
+  },
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "runtime_commit_unchanged": true,
+  "runtime_dirty_after": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "runtime_dirty_unchanged": true,
+  "model_sources": {
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": {
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "unchanged": true
+    },
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": {
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155",
+      "unchanged": true
+    }
+  },
+  "gpu": "0, NVIDIA GeForce RTX 3090, 721, 0\n1, NVIDIA GeForce RTX 3090, 37, 0",
+  "compute_processes": "",
+  "no_followup_launched": true,
+  "status": "passed"
+}

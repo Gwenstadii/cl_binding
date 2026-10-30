@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "stage": "stage4_back",
+  "checkpoint": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/checkpoints/012000",
+  "training_steps": 12000,
+  "evaluation_episodes": 80,
+  "finished_at": "2026-10-23T04:53:27.585035+00:00"
+}

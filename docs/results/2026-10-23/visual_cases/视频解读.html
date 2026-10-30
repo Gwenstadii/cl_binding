@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>顺序学习后，机器人把书放到哪里？｜实验视频解读</title>
+  <style>
+    :root { color-scheme: light; --ink:#182331; --muted:#536171; --line:#d9e0e6; --blue:#1c568d; --red:#a12f35; --green:#246449; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#fff; color:var(--ink); font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif; line-height:1.75; font-size:17px; }
+    main { max-width:1120px; margin:auto; padding:48px 28px 72px; }
+    h1 { max-width:850px; font-size:34px; line-height:1.35; letter-spacing:-.02em; margin:10px 0 18px; }
+    h2 { font-size:25px; line-height:1.5; margin:0 0 14px; }
+    h3 { font-size:20px; margin:0 0 8px; }
+    p { margin:10px 0 16px; }
+    a { color:var(--blue); text-underline-offset:3px; }
+    .eyebrow { color:var(--muted); font-size:14px; letter-spacing:.06em; }
+    .lead { font-size:20px; max-width:920px; }
+    .note { border-left:3px solid #93a8ba; padding:10px 18px; background:#f4f7f9; color:#35465a; }
+    section { margin-top:42px; padding-top:32px; border-top:1px solid var(--line); }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+    figure { margin:0; min-width:0; }
+    figcaption { margin-top:12px; }
+    video { display:block; width:100%; aspect-ratio:256/168; object-fit:contain; background:#f0f2f4; border:1px solid var(--line); border-radius:4px; }
+    .tag { display:inline-block; padding:2px 9px; margin-bottom:9px; border:1px solid var(--line); border-radius:3px; font-size:14px; color:var(--muted); }
+    .success { color:var(--green); font-weight:650; }
+    .failure { color:var(--red); font-weight:650; }
+    .small { color:var(--muted); font-size:14px; }
+    .controls { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0 12px; align-items:center; }
+    button { padding:9px 15px; background:#fff; color:var(--ink); border:1px solid #aebcc9; border-radius:4px; font:inherit; font-size:15px; cursor:pointer; }
+    button:hover { background:#edf3f8; }
+    button:focus-visible,a:focus-visible { outline:3px solid #74a9d4; outline-offset:3px; }
+    button.primary { background:var(--blue); color:#fff; border-color:var(--blue); }
+    #pair-status { margin-left:2px; }
+    .summary { margin-top:22px; border-collapse:collapse; width:100%; font-size:16px; }
+    .summary th,.summary td { padding:12px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); }
+    .summary th { background:#f5f7f9; }
+    .timeline { display:flex; gap:0; margin:16px 0 6px; min-height:46px; border:1px solid var(--line); border-radius:3px; overflow:hidden; font-size:14px; }
+    .timeline span { display:flex; align-items:center; justify-content:center; text-align:center; padding:5px 7px; background:#eef1f4; }
+    .timeline .good { background:#e1eee7; color:var(--green); }
+    .timeline .wrong { background:#f4e5e6; color:var(--red); }
+    .single { max-width:720px; }
+    .evidence { padding-left:23px; }
+    .evidence li { margin:7px 0; }
+    footer { margin-top:40px; color:var(--muted); font-size:14px; }
+    @media(max-width:740px) { main { padding:28px 18px 48px; } h1 { font-size:28px; } .lead { font-size:18px; } .grid { grid-template-columns:1fr; } .summary { font-size:14px; } .summary th,.summary td { padding:9px 6px; } }
+    @media(prefers-reduced-motion:reduce) { * { scroll-behavior:auto!important; } }
+    @media print { main { max-width:none; padding:0; } button { display:none; } video { max-height:250px; } section { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="eyebrow">2026-10-23 · SmolVLA · 左 → 右 → 前 → 后</div>
+    <h1>顺序学习后，机器人把书放到哪里？</h1>
+    <p class="lead">同样请求“放到右格”，模型学完前格后却把书放到前格；另一些回合虽然到过正确格子，继续执行后又失去了成功状态。下面分别展示这两种现象。</p>
+    <p class="note"><strong>视频来源：</strong>使用服务器保存的原评估动作逐步重放、重新渲染。五段重放均为400步、20 Hz，逐步目标判据完全一致，末端、夹爪和物体的位置最大误差均为0。没有新增模型推理回合，也没有训练更新。片段经过事后挑选，用于解释现象；成功率仍以完整20回合统计为准。</p>
+    <p class="small">原生播放器均默认暂停。视频20秒对应400个控制步；第1步在第一帧，定位按钮跳至该步所在帧。前／后／左／右沿用任务定义，不等于画面中的屏幕方向。</p>
+  </header>
+
+  <section aria-labelledby="paired-heading">
+    <h2 id="paired-heading">1. 同一右格指令，正确目标变成了新学的前格</h2>
+    <p>这两段使用<strong>同一个初态31、同一场景、同一右格指令和seed 20261052</strong>。左侧模型已学过左、右；右侧在其基础上继续仅训练前格12000步。</p>
+    <div class="grid">
+      <figure>
+        <span class="tag">学习前格之前 · right9000</span>
+        <h3>请求右格 → 最终右格</h3>
+        <video id="before" controls preload="metadata" playsinline aria-label="学习前格前，同初态31，右格指令正确执行"><source src="before_right31/replay.mp4" type="video/mp4">浏览器无法播放，请<a href="before_right31/replay.mp4">打开视频</a>。</video>
+        <figcaption><span class="success">第110步首次右格成功；第400步仍在右格。</span><br><a href="before_right31/replay_verification.json">逐步重放核验</a> · <a href="before_right31/timeline.json">原轨迹时间线</a></figcaption>
+      </figure>
+      <figure>
+        <span class="tag">学习前格之后 · front12000</span>
+        <h3>仍请求右格 → 最终前格</h3>
+        <video id="after" controls preload="metadata" playsinline aria-label="学习前格后，同初态31，右格指令错误执行到前格"><source src="after_right31/replay.mp4" type="video/mp4">浏览器无法播放，请<a href="after_right31/replay.mp4">打开视频</a>。</video>
+        <figcaption><span class="failure">第118步首次前格成功；从未满足右格；最终前格。</span><br><a href="after_right31/replay_verification.json">逐步重放核验</a> · <a href="after_right31/timeline.json">原轨迹时间线</a></figcaption>
+      </figure>
+    </div>
+    <div class="controls" role="group" aria-label="前后对照同步控制">
+      <button class="primary" id="pair-play" type="button">同步播放</button>
+      <button id="pair-pause" type="button">同时暂停</button>
+      <button id="pair-reset" type="button">重置到开头</button>
+      <button id="pair-seek" type="button">定位第100步，观察目标分歧</button>
+      <span id="pair-status" class="small" role="status" aria-live="polite">两段均暂停</span>
+    </div>
+    <p class="small">同步按钮会对齐两段时间；拖动任一原生播放器后，再点击“同步播放”即可重新对齐。</p>
+    <p>这是一个明确的<strong>旧任务从正确变成新目标</strong>案例。完整配对统计中，原先右格成功的15个初态在学习前格后全部失去右格成功，其中12个最终到了前格、3个未完成。这个视频展示的是12个例子之一。</p>
+  </section>
+
+  <section aria-labelledby="control-heading">
+    <h2 id="control-heading">2. 新任务控制：同一模型仍然能执行前格</h2>
+    <div class="grid">
+      <figure>
+        <span class="tag">front12000 · 初态31 · 改请求前格</span>
+        <video controls preload="metadata" playsinline aria-label="学习前格后，同初态31，前格指令正确执行"><source src="after_front31/replay.mp4" type="video/mp4">浏览器无法播放，请<a href="after_front31/replay.mp4">打开视频</a>。</video>
+        <figcaption><span class="success">第116步首次前格成功，最终前格正确。</span><br><a href="after_front31/replay_verification.json">逐步重放核验</a> · <a href="after_front31/timeline.json">原轨迹时间线</a></figcaption>
+      </figure>
+      <div>
+        <p>与上一节右侧使用<strong>相同front12000模型、相同初态31</strong>。请求前格时到前格；请求右格时也到前格。结合旧模型同初态能到右格，说明变化包含目标偏置，不能只描述为“机器人抓取失败”。</p>
+        <p>但当前实验尚不能证明“语言信息已经消失”或“某条语言通路损坏”。每个阶段只训练一个目标，起点也没有证明能同时可靠区分多个目标；这些机制仍需后续对照实验。</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="retention-heading">
+    <h2 id="retention-heading">3. 到过正确格子，为什么最终仍失败？</h2>
+    <p>评估持续运行至400步，成功后仍继续给动作。<strong>“曾成功”只要求任意一步满足请求目标；“最终正确”要求第400步仍满足请求目标。</strong>二者回答不同问题。</p>
+    <p>四任务模型在后格指令下，17/20回合曾成功，只有3/20最终正确；其中14回合在成功后失效。下面两个例子说明，失效既可能是离开成功区域，也可能是最终进入别的格子。</p>
+    <div class="grid">
+      <figure>
+        <span class="tag">back12000 · 后格指令 · 初态30</span>
+        <h3>后格成功 → 未完成</h3>
+        <video id="back30" controls preload="metadata" playsinline aria-label="后格初态30，在340步成功后381步失效"><source src="back30/replay.mp4" type="video/mp4">浏览器无法播放，请<a href="back30/replay.mp4">打开视频</a>。</video>
+        <div class="controls"><button type="button" data-video="back30" data-step="330">定位第330步</button><button type="button" data-video="back30" data-step="375">定位第375步</button></div>
+        <figcaption>第340–380步后格判据为真；第381步失效；第400步所有格子的目标判据均为假。<strong>这段不能叫“最终被另一目标替代”。</strong></figcaption>
+        <p class="small"><a href="back30/replay_verification.json">逐步重放核验</a> · <a href="back30/timeline.json">原轨迹时间线</a> · <a href="original_back30_5fps.mp4">评估时原始5fps录像</a></p>
+      </figure>
+      <figure>
+        <span class="tag">back12000 · 后格指令 · 初态36</span>
+        <h3>后格成功 → 最终左格</h3>
+        <video id="back36" controls preload="metadata" playsinline aria-label="后格初态36，在121步成功后最终进入左格"><source src="back36/replay.mp4" type="video/mp4">浏览器无法播放，请<a href="back36/replay.mp4">打开视频</a>。</video>
+        <div class="controls"><button type="button" data-video="back36" data-step="110">定位第110步</button><button type="button" data-video="back36" data-step="280">定位第280步</button></div>
+        <figcaption>第121–130步后格判据为真，第131步失效；第293步开始左格判据为真，最终左格。它先达到正确目标，再失去结果。</figcaption>
+        <p class="small"><a href="back36/replay_verification.json">逐步重放核验</a> · <a href="back36/timeline.json">原轨迹时间线</a></p>
+      </figure>
+    </div>
+    <table class="summary">
+      <thead><tr><th>要区分的问题</th><th>视频依据</th><th>目前可得结论</th></tr></thead>
+      <tbody>
+        <tr><td>目标选择发生变化</td><td>右指令初态31：旧模型到右，新模型到前</td><td>旧任务丢失，并偏向最新训练目标</td></tr>
+        <tr><td>完成结果没有保持</td><td>后指令初态30、36：先成功，继续执行后失效</td><td>终态指标受成功后的控制行为影响</td></tr>
+        <tr><td>损伤的具体机制</td><td>当前视频和行为统计还不足</td><td>需区分目标信息利用不足、动作技能覆盖、成功后继续动作等因素</td></tr>
+      </tbody>
+    </table>
+    <p class="note">不能把所有终态失败都解释为语言目标选择错误。视频能确定“何时满足／失去目标判据”，还不能单独确定失效究竟由夹持、碰撞、离开区域或其他控制因素造成。</p>
+  </section>
+
+  <section aria-labelledby="evidence-heading">
+    <h2 id="evidence-heading">4. 如何核查这些片段</h2>
+    <ul class="evidence">
+      <li><a href="media_manifest.json">媒体清单与SHA-256</a>：五段重放、原录像和核验文件；新增模型回合与训练更新均为0。</li>
+      <li>每段的 <code>replay_verification.json</code> 记录原trace路径、初态／场景哈希、400步判据比对和位置误差；<code>timeline.json</code> 提供逐步事件及位置。</li>
+      <li><a href="../four_task_sequence_v1/stage3_front/episodes.jsonl">三任务全部80回合</a> · <a href="../four_task_sequence_v1/stage4_back/episodes.jsonl">四任务全部80回合</a> · <a href="../four_task_sequence_v1/baselines/left_right_episodes.jsonl">学习前格前80回合</a>。</li>
+      <li><a href="../../../../实验记录.md">实验记录</a>：完整阶段结果、结论边界和后续计划入口。</li>
+    </ul>
+    <p class="small">将本文件与同目录的子文件夹一起保留，即可离线打开。页面不加载外部脚本、字体或网络资源。</p>
+  </section>
+  <footer>行为证据说明 · 此页面用于解释已完成实验，不把个别展示片段当作新的独立统计。</footer>
+</main>
+<script>
+  (() => {
+    const before = document.getElementById('before');
+    const after = document.getElementById('after');
+    const pair = [before, after];
+    const status = document.getElementById('pair-status');
+    let paired = false;
+    const pausePair = () => { paired = false; pair.forEach(video => video.pause()); };
+    const seek = (video, time) => { video.currentTime = Math.max(0, Math.min(time, Number.isFinite(video.duration) ? video.duration - 0.01 : time)); };
+    document.getElementById('pair-play').addEventListener('click', async () => {
+      pausePair();
+      const time = before.ended ? 0 : before.currentTime;
+      pair.forEach(video => seek(video, time));
+      const results = await Promise.allSettled(pair.map(video => video.play()));
+      paired = results.every(result => result.status === 'fulfilled');
+      if (!paired) { pausePair(); status.textContent = '无法同步播放，请使用下方播放器各自播放'; }
+      else status.textContent = '已按同一时间同步播放';
+    });
+    document.getElementById('pair-pause').addEventListener('click', () => { pausePair(); status.textContent = '两段均暂停'; });
+    document.getElementById('pair-reset').addEventListener('click', () => { pausePair(); pair.forEach(video => seek(video, 0)); status.textContent = '已重置到开头'; });
+    document.getElementById('pair-seek').addEventListener('click', () => { pausePair(); pair.forEach(video => seek(video, 99 / 20)); status.textContent = '已定位第100步，点击同步播放观察变化'; });
+    before.addEventListener('timeupdate', () => { if (paired && !before.paused && Math.abs(before.currentTime - after.currentTime) > 0.12) seek(after, before.currentTime); });
+    pair.forEach(video => video.addEventListener('ended', () => { if (paired) { pausePair(); status.textContent = '同步播放结束'; } }));
+    document.querySelectorAll('[data-video][data-step]').forEach(button => button.addEventListener('click', () => {
+      const video = document.getElementById(button.dataset.video);
+      video.pause(); seek(video, (Number(button.dataset.step) - 1) / 20); video.focus();
+    }));
+  })();
+</script>
+</body>
+</html>

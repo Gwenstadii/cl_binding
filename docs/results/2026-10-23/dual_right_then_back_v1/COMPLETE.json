@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "fixed_back_updates": 12000,
+  "four_instructions_each20": true,
+  "accepted_before_and_after_episodes": 160,
+  "new_model_evaluation_episodes": 100,
+  "cached_episodes": 60,
+  "evidence_archive_ready": true
+}

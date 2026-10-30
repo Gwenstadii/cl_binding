@@ -1,0 +1,80 @@
+{
+  "scope": "completed development pilots; engineering smoke not pooled into outcome counts",
+  "response_run": "stage2k_mechanism_20261028_02/response_pilot",
+  "entry_run": "stage2k_mechanism_20261028_03/entry_pilot",
+  "audit_script": "scripts/audit_stage2k_pilot.py",
+  "audit_script_sha256": "83e59a361553d426ff82b4a45681f257b47fd5424c8b31f79fcc1ed0e67941c6",
+  "counts": {
+    "response_episodes": 32,
+    "entry_prefixes": 16,
+    "entry_snapshots": 12,
+    "entry_continuations": 24,
+    "total_development_executions": 72
+  },
+  "files": {
+    "audit.json": {
+      "bytes": 33491,
+      "sha256": "8517d4d3ef09dbbe6bd732b1cb8d0ee5618f51900493434090fc68df5e629fa2"
+    },
+    "entry/COMPLETE.json": {
+      "bytes": 59,
+      "sha256": "3bd1e76d37224da7272bed1c8320f9fb68915ffc739e42531034959c130a54f4"
+    },
+    "entry/entry_handoff_pilot_process.json": {
+      "bytes": 1155,
+      "sha256": "d3f994695a063bf9f8479f14c832dbba8fae0eac6fb17eb2de70a9bff2058ca1"
+    },
+    "entry/manifest.json": {
+      "bytes": 39950,
+      "sha256": "49ed1238a36d6e3e02dade446c3ae1884a97878e4a89ff605a1eb306d7aeaeda"
+    },
+    "response/COMPLETE.json": {
+      "bytes": 8519,
+      "sha256": "089d87c5fb12b7cd08d541f463928e9d761194eb4d032870de776b5a3fc3d235"
+    },
+    "response/new/episodes.jsonl": {
+      "bytes": 3948,
+      "sha256": "c9f9fadb4a2e1c6c98f6e9a430531790e872659d0f6992ff18e617cc8a4b27ce"
+    },
+    "response/new/evaluation.json": {
+      "bytes": 763,
+      "sha256": "964238743002859eac6e865205264169f2a3286aadc63165abd83336a172f4c7"
+    },
+    "response/old/episodes.jsonl": {
+      "bytes": 3939,
+      "sha256": "738cbef6567e475a22d03540e7204449a048376937d519668b4946730b8cb51f"
+    },
+    "response/old/evaluation.json": {
+      "bytes": 763,
+      "sha256": "7528922c55d0f552efe4d753c1ef6b29b15a7a20a745bddd4d493b17ad7dfa88"
+    },
+    "response/old_difference/episodes.jsonl": {
+      "bytes": 3946,
+      "sha256": "d8f19f4ca1dd89f00e64f2470ce5d657216db70e96fe203c033ba382f26f8434"
+    },
+    "response/old_difference/evaluation.json": {
+      "bytes": 763,
+      "sha256": "fc51caed503bc026094a40b98afc6de915186b9c824e5c784c8d0638d5180769"
+    },
+    "response/old_mean/episodes.jsonl": {
+      "bytes": 3944,
+      "sha256": "3a7a8b76768ea9706a37cd5c95911020ddc8f91cfd9463e4776554253bd86e29"
+    },
+    "response/old_mean/evaluation.json": {
+      "bytes": 763,
+      "sha256": "df730aeca866b136fb69ecc7d6a0a86edb808b6704012d067f89b48c046e7b3f"
+    },
+    "response/protocol.json": {
+      "bytes": 7347,
+      "sha256": "83071042de291f495a40d5ea470253d6eb5877c6811a72da812ffba1b856bbdb"
+    },
+    "response/response_swap_pilot_process.json": {
+      "bytes": 1004,
+      "sha256": "68615ce80539578a99d10f9015472be177802a92148729131ffc36fc202a8306"
+    },
+    "response/sampling_identity.json": {
+      "bytes": 617,
+      "sha256": "23dc04e63e37044ece02a0f0c164367164b050557897a7c5f69db1d22bbba0b1"
+    }
+  }
+}

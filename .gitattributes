@@ -10,3 +10,27 @@
 
 # Preserve archived evidence bytes and their SHA256 values across platforms.
 docs/handoff/2026-10-21/** -text -whitespace
+docs/results/2026-10-23/dual12000_then_right_v1/** -text -whitespace
+docs/results/2026-10-23/dual_right_then_back_v1/** -text -whitespace
+docs/results/2026-10-24/** -text -whitespace
+docs/results/2026-10-28/stage2k_pilot/** -text -whitespace
+docs/results/2026-10-28/stage2l_p1_confirmation/** -text -whitespace
+docs/results/2026-10-28/stage2m_*/** -text -whitespace
+docs/results/2026-10-29/stage2m_*/** -text -whitespace
+docs/results/2026-10-29/stage2n_*/** -text -whitespace
+docs/results/2026-10-29/stage2o_*/** -text -whitespace
+docs/results/2026-10-29/stage2p_*/** -text -whitespace
+docs/results/2026-10-29/stage2q_*/** -text -whitespace
+docs/results/2026-10-30/stage2q_*/** -text -whitespace
+docs/results/2026-10-30/stage2r_*/** -text -whitespace
+docs/results/2026-10-30/stage2s_*/** -text -whitespace
+
+docs/results/2026-10-30/stage2t_*/** -text -whitespace
+
+docs/results/2026-10-30/stage2u_*/** -text -whitespace
+
+docs/results/2026-10-30/stage2v_*/** -text -whitespace
+
+docs/results/2026-10-30/stage2w_*/** -text -whitespace
+
+docs/results/2026-10-30/stage2y_*/** -text -whitespace

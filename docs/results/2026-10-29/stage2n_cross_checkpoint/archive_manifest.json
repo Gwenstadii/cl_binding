@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-10-29T15:52:54.607326+08:00",
+  "scope": "step3 fixed core matrix only; local archived evidence and derived summary; no weights or hidden messages",
+  "registered_commit": "f3f7e2119fa5da22f994c1b284bc7792fbface7e",
+  "server_output_root": "/home/lzx/cl_binding/.server/stage2n_cross_checkpoint_20261029_01",
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "checks": {
+    "raw_source_files_match_audit": true,
+    "local_server_audits_identical": true,
+    "final_audit_source_pinned": true,
+    "runtime_worker_sources_match_launch": true,
+    "configuration_semantically_identical": true,
+    "summary_exactly_reproduced": true,
+    "post_run_environment_check_passed": true
+  },
+  "code_files": {
+    "scripts/stage2n_cross_checkpoint.py": {
+      "bytes": 43547,
+      "sha256": "756db032c3795f86cf485929b4e7cadbc57b8be77be070ac6ba7e459cb743650"
+    },
+    "scripts/run_stage2n_cross_checkpoint.py": {
+      "bytes": 5484,
+      "sha256": "60f8980e985c02e17d51bbea3814039b86dc23cb9d25c3f2c3990d05f8412493"
+    },
+    "scripts/audit_stage2n_cross_checkpoint.py": {
+      "bytes": 26144,
+      "sha256": "d5c7951808acf85acaf17913ff3988c66c04355dd690882ec093b9e45d31f52b"
+    },
+    "scripts/summarize_stage2n_cross_checkpoint.py": {
+      "bytes": 7858,
+      "sha256": "ec71e2ceb62af60adc4df788d9486306d74d0d4277eee5d931aacfc5b8e1419c"
+    },
+    "configs/stage2n_cross_checkpoint_20261029.json": {
+      "bytes": 3644,
+      "sha256": "6c84a9d1bde008b1adc39e97de06c187691a7f3ceb268eee3d046a1d9abba611"
+    }
+  },
+  "files": {
+    "analysis/baseline.jsonl": {
+      "bytes": 709288,
+      "sha256": "3895e2a16913abf96f9b766531e5c8001a792d92a01ebb59cb41b264c7447524"
+    },
+    "analysis/COMPLETE.json": {
+      "bytes": 380233,
+      "sha256": "211a50e952ac2db86a52490a629063980e81093ceaf086f563fcad37c602f1a2"
+    },
+    "analysis/engineering.json": {
+      "bytes": 10828,
+      "sha256": "6c0e7a6d3d81d4c63726510e05138ed037d3560969ad86a31ac3499d0be2895f"
+    },
+    "analysis/manifest.json": {
+      "bytes": 380233,
+      "sha256": "211a50e952ac2db86a52490a629063980e81093ceaf086f563fcad37c602f1a2"
+    },
+    "analysis/norms.jsonl.gz": {
+      "bytes": 17698401,
+      "sha256": "96f63b157f7437b99f6abb4c8cc06343444af9ac76a2156f2e6b71cbe1d7702d"
+    },
+    "analysis/patches.jsonl": {
+      "bytes": 13158095,
+      "sha256": "5336f6ecfa7b5364d37c6b47ca81a08425141321006b99689627236876b891d4"
+    },
+    "audit_local_v1.json": {
+      "bytes": 1542166,
+      "sha256": "a9bfcc76733faab38ed8f96da115c74c5d5a11f98adf04a50a95bcd7a1a82a29"
+    },
+    "audit_v1.json": {
+      "bytes": 1501774,
+      "sha256": "e173ef243b0eef2ebb621edc8b0b4cbe88f30fb1d264e06625493d60720ac8e6"
+    },
+    "dispatch.json": {
+      "bytes": 626,
+      "sha256": "9c53ee52a6a1c873a5e8ac567c0dd375fa47eda8fe9acfe2e83aba2a69fd8270"
+    },
+    "launcher.json": {
+      "bytes": 6796,
+      "sha256": "7bebe41150c2ae67f3d56891bd31739e8d74bc96c2ce013ed5e332e17d5c5f01"
+    },
+    "post_run_check.json": {
+      "bytes": 1616,
+      "sha256": "84e80c62a1268346548c0de5e1531dbcdc5e87627c9f39060c5f1030b68be7a9"
+    },
+    "registered_config.json": {
+      "bytes": 3765,
+      "sha256": "0d5717fbf97ee4c2e909ba588ba13dc279929848d8495166a21251cb4951d0af"
+    },
+    "shared_and_conditional_effects.png": {
+      "bytes": 109315,
+      "sha256": "2fbfdb030365919ecf02a1db0786c0e5372f127941b553d2f6ef454f0435e77e"
+    },
+    "summary.json": {
+      "bytes": 54637,
+      "sha256": "f67ac693e72824d4afef587944e54eedc197fff2a8ed2e2bac02b6e056c8fb97"
+    }
+  }
+}

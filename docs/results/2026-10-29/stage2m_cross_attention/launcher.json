@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-29T02:54:12.124205+00:00",
+  "registered_commit": "f8cfd6fceda3cf00b8798ed98fc5451003b0d1d2",
+  "configuration": {
+    "registered_date": "2026-10-28",
+    "purpose": "steps 0-2 only: validate hooks, record condition messages, and test same-model message-to-velocity transfer",
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "output_root": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02",
+    "engineering_repair": {
+      "preserved_attempt": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_01",
+      "reason": "all-position frozen-prefix check stopped before scored queries; separate valid and masked padding positions, preserving all-position diagnostics",
+      "unchanged": "checkpoints, states, noise, query matrix, identity threshold, native model computation"
+    },
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "development_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "noise_seeds": [
+      2026102801,
+      2026102802,
+      2026102803
+    ],
+    "baseline_goals": [
+      "left",
+      "front",
+      "right"
+    ],
+    "swap_directions": [
+      [
+        "left",
+        "front"
+      ],
+      [
+        "front",
+        "left"
+      ]
+    ],
+    "flow_step_indices": [
+      0,
+      4,
+      8
+    ],
+    "flow_steps": 10,
+    "chunk_size": 50,
+    "effective_action_dimensions": 7,
+    "primary_action_positions": 10,
+    "reference_model": "teacher",
+    "reference_goal_rule": "left if (physical_index + seed_position) % 2 == 0 else front",
+    "reference_scope": "one action generation from each normal start; no physical action execution",
+    "observation_rule": "fresh forward/observable refresh at each captured normal start; no physical advance beyond fixed reset settling",
+    "engineering_indices": [
+      0
+    ],
+    "engineering_seeds": [
+      2026102801
+    ],
+    "identity_max_absolute_error": 1e-05,
+    "transfer_rms_floor": 1e-06,
+    "transfer_floor_repeat_multiplier": 10,
+    "swap_seed": 2026102801,
+    "expected_anchor_count": 36,
+    "expected_baseline_count": 216,
+    "expected_swap_count_if_eight_cross_attention_layers": 384,
+    "candidate_limit": 2,
+    "maximum_worker_minutes": 45,
+    "maximum_output_bytes": 536870912,
+    "minimum_disk_free_bytes": 2147483648,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "no_automatic_followup": [
+      "cross-checkpoint patching",
+      "P/C intervention",
+      "closed-loop execution",
+      "training",
+      "module or head sweep beyond actual CA message sites"
+    ],
+    "interpretation_limits": [
+      "same-model transfer tests condition-dependent computational influence, not correct physical target selection",
+      "right is unacquired for R0 and is not a valid teacher target",
+      "smaller natural message transfer can reflect changed donor message and/or changed recipient computation",
+      "one physical start reused across instructions/noises remains one development state"
+    ]
+  },
+  "code_sha256": {
+    "run_stage2m_cross_attention.py": "8271057827a780551712e5da8f89d814ae3c655791682ac2b92b5dfef03a609e",
+    "stage2m_cross_attention.py": "09a4eed9c0ed98e4371a524ff2f8ff8118a14750e86cd29af8da6e33ab8a7618"
+  },
+  "gpu_before": "0, 721, 0\n1, 37, 0\n",
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "runtime_dirty_before": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "phases": [
+    {
+      "name": "engineering",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/code/stage2m_cross_attention.py",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+        "--teacher",
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "--student",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "--max-minutes",
+        "45",
+        "--max-output-bytes",
+        "536870912",
+        "--identity-tolerance",
+        "1e-05",
+        "--phase",
+        "engineering",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/engineering",
+        "--indices",
+        "0",
+        "--seeds",
+        "2026102801"
+      ],
+      "started_at": "2026-10-29T02:54:12.130639+00:00",
+      "returncode": 0,
+      "seconds": 37.32376928906888
+    },
+    {
+      "name": "analysis",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/code/stage2m_cross_attention.py",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+        "--teacher",
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "--student",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "--max-minutes",
+        "45",
+        "--max-output-bytes",
+        "536870912",
+        "--identity-tolerance",
+        "1e-05",
+        "--phase",
+        "analysis",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis",
+        "--indices",
+        "0",
+        "1",
+        "2",
+        "3",
+        "--seeds",
+        "2026102801",
+        "2026102802",
+        "2026102803"
+      ],
+      "started_at": "2026-10-29T02:54:49.454836+00:00",
+      "returncode": 0,
+      "seconds": 54.140319999307394
+    }
+  ],
+  "finished_at": "2026-10-29T02:55:43.604042+00:00"
+}

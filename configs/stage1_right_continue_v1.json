@@ -1,0 +1,13 @@
+{
+  "purpose": "right_task_longer_training_from_exact_6000_state_new_goal_only_development_selection",
+  "source_training_config": ".server/left_then_right_20261022_01/config.json",
+  "training_run": "outputs/sequential/left_then_right_20261022_01",
+  "resume_step": 6000,
+  "candidate_steps": [9000, 12000, 15000, 18000],
+  "maximum_step": 18000,
+  "development_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "development_required_correct": 16,
+  "paired_indices": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+  "original_left_baseline": ".server/left_then_right_20261022_01/before_paired20/episodes.jsonl",
+  "right_6000_baseline": ".server/left_then_right_20261022_01/after_paired20/episodes.jsonl"
+}

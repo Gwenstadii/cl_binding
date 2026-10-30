@@ -1,0 +1,145 @@
+{
+  "registered_commit": "abbeb24",
+  "server_root": "/home/lzx/cl_binding/.server/stage2s_same_instruction80_20261030_01",
+  "files": {
+    "all_pairs_book.png": {
+      "bytes": 248302,
+      "sha256": "0a6fd15ac333d71adf3c1712768acca64700fb4aa4ebb9c31b4139c5ecb7416a"
+    },
+    "all_pairs_eef.png": {
+      "bytes": 342287,
+      "sha256": "2581e10ffd8bf5f1f12ec59dab31c6bc0f630cd0fdd11f40320b97cdf4ade655"
+    },
+    "audit.json": {
+      "bytes": 74710,
+      "sha256": "c71a56c826629adedb2f990aba3dbe0238d67cd4e6b3ff1d49492e1229345a2f"
+    },
+    "audit.log": {
+      "bytes": 37,
+      "sha256": "f04144c44c8abc65d03224437afe43ff31225185cbd209d1f31297cb69f2f97a"
+    },
+    "audit_local_v1.json": {
+      "bytes": 72072,
+      "sha256": "e2c01f7a75e0ff17db28bc532b9c926ea9f34086412fff55286025898bb5db2a"
+    },
+    "axis_analysis_note.json": {
+      "bytes": 161,
+      "sha256": "d00599b9f985b175bdb1d9a4f3ff28b71a05a8732bd6c3fb1b1e6ca855b35ba6"
+    },
+    "axis_motion.csv": {
+      "bytes": 13914,
+      "sha256": "eed6b45c080fda13a7dd8b6bbccb42b8f695290c43ddfcd7a706784e4ab6fba5"
+    },
+    "command_vs_motion.png": {
+      "bytes": 118313,
+      "sha256": "40c5d3f77355e23b4a3c7ed27f442ce519481d539992bbc65d5046cc42b39411"
+    },
+    "comparison_manifest.json": {
+      "bytes": 5999,
+      "sha256": "c97311c35c8cbec728a8bfb3b4ba2d4fa91779347bf145ce9407cdc65a44b355"
+    },
+    "COMPLETE.json": {
+      "bytes": 94,
+      "sha256": "cb99ab3921ef649f553ef18c07ad0d13d07d5808370660cece7f459faccb7c06"
+    },
+    "cpu_tests.log": {
+      "bytes": 494,
+      "sha256": "755c74989c6d7ce4304f1d8e655507dce7475195620475f9de942c7492fffe25"
+    },
+    "directions.csv": {
+      "bytes": 22144,
+      "sha256": "878abf73cf2a11afc92b911e31cb9a35f42d9acbbcbe5a2b1721bda892dddb7e"
+    },
+    "dispatch.json": {
+      "bytes": 675,
+      "sha256": "af706c1f42f917cdab499ab1ee2a26258a0a015873c08da84617968bf94756de"
+    },
+    "engineering.log": {
+      "bytes": 961,
+      "sha256": "9ae9e935ceaeb9db9ec56838bdef09a5281632934731fa74b3ef01c9633ccd3a"
+    },
+    "evaluation/COMPLETE.json": {
+      "bytes": 15519,
+      "sha256": "7e78420d14df9fc083310853a61b8634ae4458b2bd2d980f1ca4460422c5c7f8"
+    },
+    "evaluation/engineering.json": {
+      "bytes": 9980,
+      "sha256": "1e0781a84ba7b359d175890e3e1bf6b2bd704ae3ddd57c019552f6b16b6b90fc"
+    },
+    "evaluation/episodes.jsonl": {
+      "bytes": 30516,
+      "sha256": "e174dddba4b070f43c49378033ce8ad3023a4b4910f2cfc661dd18db54d8f9ad"
+    },
+    "evaluation/events.jsonl.gz": {
+      "bytes": 4344362,
+      "sha256": "0503c7afe89e8a59f2ebc101da2af8fa2049881bd99a00b62a78c55622c22fe5"
+    },
+    "evaluation/manifest.json": {
+      "bytes": 15519,
+      "sha256": "7e78420d14df9fc083310853a61b8634ae4458b2bd2d980f1ca4460422c5c7f8"
+    },
+    "evaluation/replans.jsonl.gz": {
+      "bytes": 13380,
+      "sha256": "8330ee7b2eaa3fb0239f4ecc39b6d166870f34784cbe8fbc299c62ad15695d53"
+    },
+    "evaluation.log": {
+      "bytes": 31477,
+      "sha256": "ad8e5fe8fbc8b5a9d841728ccf0c9dc3338d911ab69da790deb4ffc635bec4a1"
+    },
+    "handoff_contact_sheet.png": {
+      "bytes": 1089272,
+      "sha256": "f7fa05cf539bb6a9048bd7cba0732a32740e9741d5f1ddcfc6623ad31a6d83ba"
+    },
+    "launcher.json": {
+      "bytes": 12327,
+      "sha256": "2302568eabe6e4a1aa1607d0e2b697e4b642a5858476c481bed3955a2ba2991a"
+    },
+    "left_axis_decomposition.png": {
+      "bytes": 304468,
+      "sha256": "54a84ed2398d93d4b32569f4166d0f2d94a1c2e691f0826e0331819439666dbf"
+    },
+    "paired_command_vectors.csv": {
+      "bytes": 776,
+      "sha256": "2458339eafb280e37f1e3b006e147c52a46491eaddd355516f071b884f4c9be3"
+    },
+    "paired_paths_example.png": {
+      "bytes": 352888,
+      "sha256": "678bb08d9fbace4675e85a38009a18d776bf18736a95edb8f20648514680909b"
+    },
+    "post_run_check.json": {
+      "bytes": 935,
+      "sha256": "2577fcf2c5c74b37946bdf4f8310d722e9e321b69a5a2cc7fc83cec0ea002906"
+    },
+    "README.md": {
+      "bytes": 1329,
+      "sha256": "a12f2fd466cf95a63af0e3a61b7d2e1a1a21e8f1a8349b04bc59b51529df445b"
+    },
+    "registered_config.json": {
+      "bytes": 6102,
+      "sha256": "d8fea5a0289e8a955733bdbbaa0112568df4cb167f5282dbdad53043bc700c81"
+    },
+    "report.md": {
+      "bytes": 85,
+      "sha256": "36b50a38bb11685a25256cabaf709c2a77b774a260c8c537a003cbdb5a5dbaa2"
+    },
+    "results.csv": {
+      "bytes": 282,
+      "sha256": "fb6e746d4f5fe4f4ad70dee78ff669d85f6cfac33790e824b08e8cf8a44f0930"
+    }
+  },
+  "video_storage": "Local video directory and original server; not tracked in Git",
+  "analysis_scripts": {
+    "plot_stage2s_trajectories.py": {
+      "bytes": 5762,
+      "sha256": "fd17c850f34cb621e263e48d063ab8ec7c4afb360b353d0d4a41baf7982d1f64"
+    },
+    "compare_stage2s_videos.py": {
+      "bytes": 2483,
+      "sha256": "9444ccf4c9efc0e3b7a668f4d850a40411b32cbab673bd922f06ffb021ed4ec8"
+    },
+    "analyze_stage2s_axes.py": {
+      "bytes": 4248,
+      "sha256": "44977c1d4f3237b246e6ff4e92eec38387c58f17c56b08b6b1cbad9e5e45a9e0"
+    }
+  }
+}

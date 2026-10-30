@@ -1,0 +1,213 @@
+{
+  "status": "passed",
+  "purpose": "render_original_executed_actions_no_policy_inference",
+  "source_root": "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+  "renderer_sha256": "2aaf8134cf849b220e30ce8d4f3e8123ac380e5d95898b57ca6c5f73330c1028",
+  "source_events_sha256": "09e3741fa93d288ebc7c6cbb063dad810a5f27fc12182031dbc94645a5eff940",
+  "position_tolerance": 1e-07,
+  "policy_inference_calls": 0,
+  "training_updates": 0,
+  "scope": "all 8 R0-left-prefix80 to FT4 Left/Front continuations",
+  "episodes": [
+    {
+      "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init00_seed2026102801_moveCORRECT_finalFAIL.mp4",
+      "episode_id": "j024|R0_left|h80|FT4_left|i0|s2026102801",
+      "requested_goal": "left",
+      "route": "R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "left"
+      ],
+      "original_box_times": {
+        "left": 99,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "20102a3c017b9f98388faf7f11a2334cb7acca376b606ab1c352ab443b14dc6d",
+      "bytes": 831340
+    },
+    {
+      "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init00_seed2026102802_moveCORRECT_finalFAIL.mp4",
+      "episode_id": "j025|R0_left|h80|FT4_left|i0|s2026102802",
+      "requested_goal": "left",
+      "route": "R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "left"
+      ],
+      "original_box_times": {
+        "left": 107,
+        "front": null,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "e6e22b31258aad8aee9d3e72334f9e4fbfd9f0dbd099c204ba7d7bedba33b63b",
+      "bytes": 830430
+    },
+    {
+      "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init01_seed2026102801_moveWRONG_finalFAIL.mp4",
+      "episode_id": "j026|R0_left|h80|FT4_left|i1|s2026102801",
+      "requested_goal": "left",
+      "route": "R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": false,
+      "original_box_correct": false,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 103,
+        "right": null,
+        "back": 114
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "75bc12f064832dd0e875db3c6eb57387746210ffec5f5a23ea50cdfe66419495",
+      "bytes": 862889
+    },
+    {
+      "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init01_seed2026102802_moveWRONG_finalFAIL.mp4",
+      "episode_id": "j027|R0_left|h80|FT4_left|i1|s2026102802",
+      "requested_goal": "left",
+      "route": "R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": false,
+      "original_box_correct": false,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 102,
+        "right": null,
+        "back": 114
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "7a246355a4284600e68bd7590f63ffa4f364d315e4fd97c9e19962489faadf37",
+      "bytes": 908276
+    },
+    {
+      "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init00_seed2026102801_moveCORRECT_finalFAIL.mp4",
+      "episode_id": "j028|R0_left|h80|FT4_front|i0|s2026102801",
+      "requested_goal": "front",
+      "route": "R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": 370,
+        "front": 116,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "7de23e83f60a22bced6f6d883a99b49692c4616e08851e4c7e83bcbf218e6bed",
+      "bytes": 877741
+    },
+    {
+      "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init00_seed2026102802_moveCORRECT_finalFAIL.mp4",
+      "episode_id": "j029|R0_left|h80|FT4_front|i0|s2026102802",
+      "requested_goal": "front",
+      "route": "R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 110,
+        "right": null,
+        "back": null
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "252a9b28495272c432c7a32b133d6b669e22bf1b7a33e8d8df9ea6397e4eb868",
+      "bytes": 857747
+    },
+    {
+      "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init01_seed2026102801_moveCORRECT_finalFAIL.mp4",
+      "episode_id": "j030|R0_left|h80|FT4_front|i1|s2026102801",
+      "requested_goal": "front",
+      "route": "R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 106,
+        "right": null,
+        "back": 118
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "fa44d0ce7c26ca9fb0156ee3efa50089e8d94597936a549b0ffa5bceed2db0bd",
+      "bytes": 880687
+    },
+    {
+      "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init01_seed2026102802_moveCORRECT_finalFAIL.mp4",
+      "episode_id": "j031|R0_left|h80|FT4_front|i1|s2026102802",
+      "requested_goal": "front",
+      "route": "R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "original_terminal_correct": false,
+      "original_box_correct": true,
+      "original_box_first_targets": [
+        "front"
+      ],
+      "original_box_times": {
+        "left": null,
+        "front": 104,
+        "right": null,
+        "back": 117
+      },
+      "frames": 400,
+      "fps": 20,
+      "maximum_position_error": 0.0,
+      "predicate_mismatches": 0,
+      "sha256": "d6dbcd61d2c5a31a9711594c1435b67289790cb0dcf3dc14e6425ceb7bf142da",
+      "bytes": 853656
+    }
+  ]
+}

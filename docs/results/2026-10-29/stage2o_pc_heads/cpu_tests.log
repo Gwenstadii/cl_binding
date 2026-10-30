@@ -1,0 +1,26 @@
+test_actual_head_width_is_not_post_projection_hidden_width (test_stage2o_pc_heads.PCHeadProtocolTests.test_actual_head_width_is_not_post_projection_hidden_width) ... ok
+test_duplicate_head_cannot_replace_missing_head (test_stage2o_pc_heads.PCHeadProtocolTests.test_duplicate_head_cannot_replace_missing_head) ... ok
+test_head_norm_evidence_rejects_cross_head_leak (test_stage2o_pc_heads.PCHeadProtocolTests.test_head_norm_evidence_rejects_cross_head_leak) ... ok
+test_matrix_is_fixed_and_head_screen_never_includes_extra_noise (test_stage2o_pc_heads.PCHeadProtocolTests.test_matrix_is_fixed_and_head_screen_never_includes_extra_noise) ... ok
+test_per_input_relative_gain_is_not_ratio_of_medians (test_stage2o_pc_heads.PCHeadProtocolTests.test_per_input_relative_gain_is_not_ratio_of_medians) ... ok
+test_registered_config_agrees_with_independent_matrix (test_stage2o_pc_heads.PCHeadProtocolTests.test_registered_config_agrees_with_independent_matrix) ... ERROR
+
+======================================================================
+ERROR: test_registered_config_agrees_with_independent_matrix (test_stage2o_pc_heads.PCHeadProtocolTests.test_registered_config_agrees_with_independent_matrix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01/code/test_stage2o_pc_heads.py", line 53, in test_registered_config_agrees_with_independent_matrix
+    config=json.loads((Path(__file__).resolve().parents[1]/"configs/stage2o_pc_heads_20261029.json").read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01/configs/stage2o_pc_heads_20261029.json'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+FAILED (errors=1)

@@ -1,0 +1,42 @@
+[
+  {
+    "boundary": 40,
+    "continuation_model": "R0",
+    "episodes": 32,
+    "correct": 32,
+    "wrong_right": 0,
+    "wrong_other": 0,
+    "none": 0,
+    "terminal_correct": 30
+  },
+  {
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "episodes": 32,
+    "correct": 0,
+    "wrong_right": 32,
+    "wrong_other": 0,
+    "none": 0,
+    "terminal_correct": 0
+  },
+  {
+    "boundary": 80,
+    "continuation_model": "R0",
+    "episodes": 32,
+    "correct": 23,
+    "wrong_right": 0,
+    "wrong_other": 4,
+    "none": 5,
+    "terminal_correct": 16
+  },
+  {
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "episodes": 32,
+    "correct": 6,
+    "wrong_right": 24,
+    "wrong_other": 2,
+    "none": 0,
+    "terminal_correct": 0
+  }
+]

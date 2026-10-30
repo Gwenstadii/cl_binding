@@ -1,0 +1,1146 @@
+{
+  "scope": "development pilot only; strict native-goal events, not near-goal routing proxy",
+  "indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "response": {
+    "new": {
+      "total": 8,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "correct_then_lost": 0,
+      "first_goal": {
+        "right": 2,
+        "none_or_tied": 6
+      },
+      "terminal_category": {
+        "wrong_goal": 2,
+        "unfinished": 6
+      },
+      "by_goal": {
+        "left": {
+          "total": 4,
+          "correct_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "right": 1,
+            "none_or_tied": 3
+          },
+          "terminal_category": {
+            "wrong_goal": 1,
+            "unfinished": 3
+          }
+        },
+        "front": {
+          "total": 4,
+          "correct_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "right": 1,
+            "none_or_tied": 3
+          },
+          "terminal_category": {
+            "wrong_goal": 1,
+            "unfinished": 3
+          }
+        }
+      },
+      "clipped_dimensions_steps": [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        969
+      ],
+      "cases": [
+        {
+          "requested_goal": "left",
+          "init_index": 0,
+          "correct_ever": false,
+          "first_goal": "right",
+          "terminal_goal": "right",
+          "terminal_category": "wrong_goal",
+          "correct_then_destroyed": false,
+          "clipped_steps": 97
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 1,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 107
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 2,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 172
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 3,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 124
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 0,
+          "correct_ever": false,
+          "first_goal": "right",
+          "terminal_goal": "right",
+          "terminal_category": "wrong_goal",
+          "correct_then_destroyed": false,
+          "clipped_steps": 85
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 1,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 115
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 2,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 154
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 3,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 117
+        }
+      ]
+    },
+    "old_mean": {
+      "total": 8,
+      "correct_ever": 5,
+      "terminal_correct": 2,
+      "correct_then_lost": 3,
+      "first_goal": {
+        "left": 7,
+        "front": 1
+      },
+      "terminal_category": {
+        "unfinished": 4,
+        "correct": 2,
+        "wrong_goal": 2
+      },
+      "by_goal": {
+        "left": {
+          "total": 4,
+          "correct_ever": 4,
+          "terminal_correct": 1,
+          "correct_then_lost": 3,
+          "first_goal": {
+            "left": 4
+          },
+          "terminal_category": {
+            "unfinished": 3,
+            "correct": 1
+          }
+        },
+        "front": {
+          "total": 4,
+          "correct_ever": 1,
+          "terminal_correct": 1,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "left": 3,
+            "front": 1
+          },
+          "terminal_category": {
+            "wrong_goal": 2,
+            "correct": 1,
+            "unfinished": 1
+          }
+        }
+      },
+      "clipped_dimensions_steps": [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        2665
+      ],
+      "cases": [
+        {
+          "requested_goal": "left",
+          "init_index": 0,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": true,
+          "clipped_steps": 215
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 1,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": true,
+          "clipped_steps": 329
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 2,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": true,
+          "clipped_steps": 311
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 3,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 349
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 0,
+          "correct_ever": false,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "wrong_goal",
+          "correct_then_destroyed": false,
+          "clipped_steps": 363
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 1,
+          "correct_ever": true,
+          "first_goal": "front",
+          "terminal_goal": "front",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 343
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 2,
+          "correct_ever": false,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "wrong_goal",
+          "correct_then_destroyed": false,
+          "clipped_steps": 378
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 3,
+          "correct_ever": false,
+          "first_goal": "left",
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 377
+        }
+      ]
+    },
+    "old_difference": {
+      "total": 8,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "correct_then_lost": 0,
+      "first_goal": {
+        "none_or_tied": 6,
+        "right": 2
+      },
+      "terminal_category": {
+        "unfinished": 6,
+        "wrong_goal": 2
+      },
+      "by_goal": {
+        "left": {
+          "total": 4,
+          "correct_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "none_or_tied": 4
+          },
+          "terminal_category": {
+            "unfinished": 4
+          }
+        },
+        "front": {
+          "total": 4,
+          "correct_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "right": 2,
+            "none_or_tied": 2
+          },
+          "terminal_category": {
+            "wrong_goal": 2,
+            "unfinished": 2
+          }
+        }
+      },
+      "clipped_dimensions_steps": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        979
+      ],
+      "cases": [
+        {
+          "requested_goal": "left",
+          "init_index": 0,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 96
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 1,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 69
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 2,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 38
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 3,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 55
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 0,
+          "correct_ever": false,
+          "first_goal": "right",
+          "terminal_goal": "right",
+          "terminal_category": "wrong_goal",
+          "correct_then_destroyed": false,
+          "clipped_steps": 177
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 1,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 186
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 2,
+          "correct_ever": false,
+          "first_goal": "right",
+          "terminal_goal": "right",
+          "terminal_category": "wrong_goal",
+          "correct_then_destroyed": false,
+          "clipped_steps": 191
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 3,
+          "correct_ever": false,
+          "first_goal": null,
+          "terminal_goal": null,
+          "terminal_category": "unfinished",
+          "correct_then_destroyed": false,
+          "clipped_steps": 168
+        }
+      ]
+    },
+    "old": {
+      "total": 8,
+      "correct_ever": 8,
+      "terminal_correct": 8,
+      "correct_then_lost": 0,
+      "first_goal": {
+        "left": 4,
+        "front": 4
+      },
+      "terminal_category": {
+        "correct": 8
+      },
+      "by_goal": {
+        "left": {
+          "total": 4,
+          "correct_ever": 4,
+          "terminal_correct": 4,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "left": 4
+          },
+          "terminal_category": {
+            "correct": 4
+          }
+        },
+        "front": {
+          "total": 4,
+          "correct_ever": 4,
+          "terminal_correct": 4,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "front": 4
+          },
+          "terminal_category": {
+            "correct": 4
+          }
+        }
+      },
+      "clipped_dimensions_steps": [
+        0,
+        0,
+        16,
+        0,
+        0,
+        0,
+        2743
+      ],
+      "cases": [
+        {
+          "requested_goal": "left",
+          "init_index": 0,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 367
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 1,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 375
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 2,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 369
+        },
+        {
+          "requested_goal": "left",
+          "init_index": 3,
+          "correct_ever": true,
+          "first_goal": "left",
+          "terminal_goal": "left",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 310
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 0,
+          "correct_ever": true,
+          "first_goal": "front",
+          "terminal_goal": "front",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 347
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 1,
+          "correct_ever": true,
+          "first_goal": "front",
+          "terminal_goal": "front",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 296
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 2,
+          "correct_ever": true,
+          "first_goal": "front",
+          "terminal_goal": "front",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 318
+        },
+        {
+          "requested_goal": "front",
+          "init_index": 3,
+          "correct_ever": true,
+          "first_goal": "front",
+          "terminal_goal": "front",
+          "terminal_category": "correct",
+          "correct_then_destroyed": false,
+          "clipped_steps": 361
+        }
+      ]
+    }
+  },
+  "entry": {
+    "teacher:left": {
+      "prefix_counts": {
+        "total": 4,
+        "correct_ever": 4,
+        "terminal_correct": 4,
+        "correct_then_lost": 0,
+        "first_goal": {
+          "left": 4
+        },
+        "terminal_category": {
+          "correct": 4
+        }
+      },
+      "entry_count": 3,
+      "missing_entry_indices": [
+        2
+      ],
+      "continuations": {
+        "teacher": {
+          "total": 3,
+          "correct_ever": 3,
+          "terminal_correct": 3,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "left": 3
+          },
+          "terminal_category": {
+            "correct": 3
+          }
+        },
+        "student": {
+          "total": 3,
+          "correct_ever": 3,
+          "terminal_correct": 3,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "left": 3
+          },
+          "terminal_category": {
+            "correct": 3
+          }
+        }
+      }
+    },
+    "teacher:front": {
+      "prefix_counts": {
+        "total": 4,
+        "correct_ever": 4,
+        "terminal_correct": 4,
+        "correct_then_lost": 0,
+        "first_goal": {
+          "front": 4
+        },
+        "terminal_category": {
+          "correct": 4
+        }
+      },
+      "entry_count": 4,
+      "missing_entry_indices": [],
+      "continuations": {
+        "teacher": {
+          "total": 4,
+          "correct_ever": 4,
+          "terminal_correct": 4,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "front": 4
+          },
+          "terminal_category": {
+            "correct": 4
+          }
+        },
+        "student": {
+          "total": 4,
+          "correct_ever": 2,
+          "terminal_correct": 2,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "front": 2,
+            "none_or_tied": 2
+          },
+          "terminal_category": {
+            "correct": 2,
+            "unfinished": 2
+          }
+        }
+      }
+    },
+    "student:left": {
+      "prefix_counts": {
+        "total": 4,
+        "correct_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_lost": 0,
+        "first_goal": {
+          "none_or_tied": 4
+        },
+        "terminal_category": {
+          "unfinished": 4
+        }
+      },
+      "entry_count": 1,
+      "missing_entry_indices": [
+        0,
+        2,
+        3
+      ],
+      "continuations": {
+        "teacher": {
+          "total": 1,
+          "correct_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "none_or_tied": 1
+          },
+          "terminal_category": {
+            "unfinished": 1
+          }
+        },
+        "student": {
+          "total": 1,
+          "correct_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "none_or_tied": 1
+          },
+          "terminal_category": {
+            "unfinished": 1
+          }
+        }
+      }
+    },
+    "student:front": {
+      "prefix_counts": {
+        "total": 4,
+        "correct_ever": 1,
+        "terminal_correct": 1,
+        "correct_then_lost": 0,
+        "first_goal": {
+          "none_or_tied": 2,
+          "front": 1,
+          "left": 1
+        },
+        "terminal_category": {
+          "unfinished": 2,
+          "correct": 1,
+          "wrong_goal": 1
+        }
+      },
+      "entry_count": 4,
+      "missing_entry_indices": [],
+      "continuations": {
+        "teacher": {
+          "total": 4,
+          "correct_ever": 2,
+          "terminal_correct": 2,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "none_or_tied": 2,
+            "front": 2
+          },
+          "terminal_category": {
+            "unfinished": 2,
+            "correct": 2
+          }
+        },
+        "student": {
+          "total": 4,
+          "correct_ever": 1,
+          "terminal_correct": 1,
+          "correct_then_lost": 0,
+          "first_goal": {
+            "none_or_tied": 2,
+            "front": 1,
+            "left": 1
+          },
+          "terminal_category": {
+            "unfinished": 2,
+            "correct": 1,
+            "wrong_goal": 1
+          }
+        }
+      }
+    }
+  },
+  "source_files": {
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/protocol.json": {
+      "bytes": 7347,
+      "sha256": "83071042de291f495a40d5ea470253d6eb5877c6811a72da812ffba1b856bbdb"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/COMPLETE.json": {
+      "bytes": 8519,
+      "sha256": "089d87c5fb12b7cd08d541f463928e9d761194eb4d032870de776b5a3fc3d235"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_03/entry_pilot/manifest.json": {
+      "bytes": 39950,
+      "sha256": "49ed1238a36d6e3e02dade446c3ae1884a97878e4a89ff605a1eb306d7aeaeda"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/episodes.jsonl": {
+      "bytes": 3948,
+      "sha256": "c9f9fadb4a2e1c6c98f6e9a430531790e872659d0f6992ff18e617cc8a4b27ce"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/left_00_trace.jsonl": {
+      "bytes": 509586,
+      "sha256": "3342dce4e85abba3b1c31a2dd685fc5e2318f8d4c5a158a9baa80c2906eed7aa"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/left_01_trace.jsonl": {
+      "bytes": 506976,
+      "sha256": "feb7333c155330883273fe65f853e446d7fd9a2d94001a462a0d1c0f9af6101e"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/left_02_trace.jsonl": {
+      "bytes": 506835,
+      "sha256": "6f20f90fb24439daf850e64f0d8e62ca4d8071aa802b1d042dc21be76e47ee8c"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/left_03_trace.jsonl": {
+      "bytes": 507670,
+      "sha256": "eca5875cbfbb556831e67318a0fbbc58b6fc5fa2d5dcd6c942e63f184664972a"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/front_00_trace.jsonl": {
+      "bytes": 509030,
+      "sha256": "5c65ece9312f1f01a6e0f1ebdb854731a2b9bbd15bcfdc800b61f5d78dfad72a"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/front_01_trace.jsonl": {
+      "bytes": 507277,
+      "sha256": "8b516333f694a16a4a7e7902a2a1e2c62e890c7f7001cf0d4a8fb86f128c7693"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/front_02_trace.jsonl": {
+      "bytes": 507583,
+      "sha256": "bcba9924ee7f7200909dccc99391434e6b44dace63b5740c3f426f7ccb44207a"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/new/front_03_trace.jsonl": {
+      "bytes": 507950,
+      "sha256": "1e2b7b80c36127ce56684260644d99b203d3a048525ff9cdf27a139033879936"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/episodes.jsonl": {
+      "bytes": 3944,
+      "sha256": "3a7a8b76768ea9706a37cd5c95911020ddc8f91cfd9463e4776554253bd86e29"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/left_00_trace.jsonl": {
+      "bytes": 505396,
+      "sha256": "c7e2b6895931a3ac6440b82c3fab008209c17b710ca48035cc01f1e0059b7ee0"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/left_01_trace.jsonl": {
+      "bytes": 505263,
+      "sha256": "eef560a812b2df58bbf36bfcd6dc6ddb65b230e75254c6310be7a8377588fc35"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/left_02_trace.jsonl": {
+      "bytes": 505413,
+      "sha256": "e4b6ce03eb4e8e9224cce377899106d18078c5463684e5ba871013a2015d3833"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/left_03_trace.jsonl": {
+      "bytes": 504010,
+      "sha256": "9c4ca0218374f4a63921cdc8f6c31768bd288676c17bdfa546a1a6f7dc0d7ed4"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/front_00_trace.jsonl": {
+      "bytes": 503320,
+      "sha256": "a7773a4136e5153d33b9bd28f5ca29b91d19cfef0a27cd4bdbef5050274e26fb"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/front_01_trace.jsonl": {
+      "bytes": 504084,
+      "sha256": "5ad188136da45c39aaa883ec0c0acecd88ac36693f0edd96077fd7ee96a02146"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/front_02_trace.jsonl": {
+      "bytes": 503545,
+      "sha256": "a5c3914741059c084860d265dfc9cc8d619299ea1f80d9d133ad7607443f5189"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_mean/front_03_trace.jsonl": {
+      "bytes": 503968,
+      "sha256": "062f23f5e588e436ed3d51f148bbb09823217e6b0efae2e014c30ee2e3332c67"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/episodes.jsonl": {
+      "bytes": 3946,
+      "sha256": "d8f19f4ca1dd89f00e64f2470ce5d657216db70e96fe203c033ba382f26f8434"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/left_00_trace.jsonl": {
+      "bytes": 508254,
+      "sha256": "20ac1fcf1f44d6ddc0f37b665a5803cbe3fdc9a4998308a38632b54333210db1"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/left_01_trace.jsonl": {
+      "bytes": 507970,
+      "sha256": "a233df79bcedf4f9b6ae69a5ac4550ba4cf0389779e306ac73aa5378f07d0c06"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/left_02_trace.jsonl": {
+      "bytes": 510138,
+      "sha256": "f1d4622c907c1aedecd45b46607f6c79ba957fbb180a110001a56d3231e72430"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/left_03_trace.jsonl": {
+      "bytes": 508836,
+      "sha256": "a278a315aa18a36b66d68359227bc7e0536f50585822677afe42e9724b177613"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/front_00_trace.jsonl": {
+      "bytes": 507331,
+      "sha256": "5785e2f39682ebc6dafcff54a3eed7b2395636c7a4de3650a36c8b62102c77f7"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/front_01_trace.jsonl": {
+      "bytes": 505881,
+      "sha256": "c6ac07af50fea33ed5e0f83bf86370e0411f71fe9e4d1868994baf7c030a64cd"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/front_02_trace.jsonl": {
+      "bytes": 507641,
+      "sha256": "e509066614a56d451cbced62b74637caec70ee12d1d755c3ecc6cf442198714c"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old_difference/front_03_trace.jsonl": {
+      "bytes": 506623,
+      "sha256": "b300bb844dc99fc90ec95d6a8e2e040283e0bb19b14c55b1d226fe7bb60add3d"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/episodes.jsonl": {
+      "bytes": 3939,
+      "sha256": "738cbef6567e475a22d03540e7204449a048376937d519668b4946730b8cb51f"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/left_00_trace.jsonl": {
+      "bytes": 501502,
+      "sha256": "0042c261fb0a382a7c7ab0146094f41853b8590ded2ea27d503f654300b70692"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/left_01_trace.jsonl": {
+      "bytes": 502820,
+      "sha256": "11d5ed589bb51c5cbc3922574fbb8c2dbae7515afb2babb4502609f74cd4a754"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/left_02_trace.jsonl": {
+      "bytes": 503499,
+      "sha256": "c8b84614a8503a74bd44128accb20610f7e137eb24eb5ff7aa0c3e548c19a4e1"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/left_03_trace.jsonl": {
+      "bytes": 504154,
+      "sha256": "1b7aa83f84ec6a25a400950e4bddb05a470b474cef226bb4bd6e842536b670fe"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/front_00_trace.jsonl": {
+      "bytes": 504022,
+      "sha256": "bbaaea7e0bfe8b22c8af1e953663a0b4d62ab02e57804833918b6786b1415705"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/front_01_trace.jsonl": {
+      "bytes": 505397,
+      "sha256": "fa21f7c9a7a6e2e1335983ce5928668e818c7a184e6f89cb345f0d1aa02a8494"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/front_02_trace.jsonl": {
+      "bytes": 504162,
+      "sha256": "f62f0fa14eb89dc97dab8c828cbf58ff466c5e2a8cebb80807c30f7839d8963c"
+    },
+    "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_02/response_pilot/old/front_03_trace.jsonl": {
+      "bytes": 503059,
+      "sha256": "709eedb71d7cbe95ebf9ab3837db4e23407b269867662ef621a34fffa6537e45"
+    }
+  },
+  "sampling_identity_max_abs": 0.0,
+  "entry_cases": [
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 0,
+      "entry_step": 100,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "left",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 0,
+      "entry_step": 100,
+      "continuation_policy": "student",
+      "correct_ever": true,
+      "first_goal": "left",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 1,
+      "entry_step": 110,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "left",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 1,
+      "entry_step": 110,
+      "continuation_policy": "student",
+      "correct_ever": true,
+      "first_goal": "left",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 3,
+      "entry_step": 90,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "left",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 3,
+      "entry_step": 90,
+      "continuation_policy": "student",
+      "correct_ever": true,
+      "first_goal": "left",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 120,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 120,
+      "continuation_policy": "student",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 1,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 1,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 2,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 2,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 3,
+      "entry_step": 120,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 3,
+      "entry_step": 120,
+      "continuation_policy": "student",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "left",
+      "init_index": 1,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "left",
+      "init_index": 1,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 1,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 1,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 2,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 2,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": true,
+      "first_goal": "front",
+      "terminal_category": "correct"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 3,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "correct_ever": false,
+      "first_goal": null,
+      "terminal_category": "unfinished"
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 3,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "correct_ever": false,
+      "first_goal": "left",
+      "terminal_category": "wrong_goal"
+    }
+  ],
+  "validation": {
+    "response_traces_recomputed": 32,
+    "response_steps_recomputed": 12800,
+    "prefixes": 16,
+    "entry_snapshots": 12,
+    "continuations": 24,
+    "exact_restores": 24,
+    "exact_self_first_steps": 12,
+    "trace_limit": "entry continuations have saved event summaries, not per-step event traces; no independent 120-step event recount",
+    "same_reset_across_response_conditions": true,
+    "same_teacher_between_experiments": true
+  }
+}

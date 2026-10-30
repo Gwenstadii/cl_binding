@@ -1,0 +1,355 @@
+{
+  "status": "complete",
+  "phase": "evaluation",
+  "started_at": "2026-10-29T14:26:02.392637+00:00",
+  "scope": "development closed-loop message intervention, not training or autonomous method",
+  "configuration": {
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "prior_baseline_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/baseline.jsonl",
+    "prior_baseline_sha256": "5e483cab3e81fabe029f3753fa01ec83dbd9d0cabcce9d649630d899d44eea33",
+    "prior_candidates_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/candidates.json",
+    "prior_candidates_sha256": "a9fca67dd7aa49a63c57eec8155ad8409cee850a62371d8d82b6364756ec3ac2",
+    "registered_date": "2026-10-29",
+    "purpose": "Step5 development closed-loop test of fixed post-W_O CA message intervention",
+    "output_root": "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01",
+    "site": 9,
+    "site_selection": "highest full-M same-source conditional-error reduction among preregistered candidate sites in 36-input step3; no head selected",
+    "candidate_sites": [
+      3,
+      9
+    ],
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ],
+    "goals": [
+      "left",
+      "front"
+    ],
+    "horizon": 400,
+    "intervention_steps": 120,
+    "n_action_steps": 10,
+    "flow_steps": 10,
+    "noise_replan_stride": 1000003,
+    "roles_and_modes": {
+      "FT4": [
+        "native",
+        "cross_same",
+        "cross_wrong",
+        "random_delta"
+      ],
+      "R0": [
+        "native",
+        "cross_same",
+        "same_model_wrong",
+        "random_delta"
+      ]
+    },
+    "new_goal_check": {
+      "model": "FT4",
+      "mode": "native",
+      "goal": "right",
+      "indices": [
+        0,
+        1
+      ],
+      "seeds": [
+        2026102801,
+        2026102802
+      ]
+    },
+    "expected_episodes": 68,
+    "expected_replans": 2720,
+    "expected_recipient_denoise_calls": 29120,
+    "expected_patch_calls": 5760,
+    "expected_random_norm_records": 1920,
+    "identity_tolerance": 1e-05,
+    "save_videos": false,
+    "maximum_worker_minutes": 60,
+    "maximum_output_bytes": 2147483648,
+    "minimum_disk_free_bytes": 2147483648,
+    "random_seed_salt": 2026102905,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "result_scope": "development only: two physical states, two inference seeds; four episodes per old goal per arm, not independent confirmation",
+    "stop_on_error": true,
+    "no_followup": [
+      "additional layer or head",
+      "P/C closed-loop arms",
+      "intervention longer than 120 simulation steps",
+      "additional physical states or noise seeds",
+      "training or replay",
+      "claim teacher-assisted rescue is autonomous retention"
+    ],
+    "expected_recipient_integration_calls": 27200,
+    "expected_random_calibration_calls": 1920,
+    "expected_total_denoise_calls": 34880
+  },
+  "script_sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07",
+  "config_sha256": "e3b0115befaada959e2fdade7d98ce8ceb080951af7116109d1bc98dd524bd85",
+  "episodes_completed": 68,
+  "steps_completed": 27200,
+  "replans_completed": 2720,
+  "no_early_stop_on_success": true,
+  "horizon": 400,
+  "intervention_steps": 120,
+  "site": 9,
+  "processor_hashes": {
+    "policy_preprocessor.json": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+    "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "model_sha256": {
+    "R0": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "FT4": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f"
+  },
+  "layer_map": {
+    "R0": {
+      "site": 9,
+      "expert_layer": 9,
+      "o_in_features": 960,
+      "o_out_features": 720
+    },
+    "FT4": {
+      "site": 9,
+      "expert_layer": 9,
+      "o_in_features": 960,
+      "o_out_features": 720
+    }
+  },
+  "random_block_semantics": "15 contiguous post-W_O output coordinate blocks; NOT actual attention heads",
+  "sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "model": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "expert": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+    }
+  },
+  "instructions": {
+    "front": "pick up the book and place it in the front compartment of the caddy",
+    "left": "pick up the book and place it in the left compartment of the caddy",
+    "right": "pick up the book and place it in the right compartment of the caddy",
+    "back": "pick up the book and place it in the back compartment of the caddy"
+  },
+  "predicates": {
+    "front": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_front_contain_region"
+      ]
+    ],
+    "left": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_left_contain_region"
+      ]
+    ],
+    "right": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_right_contain_region"
+      ]
+    ],
+    "back": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_back_contain_region"
+      ]
+    ]
+  },
+  "scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+  "engineering_source": {
+    "path": "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/engineering/engineering.json",
+    "sha256": "20644d51d051d1b2204971fdcd9b97f2420e7004bd1f92e5e124def544e25b16"
+  },
+  "counts": {
+    "denoise_calls_by_model": {
+      "R0": 17600,
+      "FT4": 17280
+    },
+    "patch_flows": 5760,
+    "donor_denoise_calls": 5760,
+    "recipient_denoise_calls": 29120,
+    "prefix_builds": 3296,
+    "integrator_velocity_calls": 27200,
+    "extra_random_recipient_calibration_calls": 1920,
+    "official_engineering_flow_calls": 0,
+    "engineering_self_replacements": 0,
+    "episodes": 68,
+    "steps": 27200,
+    "replans": 2720
+  },
+  "behavior_summary": {
+    "FT4/cross_same/front": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 2,
+      "unfinished": 2
+    },
+    "FT4/cross_same/left": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 0,
+      "unfinished": 4
+    },
+    "FT4/cross_wrong/front": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 3,
+      "unfinished": 1
+    },
+    "FT4/cross_wrong/left": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 3,
+      "unfinished": 1
+    },
+    "FT4/native/front": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 3,
+      "unfinished": 1
+    },
+    "FT4/native/left": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 1,
+      "unfinished": 3
+    },
+    "FT4/native/right": {
+      "episodes": 4,
+      "correct_ever": 2,
+      "terminal_correct": 2,
+      "terminal_right": 2,
+      "unfinished": 2
+    },
+    "FT4/random_delta/front": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 2,
+      "unfinished": 2
+    },
+    "FT4/random_delta/left": {
+      "episodes": 4,
+      "correct_ever": 0,
+      "terminal_correct": 0,
+      "terminal_right": 1,
+      "unfinished": 3
+    },
+    "R0/cross_same/front": {
+      "episodes": 4,
+      "correct_ever": 4,
+      "terminal_correct": 4,
+      "terminal_right": 0,
+      "unfinished": 0
+    },
+    "R0/cross_same/left": {
+      "episodes": 4,
+      "correct_ever": 4,
+      "terminal_correct": 4,
+      "terminal_right": 0,
+      "unfinished": 0
+    },
+    "R0/native/front": {
+      "episodes": 4,
+      "correct_ever": 4,
+      "terminal_correct": 3,
+      "terminal_right": 0,
+      "unfinished": 1
+    },
+    "R0/native/left": {
+      "episodes": 4,
+      "correct_ever": 4,
+      "terminal_correct": 4,
+      "terminal_right": 0,
+      "unfinished": 0
+    },
+    "R0/random_delta/front": {
+      "episodes": 4,
+      "correct_ever": 4,
+      "terminal_correct": 4,
+      "terminal_right": 0,
+      "unfinished": 0
+    },
+    "R0/random_delta/left": {
+      "episodes": 4,
+      "correct_ever": 4,
+      "terminal_correct": 4,
+      "terminal_right": 0,
+      "unfinished": 0
+    },
+    "R0/same_model_wrong/front": {
+      "episodes": 4,
+      "correct_ever": 3,
+      "terminal_correct": 3,
+      "terminal_right": 0,
+      "unfinished": 1
+    },
+    "R0/same_model_wrong/left": {
+      "episodes": 4,
+      "correct_ever": 3,
+      "terminal_correct": 3,
+      "terminal_right": 0,
+      "unfinished": 1
+    }
+  },
+  "finished_at": "2026-10-29T14:39:47.915640+00:00",
+  "elapsed_seconds": 825.5230118716136,
+  "no_followup_launched": true,
+  "actual_message_witness_max_abs": 0.0,
+  "cache_isolation_checks": 34880,
+  "files": {
+    "norms.jsonl.gz": {
+      "bytes": 77972130,
+      "sha256": "e7daea5483d3b4e8ca46dafadc50234a0b4d21e164a2f7f5cf30acc25e3553c7"
+    },
+    "engineering.json": {
+      "bytes": 7055,
+      "sha256": "20644d51d051d1b2204971fdcd9b97f2420e7004bd1f92e5e124def544e25b16"
+    },
+    "events.jsonl.gz": {
+      "bytes": 5449902,
+      "sha256": "d601a83baf8c3cdfb7482854fcaba646bad557c2a0c27e60bf4468bda789e8a8"
+    },
+    "episodes.jsonl": {
+      "bytes": 54682,
+      "sha256": "005c1985f2cf1a0c5c423b79f3a739c0c853049e78251fd455ff8f9626685548"
+    },
+    "replans.jsonl.gz": {
+      "bytes": 228446,
+      "sha256": "c8d772834c372c0ac72514e93a9240cd1e8dbe3f277d1c7306a08c85a859fb2b"
+    }
+  }
+}

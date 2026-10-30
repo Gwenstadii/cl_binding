@@ -46,7 +46,7 @@ def plot(root):
             for entity,style in [('book','-'),('eef',':')]:
                 z=[r['object_positions']['black_book_1_pos'][2] if entity=='book' else r['eef_position'][2] for r in t]
                 ax.plot(steps,z,color=colors[mode],linestyle=style,label=mode+' '+entity)
-        ax.axvline(40,color='#bf773c',linestyle='--');ax.set(xlim=(20,120),xlabel='Executed step',ylabel='World Z (m)',title=f'{g.upper()}: height around handoff')
+        ax.axvline(60,color='#bf773c',linestyle='--');ax.set(xlim=(20,120),xlabel='Executed step',ylabel='World Z (m)',title=f'{g.upper()}: height around handoff')
     axes[0,0].legend(frameon=False,fontsize=8);axes[0,2].legend(frameon=False,fontsize=8)
     fig.suptitle('SAME instruction throughout; init 0, noise 2026102801\nDashed = steps 1-60; star = step 60; arrow = actual displacement 60-70; Right R0 prefix is untrained',fontsize=12)
     fig.tight_layout(rect=(0,0,1,.94));fig.savefig(root/'paired_paths_example.png',dpi=160,bbox_inches='tight');plt.close(fig)

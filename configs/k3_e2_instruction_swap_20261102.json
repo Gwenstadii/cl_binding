@@ -1,0 +1,121 @@
+{
+  "name": "k3_e2_instruction_swap",
+  "version": "prereg-v1",
+  "locked_date": "2026-11-02",
+  "status": "written before any E2 rollouts were generated",
+  "question": "Is the adapted model's 'go to the new goal' default tied to the instruction text (its similarity to the training instruction), or independent of the instruction (scene/action habit)?",
+  "relation_to_prior_work": "K1 (k1_screen_20261101_01) showed that at the output level the replacement lives in the instruction-independent common response: with FT4 mu, any difference term (R0 full d, ER d, negated d, random directions) left both old instructions going to the new goal. K1 could not say whether that default is triggered by the instruction text at all. E2 manipulates only the test instruction, no training.",
+  "design": {
+    "kind": "native 400-step rollouts, one model, one instruction, fixed initial state",
+    "families": [
+      "scene2",
+      "scene1b",
+      "goal"
+    ],
+    "models": [
+      "R0",
+      "FT4"
+    ],
+    "inits": "development initial states 0-9 of each family config (same states used by earlier development runs; not sealed reserves)",
+    "noise": "one fixed replanning-noise stream per (family, init), the K1 rule: seed = sha256('k1|<family>|<init>')[:8]",
+    "horizon": 400,
+    "replan": "every 10 steps, 50-step chunk, first 10 executed, 10 flow integration steps (native pipeline)",
+    "instruction_sets": {
+      "scene2": {
+        "A": "pick up the book and place it in the left compartment of the caddy",
+        "B": "pick up the book and place it in the front compartment of the caddy",
+        "N": "pick up the book and place it in the right compartment of the caddy",
+        "P": "move the book into the caddy's right-hand slot",
+        "S": "pick up the book and place it in the back compartment of the caddy",
+        "U": "the weather is sunny today",
+        "Z": "zq7 kv3"
+      },
+      "scene1b": {
+        "A": "pick up the book and place it in the left compartment of the caddy",
+        "B": "pick up the book and place it in the front compartment of the caddy",
+        "N": "pick up the book and place it in the right compartment of the caddy",
+        "P": "move the book into the caddy's right-hand slot",
+        "S": "pick up the book and place it in the back compartment of the caddy",
+        "U": "the weather is sunny today",
+        "Z": "zq7 kv3"
+      },
+      "goal": {
+        "A": "put the bowl on the stove",
+        "B": "put the bowl on top of the cabinet",
+        "N": "put the bowl on the plate",
+        "P": "set the bowl down onto the dish",
+        "S": "open the top drawer and put the bowl inside",
+        "U": "the weather is sunny today",
+        "Z": "zq7 kv3"
+      }
+    },
+    "instruction_roles": {
+      "A": "old goal 1 (trained)",
+      "B": "old goal 2 (trained)",
+      "N": "new goal, original training template",
+      "P": "new goal, paraphrase: same meaning, different words",
+      "S": "old template, an unseen position word (a real but never-trained goal)",
+      "U": "unrelated natural sentence",
+      "Z": "meaningless code"
+    },
+    "template_word_overlap": {
+      "note": "crude lexical overlap with the N sentence, counted by hand before running",
+      "scene2": {
+        "N": 1,
+        "P": "~0.45",
+        "S": "~0.85",
+        "A": "~0.85",
+        "B": "~0.85",
+        "U": 0,
+        "Z": 0
+      }
+    },
+    "episodes": 420
+  },
+  "endpoints": {
+    "first_target": "first goal whose native contain/cook/plate region is entered by the object centre, lifted >3 cm above its step-1 height, for 5 consecutive steps (k1_geometry.movement); ties reported",
+    "capture": "first_target is exactly the new goal of that family",
+    "any_target": "first_target is non-empty",
+    "native_success": "first step at which the environment success predicate for a goal is true",
+    "attempted": "gripper closed (action dim 7 > 0) at least once within 400 steps",
+    "early_path": "object and eef positions recorded at steps 40/80/120/200/300/400"
+  },
+  "predictions": {
+    "H_vis": "if the default is an instruction-independent habit, FT4 capture >= 0.8 for every instruction, including U and Z",
+    "H_sim": "if text similarity gates the default, FT4 capture >= 0.8 for N, P, S and <= 0.3 for U, Z",
+    "P3_R0_floor": "R0 capture <= 0.2 for every instruction (R0 never trained on the new goal)",
+    "P4_replication": "R0 first_target == left at >= 0.6 under A and == front at >= 0.6 under B; FT4 capture under A and B >= 0.8",
+    "P5_attempt": "for U and Z, at least 70% of FT4 episodes still close the gripper within 200 steps; if not, those cells are reported as non-informative rather than evidence for H_sim"
+  },
+  "decision_rules": {
+    "U/Z capture high on FT4 (>=0.6)": "replacement is instruction-independent at test time -> supports H_vis; E1 must include L4/L5 and the similarity gradient is not the main axis",
+    "U/Z capture low (<=0.3) while N/P/S high": "text similarity gates the default -> supports H_sim; E1 (5 levels x 2 scenes x 2 parents) is worth its cost",
+    "between": "partial: report per-instruction gradient, do not claim either mechanism; E1 stays the only causal test",
+    "R0 capture high": "capture metric uninformative for that family; that family is excluded from the mechanism reading and reported as such"
+  },
+  "gates": {
+    "prefix_reproduction": "re-running (scene2, FT4, instruction A, init 4) must match the archived K1 prefix rollout FT4_scene2_s1_i4 action rows bit for bit, and the object/eef rows to 1e-9",
+    "determinism": "the same episode run twice in the same process must produce identical actions",
+    "geometry": "scene2 geometry must equal the archived reference sites (k1_geometry.check_against)"
+  },
+  "exclusions": "no episode is dropped for its outcome; failures, non-attempts and ties are reported",
+  "costs": "420 episodes x 400 steps; measured native episode ~10-12 s on one GPU in K1 engineering, so ~1.5 h on one GPU, ~45 min on two",
+  "not_claimed": "E2 is correlational: every FT4 was trained with the original template. It cannot by itself prove that similarity causes replacement; only the E1 training manipulation can.",
+  "families": {
+    "scene2": {
+      "R0": "outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "FT4": "outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+      "new_goal": "right"
+    },
+    "scene1b": {
+      "R0": "outputs/stage3/scene1b_dual_left_front_cosine_20261025_01/checkpoints/012000",
+      "FT4": "outputs/stage2a/stage3b_scene1_ft4_er_20261025_01_ft4/checkpoints/012000",
+      "new_goal": "right"
+    },
+    "goal": {
+      "R0": "outputs/stage3/goal_dual_constant_20261025_01/checkpoints/012000",
+      "FT4": "outputs/stage2a/stage3g_goal_ft4_er_20261025_01_ft4/checkpoints/012000",
+      "new_goal": "right"
+    }
+  }
+}

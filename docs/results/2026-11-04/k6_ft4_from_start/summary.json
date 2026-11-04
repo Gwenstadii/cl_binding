@@ -1,0 +1,223 @@
+{
+ "note": "FT4 controls from step 0 (no R0 prefix)",
+ "conditions": [
+  "NAT-FT4",
+  "NAT-R0",
+  "maskTEXT",
+  "maskSLOT",
+  "swapCA",
+  "swapSEG"
+ ],
+ "states": {
+  "4": {
+   "D": {
+    "NAT-FT4": false,
+    "NAT-R0": true,
+    "maskTEXT": false,
+    "maskSLOT": false,
+    "swapCA": false,
+    "swapSEG": false
+   },
+   "first": {
+    "NAT-FT4": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 109
+     }
+    },
+    "NAT-R0": {
+     "A": [
+      "left"
+     ],
+     "B": [
+      "front"
+     ],
+     "succ_A": {
+      "left": 105
+     }
+    },
+    "maskTEXT": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 142
+     }
+    },
+    "maskSLOT": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 141
+     }
+    },
+    "swapCA": {
+     "A": [],
+     "B": [],
+     "succ_A": {}
+    },
+    "swapSEG": {
+     "A": [
+      "front"
+     ],
+     "B": [
+      "front"
+     ],
+     "succ_A": {
+      "left": 182
+     }
+    }
+   }
+  },
+  "6": {
+   "D": {
+    "NAT-FT4": false,
+    "NAT-R0": true,
+    "maskTEXT": false,
+    "maskSLOT": false,
+    "swapCA": false,
+    "swapSEG": false
+   },
+   "first": {
+    "NAT-FT4": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 105
+     }
+    },
+    "NAT-R0": {
+     "A": [
+      "left"
+     ],
+     "B": [
+      "front"
+     ],
+     "succ_A": {
+      "left": 109
+     }
+    },
+    "maskTEXT": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 143
+     }
+    },
+    "maskSLOT": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 107
+     }
+    },
+    "swapCA": {
+     "A": [
+      "front"
+     ],
+     "B": [],
+     "succ_A": {}
+    },
+    "swapSEG": {
+     "A": [
+      "front"
+     ],
+     "B": [],
+     "succ_A": {}
+    }
+   }
+  },
+  "8": {
+   "D": {
+    "NAT-FT4": false,
+    "NAT-R0": true,
+    "maskTEXT": false,
+    "maskSLOT": false,
+    "swapCA": false,
+    "swapSEG": false
+   },
+   "first": {
+    "NAT-FT4": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 114
+     }
+    },
+    "NAT-R0": {
+     "A": [
+      "left"
+     ],
+     "B": [
+      "front"
+     ],
+     "succ_A": {
+      "left": 109
+     }
+    },
+    "maskTEXT": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {
+      "right": 162
+     }
+    },
+    "maskSLOT": {
+     "A": [
+      "right"
+     ],
+     "B": [
+      "right"
+     ],
+     "succ_A": {}
+    },
+    "swapCA": {
+     "A": [
+      "front"
+     ],
+     "B": [],
+     "succ_A": {}
+    },
+    "swapSEG": {
+     "A": [
+      "front"
+     ],
+     "B": [],
+     "succ_A": {}
+    }
+   }
+  }
+ }
+}

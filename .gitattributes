@@ -37,3 +37,4 @@ docs/results/2026-10-30/stage2y_*/** -text -whitespace
 
 docs/results/2026-11-04/k8_transplant_attribution/** -text -whitespace
 docs/results/2026-11-04/k9_output_projection/** -text -whitespace
+docs/results/2026-11-05/k10_fixed_input_projection/** -text -whitespace

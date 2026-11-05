@@ -1,0 +1,66 @@
+{
+  "name": "k3_e2b_text_control_blocks",
+  "version": "exploratory-after-e2",
+  "status": "written after the pre-registered E2 cells were seen; exploratory only, never pooled with E2",
+  "reason": "E2 left one alternative open: unrelated sentences (U, Z) may fail to trigger the carry program simply because they never mention the book or the caddy, not because the sentence frame matters. E2b adds three text-only controls that keep the object/scene nouns.",
+  "design": {
+    "families": [
+      "scene2",
+      "scene1b",
+      "goal"
+    ],
+    "models": [
+      "R0",
+      "FT4"
+    ],
+    "inits": "0-9, same as E2",
+    "horizon": 400,
+    "instruction_sets": {
+      "scene2": {
+        "W1": "there is a book and a caddy on the desk",
+        "W2": "pick up the book",
+        "W3": "put the book in the caddy"
+      },
+      "scene1b": {
+        "W1": "there is a book and a caddy on the desk",
+        "W2": "pick up the book",
+        "W3": "put the book in the caddy"
+      },
+      "goal": {
+        "W1": "there is a bowl and a plate on the table",
+        "W2": "pick up the bowl",
+        "W3": "put the bowl on the table"
+      }
+    },
+    "instruction_roles": {
+      "W1": "object and scene nouns, no request",
+      "W2": "grasp request on the object, no destination",
+      "W3": "generic destination request, no compartment word"
+    },
+    "episodes": 180
+  },
+  "families": {
+    "scene2": {
+      "R0": "outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "FT4": "outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+      "new_goal": "right"
+    },
+    "scene1b": {
+      "R0": "outputs/stage3/scene1b_dual_left_front_cosine_20261025_01/checkpoints/012000",
+      "FT4": "outputs/stage2a/stage3b_scene1_ft4_er_20261025_01_ft4/checkpoints/012000",
+      "new_goal": "right"
+    },
+    "goal": {
+      "R0": "outputs/stage3/goal_dual_constant_20261025_01/checkpoints/012000",
+      "FT4": "outputs/stage2a/stage3g_goal_ft4_er_20261025_01_ft4/checkpoints/012000",
+      "new_goal": "right"
+    }
+  },
+  "interpretation": {
+    "W2 carries to the new goal": "the destination program needs only an object-directed request; the slot word is decoration",
+    "W2 picks up but never carries": "grasp is separable from destination; destination needs a place phrase",
+    "W3 carries to the new goal": "any place phrase is enough; frame class (not the compartment word) gates",
+    "W1 also carries": "object/scene nouns alone trigger; template similarity is not required and H_vis is back in play"
+  },
+  "not_claimed": "E2b is post-hoc; it can only narrow the alternative explanations of E2, never confirm the pre-registered predictions."
+}

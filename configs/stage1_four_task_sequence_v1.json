@@ -1,0 +1,17 @@
+{
+  "purpose": "complete_left_right_front_back_fixed_12000_each_then_stage3_and_stage4_paired20",
+  "source_checkpoint": "outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+  "source_model_sha256": "97809078a6cece8bd410e2e2eeceea8fc439fd0b7cde726dad2a14c807210b01",
+  "base_config": "configs/stage1_left_then_right_v1.json",
+  "baselines": {
+    "left": ".server/left_then_right_20261022_01/before_paired20/episodes.jsonl",
+    "left_right": ".server/right_continue_20261022_01/episodes.jsonl"
+  },
+  "paired_indices": [30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49],
+  "stages": [
+    {"name": "stage3_front", "goal": "front", "steps": 12000, "exposed_goals": ["left", "right", "front"]},
+    {"name": "stage4_back", "goal": "back", "steps": 12000, "exposed_goals": ["left", "right", "front", "back"]}
+  ],
+  "checkpoint_every": 3000,
+  "evaluation_attempts": 2
+}

@@ -1,0 +1,9 @@
+{
+  "numeric_results_unchanged": true,
+  "correct_scope": "R0 Left80 full snapshot; FT4 Left/Front/Right continuations",
+  "superseded_template_fields": [
+    "audit.json limits[1:3]",
+    "registered_config.json right_teacher_status"
+  ],
+  "right_continuation": "FT4 was trained on Right; no R0 Right prefix in this experiment"
+}

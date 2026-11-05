@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "partition": "development",
+  "checkpoint": "outputs/r0/r0_aligned_v2_20261022_01/checkpoints/003000",
+  "git_commit": "6c624dad27b88e06f15478ee55668b98b0343092",
+  "counts": {
+    "front": {
+      "total": 10,
+      "correct": 1
+    },
+    "left": {
+      "total": 10,
+      "correct": 4
+    },
+    "right": {
+      "total": 10,
+      "correct": 5
+    }
+  },
+  "passed_gate": false,
+  "seconds": 330.8041878179647,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false
+}

@@ -1,0 +1,188 @@
+{
+  "status": "complete",
+  "purpose": "right_task_longer_training_from_exact_6000_state_new_goal_only_development_selection",
+  "source_commit": "409b35e1aeed0016ff84bb4778eed13467796bcb",
+  "started_at": "2026-10-22T14:04:18.730269+00:00",
+  "resume_checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+  "training_run": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01",
+  "training_config_unchanged": true,
+  "optimizer_scheduler_rng_resume_requested": true,
+  "learning_rate_changed": false,
+  "normalization_changed": false,
+  "selection_rule": "First fixed candidate passing >=16/20 ever AND terminal right development successes; paired results never select checkpoints. If none passes, evaluate fixed 18000 endpoint as unqualified.",
+  "paired_set_previously_used": true,
+  "candidate_reports": [
+    {
+      "step": 9000,
+      "goal": "right",
+      "total": 20,
+      "success_ever": 19,
+      "terminal_correct": 19,
+      "required": 16,
+      "passed": true
+    }
+  ],
+  "phases": [
+    {
+      "name": "train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01",
+        "--resume",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+        "--max-steps",
+        "18000",
+        "--stop-file",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/STOP_REQUESTED.json"
+      ],
+      "gpu": 0,
+      "pid": 3814378,
+      "started_elapsed_s": 0.0005918559618294239,
+      "returncode": 0,
+      "finished_elapsed_s": 1006.4651633650064
+    },
+    {
+      "name": "dev_006000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/evaluation_config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "right",
+        "--output",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/dev_006000",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 3814379,
+      "started_elapsed_s": 0.000994084868580103,
+      "returncode": 0,
+      "finished_elapsed_s": 228.2546412362717
+    },
+    {
+      "name": "dev_009000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/evaluation_config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "right",
+        "--output",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/dev_009000",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 55352,
+      "started_elapsed_s": 738.2816219730303,
+      "returncode": 0,
+      "finished_elapsed_s": 990.9704831019044
+    },
+    {
+      "name": "paired20_part0",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/evaluation_config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "front",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/paired20_part0",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 198574,
+      "started_elapsed_s": 1007.3714092420414,
+      "returncode": 0,
+      "finished_elapsed_s": 1471.0028334590606
+    },
+    {
+      "name": "paired20_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/evaluation_config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/right_continue_20261022_01/paired20_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 198575,
+      "started_elapsed_s": 1007.3798595098779,
+      "returncode": 0,
+      "finished_elapsed_s": 1472.018361369148
+    }
+  ],
+  "resume_model_sha256": "8a8bada5e5a6b8143ef1012d05e7f7bdd60735969234603157ab2fe0ae817f4b",
+  "baseline_6000_development": {
+    "goal": "right",
+    "total": 20,
+    "success_ever": 6,
+    "terminal_correct": 6,
+    "required": 16,
+    "passed": false
+  },
+  "optimizer_scheduler_rng_restored": true,
+  "resume_verification": {
+    "status": "pass",
+    "restored_step": 6000,
+    "optimizer_state_entries": 155,
+    "scheduler_last_epoch": 6000,
+    "training_config_unchanged": true,
+    "requested_maximum_step": 18000,
+    "git_commit": "409b35e1aeed0016ff84bb4778eed13467796bcb"
+  },
+  "selected_checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+  "selected_step": 9000,
+  "development_gate_passed": true,
+  "normalization_verified_unchanged": true,
+  "right_paired_counts": {
+    "total": 20,
+    "success_ever": 15,
+    "terminal_correct": 15
+  },
+  "left_paired_counts": {
+    "total": 20,
+    "success_ever": 0,
+    "terminal_correct": 0
+  },
+  "result": "development_qualified_continuation",
+  "finished_at": "2026-10-22T14:28:52.316686+00:00",
+  "seconds": 1472.0216326252557
+}

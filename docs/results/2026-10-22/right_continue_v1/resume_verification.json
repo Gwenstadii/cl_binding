@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "restored_step": 6000,
+  "optimizer_state_entries": 155,
+  "scheduler_last_epoch": 6000,
+  "training_config_unchanged": true,
+  "requested_maximum_step": 18000,
+  "git_commit": "409b35e1aeed0016ff84bb4778eed13467796bcb"
+}

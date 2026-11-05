@@ -1,0 +1,204 @@
+{
+  "verified_at_utc": "2026-10-23T04:52:05.951656+00:00",
+  "source_commit": "16eab1328b7480700a647d1131b7370422aae9fb",
+  "source_file_hashes_verified": 20,
+  "matched_conditions_across_three_models": 80,
+  "same_reset_xml_seed_and_horizon": true,
+  "new_evaluation_episodes": 80,
+  "cached_evaluation_episodes_compared": 160,
+  "recomputed_metrics": {
+    "original_left": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 17,
+          "unfinished": 3
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 19,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 19,
+          "unfinished": 1
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 18,
+          "unfinished": 2
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "left": 16,
+          "unfinished": 4
+        }
+      }
+    },
+    "right9000": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 5,
+          "right": 15
+        },
+        "terminal_targets": {
+          "unfinished": 5,
+          "right": 15
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 6,
+          "right": 14
+        },
+        "terminal_targets": {
+          "unfinished": 6,
+          "right": 14
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 15,
+        "terminal_correct": 15,
+        "first_targets": {
+          "unreached_or_ambiguous": 5,
+          "right": 15
+        },
+        "terminal_targets": {
+          "unfinished": 5,
+          "right": 15
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 7,
+          "right": 13
+        },
+        "terminal_targets": {
+          "unfinished": 7,
+          "right": 13
+        }
+      }
+    },
+    "front12000": {
+      "front": {
+        "total": 20,
+        "success_ever": 19,
+        "terminal_correct": 16,
+        "first_targets": {
+          "front": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "front": 16,
+          "unfinished": 4
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "front": 18,
+          "unreached_or_ambiguous": 2
+        },
+        "terminal_targets": {
+          "front": 16,
+          "unfinished": 4
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "front": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "front": 17,
+          "unfinished": 3
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "front": 17,
+          "unreached_or_ambiguous": 3
+        },
+        "terminal_targets": {
+          "front": 15,
+          "unfinished": 5
+        }
+      }
+    }
+  },
+  "immediately_previous_success_transitions": {
+    "left": {
+      "previous_success_indices": [],
+      "total": 0,
+      "retained_success_ever": 0,
+      "terminal_new_front": 0,
+      "terminal_unfinished": 0
+    },
+    "right": {
+      "previous_success_indices": [
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48
+      ],
+      "total": 15,
+      "retained_success_ever": 0,
+      "terminal_new_front": 12,
+      "terminal_unfinished": 3
+    }
+  },
+  "completed_stage": "stage3_front",
+  "whole_sequence_completion_not_asserted_by_this_audit": true
+}

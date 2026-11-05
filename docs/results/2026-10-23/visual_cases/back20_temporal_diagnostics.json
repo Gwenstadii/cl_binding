@@ -1,0 +1,428 @@
+{
+  "scope": "existing_twenty_back_instruction_rollouts_no_new_policy_execution",
+  "control_hz": 20,
+  "horizon": 400,
+  "episodes": [
+    {
+      "init_index": 30,
+      "first_success_step": 340,
+      "last_success_step": 380,
+      "success_steps_total": 41,
+      "longest_success_run_steps": 41,
+      "success_intervals": [
+        [
+          340,
+          380
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9277774095535278,
+      "positive_gripper_commands_after_first_success": 61,
+      "commands_after_first_success": 61
+    },
+    {
+      "init_index": 31,
+      "first_success_step": 129,
+      "last_success_step": 400,
+      "success_steps_total": 269,
+      "longest_success_run_steps": 246,
+      "success_intervals": [
+        [
+          129,
+          151
+        ],
+        [
+          155,
+          400
+        ]
+      ],
+      "final_goals": [
+        "back"
+      ],
+      "correct_ever": true,
+      "terminal_correct": true,
+      "gripper_command_min_after_first_success": 0.8681462407112122,
+      "positive_gripper_commands_after_first_success": 272,
+      "commands_after_first_success": 272
+    },
+    {
+      "init_index": 32,
+      "first_success_step": 120,
+      "last_success_step": 138,
+      "success_steps_total": 19,
+      "longest_success_run_steps": 19,
+      "success_intervals": [
+        [
+          120,
+          138
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9252825379371643,
+      "positive_gripper_commands_after_first_success": 281,
+      "commands_after_first_success": 281
+    },
+    {
+      "init_index": 33,
+      "first_success_step": 110,
+      "last_success_step": 162,
+      "success_steps_total": 53,
+      "longest_success_run_steps": 53,
+      "success_intervals": [
+        [
+          110,
+          162
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.8867285251617432,
+      "positive_gripper_commands_after_first_success": 291,
+      "commands_after_first_success": 291
+    },
+    {
+      "init_index": 34,
+      "first_success_step": null,
+      "last_success_step": null,
+      "success_steps_total": 0,
+      "longest_success_run_steps": 0,
+      "success_intervals": [],
+      "final_goals": [],
+      "correct_ever": false,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": null,
+      "positive_gripper_commands_after_first_success": 0,
+      "commands_after_first_success": 0
+    },
+    {
+      "init_index": 35,
+      "first_success_step": 126,
+      "last_success_step": 248,
+      "success_steps_total": 82,
+      "longest_success_run_steps": 47,
+      "success_intervals": [
+        [
+          126,
+          141
+        ],
+        [
+          167,
+          185
+        ],
+        [
+          202,
+          248
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9079527854919434,
+      "positive_gripper_commands_after_first_success": 275,
+      "commands_after_first_success": 275
+    },
+    {
+      "init_index": 36,
+      "first_success_step": 121,
+      "last_success_step": 130,
+      "success_steps_total": 10,
+      "longest_success_run_steps": 10,
+      "success_intervals": [
+        [
+          121,
+          130
+        ]
+      ],
+      "final_goals": [
+        "left"
+      ],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.5247068405151367,
+      "positive_gripper_commands_after_first_success": 280,
+      "commands_after_first_success": 280
+    },
+    {
+      "init_index": 37,
+      "first_success_step": null,
+      "last_success_step": null,
+      "success_steps_total": 0,
+      "longest_success_run_steps": 0,
+      "success_intervals": [],
+      "final_goals": [
+        "left"
+      ],
+      "correct_ever": false,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": null,
+      "positive_gripper_commands_after_first_success": 0,
+      "commands_after_first_success": 0
+    },
+    {
+      "init_index": 38,
+      "first_success_step": 126,
+      "last_success_step": 147,
+      "success_steps_total": 22,
+      "longest_success_run_steps": 22,
+      "success_intervals": [
+        [
+          126,
+          147
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.40397223830223083,
+      "positive_gripper_commands_after_first_success": 275,
+      "commands_after_first_success": 275
+    },
+    {
+      "init_index": 39,
+      "first_success_step": 155,
+      "last_success_step": 156,
+      "success_steps_total": 2,
+      "longest_success_run_steps": 2,
+      "success_intervals": [
+        [
+          155,
+          156
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.919752836227417,
+      "positive_gripper_commands_after_first_success": 246,
+      "commands_after_first_success": 246
+    },
+    {
+      "init_index": 40,
+      "first_success_step": 127,
+      "last_success_step": 400,
+      "success_steps_total": 271,
+      "longest_success_run_steps": 244,
+      "success_intervals": [
+        [
+          127,
+          145
+        ],
+        [
+          148,
+          155
+        ],
+        [
+          157,
+          400
+        ]
+      ],
+      "final_goals": [
+        "back"
+      ],
+      "correct_ever": true,
+      "terminal_correct": true,
+      "gripper_command_min_after_first_success": 0.9144107699394226,
+      "positive_gripper_commands_after_first_success": 274,
+      "commands_after_first_success": 274
+    },
+    {
+      "init_index": 41,
+      "first_success_step": 135,
+      "last_success_step": 151,
+      "success_steps_total": 17,
+      "longest_success_run_steps": 17,
+      "success_intervals": [
+        [
+          135,
+          151
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9223701357841492,
+      "positive_gripper_commands_after_first_success": 266,
+      "commands_after_first_success": 266
+    },
+    {
+      "init_index": 42,
+      "first_success_step": 133,
+      "last_success_step": 184,
+      "success_steps_total": 28,
+      "longest_success_run_steps": 18,
+      "success_intervals": [
+        [
+          133,
+          150
+        ],
+        [
+          175,
+          184
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9157726764678955,
+      "positive_gripper_commands_after_first_success": 268,
+      "commands_after_first_success": 268
+    },
+    {
+      "init_index": 43,
+      "first_success_step": 115,
+      "last_success_step": 132,
+      "success_steps_total": 18,
+      "longest_success_run_steps": 18,
+      "success_intervals": [
+        [
+          115,
+          132
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9108288288116455,
+      "positive_gripper_commands_after_first_success": 286,
+      "commands_after_first_success": 286
+    },
+    {
+      "init_index": 44,
+      "first_success_step": 148,
+      "last_success_step": 165,
+      "success_steps_total": 18,
+      "longest_success_run_steps": 18,
+      "success_intervals": [
+        [
+          148,
+          165
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.935039222240448,
+      "positive_gripper_commands_after_first_success": 253,
+      "commands_after_first_success": 253
+    },
+    {
+      "init_index": 45,
+      "first_success_step": 125,
+      "last_success_step": 202,
+      "success_steps_total": 44,
+      "longest_success_run_steps": 19,
+      "success_intervals": [
+        [
+          125,
+          138
+        ],
+        [
+          168,
+          174
+        ],
+        [
+          178,
+          196
+        ],
+        [
+          198,
+          200
+        ],
+        [
+          202,
+          202
+        ]
+      ],
+      "final_goals": [
+        "front"
+      ],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": -0.6427978277206421,
+      "positive_gripper_commands_after_first_success": 274,
+      "commands_after_first_success": 276
+    },
+    {
+      "init_index": 46,
+      "first_success_step": 125,
+      "last_success_step": 148,
+      "success_steps_total": 24,
+      "longest_success_run_steps": 24,
+      "success_intervals": [
+        [
+          125,
+          148
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9039428234100342,
+      "positive_gripper_commands_after_first_success": 276,
+      "commands_after_first_success": 276
+    },
+    {
+      "init_index": 47,
+      "first_success_step": null,
+      "last_success_step": null,
+      "success_steps_total": 0,
+      "longest_success_run_steps": 0,
+      "success_intervals": [],
+      "final_goals": [],
+      "correct_ever": false,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": null,
+      "positive_gripper_commands_after_first_success": 0,
+      "commands_after_first_success": 0
+    },
+    {
+      "init_index": 48,
+      "first_success_step": 135,
+      "last_success_step": 400,
+      "success_steps_total": 266,
+      "longest_success_run_steps": 266,
+      "success_intervals": [
+        [
+          135,
+          400
+        ]
+      ],
+      "final_goals": [
+        "back"
+      ],
+      "correct_ever": true,
+      "terminal_correct": true,
+      "gripper_command_min_after_first_success": 0.9101629853248596,
+      "positive_gripper_commands_after_first_success": 266,
+      "commands_after_first_success": 266
+    },
+    {
+      "init_index": 49,
+      "first_success_step": 155,
+      "last_success_step": 208,
+      "success_steps_total": 30,
+      "longest_success_run_steps": 18,
+      "success_intervals": [
+        [
+          155,
+          172
+        ],
+        [
+          197,
+          208
+        ]
+      ],
+      "final_goals": [],
+      "correct_ever": true,
+      "terminal_correct": false,
+      "gripper_command_min_after_first_success": 0.9180665612220764,
+      "positive_gripper_commands_after_first_success": 246,
+      "commands_after_first_success": 246
+    }
+  ]
+}

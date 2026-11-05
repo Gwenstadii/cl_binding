@@ -1,0 +1,284 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "model": "R0",
+      "goal": "left",
+      "native_chunk_max_abs": 0.0,
+      "self_chunk_max_abs": 0.0,
+      "post_native_max_abs": 0.0,
+      "post_self_max_abs": 0.0,
+      "clip_max_abs": 0.0,
+      "post_per_action_max_abs": 0.0,
+      "flows": [
+        {
+          "flow_index": 0,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 1,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 2,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 3,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 4,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 5,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 6,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 7,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 8,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 9,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        }
+      ],
+      "max_abs": 0.0
+    },
+    {
+      "model": "R0",
+      "goal": "front",
+      "native_chunk_max_abs": 0.0,
+      "self_chunk_max_abs": 0.0,
+      "post_native_max_abs": 0.0,
+      "post_self_max_abs": 0.0,
+      "clip_max_abs": 0.0,
+      "post_per_action_max_abs": 0.0,
+      "flows": [
+        {
+          "flow_index": 0,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 1,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 2,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 3,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 4,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 5,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 6,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 7,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 8,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 9,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        }
+      ],
+      "max_abs": 0.0
+    },
+    {
+      "model": "FT4",
+      "goal": "left",
+      "native_chunk_max_abs": 0.0,
+      "self_chunk_max_abs": 0.0,
+      "post_native_max_abs": 0.0,
+      "post_self_max_abs": 0.0,
+      "clip_max_abs": 0.0,
+      "post_per_action_max_abs": 0.0,
+      "flows": [
+        {
+          "flow_index": 0,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 1,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 2,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 3,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 4,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 5,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 6,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 7,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 8,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 9,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        }
+      ],
+      "max_abs": 0.0
+    },
+    {
+      "model": "FT4",
+      "goal": "front",
+      "native_chunk_max_abs": 0.0,
+      "self_chunk_max_abs": 0.0,
+      "post_native_max_abs": 0.0,
+      "post_self_max_abs": 0.0,
+      "clip_max_abs": 0.0,
+      "post_per_action_max_abs": 0.0,
+      "flows": [
+        {
+          "flow_index": 0,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 1,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 2,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 3,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 4,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 5,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 6,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 7,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 8,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        },
+        {
+          "flow_index": 9,
+          "velocity_max_abs": 0.0,
+          "witness_max_abs": 0.0
+        }
+      ],
+      "max_abs": 0.0
+    }
+  ],
+  "tolerance": 1e-05,
+  "site": 9,
+  "script_sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07",
+  "config_sha256": "e3b0115befaada959e2fdade7d98ce8ceb080951af7116109d1bc98dd524bd85",
+  "model_sha256": {
+    "R0": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "FT4": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f"
+  },
+  "sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "model": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "expert": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+    }
+  },
+  "cache_isolation": {
+    "deep_copy_per_query": true,
+    "key_value_storage_unique": true
+  },
+  "no_physical_actions_beyond_reset_settle": true
+}

@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-30T12:18:24+08:00",
+  "controller_pid": 35299,
+  "controller_present": false,
+  "gpu_snapshot": "0, 721 MiB, 0%\n1, 37 MiB, 0%",
+  "new_gpu_jobs_launched_during_acceptance": false
+}

@@ -1,0 +1,146 @@
+{
+  "config": {
+    "purpose": "complete_left_right_front_back_fixed_12000_each_then_stage3_and_stage4_paired20",
+    "seed": 20261021,
+    "old_goals": [
+      "front"
+    ],
+    "data": {
+      "train_per_goal": 40,
+      "fps": 20,
+      "image_size": 128,
+      "train_output": "datasets/stage1_single_front_train_aligned_v1",
+      "validation_output": "datasets/stage1_single_front_validation_aligned_v1",
+      "action_alignment": "post_action_obs_to_next_action",
+      "normalization_source": "datasets/stage1_single_left_train_aligned_v1"
+    },
+    "model": {
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "flow_steps": 10
+    },
+    "training": {
+      "max_steps": 12000,
+      "samples_per_goal": 6,
+      "learning_rate": 0.0001,
+      "warmup_steps": 100,
+      "save_every": 3000,
+      "log_every": 25,
+      "num_workers": 0,
+      "walltime_hours": 3
+    },
+    "evaluation": {
+      "expert_replay_demos": [
+        "demo_0",
+        "demo_1",
+        "demo_2"
+      ],
+      "horizon": 400,
+      "settle_steps": 10,
+      "common_state_source_goal": "front",
+      "screen_indices": [
+        0,
+        1,
+        2
+      ],
+      "development_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "qualification_indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "paired_indices": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "reserve_indices": [],
+      "development_required_correct": 16,
+      "qualification_required_correct": 8
+    },
+    "continual_stage": {
+      "goal": "front",
+      "exposed_goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "fixed_endpoint": 12000,
+      "optimizer_reset_at_task_boundary": true
+    }
+  },
+  "git_commit": "16eab1328b7480700a647d1131b7370422aae9fb",
+  "split_sha256": "d05cec3337a314b520e15f5dd85b6e3cb91cc59e33639c94d31e2b0081b94595",
+  "normalization_source": "/home/lzx/cl_binding/datasets/stage1_single_left_train_aligned_v1",
+  "conversion_spec": {
+    "purpose": "R0_old_only",
+    "split": "train",
+    "split_sha256": "d05cec3337a314b520e15f5dd85b6e3cb91cc59e33639c94d31e2b0081b94595",
+    "goals": [
+      "front"
+    ],
+    "fps": 20,
+    "image_transform": "rotate_180",
+    "action_alignment": "post_action_obs_to_next_action",
+    "observation_offset": 0,
+    "action_offset": 1,
+    "terminal_observations_dropped_per_trajectory": 1
+  },
+  "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e",
+  "purpose": "complete_left_right_front_back_fixed_12000_each_then_stage3_and_stage4_paired20",
+  "initialization_checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+  "initialization_model_sha256": "97809078a6cece8bd410e2e2eeceea8fc439fd0b7cde726dad2a14c807210b01",
+  "initialization_step": 9000,
+  "optimizer_reset": true,
+  "scheduler_reset": true,
+  "normalization_policy": "inherit_parent_pre_and_post_processors",
+  "parent_processor_sha256": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "6e2aaa0f9413acad17ea98377777e2b22f597e88ce2d02658786d0bb4142358a",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "a743f42cc7bd4ebd1deac8b3585b50d0bbad8f274b3218a450fee2a2fb8a8ab7"
+  }
+}

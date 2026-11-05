@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "merged_parallel_workers": true,
+  "instruction_goals": [
+    "front",
+    "left",
+    "right",
+    "back"
+  ],
+  "episodes": 80,
+  "horizon": 400,
+  "checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+  "normalization_source": "datasets/stage1_single_left_train_aligned_v1",
+  "git_commit": "c078cc2fa14233cdbe48222d52ee6a604f5d8fc5",
+  "task_success_counts": {
+    "front": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0
+    },
+    "left": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0
+    },
+    "right": {
+      "total": 20,
+      "success_ever": 9,
+      "terminal_correct": 9
+    },
+    "back": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0
+    }
+  }
+}

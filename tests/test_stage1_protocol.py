@@ -85,6 +85,150 @@ class Stage1ProtocolTests(unittest.TestCase):
         rows[15] = {"requested_goal": "left", "terminal_category": "correct"}
         self.assertTrue(p.qualification(rows, ["left"], 20, 16)["qualified"])
 
+    def response_rows(self):
+        p=self.protocol();rows=[]
+        outcomes={0:{'front':'left','left':'left','right':'left','back':None},
+                  1:{'front':'left','left':None,'right':None,'back':'back'}}
+        for idx in (0,1):
+            for goal in p.GOALS:
+                terminal=outcomes[idx][goal]
+                rows.append({'init_index':idx,'requested_goal':goal,'terminal_goal':terminal,
+                             'terminal_category':'unfinished' if terminal is None else 'correct' if terminal==goal else 'wrong_goal',
+                             'initial_state_sha256':f'state{idx}','scene_xml_sha256':'scene','seed':42+idx})
+        return rows
+
+    def test_instruction_bias_keeps_failed_rollouts_in_denominator(self):
+        r=self.protocol().instruction_response_summary(self.response_rows(),'left')
+        self.assertEqual(r['other_instructions']['total'],6)
+        self.assertEqual(r['other_instructions']['trained_goal_terminal'],3)
+        self.assertEqual(r['conditioned_on_trained_instruction_success']['total'],3)
+        self.assertEqual(r['conditioned_on_trained_instruction_success']['trained_goal_terminal'],2)
+        self.assertEqual(r['terminal_matrix']['back']['unfinished'],1)
+
+    def test_instruction_comparison_rejects_missing_duplicate_or_mismatched_conditions(self):
+        p=self.protocol();rows=self.response_rows()
+        with self.assertRaises(ValueError):p.instruction_response_summary(rows[:-1],'left')
+        with self.assertRaises(ValueError):p.instruction_response_summary(rows+[rows[0]],'left')
+        rows[0]['initial_state_sha256']='different'
+        with self.assertRaises(ValueError):p.instruction_response_summary(rows,'left')
+
+    def test_single_task_batch_is_supported(self):
+        ids=self.protocol().balanced_indices({'left':[4,5,6]},6,19,1)
+        self.assertEqual(len(ids),6)
+        self.assertTrue(set(ids)<={4,5,6})
+
+    def test_accumulated_success_is_separate_from_terminal_and_first_target(self):
+        from stage1_single_task_benchmark_followup import metric_summary
+        rows=self.response_rows()
+        for row in rows:
+            row['first_goal']=row['terminal_goal']
+            row['first_goal_times']={g:(2 if row['terminal_goal']==g else None) for g in self.protocol().GOALS}
+            row['correct_ever']=row['terminal_category']=='correct'
+        rows[0].update(first_goal='left',correct_ever=True)
+        rows[0]['first_goal_times'].update(left=2,front=8)
+        rows[1].update(terminal_goal=None,terminal_category='unfinished')
+        result=metric_summary(rows,'left')
+        self.assertEqual(result['task_success_counts']['left']['success_ever'],1)
+        self.assertEqual(result['task_success_counts']['left']['terminal_correct'],0)
+        self.assertEqual(result['first_target_matrix']['front']['left'],2)
+        self.assertEqual(result['other_instruction_intrusion']['trained_goal_ever_without_requested_success'],2)
+
+    def test_sequential_comparison_separates_new_target_replacement_from_late_destruction(self):
+        import copy
+        from stage1_sequential_run import compare_sequential
+        before=self.response_rows()
+        for row in before:
+            goal=row['requested_goal']
+            row.update(steps=400,first_goal='left',correct_ever=goal=='left',
+                       first_goal_times={g:(1 if g=='left' else None) for g in self.protocol().GOALS},
+                       terminal_goal='left',terminal_category='correct' if goal=='left' else 'wrong_goal')
+        after=copy.deepcopy(before)
+        for row in after:
+            goal=row['requested_goal']
+            row.update(first_goal='right',terminal_goal='right',
+                       terminal_category='correct' if goal=='right' else 'wrong_goal',
+                       correct_ever=goal=='right',
+                       first_goal_times={g:(1 if g=='right' else None) for g in self.protocol().GOALS})
+        late=next(row for row in after if row['init_index']==1 and row['requested_goal']=='left')
+        late.update(first_goal='left',correct_ever=True)
+        late['first_goal_times']['left']=0
+        result=compare_sequential(before,after,'left','right')
+        old=result['old_goal_previously_successful_ever']
+        self.assertEqual(old['total'],2)
+        self.assertEqual(old['lost_success_ever'],1)
+        self.assertEqual(old['lost_and_first_new_goal'],1)
+        self.assertEqual(old['lost_and_terminal_new_goal'],1)
+        self.assertEqual(old['retained_success_ever'],1)
+        self.assertEqual(result['old_goal_previously_terminal_correct']['lost_and_terminal_new_goal'],2)
+        self.assertEqual(result['after']['task_success_counts']['right']['success_ever'],2)
+
+    def test_sequential_comparison_rejects_changed_pre_post_conditions(self):
+        import copy
+        from stage1_sequential_run import compare_sequential
+        before=self.response_rows()
+        for row in before:
+            row.update(steps=400,first_goal=row['terminal_goal'],correct_ever=row['terminal_category']=='correct',
+                       first_goal_times={g:(1 if row['terminal_goal']==g else None) for g in self.protocol().GOALS})
+        after=copy.deepcopy(before)
+        for row in after:
+            row['seed']+=1
+        with self.assertRaises(ValueError):compare_sequential(before,after,'left','right')
+
+    def test_scalar_normalization_statistics_allow_only_singleton_shape_equivalence(self):
+        canonical = self.protocol().normalization_stat_shape
+        self.assertEqual(canonical(()), (1,))
+        self.assertEqual(canonical((1,)), (1,))
+        self.assertEqual(canonical((1,1,1)), (1,))
+        self.assertNotEqual(canonical((2,3)), canonical((6,)))
+        self.assertNotEqual(canonical((3,1,1)), canonical((3,)))
+        self.assertNotEqual(canonical((0,)), canonical(()))
+
+    def test_new_goal_development_gate_keeps_failures_and_rejects_late_destruction(self):
+        gate=self.protocol().new_goal_development_gate
+        rows=[{'requested_goal':'right','init_index':i,'correct_ever':True,
+               'terminal_category':'correct' if i<15 else 'unfinished'} for i in range(20)]
+        self.assertFalse(gate(rows,'right',20,16)['passed'])
+        rows[15]['terminal_category']='correct'
+        self.assertTrue(gate(rows,'right',20,16)['passed'])
+        self.assertEqual(gate(rows,'right',20,16)['total'],20)
+
+    def test_new_goal_gate_never_uses_old_goal_scores_and_rejects_repeated_states(self):
+        gate=self.protocol().new_goal_development_gate
+        rows=[{'requested_goal':'right','init_index':i,'correct_ever':i<16,
+               'terminal_category':'correct' if i<16 else 'unfinished'} for i in range(20)]
+        old=[{'requested_goal':'left','init_index':i,'correct_ever':False,
+              'terminal_category':'unfinished'} for i in range(20)]
+        self.assertEqual(gate(rows+old,'right',20,16),gate(rows,'right',20,16))
+        with self.assertRaises(ValueError):gate(rows[:-1]+[rows[0]],'right',20,16)
+
+    def test_overnight_sequence_preserves_two_fixed_12000_task_budgets_and_order(self):
+        import copy
+        import json
+        from stage1_complete_sequence import validate_plan
+        path=Path(__file__).resolve().parents[1]/'configs/stage1_four_task_sequence_v1.json'
+        plan=json.loads(path.read_text())
+        validate_plan(plan)
+        changed=copy.deepcopy(plan);changed['stages'][0]['steps']=11999
+        with self.assertRaises(ValueError):validate_plan(changed)
+        changed=copy.deepcopy(plan);changed['stages'].reverse()
+        with self.assertRaises(ValueError):validate_plan(changed)
+
+    def test_three_task_summary_excludes_untrained_fourth_task_from_aggregate(self):
+        from stage1_complete_sequence import summarize_snapshot
+        rows=[]
+        for idx in range(20):
+            for goal in self.protocol().GOALS:
+                actual='back' if goal=='back' else 'front'
+                rows.append({'requested_goal':goal,'init_index':idx,'seed':42+idx,
+                             'initial_state_sha256':f'state{idx}','scene_xml_sha256':'scene',
+                             'first_goal':actual,'first_goal_times':{g:(1 if g==actual else None) for g in self.protocol().GOALS},
+                             'correct_ever':goal==actual,'terminal_goal':actual,
+                             'terminal_category':'correct' if goal==actual else 'wrong_goal'})
+        summary=summarize_snapshot(rows,['left','right','front'],'front')
+        self.assertEqual(summary['exposed_task_aggregate'],{'episodes':60,'success_ever':20,'terminal_correct':20})
+        self.assertEqual(summary['task_success_counts']['back']['terminal_correct'],20)
+        with self.assertRaises(ValueError):summarize_snapshot(rows[:40],['left','right','front'],'front')
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,373 @@
+{
+  "status": "complete",
+  "purpose": "single_left_task_acquisition_then_four_instruction_bias_pilot",
+  "trained_goal": "left",
+  "run_dir": "/home/lzx/cl_binding/.server/single_left_20261022_01",
+  "training_dir": "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01",
+  "source_commit": "6c9adc00a82cd713226bf06159218ac51130fb88",
+  "started_at": "2026-10-22T08:39:00.297296+00:00",
+  "candidate_reports": [
+    {
+      "step": 1000,
+      "counts": {
+        "left": {
+          "total": 10,
+          "correct": 2
+        }
+      },
+      "passed_gate": false
+    },
+    {
+      "step": 3000,
+      "counts": {
+        "left": {
+          "total": 10,
+          "correct": 0
+        }
+      },
+      "passed_gate": false
+    },
+    {
+      "step": 6000,
+      "counts": {
+        "left": {
+          "total": 10,
+          "correct": 10
+        }
+      },
+      "passed_gate": true
+    }
+  ],
+  "selection_rule": "First of the fixed candidate checkpoints to reach the trained-goal development threshold; no other instruction or paired score is used for selection.",
+  "qualification_partition_used": false,
+  "phases": [
+    {
+      "name": "data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/data"
+      ],
+      "gpu": null,
+      "pid": 2069482,
+      "started_elapsed_s": 0.00044256541877985,
+      "returncode": 0,
+      "finished_elapsed_s": 34.02114246599376
+    },
+    {
+      "name": "alignment_verify",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 2070869,
+      "started_elapsed_s": 34.021735025104135,
+      "returncode": 0,
+      "finished_elapsed_s": 34.34365055896342
+    },
+    {
+      "name": "train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01"
+      ],
+      "gpu": 0,
+      "pid": 2070881,
+      "started_elapsed_s": 34.344342516269535,
+      "returncode": 0,
+      "finished_elapsed_s": 1732.015020870138
+    },
+    {
+      "name": "base_paired",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--partition",
+        "paired",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/base_paired",
+        "--trace",
+        "--base-policy",
+        "--instruction-goals",
+        "front",
+        "left",
+        "right",
+        "back"
+      ],
+      "gpu": 1,
+      "pid": 2070882,
+      "started_elapsed_s": 34.344735238235444,
+      "returncode": 0,
+      "finished_elapsed_s": 482.708581910003
+    },
+    {
+      "name": "dev_001000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--partition",
+        "development",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/dev_001000",
+        "--trace",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/001000"
+      ],
+      "gpu": 1,
+      "pid": 2318826,
+      "started_elapsed_s": 482.71849171537906,
+      "returncode": 0,
+      "finished_elapsed_s": 618.0514693199657
+    },
+    {
+      "name": "dev_003000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--partition",
+        "development",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/dev_003000",
+        "--trace",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/003000"
+      ],
+      "gpu": 1,
+      "pid": 2506112,
+      "started_elapsed_s": 828.0774386101402,
+      "returncode": 0,
+      "finished_elapsed_s": 964.5152638931759
+    },
+    {
+      "name": "dev_006000",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--partition",
+        "development",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/dev_006000",
+        "--trace",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000"
+      ],
+      "gpu": 1,
+      "pid": 2938501,
+      "started_elapsed_s": 1609.5627594701946,
+      "returncode": 0,
+      "finished_elapsed_s": 1732.0060036452487
+    },
+    {
+      "name": "adapted_paired",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+        "--partition",
+        "paired",
+        "--output",
+        "/home/lzx/cl_binding/.server/single_left_20261022_01/adapted_paired",
+        "--trace",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000",
+        "--instruction-goals",
+        "front",
+        "left",
+        "right",
+        "back"
+      ],
+      "gpu": 1,
+      "pid": 2938865,
+      "started_elapsed_s": 1732.0155398719944,
+      "returncode": 0,
+      "finished_elapsed_s": 2163.15956152929
+    }
+  ],
+  "baseline_complete": true,
+  "selected_checkpoint": "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000",
+  "selected_step": 6000,
+  "paired_trained_goal_correct": 9,
+  "paired_trained_goal_total": 10,
+  "high_success_on_paired": true,
+  "result": "high_success_single_task_pilot",
+  "comparison": {
+    "base": {
+      "trained_goal": "left",
+      "initial_states": 10,
+      "episodes": 40,
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        }
+      },
+      "trained_instruction_correct": 0,
+      "other_instructions": {
+        "total": 30,
+        "requested_goal_correct": 0,
+        "trained_goal_terminal": 0,
+        "trained_goal_terminal_rate": 0.0
+      },
+      "conditioned_on_trained_instruction_success": {
+        "control_indices": [],
+        "total": 0,
+        "trained_goal_terminal": 0,
+        "trained_goal_terminal_rate": null
+      }
+    },
+    "adapted": {
+      "trained_goal": "left",
+      "initial_states": 10,
+      "episodes": 40,
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 8,
+          "right": 0,
+          "back": 0,
+          "unfinished": 2,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 9,
+          "right": 0,
+          "back": 0,
+          "unfinished": 1,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 8,
+          "right": 0,
+          "back": 0,
+          "unfinished": 2,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 7,
+          "right": 0,
+          "back": 0,
+          "unfinished": 3,
+          "ambiguous": 0
+        }
+      },
+      "trained_instruction_correct": 9,
+      "other_instructions": {
+        "total": 30,
+        "requested_goal_correct": 0,
+        "trained_goal_terminal": 23,
+        "trained_goal_terminal_rate": 0.7666666666666667
+      },
+      "conditioned_on_trained_instruction_success": {
+        "control_indices": [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39
+        ],
+        "total": 27,
+        "trained_goal_terminal": 23,
+        "trained_goal_terminal_rate": 0.8518518518518519
+      }
+    },
+    "base_correct_transitions": {
+      "front": {
+        "base_correct": 0,
+        "base_correct_to_correct": 0,
+        "base_correct_to_trained_goal": 0,
+        "base_correct_to_unfinished": 0,
+        "base_correct_to_ambiguous": 0,
+        "base_correct_to_other_wrong": 0
+      },
+      "right": {
+        "base_correct": 0,
+        "base_correct_to_correct": 0,
+        "base_correct_to_trained_goal": 0,
+        "base_correct_to_unfinished": 0,
+        "base_correct_to_ambiguous": 0,
+        "base_correct_to_other_wrong": 0
+      },
+      "back": {
+        "base_correct": 0,
+        "base_correct_to_correct": 0,
+        "base_correct_to_trained_goal": 0,
+        "base_correct_to_unfinished": 0,
+        "base_correct_to_ambiguous": 0,
+        "base_correct_to_other_wrong": 0
+      }
+    },
+    "matched_pairs": 40,
+    "interpretation": "Other instructions are unsupervised in this adaptation. Trained-goal intrusion alone is not forgetting of an acquired skill."
+  },
+  "seconds": 2163.170464355964,
+  "finished_at": "2026-10-22T09:15:03.467903+00:00"
+}

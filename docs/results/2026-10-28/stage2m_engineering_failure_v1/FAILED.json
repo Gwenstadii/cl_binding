@@ -1,0 +1,537 @@
+{
+  "status": "failed",
+  "phase": "engineering",
+  "started_at": "2026-10-28T14:07:52.293108+00:00",
+  "indices": [
+    0
+  ],
+  "seeds": [
+    2026102801
+  ],
+  "flow_indices": [
+    0,
+    4,
+    8
+  ],
+  "roles": [
+    "R0",
+    "FT4"
+  ],
+  "goals": [
+    "left",
+    "front",
+    "right"
+  ],
+  "scope": "open-loop steps0-2; fixed reset settling only, no policy-generated actions or parameter update",
+  "counts": {
+    "baseline": 0,
+    "patches": 0,
+    "paired": 0,
+    "reference_denoise": 0
+  },
+  "script_sha256": "0f79e388890f4c19935e37fb33682e5f9ca6f813a6f6329b9438dfb9a56d528a",
+  "identity_tolerance": 1e-05,
+  "processor_hashes": {
+    "policy_preprocessor.json": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+    "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "model_sha256": {
+    "R0": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "FT4": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f"
+  },
+  "layer_map": {
+    "R0": [
+      {
+        "vlm_layer": 0,
+        "expert_layer": 0,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 1,
+        "expert_layer": 1,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 2,
+        "expert_layer": 2,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 3,
+        "expert_layer": 3,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 4,
+        "expert_layer": 4,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 5,
+        "expert_layer": 5,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 6,
+        "expert_layer": 6,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 7,
+        "expert_layer": 7,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 8,
+        "expert_layer": 8,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 9,
+        "expert_layer": 9,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 10,
+        "expert_layer": 10,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 11,
+        "expert_layer": 11,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 12,
+        "expert_layer": 12,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 13,
+        "expert_layer": 13,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 14,
+        "expert_layer": 14,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 15,
+        "expert_layer": 15,
+        "kind": "CA"
+      }
+    ],
+    "FT4": [
+      {
+        "vlm_layer": 0,
+        "expert_layer": 0,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 1,
+        "expert_layer": 1,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 2,
+        "expert_layer": 2,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 3,
+        "expert_layer": 3,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 4,
+        "expert_layer": 4,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 5,
+        "expert_layer": 5,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 6,
+        "expert_layer": 6,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 7,
+        "expert_layer": 7,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 8,
+        "expert_layer": 8,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 9,
+        "expert_layer": 9,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 10,
+        "expert_layer": 10,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 11,
+        "expert_layer": 11,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 12,
+        "expert_layer": 12,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 13,
+        "expert_layer": 13,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 14,
+        "expert_layer": 14,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 15,
+        "expert_layer": 15,
+        "kind": "CA"
+      }
+    ]
+  },
+  "ca_layers": {
+    "R0": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ],
+    "FT4": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15
+    ]
+  },
+  "parameter_audit": {
+    "VLM": {
+      "count": 350165184,
+      "different_elements": 0,
+      "sum_squared_difference": 0.0,
+      "max_abs": 0.0,
+      "teacher_requires_grad": 0,
+      "student_requires_grad": 0,
+      "rms_difference": 0.0
+    },
+    "expert": {
+      "count": 98245840,
+      "different_elements": 84914310,
+      "sum_squared_difference": 2809.270484611553,
+      "max_abs": 0.07400467246770859,
+      "teacher_requires_grad": 98245840,
+      "student_requires_grad": 98245840,
+      "rms_difference": 0.00534736332437948
+    },
+    "state_proj": {
+      "count": 31680,
+      "different_elements": 8640,
+      "sum_squared_difference": 0.5595208434637824,
+      "max_abs": 0.0336296409368515,
+      "teacher_requires_grad": 31680,
+      "student_requires_grad": 31680,
+      "rms_difference": 0.004202575732346087
+    },
+    "other_action_projections": {
+      "count": 1580400,
+      "different_elements": 1580400,
+      "sum_squared_difference": 54.33480195364798,
+      "max_abs": 0.0444953478872776,
+      "teacher_requires_grad": 1580400,
+      "student_requires_grad": 1580400,
+      "rms_difference": 0.005863481155333592
+    },
+    "action_out_proj": {
+      "count": 23072,
+      "different_elements": 5047,
+      "sum_squared_difference": 0.12018402599127308,
+      "max_abs": 0.018586985766887665,
+      "teacher_requires_grad": 23072,
+      "student_requires_grad": 23072,
+      "rms_difference": 0.0022823421591085984
+    }
+  },
+  "configuration": {
+    "R0": {
+      "attention_mode": "cross_attn",
+      "num_vlm_layers": 16,
+      "num_expert_layers": 0,
+      "self_attn_every_n_layers": 2,
+      "train_expert_only": true,
+      "train_state_proj": true,
+      "freeze_vision_encoder": true,
+      "prefix_length": 0,
+      "pad_language_to": "max_length",
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "num_steps": 10,
+      "n_obs_steps": 1,
+      "max_action_dim": 32,
+      "max_state_dim": 32,
+      "expert_width_multiplier": 0.75,
+      "use_cache": true
+    },
+    "FT4": {
+      "attention_mode": "cross_attn",
+      "num_vlm_layers": 16,
+      "num_expert_layers": 0,
+      "self_attn_every_n_layers": 2,
+      "train_expert_only": true,
+      "train_state_proj": true,
+      "freeze_vision_encoder": true,
+      "prefix_length": 0,
+      "pad_language_to": "max_length",
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "num_steps": 10,
+      "n_obs_steps": 1,
+      "max_action_dim": 32,
+      "max_state_dim": 32,
+      "expert_width_multiplier": 0.75,
+      "use_cache": true
+    }
+  },
+  "checkpoint_config": {
+    "R0": {
+      "type": "smolvla",
+      "n_obs_steps": 1,
+      "input_features": {
+        "observation.images.image": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            128,
+            128
+          ]
+        },
+        "observation.images.image2": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            128,
+            128
+          ]
+        },
+        "observation.state": {
+          "type": "STATE",
+          "shape": [
+            8
+          ]
+        }
+      },
+      "output_features": {
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            7
+          ]
+        }
+      },
+      "device": "cuda",
+      "dtype": null,
+      "use_amp": true,
+      "use_peft": false,
+      "push_to_hub": false,
+      "repo_id": null,
+      "private": null,
+      "tags": null,
+      "license": null,
+      "pretrained_path": "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/006000",
+      "pretrained_revision": null,
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "normalization_mapping": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      },
+      "max_state_dim": 32,
+      "max_action_dim": 32,
+      "resize_imgs_with_padding": [
+        512,
+        512
+      ],
+      "empty_cameras": 0,
+      "adapt_to_pi_aloha": false,
+      "use_delta_joint_actions_aloha": false,
+      "tokenizer_max_length": 48,
+      "num_steps": 10,
+      "use_cache": true,
+      "freeze_vision_encoder": true,
+      "train_expert_only": true,
+      "train_state_proj": true,
+      "optimizer_lr": 0.0001,
+      "optimizer_betas": [
+        0.9,
+        0.95
+      ],
+      "optimizer_eps": 1e-08,
+      "optimizer_weight_decay": 1e-10,
+      "optimizer_grad_clip_norm": 10.0,
+      "scheduler_warmup_steps": 1000,
+      "scheduler_decay_steps": 30000,
+      "scheduler_decay_lr": 2.5e-06,
+      "vlm_model_name": "/home/lzx/.cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+      "load_vlm_weights": false,
+      "add_image_special_tokens": false,
+      "attention_mode": "cross_attn",
+      "prefix_length": 0,
+      "pad_language_to": "max_length",
+      "num_expert_layers": 0,
+      "num_vlm_layers": 16,
+      "self_attn_every_n_layers": 2,
+      "expert_width_multiplier": 0.75,
+      "min_period": 0.004,
+      "max_period": 4.0,
+      "rtc_config": null,
+      "compile_model": false,
+      "compile_mode": "max-autotune"
+    },
+    "FT4": {
+      "type": "smolvla",
+      "n_obs_steps": 1,
+      "input_features": {
+        "observation.images.image": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            128,
+            128
+          ]
+        },
+        "observation.images.image2": {
+          "type": "VISUAL",
+          "shape": [
+            3,
+            128,
+            128
+          ]
+        },
+        "observation.state": {
+          "type": "STATE",
+          "shape": [
+            8
+          ]
+        }
+      },
+      "output_features": {
+        "action": {
+          "type": "ACTION",
+          "shape": [
+            7
+          ]
+        }
+      },
+      "device": "cuda",
+      "dtype": null,
+      "use_amp": true,
+      "use_peft": false,
+      "push_to_hub": false,
+      "repo_id": null,
+      "private": null,
+      "tags": null,
+      "license": null,
+      "pretrained_path": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "pretrained_revision": null,
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "normalization_mapping": {
+        "VISUAL": "IDENTITY",
+        "STATE": "MEAN_STD",
+        "ACTION": "MEAN_STD"
+      },
+      "max_state_dim": 32,
+      "max_action_dim": 32,
+      "resize_imgs_with_padding": [
+        512,
+        512
+      ],
+      "empty_cameras": 0,
+      "adapt_to_pi_aloha": false,
+      "use_delta_joint_actions_aloha": false,
+      "tokenizer_max_length": 48,
+      "num_steps": 10,
+      "use_cache": true,
+      "freeze_vision_encoder": true,
+      "train_expert_only": true,
+      "train_state_proj": true,
+      "optimizer_lr": 0.0001,
+      "optimizer_betas": [
+        0.9,
+        0.95
+      ],
+      "optimizer_eps": 1e-08,
+      "optimizer_weight_decay": 1e-10,
+      "optimizer_grad_clip_norm": 10.0,
+      "scheduler_warmup_steps": 1000,
+      "scheduler_decay_steps": 30000,
+      "scheduler_decay_lr": 2.5e-06,
+      "vlm_model_name": "/home/lzx/.cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+      "load_vlm_weights": false,
+      "add_image_special_tokens": false,
+      "attention_mode": "cross_attn",
+      "prefix_length": 0,
+      "pad_language_to": "max_length",
+      "num_expert_layers": 0,
+      "num_vlm_layers": 16,
+      "self_attn_every_n_layers": 2,
+      "expert_width_multiplier": 0.75,
+      "min_period": 0.004,
+      "max_period": 4.0,
+      "rtc_config": null,
+      "compile_model": false,
+      "compile_mode": "max-autotune"
+    }
+  },
+  "sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "model": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "expert": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+    }
+  },
+  "instructions": {
+    "left": "pick up the book and place it in the left compartment of the caddy",
+    "front": "pick up the book and place it in the front compartment of the caddy",
+    "right": "pick up the book and place it in the right compartment of the caddy"
+  },
+  "scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+  "physical_state_sha256": {
+    "0": "a5333b05d4085e45da924fda9e61b37a0d5e3a06ba9248cebab8a7b8e4fe559b"
+  },
+  "error": "AssertionError('Frozen image/language cache unexpectedly differs')",
+  "elapsed_seconds": 31.15152353513986,
+  "finished_at": "2026-10-28T14:08:23.444633+00:00"
+}

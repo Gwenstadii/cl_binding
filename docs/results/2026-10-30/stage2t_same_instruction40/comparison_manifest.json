@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "videos": [
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_40_FT4_init00_seed2026102801.mp4",
+      "requested_goal": "left",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init00_seed2026102801.mp4",
+      "right_handoff_source": "LEFT_R0_001-040_then_FT4_041-400_init00_seed2026102801.mp4",
+      "sha256": "2c21bb8dec330f367e8c2745e9c2efac3fe1e3849b17a747a910f1840cef8943",
+      "bytes": 1069294
+    },
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_40_FT4_init00_seed2026102802.mp4",
+      "requested_goal": "left",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init00_seed2026102802.mp4",
+      "right_handoff_source": "LEFT_R0_001-040_then_FT4_041-400_init00_seed2026102802.mp4",
+      "sha256": "711bb4f99fc5ffd784918728696ed99e3af3a35317ad30259100a847d3091b8c",
+      "bytes": 980204
+    },
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_40_FT4_init01_seed2026102801.mp4",
+      "requested_goal": "left",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init01_seed2026102801.mp4",
+      "right_handoff_source": "LEFT_R0_001-040_then_FT4_041-400_init01_seed2026102801.mp4",
+      "sha256": "8ba5891d7d1c838ec3d8c23987d4954da44f8950a0f22e4d58fc2c07c93b96db",
+      "bytes": 1027628
+    },
+    {
+      "file": "LEFT_FT4_NATIVE_vs_R0_40_FT4_init01_seed2026102802.mp4",
+      "requested_goal": "left",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "LEFT_FT4_NATIVE_init01_seed2026102802.mp4",
+      "right_handoff_source": "LEFT_R0_001-040_then_FT4_041-400_init01_seed2026102802.mp4",
+      "sha256": "26f01dab8fb07823334fb70e063e33cc3746fbace28dee7667ca636ce83f8b68",
+      "bytes": 1172838
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_40_FT4_init00_seed2026102801.mp4",
+      "requested_goal": "front",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init00_seed2026102801.mp4",
+      "right_handoff_source": "FRONT_R0_001-040_then_FT4_041-400_init00_seed2026102801.mp4",
+      "sha256": "5bd5937dc72b3270ff89455bc3606309e526b16d8c1bde679d56759e9cd3790c",
+      "bytes": 767984
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_40_FT4_init00_seed2026102802.mp4",
+      "requested_goal": "front",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init00_seed2026102802.mp4",
+      "right_handoff_source": "FRONT_R0_001-040_then_FT4_041-400_init00_seed2026102802.mp4",
+      "sha256": "7c5e45f405635b6a7066b5d966fa6760824d35bb5f1b91de9e687474e9fac715",
+      "bytes": 825945
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_40_FT4_init01_seed2026102801.mp4",
+      "requested_goal": "front",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init01_seed2026102801.mp4",
+      "right_handoff_source": "FRONT_R0_001-040_then_FT4_041-400_init01_seed2026102801.mp4",
+      "sha256": "87808b78cbb4dcc8b1391ece7daa0835b605208614a9de21e6c0320f85bd0076",
+      "bytes": 1214360
+    },
+    {
+      "file": "FRONT_FT4_NATIVE_vs_R0_40_FT4_init01_seed2026102802.mp4",
+      "requested_goal": "front",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "FRONT_FT4_NATIVE_init01_seed2026102802.mp4",
+      "right_handoff_source": "FRONT_R0_001-040_then_FT4_041-400_init01_seed2026102802.mp4",
+      "sha256": "cf7136a03f1e43529974afbc0197dc91a623b1363c83c1c77f05c1c6ccfa36e8",
+      "bytes": 1079787
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_40_FT4_init00_seed2026102801.mp4",
+      "requested_goal": "right",
+      "init_index": 0,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init00_seed2026102801.mp4",
+      "right_handoff_source": "RIGHT_R0_001-040_then_FT4_041-400_init00_seed2026102801.mp4",
+      "sha256": "9078c733742f0ab1003d46cac6dbf0e71ba76d9271893943aae736b326c9fec7",
+      "bytes": 899249
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_40_FT4_init00_seed2026102802.mp4",
+      "requested_goal": "right",
+      "init_index": 0,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init00_seed2026102802.mp4",
+      "right_handoff_source": "RIGHT_R0_001-040_then_FT4_041-400_init00_seed2026102802.mp4",
+      "sha256": "eff1c3f8126b70e6309f01fa3a50a88ff67e70c4ea558d84023d905b4b97e6e9",
+      "bytes": 830745
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_40_FT4_init01_seed2026102801.mp4",
+      "requested_goal": "right",
+      "init_index": 1,
+      "noise_seed": 2026102801,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init01_seed2026102801.mp4",
+      "right_handoff_source": "RIGHT_R0_001-040_then_FT4_041-400_init01_seed2026102801.mp4",
+      "sha256": "8fc313cfbcc463ae38237d68cd636cad64688cbbd4d5c1d5d31b1142b1ff5954",
+      "bytes": 1227261
+    },
+    {
+      "file": "RIGHT_FT4_NATIVE_vs_R0_40_FT4_init01_seed2026102802.mp4",
+      "requested_goal": "right",
+      "init_index": 1,
+      "noise_seed": 2026102802,
+      "frames": 400,
+      "decoded_frames": 400,
+      "left_native_source": "RIGHT_FT4_NATIVE_init01_seed2026102802.mp4",
+      "right_handoff_source": "RIGHT_R0_001-040_then_FT4_041-400_init01_seed2026102802.mp4",
+      "sha256": "231802813dcb6d967af8ff1ed5615a2fbfe6d9dc75bf255d0285abd13fefb80f",
+      "bytes": 1215730
+    }
+  ]
+}

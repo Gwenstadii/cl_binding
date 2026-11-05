@@ -1,0 +1,123 @@
+{
+  "run_dir": "/home/lzx/cl_binding/.server/left_then_right_20261022_01",
+  "source_files": [
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/run_summary.json",
+      "archived_file": "run_summary_original.json",
+      "bytes": 3823,
+      "sha256": "2a9ba52f754dac683f44db3f7cf256f7ed3f8a2f6dab4e675f9953df68c1bcdf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/config.json",
+      "archived_file": "config.json",
+      "bytes": 2008,
+      "sha256": "29d6f7046c79308f20c222ef65b133097268201ee1712e562102b0c42b62a65c"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/alignment_verification.json",
+      "archived_file": "alignment_verification.json",
+      "bytes": 789,
+      "sha256": "39839e1a31618a882a578d2ea502a7ab298ac645f49451ad18a68e7810002ea9"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/normalization_diagnosis.json",
+      "archived_file": "normalization_diagnosis.json",
+      "bytes": 87049,
+      "sha256": "7518a73e38ad330ce33a01e60a4b05332cfec2be528f8e0de288a646bd6c66e2"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/normalization_verification.json",
+      "archived_file": "normalization_verification.json",
+      "bytes": 586,
+      "sha256": "4607695dbcfffbc468b00b00245b123147ebcc16f6f7a81e6a06f0dc8b784fd7"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/before_paired20/evaluation.json",
+      "archived_file": "before_evaluation.json",
+      "bytes": 868,
+      "sha256": "46778d5b5f44e1aa2b3855e31410d0f27f0c4ad91950420c6e9202db58e733ca"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/before_paired20/episodes.jsonl",
+      "archived_file": "before_episodes.jsonl",
+      "bytes": 39570,
+      "sha256": "a1bea3ec7a025486029f3e227efa6e3d78a6d0babd1c626b07dcea6534088320"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20/evaluation.json",
+      "archived_file": "after_evaluation.json",
+      "bytes": 822,
+      "sha256": "394560a45f7d3560a360ca2aa9d46e039ee2acfecd55af478a3486a93842cc59"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20/episodes.jsonl",
+      "archived_file": "after_episodes.jsonl",
+      "bytes": 39563,
+      "sha256": "f987500d6bc39064133143758f8e5744672dcacb2499b07a22bfd0639b9ec673"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20_part0/evaluation.json",
+      "archived_file": "after_part0_evaluation.json",
+      "bytes": 735,
+      "sha256": "547efe072513d20891b263171e0decc74242e8dbafec4a40d6b0cae506cfe8da"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20_part0/episodes.jsonl",
+      "archived_file": "after_part0_episodes.jsonl",
+      "bytes": 19798,
+      "sha256": "dfbf329a9f6e334025c4518e15dc14aefbf65b0fa5e3bd246c3c3d4821531d0c"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20_part1/evaluation.json",
+      "archived_file": "after_part1_evaluation.json",
+      "bytes": 734,
+      "sha256": "f0947d0e4fc6fc847dc01ed39812fde08d6f843f1e43b6af4dda7dd07f913453"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/after_paired20_part1/episodes.jsonl",
+      "archived_file": "after_part1_episodes.jsonl",
+      "bytes": 19765,
+      "sha256": "dfbd6ad4cfd7c198b993974805c0b7409de62056286eaf3f9b5aa1f5d3699c79"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/sequential_comparison.json",
+      "archived_file": "sequential_comparison.json",
+      "bytes": 7309,
+      "sha256": "54b32e59fb00a97c62b4a7427cd3e05fb891ef8435855a71440e956124ce264f"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/evaluation_followup_summary.json",
+      "archived_file": "evaluation_followup_summary.json",
+      "bytes": 3241,
+      "sha256": "cf5909da89adc4129ab5829518bae183b2aeb90e33d3ecf653a746ac3cba32b1"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/left_then_right_20261022_01/EVALUATION_COMPLETE.json",
+      "archived_file": "EVALUATION_COMPLETE.json",
+      "bytes": 98,
+      "sha256": "fef3846540cc3c3bb8256d55930e13b1972ade15da60deba3be7427a98aefc56"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/manifest.json",
+      "archived_file": "training_manifest.json",
+      "bytes": 3747,
+      "sha256": "2ff55b32f35692dc2154f2657a44557dc8f4a282a463c82212ac2afe8167392a"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/training_finished_006000.json",
+      "archived_file": "training_finished_006000.json",
+      "bytes": 175,
+      "sha256": "c12c8172f01624b4639377cdaf0986d94ecf9ed3f9ead9261f593338004b484a"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000/CHECKPOINT_COMPLETE.json",
+      "archived_file": "final_checkpoint_verification.json",
+      "bytes": 139,
+      "sha256": "6497a744f4708f40feea4ee08261f0c033fa53f30992226cf04ecd7aca083a88"
+    }
+  ],
+  "final_model_sha256": "8a8bada5e5a6b8143ef1012d05e7f7bdd60735969234603157ab2fe0ae817f4b",
+  "model_weights_exported": false,
+  "episodes_expected_before": 80,
+  "episodes_expected_after": 80
+}

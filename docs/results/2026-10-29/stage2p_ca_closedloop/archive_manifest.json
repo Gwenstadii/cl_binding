@@ -1,0 +1,109 @@
+{
+  "created_at": "2026-10-29T22:50:49.195191+08:00",
+  "registered_commit": "96992346d9041eec1bb9059e47cd186e5cb724d0",
+  "server_output_root": "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01",
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "scope": "fixed 68-episode development closed-loop test; no weights or training data",
+  "checks": {
+    "raw_hashes_match_audit": true,
+    "server_local_audits_identical": true,
+    "audit_source_pinned": true,
+    "registered_runtime_sources_match": true,
+    "config_semantically_identical": true,
+    "summary_reproduced_exactly": true,
+    "post_run_environment_passed": true
+  },
+  "export_bundle_sha256": "93ec6d6373b5025306bfd4cd65a84fa0f2a5f3b303fe009b52419322e3dd0f25",
+  "code_files": {
+    "scripts\\stage2p_ca_closedloop.py": {
+      "bytes": 30324,
+      "sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07"
+    },
+    "scripts\\run_stage2p_ca_closedloop.py": {
+      "bytes": 5476,
+      "sha256": "4fff631d822287101a5688cebb4c590b6d82c320f82f952ef0d2f7da0cc27183"
+    },
+    "scripts\\audit_stage2p_ca_closedloop.py": {
+      "bytes": 25871,
+      "sha256": "791d08de435f832a11aae4120708aa3ccc389edbfb159f411c19f8bfe9eb60b0"
+    },
+    "scripts\\summarize_stage2p_ca_closedloop.py": {
+      "bytes": 3729,
+      "sha256": "d1a9a66a0842f5d9127dd76e69bac1f50b14de3a25212258fdafafc2d91efb60"
+    },
+    "configs\\stage2p_ca_closedloop_20261029.json": {
+      "bytes": 3557,
+      "sha256": "e3b0115befaada959e2fdade7d98ce8ceb080951af7116109d1bc98dd524bd85"
+    }
+  },
+  "files": {
+    "audit_local_v1.json": {
+      "bytes": 133177,
+      "sha256": "ab9208c800033fe63dfa012c9efaae33711d2376e0f7571bab319355d8a6740d"
+    },
+    "audit_v1.json": {
+      "bytes": 128971,
+      "sha256": "4aa4cf2b7b427d3fbb615f29fe7087450c162de65390f5843c87495811756e47"
+    },
+    "audit_v1.log": {
+      "bytes": 343,
+      "sha256": "75bc5c1d7cc8e299d05c3aea4d8d6f8c2922ca46f960ef8860edc406be0cb0b2"
+    },
+    "closedloop_outcomes.png": {
+      "bytes": 169827,
+      "sha256": "0e914c586b480dfb42eb7184fadf7d8546dd9066a102f4c38e1b05876b434775"
+    },
+    "cpu_tests.log": {
+      "bytes": 1901,
+      "sha256": "d74169084ab270265627ed37d2acd79929c8c7cb586742fbdf550544cdebdfe9"
+    },
+    "dispatch.json": {
+      "bytes": 781,
+      "sha256": "e79a3604132c982d9ea163ff2177e882419a23ec8c8bc8fc891828b75dcc1dde"
+    },
+    "evaluation/COMPLETE.json": {
+      "bytes": 11175,
+      "sha256": "0553598fbe2b777c61144ceae683b56d8683573463ec4b3414f2c1e63bd497fd"
+    },
+    "evaluation/engineering.json": {
+      "bytes": 7055,
+      "sha256": "20644d51d051d1b2204971fdcd9b97f2420e7004bd1f92e5e124def544e25b16"
+    },
+    "evaluation/episodes.jsonl": {
+      "bytes": 54682,
+      "sha256": "005c1985f2cf1a0c5c423b79f3a739c0c853049e78251fd455ff8f9626685548"
+    },
+    "evaluation/events.jsonl.gz": {
+      "bytes": 5449902,
+      "sha256": "d601a83baf8c3cdfb7482854fcaba646bad557c2a0c27e60bf4468bda789e8a8"
+    },
+    "evaluation/manifest.json": {
+      "bytes": 11175,
+      "sha256": "0553598fbe2b777c61144ceae683b56d8683573463ec4b3414f2c1e63bd497fd"
+    },
+    "evaluation/norms.jsonl.gz": {
+      "bytes": 77972130,
+      "sha256": "e7daea5483d3b4e8ca46dafadc50234a0b4d21e164a2f7f5cf30acc25e3553c7"
+    },
+    "evaluation/replans.jsonl.gz": {
+      "bytes": 228446,
+      "sha256": "c8d772834c372c0ac72514e93a9240cd1e8dbe3f277d1c7306a08c85a859fb2b"
+    },
+    "launcher.json": {
+      "bytes": 6612,
+      "sha256": "bad1ca4dd7da1c04ab1ff882bf170ccdb08b2213d6b73c9ac592c12830d05193"
+    },
+    "post_run_check.json": {
+      "bytes": 1195,
+      "sha256": "8c279922c5d83104d7a8fbd5c46cc970bf3e224fe0cbdedcd1afa57507240631"
+    },
+    "registered_config.json": {
+      "bytes": 3462,
+      "sha256": "b3f90db87b2c165208a5c6873d9198a19f8b11cc9f8540bf8aad7ab6f1d6e137"
+    },
+    "summary.json": {
+      "bytes": 45492,
+      "sha256": "4a1e456f2e262101d585c302ccbef3fabce17deebdcf8274f3fcd8491f8d44cb"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+test_command_and_object_motion_are_not_conflated (__main__.SameInstructionProtocol.test_command_and_object_motion_are_not_conflated) ... ok
+test_no_switch_and_four_paired_runs_per_goal (__main__.SameInstructionProtocol.test_no_switch_and_four_paired_runs_per_goal) ... ok
+test_zero_command_has_no_invented_cosine (__main__.SameInstructionProtocol.test_zero_command_has_no_invented_cosine) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

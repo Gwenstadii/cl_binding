@@ -1,0 +1,137 @@
+{
+  "created_at": "2026-10-29T17:58:57.212125+08:00",
+  "registered_commit": "0055e35",
+  "server_output_root": "/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01",
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "checks": {
+    "raw_hashes_match_audit": true,
+    "all_condition_summaries_match_between_platforms": true,
+    "summary_reproduced_exactly": true,
+    "runtime_sources_match_registered_bundle": true,
+    "config_semantically_identical": true,
+    "post_run_environment_passed": true
+  },
+  "cross_platform_audit_exact_json_equal": false,
+  "cross_platform_numeric_differences": [
+    {
+      "path": "/paired_responses/577/metrics/primary/response_error_rms",
+      "local": 0.8809536421875834,
+      "server": 0.8809536421875835,
+      "absolute_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "/paired_responses/2157/metrics/full50/response_error_rms",
+      "local": 0.4927270923984889,
+      "server": 0.49272709239848894,
+      "absolute_difference": 5.551115123125783e-17
+    }
+  ],
+  "cross_platform_max_absolute_difference": 1.1102230246251565e-16,
+  "export_bundle": {
+    "sha256": "c81af302304df865b00c795da962e95ce72f6c74fa80f9c1bff9f7ff43c934d4"
+  },
+  "code_files": {
+    "scripts\\stage2o_pc_heads.py": {
+      "bytes": 33944,
+      "sha256": "cfa644b432ce51c93f99b58992a6028e14bbc00254ffd9285cf3d4e7f9b92530"
+    },
+    "scripts\\run_stage2o_pc_heads.py": {
+      "bytes": 5588,
+      "sha256": "6d739dd75e6e9b12453e604e2d0d574ecefabcac9a861fe96044b3277b2c3eb8"
+    },
+    "scripts\\audit_stage2o_pc_heads.py": {
+      "bytes": 12272,
+      "sha256": "382729dc6e455505bbe5c683aa56c26ee02f07e8666713354018f59573cee2e9"
+    },
+    "scripts\\summarize_stage2o_pc_heads.py": {
+      "bytes": 5262,
+      "sha256": "a76f28199e22a44297bbe55d94ed5c48d39c76fcb8e74700a53c60039f4cfafe"
+    },
+    "configs\\stage2o_pc_heads_20261029.json": {
+      "bytes": 4013,
+      "sha256": "529349a5c6b61085629297f28096e47dc97505a8a32de42b9e31e617e44db566"
+    }
+  },
+  "files": {
+    "analysis/baseline.jsonl": {
+      "bytes": 643859,
+      "sha256": "11c61c76e20ed5ccb4f118f27a62e891641f374d22ffc2004cdae3c011ee754f"
+    },
+    "analysis/COMPLETE.json": {
+      "bytes": 380800,
+      "sha256": "c24b2f99ef2468d4b0c5f92825ec799c2d339fa37921a71b330ca0d074024da7"
+    },
+    "analysis/engineering.json": {
+      "bytes": 12828,
+      "sha256": "6b6dcf1bf1cb5b6714e2164e3cf08a5229ccc6d2ecf67ca695426312d63dc388"
+    },
+    "analysis/heads.jsonl": {
+      "bytes": 2105407,
+      "sha256": "2b2dc62af7c0809d0023e6e61644877aedac1d50c163b46f22fd84f0c53e0344"
+    },
+    "analysis/manifest.json": {
+      "bytes": 380800,
+      "sha256": "c24b2f99ef2468d4b0c5f92825ec799c2d339fa37921a71b330ca0d074024da7"
+    },
+    "analysis/norms.jsonl.gz": {
+      "bytes": 19688166,
+      "sha256": "b08ef636d8133076fd3503d5a0d5cd016689f8fd6404139e305d9411511127d1"
+    },
+    "analysis/patches.jsonl": {
+      "bytes": 25403084,
+      "sha256": "1a98112565a6ac69aeab404cbc75f313b6d06d469b9ec2f2f29ba605ac0b8aab"
+    },
+    "audit_local_v1.json": {
+      "bytes": 5280419,
+      "sha256": "5ca1554c57b389a5fcedc5aa704addf669d86148baf99d76cf3edf70df985283"
+    },
+    "audit_v1.json": {
+      "bytes": 5143550,
+      "sha256": "fa0493df87ba2a0a22a12b1fa135fe78a399c273990045a18d1eee21a33a778a"
+    },
+    "audit_v1.log": {
+      "bytes": 153,
+      "sha256": "4864e63358f726d98c9172027b079e5abf53ace6ff530fe6e118bfe7d08b976e"
+    },
+    "cpu_tests.log": {
+      "bytes": 2474,
+      "sha256": "bdce9a63c22595cdaafaf483f9406da8f8c3eb8395de9d8eae090ab03704535f"
+    },
+    "cpu_tests_layoutfixed.log": {
+      "bytes": 1056,
+      "sha256": "20d60f50232fc6874a04f07cab280d4f20c471de41fd82929f2f9009d3dfd1bb"
+    },
+    "deployment_layout_repair.json": {
+      "bytes": 276,
+      "sha256": "5d31a599b67ed957bfb69ddeedf5aaeddfa3d4d997ad50a2dad9476884bae4b8"
+    },
+    "dispatch.json": {
+      "bytes": 693,
+      "sha256": "3b3a43c27367d6c006cd66a39efbdc88bcdcb1e1e4a63c7f2bfb1d459f4f91f1"
+    },
+    "launcher.json": {
+      "bytes": 7155,
+      "sha256": "48784b9f4ed1d729aa46fa0f1e319df37f029c3080303b2f8f11b1aabbc070b8"
+    },
+    "pc_factorization.png": {
+      "bytes": 129811,
+      "sha256": "0fc33c8ce359e20aef634d1111014b9285b38c027a95fb95a305b8558f654c02"
+    },
+    "post_run_check.json": {
+      "bytes": 1195,
+      "sha256": "c5b9f782ca5647c3c0b79571aafca15413714df708fd2e49c8baa120b24c63bd"
+    },
+    "registered_config.json": {
+      "bytes": 3908,
+      "sha256": "e3a238f5b0f0a07f15df51e562272667c0af1a684d16bea16243dc68940a1d33"
+    },
+    "summary.json": {
+      "bytes": 72801,
+      "sha256": "f5a6543c8efdcc50971559d00e5cff3824ef808b308ac04800b5fad392970fdf"
+    },
+    "true_head_screen.png": {
+      "bytes": 121263,
+      "sha256": "f2e8d5ee8684fa010f8720b4769e6c3b7a20ce58935f878f92b5de62fba8654e"
+    }
+  }
+}

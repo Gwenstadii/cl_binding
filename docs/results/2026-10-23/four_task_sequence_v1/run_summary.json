@@ -1,0 +1,317 @@
+{
+  "status": "complete",
+  "purpose": "complete_left_right_front_back_fixed_12000_each_then_stage3_and_stage4_paired20",
+  "started_at": "2026-10-23T02:52:46.980407+00:00",
+  "source_commit": "16eab1328b7480700a647d1131b7370422aae9fb",
+  "source_checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+  "source_model_sha256": "97809078a6cece8bd410e2e2eeceea8fc439fd0b7cde726dad2a14c807210b01",
+  "sequence": [
+    "left",
+    "right",
+    "front",
+    "back"
+  ],
+  "stages": [
+    {
+      "name": "stage3_front",
+      "goal": "front",
+      "requested_steps": 12000,
+      "status": "complete",
+      "initial_checkpoint": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000",
+      "initial_model_sha256": "97809078a6cece8bd410e2e2eeceea8fc439fd0b7cde726dad2a14c807210b01",
+      "training_dir": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front",
+      "checkpoint": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000",
+      "normalization_verified_unchanged": true,
+      "training_integrity": {
+        "steps": 12000,
+        "continuous": true,
+        "finite_loss_and_gradient": true,
+        "training_seconds": 3185.5770700830035
+      },
+      "evaluation_attempt_used": 1,
+      "counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 19,
+          "terminal_correct": 16
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0
+        }
+      },
+      "checkpoint_model_sha256": "6bdd796a43f2db255e16137948afd75e895bea71b5e057b3935a95bc30bff9cc"
+    },
+    {
+      "name": "stage4_back",
+      "goal": "back",
+      "requested_steps": 12000,
+      "status": "complete",
+      "initial_checkpoint": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000",
+      "initial_model_sha256": "6bdd796a43f2db255e16137948afd75e895bea71b5e057b3935a95bc30bff9cc",
+      "training_dir": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back",
+      "checkpoint": "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/checkpoints/012000",
+      "normalization_verified_unchanged": true,
+      "training_integrity": {
+        "steps": 12000,
+        "continuous": true,
+        "finite_loss_and_gradient": true,
+        "training_seconds": 3000.7502350937575
+      },
+      "evaluation_attempt_used": 1,
+      "counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 2,
+          "terminal_correct": 1
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 17,
+          "terminal_correct": 3
+        }
+      },
+      "checkpoint_model_sha256": "c4d022e1b0e051cfe389fb0ca560ca930b5dc1b0a142a570baea5417d1bc0ba1"
+    }
+  ],
+  "phases": [
+    {
+      "name": "stage3_front_data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/data"
+      ],
+      "gpu": null,
+      "pid": 205015,
+      "started_elapsed_s": 0.0007165409624576569,
+      "returncode": 0,
+      "finished_elapsed_s": 35.97662313003093
+    },
+    {
+      "name": "stage3_front_alignment",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 206401,
+      "started_elapsed_s": 35.977691469248384,
+      "returncode": 0,
+      "finished_elapsed_s": 36.29969839937985
+    },
+    {
+      "name": "stage4_back_data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/data"
+      ],
+      "gpu": null,
+      "pid": 206413,
+      "started_elapsed_s": 36.30961057404056,
+      "returncode": 0,
+      "finished_elapsed_s": 71.9320225273259
+    },
+    {
+      "name": "stage4_back_alignment",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 207799,
+      "started_elapsed_s": 71.93345407396555,
+      "returncode": 0,
+      "finished_elapsed_s": 72.25537950918078
+    },
+    {
+      "name": "stage3_front_train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front",
+        "--init-checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/009000"
+      ],
+      "gpu": 0,
+      "pid": 207818,
+      "started_elapsed_s": 73.57161981007084,
+      "returncode": 0,
+      "finished_elapsed_s": 3276.068927682005
+    },
+    {
+      "name": "stage3_front_eval1_part0",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "front",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part0",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 1936329,
+      "started_elapsed_s": 3276.726156155113,
+      "returncode": 0,
+      "finished_elapsed_s": 3747.866751329042
+    },
+    {
+      "name": "stage3_front_eval1_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage3_front/eval1_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 1936330,
+      "started_elapsed_s": 3276.726729811169,
+      "returncode": 0,
+      "finished_elapsed_s": 3748.982904943172
+    },
+    {
+      "name": "stage4_back_train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back",
+        "--init-checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage3_front/checkpoints/012000"
+      ],
+      "gpu": 0,
+      "pid": 1938420,
+      "started_elapsed_s": 3750.2528211879544,
+      "returncode": 0,
+      "finished_elapsed_s": 6768.842369836289
+    },
+    {
+      "name": "stage4_back_eval1_part0",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "front",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/eval1_part0",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 3667455,
+      "started_elapsed_s": 6769.551389978267,
+      "returncode": 0,
+      "finished_elapsed_s": 7234.15993916709
+    },
+    {
+      "name": "stage4_back_eval1_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/four_task_20261023_01/stage4_back/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/eval1_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 3667456,
+      "started_elapsed_s": 6769.55997684598,
+      "returncode": 0,
+      "finished_elapsed_s": 7239.881824641954
+    }
+  ],
+  "selection_rule": "Fixed +12000 endpoint for each new task; continue to back regardless of front scores.",
+  "cached_baseline_episodes": 160,
+  "planned_new_evaluation_episodes": 160,
+  "paired_set_previously_used": true,
+  "seconds": 7240.604371534195,
+  "finished_at": "2026-10-23T04:53:27.585846+00:00",
+  "new_evaluation_episodes": 160
+}

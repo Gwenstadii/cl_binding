@@ -1,0 +1,138 @@
+{
+  "status": "complete",
+  "run_id": "r0_aligned_v2_20261022_01",
+  "source_commit": "6c624dad27b88e06f15478ee55668b98b0343092",
+  "exit_codes": {
+    "exit_code.txt": "0",
+    "step003000_exit_code.txt": "0",
+    "step006000_exit_code.txt": "0"
+  },
+  "times": {
+    "started_at": "2026-10-22T14:14:31+08:00",
+    "training_started_at": "2026-10-22T14:16:21+08:00",
+    "training_finished_at": "2026-10-22T14:55:58+08:00",
+    "finished_at": "2026-10-22T15:01:50+08:00"
+  },
+  "wall_seconds": {
+    "data_and_verification": 110.0,
+    "training_process": 2377.0,
+    "development": 352.0,
+    "total": 2839.0
+  },
+  "training_finished": {
+    "status": "complete",
+    "step": 6000,
+    "target": 6000,
+    "seconds": 2360.2637899941765,
+    "peak_allocated_mib": 3156.26123046875,
+    "frozen_parameters_unchanged": true
+  },
+  "checkpoint_verification": {
+    "count": 12,
+    "all_pass": true,
+    "max_reload_difference": 0.0,
+    "all_frozen_unchanged": true
+  },
+  "optimization": {
+    "records": 6000,
+    "all_losses_finite": true,
+    "all_gradient_norms_positive_finite": true,
+    "first100_loss_mean": 1.4464756172895432,
+    "last100_loss_mean": 0.47144467383623123
+  },
+  "trainable_parameters": 99880992,
+  "old_goals": [
+    "front",
+    "left",
+    "right"
+  ],
+  "split_sha256": "55ce420cca19e20d01b884dbdd1f85c34c670c5fed5a4486a00dc8bdbb2f7111",
+  "evaluations": {
+    "003000": {
+      "report": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "outputs/r0/r0_aligned_v2_20261022_01/checkpoints/003000",
+        "git_commit": "6c624dad27b88e06f15478ee55668b98b0343092",
+        "counts": {
+          "front": {
+            "total": 10,
+            "correct": 1
+          },
+          "left": {
+            "total": 10,
+            "correct": 4
+          },
+          "right": {
+            "total": 10,
+            "correct": 5
+          }
+        },
+        "passed_gate": false,
+        "seconds": 330.8041878179647,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      },
+      "terminal_categories": {
+        "unfinished": 20,
+        "correct": 10
+      },
+      "correct_ever": 13,
+      "correct_then_destroyed": 3,
+      "wrong_goal_ever": 0,
+      "matched_legacy_reset_and_seed": 30,
+      "paired_correctness_transition": {
+        "correct->fail": 7,
+        "fail->fail": 13,
+        "fail->correct": 7,
+        "correct->correct": 3
+      }
+    },
+    "006000": {
+      "report": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "outputs/r0/r0_aligned_v2_20261022_01/checkpoints/006000",
+        "git_commit": "6c624dad27b88e06f15478ee55668b98b0343092",
+        "counts": {
+          "front": {
+            "total": 10,
+            "correct": 3
+          },
+          "left": {
+            "total": 10,
+            "correct": 6
+          },
+          "right": {
+            "total": 10,
+            "correct": 2
+          }
+        },
+        "passed_gate": false,
+        "seconds": 333.12489839363843,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      },
+      "terminal_categories": {
+        "unfinished": 19,
+        "correct": 11
+      },
+      "correct_ever": 11,
+      "correct_then_destroyed": 0,
+      "wrong_goal_ever": 0,
+      "matched_legacy_reset_and_seed": 30,
+      "paired_correctness_transition": {
+        "correct->fail": 10,
+        "fail->fail": 9,
+        "fail->correct": 5,
+        "correct->correct": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "name": "k5_ca_combination",
+  "version": "prereg-v1",
+  "locked_date": "2026-11-04",
+  "status": "written before any K5 continuation",
+  "question": "Is the default-target drift carried by the action expert's attention path, and if so by which layer group? Single cross-attention layers were already shown insufficient (0/128). This tests combinations of layers, and segments that include the self-attention layers that also read the prefix.",
+  "relation_to_prior_work": {
+    "stage2q": "8 single CA message swaps, 420 episodes, first-target 0/128 for correct old source",
+    "stage2c": "whole-block parameter swaps (front/back half, K/V projections) failed",
+    "k1_k2": "output-level: with FT4 common response, any difference term recovers 0",
+    "k4": "slot word still attended but its causal weight on the first chunk collapsed in FT4; masking CA text did not change the target"
+  },
+  "design": {
+    "intervention": "swap the attention block (input_layernorm + self_attn projections) of selected expert layers from the donor model into FT4; the receiver's residual stream, MLP and post-attention norm are untouched",
+    "why_module_swap": "the donor attention is then computed on the receiver's own hidden states at that layer (coupled), which is the V2 semantics; no manual attention math",
+    "states": "R0 rolls 40 native steps from development initial states 4, 6, 8 with instruction A; same noise rule as K4",
+    "gap_rule": "a state is a gap state if native R0 routes both instructions correctly (A->left, B->front) and native FT4 does not (both -> right)",
+    "instructions": [
+      "A = pick up the book and place it in the left compartment of the caddy",
+      "B = pick up the book and place it in the front compartment of the caddy"
+    ],
+    "conditions": {
+      "NAT-FT4": "no intervention, FT4",
+      "NAT-R0": "no intervention, R0",
+      "SELF-ALL": "swap all 16 expert attention blocks with FT4's own (identity gate)",
+      "CA-shallow": "donor attention at expert layers 1,3,5",
+      "CA-mid": "donor attention at expert layers 7,9,11",
+      "CA-deep": "donor attention at expert layers 13,15",
+      "CA-ALL": "donor attention at all 8 cross-attention layers",
+      "CA-mismatch": "donor attention at layers 1..15 paired with reversed donor layers (same amount of change, wrong correspondence)",
+      "SEG-0-5": "donor attention at layers 0-5 (includes self-attention layers)",
+      "SEG-6-10": "donor attention at layers 6-10",
+      "SEG-11-15": "donor attention at layers 11-15",
+      "SEG-ALL": "donor attention at all 16 layers"
+    },
+    "horizon": "400 native steps, continuation starts at step 40, unchanged replanning/noise",
+    "episodes": 72
+  },
+  "endpoints": {
+    "first_target": "first goal entered (lift >3 cm, 5 consecutive steps), k1_geometry",
+    "D": "same state: instruction A first target == left AND instruction B first target == front",
+    "success": "native success predicate step per goal"
+  },
+  "predictions": {
+    "P1_gate": "SELF-ALL reproduces NAT-FT4 action rows bitwise",
+    "P2_gap": "NAT-R0 D=1 and NAT-FT4 D=0 on all three states",
+    "P3_CA_sufficient": "CA-ALL reaches D=1 on at least 2 of 3 states",
+    "P4_SA_needed": "if CA-ALL stays 0 but SEG-ALL or a segment reaches D>=1, the language path includes self-attention layers",
+    "P5_controls": "CA-mismatch does not reach D=1; no condition reaches D=1 by sending both instructions to the same wrong goal"
+  },
+  "decision_rules": {
+    "CA-ALL restores": "attention messages in the 8 CA layers are sufficient when combined; prune to the minimal group",
+    "only SEG-* restores": "self-attention layers carry the language path too (collaborator's caveat confirmed)",
+    "nothing restores": "the default is not carried by the attention modules that can be swapped this way; move to MLP/parameter or data-side causes"
+  },
+  "exclusions": "no episode dropped; failed or non-gap states reported",
+  "not_claimed": "restoration by intervention is a causal statement about sufficiency in this setting, not a deployable method and not a claim about training causes"
+}

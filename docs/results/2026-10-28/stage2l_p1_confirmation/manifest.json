@@ -1,0 +1,37 @@
+{
+  "scope": "completed P1 existing-entrance common-noise confirmation; no new training or state acquisition",
+  "registration_commit": "6de2016",
+  "distinct_snapshots": 12,
+  "source_physical_inits": 4,
+  "continuations": 72,
+  "noise_seeds": [
+    2026102801,
+    2026102802,
+    2026102803
+  ],
+  "primary_horizon": 120,
+  "audit_script": "scripts/audit_stage2l_p1.py",
+  "audit_script_sha256": "087d564f1c237fec5544cf0ed860ab039120b5ab5796e08651ef9eb6eeea0cdc",
+  "files": {
+    "audit.json": {
+      "bytes": 203903,
+      "sha256": "b90898bbf7504da18c91529816867e430dd53757364adffb24b8c39e9bde89b9"
+    },
+    "COMPLETE.json": {
+      "bytes": 111,
+      "sha256": "7ef3ad33496ec83d003bd3336af1dfd1bf41b31405a5acbe97dbaa73f323b1a6"
+    },
+    "launcher.json": {
+      "bytes": 5939,
+      "sha256": "3b8758ba5e050213e1a0f325e434c036c85cb698354d36ca0a716595c9af4847"
+    },
+    "registered_config.json": {
+      "bytes": 2536,
+      "sha256": "61b081cc63f243663e26d6db9de74ee64f0bfbabf9ea90bf47ee69e5911bc781"
+    },
+    "run_manifest.json": {
+      "bytes": 344989,
+      "sha256": "c6e3fea3f1f6e908fe726ad1d49e9a4a347ad6f0dde2829e5046be89b914b6ed"
+    }
+  }
+}

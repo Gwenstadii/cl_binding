@@ -1,0 +1,117 @@
+{
+  "verified_at_utc": "2026-10-22T10:09:15.058499+00:00",
+  "source_commit": "6c9adc00a82cd713226bf06159218ac51130fb88",
+  "matched_base_adapted_pairs": 40,
+  "same_reset_and_seed_across_four_instructions_and_both_models": true,
+  "all_episodes_400_steps": true,
+  "adapted_counts_recomputed_from_episode_rows": {
+    "front": {
+      "total": 10,
+      "requested_success_ever": 0,
+      "requested_success_terminal": 0,
+      "terminal_left": 8,
+      "terminal_unfinished": 2,
+      "first_left": 10
+    },
+    "left": {
+      "total": 10,
+      "requested_success_ever": 10,
+      "requested_success_terminal": 9,
+      "terminal_left": 9,
+      "terminal_unfinished": 1,
+      "first_left": 10
+    },
+    "right": {
+      "total": 10,
+      "requested_success_ever": 0,
+      "requested_success_terminal": 0,
+      "terminal_left": 8,
+      "terminal_unfinished": 2,
+      "first_left": 10
+    },
+    "back": {
+      "total": 10,
+      "requested_success_ever": 0,
+      "requested_success_terminal": 0,
+      "terminal_left": 7,
+      "terminal_unfinished": 3,
+      "first_left": 10
+    }
+  },
+  "adapted_terminal_categories": {
+    "wrong_goal": 23,
+    "unfinished": 8,
+    "correct": 9
+  },
+  "other_instructions": {
+    "total": 30,
+    "first_left": 30,
+    "terminal_left": 23,
+    "requested_success_ever": 0
+  },
+  "conditioned_on_terminal_left_control_success": {
+    "control_indices": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39
+    ],
+    "total": 27,
+    "terminal_left": 23
+  },
+  "base_requested_success_ever": 0,
+  "base_requested_success_terminal": 0,
+  "supplement_reused_original_40_adapted_rollouts": true,
+  "archived_source_files": [
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/run_summary.json",
+      "archived_file": "run_summary.json",
+      "sha256": "b08f071d460de233eb0e79b9aa7f36d2a73749bc3830220ebba461933f74f2cb"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/COMPLETE.json",
+      "archived_file": "run_COMPLETE.json",
+      "sha256": "e851d62c52e0d2583344ed3c6f89d135d62cce256966fe3a54cd1b0a025217f2"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/config.json",
+      "archived_file": "run_config.json",
+      "sha256": "195d95048bdbfd3b6cf634bd940a30406aa8237c6647294583add06a0980f9f7"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/instruction_comparison.json",
+      "archived_file": "instruction_comparison.json",
+      "sha256": "4d17712f3f572928e107e519503c4a39676e0e4ed499daf92a8796a3a5c37978"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/adapted_paired/evaluation.json",
+      "archived_file": "adapted_evaluation.json",
+      "sha256": "d98a7b310e70b17f0ce7a5d26a624e6dac1a876beb5045e69deead8f03fe8aaf"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/adapted_paired/episodes.jsonl",
+      "archived_file": "adapted_episodes.jsonl",
+      "sha256": "efaf2125f71f6f397a7e30eab38955d510c11a596ae7b662e0894adb4bec7382"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/dev_006000/evaluation.json",
+      "archived_file": "dev_006000_evaluation.json",
+      "sha256": "bfd5b1fad2c5700262aab0747b898b619f9e050ad9120160718c24e5af37d72a"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/dev_006000/episodes.jsonl",
+      "archived_file": "dev_006000_episodes.jsonl",
+      "sha256": "ed911e5737786b7d8dfe176cd2f02104cefff84cf096f80971afc984a1a92779"
+    },
+    {
+      "server_path": "/home/lzx/cl_binding/.server/single_left_20261022_01/benchmark_followup/summary.json",
+      "archived_file": "benchmark_followup_summary.json",
+      "sha256": "83c040c0ed13e56f5e6dffc546e9a9fa918f7775e190a3d277ead2c993bbdeb2"
+    }
+  ]
+}

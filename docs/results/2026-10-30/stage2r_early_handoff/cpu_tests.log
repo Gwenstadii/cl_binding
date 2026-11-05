@@ -1,0 +1,10 @@
+test_already_reached_prefix_does_not_count_as_fresh_selection (__main__.HandoffProtocol.test_already_reached_prefix_does_not_count_as_fresh_selection) ... ok
+test_changed_instruction_is_scored_against_new_request (__main__.HandoffProtocol.test_changed_instruction_is_scored_against_new_request) ... ok
+test_fixed_matrix_has_four_branches_per_identical_boundary (__main__.HandoffProtocol.test_fixed_matrix_has_four_branches_per_identical_boundary) ... ok
+test_following_prefix_does_not_pass_two_instruction_selection (__main__.HandoffProtocol.test_following_prefix_does_not_pass_two_instruction_selection) ... ok
+test_original_global_horizon_and_noise_boundaries (__main__.HandoffProtocol.test_original_global_horizon_and_noise_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.013s
+
+OK

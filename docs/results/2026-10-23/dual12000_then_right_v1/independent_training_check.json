@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "verified_at": "2026-10-23T13:38:35.946002+00:00",
+  "continuous_finite_training_updates": 12000,
+  "all_batches_right_only_size6": true,
+  "new_optimizer_and_scheduler": true,
+  "four_checkpoint_acceptance_markers": {
+    "3000": {
+      "status": "pass",
+      "step": 3000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "6000": {
+      "status": "pass",
+      "step": 6000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "9000": {
+      "status": "pass",
+      "step": 9000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "12000": {
+      "status": "pass",
+      "step": 12000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    }
+  },
+  "parent_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "final_model_sha256": "8c2dc6c371958027239a8c709a346842291bfb631b5a0ac29f4c04c394b85249",
+  "normalization_processor_hashes_unchanged": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "training_trace_sha256": "1f4ca2423c1735c8cfe8f35e1eb01128e0bd26c15ae19ced25e7159f6b842a7a",
+  "audit_script_sha256": "925fa02d5c055223940c55852333b51e5aeb90e47413717a2966025903e936f3",
+  "source_commit": "5514c303d5b516a5b565ef777972d69f5bf83480"
+}

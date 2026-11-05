@@ -1,0 +1,570 @@
+{
+  "status": "complete",
+  "scope": "development entrance handoff, not training or formal qualification",
+  "arguments": {
+    "config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "runtime_scripts": "/home/lzx/cl_binding_stage2a/scripts",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2e_cid_20261026_01_cid/checkpoints/012000",
+    "centres": "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_03/fixed_centres.json",
+    "output": "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_03/entry_smoke",
+    "indices": [
+      0
+    ],
+    "horizon": 400,
+    "continuation": 120,
+    "entry_radius": 0.08,
+    "min_lift": 0.03,
+    "min_step": 20,
+    "object": "black_book_1",
+    "max_minutes": 100,
+    "self_action_tolerance": 1e-05
+  },
+  "centres_source": {
+    "centres": {
+      "left": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "front": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "right": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "back": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ]
+    },
+    "site_sizes": {
+      "left": [
+        0.06196,
+        0.06216,
+        0.06046
+      ],
+      "front": [
+        0.02775,
+        0.03595,
+        0.06216
+      ],
+      "right": [
+        0.06196,
+        0.06216,
+        0.06046
+      ],
+      "back": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    },
+    "sites": {
+      "left": "desk_caddy_1_left_contain_region",
+      "front": "desk_caddy_1_front_contain_region",
+      "right": "desk_caddy_1_right_contain_region",
+      "back": "desk_caddy_1_back_contain_region"
+    },
+    "source": "native environment target-region sites, no rollout outcomes",
+    "canonical_scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+    "seed": 20261021,
+    "rule": "frozen before either method rollout; entry uses requested target uniquely nearest and radius 0.08m"
+  },
+  "centres_sha256": "9faf9c237dc176bb064061fe890af7e7cd8c572b750fb4f69830a0f83e333dfc",
+  "scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+  "model_sha256": {
+    "teacher": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student": "77c06eea32c9abb08fbacac005bfa457b868f19be8aaa60a2c4fa5cf2a7566c0"
+  },
+  "snapshot_rng_rule": "both continuations restore the same source-boundary torch and numpy RNG",
+  "boundary_observation_rule": "sim.forward plus forced observable refresh at every planning boundary in both prefix and continuation; standardizes native step-observation lag without advancing physics",
+  "entry_rule": "first pre-action planning boundary: fixed radius/lift, requested goal uniquely nearest among all supplied centres, before any goal",
+  "natural_self_check": "source-policy first action and first physical next state compared after full restore",
+  "prefix_rows": [
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 0,
+      "entry_step": 100,
+      "requested_goal": "left",
+      "first_goal": "left",
+      "first_goal_times": {
+        "front": null,
+        "left": 106,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": "left",
+      "terminal_category": "correct",
+      "correct_ever": true,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 120,
+      "requested_goal": "front",
+      "first_goal": "front",
+      "first_goal_times": {
+        "front": 136,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": "front",
+      "terminal_category": "correct",
+      "correct_ever": true,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "student",
+      "goal": "left",
+      "init_index": 0,
+      "entry_step": null,
+      "requested_goal": "left",
+      "first_goal": null,
+      "first_goal_times": {
+        "front": null,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": null,
+      "terminal_category": "unfinished",
+      "correct_ever": false,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 130,
+      "requested_goal": "front",
+      "first_goal": null,
+      "first_goal_times": {
+        "front": null,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": null,
+      "terminal_category": "unfinished",
+      "correct_ever": false,
+      "correct_then_destroyed": false
+    }
+  ],
+  "continuation_rows": [
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 0,
+      "entry_step": 100,
+      "continuation_policy": "teacher",
+      "steps": 120,
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "self_first_action_max_abs": 0.0,
+      "self_first_next_state_max_abs": 0.0,
+      "self_first_step_passed": true,
+      "closest_old_target_xy_m": {
+        "left": 0.0028573298951597285,
+        "front": 0.13234157581498204
+      },
+      "requested_goal": "left",
+      "first_goal": "left",
+      "first_goal_times": {
+        "front": null,
+        "left": 6,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": "left",
+      "terminal_category": "correct",
+      "correct_ever": true,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "teacher",
+      "goal": "left",
+      "init_index": 0,
+      "entry_step": 100,
+      "continuation_policy": "student",
+      "steps": 120,
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "self_first_action_max_abs": null,
+      "self_first_next_state_max_abs": null,
+      "self_first_step_passed": true,
+      "closest_old_target_xy_m": {
+        "left": 0.0116964014393024,
+        "front": 0.13341306882470416
+      },
+      "requested_goal": "left",
+      "first_goal": "left",
+      "first_goal_times": {
+        "front": null,
+        "left": 7,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": "left",
+      "terminal_category": "correct",
+      "correct_ever": true,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 120,
+      "continuation_policy": "teacher",
+      "steps": 120,
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "self_first_action_max_abs": 0.0,
+      "self_first_next_state_max_abs": 0.0,
+      "self_first_step_passed": true,
+      "closest_old_target_xy_m": {
+        "left": 0.13751021228109017,
+        "front": 0.008978434100750393
+      },
+      "requested_goal": "front",
+      "first_goal": "front",
+      "first_goal_times": {
+        "front": 16,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": "front",
+      "terminal_category": "correct",
+      "correct_ever": true,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "teacher",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 120,
+      "continuation_policy": "student",
+      "steps": 120,
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "self_first_action_max_abs": null,
+      "self_first_next_state_max_abs": null,
+      "self_first_step_passed": true,
+      "closest_old_target_xy_m": {
+        "left": 0.12916264139858777,
+        "front": 0.011045371369993706
+      },
+      "requested_goal": "front",
+      "first_goal": "front",
+      "first_goal_times": {
+        "front": 18,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": "front",
+      "terminal_category": "correct",
+      "correct_ever": true,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 130,
+      "continuation_policy": "teacher",
+      "steps": 120,
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "self_first_action_max_abs": null,
+      "self_first_next_state_max_abs": null,
+      "self_first_step_passed": true,
+      "closest_old_target_xy_m": {
+        "left": 0.12058525626036663,
+        "front": 0.03337502252140609
+      },
+      "requested_goal": "front",
+      "first_goal": null,
+      "first_goal_times": {
+        "front": null,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": null,
+      "terminal_category": "unfinished",
+      "correct_ever": false,
+      "correct_then_destroyed": false
+    },
+    {
+      "source": "student",
+      "goal": "front",
+      "init_index": 0,
+      "entry_step": 130,
+      "continuation_policy": "student",
+      "steps": 120,
+      "restore_check": {
+        "sim_state_max_abs": 0.0,
+        "observation_max_abs": {
+          "agentview_image": 0.0,
+          "robot0_eye_in_hand_image": 0.0,
+          "robot0_eef_pos": 0.0,
+          "robot0_eef_quat": 0.0,
+          "robot0_gripper_qpos": 0.0
+        }
+      },
+      "self_first_action_max_abs": 0.0,
+      "self_first_next_state_max_abs": 0.0,
+      "self_first_step_passed": true,
+      "closest_old_target_xy_m": {
+        "left": 0.1048175377092388,
+        "front": 0.0445928478538433
+      },
+      "requested_goal": "front",
+      "first_goal": null,
+      "first_goal_times": {
+        "front": null,
+        "left": null,
+        "right": null,
+        "back": null
+      },
+      "terminal_goal": null,
+      "terminal_category": "unfinished",
+      "correct_ever": false,
+      "correct_then_destroyed": false
+    }
+  ],
+  "runtime": {
+    "python": "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "loaded_sources": {
+      "lerobot.policies.common.flow_matching": {
+        "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/common/flow_matching.py",
+        "sha256": "73f3e5525e492286729e42b68b0057167bef1ad4d5a4d76bd44073c3a50ac48a"
+      },
+      "lerobot.policies.smolvla.modeling_smolvla": {
+        "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+        "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+      },
+      "lerobot.policies.smolvla.smolvlm_with_expert": {
+        "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+        "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+      },
+      "stage1_protocol": {
+        "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_protocol.py",
+        "sha256": "b9ba0fd4ecc0d9a98fc4348588b892bcb0e16e9479abe7d730b72ad79741eca6"
+      },
+      "stage1_r0_eval": {
+        "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+        "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+      },
+      "stage1_smoke": {
+        "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_smoke.py",
+        "sha256": "432164e3bfb8e747d172ef3b876b7ab5098ab017578f716cbbb4ad91ff4b8d09"
+      }
+    },
+    "diagnostic_source": {
+      "path": "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_03/code/stage2k_entry_handoff.py",
+      "sha256": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d"
+    },
+    "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+    "runtime_dirty": true,
+    "runtime_status": [
+      "?? .server",
+      "?? MUJOCO_LOG.TXT",
+      "?? datasets",
+      "?? outputs",
+      "?? scripts/run_stage2h_gate_rep_v1.sh",
+      "?? scripts/run_stage2i_v2_tail.sh",
+      "?? scripts/run_stage2i_v3_rerun.sh",
+      "?? scripts/stage2_language_decay.py"
+    ]
+  },
+  "summary": {
+    "teacher:left": {
+      "prefixes": 1,
+      "entrances": 1,
+      "missing_entrance": 0,
+      "continuations": {
+        "teacher": {
+          "total": 1,
+          "correct_ever": 1,
+          "first_goal_counts": {
+            "left": 1,
+            "front": 0,
+            "right": 0,
+            "back": 0,
+            "null": 0
+          },
+          "terminal_correct": 1,
+          "correct_then_lost": 0
+        },
+        "student": {
+          "total": 1,
+          "correct_ever": 1,
+          "first_goal_counts": {
+            "left": 1,
+            "front": 0,
+            "right": 0,
+            "back": 0,
+            "null": 0
+          },
+          "terminal_correct": 1,
+          "correct_then_lost": 0
+        }
+      }
+    },
+    "teacher:front": {
+      "prefixes": 1,
+      "entrances": 1,
+      "missing_entrance": 0,
+      "continuations": {
+        "teacher": {
+          "total": 1,
+          "correct_ever": 1,
+          "first_goal_counts": {
+            "left": 0,
+            "front": 1,
+            "right": 0,
+            "back": 0,
+            "null": 0
+          },
+          "terminal_correct": 1,
+          "correct_then_lost": 0
+        },
+        "student": {
+          "total": 1,
+          "correct_ever": 1,
+          "first_goal_counts": {
+            "left": 0,
+            "front": 1,
+            "right": 0,
+            "back": 0,
+            "null": 0
+          },
+          "terminal_correct": 1,
+          "correct_then_lost": 0
+        }
+      }
+    },
+    "student:left": {
+      "prefixes": 1,
+      "entrances": 0,
+      "missing_entrance": 1,
+      "continuations": {
+        "teacher": {
+          "total": 0,
+          "correct_ever": 0,
+          "first_goal_counts": {
+            "left": 0,
+            "front": 0,
+            "right": 0,
+            "back": 0,
+            "null": 0
+          },
+          "terminal_correct": 0,
+          "correct_then_lost": 0
+        },
+        "student": {
+          "total": 0,
+          "correct_ever": 0,
+          "first_goal_counts": {
+            "left": 0,
+            "front": 0,
+            "right": 0,
+            "back": 0,
+            "null": 0
+          },
+          "terminal_correct": 0,
+          "correct_then_lost": 0
+        }
+      }
+    },
+    "student:front": {
+      "prefixes": 1,
+      "entrances": 1,
+      "missing_entrance": 0,
+      "continuations": {
+        "teacher": {
+          "total": 1,
+          "correct_ever": 0,
+          "first_goal_counts": {
+            "left": 0,
+            "front": 0,
+            "right": 0,
+            "back": 0,
+            "null": 1
+          },
+          "terminal_correct": 0,
+          "correct_then_lost": 0
+        },
+        "student": {
+          "total": 1,
+          "correct_ever": 0,
+          "first_goal_counts": {
+            "left": 0,
+            "front": 0,
+            "right": 0,
+            "back": 0,
+            "null": 1
+          },
+          "terminal_correct": 0,
+          "correct_then_lost": 0
+        }
+      }
+    }
+  },
+  "seconds": 103.96847577299923,
+  "prefix_episodes": 4,
+  "continuation_episodes": 6
+}

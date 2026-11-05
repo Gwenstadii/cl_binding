@@ -1,6 +1,7 @@
 # Local upstream clone history is not part of the portable source snapshot.
 /.upstream_git/
 /essay/
+/video/
 /.tools/
 /.server/
 
@@ -40,6 +41,9 @@
 *.avi
 *.mkv
 *.bag
+
+# Curated, small research examples explicitly included in the experiment report.
+!/docs/results/2026-10-23/visual_cases/**/*.mp4
 
 # Environments and generated files.
 /.venv/

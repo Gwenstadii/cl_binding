@@ -59,14 +59,18 @@ def main():
             offset = end
         assert offset == len(table)
         stats = json.loads((folder / "meta/stats.json").read_text())
-        # Training uses this directory's own stats; validation stats are never
-        # passed to the trainer. Check means against the actual converted rows.
+        # Audit this dataset's statistics against its converted rows. Sequential
+        # training can inherit different parent processors; that is checked separately.
         for key, values in (("action", actions), ("observation.state", state)):
             assert np.allclose(stats[key]["mean"], values.astype(np.float64).mean(axis=0), atol=1e-5, rtol=1e-5)
         result["splits"][split] = {"trajectories": len(marker["episodes"]), "frames": len(table),
                                    "all_state_action_pairs_exact": True, "stats_means_checked": True,
                                    "conversion_sha256": hashlib.sha256(marker_path.read_bytes()).hexdigest()}
-    result.update(status="pass", normalization_source=config["data"]["train_output"], n1_in_training_or_stats=False)
+    result.update(status="pass", dataset_statistics_source=config["data"]["train_output"],
+                  normalization_source=config["data"].get("normalization_source",config["data"]["train_output"]),
+                  normalization_behavior_verified_here=False,
+                  back_goal_in_training="back" in config["old_goals"],
+                  n1_in_training_or_stats="back" in config["old_goals"])
     dump(args.output, result)
     print(json.dumps(result), flush=True)
 

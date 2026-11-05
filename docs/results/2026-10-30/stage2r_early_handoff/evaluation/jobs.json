@@ -1,0 +1,1730 @@
+[
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "R0",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "left",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 40,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 80,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "R0",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "left",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 0,
+    "noise_seed": 2026102802
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102801
+  },
+  {
+    "source_model": "FT4",
+    "prefix_goal": "front",
+    "boundary": 120,
+    "continuation_model": "FT4",
+    "requested_goal": "front",
+    "init_index": 1,
+    "noise_seed": 2026102802
+  }
+]

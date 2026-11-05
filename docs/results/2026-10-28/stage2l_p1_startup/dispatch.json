@@ -1,0 +1,16 @@
+{
+  "pid": 15197,
+  "command": [
+    "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding_stage2a/.server/stage2l_p1_20261028_01/code/run_stage2l_p1.py",
+    "--config",
+    "/home/lzx/cl_binding_stage2a/.server/stage2l_p1_20261028_01/code/stage2l_p1_entry_confirmation_20261028.json",
+    "--code-dir",
+    "/home/lzx/cl_binding_stage2a/.server/stage2l_p1_20261028_01/code"
+  ],
+  "registration_commit": "6de2016",
+  "time": "2026-10-28T19:48:19.419892+08:00",
+  "training_steps": 0,
+  "scope": "P0 engineering then fixed 72 P1 continuations on sealed states"
+}

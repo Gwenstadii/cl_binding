@@ -1,0 +1,16 @@
+{
+  "pid": 62906,
+  "started_at": "2026-10-30T07:44:53.778152+00:00",
+  "registered_commit": "0284c26",
+  "command": [
+    "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding/.server/stage2t_same_instruction40_20261030_01/code/run_stage2t_same_instruction40.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2t_same_instruction40_20261030_01/code/stage2t_same_instruction40_20261030.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2t_same_instruction40_20261030_01/code",
+    "--registered-commit",
+    "0284c26"
+  ]
+}

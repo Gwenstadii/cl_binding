@@ -1,0 +1,9 @@
+{
+  "attempt": 1,
+  "worker_outputs": [
+    "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/development_012000_attempt1_left",
+    "/home/lzx/cl_binding/.server/dual_left_front_20261023_01/development_012000_attempt1_front"
+  ],
+  "checkpoint": "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "partition": "development"
+}

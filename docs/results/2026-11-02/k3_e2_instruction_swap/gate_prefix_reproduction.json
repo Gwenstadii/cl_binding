@@ -1,0 +1,23 @@
+{
+ "family": "scene2",
+ "model": "FT4",
+ "instruction_key": "A",
+ "init": 4,
+ "reference": "/home/lzx/cl_binding/.server/k1_screen_20261101_01/prefix/scene2/FT4_scene2_s1_i4.json.gz",
+ "reference_instruction": "A",
+ "determinism_max_abs": 0.0,
+ "action_max_abs_vs_prefix": 0.0,
+ "object_eef_max_abs_vs_prefix": 0.0,
+ "predicate_rows_differing": 0,
+ "seconds": 8.517001148313284,
+ "first_targets": [
+  "right"
+ ],
+ "reference_first": {
+  "left": null,
+  "front": null,
+  "right": 133,
+  "back": null
+ },
+ "passed": true
+}

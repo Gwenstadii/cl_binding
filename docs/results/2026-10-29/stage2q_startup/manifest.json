@@ -1,0 +1,21 @@
+{
+  "scope": "startup snapshot only; live results remain on server",
+  "files": {
+    "cpu_tests.log": {
+      "bytes": 965,
+      "sha256": "75ebe4037e77546387b306e4c07ed8d75766dbad834362a6e29e0fbbcf2e0ef7"
+    },
+    "dispatch.json": {
+      "bytes": 708,
+      "sha256": "9bca6149ccefbda443fede2d4e2b3d7a8f8e810f6febabc7daa198fee47e96be"
+    },
+    "engineering.json": {
+      "bytes": 48548,
+      "sha256": "909365f07e4655f983611ca7b9f97e9d60a5ae6feccbc3fed26f6808bb6a411b"
+    },
+    "launcher.json": {
+      "bytes": 8436,
+      "sha256": "418cd8abfd8d1f33678938f8a3856346bcf400b2e7d641e45e480ba4f55ca895"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "archive_path": "config.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/config.json",
+    "bytes": 2997,
+    "sha256": "25fca7418a7649a9c58daacf06c3739a3975a59f9bfd1a89a7a28e4bf4e70d4e"
+  },
+  {
+    "archive_path": "run_summary.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/run_summary.json",
+    "bytes": 14038,
+    "sha256": "10c6582ebf5e414d93235341b919863c99e8b51597210cc4af0a52e9fad6f36a"
+  },
+  {
+    "archive_path": "report.md",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/report.md",
+    "bytes": 523,
+    "sha256": "9f3382db960bb5fd494b9fefdcce9f90cd61e9a3242fb34bf39b3d6eae610875"
+  },
+  {
+    "archive_path": "comparison.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/comparison.json",
+    "bytes": 4744,
+    "sha256": "02deed87055536d234e227f4e28c02a1d46a6cba1d10510d43cfa5b0d43e5fdd"
+  },
+  {
+    "archive_path": "parent_checkpoint_verification.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/parent_checkpoint_verification.json",
+    "bytes": 140,
+    "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+  },
+  {
+    "archive_path": "alignment_verification.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/alignment_verification.json",
+    "bytes": 955,
+    "sha256": "f3ea81d41683779e458bc092b474f8092655c124ce22b3f74aee11f2545311ea"
+  },
+  {
+    "archive_path": "data/audit.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/data/audit.json",
+    "bytes": 342553,
+    "sha256": "d905b17317f39f06b6db5c61dc17b781c7d368f0ce2dda6fa0458a0c2e9574f2"
+  },
+  {
+    "archive_path": "data/COMPLETE.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/data/COMPLETE.json",
+    "bytes": 109,
+    "sha256": "c485f661feafb71cf569f7a012d872670fb78273e30296c44f79fddbc750c15e"
+  },
+  {
+    "archive_path": "training/manifest.json",
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/manifest.json",
+    "bytes": 4769,
+    "sha256": "225109ea0d421418c0a09c5b1d15afc0c1a06327c2ba3e81dee547b3a7cb8be3"
+  },
+  {
+    "archive_path": "training/trainable_parameters.json",
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/trainable_parameters.json",
+    "bytes": 10802,
+    "sha256": "b0de50e57a5fb096c528efda3b9076c3b68165e44b9f0b593b37cfb3fd1b46b1"
+  },
+  {
+    "archive_path": "training/training_finished_012000.json",
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/training_finished_012000.json",
+    "bytes": 175,
+    "sha256": "9e288db38090eaa605cb23e5f982b2181a184707ff61ccdad34caa3ff77d1e26"
+  },
+  {
+    "archive_path": "training/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "server_path": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+    "bytes": 140,
+    "sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf"
+  },
+  {
+    "archive_path": "before/summary.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/before/summary.json",
+    "bytes": 1369,
+    "sha256": "376ee14e663a55f4bb122d9fa16d9df67fcdb10ef92c57db9496737a0251c3e3"
+  },
+  {
+    "archive_path": "before/episodes.jsonl",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/before/episodes.jsonl",
+    "bytes": 29634,
+    "sha256": "d91b2b0097c571ee0fdd1e2ec85f6ccd8fd3995d0f98208728d44264399bc56f"
+  },
+  {
+    "archive_path": "after/summary.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after/summary.json",
+    "bytes": 1260,
+    "sha256": "a50c8c44451d8ccbb53ee61f176d80df2022f8f0e35c447728b12c6b4142a7c8"
+  },
+  {
+    "archive_path": "after/episodes.jsonl",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after/episodes.jsonl",
+    "bytes": 29696,
+    "sha256": "748c7127c5d0c8ebeefcb26fb2d761c375412e0bf9775299b02668d5749f7f3d"
+  },
+  {
+    "archive_path": "after_attempt1_part1/evaluation.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after_attempt1_part1/evaluation.json",
+    "bytes": 675,
+    "sha256": "2ed8f09a868411f213db3e70ebdc8ee3734e58bb84e76d956d768be3cb1dce9f"
+  },
+  {
+    "archive_path": "after_attempt1_part1/episodes.jsonl",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after_attempt1_part1/episodes.jsonl",
+    "bytes": 9872,
+    "sha256": "b821050011c1ba8a9c3435fe85b6916e5f589b9c6b4c25f3af3d948e8481a274"
+  },
+  {
+    "archive_path": "after_attempt1_part0/evaluation.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after_attempt1_part0/evaluation.json",
+    "bytes": 745,
+    "sha256": "8e47b9485f62dfa23652e4adf84499deef4c2e077275e008568536449dcb7bee"
+  },
+  {
+    "archive_path": "after_attempt1_part0/episodes.jsonl",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after_attempt1_part0/episodes.jsonl",
+    "bytes": 19824,
+    "sha256": "0584b760c885ac7896f6c9e945080bac4edd2192f790635482ba3eea75eafffe"
+  },
+  {
+    "archive_path": "before_attempt1_part1/evaluation.json",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/before_attempt1_part1/evaluation.json",
+    "bytes": 806,
+    "sha256": "52d29a4640bc550f414daa49ded43c2e9ee66b1ddc7c81f2320386a0edcf21e2"
+  },
+  {
+    "archive_path": "before_attempt1_part1/episodes.jsonl",
+    "server_path": "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/before_attempt1_part1/episodes.jsonl",
+    "bytes": 29634,
+    "sha256": "d91b2b0097c571ee0fdd1e2ec85f6ccd8fd3995d0f98208728d44264399bc56f"
+  }
+]

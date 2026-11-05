@@ -1,0 +1,6 @@
+{
+  "reason": "CPU test locates config at parent/configs; add identical copy without changing code/protocol",
+  "initial_log": "cpu_tests.log",
+  "config_sha256": "529349a5c6b61085629297f28096e47dc97505a8a32de42b9e31e617e44db566",
+  "worker_not_started_before_repair": true
+}

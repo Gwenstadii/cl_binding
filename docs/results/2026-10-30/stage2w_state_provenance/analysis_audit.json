@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "new_policy_rollouts": 0,
+  "new_training_updates": 0,
+  "paired_comparisons": 36,
+  "common_native_trajectories": 12,
+  "R0_prefix_trajectories": 36,
+  "baseline_reused_at_three_boundaries": true,
+  "sources": {
+    "40": {
+      "audit.json": {
+        "bytes": 74545,
+        "sha256": "cc80d899d9756087810fd8fc23923629b50c4703421eef59e2b0713a6a8e60e7"
+      },
+      "evaluation/manifest.json": {
+        "bytes": 15474,
+        "sha256": "9b135592487eac8ec55ca8648e3176835c78ef2e96cacbefe5d7c4cd6f0c358c"
+      },
+      "evaluation/events.jsonl.gz": {
+        "bytes": 4274867,
+        "sha256": "41e1b0389c7c44b2871a518af8bf9f9616fa6060af11ffac0cad19b43329be95"
+      },
+      "evaluation/episodes.jsonl": {
+        "bytes": 30506,
+        "sha256": "3e74a3a166de176f57297bf9f7d5d18fbeeaf5c3e3d34a8887a4b60dddf939e5"
+      }
+    },
+    "60": {
+      "audit.json": {
+        "bytes": 75057,
+        "sha256": "10f489d9206c5dc5603ed3aeb0b55b0e458f22f90c41ac4c4625f2d42f0fe864"
+      },
+      "evaluation/manifest.json": {
+        "bytes": 15474,
+        "sha256": "76d2b6fcc77515cf1ae77fa8fe2de071d385ae25b00d9a783942410f1f4ac0f8"
+      },
+      "evaluation/events.jsonl.gz": {
+        "bytes": 4306613,
+        "sha256": "9e831f67c9234c18e9caaa33a300c233e609fc29062f8072baff59dfb92d6033"
+      },
+      "evaluation/episodes.jsonl": {
+        "bytes": 30198,
+        "sha256": "64db0503000c1515cb35914676c49c5c18a90e8617d1860d7ca09e15817018d5"
+      }
+    },
+    "80": {
+      "audit.json": {
+        "bytes": 74710,
+        "sha256": "c71a56c826629adedb2f990aba3dbe0238d67cd4e6b3ff1d49492e1229345a2f"
+      },
+      "evaluation/manifest.json": {
+        "bytes": 15519,
+        "sha256": "7e78420d14df9fc083310853a61b8634ae4458b2bd2d980f1ca4460422c5c7f8"
+      },
+      "evaluation/events.jsonl.gz": {
+        "bytes": 4344362,
+        "sha256": "0503c7afe89e8a59f2ebc101da2af8fa2049881bd99a00b62a78c55622c22fe5"
+      },
+      "evaluation/episodes.jsonl": {
+        "bytes": 30516,
+        "sha256": "e174dddba4b070f43c49378033ce8ad3023a4b4910f2cfc661dd18db54d8f9ad"
+      }
+    }
+  },
+  "limits": [
+    "This fixes instruction throughout; it does not test language sensitivity at fixed state.",
+    "Different prefix source changes position, velocity, pose, contacts and phase together.",
+    "Only two original development starts and two noise schedules; repeated native data are not new samples.",
+    "R0 was not trained on Right."
+  ]
+}

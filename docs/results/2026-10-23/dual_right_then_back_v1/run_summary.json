@@ -1,0 +1,515 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-23T14:03:38.715821+00:00",
+  "source_commit": "01be69b9ed577ef5e7fd0710fa54da2cc99f9680",
+  "initial_checkpoint": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+  "initial_model_sha256": "8c2dc6c371958027239a8c709a346842291bfb631b5a0ac29f4c04c394b85249",
+  "training_dir": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01",
+  "sequence": [
+    "joint_left_front12000",
+    "right12000",
+    "back12000"
+  ],
+  "fixed_training_steps": 12000,
+  "new_goal": "back",
+  "cached_parent_evaluation_episodes": 60,
+  "planned_new_evaluation_episodes": 100,
+  "starting_point_formally_qualified": false,
+  "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "phases": [
+    {
+      "name": "data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/data"
+      ],
+      "gpu": null,
+      "pid": 3816645,
+      "started_elapsed_s": 0.00023072212934494019,
+      "returncode": 0,
+      "finished_elapsed_s": 3.11980057368055
+    },
+    {
+      "name": "alignment",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 3816654,
+      "started_elapsed_s": 3.120657208841294,
+      "returncode": 0,
+      "finished_elapsed_s": 3.4426404098048806
+    },
+    {
+      "name": "train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01",
+        "--init-checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000"
+      ],
+      "gpu": 0,
+      "pid": 3816666,
+      "started_elapsed_s": 3.4522532927803695,
+      "returncode": 0,
+      "finished_elapsed_s": 3172.741347583011
+    },
+    {
+      "name": "before_back_attempt1_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/before_back_attempt1_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 3816667,
+      "started_elapsed_s": 3.4526559938676655,
+      "returncode": 0,
+      "finished_elapsed_s": 237.5026461291127
+    },
+    {
+      "name": "after_attempt1_part0",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "front",
+        "left",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after_attempt1_part0",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 1352534,
+      "started_elapsed_s": 3173.4001128687523,
+      "returncode": 0,
+      "finished_elapsed_s": 3637.337084821891
+    },
+    {
+      "name": "after_attempt1_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "right",
+        "back",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual_right_then_back_20261023_01/after_attempt1_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 1352535,
+      "started_elapsed_s": 3173.40872800909,
+      "returncode": 0,
+      "finished_elapsed_s": 3647.870974281803
+    }
+  ],
+  "current_stage": "finished",
+  "before": {
+    "episodes": 80,
+    "initial_states": 20,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "task_success_counts": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "right": 11,
+          "unreached": 9
+        },
+        "terminal_targets": {
+          "right": 11,
+          "unfinished": 9
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 11,
+          "back": 0
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "unreached": 6,
+          "right": 14
+        },
+        "terminal_targets": {
+          "unfinished": 6,
+          "right": 14
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 13,
+        "terminal_correct": 12,
+        "correct_then_destroyed": 1,
+        "first_targets": {
+          "right": 13,
+          "unreached": 7
+        },
+        "terminal_targets": {
+          "right": 12,
+          "unfinished": 8
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 13,
+          "back": 0
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "right": 14,
+          "unreached": 6
+        },
+        "terminal_targets": {
+          "right": 14,
+          "unfinished": 6
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0
+        }
+      }
+    },
+    "first_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 11,
+        "back": 0,
+        "unreached": 9,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 14,
+        "back": 0,
+        "unreached": 6,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 13,
+        "back": 0,
+        "unreached": 7,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 14,
+        "back": 0,
+        "unreached": 6,
+        "ambiguous": 0
+      }
+    },
+    "terminal_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 11,
+        "back": 0,
+        "unfinished": 9,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 14,
+        "back": 0,
+        "unfinished": 6,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 12,
+        "back": 0,
+        "unfinished": 8,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 14,
+        "back": 0,
+        "unfinished": 6,
+        "ambiguous": 0
+      }
+    },
+    "joint_left_front_terminal_correct": 0,
+    "joint_left_front_terminal_correct_indices": []
+  },
+  "normalization_verified_unchanged": true,
+  "finished_at": "2026-10-23T15:04:26.591180+00:00",
+  "seconds": 3647.874714361038,
+  "after": {
+    "episodes": 80,
+    "initial_states": 20,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "task_success_counts": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "back": 16,
+          "unreached": 4
+        },
+        "terminal_targets": {
+          "unfinished": 13,
+          "back": 7
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 16
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "back": 20
+        },
+        "terminal_targets": {
+          "back": 6,
+          "unfinished": 14
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 20
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "back": 20
+        },
+        "terminal_targets": {
+          "back": 6,
+          "unfinished": 14
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 20
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 19,
+        "terminal_correct": 6,
+        "correct_then_destroyed": 13,
+        "first_targets": {
+          "back": 19,
+          "unreached": 1
+        },
+        "terminal_targets": {
+          "back": 6,
+          "unfinished": 14
+        },
+        "ever_reached_targets": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 19
+        }
+      }
+    },
+    "first_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 16,
+        "unreached": 4,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 20,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 20,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 19,
+        "unreached": 1,
+        "ambiguous": 0
+      }
+    },
+    "terminal_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 7,
+        "unfinished": 13,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 6,
+        "unfinished": 14,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 6,
+        "unfinished": 14,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 6,
+        "unfinished": 14,
+        "ambiguous": 0
+      }
+    },
+    "joint_left_front_terminal_correct": 0,
+    "joint_left_front_terminal_correct_indices": []
+  },
+  "final_checkpoint": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/012000",
+  "final_model_sha256": "7eee2d8f9cebcac1fb9d03ab947d3a2c2fc9dbaf9c24f864f28fc2d2877a5534",
+  "accepted_evaluation_episodes": 160,
+  "accepted_new_evaluation_episodes": 100,
+  "actual_completed_new_worker_episodes_including_runtime_retries": 100,
+  "new_task_reached_descriptive_threshold": false
+}

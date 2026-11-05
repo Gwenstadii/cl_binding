@@ -1,0 +1,339 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-30T04:57:29.767279+00:00",
+  "registered_commit": "b04fa3c",
+  "configuration": {
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ],
+    "horizon": 400,
+    "n_action_steps": 10,
+    "flow_steps": 10,
+    "noise_replan_stride": 1000003,
+    "random_seed_salt": 2026102905,
+    "identity_tolerance": 1e-05,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "output_root": "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+    "site": 1,
+    "intervention_steps": 120,
+    "save_videos": false,
+    "maximum_worker_minutes": 60,
+    "maximum_output_bytes": 1073741824,
+    "minimum_disk_free_bytes": 3221225472,
+    "total_deadline_seconds": 5400,
+    "primary_endpoint": "pre-target eligible same-state Left/Front instruction pair; suffix first box target, not already-achieved prefix success",
+    "movement_geometry": {
+      "canonical_scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+      "sites": {
+        "left": {
+          "centre": [
+            -0.410197,
+            -0.28346499999999997,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "front": {
+          "centre": [
+            -0.372867,
+            -0.137315,
+            0.92754
+          ],
+          "rotation": [
+            [
+              0.9999999999999998,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9999999999999998
+            ],
+            [
+              -0.0,
+              -0.9999999999999998,
+              0.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.03595,
+            0.06216
+          ]
+        },
+        "right": {
+          "centre": [
+            -0.410197,
+            0.005434999999999995,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "back": {
+          "centre": [
+            -0.437527,
+            -0.137315,
+            0.97258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.06216,
+            0.06046
+          ]
+        }
+      },
+      "source": "native fixed geometry, reset only; no model loaded"
+    },
+    "scope": "fixed-time source trajectory x continuation policy x changed instruction; no CA intervention and no training",
+    "source_reference_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+    "source_reference_hashes": {
+      "manifest.json": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3",
+      "episodes.jsonl": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055",
+      "events.jsonl.gz": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da",
+      "replans.jsonl.gz": "2a22616ef17b57fe447c95a9e6c7d801709469832df4769978de6bb2f925aaec"
+    },
+    "boundaries": [
+      40,
+      80,
+      120
+    ],
+    "source_models": [
+      "R0",
+      "FT4"
+    ],
+    "prefix_goals": [
+      "left",
+      "front"
+    ],
+    "continuation_models": [
+      "R0",
+      "FT4"
+    ],
+    "continuation_goals": [
+      "left",
+      "front"
+    ],
+    "expected_episodes": 192,
+    "expected_continuation_steps": 61440,
+    "expected_replayed_prefix_steps": 15360,
+    "expected_continuation_replans": 6144,
+    "snapshot_rule": "deterministic full original-prefix action replay for each branch; compare sim, controller, image hashes; no partial-state restore"
+  },
+  "runtime_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "runtime_dirty_before": [
+    "?? .server",
+    "?? MUJOCO_LOG.TXT",
+    "?? datasets",
+    "?? outputs",
+    "?? scripts/run_stage2h_gate_rep_v1.sh",
+    "?? scripts/run_stage2i_v2_tail.sh",
+    "?? scripts/run_stage2i_v3_rerun.sh",
+    "?? scripts/stage2_language_decay.py"
+  ],
+  "gpu_before": "0, 721, 0\n1, 37, 0",
+  "code_files": {
+    "stage2p_ca_closedloop.py": {
+      "bytes": 30324,
+      "sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07"
+    },
+    "audit_stage2n_cross_checkpoint.py": {
+      "bytes": 26144,
+      "sha256": "d5c7951808acf85acaf17913ff3988c66c04355dd690882ec093b9e45d31f52b"
+    },
+    "stage2k_response_swap.py": {
+      "bytes": 15657,
+      "sha256": "2292e5f99a022b6c899d5857888bc950ee401b02d4da989d47f8ffadf687cdcb"
+    },
+    "analyze_stage2p_movement.py": {
+      "bytes": 5997,
+      "sha256": "8f29879fa6982c1badb268944c4ef3dce9e304be70d4a546f9894b76ce67989a"
+    },
+    "test_stage2r_handoff_protocol.py": {
+      "bytes": 4014,
+      "sha256": "9ede5b81ade86dd0684c0c34f3c203c41bec52503535579a7af2f5512ff6a191"
+    },
+    "stage2q_all_ca_overnight.py": {
+      "bytes": 8397,
+      "sha256": "1957853d8780d3024e4cbe72eb71186547b1a7c0d0ebe0ec89ee23edce27e6c3"
+    },
+    "run_stage2r_early_handoff.py": {
+      "bytes": 5003,
+      "sha256": "1d1ccbdc1b62af613177efca300364bd7901a3223013dfedf8d6e71fc7442771"
+    },
+    "stage2r_early_handoff.py": {
+      "bytes": 11788,
+      "sha256": "a4cd5cd6a5daec2ea3ea10d296f64496521bf6e52864e38f475b80fbb22a2da1"
+    },
+    "stage2k_entry_handoff.py": {
+      "bytes": 24714,
+      "sha256": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d"
+    },
+    "stage2n_cross_checkpoint.py": {
+      "bytes": 43547,
+      "sha256": "756db032c3795f86cf485929b4e7cadbc57b8be77be070ac6ba7e459cb743650"
+    },
+    "audit_stage2p_ca_closedloop.py": {
+      "bytes": 25871,
+      "sha256": "791d08de435f832a11aae4120708aa3ccc389edbfb159f411c19f8bfe9eb60b0"
+    },
+    "stage2r_handoff_protocol.py": {
+      "bytes": 2884,
+      "sha256": "9e30e84b05610614f8f7c39d53c6237ea63675d85cc74f72ebc8f5453dd7cae7"
+    },
+    "audit_stage2q_all_ca.py": {
+      "bytes": 10628,
+      "sha256": "678d708681f9272a31a65bb8a76434422474911960a9fd497001ccf2d23d23ae"
+    },
+    "test_stage2q_all_ca.py": {
+      "bytes": 2000,
+      "sha256": "312397fec95006c009c21d2d714a7e57b8d10391e732b8b1efe77fe57a7a9ee7"
+    },
+    "audit_stage2r_handoff.py": {
+      "bytes": 10552,
+      "sha256": "59dc0255c46a47f340db45cf4db1d5a1613373b749afb0ea514795b7f4a3bbc8"
+    },
+    "run_stage2q_all_ca_overnight.py": {
+      "bytes": 4891,
+      "sha256": "cd242ac1522222647c8f120a16e400aebad33b9dffa44404ab1b78e9ed4aed0b"
+    },
+    "stage2m_cross_attention.py": {
+      "bytes": 41368,
+      "sha256": "09a4eed9c0ed98e4371a524ff2f8ff8118a14750e86cd29af8da6e33ab8a7618"
+    }
+  },
+  "phases": [
+    {
+      "name": "engineering",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/stage2r_early_handoff.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/stage2r_early_handoff_20261030.json",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--phase",
+        "engineering",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/engineering"
+      ],
+      "started_at": "2026-10-30T04:57:29.773972+00:00",
+      "returncode": 0,
+      "seconds": 70.74474398326129
+    },
+    {
+      "name": "evaluation",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/stage2r_early_handoff.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/stage2r_early_handoff_20261030.json",
+        "--runtime-scripts",
+        "/home/lzx/cl_binding_stage2a/scripts",
+        "--phase",
+        "evaluation",
+        "--output",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/evaluation"
+      ],
+      "started_at": "2026-10-30T04:58:40.520331+00:00",
+      "returncode": 0,
+      "seconds": 1705.7393289003521
+    },
+    {
+      "name": "audit",
+      "status": "complete",
+      "command": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/audit_stage2r_handoff.py",
+        "--root",
+        "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+        "--reference-root",
+        "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01"
+      ],
+      "started_at": "2026-10-30T05:27:06.268880+00:00",
+      "returncode": 0,
+      "seconds": 3.3691702457144856
+    }
+  ],
+  "finished_at": "2026-10-30T05:27:11.019165+00:00",
+  "seconds": 1781.245219788514
+}

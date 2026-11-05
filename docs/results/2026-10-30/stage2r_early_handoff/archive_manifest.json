@@ -1,0 +1,153 @@
+{
+  "source_server_root": "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+  "registered_commit": "b04fa3c",
+  "files": {
+    "audit.json": {
+      "bytes": 75824,
+      "sha256": "ad4e27b7d2362ac767ad09edb245ccb0498aa507a8caf6dabe0903ccafaf6034"
+    },
+    "audit.log": {
+      "bytes": 38,
+      "sha256": "61997bbda6f848b98322e45a8c80ead5fa5266efa9af2c320e12197ff76e5d32"
+    },
+    "audit_local_v1.json": {
+      "bytes": 78862,
+      "sha256": "42eaa8b4d54f312f9a05faf3c9891bcc6c2c942f7373c812d95e5960f73abd67"
+    },
+    "COMPLETE.json": {
+      "bytes": 95,
+      "sha256": "a4b56d7348ef1f468930740647c8d347974d4ad6f5d1c719e7bee8608ece52a3"
+    },
+    "cpu_tests.log": {
+      "bytes": 844,
+      "sha256": "1b930fbe7666c4b20e8b206b6059d31b7c075526b2f13de74255589e7bdb2adc"
+    },
+    "dispatch.json": {
+      "bytes": 650,
+      "sha256": "06b602ed6316c2509ecb54a4ab3e1e9489bfc5c8f7c3d74aff32d0935682fd4a"
+    },
+    "dual_instruction_pairs.png": {
+      "bytes": 78649,
+      "sha256": "18905ad4165c312e9379639de3df91f26faf489ad00f510383b0d015253ef3f0"
+    },
+    "eligible_first_choices.png": {
+      "bytes": 105543,
+      "sha256": "e0a4725eda1c042d324a757b7a079ab760824030b95672f169c569ce43397244"
+    },
+    "engineering.log": {
+      "bytes": 961,
+      "sha256": "9ae9e935ceaeb9db9ec56838bdef09a5281632934731fa74b3ef01c9633ccd3a"
+    },
+    "evaluation/COMPLETE.json": {
+      "bytes": 10055,
+      "sha256": "a17d5aceb7284c2dadc4c9324d49032ed28186572deda14abd027098ef6bd4f9"
+    },
+    "evaluation/engineering.json": {
+      "bytes": 903949,
+      "sha256": "8b072cc832e1e2c066fda28a540be0840e51fcee321d523180e20b27c4e85e08"
+    },
+    "evaluation/episodes.jsonl": {
+      "bytes": 387288,
+      "sha256": "902e6349594f6c41d7980cc647048ab637f2d0fb723b75fb869e138807e4f008"
+    },
+    "evaluation/events.jsonl.gz": {
+      "bytes": 15365077,
+      "sha256": "09e3741fa93d288ebc7c6cbb063dad810a5f27fc12182031dbc94645a5eff940"
+    },
+    "evaluation/jobs.json": {
+      "bytes": 37699,
+      "sha256": "a5bfac1bbd50dc0142a1b54c75d7d8358c9e2c588435dad99a24a80c309d52b1"
+    },
+    "evaluation/manifest.json": {
+      "bytes": 10055,
+      "sha256": "a17d5aceb7284c2dadc4c9324d49032ed28186572deda14abd027098ef6bd4f9"
+    },
+    "evaluation/replans.jsonl.gz": {
+      "bytes": 392472,
+      "sha256": "800a87955f970e2b0dc3e4ef87ec9852359e2605a2eb82212ddec386780daf83"
+    },
+    "evaluation.log": {
+      "bytes": 388249,
+      "sha256": "6e9c77bbf66add9e719c32a94e8d52a138e45464fb998d2dbf7074fbbe5eedb5"
+    },
+    "failure_types.json": {
+      "bytes": 789,
+      "sha256": "8dc716a6274d1789aefb33c257f3955497774519871f61de2df9f86a33dc82f4"
+    },
+    "instruction_pairs.csv": {
+      "bytes": 873,
+      "sha256": "10384bb0c3b8e5317b8d90ab03d5959f9cc133456d0cd92bfc6b7e9bc782fe05"
+    },
+    "interpretation_summary.json": {
+      "bytes": 1935,
+      "sha256": "253b4887ede882bc5ede09ec4bf6bdebb1b9f216353f7aa7bd0c72c01dfa8571"
+    },
+    "launcher.json": {
+      "bytes": 10611,
+      "sha256": "78bb7bad926cf5c01742c01c741f06b4f32a3017256d19fb6d9585c465094d04"
+    },
+    "movement_independent_v1.json": {
+      "bytes": 321,
+      "sha256": "30bd31fdc51406f3a35b1bd78cd425a53d827755c2e862153341c2e2ac55add6"
+    },
+    "post_run_check.json": {
+      "bytes": 935,
+      "sha256": "2577fcf2c5c74b37946bdf4f8310d722e9e321b69a5a2cc7fc83cec0ea002906"
+    },
+    "README.md": {
+      "bytes": 1210,
+      "sha256": "ff86f6411858d1cf16838b1a15f115391b8df300b27f92369d88eead212d2ad3"
+    },
+    "registered_config.json": {
+      "bytes": 5009,
+      "sha256": "43a86faf655e51dc2197fc3c1f23f3a2ad6b6bc71406212021873add286aec29"
+    },
+    "report.md": {
+      "bytes": 2090,
+      "sha256": "1a9d71ba1da686ee5981062ada6ddbeb1e9f169641dffbf38e639c62b09b071f"
+    },
+    "results.csv": {
+      "bytes": 2521,
+      "sha256": "32a4ea420eb7b4c4a3b5c9b5e5fcd27ee9e9d300741785121838146d80cfe533"
+    },
+    "source_context/source_progress.json": {
+      "bytes": 2194,
+      "sha256": "9d08d54198d24d6c0215b8b9b613e5c5cc5571de430cfa3c10488feb23af5d6a"
+    },
+    "source_context/source_progress.png": {
+      "bytes": 178140,
+      "sha256": "74ee2824c6d79a9c10f0a10637b83632b396abfba2e2ae881c4a49534e97e920"
+    }
+  },
+  "local_script_hashes": {
+    "stage2r_early_handoff.py": {
+      "bytes": 11788,
+      "sha256": "a4cd5cd6a5daec2ea3ea10d296f64496521bf6e52864e38f475b80fbb22a2da1"
+    },
+    "stage2r_handoff_protocol.py": {
+      "bytes": 2884,
+      "sha256": "9e30e84b05610614f8f7c39d53c6237ea63675d85cc74f72ebc8f5453dd7cae7"
+    },
+    "audit_stage2r_handoff.py": {
+      "bytes": 10552,
+      "sha256": "59dc0255c46a47f340db45cf4db1d5a1613373b749afb0ea514795b7f4a3bbc8"
+    },
+    "run_stage2r_early_handoff.py": {
+      "bytes": 5003,
+      "sha256": "1d1ccbdc1b62af613177efca300364bd7901a3223013dfedf8d6e71fc7442771"
+    },
+    "verify_stage2r_movement.py": {
+      "bytes": 4005,
+      "sha256": "119120c474b284ee0cd3a4a3ddb6e8c3dd1a5513a8951257f42db7e42451f7bd"
+    },
+    "plot_stage2r_handoff.py": {
+      "bytes": 3517,
+      "sha256": "610832b2762d202ce884e77fc275dced017d66a86b4a012f48bed3fd999c7c37"
+    },
+    "analyze_stage2r_source_progress.py": {
+      "bytes": 5080,
+      "sha256": "e9f794f319b654658d47fc02486ed2cc2d4b52ff185017618bcb5c58d738b55b"
+    }
+  },
+  "source_reference_manifest_sha256": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3"
+}

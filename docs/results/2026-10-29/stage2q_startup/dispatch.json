@@ -1,0 +1,17 @@
+{
+  "pid": 35299,
+  "started_at": "2026-10-29T23:35:03.611337+08:00",
+  "registered_commit": "78ad7462237669fd142c244bcd3875ac7106d711",
+  "command": [
+    "python3",
+    "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code/run_stage2q_all_ca_overnight.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code/stage2q_all_ca_overnight_20261029.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01/code",
+    "--registered-commit",
+    "78ad7462237669fd142c244bcd3875ac7106d711"
+  ],
+  "source_bundle_sha256": "d9c9bfeeab678aba89d35bdd67c6caec267f04c90f058a53abab06ef10429b40",
+  "cpu_tests_passed": true
+}

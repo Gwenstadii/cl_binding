@@ -1,0 +1,11 @@
+test_actual_head_width_is_not_post_projection_hidden_width (test_stage2o_pc_heads.PCHeadProtocolTests.test_actual_head_width_is_not_post_projection_hidden_width) ... ok
+test_duplicate_head_cannot_replace_missing_head (test_stage2o_pc_heads.PCHeadProtocolTests.test_duplicate_head_cannot_replace_missing_head) ... ok
+test_head_norm_evidence_rejects_cross_head_leak (test_stage2o_pc_heads.PCHeadProtocolTests.test_head_norm_evidence_rejects_cross_head_leak) ... ok
+test_matrix_is_fixed_and_head_screen_never_includes_extra_noise (test_stage2o_pc_heads.PCHeadProtocolTests.test_matrix_is_fixed_and_head_screen_never_includes_extra_noise) ... ok
+test_per_input_relative_gain_is_not_ratio_of_medians (test_stage2o_pc_heads.PCHeadProtocolTests.test_per_input_relative_gain_is_not_ratio_of_medians) ... ok
+test_registered_config_agrees_with_independent_matrix (test_stage2o_pc_heads.PCHeadProtocolTests.test_registered_config_agrees_with_independent_matrix) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK

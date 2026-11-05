@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "episodes": 192,
+  "instruction_pairs": 96,
+  "scope": "Independent sliding-window prefix/suffix/full box-entry times, pretarget eligibility and dual-instruction choices",
+  "near8_and_norms": "Auxiliary near8 not independently recounted here; no norm intervention in this experiment."
+}

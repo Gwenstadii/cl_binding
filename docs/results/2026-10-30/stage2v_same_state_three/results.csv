@@ -1,0 +1,4 @@
+mode,requested_goal,episodes,whole_first_correct,whole_first_right,whole_correct_ever,terminal_correct,pretarget_at80
+handoff80,left,4,2,0,2,0,4
+handoff80,front,4,4,0,4,0,4
+handoff80,right,4,0,0,0,0,4

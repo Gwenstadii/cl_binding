@@ -1,0 +1,44 @@
+{
+  "scope": "Three illustrative existing init0 videos, not an estimate of failure-type prevalence",
+  "videos": [
+    {
+      "checkpoint": "006000",
+      "goal": "front",
+      "init_index": 0,
+      "source_server": "/home/lzx/cl_binding/.server/r0_aligned_v2_20261022_01/step006000/front_00.mp4",
+      "local_relative": ".server/failure_videos_20261022/step006000/front_00.mp4",
+      "bytes": 98561,
+      "sha256": "5d9bd35fbb56f77ccddc87ce7eda822658c28d0cc129518ea65fc680e919da1b",
+      "illustrative_failure": "grasp_failure"
+    },
+    {
+      "checkpoint": "003000",
+      "goal": "right",
+      "init_index": 0,
+      "source_server": "/home/lzx/cl_binding/.server/r0_aligned_v2_20261022_01/step003000/right_00.mp4",
+      "local_relative": ".server/failure_videos_20261022/step003000/right_00.mp4",
+      "bytes": 98937,
+      "sha256": "52546207b90405091fe53b12e3e816b3266291b4a202bd31b14c1d44077a4558",
+      "illustrative_failure": "placement_unfinished"
+    },
+    {
+      "checkpoint": "003000",
+      "goal": "left",
+      "init_index": 0,
+      "source_server": "/home/lzx/cl_binding/.server/r0_aligned_v2_20261022_01/step003000/left_00.mp4",
+      "local_relative": ".server/failure_videos_20261022/step003000/left_00.mp4",
+      "bytes": 85664,
+      "sha256": "f515639462ce1fba47cff3173edb3bcd8d6a0aabc1ff228a5d522606c47e76da",
+      "illustrative_failure": "correct_then_destroyed"
+    }
+  ],
+  "left_goal_active_steps": [
+    125,
+    179
+  ],
+  "left_goal_active_samples": 55,
+  "control_hz": 20,
+  "saved_video_fps": 5,
+  "video_duration_seconds": 20,
+  "no_training_or_new_rollouts": true
+}

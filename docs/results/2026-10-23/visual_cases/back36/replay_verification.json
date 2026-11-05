@@ -1,0 +1,60 @@
+{
+  "status": "pass",
+  "purpose": "render_original_actions_without_policy_or_training",
+  "requested_goal": "back",
+  "init_index": 36,
+  "seed": 20261057,
+  "config_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/config.json",
+  "episodes_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/episodes.jsonl",
+  "trace_path": "/home/lzx/cl_binding/.server/four_task_20261023_01/stage4_back/eval1_part1/back_36_trace.jsonl",
+  "trace_sha256": "4c995622783afeeef7b9fff79c3db521ff4187164a7c2004f5737f0b5ddbd0be",
+  "initial_state_sha256": "994d8357c578d4f4e7f06eb4b58005e2bf8fa3cdf6be7f1770d67c317c9c1fe5",
+  "scene_xml_sha256": "642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc",
+  "steps": 400,
+  "fps": 20,
+  "predicate_mismatches": 0,
+  "maximum_position_errors": {
+    "eef": 0.0,
+    "gripper": 0.0,
+    "objects": 0.0
+  },
+  "position_atol": 1e-07,
+  "summary": {
+    "requested_goal": "back",
+    "first_goal": "back",
+    "first_goal_times": {
+      "front": null,
+      "left": 293,
+      "right": null,
+      "back": 121
+    },
+    "terminal_goal": "left",
+    "terminal_category": "wrong_goal",
+    "correct_ever": true,
+    "correct_then_destroyed": true
+  },
+  "original_episode": {
+    "requested_goal": "back",
+    "first_goal": "back",
+    "first_goal_times": {
+      "front": null,
+      "left": 293,
+      "right": null,
+      "back": 121
+    },
+    "terminal_goal": "left",
+    "terminal_category": "wrong_goal",
+    "correct_ever": true,
+    "correct_then_destroyed": true,
+    "init_index": 36,
+    "seed": 20261057,
+    "initial_state_sha256": "994d8357c578d4f4e7f06eb4b58005e2bf8fa3cdf6be7f1770d67c317c9c1fe5",
+    "scene_xml_sha256": "642f54014f818e592cd23a80545850deefe88cf6b787d4f5e9b626edee2607bc",
+    "steps": 400,
+    "clipped_steps": 36
+  },
+  "new_policy_rollouts": 0,
+  "training_updates": 0,
+  "renderer_sha256": "e7637eaa81378fd4ca2f391c433f88c67ef12b3ed4be558536a6ff8016609ae5",
+  "video_sha256": "74f41867887d46d0777139983ce465109a3562dc27b16eb8c0b0b6ae12539be9"
+}

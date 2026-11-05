@@ -1,0 +1,332 @@
+{
+  "status": "complete",
+  "phase": "evaluation",
+  "started_at": "2026-10-30T04:58:40.567153+00:00",
+  "scope": "fixed early handoff: original-prefix replay x continuation policy x instruction; no CA patch or training",
+  "configuration": {
+    "runtime_root": "/home/lzx/cl_binding_stage2a",
+    "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+    "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+    "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+    "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "expected_model_sources": {
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+      "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "gpu": 1,
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ],
+    "horizon": 400,
+    "n_action_steps": 10,
+    "flow_steps": 10,
+    "noise_replan_stride": 1000003,
+    "random_seed_salt": 2026102905,
+    "identity_tolerance": 1e-05,
+    "parent_qualification": "historical exploratory LF12k, not formally qualified",
+    "output_root": "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+    "site": 1,
+    "intervention_steps": 120,
+    "save_videos": false,
+    "maximum_worker_minutes": 60,
+    "maximum_output_bytes": 1073741824,
+    "minimum_disk_free_bytes": 3221225472,
+    "total_deadline_seconds": 5400,
+    "primary_endpoint": "pre-target eligible same-state Left/Front instruction pair; suffix first box target, not already-achieved prefix success",
+    "movement_geometry": {
+      "canonical_scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+      "sites": {
+        "left": {
+          "centre": [
+            -0.410197,
+            -0.28346499999999997,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "front": {
+          "centre": [
+            -0.372867,
+            -0.137315,
+            0.92754
+          ],
+          "rotation": [
+            [
+              0.9999999999999998,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9999999999999998
+            ],
+            [
+              -0.0,
+              -0.9999999999999998,
+              0.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.03595,
+            0.06216
+          ]
+        },
+        "right": {
+          "centre": [
+            -0.410197,
+            0.005434999999999995,
+            0.95258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.06196,
+            0.06216,
+            0.06046
+          ]
+        },
+        "back": {
+          "centre": [
+            -0.437527,
+            -0.137315,
+            0.97258
+          ],
+          "rotation": [
+            [
+              1.0,
+              -0.0,
+              0.0
+            ],
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "half_size": [
+            0.02775,
+            0.06216,
+            0.06046
+          ]
+        }
+      },
+      "source": "native fixed geometry, reset only; no model loaded"
+    },
+    "scope": "fixed-time source trajectory x continuation policy x changed instruction; no CA intervention and no training",
+    "source_reference_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+    "source_reference_hashes": {
+      "manifest.json": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3",
+      "episodes.jsonl": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055",
+      "events.jsonl.gz": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da",
+      "replans.jsonl.gz": "2a22616ef17b57fe447c95a9e6c7d801709469832df4769978de6bb2f925aaec"
+    },
+    "boundaries": [
+      40,
+      80,
+      120
+    ],
+    "source_models": [
+      "R0",
+      "FT4"
+    ],
+    "prefix_goals": [
+      "left",
+      "front"
+    ],
+    "continuation_models": [
+      "R0",
+      "FT4"
+    ],
+    "continuation_goals": [
+      "left",
+      "front"
+    ],
+    "expected_episodes": 192,
+    "expected_continuation_steps": 61440,
+    "expected_replayed_prefix_steps": 15360,
+    "expected_continuation_replans": 6144,
+    "snapshot_rule": "deterministic full original-prefix action replay for each branch; compare sim, controller, image hashes; no partial-state restore"
+  },
+  "script_sha256": "bf200c6da26b9e6d620f8f2b78034f5bbc81ba6d8554b01291f7e08e1b9fdd07",
+  "config_sha256": "e3014baa7877339191f105a6cdf338b7d9e9a44fd6250220676cf4c0ab470ea6",
+  "episodes_completed": 192,
+  "steps_completed": 76800,
+  "replans_completed": 6144,
+  "no_early_stop_on_success": true,
+  "horizon": 400,
+  "processor_hashes": {
+    "policy_preprocessor.json": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+    "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+  },
+  "model_sha256": {
+    "R0": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+    "FT4": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f"
+  },
+  "layer_map": {
+    "R0": {
+      "site": 1,
+      "expert_layer": 1,
+      "o_in_features": 960,
+      "o_out_features": 720
+    },
+    "FT4": {
+      "site": 1,
+      "expert_layer": 1,
+      "o_in_features": 960,
+      "o_out_features": 720
+    }
+  },
+  "random_block_semantics": "15 contiguous post-W_O output coordinate blocks; NOT actual attention heads",
+  "sources": {
+    "evaluation": {
+      "path": "/home/lzx/cl_binding_stage2a/scripts/stage1_r0_eval.py",
+      "sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+    },
+    "model": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+    },
+    "expert": {
+      "path": "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141"
+    }
+  },
+  "instructions": {
+    "front": "pick up the book and place it in the front compartment of the caddy",
+    "left": "pick up the book and place it in the left compartment of the caddy",
+    "right": "pick up the book and place it in the right compartment of the caddy",
+    "back": "pick up the book and place it in the back compartment of the caddy"
+  },
+  "predicates": {
+    "front": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_front_contain_region"
+      ]
+    ],
+    "left": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_left_contain_region"
+      ]
+    ],
+    "right": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_right_contain_region"
+      ]
+    ],
+    "back": [
+      [
+        "in",
+        "black_book_1",
+        "desk_caddy_1_back_contain_region"
+      ]
+    ]
+  },
+  "scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+  "boundaries": [
+    40,
+    80,
+    120
+  ],
+  "driver_sha256": "a4cd5cd6a5daec2ea3ea10d296f64496521bf6e52864e38f475b80fbb22a2da1",
+  "counts": {
+    "denoise_calls_by_model": {
+      "R0": 30720,
+      "FT4": 30720
+    },
+    "patch_flows": 0,
+    "donor_denoise_calls": 0,
+    "recipient_denoise_calls": 61440,
+    "prefix_builds": 6144,
+    "integrator_velocity_calls": 61440,
+    "extra_random_recipient_calibration_calls": 0,
+    "official_engineering_flow_calls": 0,
+    "engineering_self_replacements": 0,
+    "episodes": 192,
+    "steps": 76800,
+    "replans": 6144
+  },
+  "finished_at": "2026-10-30T05:27:05.083158+00:00",
+  "elapsed_seconds": 1704.5160178048536,
+  "no_followup_launched": true,
+  "actual_message_witness_max_abs": 0.0,
+  "cache_isolation_checks": 61440,
+  "files": {
+    "jobs.json": {
+      "bytes": 37699,
+      "sha256": "a5bfac1bbd50dc0142a1b54c75d7d8358c9e2c588435dad99a24a80c309d52b1"
+    },
+    "engineering.json": {
+      "bytes": 903949,
+      "sha256": "8b072cc832e1e2c066fda28a540be0840e51fcee321d523180e20b27c4e85e08"
+    },
+    "events.jsonl.gz": {
+      "bytes": 15365077,
+      "sha256": "09e3741fa93d288ebc7c6cbb063dad810a5f27fc12182031dbc94645a5eff940"
+    },
+    "episodes.jsonl": {
+      "bytes": 387288,
+      "sha256": "902e6349594f6c41d7980cc647048ab637f2d0fb723b75fb869e138807e4f008"
+    },
+    "replans.jsonl.gz": {
+      "bytes": 392472,
+      "sha256": "800a87955f970e2b0dc3e4ef87ec9852359e2605a2eb82212ddec386780daf83"
+    }
+  }
+}

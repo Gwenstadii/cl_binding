@@ -1,0 +1,32 @@
+{
+  "line": "lf_right_1000",
+  "gain": 5.294038631688923,
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "base_protocol_sha256": "4ba249fb67a854c3ade12be935896dee2472135056ac5e2aa4cc11d8afc35505",
+  "selection_sha256": "2cab07df00c78793f76dccba0ee8e302b85075aa44f3e2474655a9dd1515e6da",
+  "source_sha256": "dd9723d93f9d77b67332b82c2bd632cddb8681266d1d1d01509bf5561a315b34",
+  "base_source_sha256": "64c782401b2a6f61c85d2bcf35623d2853b8c20760daa82a453a171a6ddbc1d8",
+  "reason": "all three development doses gave zero correct old-goal arrivals; retain original fixed dose as transfer control",
+  "test_results_used_to_choose_dose": false
+}

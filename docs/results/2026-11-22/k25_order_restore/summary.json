@@ -1,0 +1,6239 @@
+{
+  "protocol_sha256": "4ba249fb67a854c3ade12be935896dee2472135056ac5e2aa4cc11d8afc35505",
+  "selection_sha256": "2cab07df00c78793f76dccba0ee8e302b85075aa44f3e2474655a9dd1515e6da",
+  "analysis_source_sha256": "47878061b0503329f2b4e66f928d9e5eb8e0005e9c7af469193ce0332af57730",
+  "lines": {
+    "lr_front_130": {
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "gain": 3.0,
+      "outcomes": {
+        "main": {
+          "native": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 10,
+                "first": {
+                  "left": 17,
+                  "none": 3
+                },
+                "ever_correct": 17,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": 45.85554920553009
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 5,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 5,
+                  "front": 10,
+                  "back": 3,
+                  "none": 2
+                },
+                "ever_correct": 0,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -5.1778027784338
+              },
+              "N": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 2,
+                "first": {
+                  "front": 16,
+                  "none": 4
+                },
+                "ever_correct": 2,
+                "grasped": 16,
+                "first_read": {},
+                "all_blocks_read_correct": 0
+              }
+            },
+            "joint_first": 5,
+            "joint_terminal": 0
+          },
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 11,
+                "first": {
+                  "left": 16,
+                  "none": 4
+                },
+                "ever_correct": 16,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 51.384708489543684
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 15,
+                "terminal_correct": 5,
+                "first": {
+                  "right": 15,
+                  "none": 3,
+                  "front": 2
+                },
+                "ever_correct": 5,
+                "grasped": 18,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 0.6863108711278603
+              }
+            },
+            "joint_first": 12,
+            "joint_terminal": 2
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 11,
+                "first": {
+                  "left": 18,
+                  "none": 2
+                },
+                "ever_correct": 18,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 39.634382683824924
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "front": 18,
+                  "none": 2
+                },
+                "ever_correct": 0,
+                "grasped": 18,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -12.271092438442974
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "standard_forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 15,
+                "terminal_correct": 6,
+                "first": {
+                  "left": 15,
+                  "none": 5
+                },
+                "ever_correct": 16,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 54.6027530204793
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 10,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "ever_correct": 10,
+                "grasped": 18,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 5.071132744558406
+              }
+            },
+            "joint_first": 15,
+            "joint_terminal": 3
+          },
+          "paired": {
+            "forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->none": 3,
+                  "left->none": 1
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  806
+                ],
+                "risk_difference": -0.05,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  802,
+                  807,
+                  808
+                ],
+                "lost_terminal": [
+                  800,
+                  811
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 5,
+                  "front->right": 7,
+                  "back->right": 3,
+                  "front->none": 1,
+                  "front->front": 2,
+                  "none->none": 2
+                },
+                "new_correct": [
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  809,
+                  812,
+                  814,
+                  815,
+                  818
+                ],
+                "lost_correct": [],
+                "risk_difference": 0.5,
+                "mcnemar_exact_p_descriptive": 0.001953125,
+                "original_new_goal": [
+                  803,
+                  804,
+                  806,
+                  807,
+                  810,
+                  813,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  803,
+                  804,
+                  806,
+                  807,
+                  814,
+                  815,
+                  818
+                ],
+                "new_terminal": [
+                  800,
+                  806,
+                  807,
+                  808,
+                  811
+                ],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            },
+            "reverse_vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->left": 2,
+                  "none->none": 2
+                },
+                "new_correct": [
+                  803,
+                  806
+                ],
+                "lost_correct": [],
+                "risk_difference": 0.1,
+                "mcnemar_exact_p_descriptive": 0.5,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  800,
+                  811,
+                  814,
+                  818
+                ],
+                "lost_terminal": [
+                  802,
+                  807,
+                  808,
+                  810
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              },
+              "B": {
+                "first_transitions": {
+                  "right->front": 15,
+                  "none->front": 1,
+                  "front->front": 2,
+                  "none->none": 2
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  811,
+                  812,
+                  814,
+                  815,
+                  818
+                ],
+                "risk_difference": -0.75,
+                "mcnemar_exact_p_descriptive": 6.103515625e-05,
+                "original_new_goal": [
+                  813,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [
+                  800,
+                  806,
+                  807,
+                  808,
+                  811
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              }
+            },
+            "standard_forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 3,
+                  "left->none": 2
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  806,
+                  817
+                ],
+                "risk_difference": -0.1,
+                "mcnemar_exact_p_descriptive": 0.5,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  802,
+                  808
+                ],
+                "lost_terminal": [
+                  800,
+                  809,
+                  810,
+                  811,
+                  817,
+                  819
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 5,
+                  "front->right": 10,
+                  "back->right": 3,
+                  "none->none": 2
+                },
+                "new_correct": [
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  809,
+                  810,
+                  812,
+                  813,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "lost_correct": [],
+                "risk_difference": 0.65,
+                "mcnemar_exact_p_descriptive": 0.000244140625,
+                "original_new_goal": [
+                  803,
+                  804,
+                  806,
+                  807,
+                  810,
+                  813,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  803,
+                  804,
+                  806,
+                  807,
+                  810,
+                  813,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "new_terminal": [
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  809,
+                  810,
+                  814
+                ],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "lr_front_300": {
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "gain": 5.294038631688923,
+      "outcomes": {
+        "main": {
+          "native": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 10,
+                "first": {
+                  "left": 17,
+                  "none": 3
+                },
+                "ever_correct": 17,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": 33.00965366005286
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 13,
+                "terminal_correct": 9,
+                "first": {
+                  "right": 13,
+                  "none": 7
+                },
+                "ever_correct": 9,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -1.8440716671008217
+              },
+              "N": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 10,
+                "first": {
+                  "front": 17,
+                  "none": 3
+                },
+                "ever_correct": 13,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0
+              }
+            },
+            "joint_first": 12,
+            "joint_terminal": 4
+          },
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 9,
+                "first": {
+                  "left": 16,
+                  "none": 4
+                },
+                "ever_correct": 17,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 43.382360223457695
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 15,
+                "terminal_correct": 6,
+                "first": {
+                  "none": 5,
+                  "right": 15
+                },
+                "ever_correct": 6,
+                "grasped": 18,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 6.077150079393857
+              }
+            },
+            "joint_first": 12,
+            "joint_terminal": 3
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 9,
+                "first": {
+                  "left": 16,
+                  "front": 2,
+                  "none": 2
+                },
+                "ever_correct": 18,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 23.15867573324877
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "front": 14,
+                  "none": 6
+                },
+                "ever_correct": 0,
+                "grasped": 16,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -12.05103781685686
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "paired": {
+            "forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->none": 3,
+                  "left->none": 1
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  804
+                ],
+                "risk_difference": -0.05,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  806,
+                  811,
+                  812,
+                  817
+                ],
+                "lost_terminal": [
+                  800,
+                  804,
+                  808,
+                  814,
+                  818
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "right->none": 1,
+                  "none->right": 3,
+                  "right->right": 12,
+                  "none->none": 4
+                },
+                "new_correct": [
+                  801,
+                  803,
+                  804
+                ],
+                "lost_correct": [
+                  800
+                ],
+                "risk_difference": 0.1,
+                "mcnemar_exact_p_descriptive": 0.625,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  801,
+                  810,
+                  815
+                ],
+                "lost_terminal": [
+                  800,
+                  802,
+                  805,
+                  809,
+                  811,
+                  818
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            },
+            "reverse_vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->front": 2,
+                  "none->none": 2
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  800,
+                  803,
+                  804,
+                  808,
+                  815
+                ],
+                "lost_terminal": [
+                  801,
+                  810,
+                  811,
+                  812,
+                  817
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 2,
+                  "right->none": 3,
+                  "right->front": 12,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  808,
+                  809,
+                  810,
+                  811,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818
+                ],
+                "risk_difference": -0.75,
+                "mcnemar_exact_p_descriptive": 6.103515625e-05,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [
+                  801,
+                  806,
+                  810,
+                  814,
+                  815,
+                  816
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              }
+            }
+          }
+        }
+      }
+    },
+    "lr_front_1000": {
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "gain": 5.294038631688923,
+      "outcomes": {
+        "main": {
+          "native": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 12,
+                "first": {
+                  "left": 17,
+                  "none": 3
+                },
+                "ever_correct": 17,
+                "grasped": 20,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": 35.13603212702965
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 3,
+                "terminal_correct": 0,
+                "first": {
+                  "front": 8,
+                  "none": 9,
+                  "right": 3
+                },
+                "ever_correct": 0,
+                "grasped": 20,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -4.608527610391156
+              },
+              "N": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 15,
+                "first": {
+                  "front": 18,
+                  "none": 2
+                },
+                "ever_correct": 17,
+                "grasped": 20,
+                "first_read": {},
+                "all_blocks_read_correct": 0
+              }
+            },
+            "joint_first": 3,
+            "joint_terminal": 0
+          },
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 9,
+                "first": {
+                  "left": 16,
+                  "none": 4
+                },
+                "ever_correct": 16,
+                "grasped": 20,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 37.64879685372881
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 14,
+                "terminal_correct": 7,
+                "first": {
+                  "none": 6,
+                  "right": 14
+                },
+                "ever_correct": 7,
+                "grasped": 20,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 2.202913309330161
+              }
+            },
+            "joint_first": 13,
+            "joint_terminal": 3
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 13,
+                "first": {
+                  "left": 18,
+                  "none": 2
+                },
+                "ever_correct": 18,
+                "grasped": 20,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 29.928533379277674
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "front": 11,
+                  "none": 9
+                },
+                "ever_correct": 0,
+                "grasped": 20,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -14.65575391175397
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "paired": {
+            "forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->none": 3,
+                  "left->none": 1
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  803
+                ],
+                "risk_difference": -0.05,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  800,
+                  816
+                ],
+                "lost_terminal": [
+                  804,
+                  805,
+                  806,
+                  807,
+                  812
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 3,
+                  "none->right": 6,
+                  "right->right": 3,
+                  "none->none": 3,
+                  "front->right": 5
+                },
+                "new_correct": [
+                  801,
+                  804,
+                  806,
+                  807,
+                  809,
+                  810,
+                  812,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "lost_correct": [],
+                "risk_difference": 0.55,
+                "mcnemar_exact_p_descriptive": 0.0009765625,
+                "original_new_goal": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  804,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_terminal": [
+                  802,
+                  806,
+                  807,
+                  808,
+                  809,
+                  815,
+                  816
+                ],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            },
+            "reverse_vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->left": 3,
+                  "none->none": 1,
+                  "left->none": 1
+                },
+                "new_correct": [
+                  801,
+                  803,
+                  817
+                ],
+                "lost_correct": [
+                  812
+                ],
+                "risk_difference": 0.1,
+                "mcnemar_exact_p_descriptive": 0.625,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  803,
+                  804,
+                  806,
+                  807,
+                  809,
+                  815
+                ],
+                "lost_terminal": [
+                  800,
+                  816
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 4,
+                  "right->none": 7,
+                  "none->none": 2,
+                  "right->front": 7
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  801,
+                  802,
+                  804,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  812,
+                  814,
+                  815,
+                  816,
+                  818,
+                  819
+                ],
+                "risk_difference": -0.7,
+                "mcnemar_exact_p_descriptive": 0.0001220703125,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [
+                  802,
+                  806,
+                  807,
+                  808,
+                  809,
+                  815,
+                  816
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              }
+            }
+          }
+        },
+        "phrase": {
+          "native": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 14,
+                "terminal_correct": 10,
+                "first": {
+                  "left": 14,
+                  "none": 6
+                },
+                "ever_correct": 14,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": 32.6315533572548
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 5,
+                "terminal_correct": 2,
+                "first": {
+                  "front": 5,
+                  "none": 10,
+                  "right": 5
+                },
+                "ever_correct": 2,
+                "grasped": 20,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -5.516793154588279
+              }
+            },
+            "joint_first": 5,
+            "joint_terminal": 2
+          },
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 11,
+                "terminal_correct": 7,
+                "first": {
+                  "left": 11,
+                  "none": 9
+                },
+                "ever_correct": 12,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 33.25260653465402
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 9,
+                "terminal_correct": 0,
+                "first": {
+                  "none": 10,
+                  "right": 9,
+                  "front": 1
+                },
+                "ever_correct": 0,
+                "grasped": 20,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 19,
+                "first_10_lead_mm": 2.7369965026057823
+              }
+            },
+            "joint_first": 6,
+            "joint_terminal": 0
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 14,
+                "terminal_correct": 9,
+                "first": {
+                  "left": 14,
+                  "none": 6
+                },
+                "ever_correct": 14,
+                "grasped": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": 30.542407127278587
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "front": 8,
+                  "none": 12
+                },
+                "ever_correct": 0,
+                "grasped": 20,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 19,
+                "first_10_lead_mm": -13.031872469621035
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "paired": {
+            "forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 10,
+                  "none->none": 5,
+                  "left->none": 4,
+                  "none->left": 1
+                },
+                "new_correct": [
+                  811
+                ],
+                "lost_correct": [
+                  803,
+                  808,
+                  812,
+                  817
+                ],
+                "risk_difference": -0.15,
+                "mcnemar_exact_p_descriptive": 0.375,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  811
+                ],
+                "lost_terminal": [
+                  806,
+                  807,
+                  813,
+                  817
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 2,
+                  "none->none": 7,
+                  "right->right": 4,
+                  "front->front": 1,
+                  "none->right": 3,
+                  "right->none": 1,
+                  "front->right": 2
+                },
+                "new_correct": [
+                  806,
+                  808,
+                  812,
+                  816,
+                  819
+                ],
+                "lost_correct": [
+                  807
+                ],
+                "risk_difference": 0.2,
+                "mcnemar_exact_p_descriptive": 0.21875,
+                "original_new_goal": [
+                  800,
+                  804,
+                  810,
+                  812,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  812,
+                  819
+                ],
+                "new_terminal": [],
+                "lost_terminal": [
+                  813,
+                  814
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            },
+            "reverse_vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 10,
+                  "none->none": 5,
+                  "none->left": 4,
+                  "left->none": 1
+                },
+                "new_correct": [
+                  803,
+                  808,
+                  812,
+                  817
+                ],
+                "lost_correct": [
+                  811
+                ],
+                "risk_difference": 0.15,
+                "mcnemar_exact_p_descriptive": 0.375,
+                "original_new_goal": [],
+                "new_goal_to_intended": [],
+                "new_terminal": [
+                  806,
+                  808,
+                  813,
+                  817
+                ],
+                "lost_terminal": [
+                  800,
+                  811
+                ],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 2,
+                  "none->none": 8,
+                  "right->front": 5,
+                  "front->front": 1,
+                  "right->none": 4
+                },
+                "new_correct": [],
+                "lost_correct": [
+                  802,
+                  805,
+                  806,
+                  808,
+                  812,
+                  813,
+                  814,
+                  816,
+                  819
+                ],
+                "risk_difference": -0.45,
+                "mcnemar_exact_p_descriptive": 0.00390625,
+                "original_new_goal": [
+                  804
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              }
+            }
+          }
+        }
+      }
+    },
+    "lf_right_1000": {
+      "goals": [
+        "left",
+        "front",
+        "right"
+      ],
+      "gain": 1.0,
+      "outcomes": {
+        "main": {
+          "native": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -34.01994615843627
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -18.39696915681385
+              },
+              "N": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 13,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 14,
+                "grasped": 18,
+                "first_read": {},
+                "all_blocks_read_correct": 0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -33.67367190804765
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -18.71796046300328
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -34.43328277320042
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -18.106568234168954
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "paired": {
+            "forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            },
+            "reverse_vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              }
+            },
+            "standard_forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            }
+          },
+          "standard_forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -33.79570792139465
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "first_10_lead_mm": -19.95579407582607
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          }
+        },
+        "phrase": {
+          "native": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 10,
+                  "front": 4,
+                  "none": 6
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -23.229426467337966
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 7,
+                  "none": 13
+                },
+                "ever_correct": 0,
+                "grasped": 15,
+                "first_read": {},
+                "all_blocks_read_correct": 0,
+                "first_10_lead_mm": -8.281536481657184
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 10,
+                  "front": 5,
+                  "none": 5
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 16,
+                "first_10_lead_mm": -23.018902203706
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 8,
+                  "none": 12
+                },
+                "ever_correct": 0,
+                "grasped": 15,
+                "first_read": {
+                  "B": 19,
+                  "N": 1
+                },
+                "all_blocks_read_correct": 13,
+                "first_10_lead_mm": -8.179355474395987
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 10,
+                  "front": 4,
+                  "none": 6
+                },
+                "ever_correct": 0,
+                "grasped": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 16,
+                "first_10_lead_mm": -23.27118631408463
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "first": {
+                  "right": 8,
+                  "none": 12
+                },
+                "ever_correct": 0,
+                "grasped": 15,
+                "first_read": {
+                  "B": 19,
+                  "N": 1
+                },
+                "all_blocks_read_correct": 11,
+                "first_10_lead_mm": -8.385523841309581
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0
+          },
+          "paired": {
+            "forward_vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 9,
+                  "front->front": 4,
+                  "none->none": 5,
+                  "none->right": 1,
+                  "right->front": 1
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  804,
+                  806,
+                  811,
+                  812,
+                  813,
+                  814,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 7,
+                  "none->none": 12,
+                  "none->right": 1
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  806,
+                  807,
+                  808,
+                  809,
+                  812
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ]
+              }
+            },
+            "reverse_vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 9,
+                  "front->front": 4,
+                  "none->none": 5,
+                  "right->none": 1,
+                  "front->right": 1
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  804,
+                  806,
+                  807,
+                  811,
+                  813,
+                  814,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 7,
+                  "none->right": 1,
+                  "none->none": 11,
+                  "right->none": 1
+                },
+                "new_correct": [],
+                "lost_correct": [],
+                "risk_difference": 0.0,
+                "mcnemar_exact_p_descriptive": 1.0,
+                "original_new_goal": [
+                  800,
+                  802,
+                  806,
+                  807,
+                  808,
+                  809,
+                  812,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "new_terminal": [],
+                "lost_terminal": [],
+                "same_boundary": [
+                  800,
+                  801,
+                  802,
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "same_first_read": 20
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "dev_episodes": 192,
+  "main_episodes": 600,
+  "phrase_episodes": 240,
+  "standard_episodes": 40,
+  "parent_episodes": 40,
+  "reserve_episodes": 160,
+  "gates": [
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004436094604898244,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008346196846105158,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008326140814460814,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004436094604898244,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004938722704537213,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008767438703216612,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008782180375419557,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004938722704537213,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000507921795360744,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008537895046174526,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000910384813323617,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000507921795360744,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004431954585015774,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008809705032035708,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008541755378246307,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004431954585015774,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004945869441144168,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008377526537515223,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008382298401556909,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004945869441144168,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00048695510486140847,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007231286726891994,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007264417945407331,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00048695510486140847,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004602708504535258,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010462043574079871,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010417092125862837,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004602708504535258,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004659883852582425,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010486070532351732,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010433681309223175,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004659883852582425,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004609620082192123,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009859803831204772,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009819184197112918,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004609620082192123,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005117134423926473,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0011180482106283307,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0011149815982207656,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005117134423926473,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000567709852475673,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008664855267852545,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008415023912675679,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000567709852475673,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005414293264038861,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008549224003218114,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008576074615120888,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005414293264038861,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005310164415277541,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010448311222717166,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001028957194648683,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005310164415277541,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004678450641222298,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008984950254671276,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008824458927847445,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004678450641222298,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005455298814922571,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009303634287789464,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000933414208702743,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005455298814922571,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005010263412259519,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008517177775502205,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008586088079027832,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005010263412259519,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00048009472084231675,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009167558164335787,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009268347057513893,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00048009472084231675,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044002183130942285,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009417431429028511,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009365405421704054,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044002183130942285,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004923447850160301,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009427285403944552,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000940827711019665,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004923447850160301,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004658611142076552,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008728649117983878,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008738191099837422,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004658611142076552,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00048705178778618574,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008708948735147715,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008684319909662008,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00048705178778618574,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004285210743546486,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009548201342113316,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009480930166319013,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004285210743546486,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000484344142023474,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009267308050766587,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009554475545883179,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000484344142023474,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004880600899923593,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008353812154382467,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008342865039594471,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004880600899923593,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044802058255299926,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008378274505957961,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008378274505957961,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044802058255299926,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004802123294211924,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009347794693894684,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009347794693894684,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004802123294211924,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045808765571564436,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009080167510546744,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009080167510546744,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045808765571564436,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000521825801115483,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009008728666231036,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009008728666231036,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000521825801115483,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000523222959600389,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007805261993780732,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007805261993780732,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000523222959600389,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004888440598733723,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008752716239541769,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008752716239541769,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004888440598733723,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00047034068848006427,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009542804909870028,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009542804909870028,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00047034068848006427,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004515829496085644,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008203449542634189,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 3.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008203449542634189,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004515829496085644,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004674281517509371,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004674281517509371,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004674281517509371,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042631596443243325,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042631596443243325,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042631596443243325,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005309750558808446,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005309750558808446,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005309750558808446,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005389794823713601,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005389794823713601,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005389794823713601,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005909929750487208,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005909929750487208,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005909929750487208,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004869838594458997,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004869838594458997,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004869838594458997,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005476910155266523,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005476910155266523,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005476910155266523,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004570969904307276,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004570969904307276,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004570969904307276,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004714510578196496,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004714510578196496,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004714510578196496,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005694402498193085,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005694402498193085,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005694402498193085,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004818025918211788,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004818025918211788,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004818025918211788,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0006409125053323805,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0006409125053323805,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0006409125053323805,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005808366113342345,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005808366113342345,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005808366113342345,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005794551689177752,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005794551689177752,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005794551689177752,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005798580823466182,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005798580823466182,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005798580823466182,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00046281141112558544,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00046281141112558544,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00046281141112558544,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004714510578196496,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004714510578196496,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004714510578196496,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005694402498193085,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005694402498193085,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005694402498193085,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004818025918211788,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004818025918211788,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004818025918211788,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0006409125053323805,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0006409125053323805,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0006409125053323805,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005808366113342345,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005808366113342345,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005808366113342345,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005794551689177752,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005794551689177752,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005794551689177752,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005798580823466182,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005798580823466182,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005798580823466182,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00046281141112558544,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00046281141112558544,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00046281141112558544,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004416252195369452,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010329351061955094,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010329351061955094,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004494408785831183,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009276857017539442,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009276857017539442,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005245912470854819,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007970473379828036,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007970473379828036,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045422406401485205,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001066911849193275,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001066911849193275,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004410733818076551,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000786360411439091,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000786360411439091,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044285901822149754,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009007591288536787,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009007591288536787,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045623636106029153,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000882831634953618,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000882831634953618,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004278997366782278,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008809076389297843,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008809076389297843,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004416252195369452,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010329351061955094,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0010329351061955094,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004494408785831183,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009276857017539442,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009276857017539442,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005245912470854819,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007970473379828036,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007970473379828036,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045422406401485205,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001066911849193275,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001066911849193275,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004410733818076551,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000786360411439091,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000786360411439091,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044285901822149754,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009007591288536787,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009007591288536787,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045623636106029153,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000882831634953618,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.000882831634953618,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004278997366782278,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008809076389297843,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008809076389297843,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004416252195369452,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004494408785831183,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005245912470854819,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045422406401485205,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004410733818076551,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00044285901822149754,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00045623636106029153,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004278997366782278,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005031730979681015,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009022451122291386,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009022451122291386,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005031730979681015,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005305380327627063,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001010760199278593,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.001010760199278593,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005305380327627063,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005391646991483867,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009147818782366812,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009147818782366812,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005391646991483867,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00047823545173741877,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008865574491210282,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008865574491210282,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00047823545173741877,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00047918371274136007,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007634903304278851,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0007634903304278851,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00047918371274136007,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004414099093992263,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008862498216331005,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008862498216331005,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004414099093992263,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042987678898498416,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008826035191304982,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008826035191304982,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042987678898498416,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005206666537560523,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009359086980111897,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009359086980111897,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005206666537560523,
+      "new_goal_bypass_bitwise": true
+    }
+  ],
+  "standard_protocol_sha256": "770aae0546bcac093ae9ae5091079d7d15455caf24fa6c5570412a8f1d314dda",
+  "lf_parent": {
+    "per_goal": {
+      "A": {
+        "n": 20,
+        "first_correct": 17,
+        "terminal_correct": 16,
+        "first": {
+          "left": 17,
+          "none": 3
+        },
+        "ever_correct": 17,
+        "grasped": 17,
+        "first_read": {},
+        "all_blocks_read_correct": 0,
+        "first_10_lead_mm": 46.95851622340168
+      },
+      "B": {
+        "n": 20,
+        "first_correct": 20,
+        "terminal_correct": 14,
+        "first": {
+          "front": 20
+        },
+        "ever_correct": 15,
+        "grasped": 20,
+        "first_read": {},
+        "all_blocks_read_correct": 0,
+        "first_10_lead_mm": 27.55112878578697
+      }
+    },
+    "joint_first": 17,
+    "joint_terminal": 13
+  },
+  "lf_adaptation_vs_parent": {
+    "A": {
+      "first_transitions": {
+        "left->right": 15,
+        "left->none": 2,
+        "none->right": 2,
+        "none->none": 1
+      },
+      "new_correct": [],
+      "lost_correct": [
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        811,
+        812,
+        813,
+        814,
+        817,
+        818,
+        819
+      ],
+      "risk_difference": -0.85,
+      "mcnemar_exact_p_descriptive": 1.52587890625e-05,
+      "original_new_goal": [],
+      "new_goal_to_intended": [],
+      "new_terminal": [],
+      "lost_terminal": [
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        811,
+        812,
+        813,
+        814,
+        817,
+        819
+      ],
+      "same_boundary": []
+    },
+    "B": {
+      "first_transitions": {
+        "front->right": 17,
+        "front->none": 3
+      },
+      "new_correct": [],
+      "lost_correct": [
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819
+      ],
+      "risk_difference": -1.0,
+      "mcnemar_exact_p_descriptive": 1.9073486328125e-06,
+      "original_new_goal": [],
+      "new_goal_to_intended": [],
+      "new_terminal": [],
+      "lost_terminal": [
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        809,
+        810,
+        811,
+        813,
+        814,
+        817,
+        819
+      ],
+      "same_boundary": []
+    }
+  },
+  "reserve_outcomes": {
+    "native": {
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 16,
+          "terminal_correct": 7,
+          "first": {
+            "none": 4,
+            "left": 16
+          },
+          "ever_correct": 16,
+          "grasped": 18,
+          "first_read": {},
+          "all_blocks_read_correct": 0,
+          "first_10_lead_mm": 32.27482467601557
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 3,
+          "terminal_correct": 0,
+          "first": {
+            "none": 13,
+            "right": 3,
+            "front": 4
+          },
+          "ever_correct": 0,
+          "grasped": 19,
+          "first_read": {},
+          "all_blocks_read_correct": 0,
+          "first_10_lead_mm": -5.33556767015679
+        }
+      },
+      "joint_first": 3,
+      "joint_terminal": 0
+    },
+    "forward": {
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 14,
+          "terminal_correct": 9,
+          "first": {
+            "none": 6,
+            "left": 14
+          },
+          "ever_correct": 14,
+          "grasped": 18,
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "first_10_lead_mm": 33.03235332758557
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 3,
+          "terminal_correct": 1,
+          "first": {
+            "none": 12,
+            "back": 2,
+            "right": 3,
+            "front": 3
+          },
+          "ever_correct": 1,
+          "grasped": 19,
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "first_10_lead_mm": -4.14572212135153
+        }
+      },
+      "joint_first": 2,
+      "joint_terminal": 1
+    },
+    "reverse": {
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 16,
+          "terminal_correct": 7,
+          "first": {
+            "none": 4,
+            "left": 16
+          },
+          "ever_correct": 16,
+          "grasped": 18,
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "first_10_lead_mm": 31.743019705905343
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "first": {
+            "none": 15,
+            "front": 5
+          },
+          "ever_correct": 0,
+          "grasped": 19,
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "first_10_lead_mm": -6.493673968699432
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0
+    },
+    "original_gain": {
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 10,
+          "terminal_correct": 4,
+          "first": {
+            "none": 10,
+            "left": 10
+          },
+          "ever_correct": 10,
+          "grasped": 18,
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "first_10_lead_mm": 34.049958618972994
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 14,
+          "terminal_correct": 7,
+          "first": {
+            "none": 6,
+            "right": 14
+          },
+          "ever_correct": 7,
+          "grasped": 19,
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "first_10_lead_mm": 1.1330089358150142
+        }
+      },
+      "joint_first": 9,
+      "joint_terminal": 3
+    },
+    "paired": {
+      "forward_vs_native": {
+        "A": {
+          "first_transitions": {
+            "none->none": 4,
+            "left->left": 14,
+            "left->none": 2
+          },
+          "new_correct": [],
+          "lost_correct": [
+            903,
+            912
+          ],
+          "risk_difference": -0.1,
+          "mcnemar_exact_p_descriptive": 0.5,
+          "original_new_goal": [],
+          "new_goal_to_intended": [],
+          "new_terminal": [
+            904,
+            908,
+            914
+          ],
+          "lost_terminal": [
+            916
+          ],
+          "same_boundary": [
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919
+          ]
+        },
+        "B": {
+          "first_transitions": {
+            "none->none": 11,
+            "none->back": 2,
+            "right->right": 3,
+            "front->none": 1,
+            "front->front": 3
+          },
+          "new_correct": [],
+          "lost_correct": [],
+          "risk_difference": 0.0,
+          "mcnemar_exact_p_descriptive": 1.0,
+          "original_new_goal": [
+            908,
+            914,
+            916,
+            917
+          ],
+          "new_goal_to_intended": [],
+          "new_terminal": [
+            914
+          ],
+          "lost_terminal": [],
+          "same_boundary": [
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919
+          ]
+        }
+      },
+      "reverse_vs_forward": {
+        "A": {
+          "first_transitions": {
+            "none->none": 4,
+            "left->left": 14,
+            "none->left": 2
+          },
+          "new_correct": [
+            903,
+            912
+          ],
+          "lost_correct": [],
+          "risk_difference": 0.1,
+          "mcnemar_exact_p_descriptive": 0.5,
+          "original_new_goal": [],
+          "new_goal_to_intended": [],
+          "new_terminal": [
+            913,
+            916
+          ],
+          "lost_terminal": [
+            901,
+            905,
+            908,
+            914
+          ],
+          "same_boundary": [
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919
+          ],
+          "same_first_read": 20
+        },
+        "B": {
+          "first_transitions": {
+            "none->none": 11,
+            "back->none": 2,
+            "right->front": 1,
+            "right->none": 2,
+            "none->front": 1,
+            "front->front": 3
+          },
+          "new_correct": [],
+          "lost_correct": [
+            903,
+            907,
+            911
+          ],
+          "risk_difference": -0.15,
+          "mcnemar_exact_p_descriptive": 0.25,
+          "original_new_goal": [
+            914,
+            916,
+            917
+          ],
+          "new_goal_to_intended": [],
+          "new_terminal": [],
+          "lost_terminal": [
+            914
+          ],
+          "same_boundary": [
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919
+          ],
+          "same_first_read": 20
+        }
+      },
+      "forward_vs_original_gain": {
+        "A": {
+          "first_transitions": {
+            "none->none": 6,
+            "left->left": 10,
+            "none->left": 4
+          },
+          "new_correct": [
+            904,
+            909,
+            915,
+            916
+          ],
+          "lost_correct": [],
+          "risk_difference": 0.2,
+          "mcnemar_exact_p_descriptive": 0.125,
+          "original_new_goal": [],
+          "new_goal_to_intended": [],
+          "new_terminal": [
+            901,
+            904,
+            905,
+            914,
+            918
+          ],
+          "lost_terminal": [],
+          "same_boundary": [
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919
+          ]
+        },
+        "B": {
+          "first_transitions": {
+            "none->none": 5,
+            "right->back": 2,
+            "right->none": 7,
+            "none->right": 1,
+            "right->right": 2,
+            "right->front": 3
+          },
+          "new_correct": [
+            903
+          ],
+          "lost_correct": [
+            901,
+            902,
+            904,
+            905,
+            906,
+            908,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918
+          ],
+          "risk_difference": -0.55,
+          "mcnemar_exact_p_descriptive": 0.00341796875,
+          "original_new_goal": [],
+          "new_goal_to_intended": [],
+          "new_terminal": [],
+          "lost_terminal": [
+            902,
+            907,
+            908,
+            913,
+            916,
+            918
+          ],
+          "same_boundary": [
+            900,
+            901,
+            902,
+            903,
+            904,
+            905,
+            906,
+            907,
+            908,
+            909,
+            910,
+            911,
+            912,
+            913,
+            914,
+            915,
+            916,
+            917,
+            918,
+            919
+          ]
+        }
+      }
+    }
+  },
+  "reserve_protocol_sha256": "715d8997762577392062f4a8cd2c951b433c3fa78c3930b895d0d9c4480bd043",
+  "total_episodes": 1272,
+  "max_mean_cast_rms": 0.0011180482106283307
+}

@@ -1,0 +1,102 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+TIMING lr_front_1000 1 native native 801 A [] False 18.43
+TIMING lr_front_1000 1 native native 801 B [] False 18.28
+TIMING lr_front_1000 1 native native 809 A ['left'] False 16.15
+TIMING lr_front_1000 1 native native 809 B [] False 18.44
+TIMING lr_front_1000 1 native native 817 A [] False 16.88
+TIMING lr_front_1000 1 native native 817 B [] False 18.28
+TIMING lr_front_1000 1 early_100 forward 801 A [] False 24.47
+TIMING lr_front_1000 1 early_100 forward 801 B [] False 25.83
+TIMING lr_front_1000 1 early_100 forward 809 A ['left'] False 26.09
+TIMING lr_front_1000 1 early_100 forward 809 B [] False 25.61
+TIMING lr_front_1000 1 early_100 forward 817 A [] False 24.33
+TIMING lr_front_1000 1 early_100 forward 817 B [] False 24.87
+TIMING lr_front_1000 1 early_100 reverse 801 A [] False 24.72
+TIMING lr_front_1000 1 early_100 reverse 801 B [] False 23.79
+TIMING lr_front_1000 1 early_100 reverse 809 A ['left'] True 24.89
+TIMING lr_front_1000 1 early_100 reverse 809 B [] False 25.25
+TIMING lr_front_1000 1 early_100 reverse 817 A ['left'] False 22.69
+TIMING lr_front_1000 1 early_100 reverse 817 B [] False 24.34
+TIMING lr_front_1000 1 mid_100 forward 801 A [] False 24.31
+TIMING lr_front_1000 1 mid_100 forward 801 B [] False 24.26
+TIMING lr_front_1000 1 mid_100 forward 809 A [] False 23.19
+TIMING lr_front_1000 1 mid_100 forward 809 B ['right'] True 24.89
+TIMING lr_front_1000 1 mid_100 forward 817 A [] False 24.38
+TIMING lr_front_1000 1 mid_100 forward 817 B [] False 22.43
+TIMING lr_front_1000 1 mid_100 reverse 801 A ['left'] False 24.34
+TIMING lr_front_1000 1 mid_100 reverse 801 B [] False 24.22
+TIMING lr_front_1000 1 mid_100 reverse 809 A ['left'] False 23.97
+TIMING lr_front_1000 1 mid_100 reverse 809 B ['front'] False 23.49
+TIMING lr_front_1000 1 mid_100 reverse 817 A ['left'] False 23.98
+TIMING lr_front_1000 1 mid_100 reverse 817 B [] False 24.58
+TIMING lr_front_1000 1 delayed_100 forward 801 A [] False 22.97
+TIMING lr_front_1000 1 delayed_100 forward 801 B ['right'] False 24.3
+TIMING lr_front_1000 1 delayed_100 forward 809 A ['left'] False 24.25
+TIMING lr_front_1000 1 delayed_100 forward 809 B ['right'] True 24.11
+TIMING lr_front_1000 1 delayed_100 forward 817 A [] False 22.82
+TIMING lr_front_1000 1 delayed_100 forward 817 B [] False 24.63
+TIMING lr_front_1000 1 delayed_100 reverse 801 A ['left'] False 25.24
+TIMING lr_front_1000 1 delayed_100 reverse 801 B [] False 25.24
+TIMING lr_front_1000 1 delayed_100 reverse 809 A ['left'] True 24.35
+TIMING lr_front_1000 1 delayed_100 reverse 809 B ['front'] False 23.97
+TIMING lr_front_1000 1 delayed_100 reverse 817 A ['left'] False 25.78
+TIMING lr_front_1000 1 delayed_100 reverse 817 B [] False 24.76
+TIMING lr_front_1000 1 late_100 forward 801 A [] False 23.85
+TIMING lr_front_1000 1 late_100 forward 801 B [] False 24.02
+TIMING lr_front_1000 1 late_100 forward 809 A ['left'] False 24.91
+TIMING lr_front_1000 1 late_100 forward 809 B [] False 25.2
+TIMING lr_front_1000 1 late_100 forward 817 A [] False 24.4
+TIMING lr_front_1000 1 late_100 forward 817 B [] False 23.42
+TIMING lr_front_1000 1 late_100 reverse 801 A [] False 25.56
+TIMING lr_front_1000 1 late_100 reverse 801 B [] False 25.4
+TIMING lr_front_1000 1 late_100 reverse 809 A ['left'] False 27.04
+TIMING lr_front_1000 1 late_100 reverse 809 B [] False 26.75
+TIMING lr_front_1000 1 late_100 reverse 817 A [] False 26.85
+TIMING lr_front_1000 1 late_100 reverse 817 B [] False 28.06
+TIMING lr_front_1000 1 full_400 forward 801 A [] False 54.8
+TIMING lr_front_1000 1 full_400 forward 801 B [] False 52.03
+TIMING lr_front_1000 1 full_400 forward 809 A ['left'] False 53.57
+TIMING lr_front_1000 1 full_400 forward 809 B ['right'] True 51.73
+TIMING lr_front_1000 1 full_400 forward 817 A [] False 56.91
+TIMING lr_front_1000 1 full_400 forward 817 B [] False 61.14
+TIMING lr_front_1000 1 full_400 reverse 801 A ['left'] False 66.48
+TIMING lr_front_1000 1 full_400 reverse 801 B [] False 66.52
+TIMING lr_front_1000 1 full_400 reverse 809 A ['left'] True 60.35
+TIMING lr_front_1000 1 full_400 reverse 809 B ['front'] False 56.14
+TIMING lr_front_1000 1 full_400 reverse 817 A ['left'] True 59.4
+TIMING lr_front_1000 1 full_400 reverse 817 B [] False 55.55
+TIMING lr_front_1000 1 delayed_tail forward 801 A [] False 47.02
+TIMING lr_front_1000 1 delayed_tail forward 801 B ['right'] False 47.4
+TIMING lr_front_1000 1 delayed_tail forward 809 A ['left'] False 45.77
+TIMING lr_front_1000 1 delayed_tail forward 809 B ['right'] True 44.67
+TIMING lr_front_1000 1 delayed_tail forward 817 A [] False 42.01
+TIMING lr_front_1000 1 delayed_tail forward 817 B [] False 41.81
+TIMING lr_front_1000 1 delayed_tail reverse 801 A ['left'] False 44.88
+TIMING lr_front_1000 1 delayed_tail reverse 801 B [] False 43.47
+TIMING lr_front_1000 1 delayed_tail reverse 809 A ['left'] True 42.5
+TIMING lr_front_1000 1 delayed_tail reverse 809 B ['front'] False 43.86
+TIMING lr_front_1000 1 delayed_tail reverse 817 A ['left'] False 44.16
+TIMING lr_front_1000 1 delayed_tail reverse 817 B [] False 42.58
+TIMING lr_front_1000 1 late_tail forward 801 A [] False 36.95
+TIMING lr_front_1000 1 late_tail forward 801 B [] False 36.23
+TIMING lr_front_1000 1 late_tail forward 809 A ['left'] False 36.68
+TIMING lr_front_1000 1 late_tail forward 809 B [] False 37.07
+TIMING lr_front_1000 1 late_tail forward 817 A [] False 37.68
+TIMING lr_front_1000 1 late_tail forward 817 B [] False 36.54
+TIMING lr_front_1000 1 late_tail reverse 801 A [] False 37.96
+TIMING lr_front_1000 1 late_tail reverse 801 B [] False 36.98
+TIMING lr_front_1000 1 late_tail reverse 809 A ['left'] False 41.29
+TIMING lr_front_1000 1 late_tail reverse 809 B [] False 37.27
+TIMING lr_front_1000 1 late_tail reverse 817 A [] False 36.5
+TIMING lr_front_1000 1 late_tail reverse 817 B [] False 36.45

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/run_anchor_check.py", line 12, in <module>
+    from anchor_protocol import LINES
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/anchor_protocol.py", line 3, in <module>
+    import v_timing_protocol as temporal
+ModuleNotFoundError: No module named 'v_timing_protocol'

@@ -1,0 +1,33 @@
+CAPACITY {'workers': 8, 'per_gpu': 4}
+START 1653074 0 lr_front_1000_0
+START 1653075 1 lf_right_1000_0
+START 1653076 1 lr_front_1000_1
+START 1653077 0 lf_right_1000_1
+START 1653078 0 lr_front_1000_2
+START 1653079 1 lf_right_1000_2
+START 1653080 1 lr_front_1000_3
+START 1653081 0 lf_right_1000_3
+FINISH lr_front_1000_2 0
+START 1655346 0 lr_front_1000_4
+FINISH lf_right_1000_3 0
+START 1655405 0 lf_right_1000_5
+FINISH lf_right_1000_1 0
+START 1655911 0 lr_front_1000_6
+FINISH lr_front_1000_0 0
+START 1655927 0 lf_right_1000_7
+FINISH lr_front_1000_1 0
+START 1657105 1 lf_right_1000_4
+FINISH lf_right_1000_2 0
+START 1657167 1 lr_front_1000_5
+FINISH lf_right_1000_0 0
+START 1657724 1 lf_right_1000_6
+FINISH lr_front_1000_3 0
+START 1657813 1 lr_front_1000_7
+FINISH lr_front_1000_4 0
+FINISH lf_right_1000_5 0
+FINISH lr_front_1000_6 0
+FINISH lf_right_1000_7 0
+FINISH lf_right_1000_4 0
+FINISH lr_front_1000_5 0
+FINISH lr_front_1000_7 0
+FINISH lf_right_1000_6 0

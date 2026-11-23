@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-11-23T04:10:47.560838+00:00",
+  "locked_before_queue_launch": true,
+  "donor_policy": "report each old goal first/final, new-goal competence, joint old success; pair step30 vs its own parent0; no statistical equivalence claimed from n=20",
+  "v_compatibility": "late1000 with only eight V replaced by donor0/30, all400 steps; separate from donor full policy and delta-only repair",
+  "delta_factorial": "anchors0/30 x gains1/5.294038631688923 x windows81-180/1-400 x signs+/-; no result-based dose or window selection",
+  "candidate_success": "single shared forward anchor/gain/window: both old goals first and final counts at least late-native; old B strictly improves both; paired A losses reported separately",
+  "parent_reference": "show whether repair reaches parent0 old-task first/final counts; full donor competence does not establish V-only repair eligibility",
+  "reuse": "320 step30 gain5.294 timing episodes imported with hashes and same-input probes; 120 late native reference episodes separate; no inflation of independent sample size",
+  "samples": "same20 initial states800-819, two specific training curricula, no new holdout or independent training seed; no broad applicability claim from this audit",
+  "endpoints": "first stable arrival, terminal400, ever success, grasp, first-read ties, per-pair gained/lost, polarity transitions; all outcomes retained"
+}

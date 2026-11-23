@@ -1,0 +1,8 @@
+{
+  "both_parent0_are_recorded_continuation_initializations": true,
+  "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e",
+  "manifests": {
+    "LR_initialization_manifest.json": "5776c96dec574a28fc1c0e75f9808eb06ebf66d439d5d3089bea8d4cb8d268bb",
+    "LF_initialization_manifest.json": "a0784369d9b3939d2cda5f2cbb8dfcd68bc7a1dfdb955cac44a6f2edcf1ff660"
+  }
+}

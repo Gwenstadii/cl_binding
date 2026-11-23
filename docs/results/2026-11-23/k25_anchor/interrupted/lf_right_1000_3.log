@@ -1,0 +1,127 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 803 A ['left'] True 16.3
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 803 B ['front'] True 16.01
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 803 N ['left'] False 16.36
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 811 A ['left'] True 16.12
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 811 B ['front'] True 16.11
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 811 N ['left'] False 16.02
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 819 A ['left'] True 15.94
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 819 B ['front'] True 16.64
+ANCHOR lf_right_1000 3 policy 0 0.0 native native 819 N ['left'] False 15.87
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 803 A ['left'] False 15.87
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 803 B [] False 15.88
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 803 N ['front'] False 16.17
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 811 A ['left'] False 15.63
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 811 B ['front'] False 15.96
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 811 N ['front'] False 17.42
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 819 A ['left'] True 15.0
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 819 B ['front'] False 17.27
+ANCHOR lf_right_1000 3 policy 30 0.0 native native 819 N ['front'] False 15.28
+ANCHOR lf_right_1000 3 v_weights 0 1.0 full_400 native 803 A [] False 16.52
+ANCHOR lf_right_1000 3 v_weights 0 1.0 full_400 native 803 B [] False 16.29
+ANCHOR lf_right_1000 3 v_weights 0 1.0 full_400 native 811 A ['right'] False 15.95
+ANCHOR lf_right_1000 3 v_weights 0 1.0 full_400 native 811 B ['right'] False 16.44
+ANCHOR lf_right_1000 3 v_weights 0 1.0 full_400 native 819 A ['front'] False 15.97
+ANCHOR lf_right_1000 3 v_weights 0 1.0 full_400 native 819 B ['right'] False 17.2
+ANCHOR lf_right_1000 3 v_weights 30 1.0 full_400 native 803 A [] False 15.71
+ANCHOR lf_right_1000 3 v_weights 30 1.0 full_400 native 803 B [] False 17.8
+ANCHOR lf_right_1000 3 v_weights 30 1.0 full_400 native 811 A ['right'] False 15.09
+ANCHOR lf_right_1000 3 v_weights 30 1.0 full_400 native 811 B ['right'] False 17.79
+ANCHOR lf_right_1000 3 v_weights 30 1.0 full_400 native 819 A ['right'] False 16.12
+ANCHOR lf_right_1000 3 v_weights 30 1.0 full_400 native 819 B ['right'] False 17.31
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 forward 803 A [] False 23.36
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 forward 803 B [] False 25.73
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 forward 811 A ['right'] False 23.68
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 forward 811 B ['right'] False 23.93
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 forward 819 A ['right'] False 24.75
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 forward 819 B ['right'] False 24.2
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 reverse 803 A [] False 24.4
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 reverse 803 B [] False 25.99
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 reverse 811 A ['right'] False 24.49
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 reverse 811 B ['right'] False 25.76
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 reverse 819 A ['right'] False 24.88
+ANCHOR lf_right_1000 3 delta 0 1.0 delayed_100 reverse 819 B ['right'] False 23.62
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 forward 803 A [] False 48.05
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 forward 803 B [] False 47.3
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 forward 811 A ['right'] False 47.04
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 forward 811 B ['right'] False 51.45
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 forward 819 A ['right'] False 48.3
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 forward 819 B ['right'] False 47.39
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 reverse 803 A [] False 50.07
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 reverse 803 B [] False 51.35
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 reverse 811 A ['right'] False 48.72
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 reverse 811 B ['right'] False 49.99
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 reverse 819 A ['right'] False 47.88
+ANCHOR lf_right_1000 3 delta 0 1.0 full_400 reverse 819 B ['right'] False 48.4
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 forward 803 A [] False 25.5
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 forward 803 B [] False 25.51
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 forward 811 A ['right'] False 23.74
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 forward 811 B ['right'] False 24.91
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 forward 819 A ['right'] False 25.37
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 forward 819 B ['right'] False 25.25
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 reverse 803 A [] False 24.32
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 reverse 803 B [] False 25.54
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 reverse 811 A ['right'] False 24.39
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 reverse 811 B ['right'] False 24.28
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 reverse 819 A ['right'] False 25.99
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 delayed_100 reverse 819 B ['right'] False 26.03
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 forward 803 A ['right'] False 48.71
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 forward 803 B [] False 49.56
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 forward 811 A ['right'] False 51.67
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 forward 811 B ['right'] False 49.16
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 forward 819 A ['right'] False 48.77
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 forward 819 B [] False 50.86
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 reverse 803 A [] False 48.96
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 reverse 803 B [] False 50.32
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 reverse 811 A ['right'] False 48.9
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 reverse 811 B ['right'] False 49.02
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 reverse 819 A ['right'] False 49.5
+ANCHOR lf_right_1000 3 delta 0 5.294038631688923 full_400 reverse 819 B ['right'] False 47.85
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 forward 803 A [] False 27.02
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 forward 803 B [] False 24.18
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 forward 811 A ['right'] False 24.5
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 forward 811 B ['right'] False 25.76
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 forward 819 A ['right'] False 24.68
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 forward 819 B ['right'] False 24.96
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 reverse 803 A [] False 25.96
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 reverse 803 B [] False 25.46
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 reverse 811 A ['right'] False 23.31
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 reverse 811 B ['right'] False 25.62
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 reverse 819 A ['right'] False 26.04
+ANCHOR lf_right_1000 3 delta 30 1.0 delayed_100 reverse 819 B ['right'] False 23.7
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 forward 803 A [] False 49.87
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 forward 803 B [] False 47.82
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 forward 811 A ['right'] False 50.07
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 forward 811 B ['right'] False 50.12
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 forward 819 A ['right'] False 49.14
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 forward 819 B ['right'] False 49.52
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 reverse 803 A [] False 48.71
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 reverse 803 B [] False 48.41
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 reverse 811 A ['right'] False 46.87
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 reverse 811 B ['right'] False 49.58
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 reverse 819 A ['right'] False 48.29
+ANCHOR lf_right_1000 3 delta 30 1.0 full_400 reverse 819 B ['right'] False 49.41
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/anchor_check.py", line 225, in <module>
+    worker(args.line,args.lane,args.lanes)
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/anchor_check.py", line 208, in worker
+    weights_fingerprints={str(a):tensors_hash(v) for a,v in weights.items()},
+                                 ^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/anchor_check.py", line 31, in tensors_hash
+    return sha256(b"".join(n.encode()+v.contiguous().numpy().tobytes() for n, v in sorted(values.items()))).hexdigest()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/anchor_check.py", line 31, in <genexpr>
+    return sha256(b"".join(n.encode()+v.contiguous().numpy().tobytes() for n, v in sorted(values.items()))).hexdigest()
+                                      ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Got unsupported ScalarType BFloat16

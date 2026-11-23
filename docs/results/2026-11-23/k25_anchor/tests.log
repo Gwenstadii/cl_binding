@@ -1,0 +1,10 @@
+test_complete_anchor_gain_window_polarity_factorial (test_k25_anchor.AnchorAudit.test_complete_anchor_gain_window_polarity_factorial) ... ok
+test_imported_episodes_are_only_the_previously_measured_controls (test_k25_anchor.AnchorAudit.test_imported_episodes_are_only_the_previously_measured_controls) ... ok
+test_policy_and_v_weights_qualifications_are_separate (test_k25_anchor.AnchorAudit.test_policy_and_v_weights_qualifications_are_separate) ... ok
+test_bfloat16_hashes_storage_without_numpy_dtype_conversion (test_k25_anchor_tensor_hash.TensorStorageHash.test_bfloat16_hashes_storage_without_numpy_dtype_conversion) ... ok
+test_float64_delta_fingerprint_keeps_legacy_bytes (test_k25_anchor_tensor_hash.TensorStorageHash.test_float64_delta_fingerprint_keeps_legacy_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+OK

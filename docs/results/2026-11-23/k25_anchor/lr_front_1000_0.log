@@ -1,0 +1,115 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 800 A ['left'] True 17.6
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 800 B ['right'] True 15.9
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 800 N ['front'] False 16.18
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 808 A ['left'] True 17.37
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 808 B ['right'] True 17.0
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 808 N ['front'] False 16.37
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 816 A ['left'] True 16.77
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 816 B [] False 17.12
+ANCHOR lr_front_1000 0 policy 0 0.0 native native 816 N [] False 16.4
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 800 A ['left'] True 16.7
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 800 B ['right'] True 15.67
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 800 N ['front'] False 16.93
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 808 A ['left'] True 16.17
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 808 B ['right'] True 17.37
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 808 N ['front'] False 16.18
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 816 A ['left'] True 15.77
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 816 B [] False 17.16
+ANCHOR lr_front_1000 0 policy 30 0.0 native native 816 N [] False 15.43
+ANCHOR lr_front_1000 0 v_weights 0 1.0 full_400 native 800 A ['left'] False 17.18
+ANCHOR lr_front_1000 0 v_weights 0 1.0 full_400 native 800 B ['front'] False 15.54
+ANCHOR lr_front_1000 0 v_weights 0 1.0 full_400 native 808 A ['left'] True 18.01
+ANCHOR lr_front_1000 0 v_weights 0 1.0 full_400 native 808 B ['right'] False 15.38
+ANCHOR lr_front_1000 0 v_weights 0 1.0 full_400 native 816 A ['left'] False 18.73
+ANCHOR lr_front_1000 0 v_weights 0 1.0 full_400 native 816 B ['right'] False 15.56
+ANCHOR lr_front_1000 0 v_weights 30 1.0 full_400 native 800 A ['left'] False 18.54
+ANCHOR lr_front_1000 0 v_weights 30 1.0 full_400 native 800 B ['right'] False 16.74
+ANCHOR lr_front_1000 0 v_weights 30 1.0 full_400 native 808 A ['left'] True 17.46
+ANCHOR lr_front_1000 0 v_weights 30 1.0 full_400 native 808 B ['right'] False 17.09
+ANCHOR lr_front_1000 0 v_weights 30 1.0 full_400 native 816 A ['left'] False 16.31
+ANCHOR lr_front_1000 0 v_weights 30 1.0 full_400 native 816 B ['right'] False 18.7
+RECOVERY_REPLAY_BITWISE lr_front_1000 0 ('delta', 0, 1.0, 'delayed_100', 'forward', 'A', 800)
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 forward 800 A ['left'] False 23.96
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 forward 800 B [] False 23.21
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 forward 808 A ['left'] True 25.23
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 forward 808 B ['right'] False 24.32
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 forward 816 A ['left'] True 25.4
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 forward 816 B ['right'] True 26.38
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 reverse 800 A ['left'] False 24.41
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 reverse 800 B ['front'] False 24.46
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 reverse 808 A ['left'] True 25.67
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 reverse 808 B ['front'] False 23.72
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 reverse 816 A ['left'] True 24.91
+ANCHOR lr_front_1000 0 delta 0 1.0 delayed_100 reverse 816 B [] False 26.19
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 forward 800 A ['left'] False 48.51
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 forward 800 B [] False 47.46
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 forward 808 A ['left'] True 51.8
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 forward 808 B ['right'] True 48.0
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 forward 816 A ['left'] False 47.88
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 forward 816 B ['right'] False 49.24
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 reverse 800 A ['left'] False 48.38
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 reverse 800 B ['front'] False 47.82
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 reverse 808 A ['left'] True 51.43
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 reverse 808 B ['front'] False 48.11
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 reverse 816 A ['left'] True 49.1
+ANCHOR lr_front_1000 0 delta 0 1.0 full_400 reverse 816 B [] False 49.38
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 forward 800 A ['left'] True 26.8
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 forward 800 B [] False 23.51
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 forward 808 A ['left'] True 26.97
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 forward 808 B ['right'] True 27.76
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 forward 816 A ['left'] False 26.48
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 forward 816 B ['right'] True 24.6
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 reverse 800 A ['left'] False 27.86
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 reverse 800 B ['front'] False 25.75
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 reverse 808 A ['left'] True 24.85
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 reverse 808 B ['front'] False 27.01
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 reverse 816 A ['left'] False 26.99
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 delayed_100 reverse 816 B [] False 26.18
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 forward 800 A ['left'] True 49.55
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 forward 800 B [] False 48.1
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 forward 808 A ['left'] True 48.32
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 forward 808 B ['right'] False 51.08
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 forward 816 A ['left'] True 48.37
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 forward 816 B ['right'] False 49.86
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 reverse 800 A ['left'] True 50.61
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 reverse 800 B ['front'] False 49.63
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 reverse 808 A ['left'] True 47.81
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 reverse 808 B [] False 49.54
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 reverse 816 A ['left'] True 50.99
+ANCHOR lr_front_1000 0 delta 0 5.294038631688923 full_400 reverse 816 B [] False 47.24
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 forward 800 A ['left'] False 26.05
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 forward 800 B [] False 23.46
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 forward 808 A ['left'] True 25.73
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 forward 808 B ['right'] False 25.99
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 forward 816 A ['left'] True 24.34
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 forward 816 B ['right'] False 25.38
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 reverse 800 A ['left'] False 26.07
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 reverse 800 B ['front'] False 24.58
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 reverse 808 A ['left'] True 24.68
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 reverse 808 B ['back'] False 26.01
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 reverse 816 A ['left'] False 26.13
+ANCHOR lr_front_1000 0 delta 30 1.0 delayed_100 reverse 816 B ['right'] False 25.12
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 forward 800 A ['left'] False 49.72
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 forward 800 B [] False 48.49
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 forward 808 A ['left'] True 49.17
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 forward 808 B ['right'] False 49.32
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 forward 816 A ['left'] True 48.65
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 forward 816 B [] False 47.17
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 reverse 800 A ['left'] False 48.67
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 reverse 800 B ['front'] False 49.25
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 reverse 808 A ['left'] True 48.34
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 reverse 808 B ['front'] False 50.25
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 reverse 816 A ['left'] True 48.26
+ANCHOR lr_front_1000 0 delta 30 1.0 full_400 reverse 816 B ['front'] False 39.67

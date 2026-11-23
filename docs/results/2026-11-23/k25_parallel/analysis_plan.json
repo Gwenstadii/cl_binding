@@ -1,0 +1,74 @@
+{
+  "created_at_utc": "2026-11-23T14:17:40.880177+00:00",
+  "user_scope": "Only reproduce teammate old mean + parallel component; no other experiments.",
+  "method": "Original unmodified K22 Lab2.combine2 par, float32 coefficient over50x7, parent mean+axis overfull32, actual F q residual; no forced sign",
+  "profiles": [
+    "lr_front_1000",
+    "lf_right_1000",
+    "lr_front_12000",
+    "lf_right_12000"
+  ],
+  "evaluation": {
+    "initial_states": [
+      800,
+      801,
+      802,
+      803,
+      804,
+      805,
+      806,
+      807,
+      808,
+      809,
+      810,
+      811,
+      812,
+      813,
+      814,
+      815,
+      816,
+      817,
+      818,
+      819
+    ],
+    "goals": "two canonical old goals per profile",
+    "episodes": 160,
+    "horizon": 400,
+    "intervention": [
+      0,
+      150
+    ],
+    "after": "native F same actual q",
+    "selection": "all initial states retained, no grasp filtering"
+  },
+  "gains": "Original12000 gains reused. New1000 gains exact K21 rule: independent development states0-9,N-task native160-step prefixes,13 norm ratios each at30..150,upper median capped10; never use eval behaviour to choose alpha.",
+  "calibration": {
+    "prefixes": 20,
+    "steps_each": 160,
+    "not_part_of_evaluation_n": true
+  },
+  "endpoints": [
+    "unique correct first arrival, lifted>3cm,5 consecutive controls",
+    "final physical placement at400",
+    "joint old-task first and final on same initial state",
+    "grasp and ever placed as secondary only"
+  ],
+  "descriptive_fields": [
+    "old/new norm ratio",
+    "signed old-axis cosine",
+    "projection coefficient",
+    "mean drift relative old difference",
+    "off-axis norm; not assumed harmful noise"
+  ],
+  "references": "Reuse existing matched parent0 qualification and1000 native traces; no new control rollouts.",
+  "limitations": [
+    "only one matched parent per training order",
+    "the existing1000 streams and original12000 endpoints are not asserted the same continuation trajectory",
+    "initial states800-819 reused, not fresh independent holdout",
+    "parent provides common response AND old direction axis, so not a single model repair",
+    "no new-task retention, paraphrase or reverse-sign test",
+    "no causal ablation of off-axis component or gain; no optimality or universal-gain claim",
+    "cannot compare to prior400-step mu conditions as if timing/padding were held fixed"
+  ],
+  "source_report_location": "Local only. Server receives numeric protocol and executable source, not report contents."
+}

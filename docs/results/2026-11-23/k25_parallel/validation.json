@@ -1,0 +1,34 @@
+{
+  "stage1_protocol": {
+    "command": "python -m unittest discover -s tests -p test_stage1_protocol.py -v",
+    "passed": 21,
+    "failed": 0,
+    "observed": "tool execution in this task before simulation completion"
+  },
+  "local_parallel": {
+    "command": "python -m unittest discover -s tests -p test_k25_parallel.py -v",
+    "passed": 2,
+    "skipped": 2,
+    "failed": 0
+  },
+  "server_parallel": {
+    "command": "K25_REAL_PROJECTION_TESTS=1 PYTHONPATH=. python -m unittest discover -s tests -p test_k25_parallel.py -v",
+    "passed": 4,
+    "failed": 0,
+    "log": "formula_tests.log"
+  },
+  "dense_rescoring": {
+    "episodes": 160,
+    "checks": [
+      "400-step geometric and physical endpoint scoring",
+      "actual action hashes",
+      "initial state signatures",
+      "all160 unique profile/goal/start tuples",
+      "32 completed shards",
+      "64 real-model original formula gates",
+      "automatic alpha development rule",
+      "source amendment exact-byte audit",
+      "full checkpoint identities unchanged at end"
+    ]
+  }
+}

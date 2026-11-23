@@ -1,0 +1,9 @@
+test_k21_uses_upper_median_not_average_of_middle_pair (test_k25_parallel.LockedProtocol.test_k21_uses_upper_median_not_average_of_middle_pair) ... ok
+test_only_one_method_four_models_all_paired_starts (test_k25_parallel.LockedProtocol.test_only_one_method_four_models_all_paired_starts) ... ok
+test_actual_residual_can_select_negative_old_direction (test_k25_parallel.OriginalProjection.test_actual_residual_can_select_negative_old_direction) ... ok
+test_scalar_uses_only_executed_dims_but_scales_full_old_axis (test_k25_parallel.OriginalProjection.test_scalar_uses_only_executed_dims_but_scales_full_old_axis) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.717s
+
+OK

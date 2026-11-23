@@ -1,0 +1,25 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+CALIBRATION lr_front_1000 0
+CALIBRATION lr_front_1000 1
+CALIBRATION lr_front_1000 2
+CALIBRATION lr_front_1000 3
+CALIBRATION lr_front_1000 4
+CALIBRATION lr_front_1000 5
+CALIBRATION lr_front_1000 6
+CALIBRATION lr_front_1000 7
+CALIBRATION lr_front_1000 8
+CALIBRATION lr_front_1000 9
+CALIBRATED lr_front_1000 1.2466351985931396 {'ratio': 1.2466351985931396, 'cos': 0.8452035784721375, 'mu_shift_over_dold': 2.3578953742980957, 'muF_to_N_over_muR_to_N': 0.19353361427783966}

@@ -1,0 +1,16 @@
+{
+  "mu_swap_math.py": {
+    "frozen_source_path": "C:/Users/pengs/Documents/GitHub/1/docs/results/2026-11-23/k25_mu_swap/mu_swap_math.py",
+    "maintained_source_path": "C:/Users/pengs/Documents/GitHub/1/scripts/k25/mu_swap_math.py",
+    "frozen_sha256": "e143e363497bc305a5e2a75fc7a5c96c3369470cc0189fb18f8651055710ffdd",
+    "maintained_sha256": "226dc38a56f33b8629c34bb4ca009c63e9ca1fa1b1aa3a03b3ed1d89d4b9bc83",
+    "operation": "Remove one redundant LF at EOF in maintained source only; preserve actual run snapshot and protocol hashes"
+  },
+  "mu_swap_protocol.py": {
+    "frozen_source_path": "C:/Users/pengs/Documents/GitHub/1/docs/results/2026-11-23/k25_mu_swap/mu_swap_protocol.py",
+    "maintained_source_path": "C:/Users/pengs/Documents/GitHub/1/scripts/k25/mu_swap_protocol.py",
+    "frozen_sha256": "97b41e2d219f900ef29d73b92892fc482d47fcfc06ccb73f223f01a0e9b222e1",
+    "maintained_sha256": "36152501a8d335861b4feaafccbed1985bcf6b45f15a333b4bc7a7f66b850878",
+    "operation": "Remove one redundant LF at EOF in maintained source only; preserve actual run snapshot and protocol hashes"
+  }
+}

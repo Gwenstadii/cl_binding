@@ -1,0 +1,22 @@
+{
+  "K14-note.md": {
+    "original_workspace_path": "docs/2026-11-09_K14研读_机制结论修正与下一步.md",
+    "sha256": "1250e4f09939dcca55eec73c7c0b9a1a7d426a9054694d47eb3b0dbbc2820a0d",
+    "bytes": 13188
+  },
+  "K15-report.md": {
+    "original_workspace_path": "docs/2026-11-10_K15_共同背景与固定增益对照.md",
+    "sha256": "7af05c3d01a70f3e5ef73fbf4a15769b887f09185568a084c7e7bf3fe8d2a17d",
+    "bytes": 15239
+  },
+  "k14s5.py": {
+    "original_workspace_path": "docs/results/2026-11-10/k15_background_gain/source_code/k14s5.py",
+    "sha256": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "bytes": 8359
+  },
+  "k15.py": {
+    "original_workspace_path": "docs/results/2026-11-10/k15_background_gain/k15.py",
+    "sha256": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6",
+    "bytes": 7243
+  }
+}

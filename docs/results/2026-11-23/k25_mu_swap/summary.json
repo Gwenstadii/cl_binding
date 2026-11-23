@@ -1,0 +1,3189 @@
+{
+  "actual_episodes": 600,
+  "reference_replays": 200,
+  "new_conditions": 400,
+  "independent_starts": 20,
+  "donor_policy_context_records": 40,
+  "completed_units": 40,
+  "verified_native_prefixes": 560,
+  "matched_background_first_reads": 240,
+  "matched_reverse_first_reads": 160,
+  "source_commit": "362eb5fc3264c214c894e0ad3cf835eb9d86cf41",
+  "protocol_sha256": "fe23598d845f0dd6a1976aa61654080ac3a2977a5ee24d0b64e4fe6e7fae6770",
+  "runtime_sha256": "b16cc17d9420ba069485c3e8eab65f43636a13a2a11e7d422e963109cce67046",
+  "analysis_plan_sha256": "7b294115eb92708cea40186df6e5e7b136e1e972df664b3a19a68a20b0af6f6c",
+  "analysis_source_sha256": "b11af8d3516679009c23fa6ef996406284e93c0e86ace1fa8c51024893d7f670",
+  "shared_analysis_sha256": "24052eaed9eca12bbb754f90c640b063ac901ec1d0f8dc496c0bd1b9292b5025",
+  "delta_sha256": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557",
+  "weights_fingerprints": {
+    "0": "379c7b50494d89eb5758eec200a06e9684e426cc2bb6452d6d25ab6287549bdf",
+    "30": "9e87f18216852d9cfb1d072cc22b298ef9f407ba452cc2953676242bc339e3b3",
+    "1000": "9f4f62616aa07bd3eff6dfb2d158a97715fe977ebc5f25d46862eaadceda404f"
+  },
+  "max_pair_mean_cast_rms": 0.001944159623235464,
+  "timing_protocol_sha256": "58e5eb1031804c97fa6a788f76bb365bad14a8b340d9a0b9768cf6f2fef8a159",
+  "donor_archive_manifest_sha256": "a7d0a0f934666314d6135c251b51b666f3f3376ece7c94dee522dce4f49c060b",
+  "donor_summary_sha256": "2ac05723b174f31e0d2ecfe2e4d4ab7ff1622d8841ef4ab06b8492eb7f0610d5",
+  "groups": [
+    {
+      "job": {
+        "family": "native",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 0.0,
+        "window": "native",
+        "arm": "native"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {},
+          "all_blocks_read_correct": null,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": null,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {},
+          "all_blocks_read_correct": null,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": null,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "mu_only",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 0.0,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 5,
+          "terminal_correct": 7,
+          "ever_correct": 17,
+          "grasped": 17,
+          "first": {
+            "front": 12,
+            "left": 5,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.8348397940397263,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 15,
+          "terminal_correct": 12,
+          "ever_correct": 13,
+          "grasped": 17,
+          "first": {
+            "front": 15,
+            "none": 5
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.8824487537145614,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 4,
+      "joint_terminal": 5,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            801,
+            806,
+            809,
+            814,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            801,
+            804,
+            806,
+            807,
+            808,
+            809,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 12,
+            "right->left": 5,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            804,
+            805,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            814,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 15,
+            "none->none": 3,
+            "right->none": 2
+          }
+        },
+        "joint": {
+          "first_gained": [
+            806,
+            809,
+            814,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            804,
+            807,
+            808,
+            809,
+            819
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.042095350846648213,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.034475832339376206,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 6,
+          "terminal_correct": 5,
+          "ever_correct": 13,
+          "grasped": 17,
+          "first": {
+            "front": 11,
+            "left": 6,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.04659586353227496,
+          "first_block_mean_gap_rms_median": 0.8215797513723373,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 12,
+          "terminal_correct": 11,
+          "ever_correct": 11,
+          "grasped": 17,
+          "first": {
+            "front": 12,
+            "none": 8
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.03679511900991202,
+          "first_block_mean_gap_rms_median": 0.9011844515800476,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 3,
+      "joint_terminal": 5,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            801,
+            802,
+            806,
+            809,
+            814,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            807,
+            808,
+            809,
+            814,
+            817
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 11,
+            "right->left": 6,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            804,
+            805,
+            807,
+            808,
+            809,
+            811,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            804,
+            805,
+            807,
+            808,
+            809,
+            811,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 12,
+            "none->none": 3,
+            "right->none": 5
+          }
+        },
+        "joint": {
+          "first_gained": [
+            809,
+            814,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            807,
+            808,
+            809,
+            814,
+            817
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "reverse"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.04073445154353976,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.035089040920138356,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "reverse"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 4,
+          "terminal_correct": 2,
+          "ever_correct": 13,
+          "grasped": 17,
+          "first": {
+            "front": 13,
+            "left": 4,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.04423412531614304,
+          "first_block_mean_gap_rms_median": 0.8636611998081207,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 17,
+          "terminal_correct": 6,
+          "ever_correct": 11,
+          "grasped": 17,
+          "first": {
+            "front": 17,
+            "none": 3
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.037931901030242444,
+          "first_block_mean_gap_rms_median": 0.8763814985752105,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 3,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            801,
+            806,
+            809,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            808,
+            809
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 13,
+            "right->left": 4,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            804,
+            805,
+            806,
+            811,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [
+            806,
+            809,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "late",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 7,
+            "back": 8,
+            "front": 2,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.0,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 7,
+            "none": 13
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.0,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 7,
+            "right->back": 8,
+            "right->front": 2,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 7,
+            "none->none": 3,
+            "right->none": 10
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "parent",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 10,
+          "terminal_correct": 10,
+          "ever_correct": 14,
+          "grasped": 17,
+          "first": {
+            "front": 7,
+            "left": 10,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.8284620553255082,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 17
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "none": 20
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 4000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.9051978498697282,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 15
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            801,
+            802,
+            806,
+            807,
+            808,
+            809,
+            812,
+            814,
+            815,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            801,
+            802,
+            806,
+            807,
+            808,
+            809,
+            814,
+            817,
+            818
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 7,
+            "right->left": 10,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->none": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "mu_only",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 0.0,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 18,
+          "terminal_correct": 17,
+          "ever_correct": 18,
+          "grasped": 18,
+          "first": {
+            "left": 18,
+            "none": 2
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.4336071655154228,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 18,
+          "terminal_correct": 3,
+          "ever_correct": 3,
+          "grasped": 20,
+          "first": {
+            "left": 2,
+            "front": 18
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.44256215840578084,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 16,
+      "joint_terminal": 3,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 16,
+            "none->left": 2,
+            "right->none": 1,
+            "none->none": 1
+          }
+        },
+        "B": {
+          "first_gained": [
+            801,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            805,
+            809
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 2,
+            "none->front": 3,
+            "right->front": 15
+          }
+        },
+        "joint": {
+          "first_gained": [
+            801,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            805,
+            809
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 18,
+          "first": {
+            "right": 18,
+            "none": 2
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.022098172316327692,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 17,
+          "first": {
+            "right": 17,
+            "none": 3
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.020791955804452297,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 2,
+            "none->right": 1
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 17,
+          "terminal_correct": 16,
+          "ever_correct": 17,
+          "grasped": 17,
+          "first": {
+            "left": 17,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.02201265562325716,
+          "first_block_mean_gap_rms_median": 0.4313294470310211,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 14,
+          "terminal_correct": 7,
+          "ever_correct": 8,
+          "grasped": 20,
+          "first": {
+            "left": 1,
+            "none": 5,
+            "front": 14
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.021446975925937296,
+          "first_block_mean_gap_rms_median": 0.44133013635873797,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 13,
+      "joint_terminal": 7,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 15,
+            "none->left": 2,
+            "right->none": 2,
+            "none->none": 1
+          }
+        },
+        "B": {
+          "first_gained": [
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            813,
+            814,
+            815,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 1,
+            "none->none": 2,
+            "right->front": 13,
+            "right->none": 3,
+            "none->front": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "reverse"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 18,
+          "first": {
+            "right": 18,
+            "none": 2
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.02115645674057305,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 18,
+          "first": {
+            "right": 18,
+            "none": 2
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.02140827467665076,
+          "first_block_mean_gap_rms_median": null,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 2,
+            "none->right": 1
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->right": 1,
+            "none->none": 2
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "reverse"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 20,
+          "terminal_correct": 14,
+          "ever_correct": 20,
+          "grasped": 20,
+          "first": {
+            "left": 20
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.022117076674476266,
+          "first_block_mean_gap_rms_median": 0.4349381163716316,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 9,
+          "terminal_correct": 1,
+          "ever_correct": 1,
+          "grasped": 18,
+          "first": {
+            "left": 9,
+            "front": 9,
+            "none": 2
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.023016257863491773,
+          "first_block_mean_gap_rms_median": 0.4453593298792839,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 9,
+      "joint_terminal": 1,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 17,
+            "none->left": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            805
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 7,
+            "none->left": 2,
+            "right->front": 8,
+            "none->front": 1,
+            "right->none": 2
+          }
+        },
+        "joint": {
+          "first_gained": [
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            805
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "late",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 18,
+          "first": {
+            "front": 14,
+            "none": 2,
+            "right": 2,
+            "back": 2
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.0,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 0,
+          "terminal_correct": 0,
+          "ever_correct": 0,
+          "grasped": 13,
+          "first": {
+            "none": 18,
+            "right": 2
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 0,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.0,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 0,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 13,
+            "none->none": 2,
+            "right->right": 2,
+            "right->back": 2,
+            "none->front": 1
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->none": 15,
+            "none->none": 3,
+            "right->right": 2
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "parent",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "per_goal": {
+        "A": {
+          "n": 20,
+          "first_correct": 17,
+          "terminal_correct": 14,
+          "ever_correct": 17,
+          "grasped": 17,
+          "first": {
+            "left": 17,
+            "none": 3
+          },
+          "first_read": {
+            "A": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.4302658542990685,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        },
+        "B": {
+          "n": 20,
+          "first_correct": 3,
+          "terminal_correct": 0,
+          "ever_correct": 3,
+          "grasped": 20,
+          "first": {
+            "front": 3,
+            "none": 17
+          },
+          "first_read": {
+            "B": 20
+          },
+          "all_blocks_read_correct": 20,
+          "tied_blocks": 0,
+          "parent_velocity_queries": 16000,
+          "first_block_delta_rms_median": 0.0,
+          "first_block_mean_gap_rms_median": 0.44042355865240096,
+          "pre_first": {
+            "none": 20
+          },
+          "pre_grasp": 0
+        }
+      },
+      "joint_first": 3,
+      "joint_terminal": 0,
+      "vs_native": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 15,
+            "none->left": 2,
+            "right->none": 2,
+            "none->none": 1
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            811,
+            813
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 2,
+            "none->none": 2,
+            "right->none": 15,
+            "none->front": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            800,
+            811,
+            813
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    }
+  ],
+  "parent_policy": {
+    "per_goal": {
+      "A": {
+        "n": 20,
+        "first_correct": 17,
+        "terminal_correct": 16,
+        "ever_correct": 17,
+        "grasped": 17,
+        "first": {
+          "left": 17,
+          "none": 3
+        },
+        "first_read": {},
+        "all_blocks_read_correct": null,
+        "tied_blocks": 0,
+        "parent_velocity_queries": 0,
+        "first_block_delta_rms_median": null,
+        "first_block_mean_gap_rms_median": null,
+        "pre_first": {
+          "none": 20
+        },
+        "pre_grasp": 0
+      },
+      "B": {
+        "n": 20,
+        "first_correct": 20,
+        "terminal_correct": 14,
+        "ever_correct": 15,
+        "grasped": 20,
+        "first": {
+          "front": 20
+        },
+        "first_read": {},
+        "all_blocks_read_correct": null,
+        "tied_blocks": 0,
+        "parent_velocity_queries": 0,
+        "first_block_delta_rms_median": null,
+        "first_block_mean_gap_rms_median": null,
+        "pre_first": {
+          "none": 20
+        },
+        "pre_grasp": 0
+      }
+    },
+    "joint_first": 17,
+    "joint_terminal": 13
+  },
+  "background_pairs": [
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            801,
+            802,
+            806,
+            809,
+            814,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            807,
+            808,
+            809,
+            814,
+            817
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 11,
+            "right->left": 6,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            804,
+            805,
+            807,
+            808,
+            809,
+            811,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            804,
+            805,
+            807,
+            808,
+            809,
+            811,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 12,
+            "none->none": 3,
+            "right->none": 5
+          }
+        },
+        "joint": {
+          "first_gained": [
+            809,
+            814,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            807,
+            808,
+            809,
+            814,
+            817
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            801,
+            806,
+            809,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            808,
+            809
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 13,
+            "right->left": 4,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            804,
+            805,
+            806,
+            811,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [
+            806,
+            809,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "parent",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            801,
+            802,
+            806,
+            807,
+            808,
+            809,
+            812,
+            814,
+            815,
+            818
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            801,
+            802,
+            806,
+            807,
+            808,
+            809,
+            814,
+            817,
+            818
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 5,
+            "back->left": 6,
+            "front->left": 2,
+            "none->none": 3,
+            "right->left": 2,
+            "back->front": 2
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->none": 7,
+            "none->none": 13
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 16,
+            "none->left": 1,
+            "right->none": 2,
+            "none->none": 1
+          }
+        },
+        "B": {
+          "first_gained": [
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            813,
+            814,
+            815,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 1,
+            "none->none": 2,
+            "right->front": 13,
+            "right->none": 3,
+            "none->front": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            802,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 18,
+            "none->left": 2
+          }
+        },
+        "B": {
+          "first_gained": [
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            805
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->left": 8,
+            "right->front": 8,
+            "none->front": 1,
+            "right->none": 2,
+            "none->left": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            805
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "parent",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            811,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "front->left": 14,
+            "none->left": 1,
+            "right->left": 2,
+            "back->none": 2,
+            "none->none": 1
+          }
+        },
+        "B": {
+          "first_gained": [
+            800,
+            811,
+            813
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "none->front": 2,
+            "none->none": 16,
+            "right->none": 1,
+            "right->front": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            800,
+            811,
+            813
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    }
+  ],
+  "v_added_to_parent_mean": [
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            802
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            814,
+            817
+          ],
+          "terminal_lost": [
+            801,
+            804,
+            806,
+            819
+          ],
+          "first_transitions": {
+            "front->front": 11,
+            "left->left": 5,
+            "front->left": 1,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [
+            802,
+            806,
+            810
+          ],
+          "terminal_gained": [
+            817
+          ],
+          "terminal_lost": [
+            802,
+            810
+          ],
+          "first_transitions": {
+            "front->front": 12,
+            "none->none": 5,
+            "front->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [
+            806
+          ],
+          "terminal_gained": [
+            814,
+            817
+          ],
+          "terminal_lost": [
+            804,
+            819
+          ]
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [
+            814
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            801,
+            804,
+            806,
+            807,
+            819
+          ],
+          "first_transitions": {
+            "front->front": 12,
+            "left->left": 4,
+            "none->none": 3,
+            "left->front": 1
+          }
+        },
+        "B": {
+          "first_gained": [
+            815,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            806
+          ],
+          "terminal_lost": [
+            802,
+            807,
+            808,
+            809,
+            810,
+            812,
+            814
+          ],
+          "first_transitions": {
+            "front->front": 15,
+            "none->none": 3,
+            "none->front": 2
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [
+            814
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            804,
+            807,
+            808,
+            809,
+            819
+          ]
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [
+            810
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            800
+          ],
+          "first_transitions": {
+            "left->left": 17,
+            "left->none": 1,
+            "none->none": 2
+          }
+        },
+        "B": {
+          "first_gained": [
+            804
+          ],
+          "first_lost": [
+            801,
+            803,
+            810,
+            812,
+            816
+          ],
+          "terminal_gained": [
+            806,
+            807,
+            808,
+            811
+          ],
+          "terminal_lost": [],
+          "first_transitions": {
+            "left->left": 1,
+            "front->none": 5,
+            "front->front": 13,
+            "left->front": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            804
+          ],
+          "first_lost": [
+            801,
+            803,
+            810,
+            812
+          ],
+          "terminal_gained": [
+            806,
+            807,
+            808,
+            811
+          ],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            815,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [
+            801,
+            802,
+            804
+          ],
+          "first_transitions": {
+            "left->left": 18,
+            "none->left": 2
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [
+            801,
+            810,
+            812,
+            813,
+            814,
+            815,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            809
+          ],
+          "first_transitions": {
+            "left->left": 2,
+            "front->left": 7,
+            "front->front": 9,
+            "front->none": 2
+          }
+        },
+        "joint": {
+          "first_gained": [
+            816
+          ],
+          "first_lost": [
+            801,
+            810,
+            812,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            809
+          ]
+        }
+      }
+    }
+  ],
+  "reverse_pairs": [
+    {
+      "job": {
+        "family": "v",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 3
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "delayed_100",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [
+            802,
+            814
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            807,
+            814,
+            817
+          ],
+          "first_transitions": {
+            "front->front": 11,
+            "left->left": 4,
+            "left->front": 2,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            802,
+            806,
+            810,
+            815,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            806
+          ],
+          "terminal_lost": [
+            807,
+            808,
+            809,
+            812,
+            814,
+            817
+          ],
+          "first_transitions": {
+            "front->front": 12,
+            "none->none": 3,
+            "none->front": 5
+          }
+        },
+        "joint": {
+          "first_gained": [
+            806
+          ],
+          "first_lost": [
+            814
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            807,
+            808,
+            809,
+            814,
+            817
+          ]
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "late",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->none": 1,
+            "right->none": 1,
+            "none->right": 1
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 17,
+            "none->right": 1,
+            "none->none": 2
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "v",
+        "background": "parent",
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "window": "full_400",
+        "arm": "reverse"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            810,
+            815,
+            816
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800
+          ],
+          "terminal_lost": [
+            801,
+            802,
+            804
+          ],
+          "first_transitions": {
+            "left->left": 17,
+            "none->left": 3
+          }
+        },
+        "B": {
+          "first_gained": [
+            803,
+            816
+          ],
+          "first_lost": [
+            804,
+            813,
+            814,
+            815,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            806,
+            807,
+            808,
+            809,
+            811
+          ],
+          "first_transitions": {
+            "left->left": 1,
+            "none->left": 2,
+            "front->front": 7,
+            "none->front": 2,
+            "front->left": 6,
+            "none->none": 1,
+            "front->none": 1
+          }
+        },
+        "joint": {
+          "first_gained": [
+            803,
+            816
+          ],
+          "first_lost": [
+            804,
+            813,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            806,
+            807,
+            808,
+            809,
+            811
+          ]
+        }
+      }
+    }
+  ],
+  "beta_added": [
+    {
+      "job": {
+        "family": "own",
+        "background": "late",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 7,
+            "right->back": 8,
+            "right->front": 2,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->right": 7,
+            "none->none": 3,
+            "right->none": 10
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "parent",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "delayed_100",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [
+            802,
+            807,
+            808,
+            812,
+            815
+          ],
+          "first_lost": [],
+          "terminal_gained": [
+            800,
+            802,
+            814,
+            817,
+            818
+          ],
+          "terminal_lost": [
+            804,
+            819
+          ],
+          "first_transitions": {
+            "front->front": 7,
+            "left->left": 5,
+            "front->left": 5,
+            "none->none": 3
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [
+            800,
+            802,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            804,
+            805,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            814,
+            818,
+            819
+          ],
+          "first_transitions": {
+            "front->none": 15,
+            "none->none": 5
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [
+            806,
+            809,
+            814,
+            818
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            804,
+            807,
+            808,
+            809,
+            819
+          ]
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "late",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->front": 13,
+            "none->none": 2,
+            "right->right": 2,
+            "right->back": 2,
+            "none->front": 1
+          }
+        },
+        "B": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": [],
+          "first_transitions": {
+            "right->none": 15,
+            "none->none": 3,
+            "right->right": 2
+          }
+        },
+        "joint": {
+          "first_gained": [],
+          "first_lost": [],
+          "terminal_gained": [],
+          "terminal_lost": []
+        }
+      }
+    },
+    {
+      "job": {
+        "family": "own",
+        "background": "parent",
+        "beta": 2.959,
+        "gain": 0.0,
+        "window": "full_400",
+        "arm": "forward"
+      },
+      "paired": {
+        "A": {
+          "first_gained": [],
+          "first_lost": [
+            810
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            801,
+            804,
+            811
+          ],
+          "first_transitions": {
+            "left->left": 17,
+            "left->none": 1,
+            "none->none": 2
+          }
+        },
+        "B": {
+          "first_gained": [
+            800
+          ],
+          "first_lost": [
+            801,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            812,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            805,
+            809
+          ],
+          "first_transitions": {
+            "left->front": 1,
+            "front->none": 16,
+            "left->none": 1,
+            "front->front": 2
+          }
+        },
+        "joint": {
+          "first_gained": [
+            800
+          ],
+          "first_lost": [
+            801,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            812,
+            814,
+            817,
+            818,
+            819
+          ],
+          "terminal_gained": [],
+          "terminal_lost": [
+            802,
+            805,
+            809
+          ]
+        }
+      }
+    }
+  ]
+}

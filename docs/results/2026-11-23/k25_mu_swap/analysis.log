@@ -1,0 +1,27 @@
+{
+  "actual_episodes": 600,
+  "reference_replays": 200,
+  "new_conditions": 400,
+  "independent_starts": 20,
+  "donor_policy_context_records": 40,
+  "completed_units": 40,
+  "verified_native_prefixes": 560,
+  "matched_background_first_reads": 240,
+  "matched_reverse_first_reads": 160,
+  "source_commit": "362eb5fc3264c214c894e0ad3cf835eb9d86cf41",
+  "protocol_sha256": "fe23598d845f0dd6a1976aa61654080ac3a2977a5ee24d0b64e4fe6e7fae6770",
+  "runtime_sha256": "b16cc17d9420ba069485c3e8eab65f43636a13a2a11e7d422e963109cce67046",
+  "analysis_plan_sha256": "7b294115eb92708cea40186df6e5e7b136e1e972df664b3a19a68a20b0af6f6c",
+  "analysis_source_sha256": "b11af8d3516679009c23fa6ef996406284e93c0e86ace1fa8c51024893d7f670",
+  "shared_analysis_sha256": "24052eaed9eca12bbb754f90c640b063ac901ec1d0f8dc496c0bd1b9292b5025",
+  "delta_sha256": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557",
+  "weights_fingerprints": {
+    "0": "379c7b50494d89eb5758eec200a06e9684e426cc2bb6452d6d25ab6287549bdf",
+    "30": "9e87f18216852d9cfb1d072cc22b298ef9f407ba452cc2953676242bc339e3b3",
+    "1000": "9f4f62616aa07bd3eff6dfb2d158a97715fe977ebc5f25d46862eaadceda404f"
+  },
+  "max_pair_mean_cast_rms": 0.001944159623235464,
+  "timing_protocol_sha256": "58e5eb1031804c97fa6a788f76bb365bad14a8b340d9a0b9768cf6f2fef8a159",
+  "donor_archive_manifest_sha256": "a7d0a0f934666314d6135c251b51b666f3f3376ece7c94dee522dce4f49c060b",
+  "donor_summary_sha256": "2ac05723b174f31e0d2ecfe2e4d4ab7ff1622d8841ef4ab06b8492eb7f0610d5"
+}

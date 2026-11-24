@@ -1,0 +1,43 @@
+{
+  "checkpoint_step": 32000,
+  "weights_sha256": "b103f1d92fc2ae6d17054c5978f295bd3727265a3ab6da10e5730f9080d52f75",
+  "record_sha256": "805e91613edc79b687042b1aa3d3b3b79fe57dc774192ea25ba4ae9afb2b49bc",
+  "selection": "failure: longest consecutive success among eventual failures, tie smallest init; success: prefer stable-released final, then smallest init",
+  "method": "replay saved executed actions from original evaluation; no new sampling and no controller modification",
+  "videos": [
+    {
+      "kind": "ever_yes_final_no",
+      "init": 659,
+      "file": "back32000_init659_ever_yes_final_no.mp4",
+      "first_success": 165,
+      "last_success": 358,
+      "longest_success_run": 194,
+      "terminal": false,
+      "stable_released_final": false,
+      "duration_seconds": 20,
+      "frames": 400,
+      "all_states_exact": true,
+      "all_predicates_exact": true,
+      "all_action_hashes_exact": true,
+      "all41_signatures_exact": true,
+      "video_sha256": "bd335f8122ef0570eb5836b58b541cbe511c32cb99b834c66d5f32586d459801"
+    },
+    {
+      "kind": "ever_yes_final_yes",
+      "init": 656,
+      "file": "back32000_init656_ever_yes_final_yes.mp4",
+      "first_success": 139,
+      "last_success": 400,
+      "longest_success_run": 262,
+      "terminal": true,
+      "stable_released_final": true,
+      "duration_seconds": 20,
+      "frames": 400,
+      "all_states_exact": true,
+      "all_predicates_exact": true,
+      "all_action_hashes_exact": true,
+      "all41_signatures_exact": true,
+      "video_sha256": "f1ea3d563742204f6fef260c5509da5e8bf3b44fdb05f0dbbcc4e9061f96d362"
+    }
+  ]
+}

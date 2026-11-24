@@ -1,0 +1,58 @@
+{
+  "lane": 9,
+  "ids": [
+    809
+  ],
+  "episodes": 8,
+  "gates": [
+    {
+      "goal": "left",
+      "whole_formula_full32_bitwise": true,
+      "original_projection_callback_bitwise": true,
+      "whole_callback_bitwise": true,
+      "removed_orthogonality_error": 2.716827739648703e-17,
+      "full_over_parent": 0.7521031128304458,
+      "removed_over_parent": 0.6546356488085264
+    },
+    {
+      "goal": "front",
+      "whole_formula_full32_bitwise": true,
+      "original_projection_callback_bitwise": true,
+      "whole_callback_bitwise": true,
+      "removed_orthogonality_error": 8.490080021602046e-17,
+      "full_over_parent": 0.5743124596850391,
+      "removed_over_parent": 0.45734516977591116
+    },
+    {
+      "goal": "right",
+      "whole_formula_full32_bitwise": true,
+      "original_projection_callback_bitwise": true,
+      "whole_callback_bitwise": true,
+      "removed_orthogonality_error": 1.7045610750529856e-16,
+      "full_over_parent": 0.7227992600150135,
+      "removed_over_parent": 0.5856909890063036
+    },
+    {
+      "goal": "back",
+      "whole_formula_full32_bitwise": true,
+      "original_projection_callback_bitwise": true,
+      "whole_callback_bitwise": true,
+      "removed_orthogonality_error": 2.2415833610044354e-17,
+      "full_over_parent": 0.46022570564346005,
+      "removed_over_parent": 0.4306797837327751
+    }
+  ],
+  "weights_fingerprints": [
+    "f484f72c6863618e85ab89eab0b560597169755c6834a50595b788ec75f35826",
+    "b5b32929d7b09702c2d8b363a1e5fa809791fdd715a12f69469e7d71a7535a10"
+  ],
+  "weights_unchanged": true,
+  "rows_sha256": "3514d09676a1ba54103d1ad48f1c312e1d942a5ea303d50c32078934ecea7d15",
+  "protocol_sha256": "e0c5d0c5436e122d035ce9a4816521e0ee8772512dc64366c7a3a2d1d1892e63",
+  "sources": {
+    "whole_four.py": "99c76d238c986a08083fc6de25d4aaa1d84851d1c7238903eab14356ec7f5029",
+    "whole_residual.py": "94269594c7bb59764e77f42b74d95b3f94c83d868c8933b61dc1d6b8b169b37c",
+    "run_whole_four.py": "30f449bc9e2fddac86c88a1141fa7c1c40e3986a8e3ca04d651517e1d3bc53ae",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  }
+}

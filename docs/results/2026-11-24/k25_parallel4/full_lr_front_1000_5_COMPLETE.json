@@ -1,0 +1,143 @@
+{
+  "profile": "lr_front_1000",
+  "lane": 5,
+  "ids": [
+    805,
+    813
+  ],
+  "episodes": 4,
+  "gates": [
+    {
+      "goal": "A",
+      "original_output_bitwise": true,
+      "formula_full32_bitwise": true,
+      "coefficient_from_50x7": true,
+      "padding_from_parent_axis": true,
+      "coefficient": 0.7732009291648865
+    },
+    {
+      "goal": "B",
+      "original_output_bitwise": true,
+      "formula_full32_bitwise": true,
+      "coefficient_from_50x7": true,
+      "padding_from_parent_axis": true,
+      "coefficient": -0.7732009291648865
+    }
+  ],
+  "weights_fingerprints": [
+    "192983db2e9099f30d2070f00e9ed59887368ff73cb8b19b37489d10dc8b6ec7",
+    "48d3709fababb46aa40340934bcedc0c236f835cbb406823261e495afc478d20"
+  ],
+  "weights_unchanged": true,
+  "normalizers": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "paths": [
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors"
+      ],
+      "sha256": [
+        "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+        "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5"
+      ],
+      "used_keys": [
+        "action.count",
+        "action.max",
+        "action.mean",
+        "action.min",
+        "action.q01",
+        "action.q10",
+        "action.q50",
+        "action.q90",
+        "action.q99",
+        "action.std",
+        "observation.images.image.count",
+        "observation.images.image.max",
+        "observation.images.image.mean",
+        "observation.images.image.min",
+        "observation.images.image.q01",
+        "observation.images.image.q10",
+        "observation.images.image.q50",
+        "observation.images.image.q90",
+        "observation.images.image.q99",
+        "observation.images.image.std",
+        "observation.images.image2.count",
+        "observation.images.image2.max",
+        "observation.images.image2.mean",
+        "observation.images.image2.min",
+        "observation.images.image2.q01",
+        "observation.images.image2.q10",
+        "observation.images.image2.q50",
+        "observation.images.image2.q90",
+        "observation.images.image2.q99",
+        "observation.images.image2.std",
+        "observation.state.count",
+        "observation.state.max",
+        "observation.state.mean",
+        "observation.state.min",
+        "observation.state.q01",
+        "observation.state.q10",
+        "observation.state.q50",
+        "observation.state.q90",
+        "observation.state.q99",
+        "observation.state.std"
+      ],
+      "values_equal": true
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "paths": [
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors"
+      ],
+      "sha256": [
+        "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a",
+        "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+      ],
+      "used_keys": [
+        "action.count",
+        "action.max",
+        "action.mean",
+        "action.min",
+        "action.q01",
+        "action.q10",
+        "action.q50",
+        "action.q90",
+        "action.q99",
+        "action.std",
+        "observation.images.image.count",
+        "observation.images.image.max",
+        "observation.images.image.mean",
+        "observation.images.image.min",
+        "observation.images.image.q01",
+        "observation.images.image.q10",
+        "observation.images.image.q50",
+        "observation.images.image.q90",
+        "observation.images.image.q99",
+        "observation.images.image.std",
+        "observation.images.image2.count",
+        "observation.images.image2.max",
+        "observation.images.image2.mean",
+        "observation.images.image2.min",
+        "observation.images.image2.q01",
+        "observation.images.image2.q10",
+        "observation.images.image2.q50",
+        "observation.images.image2.q90",
+        "observation.images.image2.q99",
+        "observation.images.image2.std",
+        "observation.state.count",
+        "observation.state.max",
+        "observation.state.mean",
+        "observation.state.min",
+        "observation.state.q01",
+        "observation.state.q10",
+        "observation.state.q50",
+        "observation.state.q90",
+        "observation.state.q99",
+        "observation.state.std"
+      ],
+      "values_equal": true
+    }
+  },
+  "rows_sha256": "63039b93be1e7857ef21c90a7ed2a641e62dc0441281da12b761deecad891c78",
+  "protocol_sha256": "bbeacc3542c4dd77c98043177c74a867595852fb4a71e3421c1a55244de329ba",
+  "source_sha256": "f50c56cb36f57f5ceeeaca711057971b59d7ce24e16a72941213f6c0c8495176"
+}

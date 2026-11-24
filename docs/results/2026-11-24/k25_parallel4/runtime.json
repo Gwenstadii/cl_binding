@@ -1,0 +1,101 @@
+{
+  "captured_at_utc": "2026-11-24T05:36:20.178766+00:00",
+  "python": "3.12.15 (main, Oct 14 2026, 01:05:27) [Clang 23.1.3 ]",
+  "executable": "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0",
+    "transformers": "5.5.4",
+    "accelerate": "1.15.0",
+    "lerobot": "0.6.2",
+    "mujoco": "3.8.1",
+    "robosuite": "1.4.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.8.0",
+    "av": "15.1.0"
+  },
+  "torch_cuda": "12.8",
+  "gpu_names": [
+    "NVIDIA GeForce RTX 3090",
+    "NVIDIA GeForce RTX 3090"
+  ],
+  "sources": {
+    "parallel_full400.py": "f50c56cb36f57f5ceeeaca711057971b59d7ce24e16a72941213f6c0c8495176",
+    "parallel_four.py": "e75570890cdbe59ee6d240168402d1815774224269c03e98c4dd92215d38aef6",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4",
+    "run_parallel4.py": "142eca3c3da22065fd00748b056d64df24c5fc652c95a123e4bbb76e54b7e3a1",
+    "capture_runtime.py": "b509a5a61d02e22aeb76d304cf50a765689fba35ad89ec45dd0c8b9dfeb8d8d8"
+  },
+  "previous_sources": {
+    "parallel_reproduction.py": "c3428dfbaeb71b9a19b67ef762a15fcaf3851bf599470ab278e1c9993e621b9d",
+    "parallel_protocol.py": "71f3686ff3b5c64b4e9d41721a3b444cd065d58ad246df9b8e4576f4c1ae8cd0",
+    "v_timing_protocol.py": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+    "anchor_tensor_hash.py": "ffeb32f0f16a9ef027596e55dd7deb2f1f35c8eb98c7c609dd301f632b4ddc35"
+  },
+  "original_sources": {
+    "k22.py": "3003e574b4b15c89067d330f3c6fec3074b211d051d75e53b8f186dcbb634d47",
+    "k21.py": "73a5d618f6ec957d3f74ec967a0fdbb9bcfab607c71f7c1251c45bda64ce55ef",
+    "k22p3.py": "0228945b8d225e6a861b74cddd087487be70bf35e86c24798fcc0fcfbbb02f88"
+  },
+  "dependency_sha256": {
+    "cl_binding/.server/k13_r1_front_20_20261107_01/k11_reference.py": "7add12361efdceb577744fbe68b3fd5696c59e33884084d4ce1ce5e80865f308",
+    "cl_binding/.server/k13_r1_front_20_20261107_01/r1_front_start.py": "e7b975fed4624c9b9cf7863750ff941912e378238e029c4a21804ffc343c0170",
+    "cl_binding/.server/k14_snapshot_batch1_20261108_01/code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "cl_binding/.server/k14_snapshot_batch1_20261108_01/code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "cl_binding/.server/k15_background_gain_20261109_01/k15.py": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6",
+    "cl_binding/.server/k18_training_cause_20261111_01/demo_probe.py": "d6f29e4bf889774ef7b7ccbc38e681a91c820ff1aef541a7bd0c6e7f0935e1d7",
+    "cl_binding/.server/k18_training_cause_20261111_01/measurement.py": "4bc20e48c64e3856924b03d20aff2425deff41f2808dbd90f24ff3ce466bdb2a",
+    "cl_binding/.server/k18_training_controls_20261111_01/evaluate.py": "e6feb85efc4cef16ebf1668a19938b0ac757a4bb8554aed7fab95dfe275052b6",
+    "cl_binding/.server/k18_training_controls_20261111_01/holdout.py": "316149b135fccd1039efc85d9a0c99d946bd0beb6d5c2b26ce0db454717f0d35",
+    "cl_binding/.server/k18_training_controls_20261111_01/train_controls.py": "f5fa01f3ed8ef7a9641f285b98835dbcb00bc2918da030bfe3251783790d9448",
+    "cl_binding/.server/k19_retention_20261111_01/eval_k19.py": "6e6eeb25debf08e449234950856cfe3a6b543c47bfd591402f733683bb36d0c6",
+    "cl_binding/.server/k19_retention_20261111_01/train_k19.py": "1907518c1f40acb0d11d73b17f198fc8cbc237c6679400fe2c6c6675873a5551",
+    "cl_binding/.server/k1_screen_20261101_01/code/k1_main.py": "26d5cc2867f320e0bc5bae7f41a96941da27a6a319bede642c232a9d14ea5453",
+    "cl_binding/.server/k1_screen_20261101_01/code/stage2k_entry_handoff.py": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d",
+    "cl_binding/.server/k20_route_margin_20261112_01/eval_k20.py": "9ab8561fcdf9b41a7f32ebf16ee887bc9e25e387011b3f35d205bf7e35496e00",
+    "cl_binding/.server/k20_route_margin_20261112_01/train_weak.py": "585caf13921d54326c5afdb067ae9530d21f76321164814b247145e5e9d48867",
+    "cl_binding/.server/k24_final_window_20261117_01/window_eval.py": "ee63d56c9417230f164c8bb46b558a0b8bcb868a9632c7e5908ac542bcad398f",
+    "cl_binding/.server/k25_deep_d_20261118_01/deep_selection.py": "237432a87bf539fa1eeb315d861d246d35abba402828c59ecbfa11a67e639561",
+    "cl_binding/.server/k25_final_20261121_01/self_restore.py": "0c0bee01ba687a472bdeb2e0cff53815f92f5dfe28bc9cb3d1a50f081f35798b",
+    "cl_binding/.server/k25_order_restore_20261122_01/order_restore.py": "64c782401b2a6f61c85d2bcf35623d2853b8c20760daa82a453a171a6ddbc1d8",
+    "cl_binding/.server/k25_paths_20261119_01/path_factorization.py": "ad33ef4fc12817d6b56bb9770e05fc35008f1c48be8c1ac2ecac4eebeed732ff",
+    "cl_binding/.server/k25_paths_20261119_01/value_relay.py": "cc5aa3d3ca9dad713fa415a4fce1989f5900930584673d33005f4e65ee08b02d",
+    "cl_binding/.server/k25v3_20261120_01/v_attribution_v3.py": "f0114b3fde6eee6d81b7b05760af1b0bd696f1aa9737ca814cfbba48b6eab1b1",
+    "cl_binding/.server/k4_text_attention_20261102_01/code/k4_text_attention.py": "06c7498ed84c71ac03d3c9c5929c7890bfc15c2541df2e0c3285870e051f79ff",
+    "cl_binding/.server/mu_d_deep_audit_20261107_01/k11_reference_capture_fixed.py": "45434a24134fc5cfa0304a189fe46576a33fb8518c7cc7f4ad9a30e774f17a6a",
+    "cl_binding_stage2a/scripts/download_stage1.py": "750e334209db793645847141ae41010258f12dc4f431c740255102a80368ebe6",
+    "cl_binding_stage2a/scripts/stage1_protocol.py": "b9ba0fd4ecc0d9a98fc4348588b892bcb0e16e9479abe7d730b72ad79741eca6",
+    "cl_binding_stage2a/scripts/stage1_smoke.py": "432164e3bfb8e747d172ef3b876b7ab5098ab017578f716cbbb4ad91ff4b8d09"
+  },
+  "full_protocol_sha256": "bbeacc3542c4dd77c98043177c74a867595852fb4a71e3421c1a55244de329ba",
+  "four_protocol_sha256": "84d75f098fbde0f4a73fe8a2d5ce9d462c34e84a2888c7ce9755e2096b15ef59",
+  "plan_sha256": "22ad9936b2338100144dc605061d47b5e152026c373e735905917fc06bd51f97",
+  "capture_source_sha256": "b509a5a61d02e22aeb76d304cf50a765689fba35ad89ec45dd0c8b9dfeb8d8d8",
+  "environment": {
+    "HF_HUB_OFFLINE": "1",
+    "TRANSFORMERS_OFFLINE": "1",
+    "MUJOCO_GL": "egl",
+    "LIBERO_CONFIG_PATH": "/home/lzx/cl_binding_stage2a/.server/libero",
+    "PYTHONPATH": "/home/lzx/cl_binding/.server/k1_screen_20261101_01/code:/home/lzx/cl_binding_stage2a/scripts"
+  },
+  "actual_modules": {
+    "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/parallel_reproduction.py": "c3428dfbaeb71b9a19b67ef762a15fcaf3851bf599470ab278e1c9993e621b9d",
+    "/home/lzx/cl_binding/.server/k22_deepen_20261113_01/code/k22.py": "3003e574b4b15c89067d330f3c6fec3074b211d051d75e53b8f186dcbb634d47",
+    "/home/lzx/cl_binding/.server/k21_transfer_20261113_01/code/k21.py": "73a5d618f6ec957d3f74ec967a0fdbb9bcfab607c71f7c1251c45bda64ce55ef",
+    "/home/lzx/cl_binding/.server/k25_v_timing_20261122_01/v_timing.py": "22958ab3ba4baa73362f5f7617caee820e87325b9129f818404f721b58eff1c7",
+    "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/parallel_protocol.py": "71f3686ff3b5c64b4e9d41721a3b444cd065d58ad246df9b8e4576f4c1ae8cd0",
+    "/home/lzx/cl_binding/.server/k25_v_timing_20261122_01/v_timing_protocol.py": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+    "/home/lzx/cl_binding/.server/k25_parallel4_20261124_01/parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  },
+  "source_parent_commit": "e61358e0d1c203aea7d8cb57f0dfcadb986a8711",
+  "new_training": false,
+  "commands": [
+    "parallel_full400.py prepare",
+    "run_parallel4.py:52 jobs, initial3workers/GPU, max4/GPU after calibration",
+    "PYTHONPATH=. python -m unittest discover -s tests -p test_k25_parallel4.py -v",
+    "parallel_four.py prepare",
+    "CUDA_VISIBLE_DEVICES=0 parallel_four.py calibrate",
+    "parallel_four.py lock",
+    "capture_runtime.py"
+  ]
+}

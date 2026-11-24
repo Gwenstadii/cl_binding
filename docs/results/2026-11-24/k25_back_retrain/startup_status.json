@@ -1,0 +1,23 @@
+{
+  "status": "training",
+  "pid": 1742958,
+  "updated_at_utc": "2026-11-24T08:56:01.177736+00:00",
+  "step": 450,
+  "loss": 0.4061528444290161,
+  "uniform_loss": 0.5473371744155884,
+  "terminal_phase_loss": 0.264968603849411,
+  "grad_norm": 3.1852872371673584,
+  "lr": 4.9995552419826474e-05,
+  "indices": [
+    1666,
+    5657,
+    1584,
+    281,
+    5721,
+    3995
+  ],
+  "train_elapsed_seconds": 114.45773800741881,
+  "seconds_per_step": 0.25435052890537513,
+  "target_steps": 24000,
+  "estimated_remaining_seconds": 5989.954955721584
+}

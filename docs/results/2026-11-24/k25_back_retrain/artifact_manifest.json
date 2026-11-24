@@ -1,0 +1,90 @@
+{
+  "captured_at_utc": "2026-11-24T08:56:02.671782+00:00",
+  "workspace_parent_commit": "15d75e5e324c9f9bf5c991f03dc170a04c2e7099",
+  "status": "training_started_qualification_pending",
+  "new_completed_rollout_experiments": 0,
+  "server_run": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01",
+  "pid": 1742958,
+  "files": {
+    "docs/K25-Back-retrain.md": {
+      "bytes": 4086,
+      "sha256": "c260b8b798ef9926a1934fd37476ca963f02055c2bd9945cb0deafe45a0aa26a"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/.gitattributes": {
+      "bytes": 20,
+      "sha256": "e97602ab9cac70102245345c5ab0fc9830df8b17f1072b188265a662a3a547ae"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/LAUNCHED.json": {
+      "bytes": 785,
+      "sha256": "89d11f0b7d490b3884cdee4137a8d3ba8d2de32ddecfa2b5508759169fd58bc4"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/README.md": {
+      "bytes": 1540,
+      "sha256": "fc545735f39a64a03bd6fdaa04bf3a674adb3fb942da9ac998f539d0e3148dd2"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/back_training_protocol.py": {
+      "bytes": 1200,
+      "sha256": "c9d0384e933dfb3c33079ab4a76cdad682595a1e3084963edb06aabe2309895e"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/config.json": {
+      "bytes": 2311,
+      "sha256": "56b5c4ecaa64edfe35c1544552827c15adaf5c56322c4f59852e8f5017803a28"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/first100_train.jsonl": {
+      "bytes": 31153,
+      "sha256": "8beba9e95966c8f629f81f512ec095b4a704ea785c99a111780ad903642b6325"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/launch.sh": {
+      "bytes": 276,
+      "sha256": "0f5bd28c01a14223fa63f137899a9db12b5384fd9d85385e59cbbe1654982134"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/protocol_tests.log": {
+      "bytes": 626,
+      "sha256": "123cb8fbbf3492d785bd8185dc7fe28694493175cc102d535ac455ed0bbbc5a5"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/stage1_tests.log": {
+      "bytes": 3865,
+      "sha256": "77fd3ac9e43ee90c31e91bc15df41009749fad1b363338514d4f4108e7d0d9c7"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/start.py": {
+      "bytes": 1170,
+      "sha256": "ffc8ff3d5473a1a0df7eee9b6d4e77b241cb628c111e02d399f8d80a69bb4b09"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/startup_console.log": {
+      "bytes": 6387,
+      "sha256": "833444296ae324f908a5af5d60ad8aa3899fb825f43c99a1356f63cd74736d91"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/startup_status.json": {
+      "bytes": 540,
+      "sha256": "7640a4d2e66051b81dd3a8132db5f783cc26bbd9e35304a8fb07adeb28e5ed8f"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/test_back_training_protocol.py": {
+      "bytes": 1361,
+      "sha256": "3c97bdb0a617714523766acde6b185d0d044483810125061b538babcc1a8ec13"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/train_back_qualified.py": {
+      "bytes": 8172,
+      "sha256": "639524ccc62b787923afeedea5385ba513cd91d9f9a0e6e194ec3a3f3fa05b07"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/training_manifest.json": {
+      "bytes": 15733,
+      "sha256": "fe2a8816b1a2958d2a5e4281255aa52a44bcef9c47b0f44c2211e62f1133d848"
+    },
+    "docs/results/2026-11-24/k25_back_retrain/upload_manifest.json": {
+      "bytes": 449,
+      "sha256": "838de274b0e573911ba5efa5d29d9b7af20c42f08e578ac1ba871228538b2adb"
+    },
+    "scripts/k26/back_training_protocol.py": {
+      "bytes": 1200,
+      "sha256": "c9d0384e933dfb3c33079ab4a76cdad682595a1e3084963edb06aabe2309895e"
+    },
+    "scripts/k26/train_back_qualified.py": {
+      "bytes": 8172,
+      "sha256": "639524ccc62b787923afeedea5385ba513cd91d9f9a0e6e194ec3a3f3fa05b07"
+    },
+    "tests/test_back_training_protocol.py": {
+      "bytes": 1361,
+      "sha256": "3c97bdb0a617714523766acde6b185d0d044483810125061b538babcc1a8ec13"
+    }
+  }
+}

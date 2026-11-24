@@ -1,0 +1,18 @@
+{
+  "pid": 1742958,
+  "launched_at_utc": "2026-11-24T08:53:51.058033+00:00",
+  "command": [
+    "bash",
+    "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/launch.sh"
+  ],
+  "gpu": 0,
+  "session_detached": true,
+  "sources_sha256": {
+    "train_back_qualified.py": "639524ccc62b787923afeedea5385ba513cd91d9f9a0e6e194ec3a3f3fa05b07",
+    "back_training_protocol.py": "c9d0384e933dfb3c33079ab4a76cdad682595a1e3084963edb06aabe2309895e",
+    "config.json": "56b5c4ecaa64edfe35c1544552827c15adaf5c56322c4f59852e8f5017803a28",
+    "launch.sh": "0f5bd28c01a14223fa63f137899a9db12b5384fd9d85385e59cbbe1654982134",
+    "start.py": "ffc8ff3d5473a1a0df7eee9b6d4e77b241cb628c111e02d399f8d80a69bb4b09"
+  },
+  "source_commit_before_training": "15d75e5e324c9f9bf5c991f03dc170a04c2e7099"
+}

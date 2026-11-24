@@ -1,0 +1,79 @@
+{
+  "created_at_utc": "2026-11-24T10:47:39.235226+00:00",
+  "source_parent_commit": "5816296962cb94829ebb5f887f8ed46a2a49bc1d",
+  "question": "Repeat K25-whole4 after retraining Back from the same three-task parent",
+  "training_run": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01",
+  "qualification": {
+    "ids": [
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659
+    ],
+    "order": "descending saved steps, first terminal>=16 and ever>=16 of20; otherwise terminal24000 as unqualified diagnostic",
+    "horizon": 400,
+    "selection_uses_only": "native Back development; no repair outcomes"
+  },
+  "evaluation": {
+    "ids": [
+      800,
+      801,
+      802,
+      803,
+      804,
+      805,
+      806,
+      807,
+      808,
+      809,
+      810,
+      811,
+      812,
+      813,
+      814,
+      815,
+      816,
+      817,
+      818,
+      819
+    ],
+    "arms": [
+      "native",
+      "parallel150",
+      "whole150",
+      "parallel400",
+      "whole400"
+    ],
+    "new_episodes": 400,
+    "reused_parent_episodes": 80,
+    "horizon": 400,
+    "windows": [
+      [
+        0,
+        150
+      ],
+      [
+        0,
+        400
+      ]
+    ],
+    "gain": "same130 independent dev inputs and norm-ratio upper-median capped10; recalibrated for selected new F; same numeric gain within new parallel/full comparison"
+  },
+  "scope": "No more training; unchanged parent, prompts, starts, sampling, dtype and original episode; full32 versus old-three projected residual only. Compare native Back qualification separately from repaired old/new goals."
+}

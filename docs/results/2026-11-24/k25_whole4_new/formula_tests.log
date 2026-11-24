@@ -1,0 +1,8 @@
+test_only_removed_component_differs_when_residual_also_contains_old_axes (test_k25_whole4.FullResidualControl.test_only_removed_component_differs_when_residual_also_contains_old_axes) ... ok
+test_whole_preserves_active_off_axis_signal_and_padding (test_k25_whole4.FullResidualControl.test_whole_preserves_active_off_axis_signal_and_padding) ... ok
+test_zero_actual_residual_gives_parent_mean (test_k25_whole4.FullResidualControl.test_zero_actual_residual_gives_parent_mean) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.356s
+
+OK

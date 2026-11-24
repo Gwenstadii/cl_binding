@@ -1,0 +1,8 @@
+{
+  "steps": 24000,
+  "indices_and_schedule_exact": true,
+  "finite_losses_and_gradients": true,
+  "first_loss": 0.8764224052429199,
+  "last_loss": 0.11459150165319443,
+  "source_sha256": "ed13960c25268fd6118103436fb9f08cda857e7bdf6b39a6054a4613ee6498b1"
+}

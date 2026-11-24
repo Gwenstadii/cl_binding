@@ -1,0 +1,11 @@
+{
+  "step": 16000,
+  "lane": 1,
+  "episodes": 5,
+  "rows_sha256": "58ef511c8f6b637a43c8e831c8eec382d875c1f525834146afb906b51a500943",
+  "weights_fingerprints": [
+    "319e8721e4c2e2dcb85bfa1e1318a79b504c14c489421952b260217e66b27063",
+    "b5b32929d7b09702c2d8b363a1e5fa809791fdd715a12f69469e7d71a7535a10"
+  ],
+  "weights_unchanged": true
+}

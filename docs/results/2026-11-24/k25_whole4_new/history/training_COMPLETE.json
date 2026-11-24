@@ -1,0 +1,25 @@
+{
+  "status": "training_complete_qualification_pending",
+  "steps": 24000,
+  "finished_at_utc": "2026-11-24T10:36:45.320447+00:00",
+  "wall_seconds": 6171.503139350563,
+  "compute_seconds": 6158.605221227743,
+  "frozen_unchanged": true,
+  "qualified": false,
+  "saved_steps": [
+    1000,
+    2000,
+    4000,
+    6000,
+    8000,
+    10000,
+    12000,
+    14000,
+    16000,
+    18000,
+    20000,
+    22000,
+    24000
+  ],
+  "config_sha256": "56b5c4ecaa64edfe35c1544552827c15adaf5c56322c4f59852e8f5017803a28"
+}

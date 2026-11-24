@@ -1,0 +1,10 @@
+{
+  "step": 20000,
+  "count": 155,
+  "sha256": "b7afac5c5cffcde3afc30c760afaaa011f49a0bc384f61a7fd2ab4b2b1ca67c2",
+  "training_state_sha256": "ed75874077006e18b0c7c878e86b81ae1ed95e06117150111f6df8ec2a7f05c1",
+  "parent_sha256": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+  "frozen_unchanged": true,
+  "config_sha256": "56b5c4ecaa64edfe35c1544552827c15adaf5c56322c4f59852e8f5017803a28",
+  "qualified": false
+}

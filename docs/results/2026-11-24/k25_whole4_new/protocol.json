@@ -1,0 +1,260 @@
+{
+  "models": {
+    "base": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+    "parent": "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors",
+    "executor": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/024000/trainable.safetensors"
+  },
+  "geometry": {
+    "left": {
+      "site": "desk_caddy_1_left_contain_region",
+      "centre": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "front": {
+      "site": "desk_caddy_1_front_contain_region",
+      "centre": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "rotation": [
+        [
+          0.9999999999999998,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        [
+          -0.0,
+          -0.9999999999999998,
+          0.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.03595,
+        0.06216
+      ]
+    },
+    "right": {
+      "site": "desk_caddy_1_right_contain_region",
+      "centre": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "back": {
+      "site": "desk_caddy_1_back_contain_region",
+      "centre": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    }
+  },
+  "alpha": 0.7814008479195439,
+  "selected_step": 24000,
+  "selection": {
+    "selected_step": 24000,
+    "qualified": false,
+    "results": [
+      {
+        "step": 24000,
+        "first": 0,
+        "ever": 20,
+        "terminal": 8
+      },
+      {
+        "step": 22000,
+        "first": 0,
+        "ever": 20,
+        "terminal": 6
+      },
+      {
+        "step": 20000,
+        "first": 0,
+        "ever": 19,
+        "terminal": 6
+      },
+      {
+        "step": 18000,
+        "first": 0,
+        "ever": 18,
+        "terminal": 7
+      },
+      {
+        "step": 16000,
+        "first": 0,
+        "ever": 18,
+        "terminal": 7
+      },
+      {
+        "step": 14000,
+        "first": 0,
+        "ever": 19,
+        "terminal": 3
+      },
+      {
+        "step": 12000,
+        "first": 0,
+        "ever": 19,
+        "terminal": 8
+      },
+      {
+        "step": 10000,
+        "first": 0,
+        "ever": 17,
+        "terminal": 2
+      },
+      {
+        "step": 8000,
+        "first": 0,
+        "ever": 19,
+        "terminal": 8
+      },
+      {
+        "step": 6000,
+        "first": 0,
+        "ever": 19,
+        "terminal": 5
+      },
+      {
+        "step": 4000,
+        "first": 0,
+        "ever": 14,
+        "terminal": 3
+      },
+      {
+        "step": 2000,
+        "first": 0,
+        "ever": 20,
+        "terminal": 6
+      },
+      {
+        "step": 1000,
+        "first": 0,
+        "ever": 19,
+        "terminal": 5
+      }
+    ],
+    "rule": "latest-to-earliest, first terminal>=16/20 and ever>=16/20 on Back-only independent dev; if none, terminal24000 diagnostic only"
+  },
+  "calibration_sha256": "c7b890b41f6f64ecf1d20c63fde78a7331eb04a1740ea2702119971809e7739f",
+  "cases_sha256": "0c233a96513e7ecde914761fb7d41b8c11e5de457a492854d407b0f996438969",
+  "sources": {
+    "whole4_new.py": "034358aeb7eaaed3a82337ec9232fb909fdbbcdd1c4a16c89366f3cb8c596de3",
+    "run_whole4_new.py": "6a8e438de1cbf44bd0da3e001cf112b82ba3c7c4b905f6fc37a42017a9abb02e",
+    "whole_residual.py": "94269594c7bb59764e77f42b74d95b3f94c83d868c8933b61dc1d6b8b169b37c",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  },
+  "reference_sources": {
+    "parallel_four.py": "e75570890cdbe59ee6d240168402d1815774224269c03e98c4dd92215d38aef6",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  },
+  "preparation_sha256": "806612f497cdc5fdc142ccce35c5dae7c227b28837543d51ab18602ac6108da3",
+  "arms": [
+    "native",
+    "parallel150",
+    "whole150",
+    "parallel400",
+    "whole400"
+  ],
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "horizon": 400,
+  "expected": 400
+}

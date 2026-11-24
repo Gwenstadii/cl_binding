@@ -1,0 +1,236 @@
+{
+  "training_complete": {
+    "status": "training_complete_qualification_pending",
+    "steps": 24000,
+    "finished_at_utc": "2026-11-24T10:36:45.320447+00:00",
+    "wall_seconds": 6171.503139350563,
+    "compute_seconds": 6158.605221227743,
+    "frozen_unchanged": true,
+    "qualified": false,
+    "saved_steps": [
+      1000,
+      2000,
+      4000,
+      6000,
+      8000,
+      10000,
+      12000,
+      14000,
+      16000,
+      18000,
+      20000,
+      22000,
+      24000
+    ],
+    "config_sha256": "56b5c4ecaa64edfe35c1544552827c15adaf5c56322c4f59852e8f5017803a28"
+  },
+  "training_config_sha256": "56b5c4ecaa64edfe35c1544552827c15adaf5c56322c4f59852e8f5017803a28",
+  "candidates": {
+    "24000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/024000/trainable.safetensors",
+      "sha256": "d75b4df483e850c895ec203f48ff4ee4dd274ca2bfe7c7c0d20bdcb69bfccc47",
+      "ready_sha256": "2b72ea1cde336fa39b9033baf5ca3ddf494e6cc2d47e60056ddc0f207ab4c235"
+    },
+    "22000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/022000/trainable.safetensors",
+      "sha256": "852d05d543915997d4ee3ca2db865913e4d67dc73c900c21100cc2a9ad24bb09",
+      "ready_sha256": "265dc13ebba623cb6c93feaa8a7ee9bece9859cc56d3c9f9c85297b8a902488a"
+    },
+    "20000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/020000/trainable.safetensors",
+      "sha256": "b7afac5c5cffcde3afc30c760afaaa011f49a0bc384f61a7fd2ab4b2b1ca67c2",
+      "ready_sha256": "e49f8da2332b580273281fba10276e7a1c8f599e8956a4def3a8e71ab3660b77"
+    },
+    "18000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/018000/trainable.safetensors",
+      "sha256": "7c4e0e8394e7fcd4e0237ec32ae99d1a45d7177ffc9a6bb34f4080c000fa219f",
+      "ready_sha256": "7003598c121ce9bf891d41d2162c2327f7cb2178e9e7fc32652138350b8e5a68"
+    },
+    "16000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/016000/trainable.safetensors",
+      "sha256": "eaf52eb29bafc1af1e4eb322bfa7a8b40d0078cf5ef19967b969c847ef075501",
+      "ready_sha256": "b1f7339e806e24727d4f2d5ddec727fcd223634c7455654aa6ef39593b4c2dfc"
+    },
+    "14000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/014000/trainable.safetensors",
+      "sha256": "a8b02c1a3a1a5bb049efb7880eda385ccc909b88b7a0ffe6aba98206d4bdac2c",
+      "ready_sha256": "8b5dd3e46e1b6245d8644e505d978ece80d9796789908ca72d12e075bb326e08"
+    },
+    "12000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/012000/trainable.safetensors",
+      "sha256": "6a61c5fc47a8f0b6011f53802f878cbc98be1f84b6da305cc02a8a4e2f707746",
+      "ready_sha256": "2546a2e0a5ea2502ca8f7ea9c71bdc771bb94f1c1b95f5bc3ebd0532cfe5cf00"
+    },
+    "10000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/010000/trainable.safetensors",
+      "sha256": "f3696ca2d4f73922b571a373a6bf5bff747094f893312afdcc8bac2a6798ccb1",
+      "ready_sha256": "40bd6c1908f72db0d11509f14dea06cc2f532072c286fd6e934fed019dde20b4"
+    },
+    "8000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/008000/trainable.safetensors",
+      "sha256": "423bdb1fd60608fe0283f0fc51b3ebd81d972a6194dfdcb29c317bf7d4837d77",
+      "ready_sha256": "422f851d507bfce870550e0a38a1bacc25210bff1b42433b2f6904a75e667583"
+    },
+    "6000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/006000/trainable.safetensors",
+      "sha256": "f47ad7cdf264d5a2c01d6c565f37ddb9d977150050b1aab91e836dadb898b643",
+      "ready_sha256": "4017822a5fc7b50b99262fdd8390608e042f5527f5e7c66510b37ca58776d170"
+    },
+    "4000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/004000/trainable.safetensors",
+      "sha256": "1151c6e9a574448bfb66c41d130025b67935f062468b7236d4c7b6de79f001e0",
+      "ready_sha256": "aa7f70ddfbf108345008c2f5dfab0a3b0594dec828d46bd8ca30c8f7b7af8ba5"
+    },
+    "2000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/002000/trainable.safetensors",
+      "sha256": "55df80fb70bd96a80283a10e49df883c48adac5bd5224f181035823211928af7",
+      "ready_sha256": "a6dd40440ad890ea68ae478e92be1840b493e835c94246b96b6665257c518bf3"
+    },
+    "1000": {
+      "weights": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/001000/trainable.safetensors",
+      "sha256": "caaf1dafdcebc369027e95fa1adb42c94c5f2085199f418d44b08a56126fd082",
+      "ready_sha256": "ff9594b56ec3636489d79c7a6da92187502e93574d8b2b029bb124f72a591044"
+    }
+  },
+  "reference_protocol_sha256": "84d75f098fbde0f4a73fe8a2d5ce9d462c34e84a2888c7ce9755e2096b15ef59",
+  "reference_sources": {
+    "parallel_four.py": "e75570890cdbe59ee6d240168402d1815774224269c03e98c4dd92215d38aef6",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  },
+  "cases_sha256": "0c233a96513e7ecde914761fb7d41b8c11e5de457a492854d407b0f996438969",
+  "dev_cases_sha256": "9e8ed5c56a09892aeca072f6f5107e3667bc3581fa4c62e696c210c1cb2d92d8",
+  "plan_sha256": "ff43e694255d4e33ad2d841d274e1a6e14b70bf50a0e51ea81bfb4d2a4b764ea",
+  "sources": {
+    "whole4_new.py": "034358aeb7eaaed3a82337ec9232fb909fdbbcdd1c4a16c89366f3cb8c596de3",
+    "run_whole4_new.py": "6a8e438de1cbf44bd0da3e001cf112b82ba3c7c4b905f6fc37a42017a9abb02e",
+    "whole_residual.py": "94269594c7bb59764e77f42b74d95b3f94c83d868c8933b61dc1d6b8b169b37c",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  },
+  "geometry": {
+    "left": {
+      "site": "desk_caddy_1_left_contain_region",
+      "centre": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "front": {
+      "site": "desk_caddy_1_front_contain_region",
+      "centre": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "rotation": [
+        [
+          0.9999999999999998,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        [
+          -0.0,
+          -0.9999999999999998,
+          0.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.03595,
+        0.06216
+      ]
+    },
+    "right": {
+      "site": "desk_caddy_1_right_contain_region",
+      "centre": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "back": {
+      "site": "desk_caddy_1_back_contain_region",
+      "centre": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    }
+  },
+  "models": {
+    "base": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+    "parent": "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors",
+    "executor": "/home/lzx/cl_binding/.server/k26_multigoal_20261121_01/back/003000/trainable.safetensors"
+  }
+}

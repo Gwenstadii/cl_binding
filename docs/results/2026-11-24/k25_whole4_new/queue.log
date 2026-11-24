@@ -1,0 +1,182 @@
+START dev_24000_0 0 432976
+START dev_24000_1 1 432977
+START dev_24000_2 0 432978
+START dev_24000_3 1 432979
+DONE dev_24000_0
+DONE dev_24000_2
+DONE dev_24000_1
+DONE dev_24000_3
+QUALIFICATION {'step': 24000, 'first': 0, 'ever': 20, 'terminal': 8}
+START dev_22000_0 0 433884
+START dev_22000_1 1 433885
+START dev_22000_2 0 433886
+START dev_22000_3 1 433887
+DONE dev_22000_0
+DONE dev_22000_2
+DONE dev_22000_1
+DONE dev_22000_3
+QUALIFICATION {'step': 22000, 'first': 0, 'ever': 20, 'terminal': 6}
+START dev_20000_0 0 434863
+START dev_20000_1 1 434864
+START dev_20000_2 0 434865
+START dev_20000_3 1 434866
+DONE dev_20000_2
+DONE dev_20000_0
+DONE dev_20000_1
+DONE dev_20000_3
+QUALIFICATION {'step': 20000, 'first': 0, 'ever': 19, 'terminal': 6}
+START dev_18000_0 0 435893
+START dev_18000_1 1 435894
+START dev_18000_2 0 435895
+START dev_18000_3 1 435896
+DONE dev_18000_0
+DONE dev_18000_2
+DONE dev_18000_1
+DONE dev_18000_3
+QUALIFICATION {'step': 18000, 'first': 0, 'ever': 18, 'terminal': 7}
+START dev_16000_0 0 436797
+START dev_16000_1 1 436798
+START dev_16000_2 0 436799
+START dev_16000_3 1 436800
+DONE dev_16000_0
+DONE dev_16000_2
+DONE dev_16000_1
+DONE dev_16000_3
+QUALIFICATION {'step': 16000, 'first': 0, 'ever': 18, 'terminal': 7}
+START dev_14000_0 0 437596
+START dev_14000_1 1 437597
+START dev_14000_2 0 437598
+START dev_14000_3 1 437599
+DONE dev_14000_0
+DONE dev_14000_2
+DONE dev_14000_1
+DONE dev_14000_3
+QUALIFICATION {'step': 14000, 'first': 0, 'ever': 19, 'terminal': 3}
+START dev_12000_0 0 438506
+START dev_12000_1 1 438507
+START dev_12000_2 0 438508
+START dev_12000_3 1 438509
+DONE dev_12000_0
+DONE dev_12000_2
+DONE dev_12000_1
+DONE dev_12000_3
+QUALIFICATION {'step': 12000, 'first': 0, 'ever': 19, 'terminal': 8}
+START dev_10000_0 0 439404
+START dev_10000_1 1 439405
+START dev_10000_2 0 439406
+START dev_10000_3 1 439407
+DONE dev_10000_2
+DONE dev_10000_0
+DONE dev_10000_1
+DONE dev_10000_3
+QUALIFICATION {'step': 10000, 'first': 0, 'ever': 17, 'terminal': 2}
+START dev_8000_0 0 440257
+START dev_8000_1 1 440258
+START dev_8000_2 0 440259
+START dev_8000_3 1 440260
+DONE dev_8000_2
+DONE dev_8000_0
+DONE dev_8000_3
+DONE dev_8000_1
+QUALIFICATION {'step': 8000, 'first': 0, 'ever': 19, 'terminal': 8}
+START dev_6000_0 0 441169
+START dev_6000_1 1 441170
+START dev_6000_2 0 441171
+START dev_6000_3 1 441172
+DONE dev_6000_0
+DONE dev_6000_2
+DONE dev_6000_1
+DONE dev_6000_3
+QUALIFICATION {'step': 6000, 'first': 0, 'ever': 19, 'terminal': 5}
+START dev_4000_0 0 442026
+START dev_4000_1 1 442027
+START dev_4000_2 0 442028
+START dev_4000_3 1 442029
+DONE dev_4000_2
+DONE dev_4000_0
+DONE dev_4000_1
+DONE dev_4000_3
+QUALIFICATION {'step': 4000, 'first': 0, 'ever': 14, 'terminal': 3}
+START dev_2000_0 0 442822
+START dev_2000_1 1 442823
+START dev_2000_2 0 442824
+START dev_2000_3 1 442825
+DONE dev_2000_0
+DONE dev_2000_2
+DONE dev_2000_1
+DONE dev_2000_3
+QUALIFICATION {'step': 2000, 'first': 0, 'ever': 20, 'terminal': 6}
+START dev_1000_0 0 443734
+START dev_1000_1 1 443735
+START dev_1000_2 0 443736
+START dev_1000_3 1 443737
+DONE dev_1000_0
+DONE dev_1000_2
+DONE dev_1000_3
+DONE dev_1000_1
+QUALIFICATION {'step': 1000, 'first': 0, 'ever': 19, 'terminal': 5}
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+NEW_CALIBRATE 0
+NEW_CALIBRATE 1
+NEW_CALIBRATE 2
+NEW_CALIBRATE 3
+NEW_CALIBRATE 4
+NEW_CALIBRATE 5
+NEW_CALIBRATE 6
+NEW_CALIBRATE 7
+NEW_CALIBRATE 8
+NEW_CALIBRATE 9
+NEW_LOCKED 0.7814008479195439
+START new_0 0 445027
+START new_1 1 445028
+START new_2 0 445029
+START new_3 1 445030
+START new_4 0 445031
+START new_5 1 445032
+START new_6 0 445033
+START new_7 1 445034
+DONE new_6
+START new_8 0 450413
+DONE new_4
+START new_9 0 450418
+DONE new_2
+START new_10 0 450429
+DONE new_0
+START new_11 0 450548
+DONE new_5
+START new_12 1 450713
+DONE new_1
+START new_13 1 450756
+DONE new_3
+START new_14 1 450803
+DONE new_7
+START new_15 1 451031
+DONE new_8
+START new_16 0 455621
+DONE new_9
+START new_17 0 455625
+DONE new_10
+START new_18 0 455743
+DONE new_11
+START new_19 0 455867
+DONE new_12
+DONE new_13
+DONE new_14
+DONE new_15
+DONE new_16
+DONE new_17
+DONE new_18
+DONE new_19

@@ -1,0 +1,85 @@
+{
+  "selected_step": 24000,
+  "qualified": false,
+  "results": [
+    {
+      "step": 24000,
+      "first": 0,
+      "ever": 20,
+      "terminal": 8
+    },
+    {
+      "step": 22000,
+      "first": 0,
+      "ever": 20,
+      "terminal": 6
+    },
+    {
+      "step": 20000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 6
+    },
+    {
+      "step": 18000,
+      "first": 0,
+      "ever": 18,
+      "terminal": 7
+    },
+    {
+      "step": 16000,
+      "first": 0,
+      "ever": 18,
+      "terminal": 7
+    },
+    {
+      "step": 14000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 3
+    },
+    {
+      "step": 12000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 8
+    },
+    {
+      "step": 10000,
+      "first": 0,
+      "ever": 17,
+      "terminal": 2
+    },
+    {
+      "step": 8000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 8
+    },
+    {
+      "step": 6000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 5
+    },
+    {
+      "step": 4000,
+      "first": 0,
+      "ever": 14,
+      "terminal": 3
+    },
+    {
+      "step": 2000,
+      "first": 0,
+      "ever": 20,
+      "terminal": 6
+    },
+    {
+      "step": 1000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 5
+    }
+  ],
+  "rule": "latest-to-earliest, first terminal>=16/20 and ever>=16/20 on Back-only independent dev; if none, terminal24000 diagnostic only"
+}

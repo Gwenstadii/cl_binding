@@ -1,0 +1,15 @@
+{
+  "new_formal_episodes": 400,
+  "new_qualification_episodes": 260,
+  "reused_parent_episodes": 80,
+  "qualified": false,
+  "selected_step": 24000,
+  "formula_tests": 3,
+  "stage1_tests": 21,
+  "prefix_pairs": 160,
+  "initial_input_pairs": 160,
+  "whole_formula_gates": 80,
+  "projection_gates": 80,
+  "unchanged_identity_files": 60,
+  "offline_audit": "passed"
+}

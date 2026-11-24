@@ -1,0 +1,7616 @@
+{
+  "new_episodes": 400,
+  "qualification_episodes": 260,
+  "reused_parent_episodes": 80,
+  "alpha": 0.7814008479195439,
+  "selected_step": 24000,
+  "qualified": false,
+  "qualification": [
+    {
+      "step": 24000,
+      "first": 0,
+      "ever": 20,
+      "terminal": 8,
+      "placed150": 9,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 1.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 1.0
+        },
+        {
+          "init": 656,
+          "fraction": 0.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.48
+        },
+        {
+          "init": 645,
+          "fraction": 0.52
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 1.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 1.0
+        },
+        {
+          "init": 654,
+          "fraction": 1.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 0.0
+        },
+        {
+          "init": 647,
+          "fraction": 1.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.96
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 22000,
+      "first": 0,
+      "ever": 20,
+      "terminal": 6,
+      "placed150": 8,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.0
+        },
+        {
+          "init": 649,
+          "fraction": 1.0
+        },
+        {
+          "init": 653,
+          "fraction": 1.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 0.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 1.0
+        },
+        {
+          "init": 659,
+          "fraction": 1.0
+        }
+      ]
+    },
+    {
+      "step": 20000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 6,
+      "placed150": 9,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.4
+        },
+        {
+          "init": 645,
+          "fraction": 1.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.3
+        },
+        {
+          "init": 653,
+          "fraction": 1.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.12
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 1.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 0.02
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 1.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 18000,
+      "first": 0,
+      "ever": 18,
+      "terminal": 7,
+      "placed150": 9,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 1.0
+        },
+        {
+          "init": 645,
+          "fraction": 1.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 1.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 1.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 16000,
+      "first": 0,
+      "ever": 18,
+      "terminal": 7,
+      "placed150": 9,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 1.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.66
+        },
+        {
+          "init": 649,
+          "fraction": 0.82
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 1.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 0.0
+        },
+        {
+          "init": 647,
+          "fraction": 1.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 1.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 14000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 3,
+      "placed150": 7,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.36
+        },
+        {
+          "init": 656,
+          "fraction": 0.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 1.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 0.0
+        },
+        {
+          "init": 647,
+          "fraction": 1.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 12000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 8,
+      "placed150": 8,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 0.0
+        },
+        {
+          "init": 641,
+          "fraction": 1.0
+        },
+        {
+          "init": 645,
+          "fraction": 1.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.3
+        },
+        {
+          "init": 650,
+          "fraction": 1.0
+        },
+        {
+          "init": 654,
+          "fraction": 1.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 1.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.0
+        },
+        {
+          "init": 659,
+          "fraction": 1.0
+        }
+      ]
+    },
+    {
+      "step": 10000,
+      "first": 0,
+      "ever": 17,
+      "terminal": 2,
+      "placed150": 7,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 1.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 0.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 0.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 0.0
+        },
+        {
+          "init": 655,
+          "fraction": 1.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 8000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 8,
+      "placed150": 9,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 1.0
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.0
+        },
+        {
+          "init": 649,
+          "fraction": 1.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.96
+        },
+        {
+          "init": 657,
+          "fraction": 1.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 1.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 1.0
+        },
+        {
+          "init": 651,
+          "fraction": 1.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 6000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 5,
+      "placed150": 4,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.72
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 1.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 1.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 1.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 0.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 4000,
+      "first": 0,
+      "ever": 14,
+      "terminal": 3,
+      "placed150": 6,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 0.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 0.0
+        },
+        {
+          "init": 656,
+          "fraction": 1.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 1.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 0.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 0.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 2000,
+      "first": 0,
+      "ever": 20,
+      "terminal": 6,
+      "placed150": 13,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 1.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 1.0
+        },
+        {
+          "init": 656,
+          "fraction": 0.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 1.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 1.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.0
+        },
+        {
+          "init": 658,
+          "fraction": 0.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 0.0
+        },
+        {
+          "init": 655,
+          "fraction": 1.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "step": 1000,
+      "first": 0,
+      "ever": 19,
+      "terminal": 5,
+      "placed150": 9,
+      "final50_fraction": [
+        {
+          "init": 640,
+          "fraction": 1.0
+        },
+        {
+          "init": 644,
+          "fraction": 0.0
+        },
+        {
+          "init": 648,
+          "fraction": 0.0
+        },
+        {
+          "init": 652,
+          "fraction": 1.0
+        },
+        {
+          "init": 656,
+          "fraction": 0.0
+        },
+        {
+          "init": 641,
+          "fraction": 0.0
+        },
+        {
+          "init": 645,
+          "fraction": 0.0
+        },
+        {
+          "init": 649,
+          "fraction": 0.0
+        },
+        {
+          "init": 653,
+          "fraction": 0.0
+        },
+        {
+          "init": 657,
+          "fraction": 1.0
+        },
+        {
+          "init": 642,
+          "fraction": 0.0
+        },
+        {
+          "init": 646,
+          "fraction": 0.0
+        },
+        {
+          "init": 650,
+          "fraction": 0.0
+        },
+        {
+          "init": 654,
+          "fraction": 0.44
+        },
+        {
+          "init": 658,
+          "fraction": 1.0
+        },
+        {
+          "init": 643,
+          "fraction": 1.0
+        },
+        {
+          "init": 647,
+          "fraction": 0.0
+        },
+        {
+          "init": 651,
+          "fraction": 0.0
+        },
+        {
+          "init": 655,
+          "fraction": 0.0
+        },
+        {
+          "init": 659,
+          "fraction": 0.0
+        }
+      ]
+    }
+  ],
+  "comparisons": {
+    "whole150": {
+      "parallel": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "target": "left",
+            "first": 20,
+            "first150": 20,
+            "placed150": 20,
+            "terminal": 18,
+            "ever": 20,
+            "grasp": 20,
+            "first_distribution": {
+              "left": 20
+            },
+            "first_correct_final_failed": 2,
+            "placed150_final_failed": 2,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 20,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 1.0
+              },
+              {
+                "init": 814,
+                "fraction": 1.0
+              },
+              {
+                "init": 815,
+                "fraction": 1.0
+              },
+              {
+                "init": 816,
+                "fraction": 1.0
+              },
+              {
+                "init": 817,
+                "fraction": 1.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "front": {
+            "n": 20,
+            "target": "front",
+            "first": 18,
+            "first150": 17,
+            "placed150": 10,
+            "terminal": 15,
+            "ever": 15,
+            "grasp": 20,
+            "first_distribution": {
+              "front": 18,
+              "none": 2
+            },
+            "first_correct_final_failed": 3,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 11,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 1.0
+              },
+              {
+                "init": 814,
+                "fraction": 1.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "right": {
+            "n": 20,
+            "target": "right",
+            "first": 20,
+            "first150": 19,
+            "placed150": 7,
+            "terminal": 15,
+            "ever": 16,
+            "grasp": 20,
+            "first_distribution": {
+              "right": 20
+            },
+            "first_correct_final_failed": 5,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 7,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 0.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 1.0
+              },
+              {
+                "init": 815,
+                "fraction": 1.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.28
+              },
+              {
+                "init": 818,
+                "fraction": 1.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "back": {
+            "n": 20,
+            "target": "back",
+            "first": 0,
+            "first150": 0,
+            "placed150": 1,
+            "terminal": 3,
+            "ever": 10,
+            "grasp": 20,
+            "first_distribution": {
+              "front": 20
+            },
+            "first_correct_final_failed": 0,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 10,
+            "ever150": 1,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 0.0
+              },
+              {
+                "init": 804,
+                "fraction": 0.0
+              },
+              {
+                "init": 805,
+                "fraction": 0.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 0.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 0.0
+              },
+              {
+                "init": 812,
+                "fraction": 0.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 1.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 1.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 0.0
+              }
+            ]
+          }
+        },
+        "joint": {
+          "n": 20,
+          "first": 0,
+          "first150": 0,
+          "placed150": 0,
+          "terminal": 2,
+          "ever": 8,
+          "grasp": 20,
+          "ids": {
+            "first": [],
+            "first150": [],
+            "placed150": [],
+            "terminal": [
+              802,
+              814
+            ],
+            "ever": [
+              802,
+              804,
+              805,
+              807,
+              808,
+              812,
+              814,
+              819
+            ],
+            "grasp": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_joint": {
+          "n": 20,
+          "first": 18,
+          "first150": 16,
+          "placed150": 6,
+          "terminal": 12,
+          "ever": 13,
+          "grasp": 20,
+          "ids": {
+            "first": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              818,
+              819
+            ],
+            "first150": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              819
+            ],
+            "placed150": [
+              802,
+              804,
+              806,
+              807,
+              811,
+              812
+            ],
+            "terminal": [
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              810,
+              811,
+              812,
+              814,
+              819
+            ],
+            "ever": [
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              810,
+              811,
+              812,
+              814,
+              819
+            ],
+            "grasp": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_first_and_Back_final": {
+          "n": 20,
+          "ids": [
+            802,
+            814
+          ],
+          "count": 2
+        }
+      },
+      "whole": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "target": "left",
+            "first": 20,
+            "first150": 20,
+            "placed150": 16,
+            "terminal": 11,
+            "ever": 20,
+            "grasp": 20,
+            "first_distribution": {
+              "left": 20
+            },
+            "first_correct_final_failed": 9,
+            "placed150_final_failed": 5,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 20,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 0.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 0.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 1.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 1.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "front": {
+            "n": 20,
+            "target": "front",
+            "first": 15,
+            "first150": 11,
+            "placed150": 5,
+            "terminal": 8,
+            "ever": 11,
+            "grasp": 19,
+            "first_distribution": {
+              "front": 15,
+              "none": 5
+            },
+            "first_correct_final_failed": 7,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 8,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 0.0
+              },
+              {
+                "init": 804,
+                "fraction": 0.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 0.0
+              },
+              {
+                "init": 813,
+                "fraction": 1.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "right": {
+            "n": 20,
+            "target": "right",
+            "first": 20,
+            "first150": 20,
+            "placed150": 10,
+            "terminal": 15,
+            "ever": 15,
+            "grasp": 20,
+            "first_distribution": {
+              "right": 20
+            },
+            "first_correct_final_failed": 5,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 10,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 1.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 1.0
+              },
+              {
+                "init": 816,
+                "fraction": 1.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "back": {
+            "n": 20,
+            "target": "back",
+            "first": 0,
+            "first150": 0,
+            "placed150": 0,
+            "terminal": 0,
+            "ever": 0,
+            "grasp": 20,
+            "first_distribution": {
+              "front": 20
+            },
+            "first_correct_final_failed": 0,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 0,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 0.0
+              },
+              {
+                "init": 803,
+                "fraction": 0.0
+              },
+              {
+                "init": 804,
+                "fraction": 0.0
+              },
+              {
+                "init": 805,
+                "fraction": 0.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 0.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 0.0
+              },
+              {
+                "init": 812,
+                "fraction": 0.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 0.0
+              }
+            ]
+          }
+        },
+        "joint": {
+          "n": 20,
+          "first": 0,
+          "first150": 0,
+          "placed150": 0,
+          "terminal": 0,
+          "ever": 0,
+          "grasp": 19,
+          "ids": {
+            "first": [],
+            "first150": [],
+            "placed150": [],
+            "terminal": [],
+            "ever": [],
+            "grasp": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_joint": {
+          "n": 20,
+          "first": 15,
+          "first150": 11,
+          "placed150": 3,
+          "terminal": 3,
+          "ever": 9,
+          "grasp": 19,
+          "ids": {
+            "first": [
+              800,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              811,
+              812,
+              813,
+              814,
+              816,
+              818,
+              819
+            ],
+            "first150": [
+              800,
+              802,
+              805,
+              807,
+              808,
+              809,
+              811,
+              813,
+              814,
+              816,
+              819
+            ],
+            "placed150": [
+              805,
+              808,
+              819
+            ],
+            "terminal": [
+              805,
+              808,
+              819
+            ],
+            "ever": [
+              802,
+              804,
+              805,
+              807,
+              808,
+              811,
+              812,
+              816,
+              819
+            ],
+            "grasp": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_first_and_Back_final": {
+          "n": 20,
+          "ids": [],
+          "count": 0
+        }
+      },
+      "paired": {
+        "per_goal": {
+          "left": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [],
+              "lost": [
+                807,
+                809,
+                813,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                808,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                802,
+                807,
+                810,
+                811,
+                813,
+                814,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                803,
+                804,
+                805,
+                806,
+                808,
+                812,
+                815,
+                817,
+                819
+              ],
+              "neither": [
+                809,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "front": {
+            "first": {
+              "gained": [
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                810,
+                815
+              ],
+              "kept": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                811,
+                812,
+                813,
+                814,
+                818,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "first150": {
+              "gained": [
+                809,
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                815,
+                818
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                811,
+                813,
+                814,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "placed150": {
+              "gained": [
+                805,
+                819
+              ],
+              "lost": [
+                800,
+                802,
+                803,
+                804,
+                806,
+                807,
+                812
+              ],
+              "kept": [
+                808,
+                811,
+                813
+              ],
+              "neither": [
+                801,
+                809,
+                810,
+                814,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                814
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                811,
+                813,
+                819
+              ],
+              "neither": [
+                809,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                806,
+                810,
+                814
+              ],
+              "kept": [
+                800,
+                802,
+                804,
+                805,
+                807,
+                808,
+                811,
+                812,
+                813,
+                819
+              ],
+              "neither": [
+                809,
+                815,
+                817,
+                818
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [
+                803
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "right": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [
+                818
+              ],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [
+                803,
+                805,
+                808,
+                816
+              ],
+              "lost": [
+                811
+              ],
+              "kept": [
+                802,
+                804,
+                806,
+                807,
+                812,
+                819
+              ],
+              "neither": [
+                800,
+                801,
+                809,
+                810,
+                813,
+                814,
+                815,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [
+                808,
+                809,
+                816
+              ],
+              "lost": [
+                814,
+                817,
+                818
+              ],
+              "kept": [
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                810,
+                811,
+                812,
+                815,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "ever": {
+              "gained": [
+                809,
+                816
+              ],
+              "lost": [
+                814,
+                817,
+                818
+              ],
+              "kept": [
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                810,
+                811,
+                812,
+                815,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "back": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "first150": {
+              "gained": [],
+              "lost": [],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "placed150": {
+              "gained": [],
+              "lost": [
+                814
+              ],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                802,
+                814,
+                816
+              ],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                815,
+                817,
+                818,
+                819
+              ]
+            },
+            "ever": {
+              "gained": [],
+              "lost": [
+                800,
+                802,
+                804,
+                805,
+                807,
+                808,
+                812,
+                814,
+                816,
+                819
+              ],
+              "kept": [],
+              "neither": [
+                801,
+                803,
+                806,
+                809,
+                810,
+                811,
+                813,
+                815,
+                817,
+                818
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          }
+        },
+        "joint": {
+          "first": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "first150": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "placed150": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "terminal": {
+            "gained": [],
+            "lost": [
+              802,
+              814
+            ],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "ever": {
+            "gained": [],
+            "lost": [
+              802,
+              804,
+              805,
+              807,
+              808,
+              812,
+              814,
+              819
+            ],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              803,
+              806,
+              809,
+              810,
+              811,
+              813,
+              815,
+              816,
+              817,
+              818
+            ]
+          },
+          "grasp": {
+            "gained": [],
+            "lost": [
+              803
+            ],
+            "kept": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "neither": []
+          }
+        }
+      },
+      "paired_old": {
+        "per_goal": {
+          "left": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [],
+              "lost": [
+                807,
+                809,
+                813,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                808,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                802,
+                807,
+                810,
+                811,
+                813,
+                814,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                803,
+                804,
+                805,
+                806,
+                808,
+                812,
+                815,
+                817,
+                819
+              ],
+              "neither": [
+                809,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "front": {
+            "first": {
+              "gained": [
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                810,
+                815
+              ],
+              "kept": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                811,
+                812,
+                813,
+                814,
+                818,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "first150": {
+              "gained": [
+                809,
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                815,
+                818
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                811,
+                813,
+                814,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "placed150": {
+              "gained": [
+                805,
+                819
+              ],
+              "lost": [
+                800,
+                802,
+                803,
+                804,
+                806,
+                807,
+                812
+              ],
+              "kept": [
+                808,
+                811,
+                813
+              ],
+              "neither": [
+                801,
+                809,
+                810,
+                814,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                814
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                811,
+                813,
+                819
+              ],
+              "neither": [
+                809,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                806,
+                810,
+                814
+              ],
+              "kept": [
+                800,
+                802,
+                804,
+                805,
+                807,
+                808,
+                811,
+                812,
+                813,
+                819
+              ],
+              "neither": [
+                809,
+                815,
+                817,
+                818
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [
+                803
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "right": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [
+                818
+              ],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [
+                803,
+                805,
+                808,
+                816
+              ],
+              "lost": [
+                811
+              ],
+              "kept": [
+                802,
+                804,
+                806,
+                807,
+                812,
+                819
+              ],
+              "neither": [
+                800,
+                801,
+                809,
+                810,
+                813,
+                814,
+                815,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [
+                808,
+                809,
+                816
+              ],
+              "lost": [
+                814,
+                817,
+                818
+              ],
+              "kept": [
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                810,
+                811,
+                812,
+                815,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "ever": {
+              "gained": [
+                809,
+                816
+              ],
+              "lost": [
+                814,
+                817,
+                818
+              ],
+              "kept": [
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                810,
+                811,
+                812,
+                815,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          }
+        },
+        "joint": {
+          "first": {
+            "gained": [
+              816
+            ],
+            "lost": [
+              801,
+              803,
+              810,
+              815
+            ],
+            "kept": [
+              800,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              811,
+              812,
+              813,
+              814,
+              818,
+              819
+            ],
+            "neither": [
+              817
+            ]
+          },
+          "first150": {
+            "gained": [
+              809,
+              816
+            ],
+            "lost": [
+              801,
+              803,
+              804,
+              806,
+              810,
+              812,
+              815
+            ],
+            "kept": [
+              800,
+              802,
+              805,
+              807,
+              808,
+              811,
+              813,
+              814,
+              819
+            ],
+            "neither": [
+              817,
+              818
+            ]
+          },
+          "placed150": {
+            "gained": [
+              805,
+              808,
+              819
+            ],
+            "lost": [
+              802,
+              804,
+              806,
+              807,
+              811,
+              812
+            ],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              803,
+              809,
+              810,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818
+            ]
+          },
+          "terminal": {
+            "gained": [
+              808
+            ],
+            "lost": [
+              801,
+              802,
+              803,
+              804,
+              806,
+              807,
+              810,
+              811,
+              812,
+              814
+            ],
+            "kept": [
+              805,
+              819
+            ],
+            "neither": [
+              800,
+              809,
+              813,
+              815,
+              816,
+              817,
+              818
+            ]
+          },
+          "ever": {
+            "gained": [
+              816
+            ],
+            "lost": [
+              801,
+              803,
+              806,
+              810,
+              814
+            ],
+            "kept": [
+              802,
+              804,
+              805,
+              807,
+              808,
+              811,
+              812,
+              819
+            ],
+            "neither": [
+              800,
+              809,
+              813,
+              815,
+              817,
+              818
+            ]
+          },
+          "grasp": {
+            "gained": [],
+            "lost": [
+              803
+            ],
+            "kept": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "neither": []
+          }
+        }
+      }
+    },
+    "whole400": {
+      "parallel": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "target": "left",
+            "first": 20,
+            "first150": 20,
+            "placed150": 20,
+            "terminal": 17,
+            "ever": 20,
+            "grasp": 20,
+            "first_distribution": {
+              "left": 20
+            },
+            "first_correct_final_failed": 3,
+            "placed150_final_failed": 3,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 20,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 1.0
+              },
+              {
+                "init": 814,
+                "fraction": 1.0
+              },
+              {
+                "init": 815,
+                "fraction": 1.0
+              },
+              {
+                "init": 816,
+                "fraction": 1.0
+              },
+              {
+                "init": 817,
+                "fraction": 1.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "front": {
+            "n": 20,
+            "target": "front",
+            "first": 19,
+            "first150": 17,
+            "placed150": 10,
+            "terminal": 13,
+            "ever": 15,
+            "grasp": 20,
+            "first_distribution": {
+              "front": 19,
+              "none": 1
+            },
+            "first_correct_final_failed": 6,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 11,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 1.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 1.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "right": {
+            "n": 20,
+            "target": "right",
+            "first": 20,
+            "first150": 19,
+            "placed150": 7,
+            "terminal": 13,
+            "ever": 13,
+            "grasp": 20,
+            "first_distribution": {
+              "right": 20
+            },
+            "first_correct_final_failed": 7,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 7,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 0.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 1.0
+              },
+              {
+                "init": 815,
+                "fraction": 1.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 1.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "back": {
+            "n": 20,
+            "target": "back",
+            "first": 0,
+            "first150": 0,
+            "placed150": 1,
+            "terminal": 0,
+            "ever": 1,
+            "grasp": 20,
+            "first_distribution": {
+              "front": 20
+            },
+            "first_correct_final_failed": 0,
+            "placed150_final_failed": 1,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 1,
+            "ever150": 1,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 0.0
+              },
+              {
+                "init": 803,
+                "fraction": 0.0
+              },
+              {
+                "init": 804,
+                "fraction": 0.0
+              },
+              {
+                "init": 805,
+                "fraction": 0.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 0.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 0.0
+              },
+              {
+                "init": 812,
+                "fraction": 0.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.54
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 0.0
+              }
+            ]
+          }
+        },
+        "joint": {
+          "n": 20,
+          "first": 0,
+          "first150": 0,
+          "placed150": 0,
+          "terminal": 0,
+          "ever": 1,
+          "grasp": 20,
+          "ids": {
+            "first": [],
+            "first150": [],
+            "placed150": [],
+            "terminal": [],
+            "ever": [
+              814
+            ],
+            "grasp": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_joint": {
+          "n": 20,
+          "first": 19,
+          "first150": 16,
+          "placed150": 6,
+          "terminal": 8,
+          "ever": 10,
+          "grasp": 20,
+          "ids": {
+            "first": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              818,
+              819
+            ],
+            "first150": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              819
+            ],
+            "placed150": [
+              802,
+              804,
+              806,
+              807,
+              811,
+              812
+            ],
+            "terminal": [
+              802,
+              803,
+              804,
+              805,
+              807,
+              811,
+              812,
+              819
+            ],
+            "ever": [
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              811,
+              812,
+              814,
+              819
+            ],
+            "grasp": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_first_and_Back_final": {
+          "n": 20,
+          "ids": [],
+          "count": 0
+        }
+      },
+      "whole": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "target": "left",
+            "first": 20,
+            "first150": 20,
+            "placed150": 16,
+            "terminal": 9,
+            "ever": 20,
+            "grasp": 20,
+            "first_distribution": {
+              "left": 20
+            },
+            "first_correct_final_failed": 11,
+            "placed150_final_failed": 7,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 20,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 1.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 0.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 0.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 1.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "front": {
+            "n": 20,
+            "target": "front",
+            "first": 11,
+            "first150": 11,
+            "placed150": 5,
+            "terminal": 5,
+            "ever": 8,
+            "grasp": 19,
+            "first_distribution": {
+              "front": 11,
+              "none": 9
+            },
+            "first_correct_final_failed": 6,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 8,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 0.0
+              },
+              {
+                "init": 803,
+                "fraction": 0.0
+              },
+              {
+                "init": 804,
+                "fraction": 0.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 0.0
+              },
+              {
+                "init": 813,
+                "fraction": 1.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "right": {
+            "n": 20,
+            "target": "right",
+            "first": 20,
+            "first150": 20,
+            "placed150": 10,
+            "terminal": 16,
+            "ever": 17,
+            "grasp": 20,
+            "first_distribution": {
+              "right": 20
+            },
+            "first_correct_final_failed": 4,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 10,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 1.0
+              },
+              {
+                "init": 802,
+                "fraction": 1.0
+              },
+              {
+                "init": 803,
+                "fraction": 1.0
+              },
+              {
+                "init": 804,
+                "fraction": 1.0
+              },
+              {
+                "init": 805,
+                "fraction": 1.0
+              },
+              {
+                "init": 806,
+                "fraction": 1.0
+              },
+              {
+                "init": 807,
+                "fraction": 1.0
+              },
+              {
+                "init": 808,
+                "fraction": 1.0
+              },
+              {
+                "init": 809,
+                "fraction": 1.0
+              },
+              {
+                "init": 810,
+                "fraction": 1.0
+              },
+              {
+                "init": 811,
+                "fraction": 1.0
+              },
+              {
+                "init": 812,
+                "fraction": 1.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 1.0
+              },
+              {
+                "init": 817,
+                "fraction": 1.0
+              },
+              {
+                "init": 818,
+                "fraction": 1.0
+              },
+              {
+                "init": 819,
+                "fraction": 1.0
+              }
+            ]
+          },
+          "back": {
+            "n": 20,
+            "target": "back",
+            "first": 0,
+            "first150": 0,
+            "placed150": 0,
+            "terminal": 0,
+            "ever": 0,
+            "grasp": 20,
+            "first_distribution": {
+              "front": 19,
+              "none": 1
+            },
+            "first_correct_final_failed": 0,
+            "placed150_final_failed": 0,
+            "wrong_Back_ever": 0,
+            "wrong_Back_terminal": 0,
+            "Front_then_Back": 0,
+            "ever150": 0,
+            "final50_fraction": [
+              {
+                "init": 800,
+                "fraction": 0.0
+              },
+              {
+                "init": 801,
+                "fraction": 0.0
+              },
+              {
+                "init": 802,
+                "fraction": 0.0
+              },
+              {
+                "init": 803,
+                "fraction": 0.0
+              },
+              {
+                "init": 804,
+                "fraction": 0.0
+              },
+              {
+                "init": 805,
+                "fraction": 0.0
+              },
+              {
+                "init": 806,
+                "fraction": 0.0
+              },
+              {
+                "init": 807,
+                "fraction": 0.0
+              },
+              {
+                "init": 808,
+                "fraction": 0.0
+              },
+              {
+                "init": 809,
+                "fraction": 0.0
+              },
+              {
+                "init": 810,
+                "fraction": 0.0
+              },
+              {
+                "init": 811,
+                "fraction": 0.0
+              },
+              {
+                "init": 812,
+                "fraction": 0.0
+              },
+              {
+                "init": 813,
+                "fraction": 0.0
+              },
+              {
+                "init": 814,
+                "fraction": 0.0
+              },
+              {
+                "init": 815,
+                "fraction": 0.0
+              },
+              {
+                "init": 816,
+                "fraction": 0.0
+              },
+              {
+                "init": 817,
+                "fraction": 0.0
+              },
+              {
+                "init": 818,
+                "fraction": 0.0
+              },
+              {
+                "init": 819,
+                "fraction": 0.0
+              }
+            ]
+          }
+        },
+        "joint": {
+          "n": 20,
+          "first": 0,
+          "first150": 0,
+          "placed150": 0,
+          "terminal": 0,
+          "ever": 0,
+          "grasp": 19,
+          "ids": {
+            "first": [],
+            "first150": [],
+            "placed150": [],
+            "terminal": [],
+            "ever": [],
+            "grasp": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_joint": {
+          "n": 20,
+          "first": 11,
+          "first150": 11,
+          "placed150": 3,
+          "terminal": 3,
+          "ever": 6,
+          "grasp": 19,
+          "ids": {
+            "first": [
+              800,
+              802,
+              805,
+              807,
+              808,
+              809,
+              811,
+              813,
+              814,
+              816,
+              819
+            ],
+            "first150": [
+              800,
+              802,
+              805,
+              807,
+              808,
+              809,
+              811,
+              813,
+              814,
+              816,
+              819
+            ],
+            "placed150": [
+              805,
+              808,
+              819
+            ],
+            "terminal": [
+              805,
+              808,
+              819
+            ],
+            "ever": [
+              805,
+              807,
+              808,
+              811,
+              816,
+              819
+            ],
+            "grasp": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          }
+        },
+        "old_first_and_Back_final": {
+          "n": 20,
+          "ids": [],
+          "count": 0
+        }
+      },
+      "paired": {
+        "per_goal": {
+          "left": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [],
+              "lost": [
+                807,
+                809,
+                813,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                808,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                802,
+                807,
+                810,
+                811,
+                813,
+                814,
+                815,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                803,
+                804,
+                805,
+                808,
+                812,
+                817,
+                819
+              ],
+              "neither": [
+                806,
+                809,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "front": {
+            "first": {
+              "gained": [],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                815,
+                818
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                809,
+                811,
+                813,
+                814,
+                816,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "first150": {
+              "gained": [
+                809,
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                815,
+                818
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                811,
+                813,
+                814,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "placed150": {
+              "gained": [
+                805,
+                819
+              ],
+              "lost": [
+                800,
+                802,
+                803,
+                804,
+                806,
+                807,
+                812
+              ],
+              "kept": [
+                808,
+                811,
+                813
+              ],
+              "neither": [
+                801,
+                809,
+                810,
+                814,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                800,
+                802,
+                803,
+                804,
+                806,
+                807,
+                809,
+                812
+              ],
+              "kept": [
+                805,
+                808,
+                811,
+                813,
+                819
+              ],
+              "neither": [
+                801,
+                810,
+                814,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [
+                816
+              ],
+              "lost": [
+                801,
+                802,
+                803,
+                804,
+                806,
+                809,
+                812,
+                814
+              ],
+              "kept": [
+                800,
+                805,
+                807,
+                808,
+                811,
+                813,
+                819
+              ],
+              "neither": [
+                810,
+                815,
+                817,
+                818
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [
+                803
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "right": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [
+                818
+              ],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [
+                803,
+                805,
+                808,
+                816
+              ],
+              "lost": [
+                811
+              ],
+              "kept": [
+                802,
+                804,
+                806,
+                807,
+                812,
+                819
+              ],
+              "neither": [
+                800,
+                801,
+                809,
+                810,
+                813,
+                814,
+                815,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [
+                801,
+                808,
+                809,
+                816,
+                817
+              ],
+              "lost": [
+                814,
+                815
+              ],
+              "kept": [
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                810,
+                811,
+                812,
+                818,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "ever": {
+              "gained": [
+                801,
+                808,
+                809,
+                816,
+                817
+              ],
+              "lost": [
+                814
+              ],
+              "kept": [
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                810,
+                811,
+                812,
+                815,
+                818,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "back": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "first150": {
+              "gained": [],
+              "lost": [],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "placed150": {
+              "gained": [],
+              "lost": [
+                814
+              ],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "ever": {
+              "gained": [],
+              "lost": [
+                814
+              ],
+              "kept": [],
+              "neither": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                815,
+                816,
+                817,
+                818,
+                819
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          }
+        },
+        "joint": {
+          "first": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "first150": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "placed150": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "terminal": {
+            "gained": [],
+            "lost": [],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "ever": {
+            "gained": [],
+            "lost": [
+              814
+            ],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              802,
+              803,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              815,
+              816,
+              817,
+              818,
+              819
+            ]
+          },
+          "grasp": {
+            "gained": [],
+            "lost": [
+              803
+            ],
+            "kept": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "neither": []
+          }
+        }
+      },
+      "paired_old": {
+        "per_goal": {
+          "left": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [],
+              "lost": [
+                807,
+                809,
+                813,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                808,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                802,
+                807,
+                810,
+                811,
+                813,
+                814,
+                815,
+                816
+              ],
+              "kept": [
+                800,
+                801,
+                803,
+                804,
+                805,
+                808,
+                812,
+                817,
+                819
+              ],
+              "neither": [
+                806,
+                809,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "front": {
+            "first": {
+              "gained": [],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                815,
+                818
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                809,
+                811,
+                813,
+                814,
+                816,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "first150": {
+              "gained": [
+                809,
+                816
+              ],
+              "lost": [
+                801,
+                803,
+                804,
+                806,
+                810,
+                812,
+                815,
+                818
+              ],
+              "kept": [
+                800,
+                802,
+                805,
+                807,
+                808,
+                811,
+                813,
+                814,
+                819
+              ],
+              "neither": [
+                817
+              ]
+            },
+            "placed150": {
+              "gained": [
+                805,
+                819
+              ],
+              "lost": [
+                800,
+                802,
+                803,
+                804,
+                806,
+                807,
+                812
+              ],
+              "kept": [
+                808,
+                811,
+                813
+              ],
+              "neither": [
+                801,
+                809,
+                810,
+                814,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [],
+              "lost": [
+                800,
+                802,
+                803,
+                804,
+                806,
+                807,
+                809,
+                812
+              ],
+              "kept": [
+                805,
+                808,
+                811,
+                813,
+                819
+              ],
+              "neither": [
+                801,
+                810,
+                814,
+                815,
+                816,
+                817,
+                818
+              ]
+            },
+            "ever": {
+              "gained": [
+                816
+              ],
+              "lost": [
+                801,
+                802,
+                803,
+                804,
+                806,
+                809,
+                812,
+                814
+              ],
+              "kept": [
+                800,
+                805,
+                807,
+                808,
+                811,
+                813,
+                819
+              ],
+              "neither": [
+                810,
+                815,
+                817,
+                818
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [
+                803
+              ],
+              "kept": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          },
+          "right": {
+            "first": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            },
+            "first150": {
+              "gained": [
+                818
+              ],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                819
+              ],
+              "neither": []
+            },
+            "placed150": {
+              "gained": [
+                803,
+                805,
+                808,
+                816
+              ],
+              "lost": [
+                811
+              ],
+              "kept": [
+                802,
+                804,
+                806,
+                807,
+                812,
+                819
+              ],
+              "neither": [
+                800,
+                801,
+                809,
+                810,
+                813,
+                814,
+                815,
+                817,
+                818
+              ]
+            },
+            "terminal": {
+              "gained": [
+                801,
+                808,
+                809,
+                816,
+                817
+              ],
+              "lost": [
+                814,
+                815
+              ],
+              "kept": [
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                810,
+                811,
+                812,
+                818,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "ever": {
+              "gained": [
+                801,
+                808,
+                809,
+                816,
+                817
+              ],
+              "lost": [
+                814
+              ],
+              "kept": [
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                810,
+                811,
+                812,
+                815,
+                818,
+                819
+              ],
+              "neither": [
+                800,
+                813
+              ]
+            },
+            "grasp": {
+              "gained": [],
+              "lost": [],
+              "kept": [
+                800,
+                801,
+                802,
+                803,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "neither": []
+            }
+          }
+        },
+        "joint": {
+          "first": {
+            "gained": [],
+            "lost": [
+              801,
+              803,
+              804,
+              806,
+              810,
+              812,
+              815,
+              818
+            ],
+            "kept": [
+              800,
+              802,
+              805,
+              807,
+              808,
+              809,
+              811,
+              813,
+              814,
+              816,
+              819
+            ],
+            "neither": [
+              817
+            ]
+          },
+          "first150": {
+            "gained": [
+              809,
+              816
+            ],
+            "lost": [
+              801,
+              803,
+              804,
+              806,
+              810,
+              812,
+              815
+            ],
+            "kept": [
+              800,
+              802,
+              805,
+              807,
+              808,
+              811,
+              813,
+              814,
+              819
+            ],
+            "neither": [
+              817,
+              818
+            ]
+          },
+          "placed150": {
+            "gained": [
+              805,
+              808,
+              819
+            ],
+            "lost": [
+              802,
+              804,
+              806,
+              807,
+              811,
+              812
+            ],
+            "kept": [],
+            "neither": [
+              800,
+              801,
+              803,
+              809,
+              810,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818
+            ]
+          },
+          "terminal": {
+            "gained": [
+              808
+            ],
+            "lost": [
+              802,
+              803,
+              804,
+              807,
+              811,
+              812
+            ],
+            "kept": [
+              805,
+              819
+            ],
+            "neither": [
+              800,
+              801,
+              806,
+              809,
+              810,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818
+            ]
+          },
+          "ever": {
+            "gained": [
+              808,
+              816
+            ],
+            "lost": [
+              802,
+              803,
+              804,
+              806,
+              812,
+              814
+            ],
+            "kept": [
+              805,
+              807,
+              811,
+              819
+            ],
+            "neither": [
+              800,
+              801,
+              809,
+              810,
+              813,
+              815,
+              817,
+              818
+            ]
+          },
+          "grasp": {
+            "gained": [],
+            "lost": [
+              803
+            ],
+            "kept": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "neither": []
+          }
+        }
+      }
+    }
+  },
+  "context": {
+    "native": {
+      "per_goal": {
+        "left": {
+          "n": 20,
+          "target": "left",
+          "first": 20,
+          "first150": 20,
+          "placed150": 14,
+          "terminal": 12,
+          "ever": 17,
+          "grasp": 20,
+          "first_distribution": {
+            "left": 20
+          },
+          "first_correct_final_failed": 8,
+          "placed150_final_failed": 3,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 0,
+          "ever150": 15,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 0.0
+            },
+            {
+              "init": 801,
+              "fraction": 1.0
+            },
+            {
+              "init": 802,
+              "fraction": 1.0
+            },
+            {
+              "init": 803,
+              "fraction": 1.0
+            },
+            {
+              "init": 804,
+              "fraction": 0.0
+            },
+            {
+              "init": 805,
+              "fraction": 1.0
+            },
+            {
+              "init": 806,
+              "fraction": 1.0
+            },
+            {
+              "init": 807,
+              "fraction": 0.0
+            },
+            {
+              "init": 808,
+              "fraction": 1.0
+            },
+            {
+              "init": 809,
+              "fraction": 1.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 1.0
+            },
+            {
+              "init": 812,
+              "fraction": 1.0
+            },
+            {
+              "init": 813,
+              "fraction": 1.0
+            },
+            {
+              "init": 814,
+              "fraction": 0.0
+            },
+            {
+              "init": 815,
+              "fraction": 0.0
+            },
+            {
+              "init": 816,
+              "fraction": 0.0
+            },
+            {
+              "init": 817,
+              "fraction": 1.0
+            },
+            {
+              "init": 818,
+              "fraction": 1.0
+            },
+            {
+              "init": 819,
+              "fraction": 0.0
+            }
+          ]
+        },
+        "front": {
+          "n": 20,
+          "target": "front",
+          "first": 20,
+          "first150": 19,
+          "placed150": 0,
+          "terminal": 0,
+          "ever": 0,
+          "grasp": 20,
+          "first_distribution": {
+            "front": 20
+          },
+          "first_correct_final_failed": 20,
+          "placed150_final_failed": 0,
+          "wrong_Back_ever": 17,
+          "wrong_Back_terminal": 3,
+          "Front_then_Back": 17,
+          "ever150": 0,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 0.0
+            },
+            {
+              "init": 801,
+              "fraction": 0.0
+            },
+            {
+              "init": 802,
+              "fraction": 0.0
+            },
+            {
+              "init": 803,
+              "fraction": 0.0
+            },
+            {
+              "init": 804,
+              "fraction": 0.0
+            },
+            {
+              "init": 805,
+              "fraction": 0.0
+            },
+            {
+              "init": 806,
+              "fraction": 0.0
+            },
+            {
+              "init": 807,
+              "fraction": 0.0
+            },
+            {
+              "init": 808,
+              "fraction": 0.0
+            },
+            {
+              "init": 809,
+              "fraction": 0.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 0.0
+            },
+            {
+              "init": 812,
+              "fraction": 0.0
+            },
+            {
+              "init": 813,
+              "fraction": 0.0
+            },
+            {
+              "init": 814,
+              "fraction": 0.0
+            },
+            {
+              "init": 815,
+              "fraction": 0.0
+            },
+            {
+              "init": 816,
+              "fraction": 0.0
+            },
+            {
+              "init": 817,
+              "fraction": 0.0
+            },
+            {
+              "init": 818,
+              "fraction": 0.0
+            },
+            {
+              "init": 819,
+              "fraction": 0.0
+            }
+          ]
+        },
+        "right": {
+          "n": 20,
+          "target": "right",
+          "first": 20,
+          "first150": 20,
+          "placed150": 4,
+          "terminal": 8,
+          "ever": 8,
+          "grasp": 20,
+          "first_distribution": {
+            "right": 20
+          },
+          "first_correct_final_failed": 12,
+          "placed150_final_failed": 0,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 0,
+          "ever150": 4,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 0.0
+            },
+            {
+              "init": 801,
+              "fraction": 0.0
+            },
+            {
+              "init": 802,
+              "fraction": 0.0
+            },
+            {
+              "init": 803,
+              "fraction": 0.0
+            },
+            {
+              "init": 804,
+              "fraction": 0.0
+            },
+            {
+              "init": 805,
+              "fraction": 1.0
+            },
+            {
+              "init": 806,
+              "fraction": 0.0
+            },
+            {
+              "init": 807,
+              "fraction": 1.0
+            },
+            {
+              "init": 808,
+              "fraction": 0.0
+            },
+            {
+              "init": 809,
+              "fraction": 1.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 1.0
+            },
+            {
+              "init": 812,
+              "fraction": 1.0
+            },
+            {
+              "init": 813,
+              "fraction": 0.0
+            },
+            {
+              "init": 814,
+              "fraction": 1.0
+            },
+            {
+              "init": 815,
+              "fraction": 1.0
+            },
+            {
+              "init": 816,
+              "fraction": 1.0
+            },
+            {
+              "init": 817,
+              "fraction": 0.0
+            },
+            {
+              "init": 818,
+              "fraction": 0.0
+            },
+            {
+              "init": 819,
+              "fraction": 0.0
+            }
+          ]
+        },
+        "back": {
+          "n": 20,
+          "target": "back",
+          "first": 0,
+          "first150": 0,
+          "placed150": 9,
+          "terminal": 4,
+          "ever": 19,
+          "grasp": 20,
+          "first_distribution": {
+            "front": 20
+          },
+          "first_correct_final_failed": 0,
+          "placed150_final_failed": 7,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 19,
+          "ever150": 17,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 0.0
+            },
+            {
+              "init": 801,
+              "fraction": 0.0
+            },
+            {
+              "init": 802,
+              "fraction": 0.0
+            },
+            {
+              "init": 803,
+              "fraction": 0.0
+            },
+            {
+              "init": 804,
+              "fraction": 0.0
+            },
+            {
+              "init": 805,
+              "fraction": 0.0
+            },
+            {
+              "init": 806,
+              "fraction": 0.0
+            },
+            {
+              "init": 807,
+              "fraction": 0.0
+            },
+            {
+              "init": 808,
+              "fraction": 0.0
+            },
+            {
+              "init": 809,
+              "fraction": 1.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 0.0
+            },
+            {
+              "init": 812,
+              "fraction": 1.0
+            },
+            {
+              "init": 813,
+              "fraction": 1.0
+            },
+            {
+              "init": 814,
+              "fraction": 0.0
+            },
+            {
+              "init": 815,
+              "fraction": 0.0
+            },
+            {
+              "init": 816,
+              "fraction": 1.0
+            },
+            {
+              "init": 817,
+              "fraction": 0.0
+            },
+            {
+              "init": 818,
+              "fraction": 0.0
+            },
+            {
+              "init": 819,
+              "fraction": 0.0
+            }
+          ]
+        }
+      },
+      "joint": {
+        "n": 20,
+        "first": 0,
+        "first150": 0,
+        "placed150": 0,
+        "terminal": 0,
+        "ever": 0,
+        "grasp": 20,
+        "ids": {
+          "first": [],
+          "first150": [],
+          "placed150": [],
+          "terminal": [],
+          "ever": [],
+          "grasp": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ]
+        }
+      },
+      "old_joint": {
+        "n": 20,
+        "first": 20,
+        "first150": 19,
+        "placed150": 0,
+        "terminal": 0,
+        "ever": 0,
+        "grasp": 20,
+        "ids": {
+          "first": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ],
+          "first150": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            819
+          ],
+          "placed150": [],
+          "terminal": [],
+          "ever": [],
+          "grasp": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ]
+        }
+      },
+      "old_first_and_Back_final": {
+        "n": 20,
+        "ids": [
+          809,
+          812,
+          813,
+          816
+        ],
+        "count": 4
+      }
+    },
+    "parent": {
+      "per_goal": {
+        "left": {
+          "n": 20,
+          "target": "left",
+          "first": 20,
+          "first150": 20,
+          "placed150": 19,
+          "terminal": 18,
+          "ever": 20,
+          "grasp": 20,
+          "first_distribution": {
+            "left": 20
+          },
+          "first_correct_final_failed": 2,
+          "placed150_final_failed": 1,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 0,
+          "ever150": 20,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 1.0
+            },
+            {
+              "init": 801,
+              "fraction": 1.0
+            },
+            {
+              "init": 802,
+              "fraction": 1.0
+            },
+            {
+              "init": 803,
+              "fraction": 1.0
+            },
+            {
+              "init": 804,
+              "fraction": 1.0
+            },
+            {
+              "init": 805,
+              "fraction": 1.0
+            },
+            {
+              "init": 806,
+              "fraction": 0.0
+            },
+            {
+              "init": 807,
+              "fraction": 1.0
+            },
+            {
+              "init": 808,
+              "fraction": 1.0
+            },
+            {
+              "init": 809,
+              "fraction": 1.0
+            },
+            {
+              "init": 810,
+              "fraction": 1.0
+            },
+            {
+              "init": 811,
+              "fraction": 1.0
+            },
+            {
+              "init": 812,
+              "fraction": 1.0
+            },
+            {
+              "init": 813,
+              "fraction": 1.0
+            },
+            {
+              "init": 814,
+              "fraction": 1.0
+            },
+            {
+              "init": 815,
+              "fraction": 1.0
+            },
+            {
+              "init": 816,
+              "fraction": 1.0
+            },
+            {
+              "init": 817,
+              "fraction": 1.0
+            },
+            {
+              "init": 818,
+              "fraction": 0.0
+            },
+            {
+              "init": 819,
+              "fraction": 1.0
+            }
+          ]
+        },
+        "front": {
+          "n": 20,
+          "target": "front",
+          "first": 19,
+          "first150": 18,
+          "placed150": 10,
+          "terminal": 10,
+          "ever": 15,
+          "grasp": 20,
+          "first_distribution": {
+            "front": 19,
+            "none": 1
+          },
+          "first_correct_final_failed": 9,
+          "placed150_final_failed": 1,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 0,
+          "ever150": 11,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 1.0
+            },
+            {
+              "init": 801,
+              "fraction": 0.0
+            },
+            {
+              "init": 802,
+              "fraction": 1.0
+            },
+            {
+              "init": 803,
+              "fraction": 1.0
+            },
+            {
+              "init": 804,
+              "fraction": 1.0
+            },
+            {
+              "init": 805,
+              "fraction": 0.0
+            },
+            {
+              "init": 806,
+              "fraction": 1.0
+            },
+            {
+              "init": 807,
+              "fraction": 1.0
+            },
+            {
+              "init": 808,
+              "fraction": 1.0
+            },
+            {
+              "init": 809,
+              "fraction": 0.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 1.0
+            },
+            {
+              "init": 812,
+              "fraction": 0.0
+            },
+            {
+              "init": 813,
+              "fraction": 1.0
+            },
+            {
+              "init": 814,
+              "fraction": 0.0
+            },
+            {
+              "init": 815,
+              "fraction": 0.0
+            },
+            {
+              "init": 816,
+              "fraction": 0.0
+            },
+            {
+              "init": 817,
+              "fraction": 0.0
+            },
+            {
+              "init": 818,
+              "fraction": 0.0
+            },
+            {
+              "init": 819,
+              "fraction": 1.0
+            }
+          ]
+        },
+        "right": {
+          "n": 20,
+          "target": "right",
+          "first": 20,
+          "first150": 20,
+          "placed150": 10,
+          "terminal": 13,
+          "ever": 13,
+          "grasp": 20,
+          "first_distribution": {
+            "right": 20
+          },
+          "first_correct_final_failed": 7,
+          "placed150_final_failed": 0,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 0,
+          "ever150": 10,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 1.0
+            },
+            {
+              "init": 801,
+              "fraction": 1.0
+            },
+            {
+              "init": 802,
+              "fraction": 1.0
+            },
+            {
+              "init": 803,
+              "fraction": 1.0
+            },
+            {
+              "init": 804,
+              "fraction": 0.0
+            },
+            {
+              "init": 805,
+              "fraction": 1.0
+            },
+            {
+              "init": 806,
+              "fraction": 1.0
+            },
+            {
+              "init": 807,
+              "fraction": 1.0
+            },
+            {
+              "init": 808,
+              "fraction": 1.0
+            },
+            {
+              "init": 809,
+              "fraction": 0.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 0.0
+            },
+            {
+              "init": 812,
+              "fraction": 1.0
+            },
+            {
+              "init": 813,
+              "fraction": 1.0
+            },
+            {
+              "init": 814,
+              "fraction": 1.0
+            },
+            {
+              "init": 815,
+              "fraction": 0.0
+            },
+            {
+              "init": 816,
+              "fraction": 0.0
+            },
+            {
+              "init": 817,
+              "fraction": 1.0
+            },
+            {
+              "init": 818,
+              "fraction": 1.0
+            },
+            {
+              "init": 819,
+              "fraction": 0.0
+            }
+          ]
+        },
+        "back": {
+          "n": 20,
+          "target": "back",
+          "first": 0,
+          "first150": 0,
+          "placed150": 1,
+          "terminal": 0,
+          "ever": 2,
+          "grasp": 20,
+          "first_distribution": {
+            "front": 19,
+            "none": 1
+          },
+          "first_correct_final_failed": 0,
+          "placed150_final_failed": 1,
+          "wrong_Back_ever": 0,
+          "wrong_Back_terminal": 0,
+          "Front_then_Back": 1,
+          "ever150": 2,
+          "final50_fraction": [
+            {
+              "init": 800,
+              "fraction": 0.0
+            },
+            {
+              "init": 801,
+              "fraction": 0.0
+            },
+            {
+              "init": 802,
+              "fraction": 0.0
+            },
+            {
+              "init": 803,
+              "fraction": 0.0
+            },
+            {
+              "init": 804,
+              "fraction": 0.0
+            },
+            {
+              "init": 805,
+              "fraction": 0.0
+            },
+            {
+              "init": 806,
+              "fraction": 0.0
+            },
+            {
+              "init": 807,
+              "fraction": 0.0
+            },
+            {
+              "init": 808,
+              "fraction": 0.0
+            },
+            {
+              "init": 809,
+              "fraction": 0.0
+            },
+            {
+              "init": 810,
+              "fraction": 0.0
+            },
+            {
+              "init": 811,
+              "fraction": 0.0
+            },
+            {
+              "init": 812,
+              "fraction": 0.0
+            },
+            {
+              "init": 813,
+              "fraction": 0.0
+            },
+            {
+              "init": 814,
+              "fraction": 0.0
+            },
+            {
+              "init": 815,
+              "fraction": 0.0
+            },
+            {
+              "init": 816,
+              "fraction": 0.0
+            },
+            {
+              "init": 817,
+              "fraction": 0.0
+            },
+            {
+              "init": 818,
+              "fraction": 0.0
+            },
+            {
+              "init": 819,
+              "fraction": 0.0
+            }
+          ]
+        }
+      },
+      "joint": {
+        "n": 20,
+        "first": 0,
+        "first150": 0,
+        "placed150": 0,
+        "terminal": 0,
+        "ever": 2,
+        "grasp": 20,
+        "ids": {
+          "first": [],
+          "first150": [],
+          "placed150": [],
+          "terminal": [],
+          "ever": [
+            805,
+            813
+          ],
+          "grasp": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ]
+        }
+      },
+      "old_joint": {
+        "n": 20,
+        "first": 19,
+        "first150": 18,
+        "placed150": 7,
+        "terminal": 6,
+        "ever": 11,
+        "grasp": 20,
+        "ids": {
+          "first": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            817,
+            818,
+            819
+          ],
+          "first150": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            817,
+            818,
+            819
+          ],
+          "placed150": [
+            800,
+            801,
+            802,
+            803,
+            807,
+            808,
+            813
+          ],
+          "terminal": [
+            800,
+            802,
+            803,
+            807,
+            808,
+            813
+          ],
+          "ever": [
+            800,
+            801,
+            802,
+            803,
+            805,
+            806,
+            807,
+            808,
+            813,
+            814,
+            817
+          ],
+          "grasp": [
+            800,
+            801,
+            802,
+            803,
+            804,
+            805,
+            806,
+            807,
+            808,
+            809,
+            810,
+            811,
+            812,
+            813,
+            814,
+            815,
+            816,
+            817,
+            818,
+            819
+          ]
+        }
+      },
+      "old_first_and_Back_final": {
+        "n": 20,
+        "ids": [],
+        "count": 0
+      }
+    }
+  },
+  "bitwise_duration_prefix_pairs": 160,
+  "identical_initial_diagnostics_pairs": 160,
+  "source_sha256": "cec1772aa799e902b4560614424256b0290613b9f880abaa803b90d6369b1fe3",
+  "protocol_sha256": "65ad670aa26ad777210315170eb707a762de2b990fb8d119d5104e136c91a1dd",
+  "whole_gates": 80,
+  "projection_gates": 80,
+  "weights_fingerprints": [
+    "cdc7df3312a068254d47dcfe90be3a6b4295ee98a0afe93897095f9d9b65e986",
+    "b5b32929d7b09702c2d8b363a1e5fa809791fdd715a12f69469e7d71a7535a10"
+  ],
+  "fixed_first_input": {
+    "left": {
+      "scaled_full_over_parent": 1.0077176907335246,
+      "scaled_projection_over_parent": 0.5052574293432301,
+      "scaled_removed_over_parent": 0.8282189166247442,
+      "off_axis_fraction": 0.8697686526496333
+    },
+    "front": {
+      "scaled_full_over_parent": 0.5451944182036234,
+      "scaled_projection_over_parent": 0.2546187580327022,
+      "scaled_removed_over_parent": 0.4713139886335769,
+      "off_axis_fraction": 0.8899014785910917
+    },
+    "right": {
+      "scaled_full_over_parent": 0.708771954388421,
+      "scaled_projection_over_parent": 0.3828131329227256,
+      "scaled_removed_over_parent": 0.6032630026332753,
+      "off_axis_fraction": 0.859509073529774
+    },
+    "back": {
+      "scaled_full_over_parent": 0.4902853645454248,
+      "scaled_projection_over_parent": 0.19860745147080028,
+      "scaled_removed_over_parent": 0.4498479331595739,
+      "off_axis_fraction": 0.9271500208285238
+    }
+  }
+}

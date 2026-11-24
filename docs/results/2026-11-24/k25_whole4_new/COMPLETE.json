@@ -1,0 +1,8 @@
+{
+  "episodes": 400,
+  "shards": 20,
+  "qualification_episodes": 260,
+  "selected_step": 24000,
+  "qualified": false,
+  "failures": []
+}

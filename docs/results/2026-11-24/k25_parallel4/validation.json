@@ -1,0 +1,30 @@
+{
+  "stage1_protocol": {
+    "passed": 21,
+    "failed": 0,
+    "log": "stage1_tests.log"
+  },
+  "server_subspace": {
+    "passed": 5,
+    "failed": 0,
+    "log": "subspace_tests.log"
+  },
+  "trace_audit": {
+    "complete_evaluation_episodes": 480,
+    "unique_starts": 20,
+    "completed_shards": 52,
+    "bitwise_first150_pairs": 240,
+    "original_formula_gates": 64,
+    "four_real_tensor_gates": 80,
+    "development_prefixes": 10,
+    "checks": [
+      "full trace rescoring",
+      "actual action hashes",
+      "initial signatures",
+      "source patch limited to duration",
+      "automatic development gain",
+      "all155-parameter fingerprints unchanged",
+      "checkpoint identities and normalizers unchanged"
+    ]
+  }
+}

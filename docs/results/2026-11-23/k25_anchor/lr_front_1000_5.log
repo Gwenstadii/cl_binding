@@ -1,0 +1,80 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+ANCHOR lr_front_1000 5 policy 0 0.0 native native 805 A ['left'] True 16.07
+ANCHOR lr_front_1000 5 policy 0 0.0 native native 805 B ['right'] True 18.24
+ANCHOR lr_front_1000 5 policy 0 0.0 native native 805 N ['front'] True 18.69
+ANCHOR lr_front_1000 5 policy 0 0.0 native native 813 A ['left'] True 18.99
+ANCHOR lr_front_1000 5 policy 0 0.0 native native 813 B ['right'] True 17.8
+ANCHOR lr_front_1000 5 policy 0 0.0 native native 813 N ['front'] False 17.13
+ANCHOR lr_front_1000 5 policy 30 0.0 native native 805 A ['left'] True 17.66
+ANCHOR lr_front_1000 5 policy 30 0.0 native native 805 B ['right'] True 17.67
+ANCHOR lr_front_1000 5 policy 30 0.0 native native 805 N ['front'] False 17.88
+ANCHOR lr_front_1000 5 policy 30 0.0 native native 813 A ['left'] False 17.51
+ANCHOR lr_front_1000 5 policy 30 0.0 native native 813 B ['right'] True 17.2
+ANCHOR lr_front_1000 5 policy 30 0.0 native native 813 N ['front'] False 17.45
+ANCHOR lr_front_1000 5 v_weights 0 1.0 full_400 native 805 A ['left'] False 17.18
+ANCHOR lr_front_1000 5 v_weights 0 1.0 full_400 native 805 B ['right'] False 18.21
+ANCHOR lr_front_1000 5 v_weights 0 1.0 full_400 native 813 A ['left'] True 17.91
+ANCHOR lr_front_1000 5 v_weights 0 1.0 full_400 native 813 B ['right'] False 19.7
+ANCHOR lr_front_1000 5 v_weights 30 1.0 full_400 native 805 A ['left'] False 17.56
+ANCHOR lr_front_1000 5 v_weights 30 1.0 full_400 native 805 B ['right'] False 17.63
+ANCHOR lr_front_1000 5 v_weights 30 1.0 full_400 native 813 A ['left'] True 19.11
+ANCHOR lr_front_1000 5 v_weights 30 1.0 full_400 native 813 B ['right'] False 19.04
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 forward 805 A ['left'] False 24.71
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 forward 805 B [] False 24.51
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 forward 813 A ['left'] True 25.42
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 forward 813 B [] False 25.35
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 reverse 805 A ['left'] False 25.06
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 reverse 805 B ['front'] False 27.28
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 reverse 813 A ['left'] True 26.43
+ANCHOR lr_front_1000 5 delta 0 1.0 delayed_100 reverse 813 B [] False 26.87
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 forward 805 A ['left'] False 46.8
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 forward 805 B ['right'] False 53.16
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 forward 813 A ['left'] True 52.53
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 forward 813 B [] False 51.12
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 reverse 805 A ['left'] False 49.93
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 reverse 805 B ['front'] False 50.22
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 reverse 813 A ['left'] True 49.31
+ANCHOR lr_front_1000 5 delta 0 1.0 full_400 reverse 813 B [] False 52.47
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 forward 805 A ['left'] True 26.66
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 forward 805 B [] False 26.25
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 forward 813 A ['left'] True 25.2
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 forward 813 B [] False 25.5
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 reverse 805 A ['left'] True 26.13
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 reverse 805 B ['front'] False 25.62
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 reverse 813 A ['left'] True 25.94
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 delayed_100 reverse 813 B ['front'] False 26.49
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 forward 805 A ['left'] True 48.04
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 forward 805 B [] False 49.0
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 forward 813 A ['left'] False 48.85
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 forward 813 B [] False 49.32
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 reverse 805 A ['left'] True 48.78
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 reverse 805 B [] False 54.05
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 reverse 813 A ['left'] True 49.2
+ANCHOR lr_front_1000 5 delta 0 5.294038631688923 full_400 reverse 813 B ['front'] False 49.67
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 forward 805 A ['left'] False 29.06
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 forward 805 B ['right'] False 27.92
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 forward 813 A ['left'] True 25.6
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 forward 813 B [] False 27.73
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 reverse 805 A ['left'] False 26.39
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 reverse 805 B ['front'] False 26.48
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 reverse 813 A ['left'] True 25.71
+ANCHOR lr_front_1000 5 delta 30 1.0 delayed_100 reverse 813 B [] False 25.67
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 forward 805 A ['left'] True 51.13
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 forward 805 B ['right'] True 48.29
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 forward 813 A ['left'] True 49.73
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 forward 813 B [] False 48.97
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 reverse 805 A ['left'] False 46.4
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 reverse 805 B ['front'] False 45.64
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 reverse 813 A ['left'] True 45.05
+ANCHOR lr_front_1000 5 delta 30 1.0 full_400 reverse 813 B [] False 37.25

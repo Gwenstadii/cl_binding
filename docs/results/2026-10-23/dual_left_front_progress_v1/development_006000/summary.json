@@ -1,0 +1,72 @@
+{
+  "initial_states": 20,
+  "episodes": 40,
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "task_success_counts": {
+    "left": {
+      "total": 20,
+      "success_ever": 19,
+      "terminal_correct": 15,
+      "correct_then_destroyed": 4
+    },
+    "front": {
+      "total": 20,
+      "success_ever": 8,
+      "terminal_correct": 8,
+      "correct_then_destroyed": 0
+    }
+  },
+  "terminal_matrix": {
+    "left": {
+      "front": 0,
+      "left": 15,
+      "right": 0,
+      "back": 0,
+      "unfinished": 5,
+      "ambiguous": 0
+    },
+    "front": {
+      "front": 8,
+      "left": 0,
+      "right": 0,
+      "back": 0,
+      "unfinished": 12,
+      "ambiguous": 0
+    }
+  },
+  "joint_success_ever": 8,
+  "joint_terminal_correct": 6,
+  "joint_terminal_correct_indices": [
+    0,
+    2,
+    3,
+    11,
+    14,
+    16
+  ],
+  "required_correct": 16,
+  "passed": false,
+  "paired_reset_and_inference_seed_verified": true,
+  "joint_definition": "Both left and front instructions finish correctly from the same initial state; denominator is initial states, not episodes."
+}

@@ -1,0 +1,244 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "model": "R0",
+      "goal": "left",
+      "record_v_max_abs": 0.0,
+      "self_v_max_abs": 0.0,
+      "record_action_max_abs": 0.0,
+      "self_action_max_abs": 0.0,
+      "repeat_v_rms": 0.0,
+      "native_velocity_rms": 1.2669685185016906,
+      "attention_readout_reconstruction_max_abs": 0.0
+    },
+    {
+      "model": "R0",
+      "goal": "front",
+      "record_v_max_abs": 0.0,
+      "self_v_max_abs": 0.0,
+      "record_action_max_abs": 0.0,
+      "self_action_max_abs": 0.0,
+      "repeat_v_rms": 0.0,
+      "native_velocity_rms": 1.2414113997491751,
+      "attention_readout_reconstruction_max_abs": 0.0
+    },
+    {
+      "model": "R0",
+      "goal": "right",
+      "record_v_max_abs": 0.0,
+      "self_v_max_abs": 0.0,
+      "record_action_max_abs": 0.0,
+      "self_action_max_abs": 0.0,
+      "repeat_v_rms": 0.0,
+      "native_velocity_rms": 1.2602543128244101,
+      "attention_readout_reconstruction_max_abs": 0.0
+    },
+    {
+      "model": "FT4",
+      "goal": "left",
+      "record_v_max_abs": 0.0,
+      "self_v_max_abs": 0.0,
+      "record_action_max_abs": 0.0,
+      "self_action_max_abs": 0.0,
+      "repeat_v_rms": 0.0,
+      "native_velocity_rms": 1.331589594393426,
+      "attention_readout_reconstruction_max_abs": 0.0
+    },
+    {
+      "model": "FT4",
+      "goal": "front",
+      "record_v_max_abs": 0.0,
+      "self_v_max_abs": 0.0,
+      "record_action_max_abs": 0.0,
+      "self_action_max_abs": 0.0,
+      "repeat_v_rms": 0.0,
+      "native_velocity_rms": 1.3239759799118829,
+      "attention_readout_reconstruction_max_abs": 0.0
+    },
+    {
+      "model": "FT4",
+      "goal": "right",
+      "record_v_max_abs": 0.0,
+      "self_v_max_abs": 0.0,
+      "record_action_max_abs": 0.0,
+      "self_action_max_abs": 0.0,
+      "repeat_v_rms": 0.0,
+      "native_velocity_rms": 1.3257652453111537,
+      "attention_readout_reconstruction_max_abs": 0.0
+    }
+  ],
+  "layer_map": {
+    "R0": [
+      {
+        "vlm_layer": 0,
+        "expert_layer": 0,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 1,
+        "expert_layer": 1,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 2,
+        "expert_layer": 2,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 3,
+        "expert_layer": 3,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 4,
+        "expert_layer": 4,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 5,
+        "expert_layer": 5,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 6,
+        "expert_layer": 6,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 7,
+        "expert_layer": 7,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 8,
+        "expert_layer": 8,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 9,
+        "expert_layer": 9,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 10,
+        "expert_layer": 10,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 11,
+        "expert_layer": 11,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 12,
+        "expert_layer": 12,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 13,
+        "expert_layer": 13,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 14,
+        "expert_layer": 14,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 15,
+        "expert_layer": 15,
+        "kind": "CA"
+      }
+    ],
+    "FT4": [
+      {
+        "vlm_layer": 0,
+        "expert_layer": 0,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 1,
+        "expert_layer": 1,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 2,
+        "expert_layer": 2,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 3,
+        "expert_layer": 3,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 4,
+        "expert_layer": 4,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 5,
+        "expert_layer": 5,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 6,
+        "expert_layer": 6,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 7,
+        "expert_layer": 7,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 8,
+        "expert_layer": 8,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 9,
+        "expert_layer": 9,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 10,
+        "expert_layer": 10,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 11,
+        "expert_layer": 11,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 12,
+        "expert_layer": 12,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 13,
+        "expert_layer": 13,
+        "kind": "CA"
+      },
+      {
+        "vlm_layer": 14,
+        "expert_layer": 14,
+        "kind": "SA"
+      },
+      {
+        "vlm_layer": 15,
+        "expert_layer": 15,
+        "kind": "CA"
+      }
+    ]
+  },
+  "identity_tolerance": 1e-05,
+  "cache_isolation": {
+    "object_unique": true,
+    "tensor_storage_unique": true,
+    "deep_copy_per_query": true
+  },
+  "repeat_v_rms_max": 0.0
+}

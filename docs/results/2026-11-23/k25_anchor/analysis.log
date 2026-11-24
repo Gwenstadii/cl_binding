@@ -1,0 +1,50 @@
+{
+  "new_episodes": 1360,
+  "imported_episodes": 320,
+  "late_native_references": 120,
+  "primary_grid_episodes": 1360,
+  "cached_original_episodes": 804,
+  "executed_recovery_grid_episodes": 556,
+  "technical_replay_episodes": 8,
+  "physical_complete_executions": 1368,
+  "recovery_manifest_sha256": "5f1dc53da1ac088498f110f8cb78b5156f625ccef3a2fe93654ff670a6077ee2",
+  "original_interrupted_protocol_sha256": "e1ce377ce08ee2d7f1d4afb164b9c87fff29d2ec21df673dae9f255178c982b6",
+  "completed_lanes": 16,
+  "previous_parent_replays": 40,
+  "imported_first_block_probes": 160,
+  "verified_native_prefixes": 1280,
+  "verified_polarity_pairs": 640,
+  "protocol_sha256": "3e901986e74e1621c6ba7afa4b2c1ef926f317907146b26067e1b1c4c4dae460",
+  "analysis_plan_sha256": "b850ca906663fe16c794b7a1a0b8662cf8e942b59a2519ea21bab8f740bde1fb",
+  "analysis_source_sha256": "1fbf973c55435df6d313418572ee87dee15989153c905009521950716d9ebc6f",
+  "delta_sha256": {
+    "lr_front_1000": {
+      "0": "3145ae798e67dc9588eed1536c630feb6a77a1b367a4d1d6884ec8a6c1438de3",
+      "30": "b1e94c0a140ee8078a2be24165f39602b7acbc425532a0ce6e90ed3df4e8cd27"
+    },
+    "lf_right_1000": {
+      "0": "3e05a304adfb7fe6bcad0e803ee474df58b169726c16e9a780229b7d40869c73",
+      "30": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557"
+    }
+  },
+  "weights_fingerprints": {
+    "lr_front_1000": {
+      "0": "48d3709fababb46aa40340934bcedc0c236f835cbb406823261e495afc478d20",
+      "30": "dbfbfda0322bbbdf5ada0cb0578e3bac960bbbf5b389a23ae78d2d31075ff982",
+      "1000": "192983db2e9099f30d2070f00e9ed59887368ff73cb8b19b37489d10dc8b6ec7"
+    },
+    "lf_right_1000": {
+      "0": "379c7b50494d89eb5758eec200a06e9684e426cc2bb6452d6d25ab6287549bdf",
+      "30": "9e87f18216852d9cfb1d072cc22b298ef9f407ba452cc2953676242bc339e3b3",
+      "1000": "9f4f62616aa07bd3eff6dfb2d158a97715fe977ebc5f25d46862eaadceda404f"
+    }
+  },
+  "inventory_sha256": "c929e190ddff143e8053a302f7600008a7379341490029b0a04e65156f8a1ef2",
+  "initialization_audit_sha256": "9b697b8b15a2f38eb2175bfae716ca3ae38b5f93d909ef78a563c8652b487451",
+  "runtime_sha256": "3a813c9080f15953d94b1d2d0252c0e5f49fe437c365f45be2d2aee18f8967d3",
+  "max_mean_cast_rms": 0.0011603878811001778,
+  "independent_starts": 20,
+  "shared_b_improvement_without_aggregate_harm": [],
+  "shared_improved_all_degraded_endpoints": [],
+  "shared_reached_parent_old_counts": []
+}

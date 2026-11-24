@@ -1,0 +1,157 @@
+{
+  "task_success_counts": {
+    "front": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0
+    },
+    "left": {
+      "total": 20,
+      "success_ever": 2,
+      "terminal_correct": 1
+    },
+    "right": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0
+    },
+    "back": {
+      "total": 20,
+      "success_ever": 17,
+      "terminal_correct": 3
+    }
+  },
+  "first_target_matrix": {
+    "front": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 17,
+      "unreached": 3,
+      "ambiguous": 0
+    },
+    "left": {
+      "front": 0,
+      "left": 1,
+      "right": 0,
+      "back": 17,
+      "unreached": 2,
+      "ambiguous": 0
+    },
+    "right": {
+      "front": 0,
+      "left": 1,
+      "right": 0,
+      "back": 18,
+      "unreached": 1,
+      "ambiguous": 0
+    },
+    "back": {
+      "front": 0,
+      "left": 1,
+      "right": 0,
+      "back": 17,
+      "unreached": 2,
+      "ambiguous": 0
+    }
+  },
+  "terminal_summary": {
+    "trained_goal": "back",
+    "initial_states": 20,
+    "episodes": 80,
+    "terminal_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 4,
+        "unfinished": 16,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 1,
+        "right": 0,
+        "back": 6,
+        "unfinished": 13,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 2,
+        "right": 0,
+        "back": 5,
+        "unfinished": 13,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 1,
+        "left": 2,
+        "right": 0,
+        "back": 3,
+        "unfinished": 14,
+        "ambiguous": 0
+      }
+    },
+    "trained_instruction_correct": 3,
+    "other_instructions": {
+      "total": 60,
+      "requested_goal_correct": 1,
+      "trained_goal_terminal": 15,
+      "trained_goal_terminal_rate": 0.25
+    },
+    "conditioned_on_trained_instruction_success": {
+      "control_indices": [
+        31,
+        40,
+        48
+      ],
+      "total": 9,
+      "trained_goal_terminal": 4,
+      "trained_goal_terminal_rate": 0.4444444444444444
+    }
+  },
+  "other_instruction_intrusion": {
+    "total": 60,
+    "first_trained_goal": 52,
+    "trained_goal_ever_without_requested_success": 51,
+    "terminal_trained_goal": 15
+  },
+  "conditioned_on_trained_success_ever": {
+    "control_indices": [
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      48,
+      49
+    ],
+    "total": 51,
+    "first_trained_goal": 48,
+    "trained_goal_ever_without_requested_success": 47,
+    "terminal_trained_goal": 14
+  },
+  "training_exposure_goals": [
+    "left",
+    "right",
+    "front",
+    "back"
+  ],
+  "training_exposure_is_not_a_mastery_claim": true,
+  "exposed_task_aggregate": {
+    "episodes": 80,
+    "success_ever": 19,
+    "terminal_correct": 4
+  }
+}

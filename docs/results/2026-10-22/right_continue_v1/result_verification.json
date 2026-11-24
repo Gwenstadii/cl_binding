@@ -1,0 +1,260 @@
+{
+  "verified_at_utc": "2026-10-22T15:51:11.458445+00:00",
+  "source_commit": "409b35e1aeed0016ff84bb4778eed13467796bcb",
+  "source_file_hashes_verified": 22,
+  "matched_conditions_across_three_models": 80,
+  "all_three_models_four_instructions_same_reset_and_seed": true,
+  "new_rollouts": 120,
+  "cached_rollouts_reused": 160,
+  "selected_step": 9000,
+  "actual_training_stopped_step": 10001,
+  "recomputed_metrics": {
+    "original_left": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 17,
+          "unfinished": 3
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 19,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 19,
+          "unfinished": 1
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 18,
+          "unfinished": 2
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "left": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "left": 16,
+          "unfinished": 4
+        }
+      }
+    },
+    "right6000": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 12,
+          "right": 8
+        },
+        "terminal_targets": {
+          "unfinished": 12,
+          "right": 8
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 12,
+          "right": 8
+        },
+        "terminal_targets": {
+          "unfinished": 13,
+          "right": 7
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 9,
+        "terminal_correct": 9,
+        "first_targets": {
+          "unreached_or_ambiguous": 11,
+          "right": 9
+        },
+        "terminal_targets": {
+          "unfinished": 11,
+          "right": 9
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 13,
+          "right": 7
+        },
+        "terminal_targets": {
+          "unfinished": 14,
+          "right": 6
+        }
+      }
+    },
+    "right9000": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 5,
+          "right": 15
+        },
+        "terminal_targets": {
+          "unfinished": 5,
+          "right": 15
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 6,
+          "right": 14
+        },
+        "terminal_targets": {
+          "unfinished": 6,
+          "right": 14
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 15,
+        "terminal_correct": 15,
+        "first_targets": {
+          "unreached_or_ambiguous": 5,
+          "right": 15
+        },
+        "terminal_targets": {
+          "unfinished": 5,
+          "right": 15
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 7,
+          "right": 13
+        },
+        "terminal_targets": {
+          "unfinished": 7,
+          "right": 13
+        }
+      }
+    }
+  },
+  "right6000_to_right9000_transitions": {
+    "left": {
+      "retained": [],
+      "gained": [],
+      "lost": [],
+      "both_failed": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    "right": {
+      "retained": [
+        33,
+        34,
+        36,
+        37,
+        38,
+        44,
+        46,
+        48
+      ],
+      "gained": [
+        31,
+        32,
+        40,
+        41,
+        42,
+        43,
+        45
+      ],
+      "lost": [
+        39
+      ],
+      "both_failed": [
+        30,
+        35,
+        47,
+        49
+      ]
+    }
+  },
+  "old_left_after_9000": {
+    "prior_success_ever": 20,
+    "retained_ever": 0,
+    "terminal_new_right": 14,
+    "terminal_unfinished": 6
+  },
+  "exploratory_conditioned_on_right9000_success": {
+    "indices": [
+      31,
+      32,
+      33,
+      34,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      48
+    ],
+    "total": 15,
+    "old_left_terminal_right": 13,
+    "old_left_unfinished": 2,
+    "old_left_correct_ever": 0
+  }
+}

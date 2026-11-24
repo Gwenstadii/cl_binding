@@ -1,0 +1,65 @@
+{
+  "purpose": "descriptive source-trajectory context, not new intervention results",
+  "source_events_sha256": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da",
+  "profiles": [
+    {
+      "boundary": 40,
+      "source_model": "R0",
+      "LF_book_xyz_distance_cm_median": 0.11644051911076177,
+      "LF_book_xyz_distance_cm_min": 0.0,
+      "LF_book_xyz_distance_cm_max": 0.5154707273460843,
+      "lifted_above_3cm": 0,
+      "episodes": 8
+    },
+    {
+      "boundary": 40,
+      "source_model": "FT4",
+      "LF_book_xyz_distance_cm_median": 0.0,
+      "LF_book_xyz_distance_cm_min": 0.0,
+      "LF_book_xyz_distance_cm_max": 0.0,
+      "lifted_above_3cm": 0,
+      "episodes": 8
+    },
+    {
+      "boundary": 80,
+      "source_model": "R0",
+      "LF_book_xyz_distance_cm_median": 26.756342199917135,
+      "LF_book_xyz_distance_cm_min": 24.9437219761827,
+      "LF_book_xyz_distance_cm_max": 27.627903778801738,
+      "lifted_above_3cm": 6,
+      "episodes": 8
+    },
+    {
+      "boundary": 80,
+      "source_model": "FT4",
+      "LF_book_xyz_distance_cm_median": 4.864611704992798,
+      "LF_book_xyz_distance_cm_min": 3.1327643325148467,
+      "LF_book_xyz_distance_cm_max": 8.307045598548212,
+      "lifted_above_3cm": 8,
+      "episodes": 8
+    },
+    {
+      "boundary": 120,
+      "source_model": "R0",
+      "LF_book_xyz_distance_cm_median": 21.258386053248348,
+      "LF_book_xyz_distance_cm_min": 14.946777447949719,
+      "LF_book_xyz_distance_cm_max": 24.41683098996449,
+      "lifted_above_3cm": 8,
+      "episodes": 8
+    },
+    {
+      "boundary": 120,
+      "source_model": "FT4",
+      "LF_book_xyz_distance_cm_median": 3.170920429312056,
+      "LF_book_xyz_distance_cm_min": 1.9223958388655915,
+      "LF_book_xyz_distance_cm_max": 5.448733973115498,
+      "lifted_above_3cm": 8,
+      "episodes": 8
+    }
+  ],
+  "limitations": [
+    "Book displacement is a physical trajectory difference, not a direct language-readout measure.",
+    "Fixed time does not align grasp/movement phase across prefix goals.",
+    "These are the same two development starts and two inference seeds."
+  ]
+}

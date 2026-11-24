@@ -1,0 +1,50 @@
+{
+  "suite": "main",
+  "line": "lr_front_300",
+  "lane": 1,
+  "lanes": 8,
+  "ids": [
+    801,
+    809,
+    817
+  ],
+  "gates": [
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042631596443243325,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042631596443243325,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042631596443243325,
+      "new_goal_bypass_bitwise": true
+    }
+  ],
+  "rows_sha256": "1c8c148bb91c546000e6de039dc25dc53fbb4a667e84ac288fa6e0c0096e547c",
+  "protocol_sha256": "4ba249fb67a854c3ade12be935896dee2472135056ac5e2aa4cc11d8afc35505",
+  "source_sha256": "64c782401b2a6f61c85d2bcf35623d2853b8c20760daa82a453a171a6ddbc1d8",
+  "selection_sha256": "2cab07df00c78793f76dccba0ee8e302b85075aa44f3e2474655a9dd1515e6da"
+}

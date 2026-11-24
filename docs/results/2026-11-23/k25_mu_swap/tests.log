@@ -1,0 +1,9 @@
+test_background_change_is_shared_and_does_not_change_contrast (test_k25_mu_swap.CommonResponseControl.test_background_change_is_shared_and_does_not_change_contrast) ... ok
+test_complete_grid_and_reference_replays_are_not_new_samples (test_k25_mu_swap.CommonResponseControl.test_complete_grid_and_reference_replays_are_not_new_samples) ... ok
+test_k14_gain_acts_on_actual_late_residual (test_k25_mu_swap.CommonResponseControl.test_k14_gain_acts_on_actual_late_residual) ... ok
+test_reverse_only_changes_v_addition (test_k25_mu_swap.CommonResponseControl.test_reverse_only_changes_v_addition) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

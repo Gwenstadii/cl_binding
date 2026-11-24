@@ -1,0 +1,6031 @@
+{
+  "episodes": 1200,
+  "independent_starts": 20,
+  "previous_condition_replays": 200,
+  "protocol_sha256": "58e5eb1031804c97fa6a788f76bb365bad14a8b340d9a0b9768cf6f2fef8a159",
+  "analysis_source_sha256": "24052eaed9eca12bbb754f90c640b063ac901ec1d0f8dc496c0bd1b9292b5025",
+  "verified_project_dependencies": 28,
+  "delta_sha256": {
+    "lr_front_1000": "b1e94c0a140ee8078a2be24165f39602b7acbc425532a0ce6e90ed3df4e8cd27",
+    "lf_right_1000": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557"
+  },
+  "max_mean_cast_rms": 0.0006409125053323805,
+  "lines": {
+    "lr_front_1000": {
+      "native": {
+        "per_goal": {
+          "A": {
+            "n": 20,
+            "first_correct": 17,
+            "terminal_correct": 12,
+            "ever_correct": 17,
+            "first": {
+              "left": 17,
+              "none": 3
+            },
+            "grasped": 20,
+            "pre_first": {
+              "none": 20
+            },
+            "pre_grasp_confirmed": 0,
+            "post_first_correct": 17,
+            "post_reached_correct": 17,
+            "first_read": {},
+            "all_blocks_read_correct": 0,
+            "initial_ties": 0,
+            "first_block_delta_rms_median": null,
+            "first_block_applied_delta_rms_median": null,
+            "first_10_intended_minus_new_median_mm": 0.0
+          },
+          "B": {
+            "n": 20,
+            "first_correct": 3,
+            "terminal_correct": 0,
+            "ever_correct": 0,
+            "first": {
+              "front": 8,
+              "none": 9,
+              "right": 3
+            },
+            "grasped": 20,
+            "pre_first": {
+              "none": 20
+            },
+            "pre_grasp_confirmed": 0,
+            "post_first_correct": 3,
+            "post_reached_correct": 4,
+            "first_read": {},
+            "all_blocks_read_correct": 0,
+            "initial_ties": 0,
+            "first_block_delta_rms_median": null,
+            "first_block_applied_delta_rms_median": null,
+            "first_10_intended_minus_new_median_mm": 0.0
+          }
+        },
+        "joint_first": 3,
+        "joint_terminal": 0
+      },
+      "windows": {
+        "early_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 10,
+                "ever_correct": 16,
+                "first": {
+                  "left": 16,
+                  "none": 4
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 16,
+                "post_reached_correct": 16,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.029090156918391584,
+                "first_block_applied_delta_rms_median": 0.15400441452785785,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 6,
+                "terminal_correct": 3,
+                "ever_correct": 3,
+                "first": {
+                  "none": 11,
+                  "front": 2,
+                  "right": 6,
+                  "back": 1
+                },
+                "grasped": 19,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 6,
+                "post_reached_correct": 6,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02939636521041393,
+                "first_block_applied_delta_rms_median": 0.15562549305516762,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 6,
+            "joint_terminal": 1,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 2,
+                  "left->none": 2,
+                  "none->left": 1
+                },
+                "first_gained": [
+                  811
+                ],
+                "first_lost": [
+                  803,
+                  815
+                ],
+                "terminal_gained": [
+                  800,
+                  816
+                ],
+                "terminal_lost": [
+                  804,
+                  805,
+                  806,
+                  812
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.019483228527169848,
+                "after_10_eef_difference_median_mm": 5.079619716240789,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 3,
+                  "none->none": 8,
+                  "right->front": 1,
+                  "front->right": 3,
+                  "none->right": 1,
+                  "right->right": 2,
+                  "front->front": 1,
+                  "front->back": 1
+                },
+                "first_gained": [
+                  804,
+                  806,
+                  811,
+                  812
+                ],
+                "first_lost": [
+                  802
+                ],
+                "terminal_gained": [
+                  806,
+                  811,
+                  816
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  804,
+                  811,
+                  812
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.01612778805245352,
+                "after_10_eef_difference_median_mm": 3.816221375442355,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 8,
+                "ever_correct": 18,
+                "first": {
+                  "left": 18,
+                  "none": 2
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 18,
+                "post_reached_correct": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0286880555562675,
+                "first_block_applied_delta_rms_median": 0.1518756743829182,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "none": 15,
+                  "front": 5
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.037264491058886046,
+                "first_block_applied_delta_rms_median": 0.1972796552559692,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->none": 1,
+                  "none->left": 2,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  811,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  809
+                ],
+                "terminal_lost": [
+                  805,
+                  806,
+                  807,
+                  812,
+                  813
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.018429293881094325,
+                "after_10_eef_difference_median_mm": 4.579389571879402,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 4,
+                  "none->none": 9,
+                  "right->none": 2,
+                  "front->front": 4,
+                  "right->front": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.01777181562455169,
+                "after_10_eef_difference_median_mm": 4.069406647456875,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 1,
+                  "none->left": 3,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  803,
+                  815,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  804,
+                  809
+                ],
+                "terminal_lost": [
+                  800,
+                  807,
+                  813,
+                  816
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.038011876340606175,
+                "after_10_eef_difference_median_mm": 9.757675814563846,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "none->none": 10,
+                  "front->none": 2,
+                  "right->front": 3,
+                  "right->none": 3,
+                  "none->front": 1,
+                  "back->front": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  804,
+                  806,
+                  808,
+                  811,
+                  812,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  806,
+                  811,
+                  816
+                ],
+                "old_new_goal_first": [
+                  802,
+                  815
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.0331306111957662,
+                "after_10_eef_difference_median_mm": 7.714405636773078,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          }
+        },
+        "mid_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 10,
+                "ever_correct": 17,
+                "first": {
+                  "left": 16,
+                  "none": 4
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 16,
+                "post_reached_correct": 16,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.03930371981114149,
+                "first_block_applied_delta_rms_median": 0.2080754110492603,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 11,
+                "terminal_correct": 6,
+                "ever_correct": 6,
+                "first": {
+                  "none": 9,
+                  "right": 11
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 11,
+                "post_reached_correct": 11,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.036565879825502634,
+                "first_block_applied_delta_rms_median": 0.19358118039790556,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 10,
+            "joint_terminal": 4,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->none": 3,
+                  "left->none": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  809
+                ],
+                "terminal_gained": [
+                  800,
+                  816
+                ],
+                "terminal_lost": [
+                  805,
+                  806,
+                  807,
+                  812
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 4.3818331726952486e-05,
+                "first_block_action_rms_median": 0.02317155673485631,
+                "after_10_eef_difference_median_mm": 3.739414703476198,
+                "after_10_book_difference_median_mm": 0.1381797509318512
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 3,
+                  "none->none": 6,
+                  "right->right": 3,
+                  "front->right": 5,
+                  "none->right": 3
+                },
+                "first_gained": [
+                  804,
+                  807,
+                  809,
+                  812,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  804,
+                  807,
+                  808,
+                  809,
+                  814,
+                  816
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  804,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.016732064175964997,
+                "after_10_eef_difference_median_mm": 3.272704392312603,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 19,
+                "terminal_correct": 11,
+                "ever_correct": 19,
+                "first": {
+                  "left": 19,
+                  "none": 1
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 19,
+                "post_reached_correct": 19,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.03958736583590508,
+                "first_block_applied_delta_rms_median": 0.20957704406208372,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "front": 6,
+                  "none": 14
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.03713923953473568,
+                "first_block_applied_delta_rms_median": 0.19661656884843923,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->left": 3,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  811,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  800,
+                  803,
+                  811
+                ],
+                "terminal_lost": [
+                  804,
+                  805,
+                  812,
+                  814
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.021962749225346856,
+                "after_10_eef_difference_median_mm": 3.444724640678235,
+                "after_10_book_difference_median_mm": 0.01273208017303547
+              },
+              "B": {
+                "first_transitions": {
+                  "front->front": 4,
+                  "none->none": 7,
+                  "right->none": 3,
+                  "front->none": 4,
+                  "none->front": 2
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.020813445684513147,
+                "after_10_eef_difference_median_mm": 3.0756114118991476,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->left": 4,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  809,
+                  811,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  803,
+                  806,
+                  807,
+                  811
+                ],
+                "terminal_lost": [
+                  804,
+                  814,
+                  816
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.1643246221787677,
+                "after_10_eef_difference_median_mm": 7.048990335263776,
+                "after_10_book_difference_median_mm": 0.34111835532472223
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 2,
+                  "none->none": 7,
+                  "right->none": 7,
+                  "right->front": 4
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  804,
+                  807,
+                  808,
+                  809,
+                  812,
+                  814,
+                  815,
+                  816,
+                  818,
+                  819
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  804,
+                  807,
+                  808,
+                  809,
+                  814,
+                  816
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.04147100911996149,
+                "after_10_eef_difference_median_mm": 6.594147009825633,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          }
+        },
+        "delayed_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 16,
+                "terminal_correct": 9,
+                "ever_correct": 16,
+                "first": {
+                  "left": 16,
+                  "none": 4
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 18,
+                "post_first_correct": 16,
+                "post_reached_correct": 16,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.045289967302232975,
+                "first_block_applied_delta_rms_median": 0.23976683652594954,
+                "first_10_intended_minus_new_median_mm": 37.648796853728825
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 14,
+                "terminal_correct": 7,
+                "ever_correct": 7,
+                "first": {
+                  "none": 6,
+                  "right": 14
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 13,
+                "post_first_correct": 14,
+                "post_reached_correct": 14,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04346410585567355,
+                "first_block_applied_delta_rms_median": 0.23010065549175251,
+                "first_10_intended_minus_new_median_mm": 2.2029133093301745
+              }
+            },
+            "joint_first": 13,
+            "joint_terminal": 3,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->none": 3,
+                  "left->none": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  803
+                ],
+                "terminal_gained": [
+                  800,
+                  816
+                ],
+                "terminal_lost": [
+                  804,
+                  805,
+                  806,
+                  807,
+                  812
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 4.769240278741531,
+                "first_block_action_rms_median": 0.04109909647667964,
+                "after_10_eef_difference_median_mm": 11.698292456843594,
+                "after_10_book_difference_median_mm": 10.73342677381984
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 3,
+                  "none->right": 6,
+                  "right->right": 3,
+                  "none->none": 3,
+                  "front->right": 5
+                },
+                "first_gained": [
+                  801,
+                  804,
+                  806,
+                  807,
+                  809,
+                  810,
+                  812,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  802,
+                  806,
+                  807,
+                  808,
+                  809,
+                  815,
+                  816
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  804,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 8.358500734715154,
+                "first_block_action_rms_median": 0.04361977717604683,
+                "after_10_eef_difference_median_mm": 12.392804611232695,
+                "after_10_book_difference_median_mm": 11.65238631337045
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 13,
+                "ever_correct": 18,
+                "first": {
+                  "left": 18,
+                  "none": 2
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 18,
+                "post_first_correct": 18,
+                "post_reached_correct": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.046187834907323116,
+                "first_block_applied_delta_rms_median": 0.24452018231343875,
+                "first_10_intended_minus_new_median_mm": 29.92853337927766
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "front": 11,
+                  "none": 9
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 13,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04299927381798625,
+                "first_block_applied_delta_rms_median": 0.22763981672698924,
+                "first_10_intended_minus_new_median_mm": -14.65575391175397
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->left": 2,
+                  "none->none": 1,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  803,
+                  809,
+                  815
+                ],
+                "terminal_lost": [
+                  805,
+                  812
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -5.539974153975985,
+                "first_block_action_rms_median": 0.048142146313211606,
+                "after_10_eef_difference_median_mm": 12.21953229279045,
+                "after_10_book_difference_median_mm": 12.611145811508521
+              },
+              "B": {
+                "first_transitions": {
+                  "front->front": 7,
+                  "none->none": 6,
+                  "right->none": 2,
+                  "right->front": 1,
+                  "none->front": 3,
+                  "front->none": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -7.629720974443894,
+                "first_block_action_rms_median": 0.04408147966682748,
+                "after_10_eef_difference_median_mm": 12.343560343646484,
+                "after_10_book_difference_median_mm": 11.917438360515446
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->left": 3,
+                  "none->none": 1,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  803,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  803,
+                  804,
+                  806,
+                  807,
+                  809,
+                  815
+                ],
+                "terminal_lost": [
+                  800,
+                  816
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -10.394206102748566,
+                "first_block_action_rms_median": 0.08571018272458852,
+                "after_10_eef_difference_median_mm": 24.245446734444535,
+                "after_10_book_difference_median_mm": 23.129214103943028
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 4,
+                  "right->none": 7,
+                  "none->none": 2,
+                  "right->front": 7
+                },
+                "first_gained": [],
+                "first_lost": [
+                  801,
+                  802,
+                  804,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  812,
+                  814,
+                  815,
+                  816,
+                  818,
+                  819
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  802,
+                  806,
+                  807,
+                  808,
+                  809,
+                  815,
+                  816
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -16.287914077296918,
+                "first_block_action_rms_median": 0.08775098937001863,
+                "after_10_eef_difference_median_mm": 24.42337220912875,
+                "after_10_book_difference_median_mm": 24.221827542126853
+              }
+            }
+          }
+        },
+        "late_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 15,
+                "terminal_correct": 12,
+                "ever_correct": 17,
+                "first": {
+                  "left": 15,
+                  "none": 5
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "left": 13,
+                  "none": 7
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 15,
+                "post_reached_correct": 15,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.028973476961255074,
+                "first_block_applied_delta_rms_median": 0.15338670632723334,
+                "first_10_intended_minus_new_median_mm": 4.802220924707699
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 7,
+                "terminal_correct": 4,
+                "ever_correct": 4,
+                "first": {
+                  "right": 7,
+                  "none": 9,
+                  "front": 4
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 16,
+                  "front": 4
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 9,
+                "post_reached_correct": 10,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04195509608834982,
+                "first_block_applied_delta_rms_median": 0.22211189948794474,
+                "first_10_intended_minus_new_median_mm": 4.124626820757441
+              }
+            },
+            "joint_first": 6,
+            "joint_terminal": 2,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 3,
+                  "left->none": 2
+                },
+                "first_gained": [],
+                "first_lost": [
+                  803,
+                  815
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.4348489061281633,
+                "first_block_action_rms_median": 0.02323952546600543,
+                "after_10_eef_difference_median_mm": 3.4089191790923232,
+                "after_10_book_difference_median_mm": 2.3254087232574894
+              },
+              "B": {
+                "first_transitions": {
+                  "front->right": 4,
+                  "none->none": 9,
+                  "right->right": 3,
+                  "front->front": 4
+                },
+                "first_gained": [
+                  800,
+                  805,
+                  811,
+                  814
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  805,
+                  808,
+                  811,
+                  816
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  800,
+                  805,
+                  811,
+                  814
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 5.047832175557591,
+                "first_block_action_rms_median": 0.05019478379648115,
+                "after_10_eef_difference_median_mm": 9.318104303561835,
+                "after_10_book_difference_median_mm": 7.014936614997895
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 15,
+                "ever_correct": 17,
+                "first": {
+                  "left": 17,
+                  "none": 3
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "left": 13,
+                  "none": 7
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 17,
+                "post_reached_correct": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02957568969577551,
+                "first_block_applied_delta_rms_median": 0.15657484380827957,
+                "first_10_intended_minus_new_median_mm": 3.735747599774249
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "front": 11,
+                  "none": 9
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 16,
+                  "front": 4
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0420229903422296,
+                "first_block_applied_delta_rms_median": 0.22247133429085403,
+                "first_10_intended_minus_new_median_mm": -2.582461511474697
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [
+                  803,
+                  815,
+                  816
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.1456646473514953,
+                "first_block_action_rms_median": 0.022557195426191626,
+                "after_10_eef_difference_median_mm": 4.3362245627288365,
+                "after_10_book_difference_median_mm": 1.6983431419460682
+              },
+              "B": {
+                "first_transitions": {
+                  "front->front": 8,
+                  "none->none": 9,
+                  "right->front": 3
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -2.7625853797548503,
+                "first_block_action_rms_median": 0.046423618008286864,
+                "after_10_eef_difference_median_mm": 9.587684386318665,
+                "after_10_book_difference_median_mm": 5.570597083725737
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 3,
+                  "none->left": 2
+                },
+                "first_gained": [
+                  803,
+                  815
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  803,
+                  815,
+                  816
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.2900352200009347,
+                "first_block_action_rms_median": 0.04500730592393691,
+                "after_10_eef_difference_median_mm": 8.048450498074988,
+                "after_10_book_difference_median_mm": 3.812727410252231
+              },
+              "B": {
+                "first_transitions": {
+                  "right->front": 7,
+                  "none->none": 9,
+                  "front->front": 4
+                },
+                "first_gained": [],
+                "first_lost": [
+                  800,
+                  802,
+                  805,
+                  808,
+                  811,
+                  814,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  805,
+                  808,
+                  811,
+                  816
+                ],
+                "old_new_goal_first": [
+                  804,
+                  812,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -9.799523033611472,
+                "first_block_action_rms_median": 0.10005491008783265,
+                "after_10_eef_difference_median_mm": 19.88534292673533,
+                "after_10_book_difference_median_mm": 9.997294863875762
+              }
+            }
+          }
+        },
+        "full_400": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 15,
+                "terminal_correct": 9,
+                "ever_correct": 15,
+                "first": {
+                  "left": 15,
+                  "none": 5
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 15,
+                "post_reached_correct": 15,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.029090156918391584,
+                "first_block_applied_delta_rms_median": 0.15400441452785785,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 11,
+                "terminal_correct": 5,
+                "ever_correct": 5,
+                "first": {
+                  "none": 9,
+                  "right": 11
+                },
+                "grasped": 19,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 11,
+                "post_reached_correct": 11,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02939636521041393,
+                "first_block_applied_delta_rms_median": 0.15562549305516762,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 10,
+            "joint_terminal": 3,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 14,
+                  "none->none": 2,
+                  "left->none": 3,
+                  "none->left": 1
+                },
+                "first_gained": [
+                  811
+                ],
+                "first_lost": [
+                  803,
+                  810,
+                  815
+                ],
+                "terminal_gained": [
+                  800,
+                  811,
+                  816
+                ],
+                "terminal_lost": [
+                  804,
+                  806,
+                  807,
+                  810,
+                  812,
+                  818
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.019483228527169848,
+                "after_10_eef_difference_median_mm": 5.079619716240789,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 3,
+                  "none->none": 6,
+                  "right->right": 3,
+                  "front->right": 5,
+                  "none->right": 3
+                },
+                "first_gained": [
+                  804,
+                  806,
+                  809,
+                  811,
+                  812,
+                  815,
+                  818,
+                  819
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  808,
+                  809,
+                  811,
+                  812,
+                  819
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  804,
+                  811,
+                  812,
+                  815,
+                  819
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.01612778805245352,
+                "after_10_eef_difference_median_mm": 3.816221375442355,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 19,
+                "terminal_correct": 13,
+                "ever_correct": 19,
+                "first": {
+                  "left": 19,
+                  "none": 1
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 19,
+                "post_reached_correct": 19,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0286880555562675,
+                "first_block_applied_delta_rms_median": 0.1518756743829182,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "front": 7,
+                  "none": 13
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.037264491058886046,
+                "first_block_applied_delta_rms_median": 0.1972796552559692,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->left": 3,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  811,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  803,
+                  809,
+                  815,
+                  816,
+                  817
+                ],
+                "terminal_lost": [
+                  804,
+                  805,
+                  812,
+                  813
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.018429293881094325,
+                "after_10_eef_difference_median_mm": 4.579389571879402,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "front->front": 6,
+                  "none->none": 8,
+                  "right->none": 3,
+                  "front->none": 2,
+                  "none->front": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.01777181562455169,
+                "after_10_eef_difference_median_mm": 4.069406647456875,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 14,
+                  "none->left": 5,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  803,
+                  810,
+                  815,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  803,
+                  806,
+                  807,
+                  809,
+                  810,
+                  815,
+                  817,
+                  818
+                ],
+                "terminal_lost": [
+                  800,
+                  805,
+                  811,
+                  813
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.038011876340606175,
+                "after_10_eef_difference_median_mm": 9.757675814563846,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 2,
+                  "none->none": 7,
+                  "right->none": 6,
+                  "right->front": 5
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  804,
+                  806,
+                  808,
+                  809,
+                  811,
+                  812,
+                  815,
+                  816,
+                  818,
+                  819
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  808,
+                  809,
+                  811,
+                  812,
+                  819
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.0331306111957662,
+                "after_10_eef_difference_median_mm": 7.714405636773078,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          }
+        },
+        "delayed_tail": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 14,
+                "terminal_correct": 8,
+                "ever_correct": 15,
+                "first": {
+                  "left": 14,
+                  "none": 6
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 18,
+                "post_first_correct": 14,
+                "post_reached_correct": 14,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.045289967302232975,
+                "first_block_applied_delta_rms_median": 0.23976683652594954,
+                "first_10_intended_minus_new_median_mm": 37.648796853728825
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 14,
+                "terminal_correct": 8,
+                "ever_correct": 8,
+                "first": {
+                  "none": 6,
+                  "right": 14
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 13,
+                "post_first_correct": 14,
+                "post_reached_correct": 14,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04346410585567355,
+                "first_block_applied_delta_rms_median": 0.23010065549175251,
+                "first_10_intended_minus_new_median_mm": 2.2029133093301745
+              }
+            },
+            "joint_first": 11,
+            "joint_terminal": 2,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 14,
+                  "none->none": 3,
+                  "left->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [
+                  803,
+                  810,
+                  815
+                ],
+                "terminal_gained": [
+                  800,
+                  816
+                ],
+                "terminal_lost": [
+                  804,
+                  805,
+                  806,
+                  807,
+                  810,
+                  812
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 4.769240278741531,
+                "first_block_action_rms_median": 0.04109909647667964,
+                "after_10_eef_difference_median_mm": 11.698292456843594,
+                "after_10_book_difference_median_mm": 10.73342677381984
+              },
+              "B": {
+                "first_transitions": {
+                  "front->none": 3,
+                  "none->right": 6,
+                  "right->right": 3,
+                  "none->none": 3,
+                  "front->right": 5
+                },
+                "first_gained": [
+                  801,
+                  804,
+                  806,
+                  807,
+                  809,
+                  810,
+                  812,
+                  814,
+                  815,
+                  818,
+                  819
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  804,
+                  806,
+                  807,
+                  808,
+                  809,
+                  812,
+                  814,
+                  815
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  804,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 8.358500734715154,
+                "first_block_action_rms_median": 0.04361977717604683,
+                "after_10_eef_difference_median_mm": 12.392804611232695,
+                "after_10_book_difference_median_mm": 11.65238631337045
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 18,
+                "terminal_correct": 15,
+                "ever_correct": 18,
+                "first": {
+                  "left": 18,
+                  "none": 2
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 18,
+                "post_first_correct": 18,
+                "post_reached_correct": 18,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.046187834907323116,
+                "first_block_applied_delta_rms_median": 0.24452018231343875,
+                "first_10_intended_minus_new_median_mm": 29.92853337927766
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "front": 12,
+                  "none": 8
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 13,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04299927381798625,
+                "first_block_applied_delta_rms_median": 0.22763981672698924,
+                "first_10_intended_minus_new_median_mm": -14.65575391175397
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 16,
+                  "none->left": 2,
+                  "none->none": 1,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  800,
+                  803,
+                  809,
+                  815
+                ],
+                "terminal_lost": [
+                  812
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -5.539974153975985,
+                "first_block_action_rms_median": 0.048142146313211606,
+                "after_10_eef_difference_median_mm": 12.21953229279045,
+                "after_10_book_difference_median_mm": 12.611145811508521
+              },
+              "B": {
+                "first_transitions": {
+                  "front->front": 7,
+                  "none->none": 5,
+                  "right->none": 2,
+                  "right->front": 1,
+                  "none->front": 4,
+                  "front->none": 1
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -7.629720974443894,
+                "first_block_action_rms_median": 0.04408147966682748,
+                "after_10_eef_difference_median_mm": 12.343560343646484,
+                "after_10_book_difference_median_mm": 11.917438360515446
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 13,
+                  "none->left": 5,
+                  "none->none": 1,
+                  "left->none": 1
+                },
+                "first_gained": [
+                  801,
+                  803,
+                  810,
+                  815,
+                  817
+                ],
+                "first_lost": [
+                  812
+                ],
+                "terminal_gained": [
+                  803,
+                  804,
+                  805,
+                  806,
+                  807,
+                  809,
+                  810,
+                  815
+                ],
+                "terminal_lost": [
+                  816
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -10.394206102748566,
+                "first_block_action_rms_median": 0.08571018272458852,
+                "after_10_eef_difference_median_mm": 24.245446734444535,
+                "after_10_book_difference_median_mm": 23.129214103943028
+              },
+              "B": {
+                "first_transitions": {
+                  "none->front": 4,
+                  "right->none": 6,
+                  "none->none": 2,
+                  "right->front": 8
+                },
+                "first_gained": [],
+                "first_lost": [
+                  801,
+                  802,
+                  804,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  812,
+                  814,
+                  815,
+                  816,
+                  818,
+                  819
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  804,
+                  806,
+                  807,
+                  808,
+                  809,
+                  812,
+                  814,
+                  815
+                ],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -16.287914077296918,
+                "first_block_action_rms_median": 0.08775098937001863,
+                "after_10_eef_difference_median_mm": 24.42337220912875,
+                "after_10_book_difference_median_mm": 24.221827542126853
+              }
+            }
+          }
+        },
+        "late_tail": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 15,
+                "terminal_correct": 12,
+                "ever_correct": 17,
+                "first": {
+                  "left": 15,
+                  "none": 5
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "left": 13,
+                  "none": 7
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 15,
+                "post_reached_correct": 15,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.028973476961255074,
+                "first_block_applied_delta_rms_median": 0.15338670632723334,
+                "first_10_intended_minus_new_median_mm": 4.802220924707699
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 7,
+                "terminal_correct": 1,
+                "ever_correct": 1,
+                "first": {
+                  "right": 7,
+                  "none": 9,
+                  "front": 4
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 16,
+                  "front": 4
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 9,
+                "post_reached_correct": 11,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04195509608834982,
+                "first_block_applied_delta_rms_median": 0.22211189948794474,
+                "first_10_intended_minus_new_median_mm": 4.124626820757441
+              }
+            },
+            "joint_first": 6,
+            "joint_terminal": 1,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 3,
+                  "left->none": 2
+                },
+                "first_gained": [],
+                "first_lost": [
+                  803,
+                  815
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.4348489061281633,
+                "first_block_action_rms_median": 0.02323952546600543,
+                "after_10_eef_difference_median_mm": 3.4089191790923232,
+                "after_10_book_difference_median_mm": 2.3254087232574894
+              },
+              "B": {
+                "first_transitions": {
+                  "front->right": 4,
+                  "none->none": 9,
+                  "right->right": 3,
+                  "front->front": 4
+                },
+                "first_gained": [
+                  800,
+                  805,
+                  811,
+                  814
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  808
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [
+                  800,
+                  805,
+                  811,
+                  814
+                ],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 5.047832175557591,
+                "first_block_action_rms_median": 0.05019478379648115,
+                "after_10_eef_difference_median_mm": 9.318104303561835,
+                "after_10_book_difference_median_mm": 7.014936614997895
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 17,
+                "terminal_correct": 14,
+                "ever_correct": 17,
+                "first": {
+                  "left": 17,
+                  "none": 3
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "left": 13,
+                  "none": 7
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 17,
+                "post_reached_correct": 17,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02957568969577551,
+                "first_block_applied_delta_rms_median": 0.15657484380827957,
+                "first_10_intended_minus_new_median_mm": 3.735747599774249
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "front": 11,
+                  "none": 9
+                },
+                "grasped": 20,
+                "pre_first": {
+                  "none": 16,
+                  "front": 4
+                },
+                "pre_grasp_confirmed": 20,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0420229903422296,
+                "first_block_applied_delta_rms_median": 0.22247133429085403,
+                "first_10_intended_minus_new_median_mm": -2.582461511474697
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [
+                  803,
+                  815
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.1456646473514953,
+                "first_block_action_rms_median": 0.022557195426191626,
+                "after_10_eef_difference_median_mm": 4.3362245627288365,
+                "after_10_book_difference_median_mm": 1.6983431419460682
+              },
+              "B": {
+                "first_transitions": {
+                  "front->front": 8,
+                  "none->none": 9,
+                  "right->front": 3
+                },
+                "first_gained": [],
+                "first_lost": [
+                  802,
+                  808,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  804,
+                  805,
+                  811,
+                  812,
+                  814,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -2.7625853797548503,
+                "first_block_action_rms_median": 0.046423618008286864,
+                "after_10_eef_difference_median_mm": 9.587684386318665,
+                "after_10_book_difference_median_mm": 5.570597083725737
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "left->left": 15,
+                  "none->none": 3,
+                  "none->left": 2
+                },
+                "first_gained": [
+                  803,
+                  815
+                ],
+                "first_lost": [],
+                "terminal_gained": [
+                  803,
+                  815
+                ],
+                "terminal_lost": [],
+                "old_new_goal_first": [],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.2900352200009347,
+                "first_block_action_rms_median": 0.04500730592393691,
+                "after_10_eef_difference_median_mm": 8.048450498074988,
+                "after_10_book_difference_median_mm": 3.812727410252231
+              },
+              "B": {
+                "first_transitions": {
+                  "right->front": 7,
+                  "none->none": 9,
+                  "front->front": 4
+                },
+                "first_gained": [],
+                "first_lost": [
+                  800,
+                  802,
+                  805,
+                  808,
+                  811,
+                  814,
+                  816
+                ],
+                "terminal_gained": [],
+                "terminal_lost": [
+                  808
+                ],
+                "old_new_goal_first": [
+                  804,
+                  812,
+                  815,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -9.799523033611472,
+                "first_block_action_rms_median": 0.10005491008783265,
+                "after_10_eef_difference_median_mm": 19.88534292673533,
+                "after_10_book_difference_median_mm": 9.997294863875762
+              }
+            }
+          }
+        }
+      },
+      "native_history": {
+        "40": {
+          "A": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 0,
+            "grasp_to_offset_intended_minus_new_median_mm": null,
+            "lead_n": 0
+          },
+          "B": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 0,
+            "grasp_to_offset_intended_minus_new_median_mm": null,
+            "lead_n": 0
+          }
+        },
+        "80": {
+          "A": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 18,
+            "grasp_to_offset_intended_minus_new_median_mm": 25.435828178471937,
+            "lead_n": 18
+          },
+          "B": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 13,
+            "grasp_to_offset_intended_minus_new_median_mm": -2.3154676191715353,
+            "lead_n": 13
+          }
+        },
+        "160": {
+          "A": {
+            "n": 20,
+            "confirmed_first": {
+              "left": 13,
+              "none": 7
+            },
+            "grasp_confirmed": 20,
+            "grasp_to_offset_intended_minus_new_median_mm": 162.0134973896194,
+            "lead_n": 20
+          },
+          "B": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 16,
+              "front": 4
+            },
+            "grasp_confirmed": 20,
+            "grasp_to_offset_intended_minus_new_median_mm": -6.273077543300788,
+            "lead_n": 20
+          }
+        }
+      },
+      "continued_vs_stopped": {
+        "full_400_vs_early_100": {
+          "A": {
+            "first_transitions": {
+              "left->left": 15,
+              "none->none": 4,
+              "left->none": 1
+            },
+            "first_gained": [],
+            "first_lost": [
+              810
+            ],
+            "terminal_gained": [
+              805,
+              811
+            ],
+            "terminal_lost": [
+              807,
+              810,
+              818
+            ],
+            "old_new_goal_first": [],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          },
+          "B": {
+            "first_transitions": {
+              "none->none": 9,
+              "front->right": 2,
+              "right->right": 6,
+              "none->right": 2,
+              "back->right": 1
+            },
+            "first_gained": [
+              802,
+              809,
+              815,
+              818,
+              819
+            ],
+            "first_lost": [],
+            "terminal_gained": [
+              808,
+              809,
+              812,
+              819
+            ],
+            "terminal_lost": [
+              806,
+              816
+            ],
+            "old_new_goal_first": [
+              802,
+              815
+            ],
+            "new_goal_to_intended": [
+              802,
+              815
+            ],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          }
+        },
+        "delayed_tail_vs_delayed_100": {
+          "A": {
+            "first_transitions": {
+              "left->left": 14,
+              "none->none": 4,
+              "left->none": 2
+            },
+            "first_gained": [],
+            "first_lost": [
+              810,
+              815
+            ],
+            "terminal_gained": [],
+            "terminal_lost": [
+              810
+            ],
+            "old_new_goal_first": [],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          },
+          "B": {
+            "first_transitions": {
+              "none->none": 6,
+              "right->right": 14
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [
+              804,
+              812,
+              814
+            ],
+            "terminal_lost": [
+              802,
+              816
+            ],
+            "old_new_goal_first": [],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          }
+        },
+        "late_tail_vs_late_100": {
+          "A": {
+            "first_transitions": {
+              "left->left": 15,
+              "none->none": 5
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          },
+          "B": {
+            "first_transitions": {
+              "right->right": 7,
+              "none->none": 9,
+              "front->front": 4
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [
+              805,
+              811,
+              816
+            ],
+            "old_new_goal_first": [
+              804,
+              812,
+              815,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          }
+        }
+      },
+      "fixed_length_vs_delayed": {
+        "early_100": {
+          "forward": {
+            "A": {
+              "first_transitions": {
+                "left->left": 15,
+                "none->none": 3,
+                "none->left": 1,
+                "left->none": 1
+              },
+              "first_gained": [
+                811
+              ],
+              "first_lost": [
+                815
+              ],
+              "terminal_gained": [
+                807
+              ],
+              "terminal_lost": [],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "none->none": 5,
+                "right->none": 6,
+                "right->front": 2,
+                "right->right": 5,
+                "none->right": 1,
+                "right->back": 1
+              },
+              "first_gained": [
+                811
+              ],
+              "first_lost": [
+                801,
+                802,
+                807,
+                809,
+                810,
+                814,
+                815,
+                818,
+                819
+              ],
+              "terminal_gained": [
+                811
+              ],
+              "terminal_lost": [
+                802,
+                807,
+                808,
+                809,
+                815
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          },
+          "reverse": {
+            "A": {
+              "first_transitions": {
+                "left->left": 17,
+                "left->none": 1,
+                "none->left": 1,
+                "none->none": 1
+              },
+              "first_gained": [
+                811
+              ],
+              "first_lost": [
+                801
+              ],
+              "terminal_gained": [],
+              "terminal_lost": [
+                803,
+                806,
+                807,
+                813,
+                815
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "front->none": 6,
+                "none->none": 9,
+                "front->front": 5
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                804,
+                805,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          }
+        },
+        "mid_100": {
+          "forward": {
+            "A": {
+              "first_transitions": {
+                "left->left": 15,
+                "none->none": 3,
+                "none->left": 1,
+                "left->none": 1
+              },
+              "first_gained": [
+                803
+              ],
+              "first_lost": [
+                809
+              ],
+              "terminal_gained": [
+                804
+              ],
+              "terminal_lost": [],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "none->none": 6,
+                "right->none": 3,
+                "right->right": 11
+              },
+              "first_gained": [],
+              "first_lost": [
+                801,
+                806,
+                810
+              ],
+              "terminal_gained": [
+                804,
+                814
+              ],
+              "terminal_lost": [
+                802,
+                806,
+                815
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          },
+          "reverse": {
+            "A": {
+              "first_transitions": {
+                "left->left": 18,
+                "none->left": 1,
+                "none->none": 1
+              },
+              "first_gained": [
+                811
+              ],
+              "first_lost": [],
+              "terminal_gained": [
+                800,
+                811
+              ],
+              "terminal_lost": [
+                804,
+                809,
+                814,
+                815
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "front->front": 6,
+                "none->none": 9,
+                "front->none": 5
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                804,
+                805,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          }
+        },
+        "late_100": {
+          "forward": {
+            "A": {
+              "first_transitions": {
+                "left->left": 15,
+                "none->none": 4,
+                "left->none": 1
+              },
+              "first_gained": [],
+              "first_lost": [
+                815
+              ],
+              "terminal_gained": [
+                804,
+                805,
+                806,
+                807,
+                812
+              ],
+              "terminal_lost": [
+                800,
+                816
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "none->right": 3,
+                "right->none": 6,
+                "right->right": 4,
+                "none->none": 3,
+                "right->front": 4
+              },
+              "first_gained": [
+                800,
+                805,
+                811
+              ],
+              "first_lost": [
+                801,
+                804,
+                806,
+                807,
+                809,
+                810,
+                812,
+                815,
+                818,
+                819
+              ],
+              "terminal_gained": [
+                805,
+                811
+              ],
+              "terminal_lost": [
+                802,
+                806,
+                807,
+                809,
+                815
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          },
+          "reverse": {
+            "A": {
+              "first_transitions": {
+                "left->left": 16,
+                "left->none": 2,
+                "none->none": 1,
+                "none->left": 1
+              },
+              "first_gained": [
+                812
+              ],
+              "first_lost": [
+                801,
+                817
+              ],
+              "terminal_gained": [
+                805,
+                812,
+                816
+              ],
+              "terminal_lost": [
+                809
+              ],
+              "old_new_goal_first": [],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "front->front": 8,
+                "none->none": 6,
+                "none->front": 3,
+                "front->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                804,
+                805,
+                808,
+                809,
+                810,
+                811,
+                812,
+                813,
+                814,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          }
+        }
+      }
+    },
+    "lf_right_1000": {
+      "native": {
+        "per_goal": {
+          "A": {
+            "n": 20,
+            "first_correct": 0,
+            "terminal_correct": 0,
+            "ever_correct": 0,
+            "first": {
+              "right": 17,
+              "none": 3
+            },
+            "grasped": 17,
+            "pre_first": {
+              "none": 20
+            },
+            "pre_grasp_confirmed": 0,
+            "post_first_correct": 0,
+            "post_reached_correct": 0,
+            "first_read": {},
+            "all_blocks_read_correct": 0,
+            "initial_ties": 0,
+            "first_block_delta_rms_median": null,
+            "first_block_applied_delta_rms_median": null,
+            "first_10_intended_minus_new_median_mm": 0.0
+          },
+          "B": {
+            "n": 20,
+            "first_correct": 0,
+            "terminal_correct": 0,
+            "ever_correct": 0,
+            "first": {
+              "right": 17,
+              "none": 3
+            },
+            "grasped": 17,
+            "pre_first": {
+              "none": 20
+            },
+            "pre_grasp_confirmed": 0,
+            "post_first_correct": 0,
+            "post_reached_correct": 0,
+            "first_read": {},
+            "all_blocks_read_correct": 0,
+            "initial_ties": 0,
+            "first_block_delta_rms_median": null,
+            "first_block_applied_delta_rms_median": null,
+            "first_10_intended_minus_new_median_mm": 0.0
+          }
+        },
+        "joint_first": 0,
+        "joint_terminal": 0
+      },
+      "windows": {
+        "early_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "grasped": 18,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.022098172316327692,
+                "first_block_applied_delta_rms_median": 0.1169885779323575,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.020791955804452297,
+                "first_block_applied_delta_rms_median": 0.1100734172571392,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 2,
+                  "none->right": 1
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.009064693708190403,
+                "after_10_eef_difference_median_mm": 2.3737497472047777,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.008583128375423521,
+                "after_10_eef_difference_median_mm": 2.2253753466678807,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "grasped": 18,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02115645674057305,
+                "first_block_applied_delta_rms_median": 0.11200309929424923,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "grasped": 18,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02140827467665076,
+                "first_block_applied_delta_rms_median": 0.11333623317599681,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 2,
+                  "none->right": 1
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.008600175541415664,
+                "after_10_eef_difference_median_mm": 2.1607413156868933,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->right": 1,
+                  "none->none": 2
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.008576309889620064,
+                "after_10_eef_difference_median_mm": 2.1114470310428683,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 1,
+                  "right->none": 1,
+                  "none->right": 1
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.017598988386986925,
+                "after_10_eef_difference_median_mm": 4.47765315669154,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->right": 1,
+                  "none->none": 2
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.016818553317460606,
+                "after_10_eef_difference_median_mm": 4.379131734181808,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          }
+        },
+        "mid_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.03498708652332425,
+                "first_block_applied_delta_rms_median": 0.1852229876647215,
+                "first_10_intended_minus_new_median_mm": -0.5128113385947236
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0314538262784481,
+                "first_block_applied_delta_rms_median": 0.1665177714325365,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.0012778137929159161,
+                "first_block_action_rms_median": 0.020815448378704825,
+                "after_10_eef_difference_median_mm": 1.435117397405586,
+                "after_10_book_difference_median_mm": 0.4224742852786785
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.0009382984986205933,
+                "first_block_action_rms_median": 0.011573889832710408,
+                "after_10_eef_difference_median_mm": 1.7836953761550856,
+                "after_10_book_difference_median_mm": 0.07797695597570378
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.03410845845937729,
+                "first_block_applied_delta_rms_median": 0.1805714967513002,
+                "first_10_intended_minus_new_median_mm": -0.08698551913485786
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.03234767653048039,
+                "first_block_applied_delta_rms_median": 0.17124984919774028,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.07489304067688474,
+                "first_block_action_rms_median": 0.01556780024728172,
+                "after_10_eef_difference_median_mm": 1.342613014700551,
+                "after_10_book_difference_median_mm": 0.2825676758319234
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.006682623749462713,
+                "first_block_action_rms_median": 0.015528855075113899,
+                "after_10_eef_difference_median_mm": 1.8633793159569636,
+                "after_10_book_difference_median_mm": 0.11836025414391428
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.1089823286006264,
+                "first_block_action_rms_median": 0.10256023578705506,
+                "after_10_eef_difference_median_mm": 2.900673308530939,
+                "after_10_book_difference_median_mm": 0.931080811254722
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.004853389361458849,
+                "first_block_action_rms_median": 0.028325304253334856,
+                "after_10_eef_difference_median_mm": 3.761007223833327,
+                "after_10_book_difference_median_mm": 0.17738371714205228
+              }
+            }
+          }
+        },
+        "delayed_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.042095350846648213,
+                "first_block_applied_delta_rms_median": 0.22285441359665467,
+                "first_10_intended_minus_new_median_mm": -33.79570792139464
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 15,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.034475832339376206,
+                "first_block_applied_delta_rms_median": 0.18251638826428795,
+                "first_10_intended_minus_new_median_mm": -19.955794075826056
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.021086428030030517,
+                "after_10_eef_difference_median_mm": 4.125467809644021,
+                "after_10_book_difference_median_mm": 3.8990505052157456
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.7941015015316246,
+                "first_block_action_rms_median": 0.031323272940824085,
+                "after_10_eef_difference_median_mm": 6.3057530007426905,
+                "after_10_book_difference_median_mm": 6.318485847545122
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04073445154353976,
+                "first_block_applied_delta_rms_median": 0.21564976011215997,
+                "first_10_intended_minus_new_median_mm": -34.973861249590165
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 15,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.035089040920138356,
+                "first_block_applied_delta_rms_median": 0.1857627381801259,
+                "first_10_intended_minus_new_median_mm": -16.755248137703784
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.024627469216650155,
+                "first_block_action_rms_median": 0.022060391734011545,
+                "after_10_eef_difference_median_mm": 4.279056258806783,
+                "after_10_book_difference_median_mm": 4.206466062036487
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 1.3372527768729405,
+                "first_block_action_rms_median": 0.02939829579962546,
+                "after_10_eef_difference_median_mm": 6.282620165796098,
+                "after_10_book_difference_median_mm": 6.261814488326704
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.04234123684146825,
+                "after_10_eef_difference_median_mm": 8.340254311135016,
+                "after_10_book_difference_median_mm": 7.779498939236214
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 2.131354278404565,
+                "first_block_action_rms_median": 0.06396256226832683,
+                "after_10_eef_difference_median_mm": 12.607111196689758,
+                "after_10_book_difference_median_mm": 12.492854636693455
+              }
+            }
+          }
+        },
+        "late_100": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0468092214781791,
+                "first_block_applied_delta_rms_median": 0.24780982682476302,
+                "first_10_intended_minus_new_median_mm": -1.446627549571141
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.028827164554968476,
+                "first_block_applied_delta_rms_median": 0.15261212279605674,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.026277104089827752,
+                "after_10_eef_difference_median_mm": 2.326455126437145,
+                "after_10_book_difference_median_mm": 0.6486795076436577
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.029109116259418887,
+                "after_10_eef_difference_median_mm": 3.4994286294593113,
+                "after_10_book_difference_median_mm": 0.4007346271522002
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.042538271658122545,
+                "first_block_applied_delta_rms_median": 0.22519925348337877,
+                "first_10_intended_minus_new_median_mm": -0.3006759111926355
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.027818510262295603,
+                "first_block_applied_delta_rms_median": 0.14727226800462767,
+                "first_10_intended_minus_new_median_mm": -0.0012340026160906348
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.15229271634065175,
+                "first_block_action_rms_median": 0.026918990289776318,
+                "after_10_eef_difference_median_mm": 2.6566920597633104,
+                "after_10_book_difference_median_mm": 1.3742999953402266
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.03712510075913408,
+                "after_10_eef_difference_median_mm": 2.6822921991150217,
+                "after_10_book_difference_median_mm": 0.10373762801905093
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.1541914985061614,
+                "first_block_action_rms_median": 0.05626379202287773,
+                "after_10_eef_difference_median_mm": 5.245636342902225,
+                "after_10_book_difference_median_mm": 2.1067577289328168
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.10145912738520871,
+                "after_10_eef_difference_median_mm": 5.400276078909069,
+                "after_10_book_difference_median_mm": 1.0420277508688247
+              }
+            }
+          }
+        },
+        "full_400": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "grasped": 18,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.022098172316327692,
+                "first_block_applied_delta_rms_median": 0.1169885779323575,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.020791955804452297,
+                "first_block_applied_delta_rms_median": 0.1100734172571392,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 2,
+                  "none->right": 1
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.009064693708190403,
+                "after_10_eef_difference_median_mm": 2.3737497472047777,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.008583128375423521,
+                "after_10_eef_difference_median_mm": 2.2253753466678807,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "grasped": 18,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02115645674057305,
+                "first_block_applied_delta_rms_median": 0.11200309929424923,
+                "first_10_intended_minus_new_median_mm": 0.0
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 18,
+                  "none": 2
+                },
+                "grasped": 18,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 0,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.02140827467665076,
+                "first_block_applied_delta_rms_median": 0.11333623317599681,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 2,
+                  "none->right": 1
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.008600175541415664,
+                "after_10_eef_difference_median_mm": 2.1607413156868933,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->right": 1,
+                  "none->none": 2
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.008576309889620064,
+                "after_10_eef_difference_median_mm": 2.1114470310428683,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 1,
+                  "right->none": 1,
+                  "none->right": 1
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  813,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.017598988386986925,
+                "after_10_eef_difference_median_mm": 4.47765315669154,
+                "after_10_book_difference_median_mm": 0.0
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->right": 1,
+                  "none->none": 2
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.016818553317460606,
+                "after_10_eef_difference_median_mm": 4.379131734181808,
+                "after_10_book_difference_median_mm": 0.0
+              }
+            }
+          }
+        },
+        "delayed_tail": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.042095350846648213,
+                "first_block_applied_delta_rms_median": 0.22285441359665467,
+                "first_10_intended_minus_new_median_mm": -33.79570792139464
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 15,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.034475832339376206,
+                "first_block_applied_delta_rms_median": 0.18251638826428795,
+                "first_10_intended_minus_new_median_mm": -19.955794075826056
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.021086428030030517,
+                "after_10_eef_difference_median_mm": 4.125467809644021,
+                "after_10_book_difference_median_mm": 3.8990505052157456
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": -0.7941015015316246,
+                "first_block_action_rms_median": 0.031323272940824085,
+                "after_10_eef_difference_median_mm": 6.3057530007426905,
+                "after_10_book_difference_median_mm": 6.318485847545122
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.04073445154353976,
+                "first_block_applied_delta_rms_median": 0.21564976011215997,
+                "first_10_intended_minus_new_median_mm": -34.973861249590165
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "none": 20
+                },
+                "pre_grasp_confirmed": 15,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.035089040920138356,
+                "first_block_applied_delta_rms_median": 0.1857627381801259,
+                "first_10_intended_minus_new_median_mm": -16.755248137703784
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.024627469216650155,
+                "first_block_action_rms_median": 0.022060391734011545,
+                "after_10_eef_difference_median_mm": 4.279056258806783,
+                "after_10_book_difference_median_mm": 4.206466062036487
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 1.3372527768729405,
+                "first_block_action_rms_median": 0.02939829579962546,
+                "after_10_eef_difference_median_mm": 6.282620165796098,
+                "after_10_book_difference_median_mm": 6.261814488326704
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.04234123684146825,
+                "after_10_eef_difference_median_mm": 8.340254311135016,
+                "after_10_book_difference_median_mm": 7.779498939236214
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 2.131354278404565,
+                "first_block_action_rms_median": 0.06396256226832683,
+                "after_10_eef_difference_median_mm": 12.607111196689758,
+                "after_10_book_difference_median_mm": 12.492854636693455
+              }
+            }
+          }
+        },
+        "late_tail": {
+          "forward": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.0468092214781791,
+                "first_block_applied_delta_rms_median": 0.24780982682476302,
+                "first_10_intended_minus_new_median_mm": -1.446627549571141
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.028827164554968476,
+                "first_block_applied_delta_rms_median": 0.15261212279605674,
+                "first_10_intended_minus_new_median_mm": 0.0
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.026277104089827752,
+                "after_10_eef_difference_median_mm": 2.326455126437145,
+                "after_10_book_difference_median_mm": 0.6486795076436577
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.029109116259418887,
+                "after_10_eef_difference_median_mm": 3.4994286294593113,
+                "after_10_book_difference_median_mm": 0.4007346271522002
+              }
+            }
+          },
+          "reverse": {
+            "per_goal": {
+              "A": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "A": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.042538271658122545,
+                "first_block_applied_delta_rms_median": 0.22519925348337877,
+                "first_10_intended_minus_new_median_mm": -0.3006759111926355
+              },
+              "B": {
+                "n": 20,
+                "first_correct": 0,
+                "terminal_correct": 0,
+                "ever_correct": 0,
+                "first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "grasped": 17,
+                "pre_first": {
+                  "right": 17,
+                  "none": 3
+                },
+                "pre_grasp_confirmed": 17,
+                "post_first_correct": 0,
+                "post_reached_correct": 0,
+                "first_read": {
+                  "B": 20
+                },
+                "all_blocks_read_correct": 20,
+                "initial_ties": 0,
+                "first_block_delta_rms_median": 0.027818510262295603,
+                "first_block_applied_delta_rms_median": 0.14727226800462767,
+                "first_10_intended_minus_new_median_mm": -0.0012340026160906348
+              }
+            },
+            "joint_first": 0,
+            "joint_terminal": 0,
+            "vs_native": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.15229271634065175,
+                "first_block_action_rms_median": 0.026918990289776318,
+                "after_10_eef_difference_median_mm": 2.6566920597633104,
+                "after_10_book_difference_median_mm": 1.3742999953402266
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.03712510075913408,
+                "after_10_eef_difference_median_mm": 2.6822921991150217,
+                "after_10_book_difference_median_mm": 0.10373762801905093
+              }
+            },
+            "vs_forward": {
+              "A": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  801,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.1541914985061614,
+                "first_block_action_rms_median": 0.05626379202287773,
+                "after_10_eef_difference_median_mm": 5.245636342902225,
+                "after_10_book_difference_median_mm": 2.1067577289328168
+              },
+              "B": {
+                "first_transitions": {
+                  "right->right": 17,
+                  "none->none": 3
+                },
+                "first_gained": [],
+                "first_lost": [],
+                "terminal_gained": [],
+                "terminal_lost": [],
+                "old_new_goal_first": [
+                  800,
+                  802,
+                  804,
+                  805,
+                  806,
+                  807,
+                  808,
+                  809,
+                  810,
+                  811,
+                  812,
+                  814,
+                  815,
+                  816,
+                  817,
+                  818,
+                  819
+                ],
+                "new_goal_to_intended": [],
+                "pre_wrong_then_terminal_correct": [],
+                "first_10_relative_approach_change_median_mm": 0.0,
+                "first_block_action_rms_median": 0.10145912738520871,
+                "after_10_eef_difference_median_mm": 5.400276078909069,
+                "after_10_book_difference_median_mm": 1.0420277508688247
+              }
+            }
+          }
+        }
+      },
+      "native_history": {
+        "40": {
+          "A": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 0,
+            "grasp_to_offset_intended_minus_new_median_mm": null,
+            "lead_n": 0
+          },
+          "B": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 0,
+            "grasp_to_offset_intended_minus_new_median_mm": null,
+            "lead_n": 0
+          }
+        },
+        "80": {
+          "A": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 17,
+            "grasp_to_offset_intended_minus_new_median_mm": -39.39203441170663,
+            "lead_n": 17
+          },
+          "B": {
+            "n": 20,
+            "confirmed_first": {
+              "none": 20
+            },
+            "grasp_confirmed": 15,
+            "grasp_to_offset_intended_minus_new_median_mm": -11.039868409510072,
+            "lead_n": 15
+          }
+        },
+        "160": {
+          "A": {
+            "n": 20,
+            "confirmed_first": {
+              "right": 17,
+              "none": 3
+            },
+            "grasp_confirmed": 17,
+            "grasp_to_offset_intended_minus_new_median_mm": -138.55327734378534,
+            "lead_n": 17
+          },
+          "B": {
+            "n": 20,
+            "confirmed_first": {
+              "right": 17,
+              "none": 3
+            },
+            "grasp_confirmed": 17,
+            "grasp_to_offset_intended_minus_new_median_mm": -132.72705140921425,
+            "lead_n": 17
+          }
+        }
+      },
+      "continued_vs_stopped": {
+        "full_400_vs_early_100": {
+          "A": {
+            "first_transitions": {
+              "right->right": 18,
+              "none->none": 2
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              813,
+              814,
+              815,
+              817,
+              818,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          },
+          "B": {
+            "first_transitions": {
+              "right->right": 17,
+              "none->none": 3
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [
+              800,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          }
+        },
+        "delayed_tail_vs_delayed_100": {
+          "A": {
+            "first_transitions": {
+              "right->right": 17,
+              "none->none": 3
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              814,
+              815,
+              817,
+              818,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          },
+          "B": {
+            "first_transitions": {
+              "right->right": 17,
+              "none->none": 3
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [
+              800,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          }
+        },
+        "late_tail_vs_late_100": {
+          "A": {
+            "first_transitions": {
+              "right->right": 17,
+              "none->none": 3
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [
+              800,
+              801,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              814,
+              815,
+              817,
+              818,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          },
+          "B": {
+            "first_transitions": {
+              "right->right": 17,
+              "none->none": 3
+            },
+            "first_gained": [],
+            "first_lost": [],
+            "terminal_gained": [],
+            "terminal_lost": [],
+            "old_new_goal_first": [
+              800,
+              802,
+              804,
+              805,
+              806,
+              807,
+              808,
+              809,
+              810,
+              811,
+              812,
+              814,
+              815,
+              816,
+              817,
+              818,
+              819
+            ],
+            "new_goal_to_intended": [],
+            "pre_wrong_then_terminal_correct": [],
+            "first_10_relative_approach_change_median_mm": 0.0,
+            "first_block_action_rms_median": 0.0,
+            "after_10_eef_difference_median_mm": 0.0,
+            "after_10_book_difference_median_mm": 0.0
+          }
+        }
+      },
+      "fixed_length_vs_delayed": {
+        "early_100": {
+          "forward": {
+            "A": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 2,
+                "none->right": 1
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          },
+          "reverse": {
+            "A": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 2,
+                "none->right": 1
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->right": 1,
+                "none->none": 2
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          }
+        },
+        "mid_100": {
+          "forward": {
+            "A": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          },
+          "reverse": {
+            "A": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          }
+        },
+        "late_100": {
+          "forward": {
+            "A": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          },
+          "reverse": {
+            "A": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                801,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            },
+            "B": {
+              "first_transitions": {
+                "right->right": 17,
+                "none->none": 3
+              },
+              "first_gained": [],
+              "first_lost": [],
+              "terminal_gained": [],
+              "terminal_lost": [],
+              "old_new_goal_first": [
+                800,
+                802,
+                804,
+                805,
+                806,
+                807,
+                808,
+                809,
+                810,
+                811,
+                812,
+                814,
+                815,
+                816,
+                817,
+                818,
+                819
+              ],
+              "new_goal_to_intended": [],
+              "pre_wrong_then_terminal_correct": []
+            }
+          }
+        }
+      }
+    }
+  },
+  "verified_common_prefix_comparisons": 4480,
+  "verified_polarity_pairs": 560
+}

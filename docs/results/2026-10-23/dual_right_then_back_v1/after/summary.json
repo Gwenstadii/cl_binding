@@ -1,0 +1,176 @@
+{
+  "episodes": 80,
+  "initial_states": 20,
+  "indices": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "task_success_counts": {
+    "front": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0,
+      "correct_then_destroyed": 0,
+      "first_targets": {
+        "back": 16,
+        "unreached": 4
+      },
+      "terminal_targets": {
+        "unfinished": 13,
+        "back": 7
+      },
+      "ever_reached_targets": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 16
+      }
+    },
+    "left": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0,
+      "correct_then_destroyed": 0,
+      "first_targets": {
+        "back": 20
+      },
+      "terminal_targets": {
+        "back": 6,
+        "unfinished": 14
+      },
+      "ever_reached_targets": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 20
+      }
+    },
+    "right": {
+      "total": 20,
+      "success_ever": 0,
+      "terminal_correct": 0,
+      "correct_then_destroyed": 0,
+      "first_targets": {
+        "back": 20
+      },
+      "terminal_targets": {
+        "back": 6,
+        "unfinished": 14
+      },
+      "ever_reached_targets": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 20
+      }
+    },
+    "back": {
+      "total": 20,
+      "success_ever": 19,
+      "terminal_correct": 6,
+      "correct_then_destroyed": 13,
+      "first_targets": {
+        "back": 19,
+        "unreached": 1
+      },
+      "terminal_targets": {
+        "back": 6,
+        "unfinished": 14
+      },
+      "ever_reached_targets": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 19
+      }
+    }
+  },
+  "first_matrix": {
+    "front": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 16,
+      "unreached": 4,
+      "ambiguous": 0
+    },
+    "left": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 20,
+      "unreached": 0,
+      "ambiguous": 0
+    },
+    "right": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 20,
+      "unreached": 0,
+      "ambiguous": 0
+    },
+    "back": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 19,
+      "unreached": 1,
+      "ambiguous": 0
+    }
+  },
+  "terminal_matrix": {
+    "front": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 7,
+      "unfinished": 13,
+      "ambiguous": 0
+    },
+    "left": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 6,
+      "unfinished": 14,
+      "ambiguous": 0
+    },
+    "right": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 6,
+      "unfinished": 14,
+      "ambiguous": 0
+    },
+    "back": {
+      "front": 0,
+      "left": 0,
+      "right": 0,
+      "back": 6,
+      "unfinished": 14,
+      "ambiguous": 0
+    }
+  },
+  "joint_left_front_terminal_correct": 0,
+  "joint_left_front_terminal_correct_indices": []
+}

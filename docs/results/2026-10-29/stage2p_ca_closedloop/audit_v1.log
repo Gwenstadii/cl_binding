@@ -1,0 +1,1 @@
+{"status": "passed", "counts": {"physical_states": 2, "inference_seeds": 2, "episodes": 68, "events_including_reset": 27268, "replans": 2720, "recipient_denoise_calls": 29120, "recipient_integration_calls": 27200, "random_extra_calibration_calls": 1920, "donor_denoise_calls": 5760, "patched_flow_queries": 5760, "random_norm_records": 1920}}

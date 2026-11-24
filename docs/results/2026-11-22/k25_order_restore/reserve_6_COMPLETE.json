@@ -1,0 +1,57 @@
+{
+  "lane": 6,
+  "lanes": 8,
+  "ids": [
+    906,
+    914
+  ],
+  "rows_sha256": "6169c2eea4cb13c7a9205fe4352784a76f4a03144e7637ed2ad61ba8f9222d93",
+  "gates": [
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042987678898498416,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008826035191304982,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008826035191304982,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.00042987678898498416,
+      "new_goal_bypass_bitwise": true
+    }
+  ],
+  "protocol_sha256": "715d8997762577392062f4a8cd2c951b433c3fa78c3930b895d0d9c4480bd043",
+  "source_sha256": "33df149f567fbac9cf7760e2747f161490c508b4210c33040cdee3189b8ccd44"
+}

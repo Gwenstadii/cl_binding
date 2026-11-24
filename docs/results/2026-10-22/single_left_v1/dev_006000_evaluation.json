@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "partition": "development",
+  "checkpoint": "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000",
+  "policy_source": "checkpoint",
+  "instruction_goals": [
+    "left"
+  ],
+  "gate_goals": [
+    "left"
+  ],
+  "normalization_source": "datasets/stage1_single_left_train_aligned_v1",
+  "git_commit": "6c9adc00a82cd713226bf06159218ac51130fb88",
+  "counts": {
+    "left": {
+      "total": 10,
+      "correct": 10
+    }
+  },
+  "passed_gate": true,
+  "seconds": 104.40135513804853,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false
+}

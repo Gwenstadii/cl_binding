@@ -1,0 +1,1 @@
+同完整Left80快照三指令，12分支；参照audit_metadata_v2与metadata_corrections解释旧模板字段。视频和完整快照存本地video及原服务器，不入Git。

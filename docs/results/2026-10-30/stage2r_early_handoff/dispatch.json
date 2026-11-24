@@ -1,0 +1,17 @@
+{
+  "pid": 51518,
+  "dispatched_at": "2026-10-30T04:57:28.394546+00:00",
+  "command": [
+    "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/run_stage2r_early_handoff.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code/stage2r_early_handoff_20261030.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01/code",
+    "--registered-commit",
+    "b04fa3c"
+  ],
+  "registered_commit": "b04fa3c",
+  "source_bundle_sha256": "3c8b1e735804b152333a59c957f615b4f55c300e356269bea14938d55ec292ac"
+}

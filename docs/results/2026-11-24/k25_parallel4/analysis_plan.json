@@ -1,0 +1,79 @@
+{
+  "created_at_utc": "2026-11-24T05:28:07.646507+00:00",
+  "source_parent_commit": "e61358e0d1c203aea7d8cb57f0dfcadb986a8711",
+  "user_timing_reply": "parallel for controls1-400, not stop evaluation at150",
+  "full400": {
+    "episodes": 160,
+    "profiles": [
+      "lr_front_1000",
+      "lf_right_1000",
+      "lr_front_12000",
+      "lf_right_12000"
+    ],
+    "change": "only intervention cutoff150 to400; reuse exact original combine2, gains, models, cases, noise, full32 output and scoring",
+    "reference": "160 previously completed150->native traces; require bitwise prefix equality through150",
+    "no_recalibration": true
+  },
+  "four": {
+    "curriculum": "qualified three-old Left/Front/Right K19 replay parent -> original selected K26 Back3000; all four have training history",
+    "checkpoint_choice": "reuse original selected3000, not9000 which failed existing independent qualification; no selection using new outcomes",
+    "no_new_training": true,
+    "goals": [
+      "left",
+      "front",
+      "right",
+      "back"
+    ],
+    "episodes": 320,
+    "arms": [
+      "parent",
+      "native",
+      "parallel150",
+      "parallel400"
+    ],
+    "method": "Extension: old mean overthree old canonical prompts plus projection of actual F residual onto the rank<=2 parent contrast subspace. Use50x7 least squares, lift same coefficients tofull32. Allfour inputs use identical algorithm; no oracle new-task bypass or K26 routing.",
+    "solver": "fixed Helmert contrasts; float64 SVD, rcond1e-6; no behaviour tuning; report rank and conditioning",
+    "calibration": "dev0-9, F Back prefixes160 controls, boundaries30..150 each10 firstEuler;130 ratios of centered-old-response Frobenius norms; upper median capped10; no outcome-based choice",
+    "caveat": "Existing Back policy has weak reset final placement and commonly traversesFront beforeBack. Separate strict first, ever, final and path order; not a qualified four-task stable controller."
+  },
+  "shared": {
+    "ids": [
+      800,
+      801,
+      802,
+      803,
+      804,
+      805,
+      806,
+      807,
+      808,
+      809,
+      810,
+      811,
+      812,
+      813,
+      814,
+      815,
+      816,
+      817,
+      818,
+      819
+    ],
+    "horizon": 400,
+    "all_failures_retained": true,
+    "canonical_prompts": true,
+    "report_at150_and400": true,
+    "old_joint_and_allfour_joint": true
+  },
+  "endpoints": [
+    "unique lifted5-step correct first arrival",
+    "final placement at400",
+    "at150 physical placement",
+    "ever and grasp secondary",
+    "Back Front->Back chronology"
+  ],
+  "scope": "Only timing comparison and four-command parallel extension; no V, gain sweep, reverse, wording or new seeds. No claim that a two-model projector repairs F alone.",
+  "capacity": "max4 workers perGPU,8total; reserve slots for calibration; log capacity changes",
+  "total_new_evaluation_episodes": 480,
+  "development_prefixes": 10
+}

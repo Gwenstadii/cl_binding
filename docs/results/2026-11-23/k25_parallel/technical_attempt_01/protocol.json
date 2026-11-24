@@ -1,0 +1,275 @@
+{
+  "created_at_utc": "2026-11-23T14:17:20.117778+00:00",
+  "models": {
+    "lr_front_1000": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "executor": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/001000/model.safetensors",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "executor_sha256": "082df3050cb7efde0ab8f27e56a234af90d56477bc04e668644b68b71206d41b",
+      "continuation_note": "K25 existing1000 stream"
+    },
+    "lf_right_1000": {
+      "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "executor": "/home/lzx/cl_binding/.server/k25_order_restore_20261122_01/lf_right_train/001000.safetensors",
+      "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "executor_sha256": "366cb4413a26e8a1df333a50ea6b6d50be182ccee01da0de88fb2b520cce8c32",
+      "continuation_note": "K25 existing1000 stream"
+    },
+    "lr_front_12000": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "executor": "/home/lzx/cl_binding/.server/r1_then_front_v1/train/checkpoints/012000",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "executor_sha256": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515",
+      "continuation_note": "original K21/K22 endpoint; not assumed same continuation trajectory as1000"
+    },
+    "lf_right_12000": {
+      "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "executor": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+      "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "executor_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+      "continuation_note": "original K21/K22 endpoint; not assumed same continuation trajectory as1000"
+    }
+  },
+  "cases_sha256": "0c233a96513e7ecde914761fb7d41b8c11e5de457a492854d407b0f996438969",
+  "geometry": {
+    "left": {
+      "site": "desk_caddy_1_left_contain_region",
+      "centre": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "front": {
+      "site": "desk_caddy_1_front_contain_region",
+      "centre": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "rotation": [
+        [
+          0.9999999999999998,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        [
+          -0.0,
+          -0.9999999999999998,
+          0.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.03595,
+        0.06216
+      ]
+    },
+    "right": {
+      "site": "desk_caddy_1_right_contain_region",
+      "centre": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "back": {
+      "site": "desk_caddy_1_back_contain_region",
+      "centre": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    }
+  },
+  "profiles": [
+    "lr_front_1000",
+    "lf_right_1000",
+    "lr_front_12000",
+    "lf_right_12000"
+  ],
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "window": [
+    0,
+    150
+  ],
+  "horizon": 400,
+  "expected": 160,
+  "sources": {
+    "parallel_reproduction.py": "8d3697b0a13c8abeef8bc362dc055e6f29d170178773d3b26270b2e3fbb5d2f9",
+    "parallel_protocol.py": "71f3686ff3b5c64b4e9d41721a3b444cd065d58ad246df9b8e4576f4c1ae8cd0",
+    "v_timing_protocol.py": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+    "anchor_tensor_hash.py": "ffeb32f0f16a9ef027596e55dd7deb2f1f35c8eb98c7c609dd301f632b4ddc35"
+  },
+  "original_sources": {
+    "k22.py": "3003e574b4b15c89067d330f3c6fec3074b211d051d75e53b8f186dcbb634d47",
+    "k21.py": "73a5d618f6ec957d3f74ec967a0fdbb9bcfab607c71f7c1251c45bda64ce55ef",
+    "k22p3.py": "0228945b8d225e6a861b74cddd087487be70bf35e86c24798fcc0fcfbbb02f88"
+  },
+  "validated_dependency_sha256": {
+    "cl_binding/.server/k13_r1_front_20_20261107_01/k11_reference.py": "7add12361efdceb577744fbe68b3fd5696c59e33884084d4ce1ce5e80865f308",
+    "cl_binding/.server/k13_r1_front_20_20261107_01/r1_front_start.py": "e7b975fed4624c9b9cf7863750ff941912e378238e029c4a21804ffc343c0170",
+    "cl_binding/.server/k14_snapshot_batch1_20261108_01/code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "cl_binding/.server/k14_snapshot_batch1_20261108_01/code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "cl_binding/.server/k15_background_gain_20261109_01/k15.py": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6",
+    "cl_binding/.server/k18_training_cause_20261111_01/demo_probe.py": "d6f29e4bf889774ef7b7ccbc38e681a91c820ff1aef541a7bd0c6e7f0935e1d7",
+    "cl_binding/.server/k18_training_cause_20261111_01/measurement.py": "4bc20e48c64e3856924b03d20aff2425deff41f2808dbd90f24ff3ce466bdb2a",
+    "cl_binding/.server/k18_training_controls_20261111_01/evaluate.py": "e6feb85efc4cef16ebf1668a19938b0ac757a4bb8554aed7fab95dfe275052b6",
+    "cl_binding/.server/k18_training_controls_20261111_01/holdout.py": "316149b135fccd1039efc85d9a0c99d946bd0beb6d5c2b26ce0db454717f0d35",
+    "cl_binding/.server/k18_training_controls_20261111_01/train_controls.py": "f5fa01f3ed8ef7a9641f285b98835dbcb00bc2918da030bfe3251783790d9448",
+    "cl_binding/.server/k19_retention_20261111_01/eval_k19.py": "6e6eeb25debf08e449234950856cfe3a6b543c47bfd591402f733683bb36d0c6",
+    "cl_binding/.server/k19_retention_20261111_01/train_k19.py": "1907518c1f40acb0d11d73b17f198fc8cbc237c6679400fe2c6c6675873a5551",
+    "cl_binding/.server/k1_screen_20261101_01/code/k1_main.py": "26d5cc2867f320e0bc5bae7f41a96941da27a6a319bede642c232a9d14ea5453",
+    "cl_binding/.server/k1_screen_20261101_01/code/stage2k_entry_handoff.py": "264f25e8554eb73c8df3b76bb6e776c2f71d433cda8faeb1a052221301db2c8d",
+    "cl_binding/.server/k20_route_margin_20261112_01/eval_k20.py": "9ab8561fcdf9b41a7f32ebf16ee887bc9e25e387011b3f35d205bf7e35496e00",
+    "cl_binding/.server/k20_route_margin_20261112_01/train_weak.py": "585caf13921d54326c5afdb067ae9530d21f76321164814b247145e5e9d48867",
+    "cl_binding/.server/k24_final_window_20261117_01/window_eval.py": "ee63d56c9417230f164c8bb46b558a0b8bcb868a9632c7e5908ac542bcad398f",
+    "cl_binding/.server/k25_deep_d_20261118_01/deep_selection.py": "237432a87bf539fa1eeb315d861d246d35abba402828c59ecbfa11a67e639561",
+    "cl_binding/.server/k25_final_20261121_01/self_restore.py": "0c0bee01ba687a472bdeb2e0cff53815f92f5dfe28bc9cb3d1a50f081f35798b",
+    "cl_binding/.server/k25_order_restore_20261122_01/order_restore.py": "64c782401b2a6f61c85d2bcf35623d2853b8c20760daa82a453a171a6ddbc1d8",
+    "cl_binding/.server/k25_paths_20261119_01/path_factorization.py": "ad33ef4fc12817d6b56bb9770e05fc35008f1c48be8c1ac2ecac4eebeed732ff",
+    "cl_binding/.server/k25_paths_20261119_01/value_relay.py": "cc5aa3d3ca9dad713fa415a4fce1989f5900930584673d33005f4e65ee08b02d",
+    "cl_binding/.server/k25v3_20261120_01/v_attribution_v3.py": "f0114b3fde6eee6d81b7b05760af1b0bd696f1aa9737ca814cfbba48b6eab1b1",
+    "cl_binding/.server/k4_text_attention_20261102_01/code/k4_text_attention.py": "06c7498ed84c71ac03d3c9c5929c7890bfc15c2541df2e0c3285870e051f79ff",
+    "cl_binding/.server/mu_d_deep_audit_20261107_01/k11_reference_capture_fixed.py": "45434a24134fc5cfa0304a189fe46576a33fb8518c7cc7f4ad9a30e774f17a6a",
+    "cl_binding_stage2a/scripts/download_stage1.py": "750e334209db793645847141ae41010258f12dc4f431c740255102a80368ebe6",
+    "cl_binding_stage2a/scripts/stage1_protocol.py": "b9ba0fd4ecc0d9a98fc4348588b892bcb0e16e9479abe7d730b72ad79741eca6",
+    "cl_binding_stage2a/scripts/stage1_smoke.py": "432164e3bfb8e747d172ef3b876b7ab5098ab017578f716cbbb4ad91ff4b8d09"
+  },
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0",
+    "transformers": "5.5.4",
+    "accelerate": "1.15.0",
+    "lerobot": "0.6.2",
+    "mujoco": "3.8.1",
+    "robosuite": "1.4.0",
+    "numpy": "2.2.6",
+    "safetensors": "0.8.0",
+    "av": "15.1.0"
+  },
+  "source_parent_commit": "19b99a47728cb8cbe1b8fcaef4763f5868179863",
+  "only_method": "original old mu + parallel component; no new ablations or sweeps",
+  "calibration_rule": "1000 profiles: exact K21 dev inits0-9, adapted N-prefix160steps, first Euler inputs at boundaries30..150 every10;130 norm ratios; upper median; capped10. 12000: original alpha reused.",
+  "gains": {
+    "lr_front_1000": {
+      "alpha": 1.2466351985931396,
+      "source": "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/calibration_lr_front_1000.json",
+      "sha256": "0bef43a73386dc59e3f30364b69b5ad4d7439549ffb378a99595b826253e1cf7",
+      "rule": "same K21 norm-ratio rule on independent development states; no evaluation outcomes"
+    },
+    "lf_right_1000": {
+      "alpha": 1.2780091762542725,
+      "source": "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/calibration_lf_right_1000.json",
+      "sha256": "841a81152a9b9f786174c394e890f245b2ad170ac568ee1c085562fde20a4443",
+      "rule": "same K21 norm-ratio rule on independent development states; no evaluation outcomes"
+    },
+    "lr_front_12000": {
+      "alpha": 2.959,
+      "source": "original k21.py LINES[r1_front].alpha",
+      "sha256": "73a5d618f6ec957d3f74ec967a0fdbb9bcfab607c71f7c1251c45bda64ce55ef",
+      "rule": "reuse original fixed2.959"
+    },
+    "lf_right_12000": {
+      "alpha": 2.9485836029052734,
+      "source": "/home/lzx/cl_binding/.server/k21_transfer_20261113_01/lines/r0_s2/alpha.json",
+      "sha256": "6ec2dd4454e32fb75b7bd0e91146e4b922e345846c53caea9e0e24e468b657ce",
+      "rule": "reuse original K21 norm-ratio calibration"
+    }
+  },
+  "locked_at_utc": "2026-11-23T14:22:16.028167+00:00",
+  "preparation_sha256": "8086453c9be27a83148a89275f8661a6988ca720d303aac77d7cd8e1754d5486",
+  "method": "c=alpha*<rF(q)[:7],dP[:7]>/max(||dP[:7]||²,1e-30); output=(muP+c*dP) full32 cast to native dtype; only first150 controls, then F actual q"
+}

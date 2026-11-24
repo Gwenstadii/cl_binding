@@ -1,0 +1,16 @@
+{
+  "source_media_hashes_verified": 17,
+  "replays_verified": 5,
+  "all_replay_position_errors_zero": true,
+  "new_policy_rollouts": 0,
+  "training_updates": 0,
+  "back20": {
+    "ever": 17,
+    "terminal": 3,
+    "lost_after_success": 14,
+    "lost_to_unfinished": 12,
+    "lost_to_other_goal": 2,
+    "all_positive_gripper_commands_after_first_success": 16,
+    "positive_gripper_sign_is_a_control_clue_not_a_contact_or_release_measurement": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "registered_date": "2026-10-28",
+  "purpose": "development functional disambiguation before a new replay method",
+  "runtime_root": "/home/lzx/cl_binding_stage2a",
+  "output_root": "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_01",
+  "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+  "teacher": "outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "ft4": "outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "cid": "outputs/stage2a/stage2e_cid_20261026_01_cid/checkpoints/012000",
+  "parent_qualification": "historical user-selected LF12k, exploratory, not formally qualified",
+  "development_indices": [0, 1, 2, 3],
+  "response_modes": ["new", "old_mean", "old_difference", "old"],
+  "horizon": 400,
+  "continuation_horizon": 120,
+  "entry_radius_m": 0.08,
+  "entry_min_lift_m": 0.03,
+  "entry_min_step": 20,
+  "entry_unique_nearest_target": true,
+  "entry_source": "native environment goal-region sites; fixed before candidate rollout",
+  "response_gpu": 0,
+  "entry_gpu": 1,
+  "sampling_identity_max_normalized_action_error": 0.03,
+  "self_handoff_first_action_max_error": 0.00001,
+  "self_handoff_first_sim_state_max_error": 0.00001,
+  "runtime_error_policy": "stop affected arm; preserve failed output; no score-based retries",
+  "scope_limits": [
+    "functional output components, not unique neural-module localization",
+    "same-state failure is not proof of erased motor memory",
+    "development states and engineering reruns are not independent confirmation",
+    "old-condition interventions do not establish new-task retention",
+    "no training, model downloads, checkpoint changes or modifications to teammate worktree"
+  ]
+}

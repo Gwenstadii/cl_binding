@@ -1,0 +1,25 @@
+{
+  "analysis_only": true,
+  "files": {
+    "analysis_audit.json": {
+      "bytes": 2545,
+      "sha256": "dc11e48b78b87cb93bda47d0b04d2f20450b5368145a18ccea28dc3a13737658"
+    },
+    "paired_states.csv": {
+      "bytes": 6262,
+      "sha256": "d28a79340c3a3b29d83fc025739b1703fc990d03bab51cb816af142c5a1ee48d"
+    },
+    "results_by_state_source.csv": {
+      "bytes": 678,
+      "sha256": "810d6e555b7f8902b4272642817fdbc1b321b6f662979dea47a5504527683cfc"
+    },
+    "state_source_book_grid.png": {
+      "bytes": 246014,
+      "sha256": "e3f958c18c23f67c96cc42f59ca09f2581ad6211fab52378f6e08d7ba3c82c66"
+    },
+    "state_source_eef_grid.png": {
+      "bytes": 282723,
+      "sha256": "326a96d2a6fbc944a2ec4218c831b82e4bd46a18e02c3a1f22b7d86f10e69a58"
+    }
+  }
+}

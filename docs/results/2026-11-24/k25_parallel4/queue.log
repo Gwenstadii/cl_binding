@@ -1,0 +1,106 @@
+CAPACITY {'workers_per_gpu': 3, 'reason': 'reserve two calibration slots'}
+START full_lr_front_1000_0 0 1714853
+START full_lf_right_1000_0 1 1714854
+START full_lr_front_12000_0 0 1714855
+START full_lf_right_12000_0 1 1714856
+START full_lr_front_1000_1 1 1714857
+START full_lf_right_1000_1 0 1714858
+FINISH full_lr_front_1000_1 0
+START full_lr_front_12000_1 1 1716815
+FINISH full_lf_right_1000_0 0
+FINISH full_lf_right_12000_0 0
+START full_lf_right_1000_2 1 1716826
+START full_lf_right_12000_2 1 1716827
+FINISH full_lr_front_12000_0 0
+START full_lf_right_12000_1 0 1716862
+FINISH full_lr_front_1000_0 0
+FINISH full_lf_right_1000_1 0
+START full_lr_front_1000_2 0 1716947
+START full_lr_front_12000_2 0 1716948
+CAPACITY {'workers_per_gpu': 4, 'reason': 'independent calibration completed; max8 evaluation workers'}
+START full_lr_front_1000_3 1 1718129
+START full_lf_right_1000_3 0 1718130
+FINISH full_lr_front_12000_1 0
+START full_lr_front_12000_3 1 1719281
+FINISH full_lf_right_12000_1 0
+START full_lf_right_12000_3 0 1719285
+FINISH full_lr_front_12000_2 0
+START full_lr_front_1000_4 0 1719297
+FINISH full_lr_front_1000_2 0
+START full_lr_front_12000_4 0 1719318
+FINISH full_lf_right_12000_2 0
+START full_lf_right_1000_4 1 1719451
+FINISH full_lf_right_1000_2 0
+START full_lf_right_12000_4 1 1719520
+FINISH full_lf_right_1000_3 0
+START full_lf_right_1000_5 0 1720361
+FINISH full_lr_front_1000_3 0
+START full_lr_front_1000_5 1 1720434
+FINISH full_lr_front_12000_4 0
+START full_lf_right_12000_5 0 1721058
+FINISH full_lr_front_1000_4 0
+START full_lr_front_1000_6 0 1721063
+FINISH full_lf_right_12000_4 0
+START full_lr_front_12000_5 1 1721231
+FINISH full_lf_right_1000_4 0
+START full_lf_right_1000_6 1 1721299
+FINISH full_lf_right_12000_3 0
+START full_lr_front_12000_6 0 1721769
+FINISH full_lr_front_12000_3 0
+START full_lf_right_12000_6 1 1721842
+FINISH full_lf_right_1000_5 0
+START full_lf_right_1000_7 0 1721978
+FINISH full_lr_front_1000_5 0
+START full_lr_front_1000_7 1 1722093
+FINISH full_lf_right_12000_5 0
+START full_lf_right_12000_7 0 1722745
+FINISH full_lr_front_1000_6 0
+START four_0 0 1722770
+FINISH full_lr_front_12000_5 0
+START full_lr_front_12000_7 1 1722941
+FINISH full_lf_right_1000_6 0
+START four_1 1 1723019
+FINISH full_lr_front_12000_6 0
+START four_2 0 1723522
+FINISH full_lf_right_12000_6 0
+START four_3 1 1723731
+FINISH full_lf_right_1000_7 0
+START four_4 0 1723736
+FINISH full_lr_front_1000_7 0
+START four_5 1 1724032
+FINISH full_lf_right_12000_7 0
+START four_6 0 1725137
+FINISH full_lr_front_12000_7 0
+START four_7 1 1725477
+FINISH four_0 0
+START four_8 0 1727449
+FINISH four_1 0
+START four_9 1 1727621
+FINISH four_2 0
+START four_10 0 1727928
+FINISH four_4 0
+START four_12 0 1728040
+FINISH four_3 0
+START four_11 1 1728188
+FINISH four_5 0
+START four_13 1 1728609
+FINISH four_6 0
+START four_14 0 1729494
+FINISH four_7 0
+START four_15 1 1729908
+FINISH four_8 0
+START four_16 0 1731614
+FINISH four_9 0
+START four_17 1 1731948
+FINISH four_10 0
+START four_18 0 1732097
+FINISH four_12 0
+FINISH four_11 0
+START four_19 1 1732453
+FINISH four_13 0
+FINISH four_14 0
+FINISH four_15 0
+FINISH four_16 0
+FINISH four_18 0
+FINISH four_17 0
+FINISH four_19 0

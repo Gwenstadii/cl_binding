@@ -1,0 +1,153 @@
+{
+  "verified_at_utc": "2026-10-23T08:12:00.062319+00:00",
+  "whole_run_complete": false,
+  "accepted_completed_development_episodes": 80,
+  "final_evaluation_episodes_completed": 0,
+  "matched_development_conditions_across_two_candidates": 40,
+  "metrics": {
+    "6000": {
+      "counts": {
+        "left": {
+          "total": 20,
+          "success_ever": 19,
+          "terminal_correct": 15,
+          "failure_indices": [
+            5,
+            7,
+            8,
+            10,
+            17
+          ],
+          "terminal_targets": {
+            "left": 15,
+            "unfinished": 5
+          }
+        },
+        "front": {
+          "total": 20,
+          "success_ever": 8,
+          "terminal_correct": 8,
+          "failure_indices": [
+            1,
+            4,
+            5,
+            6,
+            9,
+            10,
+            12,
+            13,
+            15,
+            17,
+            18,
+            19
+          ],
+          "terminal_targets": {
+            "front": 8,
+            "unfinished": 12
+          }
+        }
+      },
+      "joint_terminal_correct": 6,
+      "joint_indices": [
+        0,
+        2,
+        3,
+        11,
+        14,
+        16
+      ]
+    },
+    "12000": {
+      "counts": {
+        "left": {
+          "total": 20,
+          "success_ever": 19,
+          "terminal_correct": 19,
+          "failure_indices": [
+            5
+          ],
+          "terminal_targets": {
+            "left": 19,
+            "unfinished": 1
+          }
+        },
+        "front": {
+          "total": 20,
+          "success_ever": 17,
+          "terminal_correct": 16,
+          "failure_indices": [
+            4,
+            10,
+            11,
+            13
+          ],
+          "terminal_targets": {
+            "front": 16,
+            "unfinished": 4
+          }
+        }
+      },
+      "joint_terminal_correct": 15,
+      "joint_indices": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  },
+  "source_files": [
+    {
+      "file": "alignment_verification.json",
+      "sha256": "10b8597128fc614746914002d0c5cf6c83df97d91e5fdf4059ca44fb226960e7"
+    },
+    {
+      "file": "config.json",
+      "sha256": "8c48836d3ec8d3074652b814e99af029b454af2fec1719fe2c5c95a265e2e1eb"
+    },
+    {
+      "file": "report.md",
+      "sha256": "32a9a03c1a6c428120420cecf395e3b174775d483b5d71b049ab0728fdee2a86"
+    },
+    {
+      "file": "run_summary_running_snapshot.json",
+      "sha256": "ef9090077fb8537e40d20425fdf94a8872dc64e96731032a7080b0de6caf9bae"
+    },
+    {
+      "file": "development_006000/episodes.jsonl",
+      "sha256": "1cb1ed80093c6bd92194e5860da53c988299d277fa9aaa85c755f0e6452657cc"
+    },
+    {
+      "file": "development_006000/evaluation_provenance.json",
+      "sha256": "a138e328e2d56e1595ace6a7086406ead1f224baa9c5f0260f090056aaca6a58"
+    },
+    {
+      "file": "development_006000/summary.json",
+      "sha256": "0f945243087a60044823ed63a7fa229189e41e3bf0cf80c48eac34b67e42db36"
+    },
+    {
+      "file": "development_012000/episodes.jsonl",
+      "sha256": "5b0f6adb6a8489828ee683f9762818c6a47864b1fdad80de11bd439349bc069d"
+    },
+    {
+      "file": "development_012000/evaluation_provenance.json",
+      "sha256": "0bffe15d56d0c984fc1716b9d8e219bbdb7558da8b8db2d0399a622d3613ba68"
+    },
+    {
+      "file": "development_012000/summary.json",
+      "sha256": "41e7deee347da7fd0458bb0f7e8a8660f34d160af97b5d6a7f9ec0d27d6ceec3"
+    }
+  ],
+  "not_a_final_R0_qualification": true
+}

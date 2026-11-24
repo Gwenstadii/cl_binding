@@ -1,0 +1,34 @@
+[
+  {
+    "goal": "left",
+    "mode": "new",
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "tolerance": 0.03,
+    "coordinate_system": "normalized actions"
+  },
+  {
+    "goal": "left",
+    "mode": "old",
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "tolerance": 0.03,
+    "coordinate_system": "normalized actions"
+  },
+  {
+    "goal": "front",
+    "mode": "new",
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "tolerance": 0.03,
+    "coordinate_system": "normalized actions"
+  },
+  {
+    "goal": "front",
+    "mode": "old",
+    "max_abs": 0.0,
+    "rms": 0.0,
+    "tolerance": 0.03,
+    "coordinate_system": "normalized actions"
+  }
+]

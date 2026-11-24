@@ -1,0 +1,139 @@
+{
+  "lines": {
+    "lr_front_130": {
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "step": 130,
+      "dev": "lr_front_130"
+    },
+    "lr_front_300": {
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "step": 300,
+      "dev": "lr_front_1000"
+    },
+    "lr_front_1000": {
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "step": 1000,
+      "dev": "lr_front_1000"
+    },
+    "lf_right_1000": {
+      "goals": [
+        "left",
+        "front",
+        "right"
+      ],
+      "step": 1000,
+      "dev": "lf_right_1000"
+    }
+  },
+  "window": [
+    80,
+    180
+  ],
+  "horizon": 400,
+  "dev_gains": [
+    1.0,
+    3.0,
+    5.294038631688923
+  ],
+  "dev_lines": [
+    "lr_front_130",
+    "lr_front_1000",
+    "lf_right_1000"
+  ],
+  "variants": {
+    "move": "Move the book to the caddy compartment on the {goal}."
+  },
+  "test_ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "dev_ids": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207
+  ],
+  "checkpoints": {
+    "lr_front_130": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "late": "/home/lzx/cl_binding/.server/k24_final_window_20261117_01/w_full_130.safetensors",
+      "anchor": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/000030/model.safetensors",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "late_sha256": "029dc82eb43d64ecee3e576f51b2a26258d7be4411f890d3404223865cebd239",
+      "anchor_sha256": "cf9d6a302ccd690fea0232d9a01e902cc65fb49fbd6c0fe55376b3f5c8d340b4"
+    },
+    "lr_front_300": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "late": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/000300/model.safetensors",
+      "anchor": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/000030/model.safetensors",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "late_sha256": "34135e5a0bfbc74c42b5848c8ff4e2fe1eae704fc69b7582d4960f892f35a5c3",
+      "anchor_sha256": "cf9d6a302ccd690fea0232d9a01e902cc65fb49fbd6c0fe55376b3f5c8d340b4"
+    },
+    "lr_front_1000": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "late": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/001000/model.safetensors",
+      "anchor": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/000030/model.safetensors",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "late_sha256": "082df3050cb7efde0ab8f27e56a234af90d56477bc04e668644b68b71206d41b",
+      "anchor_sha256": "cf9d6a302ccd690fea0232d9a01e902cc65fb49fbd6c0fe55376b3f5c8d340b4"
+    },
+    "lf_right_1000": {
+      "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "late": "/home/lzx/cl_binding/.server/k25_order_restore_20261122_01/lf_right_train/001000.safetensors",
+      "anchor": "/home/lzx/cl_binding/.server/k25_order_restore_20261122_01/lf_right_train/000030.safetensors",
+      "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "late_sha256": "366cb4413a26e8a1df333a50ea6b6d50be182ccee01da0de88fb2b520cce8c32",
+      "anchor_sha256": "857a2d6e480c092ef24ab1000b3c33a048d544321b12059bd064a9cbb90ed5e2"
+    }
+  },
+  "cases_sha256": "b4341a090783995816d7a9d43437e53fa3df11bb5c7d50528333b7098e37e81d",
+  "standard_gain": 5.294038631688923,
+  "alpha_selection": "maximize min(old goal first), joint first, old terminal sum, then smaller gain",
+  "main_arms": [
+    "native ABN",
+    "forward AB",
+    "reverse AB"
+  ],
+  "extra_standard_line": "lr_front_130 if selected gain differs",
+  "phrase_lines": [
+    "lr_front_1000",
+    "lf_right_1000"
+  ],
+  "source_sha256": "64c782401b2a6f61c85d2bcf35623d2853b8c20760daa82a453a171a6ddbc1d8",
+  "baseline_source_sha256": "0c0bee01ba687a472bdeb2e0cff53815f92f5dfe28bc9cb3d1a50f081f35798b"
+}

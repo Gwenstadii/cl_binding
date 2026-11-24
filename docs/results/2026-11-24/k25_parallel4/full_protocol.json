@@ -1,0 +1,235 @@
+{
+  "previous_protocol_sha256": "cc7da16cc0c4315ab7a96c6fc69a6352ebb69092182674cb71b451d7232ecf1e",
+  "previous_sources": {
+    "parallel_reproduction.py": "c3428dfbaeb71b9a19b67ef762a15fcaf3851bf599470ab278e1c9993e621b9d",
+    "parallel_protocol.py": "71f3686ff3b5c64b4e9d41721a3b444cd065d58ad246df9b8e4576f4c1ae8cd0",
+    "v_timing_protocol.py": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+    "anchor_tensor_hash.py": "ffeb32f0f16a9ef027596e55dd7deb2f1f35c8eb98c7c609dd301f632b4ddc35"
+  },
+  "models": {
+    "lr_front_1000": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "executor": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/001000/model.safetensors",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "executor_sha256": "082df3050cb7efde0ab8f27e56a234af90d56477bc04e668644b68b71206d41b",
+      "continuation_note": "K25 existing1000 stream"
+    },
+    "lf_right_1000": {
+      "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "executor": "/home/lzx/cl_binding/.server/k25_order_restore_20261122_01/lf_right_train/001000.safetensors",
+      "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "executor_sha256": "366cb4413a26e8a1df333a50ea6b6d50be182ccee01da0de88fb2b520cce8c32",
+      "continuation_note": "K25 existing1000 stream"
+    },
+    "lr_front_12000": {
+      "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+      "executor": "/home/lzx/cl_binding/.server/r1_then_front_v1/train/checkpoints/012000",
+      "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+      "executor_sha256": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515",
+      "continuation_note": "original K21/K22 endpoint; not assumed same continuation trajectory as1000"
+    },
+    "lf_right_12000": {
+      "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+      "executor": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+      "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+      "executor_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+      "continuation_note": "original K21/K22 endpoint; not assumed same continuation trajectory as1000"
+    }
+  },
+  "gains": {
+    "lr_front_1000": {
+      "alpha": 1.2466351985931396,
+      "source": "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/calibration_lr_front_1000.json",
+      "sha256": "0bef43a73386dc59e3f30364b69b5ad4d7439549ffb378a99595b826253e1cf7",
+      "rule": "same K21 norm-ratio rule on independent development states; no evaluation outcomes"
+    },
+    "lf_right_1000": {
+      "alpha": 1.2780091762542725,
+      "source": "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/calibration_lf_right_1000.json",
+      "sha256": "841a81152a9b9f786174c394e890f245b2ad170ac568ee1c085562fde20a4443",
+      "rule": "same K21 norm-ratio rule on independent development states; no evaluation outcomes"
+    },
+    "lr_front_12000": {
+      "alpha": 2.959,
+      "source": "original k21.py LINES[r1_front].alpha",
+      "sha256": "73a5d618f6ec957d3f74ec967a0fdbb9bcfab607c71f7c1251c45bda64ce55ef",
+      "rule": "reuse original fixed2.959"
+    },
+    "lf_right_12000": {
+      "alpha": 2.9485836029052734,
+      "source": "/home/lzx/cl_binding/.server/k21_transfer_20261113_01/lines/r0_s2/alpha.json",
+      "sha256": "6ec2dd4454e32fb75b7bd0e91146e4b922e345846c53caea9e0e24e468b657ce",
+      "rule": "reuse original K21 norm-ratio calibration"
+    }
+  },
+  "geometry": {
+    "left": {
+      "site": "desk_caddy_1_left_contain_region",
+      "centre": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "front": {
+      "site": "desk_caddy_1_front_contain_region",
+      "centre": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "rotation": [
+        [
+          0.9999999999999998,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        [
+          -0.0,
+          -0.9999999999999998,
+          0.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.03595,
+        0.06216
+      ]
+    },
+    "right": {
+      "site": "desk_caddy_1_right_contain_region",
+      "centre": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "back": {
+      "site": "desk_caddy_1_back_contain_region",
+      "centre": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    }
+  },
+  "sources": {
+    "parallel_full400.py": "f50c56cb36f57f5ceeeaca711057971b59d7ce24e16a72941213f6c0c8495176"
+  },
+  "expected": 160,
+  "profiles": [
+    "lr_front_1000",
+    "lf_right_1000",
+    "lr_front_12000",
+    "lf_right_12000"
+  ],
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "window": [
+    0,
+    400
+  ],
+  "horizon": 400,
+  "patch": {
+    "edits": {
+      "if block < 15:": "if block < 40:",
+      "window=[0,150]": "window=[0,400]",
+      "case[\"z0\"],0,150)": "case[\"z0\"],0,400)"
+    },
+    "original_function_sha256": "e463161694b5a5b08a1f82c3870025c31af90a786c343f85bc5d2bd3a7806b4c",
+    "modified_function_sha256": "e9c47f21c013e1f54c0bab3b66b4849a444048d6728861e89e8cd8c2dd1a110d"
+  },
+  "source_parent_commit": "e61358e0d1c203aea7d8cb57f0dfcadb986a8711",
+  "plan_sha256": "22ad9936b2338100144dc605061d47b5e152026c373e735905917fc06bd51f97"
+}

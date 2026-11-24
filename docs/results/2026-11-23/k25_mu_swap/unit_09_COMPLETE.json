@@ -1,0 +1,158 @@
+{
+  "lane": 9,
+  "init": 804,
+  "goal": "B",
+  "episodes": 15,
+  "rows_sha256": "3587534fe2f14480c70ff42090d9905561ec13d904f32586db2cabcdb4d4e1ad",
+  "protocol_sha256": "fe23598d845f0dd6a1976aa61654080ac3a2977a5ee24d0b64e4fe6e7fae6770",
+  "sources": {
+    "mu_swap.py": "61d3f67953e4880cc3ee32532d22857dc8ec4abc66e4b2a30bedfa72a2690902",
+    "mu_swap_protocol.py": "97b41e2d219f900ef29d73b92892fc482d47fcfc06ccb73f223f01a0e9b222e1",
+    "mu_swap_math.py": "e143e363497bc305a5e2a75fc7a5c96c3369470cc0189fb18f8651055710ffdd",
+    "anchor_tensor_hash.py": "ffeb32f0f16a9ef027596e55dd7deb2f1f35c8eb98c7c609dd301f632b4ddc35",
+    "v_timing.py": "22958ab3ba4baa73362f5f7617caee820e87325b9129f818404f721b58eff1c7",
+    "v_timing_protocol.py": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368"
+  },
+  "delta_sha256": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557",
+  "reference_replayed": [
+    [
+      "native",
+      "late",
+      1.0,
+      0.0,
+      "native",
+      "native"
+    ],
+    [
+      "v",
+      "late",
+      1.0,
+      5.294038631688923,
+      "delayed_100",
+      "forward"
+    ],
+    [
+      "v",
+      "late",
+      1.0,
+      5.294038631688923,
+      "delayed_100",
+      "reverse"
+    ],
+    [
+      "v",
+      "late",
+      1.0,
+      5.294038631688923,
+      "full_400",
+      "forward"
+    ],
+    [
+      "v",
+      "late",
+      1.0,
+      5.294038631688923,
+      "full_400",
+      "reverse"
+    ]
+  ],
+  "gates": {
+    "executor_runtime_roles": [
+      "F"
+    ],
+    "donor_runtime_roles": [
+      "F"
+    ],
+    "actual_policies": 2,
+    "donor_sha256": {
+      "F": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7"
+    },
+    "donor_canonical_queries_only": true,
+    "parent_mean_gap_rms": 0.50322425365448,
+    "native_identity_bitwise": true,
+    "v_gate": {
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004410733818076551,
+      "new_goal_bypass_bitwise": true
+    },
+    "response_gates": [
+      {
+        "beta": 1.0,
+        "gain": 0.0,
+        "polarity": 1.0,
+        "shared_shift_equal": true,
+        "contrast_preserved": true,
+        "pair_mean_correct": true,
+        "cast_mean_rms_max": 0.0015239000786095858
+      },
+      {
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "polarity": 1.0,
+        "shared_shift_equal": true,
+        "contrast_preserved": true,
+        "pair_mean_correct": true,
+        "cast_mean_rms_max": 0.0011766009265556931
+      },
+      {
+        "beta": 1.0,
+        "gain": 5.294038631688923,
+        "polarity": -1.0,
+        "shared_shift_equal": true,
+        "contrast_preserved": true,
+        "pair_mean_correct": true,
+        "cast_mean_rms_max": 0.0010319268330931664
+      },
+      {
+        "beta": 2.959,
+        "gain": 0.0,
+        "polarity": 1.0,
+        "shared_shift_equal": true,
+        "contrast_preserved": true,
+        "pair_mean_correct": true,
+        "cast_mean_rms_max": 0.0012912029633298516
+      }
+    ]
+  },
+  "executor_weights_sha256": "9f4f62616aa07bd3eff6dfb2d158a97715fe977ebc5f25d46862eaadceda404f",
+  "parent_weights_sha256": "379c7b50494d89eb5758eec200a06e9684e426cc2bb6452d6d25ab6287549bdf",
+  "weights_unchanged_at_end": true,
+  "executor_processor": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    }
+  },
+  "donor_processor": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    }
+  },
+  "cuda_peak_reserved_bytes": 2587885568
+}

@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-10-28T19:38:52.282039+08:00",
+  "source_manifest_sha256": "49ed1238a36d6e3e02dade446c3ae1884a97878e4a89ff605a1eb306d7aeaeda",
+  "snapshots": [
+    {
+      "snapshot_id": "teacher_left_00",
+      "arrays_sha256": "7a7cf8cf609b3e6011c3885c015b565a06f694d521de984fb6584f5ea59cebc5",
+      "metadata_sha256": "ebafc10b46b7bae3bed5a15c364623613dc506e3489c8a112bfc9e07a4c865ff"
+    },
+    {
+      "snapshot_id": "teacher_left_01",
+      "arrays_sha256": "89e430be7dac85616aa330dda008ddc2d46b8b55991a7833c85ba239a4c47a84",
+      "metadata_sha256": "6e9acf19c4d944b0479700e745adb1da1ee21cd054a6e04c4e19facf9441f4db"
+    },
+    {
+      "snapshot_id": "teacher_left_03",
+      "arrays_sha256": "79af88669062d96b13299ff1ed98e2cac4ade06b54260126aec500034baada1b",
+      "metadata_sha256": "10d1f96ea705f7715ccf72146edd9fc1878b4b5c8998b252828ebe1e49ba2b34"
+    },
+    {
+      "snapshot_id": "teacher_front_00",
+      "arrays_sha256": "790f4f82e416550de0b1d867a71d91d6b7f44d7dc6d5d7fbeb173ef492115b31",
+      "metadata_sha256": "dc379700f978955129b0d854908849b3628ea3a6ba2fde89cb9bbb1310ffb3df"
+    },
+    {
+      "snapshot_id": "teacher_front_01",
+      "arrays_sha256": "89d12eb29a5f30c8e2140d73b6a0a719a1227d78e5bd4dbc604d040b97a4c713",
+      "metadata_sha256": "82ddb8e4dbd1aeb7519cc90836d3a7b9df5da42e53eb2c9085f57d803ac691a4"
+    },
+    {
+      "snapshot_id": "teacher_front_02",
+      "arrays_sha256": "b93053dd437ec084caea82464accebbb71ad132239e338d137702f30d0a419d0",
+      "metadata_sha256": "b1277d51ee223c10b0bbc8ccf34cef43c9d7f1cad43a5c08636188aa35093497"
+    },
+    {
+      "snapshot_id": "teacher_front_03",
+      "arrays_sha256": "10d32cb58f2e99947198b0e5f2f69e72e9a045af113e9fc60704418e9a27a482",
+      "metadata_sha256": "3c0984343c279e9ab9043017d879cca4902921781e2da8a46e19bba8fd569c11"
+    },
+    {
+      "snapshot_id": "student_left_01",
+      "arrays_sha256": "40c6e4b6b664b5a5620b6b6aee28f338f699da4c4e58d6edd13ddda37650fd91",
+      "metadata_sha256": "cf80f2cbd6cf384f18991d3528263152efea2abaa37a0314e616641f58b33965"
+    },
+    {
+      "snapshot_id": "student_front_00",
+      "arrays_sha256": "ece785d89b067108d793e0337ebcd4de7fee158b67f6ad46e9fb3cbecbaad76c",
+      "metadata_sha256": "ed87fb299f7543eb09bb66f9c5751e8b22288b6c3614f7ebb820765f98d3543d"
+    },
+    {
+      "snapshot_id": "student_front_01",
+      "arrays_sha256": "80003b08faee96955aea6847872fd9f424017eb5dbeec6059f47c167b5177241",
+      "metadata_sha256": "052d9385810f1c344ff6ab63873419c3ffb5d0f881dc7ea419bff696682d2340"
+    },
+    {
+      "snapshot_id": "student_front_02",
+      "arrays_sha256": "0962a136e51a17400a31d8e5996a8d6d48608a103e248d70f44e220763ca85b2",
+      "metadata_sha256": "59a8e8b78344a31ecd3acbf4e2e1934a1e6829b3f2759b1946491fdca163d455"
+    },
+    {
+      "snapshot_id": "student_front_03",
+      "arrays_sha256": "ba84cccb182988a4a1173ba62b8058cec67624db0ead06df7712031c21aab593",
+      "metadata_sha256": "54d57639cf9f60e5bf74d9c23207c0c04fc30901ef356230cc77b72c539e0d59"
+    }
+  ],
+  "processors": {
+    "policy_preprocessor.json": {
+      "teacher": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf",
+      "student": "1e35de78c5193ea6531c5969223cd0e29890a450efa059f3c71d2544c1fd4adf"
+    },
+    "policy_postprocessor.json": {
+      "teacher": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+      "student": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a"
+    },
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "teacher": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+      "student": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573"
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "teacher": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5",
+      "student": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+    }
+  },
+  "gpu_before": "0, 721 MiB, 0 %\n1, 37 MiB, 0 %\n",
+  "status": "source_and_processors_pass"
+}

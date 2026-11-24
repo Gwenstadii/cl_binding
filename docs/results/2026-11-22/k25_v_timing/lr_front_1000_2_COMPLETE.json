@@ -1,0 +1,135 @@
+{
+  "line": "lr_front_1000",
+  "lane": 2,
+  "lanes": 8,
+  "ids": [
+    802,
+    810,
+    818
+  ],
+  "gates": {
+    "single_model_roles": [
+      "F"
+    ],
+    "v_only_overlay_equal": true,
+    "weights_restored": true,
+    "mean_preserved_fp64": true,
+    "mean_cast_rms": 0.0004818025918211788,
+    "new_goal_bypass_bitwise": true
+  },
+  "protocol_sha256": "58e5eb1031804c97fa6a788f76bb365bad14a8b340d9a0b9768cf6f2fef8a159",
+  "source_sha256": "22958ab3ba4baa73362f5f7617caee820e87325b9129f818404f721b58eff1c7",
+  "spec_sha256": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+  "delta_sha256": "b1e94c0a140ee8078a2be24165f39602b7acbc425532a0ce6e90ed3df4e8cd27",
+  "rows_sha256": "d18a34d1108ae43121c274efa4f6d400be9ac22765cb7d63bb358c0fd6320ca9",
+  "previous_replays": [
+    [
+      "native",
+      "native",
+      "A",
+      802
+    ],
+    [
+      "native",
+      "native",
+      "B",
+      802
+    ],
+    [
+      "native",
+      "native",
+      "A",
+      810
+    ],
+    [
+      "native",
+      "native",
+      "B",
+      810
+    ],
+    [
+      "native",
+      "native",
+      "A",
+      818
+    ],
+    [
+      "native",
+      "native",
+      "B",
+      818
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "A",
+      802
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "B",
+      802
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "A",
+      810
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "B",
+      810
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "A",
+      818
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "B",
+      818
+    ],
+    [
+      "delayed_100",
+      "reverse",
+      "A",
+      802
+    ],
+    [
+      "delayed_100",
+      "reverse",
+      "B",
+      802
+    ],
+    [
+      "delayed_100",
+      "reverse",
+      "A",
+      810
+    ],
+    [
+      "delayed_100",
+      "reverse",
+      "B",
+      810
+    ],
+    [
+      "delayed_100",
+      "reverse",
+      "A",
+      818
+    ],
+    [
+      "delayed_100",
+      "reverse",
+      "B",
+      818
+    ]
+  ]
+}

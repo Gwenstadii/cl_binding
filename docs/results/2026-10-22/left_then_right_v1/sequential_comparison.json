@@ -1,0 +1,352 @@
+{
+  "old_goal": "left",
+  "new_goal": "right",
+  "matched_pairs": 80,
+  "before": {
+    "task_success_counts": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 19
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0
+      }
+    },
+    "first_target_matrix": {
+      "front": {
+        "front": 0,
+        "left": 20,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 20,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 20,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 19,
+        "right": 0,
+        "back": 0,
+        "unreached": 1,
+        "ambiguous": 0
+      }
+    },
+    "terminal_summary": {
+      "trained_goal": "left",
+      "initial_states": 20,
+      "episodes": 80,
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 17,
+          "right": 0,
+          "back": 0,
+          "unfinished": 3,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 19,
+          "right": 0,
+          "back": 0,
+          "unfinished": 1,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 18,
+          "right": 0,
+          "back": 0,
+          "unfinished": 2,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 16,
+          "right": 0,
+          "back": 0,
+          "unfinished": 4,
+          "ambiguous": 0
+        }
+      },
+      "trained_instruction_correct": 19,
+      "other_instructions": {
+        "total": 60,
+        "requested_goal_correct": 0,
+        "trained_goal_terminal": 51,
+        "trained_goal_terminal_rate": 0.85
+      },
+      "conditioned_on_trained_instruction_success": {
+        "control_indices": [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "total": 57,
+        "trained_goal_terminal": 51,
+        "trained_goal_terminal_rate": 0.8947368421052632
+      }
+    },
+    "other_instruction_intrusion": {
+      "total": 60,
+      "first_trained_goal": 59,
+      "trained_goal_ever_without_requested_success": 59,
+      "terminal_trained_goal": 51
+    },
+    "conditioned_on_trained_success_ever": {
+      "control_indices": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "total": 60,
+      "first_trained_goal": 59,
+      "trained_goal_ever_without_requested_success": 59,
+      "terminal_trained_goal": 51
+    }
+  },
+  "after": {
+    "task_success_counts": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 9,
+        "terminal_correct": 9
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0
+      }
+    },
+    "first_target_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 8,
+        "back": 0,
+        "unreached": 12,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 8,
+        "back": 0,
+        "unreached": 12,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 9,
+        "back": 0,
+        "unreached": 11,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 7,
+        "back": 0,
+        "unreached": 13,
+        "ambiguous": 0
+      }
+    },
+    "terminal_summary": {
+      "trained_goal": "right",
+      "initial_states": 20,
+      "episodes": 80,
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 8,
+          "back": 0,
+          "unfinished": 12,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 7,
+          "back": 0,
+          "unfinished": 13,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 9,
+          "back": 0,
+          "unfinished": 11,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 6,
+          "back": 0,
+          "unfinished": 14,
+          "ambiguous": 0
+        }
+      },
+      "trained_instruction_correct": 9,
+      "other_instructions": {
+        "total": 60,
+        "requested_goal_correct": 0,
+        "trained_goal_terminal": 21,
+        "trained_goal_terminal_rate": 0.35
+      },
+      "conditioned_on_trained_instruction_success": {
+        "control_indices": [
+          33,
+          34,
+          36,
+          37,
+          38,
+          39,
+          44,
+          46,
+          48
+        ],
+        "total": 27,
+        "trained_goal_terminal": 18,
+        "trained_goal_terminal_rate": 0.6666666666666666
+      }
+    },
+    "other_instruction_intrusion": {
+      "total": 60,
+      "first_trained_goal": 23,
+      "trained_goal_ever_without_requested_success": 23,
+      "terminal_trained_goal": 21
+    },
+    "conditioned_on_trained_success_ever": {
+      "control_indices": [
+        33,
+        34,
+        36,
+        37,
+        38,
+        39,
+        44,
+        46,
+        48
+      ],
+      "total": 27,
+      "first_trained_goal": 20,
+      "trained_goal_ever_without_requested_success": 20,
+      "terminal_trained_goal": 18
+    }
+  },
+  "old_goal_previously_successful_ever": {
+    "total": 20,
+    "retained_success_ever": 0,
+    "lost_success_ever": 20,
+    "lost_and_first_new_goal": 8,
+    "lost_and_terminal_new_goal": 7,
+    "lost_and_terminal_unfinished": 13,
+    "lost_and_terminal_ambiguous": 0,
+    "lost_and_terminal_other_wrong": 0,
+    "lost_initial_indices": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ]
+  },
+  "old_goal_previously_terminal_correct": {
+    "total": 19,
+    "retained_terminal_correct": 0,
+    "lost_terminal_correct": 19,
+    "lost_and_terminal_new_goal": 7,
+    "lost_and_terminal_unfinished": 12
+  },
+  "interpretation": "Single-old-skill retention pilot; it does not establish erosion of previously acquired multi-goal language discrimination or a causal information pathway."
+}

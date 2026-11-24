@@ -1,0 +1,30 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+FOUR 8 808 parent left ['left'] True 19.93
+FOUR 8 808 parent front ['front'] True 21.11
+FOUR 8 808 parent right ['right'] True 17.26
+FOUR 8 808 parent back ['front'] False 17.98
+FOUR 8 808 native left ['left'] False 14.73
+FOUR 8 808 native front ['front'] False 16.8
+FOUR 8 808 native right [] False 15.97
+FOUR 8 808 native back [] False 17.48
+FOUR 8 808 parallel150 left ['left'] True 41.76
+FOUR 8 808 parallel150 front ['front'] True 42.09
+FOUR 8 808 parallel150 right ['right'] True 37.69
+FOUR 8 808 parallel150 back ['front'] False 42.58
+FOUR 8 808 parallel400 left ['left'] True 83.24
+FOUR 8 808 parallel400 front ['front'] False 82.82
+FOUR 8 808 parallel400 right ['right'] True 89.35
+FOUR 8 808 parallel400 back ['front'] False 87.41

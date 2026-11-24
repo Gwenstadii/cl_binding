@@ -1,0 +1,48 @@
+{
+  "registered_date": "2026-10-28",
+  "purpose": "P0 acceptance and P1 common-noise continuation of the twelve sealed stage2k entrances",
+  "runtime_root": "/home/lzx/cl_binding_stage2a",
+  "source_snapshots": "/home/lzx/cl_binding/.server/stage2k_mechanism_20261028_03/entry_pilot",
+  "source_manifest_sha256": "49ed1238a36d6e3e02dade446c3ae1884a97878e4a89ff605a1eb306d7aeaeda",
+  "source_snapshot_count": 12,
+  "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+  "output_root": "/home/lzx/cl_binding/.server/stage2l_p1_20261028_01",
+  "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2e_cid_20261026_01_cid/checkpoints/012000",
+  "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "student_model_sha256": "77c06eea32c9abb08fbacac005bfa457b868f19be8aaa60a2c4fa5cf2a7566c0",
+  "gpu": 1,
+  "seeds": [
+    2026102801,
+    2026102802,
+    2026102803
+  ],
+  "noise_rule": "Each trial seed defines one CPU-generated Gaussian chunk sequence, independent of source/policy/goal/init. Each model and each snapshot restart the same sequence; chunk hashes must match across runs.",
+  "horizon": 120,
+  "smoke_snapshot_ids": [
+    "teacher_front_00"
+  ],
+  "smoke_seeds": [
+    2026102801
+  ],
+  "self_check": true,
+  "primary_executions": 72,
+  "engineering_executions": 2,
+  "observation_rule": "fresh physical/observable synchronization at each ten-step replanning boundary, native step observations between boundaries, as in the corrected stage2k entrance protocol",
+  "save_rgb_every_step": true,
+  "save_full_event_action_contact_trace": true,
+  "minimum_disk_free_bytes": 2147483648,
+  "maximum_output_bytes": 1610612736,
+  "maximum_worker_minutes": 60,
+  "runtime_error_policy": "stop on engineering or runtime failure; retain evidence; never retry because of a low score",
+  "scope_exclusions": [
+    "no new training or model downloads",
+    "no new entrance collection or initial-state generation",
+    "no 240-step sensitivity analysis in this run",
+    "no P2 response-amplitude control or P6 internal intervention",
+    "no claim that 72 continuations are 72 independent states",
+    "no claim that historical R0 passed independent formal qualification"
+  ],
+  "source_plan_local_file": "docs\\2026-10-28_机制归因主线与实验计划.md",
+  "source_plan_sha256": "a01d14e334b4a7bb56cb8367a1620289a2d83674fcfcb8bb14d3a68d8eaa7089"
+}

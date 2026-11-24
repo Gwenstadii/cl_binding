@@ -1,0 +1,12 @@
+{
+  "model_sha256": {
+    "F": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+    "R": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7"
+  },
+  "projection_shape": [
+    720,
+    32
+  ],
+  "chunk_size": 50,
+  "source_sha256": "fd5c01b758e8c1a2a185f75a62c31d663f4115ef94573abd60ca83e6286406f4"
+}

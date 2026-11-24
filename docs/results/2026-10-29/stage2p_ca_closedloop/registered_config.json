@@ -1,0 +1,95 @@
+{
+  "runtime_root": "/home/lzx/cl_binding_stage2a",
+  "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+  "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+  "expected_model_sources": {
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+  },
+  "gpu": 1,
+  "prior_baseline_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/baseline.jsonl",
+  "prior_baseline_sha256": "5e483cab3e81fabe029f3753fa01ec83dbd9d0cabcce9d649630d899d44eea33",
+  "prior_candidates_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/candidates.json",
+  "prior_candidates_sha256": "a9fca67dd7aa49a63c57eec8155ad8409cee850a62371d8d82b6364756ec3ac2",
+  "registered_date": "2026-10-29",
+  "purpose": "Step5 development closed-loop test of fixed post-W_O CA message intervention",
+  "output_root": "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01",
+  "site": 9,
+  "site_selection": "highest full-M same-source conditional-error reduction among preregistered candidate sites in 36-input step3; no head selected",
+  "candidate_sites": [
+    3,
+    9
+  ],
+  "indices": [
+    0,
+    1
+  ],
+  "seeds": [
+    2026102801,
+    2026102802
+  ],
+  "goals": [
+    "left",
+    "front"
+  ],
+  "horizon": 400,
+  "intervention_steps": 120,
+  "n_action_steps": 10,
+  "flow_steps": 10,
+  "noise_replan_stride": 1000003,
+  "roles_and_modes": {
+    "FT4": [
+      "native",
+      "cross_same",
+      "cross_wrong",
+      "random_delta"
+    ],
+    "R0": [
+      "native",
+      "cross_same",
+      "same_model_wrong",
+      "random_delta"
+    ]
+  },
+  "new_goal_check": {
+    "model": "FT4",
+    "mode": "native",
+    "goal": "right",
+    "indices": [
+      0,
+      1
+    ],
+    "seeds": [
+      2026102801,
+      2026102802
+    ]
+  },
+  "expected_episodes": 68,
+  "expected_replans": 2720,
+  "expected_recipient_denoise_calls": 29120,
+  "expected_patch_calls": 5760,
+  "expected_random_norm_records": 1920,
+  "identity_tolerance": 1e-05,
+  "save_videos": false,
+  "maximum_worker_minutes": 60,
+  "maximum_output_bytes": 2147483648,
+  "minimum_disk_free_bytes": 2147483648,
+  "random_seed_salt": 2026102905,
+  "parent_qualification": "historical exploratory LF12k, not formally qualified",
+  "result_scope": "development only: two physical states, two inference seeds; four episodes per old goal per arm, not independent confirmation",
+  "stop_on_error": true,
+  "no_followup": [
+    "additional layer or head",
+    "P/C closed-loop arms",
+    "intervention longer than 120 simulation steps",
+    "additional physical states or noise seeds",
+    "training or replay",
+    "claim teacher-assisted rescue is autonomous retention"
+  ],
+  "expected_recipient_integration_calls": 27200,
+  "expected_random_calibration_calls": 1920,
+  "expected_total_denoise_calls": 34880
+}

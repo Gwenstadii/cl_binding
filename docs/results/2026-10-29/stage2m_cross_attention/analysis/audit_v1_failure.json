@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "audit_script_sha256": "619d8e8203c44bf0ba6e05f31ec4a9bd22627053dbf635c199dee80f6bb761fd",
+  "exception": "ValueError",
+  "error": "Invalid attention mass",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"C:\\Users\\pengs\\Documents\\GitHub\\1\\scripts\\audit_stage2m_cross_attention.py\", line 266, in audit\n    require(all(-1e-6 <= value <= 1+1e-6 for value in mass), \"Invalid attention mass\")\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\pengs\\Documents\\GitHub\\1\\scripts\\audit_stage2m_cross_attention.py\", line 23, in require\n    raise ValueError(message)\nValueError: Invalid attention mass\n",
+  "scope": "CPU-only audit rejection; no model inference or raw-result changes",
+  "reason_under_review": "float32 softmax probabilities are cast to bfloat16 before logged reductions"
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "P0/P1 launch and engineering evidence, not full confirmation results",
+  "registration_commit": "6de2016",
+  "engineering_continuations": 2,
+  "planned_main_continuations": 72,
+  "distinct_main_snapshots": 12,
+  "files": {
+    "dispatch.json": {
+      "bytes": 595,
+      "sha256": "17aebae97393d42c68b85aab345418e49981614d59762c4bd60a6caba61f0cbf"
+    },
+    "engineering_COMPLETE.json": {
+      "bytes": 108,
+      "sha256": "3744368845d96d2f10a5dea50e9a4d61dde3374824c61b063415b86afeeb49e0"
+    },
+    "engineering_verification.json": {
+      "bytes": 1655,
+      "sha256": "0d8bc5496ded3aac7e6ece64f1ab8c7756e2445908dcd42a3d0e7ba570560756"
+    },
+    "preflight.json": {
+      "bytes": 4042,
+      "sha256": "e0126476243ee6348e9e3b5edaa9854f576c2f53ad57ee32a040c80cd195c99c"
+    }
+  }
+}

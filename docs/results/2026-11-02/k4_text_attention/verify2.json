@@ -1,0 +1,24 @@
+{
+ "N|text_image": {
+  "first_targets": [
+   "right"
+  ],
+  "first_step": 80,
+  "success": {
+   "left": null,
+   "front": null,
+   "right": 92,
+   "back": null
+  }
+ },
+ "U|text_only": {
+  "first_targets": [],
+  "first_step": null,
+  "success": {
+   "left": null,
+   "front": null,
+   "right": null,
+   "back": null
+  }
+ }
+}

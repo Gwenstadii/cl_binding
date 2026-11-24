@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "fixed_new_task_steps": 12000,
+  "accepted_evaluation_episodes": 120,
+  "starting_point_formally_qualified": false,
+  "evidence_archive_ready": true
+}

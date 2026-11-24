@@ -1,0 +1,13 @@
+START lr_front_1000 0 0 1700672
+START lf_right_1000 0 1 1700673
+START lr_front_12000 0 0 1700674
+START lf_right_12000 0 1 1700675
+START lr_front_1000 1 1 1700676
+START lf_right_1000 1 0 1700677
+START lr_front_12000 1 1 1700678
+START lf_right_12000 1 0 1700679
+FINISH lf_right_12000 1 1
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/run_parallel_reproduction.py", line 40, in <module>
+    raise RuntimeError(failures)
+RuntimeError: [{'profile': 'lf_right_12000', 'lane': 1, 'code': 1}]

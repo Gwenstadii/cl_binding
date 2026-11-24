@@ -1,0 +1,50 @@
+[
+  {
+    "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init00_seed2026102801_moveCORRECT_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init00_seed2026102802_moveCORRECT_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init01_seed2026102801_moveCORRECT_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "FRONT_R0_LEFT_steps001-080_then_FT4_FRONT_steps081-400_init01_seed2026102802_moveCORRECT_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init00_seed2026102801_moveCORRECT_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init00_seed2026102802_moveCORRECT_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init01_seed2026102801_moveWRONG_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  },
+  {
+    "file": "LEFT_R0_LEFT_steps001-080_then_FT4_LEFT_steps081-400_init01_seed2026102802_moveWRONG_finalFAIL.mp4",
+    "decoded_frames": 400,
+    "width": 768,
+    "height": 492
+  }
+]

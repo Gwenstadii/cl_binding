@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "statistic_fingerprints_equal_after_singleton_canonicalization": true,
+  "processor_configs_equal": true,
+  "preprocessor_tensor_outputs_equal": [
+    "action",
+    "observation.state",
+    "observation.images.image",
+    "observation.images.image2",
+    "observation.language.tokens",
+    "observation.language.attention_mask"
+  ],
+  "postprocessor_outputs_equal": true,
+  "interpretation": "The original guard treated serialization changes of scalar/count metadata as changed normalization. Non-singleton shapes, dtypes and numerical values remain checked."
+}

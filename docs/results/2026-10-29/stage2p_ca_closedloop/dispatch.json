@@ -1,0 +1,18 @@
+{
+  "pid": 32151,
+  "command": [
+    "python3",
+    "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code/run_stage2p_ca_closedloop.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code/stage2p_ca_closedloop_20261029.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2p_ca_closedloop_20261029_01/code",
+    "--registered-commit",
+    "96992346d9041eec1bb9059e47cd186e5cb724d0"
+  ],
+  "started_at": "2026-10-29T22:25:27.114947+08:00",
+  "registered_commit": "96992346d9041eec1bb9059e47cd186e5cb724d0",
+  "bundle_sha256": "c4de8c346c9ebe5fff7ed69c1586c9109e0b73816f1a30c7d3ae511677075775",
+  "cpu_tests_passed": true,
+  "scope": "engineering then fixed 68-episode development batch; no training/additional arms"
+}

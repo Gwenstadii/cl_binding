@@ -1,0 +1,352 @@
+{
+  "episodes": 250,
+  "k7_old_native_match": 20,
+  "full_r0_reconstruction_match": 30,
+  "conditions": {
+    "r0-native": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 10,
+        "terminal": 10
+      },
+      "B": {
+        "first": {
+          "front": 9,
+          "none": 1
+        },
+        "ever": 7,
+        "terminal": 7
+      },
+      "N": {
+        "first": {
+          "left": 10
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 9
+    },
+    "all16-output": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 10,
+        "terminal": 9
+      },
+      "B": {
+        "first": {
+          "front": 10
+        },
+        "ever": 10,
+        "terminal": 9
+      },
+      "N": {
+        "first": {
+          "front": 2,
+          "left": 8
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 10
+    },
+    "all16-input": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 10,
+        "terminal": 9
+      },
+      "B": {
+        "first": {
+          "none": 2,
+          "front": 8
+        },
+        "ever": 8,
+        "terminal": 6
+      },
+      "N": {
+        "first": {
+          "left": 7,
+          "front": 1,
+          "none": 2
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 8
+    },
+    "all16-norm": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 10,
+        "terminal": 4
+      },
+      "B": {
+        "first": {
+          "none": 7,
+          "front": 3
+        },
+        "ever": 2,
+        "terminal": 0
+      },
+      "N": {
+        "first": {
+          "front": 6,
+          "left": 2,
+          "none": 2
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 3
+    },
+    "all16-external": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 10,
+        "terminal": 10
+      },
+      "B": {
+        "first": {
+          "front": 9,
+          "none": 1
+        },
+        "ever": 7,
+        "terminal": 7
+      },
+      "N": {
+        "first": {
+          "left": 10
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 9
+    },
+    "reverse-q1": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 9,
+        "terminal": 4
+      },
+      "B": {
+        "first": {
+          "front": 10
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 10
+    },
+    "reverse-q2": {
+      "A": {
+        "first": {
+          "none": 4,
+          "left": 6
+        },
+        "ever": 6,
+        "terminal": 6
+      },
+      "B": {
+        "first": {
+          "front": 7,
+          "none": 3
+        },
+        "ever": 1,
+        "terminal": 1
+      },
+      "D": 5
+    },
+    "reverse-q3": {
+      "A": {
+        "first": {
+          "left": 10
+        },
+        "ever": 10,
+        "terminal": 7
+      },
+      "B": {
+        "first": {
+          "front": 9,
+          "none": 1
+        },
+        "ever": 8,
+        "terminal": 8
+      },
+      "D": 9
+    },
+    "reverse-q4": {
+      "A": {
+        "first": {
+          "front": 4,
+          "left": 4,
+          "none": 2
+        },
+        "ever": 5,
+        "terminal": 1
+      },
+      "B": {
+        "first": {
+          "front": 4,
+          "none": 6
+        },
+        "ever": 3,
+        "terminal": 2
+      },
+      "D": 2
+    },
+    "reverse-all16": {
+      "A": {
+        "first": {
+          "none": 2,
+          "right": 4,
+          "back": 2,
+          "front": 2
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "B": {
+        "first": {
+          "right": 6,
+          "none": 3,
+          "front": 1
+        },
+        "ever": 0,
+        "terminal": 0
+      },
+      "D": 0
+    }
+  },
+  "paired_transitions": {
+    "all16-output": {
+      "A": {
+        "left->left": 10
+      },
+      "B": {
+        "none->front": 7,
+        "front->front": 3
+      },
+      "N": {
+        "front->front": 2,
+        "left->left": 2,
+        "none->left": 2,
+        "front->left": 4
+      }
+    },
+    "all16-input": {
+      "A": {
+        "left->left": 10
+      },
+      "B": {
+        "none->none": 1,
+        "front->front": 2,
+        "none->front": 6,
+        "front->none": 1
+      },
+      "N": {
+        "front->left": 4,
+        "left->left": 2,
+        "front->front": 1,
+        "none->none": 1,
+        "front->none": 1,
+        "none->left": 1
+      }
+    },
+    "all16-norm": {
+      "A": {
+        "left->left": 10
+      },
+      "B": {
+        "none->none": 7,
+        "front->front": 3
+      },
+      "N": {
+        "front->front": 6,
+        "left->left": 2,
+        "none->none": 2
+      }
+    },
+    "all16-external": {
+      "A": {
+        "left->left": 10
+      },
+      "B": {
+        "none->front": 7,
+        "front->front": 2,
+        "front->none": 1
+      },
+      "N": {
+        "front->left": 6,
+        "left->left": 2,
+        "none->left": 2
+      }
+    },
+    "reverse-q1": {
+      "A": {
+        "left->left": 10
+      },
+      "B": {
+        "front->front": 9,
+        "none->front": 1
+      }
+    },
+    "reverse-q2": {
+      "A": {
+        "left->none": 4,
+        "left->left": 6
+      },
+      "B": {
+        "front->front": 7,
+        "front->none": 2,
+        "none->none": 1
+      }
+    },
+    "reverse-q3": {
+      "A": {
+        "left->left": 10
+      },
+      "B": {
+        "front->front": 9,
+        "none->none": 1
+      }
+    },
+    "reverse-q4": {
+      "A": {
+        "left->front": 4,
+        "left->left": 4,
+        "left->none": 2
+      },
+      "B": {
+        "front->front": 4,
+        "front->none": 5,
+        "none->none": 1
+      }
+    },
+    "reverse-all16": {
+      "A": {
+        "left->none": 2,
+        "left->right": 4,
+        "left->back": 2,
+        "left->front": 2
+      },
+      "B": {
+        "front->right": 6,
+        "front->none": 2,
+        "front->front": 1,
+        "none->none": 1
+      }
+    }
+  }
+}

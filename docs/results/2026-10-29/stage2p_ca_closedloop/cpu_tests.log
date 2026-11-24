@@ -1,0 +1,15 @@
+test_ambiguous_goal_events_are_not_silently_called_correct (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_ambiguous_goal_events_are_not_silently_called_correct) ... ok
+test_duplicate_cannot_replace_an_unobserved_episode (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_duplicate_cannot_replace_an_unobserved_episode) ... ok
+test_engineering_passed_boolean_cannot_hide_missing_or_bad_checks (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_engineering_passed_boolean_cannot_hide_missing_or_bad_checks) ... ok
+test_equal_success_totals_can_hide_different_paired_outcomes (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_equal_success_totals_can_hide_different_paired_outcomes) ... ok
+test_exact_matrix_is_68_episodes_and_48_intervened (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_exact_matrix_is_68_episodes_and_48_intervened) ... ok
+test_intervention_cannot_leak_past_120_steps (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_intervention_cannot_leak_past_120_steps) ... ok
+test_recovery_denominator_uses_original_correct_states_only (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_recovery_denominator_uses_original_correct_states_only) ... ok
+test_requested_success_then_loss_is_not_terminal_or_target_switch (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_requested_success_then_loss_is_not_terminal_or_target_switch) ... ok
+test_target_substitution_is_explicit_even_if_terminal_unfinished (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_target_substitution_is_explicit_even_if_terminal_unfinished) ... ok
+test_window_step_120_and_121_have_different_claims (test_stage2p_ca_closedloop.ClosedLoopBehaviorAuditTests.test_window_step_120_and_121_have_different_claims) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+OK

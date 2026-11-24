@@ -1,0 +1,93 @@
+{
+ "text_mask_check": {
+  "text_mass_after_block": {
+   "1": 0.0,
+   "3": 0.0,
+   "5": 0.0,
+   "7": 0.0,
+   "9": 0.0,
+   "11": 0.0,
+   "13": 0.0,
+   "15": 0.0
+  },
+  "image_mass_after_block": {
+   "1": 0.807645320892334,
+   "3": 0.5654356479644775,
+   "5": 0.7238287925720215,
+   "7": 0.46040236949920654,
+   "9": 0.6935282945632935,
+   "11": 0.5743994116783142,
+   "13": 0.5697629451751709,
+   "15": 0.5678208470344543
+  },
+  "chunk_change": 0.20849609375
+ },
+ "token_controls_open": {
+  "FT4|N|the": 0.007977222092449665,
+  "FT4|N|slot": 0.09644908457994461,
+  "R0|A|the": 0.01337343268096447,
+  "R0|A|slot": 0.7215496301651001
+ },
+ "closed_loop_controls": {
+  "FT4|N|image_all": {
+   "first_targets": [
+    "right"
+   ],
+   "first_step": 80,
+   "success": {
+    "left": null,
+    "front": null,
+    "right": null,
+    "back": null
+   }
+  },
+  "FT4|N|the_all": {
+   "first_targets": [
+    "right"
+   ],
+   "first_step": 81,
+   "success": {
+    "left": null,
+    "front": null,
+    "right": null,
+    "back": null
+   }
+  },
+  "R0|A|the_all": {
+   "first_targets": [
+    "left"
+   ],
+   "first_step": 98,
+   "success": {
+    "left": 99,
+    "front": null,
+    "right": null,
+    "back": null
+   }
+  },
+  "FT4|N|slot_layer_13": {
+   "first_targets": [
+    "right"
+   ],
+   "first_step": 82,
+   "success": {
+    "left": null,
+    "front": null,
+    "right": null,
+    "back": null
+   }
+  },
+  "FT4|N|slot_layer_7": {
+   "first_targets": [
+    "right"
+   ],
+   "first_step": 80,
+   "success": {
+    "left": null,
+    "front": null,
+    "right": null,
+    "back": null
+   }
+  }
+ }
+}

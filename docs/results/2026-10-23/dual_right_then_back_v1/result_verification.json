@@ -1,0 +1,1839 @@
+{
+  "status": "pass",
+  "verified_at": "2026-10-23T15:59:22.889895+00:00",
+  "method": "Independent Python standard-library recomputation, no imports or calls to project summary/comparison functions. First arrival and ever-success independently derived from first_goal_times. Terminal outcomes use recorded episode terminal_goal labels; raw frame/step traces were not retrieved or re-simulated locally.",
+  "audit_script_sha256": "c8438694239e1032274a88a4c8fdde3d156dc1e718f6ca89512fc3a28a59d9a1",
+  "source_commit": "01be69b9ed577ef5e7fd0710fa54da2cc99f9680",
+  "checks_count": 5110,
+  "failed_checks": [],
+  "manifest_verification": {
+    "entries": 34,
+    "all_sha256_and_byte_lengths_match": true,
+    "files": [
+      {
+        "archive_path": "config.json",
+        "expected_bytes": 2887,
+        "expected_sha256": "ad050b0195a6dab2a40ca50b2d2414fc858a68b7518106f3fafa9f9518c571d8",
+        "actual_bytes": 2887,
+        "actual_sha256": "ad050b0195a6dab2a40ca50b2d2414fc858a68b7518106f3fafa9f9518c571d8",
+        "passed": true
+      },
+      {
+        "archive_path": "report.md",
+        "expected_bytes": 593,
+        "expected_sha256": "0c3ce23b95a3b545905ed2cfa1bb74431d2eb5fd6b85116a152d09de3a6aab23",
+        "actual_bytes": 593,
+        "actual_sha256": "0c3ce23b95a3b545905ed2cfa1bb74431d2eb5fd6b85116a152d09de3a6aab23",
+        "passed": true
+      },
+      {
+        "archive_path": "alignment_verification.json",
+        "expected_bytes": 952,
+        "expected_sha256": "f01ec736d1bac19db933ec0866ddb6307502f394519cc98ac7890037d69b3f19",
+        "actual_bytes": 952,
+        "actual_sha256": "f01ec736d1bac19db933ec0866ddb6307502f394519cc98ac7890037d69b3f19",
+        "passed": true
+      },
+      {
+        "archive_path": "run_summary.json",
+        "expected_bytes": 12633,
+        "expected_sha256": "930dd2fbc7199d6fe6af27d9e78ef37d3dabb87f974f54a9deed56b3de1c6be4",
+        "actual_bytes": 12633,
+        "actual_sha256": "930dd2fbc7199d6fe6af27d9e78ef37d3dabb87f974f54a9deed56b3de1c6be4",
+        "passed": true
+      },
+      {
+        "archive_path": "comparison_to_previous.json",
+        "expected_bytes": 10308,
+        "expected_sha256": "a058fe40d9039d9c9553c6319ac0ddf78249350b7fe8e2eeef0347132a9ae25d",
+        "actual_bytes": 10308,
+        "actual_sha256": "a058fe40d9039d9c9553c6319ac0ddf78249350b7fe8e2eeef0347132a9ae25d",
+        "passed": true
+      },
+      {
+        "archive_path": "parent_checkpoint_verification.json",
+        "expected_bytes": 140,
+        "expected_sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf",
+        "actual_bytes": 140,
+        "actual_sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf",
+        "passed": true
+      },
+      {
+        "archive_path": "comparison_to_acquisition.json",
+        "expected_bytes": 5399,
+        "expected_sha256": "f30e9229490923740432643f1c58a9be1f6b4e978eb86f50cee0a87664fbc6f7",
+        "actual_bytes": 5399,
+        "actual_sha256": "f30e9229490923740432643f1c58a9be1f6b4e978eb86f50cee0a87664fbc6f7",
+        "passed": true
+      },
+      {
+        "archive_path": "before/summary.json",
+        "expected_bytes": 3119,
+        "expected_sha256": "63996747fdf06eff080b8bd3a0584a0867e4e41bb8850c6c86110e4f5ae7d93e",
+        "actual_bytes": 3119,
+        "actual_sha256": "63996747fdf06eff080b8bd3a0584a0867e4e41bb8850c6c86110e4f5ae7d93e",
+        "passed": true
+      },
+      {
+        "archive_path": "before/episodes.jsonl",
+        "expected_bytes": 39606,
+        "expected_sha256": "b4bedde8386c3b769dfec58baa826c6bd9c6b3d8f0f1c7510391a3bd734bc2a6",
+        "actual_bytes": 39606,
+        "actual_sha256": "b4bedde8386c3b769dfec58baa826c6bd9c6b3d8f0f1c7510391a3bd734bc2a6",
+        "passed": true
+      },
+      {
+        "archive_path": "data/audit.json",
+        "expected_bytes": 342448,
+        "expected_sha256": "7a3b6330e3bde6b4d14672671be8875427a0a55cde27dded2d65730c25f1e384",
+        "actual_bytes": 342448,
+        "actual_sha256": "7a3b6330e3bde6b4d14672671be8875427a0a55cde27dded2d65730c25f1e384",
+        "passed": true
+      },
+      {
+        "archive_path": "data/COMPLETE.json",
+        "expected_bytes": 109,
+        "expected_sha256": "235c2af4a7e56c1d2dc614a070754b9f6efd94f6054012bd63d121652d9d8f7c",
+        "actual_bytes": 109,
+        "actual_sha256": "235c2af4a7e56c1d2dc614a070754b9f6efd94f6054012bd63d121652d9d8f7c",
+        "passed": true
+      },
+      {
+        "archive_path": "after/summary.json",
+        "expected_bytes": 3063,
+        "expected_sha256": "302eb7b047407569c0817db23a6c96a0c8c961da689e36408fe7a2ef60d57111",
+        "actual_bytes": 3063,
+        "actual_sha256": "302eb7b047407569c0817db23a6c96a0c8c961da689e36408fe7a2ef60d57111",
+        "passed": true
+      },
+      {
+        "archive_path": "after/episodes.jsonl",
+        "expected_bytes": 39493,
+        "expected_sha256": "c2b73f7aea47a9f62af71c0d87bb3e8cbfd77323281b0752c8c0aca39e1c0672",
+        "actual_bytes": 39493,
+        "actual_sha256": "c2b73f7aea47a9f62af71c0d87bb3e8cbfd77323281b0752c8c0aca39e1c0672",
+        "passed": true
+      },
+      {
+        "archive_path": "after_attempt1_part1/evaluation.json",
+        "expected_bytes": 744,
+        "expected_sha256": "613f334649be308fd90a051ae54a30c6f3eec86321532f49b0afe7ca25d29f38",
+        "actual_bytes": 744,
+        "actual_sha256": "613f334649be308fd90a051ae54a30c6f3eec86321532f49b0afe7ca25d29f38",
+        "passed": true
+      },
+      {
+        "archive_path": "after_attempt1_part1/episodes.jsonl",
+        "expected_bytes": 19724,
+        "expected_sha256": "1972eb9df8b4846c1f4e796a7fd2707c3eba4ab2d79b003960d440150a403b84",
+        "actual_bytes": 19724,
+        "actual_sha256": "1972eb9df8b4846c1f4e796a7fd2707c3eba4ab2d79b003960d440150a403b84",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/parent_cached60.jsonl",
+        "expected_bytes": 29696,
+        "expected_sha256": "748c7127c5d0c8ebeefcb26fb2d761c375412e0bf9775299b02668d5749f7f3d",
+        "actual_bytes": 29696,
+        "actual_sha256": "748c7127c5d0c8ebeefcb26fb2d761c375412e0bf9775299b02668d5749f7f3d",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/previous_config.json",
+        "expected_bytes": 2997,
+        "expected_sha256": "25fca7418a7649a9c58daacf06c3739a3975a59f9bfd1a89a7a28e4bf4e70d4e",
+        "actual_bytes": 2997,
+        "actual_sha256": "25fca7418a7649a9c58daacf06c3739a3975a59f9bfd1a89a7a28e4bf4e70d4e",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/previous_evidence_manifest.json",
+        "expected_bytes": 5976,
+        "expected_sha256": "d8c8b5783f9fd171403f756b25e9b52f3b61a18577f51c512e857e16964020d6",
+        "actual_bytes": 5976,
+        "actual_sha256": "d8c8b5783f9fd171403f756b25e9b52f3b61a18577f51c512e857e16964020d6",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/cached_eval_part0.json",
+        "expected_bytes": 745,
+        "expected_sha256": "8e47b9485f62dfa23652e4adf84499deef4c2e077275e008568536449dcb7bee",
+        "actual_bytes": 745,
+        "actual_sha256": "8e47b9485f62dfa23652e4adf84499deef4c2e077275e008568536449dcb7bee",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/joint_acquisition60.jsonl",
+        "expected_bytes": 29634,
+        "expected_sha256": "d91b2b0097c571ee0fdd1e2ec85f6ccd8fd3995d0f98208728d44264399bc56f",
+        "actual_bytes": 29634,
+        "actual_sha256": "d91b2b0097c571ee0fdd1e2ec85f6ccd8fd3995d0f98208728d44264399bc56f",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/cached_eval_part1.json",
+        "expected_bytes": 675,
+        "expected_sha256": "2ed8f09a868411f213db3e70ebdc8ee3734e58bb84e76d956d768be3cb1dce9f",
+        "actual_bytes": 675,
+        "actual_sha256": "2ed8f09a868411f213db3e70ebdc8ee3734e58bb84e76d956d768be3cb1dce9f",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/source_files.json",
+        "expected_bytes": 1578,
+        "expected_sha256": "4e594c6536972d6189d480dd15e924f0a6c789fce1d2ef33c673ad92c49aceb3",
+        "actual_bytes": 1578,
+        "actual_sha256": "4e594c6536972d6189d480dd15e924f0a6c789fce1d2ef33c673ad92c49aceb3",
+        "passed": true
+      },
+      {
+        "archive_path": "baselines/previous_run_summary.json",
+        "expected_bytes": 14038,
+        "expected_sha256": "10c6582ebf5e414d93235341b919863c99e8b51597210cc4af0a52e9fad6f36a",
+        "actual_bytes": 14038,
+        "actual_sha256": "10c6582ebf5e414d93235341b919863c99e8b51597210cc4af0a52e9fad6f36a",
+        "passed": true
+      },
+      {
+        "archive_path": "before_back_attempt1_part1/evaluation.json",
+        "expected_bytes": 671,
+        "expected_sha256": "a989a032441cd435740af68eb4e402e95f3e3c913487a50dc0556a9e3f8546bc",
+        "actual_bytes": 671,
+        "actual_sha256": "a989a032441cd435740af68eb4e402e95f3e3c913487a50dc0556a9e3f8546bc",
+        "passed": true
+      },
+      {
+        "archive_path": "before_back_attempt1_part1/episodes.jsonl",
+        "expected_bytes": 9910,
+        "expected_sha256": "3a9a95de407de04b18eaeb7828d0c145f96f65d1866b537ffd22ffac2d6e2f83",
+        "actual_bytes": 9910,
+        "actual_sha256": "3a9a95de407de04b18eaeb7828d0c145f96f65d1866b537ffd22ffac2d6e2f83",
+        "passed": true
+      },
+      {
+        "archive_path": "after_attempt1_part0/evaluation.json",
+        "expected_bytes": 744,
+        "expected_sha256": "0320bbfd6f572489e767c7ec2b3e26a567242e779abd720e55e8c13b63ea352c",
+        "actual_bytes": 744,
+        "actual_sha256": "0320bbfd6f572489e767c7ec2b3e26a567242e779abd720e55e8c13b63ea352c",
+        "passed": true
+      },
+      {
+        "archive_path": "after_attempt1_part0/episodes.jsonl",
+        "expected_bytes": 19769,
+        "expected_sha256": "b8fb34cbfa4c34dc96c426dfa3e5ee983707053f3227452b4ddd1a7c7f54e0f1",
+        "actual_bytes": 19769,
+        "actual_sha256": "b8fb34cbfa4c34dc96c426dfa3e5ee983707053f3227452b4ddd1a7c7f54e0f1",
+        "passed": true
+      },
+      {
+        "archive_path": "training/manifest.json",
+        "expected_bytes": 4688,
+        "expected_sha256": "cdb1bb837f7bea5c68c8ff391badd859561ca49f51d9666ce82647bd14fec3e4",
+        "actual_bytes": 4688,
+        "actual_sha256": "cdb1bb837f7bea5c68c8ff391badd859561ca49f51d9666ce82647bd14fec3e4",
+        "passed": true
+      },
+      {
+        "archive_path": "training/trainable_parameters.json",
+        "expected_bytes": 10802,
+        "expected_sha256": "b0de50e57a5fb096c528efda3b9076c3b68165e44b9f0b593b37cfb3fd1b46b1",
+        "actual_bytes": 10802,
+        "actual_sha256": "b0de50e57a5fb096c528efda3b9076c3b68165e44b9f0b593b37cfb3fd1b46b1",
+        "passed": true
+      },
+      {
+        "archive_path": "training/training_finished_012000.json",
+        "expected_bytes": 177,
+        "expected_sha256": "4a87589c37ec3847246df9c9560f3365dc01e37270ef1de0c396733fe5e3f906",
+        "actual_bytes": 177,
+        "actual_sha256": "4a87589c37ec3847246df9c9560f3365dc01e37270ef1de0c396733fe5e3f906",
+        "passed": true
+      },
+      {
+        "archive_path": "training/checkpoints/003000/CHECKPOINT_COMPLETE.json",
+        "expected_bytes": 139,
+        "expected_sha256": "b50954132f29501a2a81a82f2d7c42fe85c4a7a9eed1540f872c787f0f26426e",
+        "actual_bytes": 139,
+        "actual_sha256": "b50954132f29501a2a81a82f2d7c42fe85c4a7a9eed1540f872c787f0f26426e",
+        "passed": true
+      },
+      {
+        "archive_path": "training/checkpoints/006000/CHECKPOINT_COMPLETE.json",
+        "expected_bytes": 139,
+        "expected_sha256": "6497a744f4708f40feea4ee08261f0c033fa53f30992226cf04ecd7aca083a88",
+        "actual_bytes": 139,
+        "actual_sha256": "6497a744f4708f40feea4ee08261f0c033fa53f30992226cf04ecd7aca083a88",
+        "passed": true
+      },
+      {
+        "archive_path": "training/checkpoints/009000/CHECKPOINT_COMPLETE.json",
+        "expected_bytes": 139,
+        "expected_sha256": "bf55fa36136a8c946e7c7b3cc673d8b4ef7531bed97147f87541f0bcc800def2",
+        "actual_bytes": 139,
+        "actual_sha256": "bf55fa36136a8c946e7c7b3cc673d8b4ef7531bed97147f87541f0bcc800def2",
+        "passed": true
+      },
+      {
+        "archive_path": "training/checkpoints/012000/CHECKPOINT_COMPLETE.json",
+        "expected_bytes": 140,
+        "expected_sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf",
+        "actual_bytes": 140,
+        "actual_sha256": "343532f0574bd3d01022ecd4f5030aa5aaafc91c83a0ea4138e05190978c4dcf",
+        "passed": true
+      }
+    ]
+  },
+  "episode_accounting": {
+    "new_completed_worker_rollouts": 100,
+    "cached_parent_rollouts": 60,
+    "current_before_after_rows": 160,
+    "reused_historical_acquisition60_not_new": 60,
+    "original_joint_snapshot_back_supplement20_not_new": 20,
+    "new_worker_retries": 0,
+    "note": "Historical acquisition60 and original-back supplement20 were evaluated in earlier experiments. They add no new rollouts to this stage. Acquisition reference mixes left/front at original joint snapshot and right at previous snapshot; it is not a simultaneous three-goal-success snapshot."
+  },
+  "pairing": {
+    "before_after_matched_pairs": 80,
+    "three_real_four_instruction_snapshots": 3,
+    "each_snapshot_episodes": 80,
+    "all_240_rows_same_init_state_xml_seed_horizon_across_snapshots_and_instructions": true,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "horizon": 400,
+    "seed_rule": "20261021 + init_index",
+    "cached_parent60_byte_identical_E007_after": true,
+    "cached_acquisition60_byte_identical_E007_before": true,
+    "before_merge_and_after_worker_merge_identical": true
+  },
+  "actual_run": {
+    "status": "complete",
+    "current_stage": "finished",
+    "started_at": "2026-10-23T14:03:38.715821+00:00",
+    "finished_at": "2026-10-23T15:04:26.591180+00:00",
+    "elapsed_seconds": 3647.874714361038,
+    "fixed_training_steps": 12000,
+    "starting_point_formally_qualified": false,
+    "all_six_recorded_phases_exit0": true,
+    "workers": {
+      "before_back_attempt1_part1": {
+        "status": "complete",
+        "returncode": 0,
+        "episodes": 20,
+        "checkpoint": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+        "attempt": 1
+      },
+      "after_attempt1_part0": {
+        "status": "complete",
+        "returncode": 0,
+        "episodes": 40,
+        "checkpoint": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/012000",
+        "attempt": 1
+      },
+      "after_attempt1_part1": {
+        "status": "complete",
+        "returncode": 0,
+        "episodes": 40,
+        "checkpoint": "/home/lzx/cl_binding/outputs/sequential/dual_right_then_back_20261023_01/checkpoints/012000",
+        "attempt": 1
+      }
+    },
+    "checkpoint_markers": {
+      "3000": {
+        "status": "pass",
+        "step": 3000,
+        "reload_max_difference": 0.0,
+        "frozen_hash_unchanged": true,
+        "optimizer_and_rng_saved": true
+      },
+      "6000": {
+        "status": "pass",
+        "step": 6000,
+        "reload_max_difference": 0.0,
+        "frozen_hash_unchanged": true,
+        "optimizer_and_rng_saved": true
+      },
+      "9000": {
+        "status": "pass",
+        "step": 9000,
+        "reload_max_difference": 0.0,
+        "frozen_hash_unchanged": true,
+        "optimizer_and_rng_saved": true
+      },
+      "12000": {
+        "status": "pass",
+        "step": 12000,
+        "reload_max_difference": 0.0,
+        "frozen_hash_unchanged": true,
+        "optimizer_and_rng_saved": true
+      }
+    },
+    "parent_sha256": "8c2dc6c371958027239a8c709a346842291bfb631b5a0ac29f4c04c394b85249",
+    "final_sha256": "7eee2d8f9cebcac1fb9d03ab947d3a2c2fc9dbaf9c24f864f28fc2d2877a5534",
+    "new_task_descriptive_threshold_ever_and_final_at_least16": false
+  },
+  "independent_server_training_check": {
+    "status": "pass",
+    "json_sha256": "3844b9bad98f2e06c81bc9435611ab590133060d76512a958258eae744e0b783",
+    "source_sha256_verified": "df0ed612bd7c7443fa816448eab29e865e9a6c2b42d24636c2c9ada53ee9e95b",
+    "scope": "Separate server-side audit reads full training trace and model/processor files. This local audit verifies script SHA256 and consistency of its result with manifests/checkpoint markers; it did not independently reread the full trace/model files.",
+    "reported_continuous_finite_updates": 12000,
+    "reported_back_only_batches_size6": true,
+    "reported_new_optimizer_scheduler": true,
+    "reported_training_trace_sha256": "10ebc1f6d8c623503efe1156c60cc5273898447d8b7f64e1a590d6c5b71ff3d4"
+  },
+  "summaries_recomputed": {
+    "original_joint_snapshot80": {
+      "episodes": 80,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 16,
+          "terminal_correct": 16,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "front": 16,
+            "unreached": 4
+          },
+          "terminal_targets": {
+            "front": 16,
+            "unfinished": 4
+          },
+          "ever_reached_targets": {
+            "front": 16,
+            "left": 0,
+            "right": 0,
+            "back": 0
+          }
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 20,
+          "terminal_correct": 16,
+          "correct_then_destroyed": 4,
+          "first_targets": {
+            "left": 20
+          },
+          "terminal_targets": {
+            "unfinished": 4,
+            "left": 16
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 20,
+            "right": 0,
+            "back": 0
+          }
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "left": 20
+          },
+          "terminal_targets": {
+            "unfinished": 18,
+            "left": 2
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 20,
+            "right": 0,
+            "back": 0
+          }
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "unreached": 11,
+            "left": 9
+          },
+          "terminal_targets": {
+            "unfinished": 14,
+            "left": 6
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 9,
+            "right": 0,
+            "back": 0
+          }
+        }
+      },
+      "first_matrix": {
+        "front": {
+          "front": 16,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unreached": 4,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 20,
+          "right": 0,
+          "back": 0,
+          "unreached": 0,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 20,
+          "right": 0,
+          "back": 0,
+          "unreached": 0,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 9,
+          "right": 0,
+          "back": 0,
+          "unreached": 11,
+          "ambiguous": 0
+        }
+      },
+      "terminal_matrix": {
+        "front": {
+          "front": 16,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 4,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 16,
+          "right": 0,
+          "back": 0,
+          "unfinished": 4,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 2,
+          "right": 0,
+          "back": 0,
+          "unfinished": 18,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 6,
+          "right": 0,
+          "back": 0,
+          "unfinished": 14,
+          "ambiguous": 0
+        }
+      },
+      "joint_left_front_terminal_correct": 13,
+      "joint_left_front_terminal_correct_indices": [
+        22,
+        24,
+        25,
+        26,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    "previous_right_snapshot80": {
+      "episodes": 80,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "right": 11,
+            "unreached": 9
+          },
+          "terminal_targets": {
+            "right": 11,
+            "unfinished": 9
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 11,
+            "back": 0
+          }
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "unreached": 6,
+            "right": 14
+          },
+          "terminal_targets": {
+            "unfinished": 6,
+            "right": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 14,
+            "back": 0
+          }
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 13,
+          "terminal_correct": 12,
+          "correct_then_destroyed": 1,
+          "first_targets": {
+            "right": 13,
+            "unreached": 7
+          },
+          "terminal_targets": {
+            "right": 12,
+            "unfinished": 8
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 13,
+            "back": 0
+          }
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "right": 14,
+            "unreached": 6
+          },
+          "terminal_targets": {
+            "right": 14,
+            "unfinished": 6
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 14,
+            "back": 0
+          }
+        }
+      },
+      "first_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 11,
+          "back": 0,
+          "unreached": 9,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unreached": 6,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 13,
+          "back": 0,
+          "unreached": 7,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unreached": 6,
+          "ambiguous": 0
+        }
+      },
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 11,
+          "back": 0,
+          "unfinished": 9,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unfinished": 6,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 12,
+          "back": 0,
+          "unfinished": 8,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unfinished": 6,
+          "ambiguous": 0
+        }
+      },
+      "joint_left_front_terminal_correct": 0,
+      "joint_left_front_terminal_correct_indices": []
+    },
+    "new_back_snapshot80": {
+      "episodes": 80,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "back": 16,
+            "unreached": 4
+          },
+          "terminal_targets": {
+            "unfinished": 13,
+            "back": 7
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 16
+          }
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "back": 20
+          },
+          "terminal_targets": {
+            "back": 6,
+            "unfinished": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 20
+          }
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "back": 20
+          },
+          "terminal_targets": {
+            "back": 6,
+            "unfinished": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 20
+          }
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 19,
+          "terminal_correct": 6,
+          "correct_then_destroyed": 13,
+          "first_targets": {
+            "back": 19,
+            "unreached": 1
+          },
+          "terminal_targets": {
+            "back": 6,
+            "unfinished": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 19
+          }
+        }
+      },
+      "first_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 16,
+          "unreached": 4,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 20,
+          "unreached": 0,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 20,
+          "unreached": 0,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 19,
+          "unreached": 1,
+          "ambiguous": 0
+        }
+      },
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 7,
+          "unfinished": 13,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 6,
+          "unfinished": 14,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 6,
+          "unfinished": 14,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 6,
+          "unfinished": 14,
+          "ambiguous": 0
+        }
+      },
+      "joint_left_front_terminal_correct": 0,
+      "joint_left_front_terminal_correct_indices": []
+    }
+  },
+  "comparison_to_previous_recomputed": {
+    "before": {
+      "episodes": 80,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "right": 11,
+            "unreached": 9
+          },
+          "terminal_targets": {
+            "right": 11,
+            "unfinished": 9
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 11,
+            "back": 0
+          }
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "unreached": 6,
+            "right": 14
+          },
+          "terminal_targets": {
+            "unfinished": 6,
+            "right": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 14,
+            "back": 0
+          }
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 13,
+          "terminal_correct": 12,
+          "correct_then_destroyed": 1,
+          "first_targets": {
+            "right": 13,
+            "unreached": 7
+          },
+          "terminal_targets": {
+            "right": 12,
+            "unfinished": 8
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 13,
+            "back": 0
+          }
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "right": 14,
+            "unreached": 6
+          },
+          "terminal_targets": {
+            "right": 14,
+            "unfinished": 6
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 14,
+            "back": 0
+          }
+        }
+      },
+      "first_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 11,
+          "back": 0,
+          "unreached": 9,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unreached": 6,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 13,
+          "back": 0,
+          "unreached": 7,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unreached": 6,
+          "ambiguous": 0
+        }
+      },
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 11,
+          "back": 0,
+          "unfinished": 9,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unfinished": 6,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 12,
+          "back": 0,
+          "unfinished": 8,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unfinished": 6,
+          "ambiguous": 0
+        }
+      },
+      "joint_left_front_terminal_correct": 0,
+      "joint_left_front_terminal_correct_indices": []
+    },
+    "after": {
+      "episodes": 80,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "front": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "back": 16,
+            "unreached": 4
+          },
+          "terminal_targets": {
+            "unfinished": 13,
+            "back": 7
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 16
+          }
+        },
+        "left": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "back": 20
+          },
+          "terminal_targets": {
+            "back": 6,
+            "unfinished": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 20
+          }
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0,
+          "first_targets": {
+            "back": 20
+          },
+          "terminal_targets": {
+            "back": 6,
+            "unfinished": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 20
+          }
+        },
+        "back": {
+          "total": 20,
+          "success_ever": 19,
+          "terminal_correct": 6,
+          "correct_then_destroyed": 13,
+          "first_targets": {
+            "back": 19,
+            "unreached": 1
+          },
+          "terminal_targets": {
+            "back": 6,
+            "unfinished": 14
+          },
+          "ever_reached_targets": {
+            "front": 0,
+            "left": 0,
+            "right": 0,
+            "back": 19
+          }
+        }
+      },
+      "first_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 16,
+          "unreached": 4,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 20,
+          "unreached": 0,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 20,
+          "unreached": 0,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 19,
+          "unreached": 1,
+          "ambiguous": 0
+        }
+      },
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 7,
+          "unfinished": 13,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 6,
+          "unfinished": 14,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 6,
+          "unfinished": 14,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 6,
+          "unfinished": 14,
+          "ambiguous": 0
+        }
+      },
+      "joint_left_front_terminal_correct": 0,
+      "joint_left_front_terminal_correct_indices": []
+    },
+    "matched_pairs": 80,
+    "retained_goals": {
+      "left": {
+        "previously_successful_ever": {
+          "total": 0,
+          "retained": 0,
+          "lost": 0,
+          "retention_rate": null,
+          "eligible_indices": [],
+          "retained_indices": [],
+          "lost_indices": [],
+          "lost_first_new_target": 0,
+          "lost_terminal_new_target": 0,
+          "lost_terminal_unfinished": 0,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 0,
+          "retained": 0,
+          "lost": 0,
+          "retention_rate": null,
+          "eligible_indices": [],
+          "retained_indices": [],
+          "lost_indices": [],
+          "lost_first_new_target": 0,
+          "lost_terminal_new_target": 0,
+          "lost_terminal_unfinished": 0,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        }
+      },
+      "front": {
+        "previously_successful_ever": {
+          "total": 0,
+          "retained": 0,
+          "lost": 0,
+          "retention_rate": null,
+          "eligible_indices": [],
+          "retained_indices": [],
+          "lost_indices": [],
+          "lost_first_new_target": 0,
+          "lost_terminal_new_target": 0,
+          "lost_terminal_unfinished": 0,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 0,
+          "retained": 0,
+          "lost": 0,
+          "retention_rate": null,
+          "eligible_indices": [],
+          "retained_indices": [],
+          "lost_indices": [],
+          "lost_first_new_target": 0,
+          "lost_terminal_new_target": 0,
+          "lost_terminal_unfinished": 0,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        }
+      },
+      "right": {
+        "previously_successful_ever": {
+          "total": 13,
+          "retained": 0,
+          "lost": 13,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            31,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            31,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "lost_first_new_target": 13,
+          "lost_terminal_new_target": 6,
+          "lost_terminal_unfinished": 7,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 12,
+          "retained": 0,
+          "lost": 12,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "lost_first_new_target": 12,
+          "lost_terminal_new_target": 6,
+          "lost_terminal_unfinished": 6,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        }
+      }
+    }
+  },
+  "comparison_to_acquisition_recomputed": {
+    "new_goal": "back",
+    "matched_pairs": 60,
+    "retained_goals": {
+      "left": {
+        "previously_successful_ever": {
+          "total": 20,
+          "retained": 0,
+          "lost": 20,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "lost_first_new_target": 20,
+          "lost_terminal_new_target": 6,
+          "lost_terminal_unfinished": 14,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "lost_first_new_target": 16,
+          "lost_terminal_new_target": 3,
+          "lost_terminal_unfinished": 13,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        }
+      },
+      "front": {
+        "previously_successful_ever": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            22,
+            24,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            22,
+            24,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "lost_first_new_target": 13,
+          "lost_terminal_new_target": 5,
+          "lost_terminal_unfinished": 11,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            22,
+            24,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            22,
+            24,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39
+          ],
+          "lost_first_new_target": 13,
+          "lost_terminal_new_target": 5,
+          "lost_terminal_unfinished": 11,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        }
+      },
+      "right": {
+        "previously_successful_ever": {
+          "total": 13,
+          "retained": 0,
+          "lost": 13,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            31,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            31,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "lost_first_new_target": 13,
+          "lost_terminal_new_target": 6,
+          "lost_terminal_unfinished": 7,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 12,
+          "retained": 0,
+          "lost": 12,
+          "retention_rate": 0.0,
+          "eligible_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "retained_indices": [],
+          "lost_indices": [
+            20,
+            22,
+            23,
+            26,
+            27,
+            28,
+            29,
+            32,
+            33,
+            36,
+            37,
+            38
+          ],
+          "lost_first_new_target": 12,
+          "lost_terminal_new_target": 6,
+          "lost_terminal_unfinished": 6,
+          "lost_terminal_ambiguous": 0,
+          "lost_terminal_other_wrong": 0
+        }
+      }
+    }
+  },
+  "additional_findings": {
+    "previously_right_terminal_correct12": {
+      "total": 12,
+      "first_new_back_indices": [
+        20,
+        22,
+        23,
+        26,
+        27,
+        28,
+        29,
+        32,
+        33,
+        36,
+        37,
+        38
+      ],
+      "terminal_new_back_indices": [
+        20,
+        22,
+        26,
+        29,
+        33,
+        38
+      ],
+      "terminal_unfinished_indices": [
+        23,
+        27,
+        28,
+        32,
+        36,
+        37
+      ]
+    },
+    "back_request_after": {
+      "success_ever_indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        38,
+        39
+      ],
+      "terminal_correct_indices": [
+        20,
+        27,
+        31,
+        33,
+        38,
+        39
+      ],
+      "correct_then_destroyed_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28,
+        29,
+        30,
+        32,
+        34,
+        36,
+        37
+      ],
+      "never_reached_requested_target_indices": [
+        35
+      ]
+    },
+    "all80_after": {
+      "ever_reached_back": 75,
+      "first_back": 75,
+      "terminal_back": 25,
+      "terminal_unfinished": 55,
+      "ever_reached_any_front_left_right": 0
+    }
+  }
+}

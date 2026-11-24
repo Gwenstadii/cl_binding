@@ -1,0 +1,17 @@
+{
+  "pid": 9642,
+  "command": [
+    "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding_stage2a/.server/stage2k_mechanism_20261028_03/code/run_stage2k_mechanism.py",
+    "--config",
+    "/home/lzx/cl_binding_stage2a/.server/stage2k_mechanism_20261028_03/code/stage2k_mechanism_20261028.json",
+    "--code-dir",
+    "/home/lzx/cl_binding_stage2a/.server/stage2k_mechanism_20261028_03/code",
+    "--arms",
+    "entry"
+  ],
+  "registration_commit": "99985fd",
+  "fixed_geometry_from": "_01/fixed_centres.json",
+  "unchanged_restore_tolerances": true
+}

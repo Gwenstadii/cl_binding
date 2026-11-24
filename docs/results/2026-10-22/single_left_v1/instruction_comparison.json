@@ -1,0 +1,144 @@
+{
+  "base": {
+    "trained_goal": "left",
+    "initial_states": 10,
+    "episodes": 40,
+    "terminal_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 10,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 10,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 10,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 10,
+        "ambiguous": 0
+      }
+    },
+    "trained_instruction_correct": 0,
+    "other_instructions": {
+      "total": 30,
+      "requested_goal_correct": 0,
+      "trained_goal_terminal": 0,
+      "trained_goal_terminal_rate": 0.0
+    },
+    "conditioned_on_trained_instruction_success": {
+      "control_indices": [],
+      "total": 0,
+      "trained_goal_terminal": 0,
+      "trained_goal_terminal_rate": null
+    }
+  },
+  "adapted": {
+    "trained_goal": "left",
+    "initial_states": 10,
+    "episodes": 40,
+    "terminal_matrix": {
+      "front": {
+        "front": 0,
+        "left": 8,
+        "right": 0,
+        "back": 0,
+        "unfinished": 2,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 9,
+        "right": 0,
+        "back": 0,
+        "unfinished": 1,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 8,
+        "right": 0,
+        "back": 0,
+        "unfinished": 2,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 7,
+        "right": 0,
+        "back": 0,
+        "unfinished": 3,
+        "ambiguous": 0
+      }
+    },
+    "trained_instruction_correct": 9,
+    "other_instructions": {
+      "total": 30,
+      "requested_goal_correct": 0,
+      "trained_goal_terminal": 23,
+      "trained_goal_terminal_rate": 0.7666666666666667
+    },
+    "conditioned_on_trained_instruction_success": {
+      "control_indices": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        39
+      ],
+      "total": 27,
+      "trained_goal_terminal": 23,
+      "trained_goal_terminal_rate": 0.8518518518518519
+    }
+  },
+  "base_correct_transitions": {
+    "front": {
+      "base_correct": 0,
+      "base_correct_to_correct": 0,
+      "base_correct_to_trained_goal": 0,
+      "base_correct_to_unfinished": 0,
+      "base_correct_to_ambiguous": 0,
+      "base_correct_to_other_wrong": 0
+    },
+    "right": {
+      "base_correct": 0,
+      "base_correct_to_correct": 0,
+      "base_correct_to_trained_goal": 0,
+      "base_correct_to_unfinished": 0,
+      "base_correct_to_ambiguous": 0,
+      "base_correct_to_other_wrong": 0
+    },
+    "back": {
+      "base_correct": 0,
+      "base_correct_to_correct": 0,
+      "base_correct_to_trained_goal": 0,
+      "base_correct_to_unfinished": 0,
+      "base_correct_to_ambiguous": 0,
+      "base_correct_to_other_wrong": 0
+    }
+  },
+  "matched_pairs": 40,
+  "interpretation": "Other instructions are unsupervised in this adaptation. Trained-goal intrusion alone is not forgetting of an acquired skill."
+}

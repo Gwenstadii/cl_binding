@@ -1,0 +1,10 @@
+test_no_goal_label_is_an_argument_to_the_projector (test_k25_parallel4.SubspaceProjection.test_no_goal_label_is_an_argument_to_the_projector) ... ok
+test_permuting_reference_labels_does_not_change_projection (test_k25_parallel4.SubspaceProjection.test_permuting_reference_labels_does_not_change_projection) ... ok
+test_rank_deficiency_and_zero_axis_remain_finite (test_k25_parallel4.SubspaceProjection.test_rank_deficiency_and_zero_axis_remain_finite) ... ok
+test_three_old_goals_reconstruct_their_own_outputs (test_k25_parallel4.SubspaceProjection.test_three_old_goals_reconstruct_their_own_outputs) ... ok
+test_two_old_goals_reduce_to_scalar_parallel_formula_including_padding (test_k25_parallel4.SubspaceProjection.test_two_old_goals_reduce_to_scalar_parallel_formula_including_padding) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.054s
+
+OK

@@ -1,0 +1,37 @@
+{
+  "stage1_protocol": {
+    "passed": 21,
+    "failed": 0,
+    "log": "stage1_tests.log"
+  },
+  "full_residual_formula": {
+    "local_passed": 3,
+    "server_passed": 3,
+    "failed": 0,
+    "server_log": "formula_tests.log"
+  },
+  "trace_audit": {
+    "new_complete_episodes": 160,
+    "reference_parallel_episodes": 160,
+    "reference_context_episodes": 160,
+    "unique_starts": 20,
+    "complete_shards": 20,
+    "real_tensor_gates": 80,
+    "bitwise_full_duration_prefix_pairs": 80,
+    "initial_input_pairs": 80,
+    "max_initial_input_difference": 0.0,
+    "trainable_parameter_fingerprints_per_model": 155,
+    "new_training": false,
+    "new_calibration": false,
+    "checks": [
+      "full trace rescoring",
+      "all action hashes and initial signatures",
+      "original episode source unchanged",
+      "same development gain and checkpoint files",
+      "full32 formula callback gates",
+      "active7 component norm identity",
+      "unchanged model fingerprints and source inventory",
+      "early versus post-handback placement audit"
+    ]
+  }
+}

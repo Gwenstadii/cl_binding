@@ -1,0 +1,21 @@
+{
+  "purpose": "preserved engineering dispatch/failure evidence, not scored results",
+  "files": {
+    "engineering.log": {
+      "bytes": 1609,
+      "sha256": "c17e7587b22e2dafce24b17c51e2b7198cfe3ee0f5b8728bacd13c1e1468a1f3"
+    },
+    "FAILED.json": {
+      "bytes": 13447,
+      "sha256": "b7517072f203bc590661e6ece1b768535327bf54b33bc7447b9bab0b45fa5020"
+    },
+    "launcher.json": {
+      "bytes": 5454,
+      "sha256": "df0c72c2cc99b87488521504b7f2f7e6676a5acd8c28b4d69b86766754f4c6c0"
+    },
+    "registered_config.json": {
+      "bytes": 3165,
+      "sha256": "36abe4c6ba12abe22747f46aed77ce91a7706bc1e0a12cab20bb8a7ba277805b"
+    }
+  }
+}

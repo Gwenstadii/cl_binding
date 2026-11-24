@@ -1,0 +1,15 @@
+{
+  "episodes": 1200,
+  "independent_starts": 20,
+  "previous_condition_replays": 200,
+  "protocol_sha256": "58e5eb1031804c97fa6a788f76bb365bad14a8b340d9a0b9768cf6f2fef8a159",
+  "analysis_source_sha256": "24052eaed9eca12bbb754f90c640b063ac901ec1d0f8dc496c0bd1b9292b5025",
+  "verified_project_dependencies": 28,
+  "delta_sha256": {
+    "lr_front_1000": "b1e94c0a140ee8078a2be24165f39602b7acbc425532a0ce6e90ed3df4e8cd27",
+    "lf_right_1000": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557"
+  },
+  "max_mean_cast_rms": 0.0006409125053323805,
+  "verified_common_prefix_comparisons": 4480,
+  "verified_polarity_pairs": 560
+}

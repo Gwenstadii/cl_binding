@@ -1,0 +1,3710 @@
+{
+  "parent": "/home/lzx/cl_binding/outputs/r0/single_left_20261022_01/checkpoints/006000",
+  "final": "/home/lzx/cl_binding/outputs/sequential/left_then_right_20261022_01/checkpoints/006000",
+  "files": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": [
+      {
+        "key": "action.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "action.max",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9375,
+          0.375,
+          0.9375,
+          0.13285714387893677,
+          0.23571428656578064,
+          0.1574999988079071,
+          1.0
+        ],
+        "final_values": [
+          0.9375,
+          0.375,
+          0.9375,
+          0.13285714387893677,
+          0.23571428656578064,
+          0.1574999988079071,
+          1.0
+        ]
+      },
+      {
+        "key": "action.mean",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.09978508949279785,
+          -0.1911918967962265,
+          -0.10521361976861954,
+          -0.0016217533266171813,
+          -0.0014847256243228912,
+          -0.03806803375482559,
+          0.2855371832847595
+        ],
+        "final_values": [
+          -0.09978508949279785,
+          -0.1911918967962265,
+          -0.10521361976861954,
+          -0.0016217533266171813,
+          -0.0014847256243228912,
+          -0.03806803375482559,
+          0.2855371832847595
+        ]
+      },
+      {
+        "key": "action.min",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.7955357432365417,
+          -0.8383928537368774,
+          -0.9375,
+          -0.1542857140302658,
+          -0.2314285784959793,
+          -0.2582142949104309,
+          -1.0
+        ],
+        "final_values": [
+          -0.7955357432365417,
+          -0.8383928537368774,
+          -0.9375,
+          -0.1542857140302658,
+          -0.2314285784959793,
+          -0.2582142949104309,
+          -1.0
+        ]
+      },
+      {
+        "key": "action.q01",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.7903488874435425,
+          -0.8330411314964294,
+          -0.9375,
+          -0.14785045385360718,
+          -0.22933460772037506,
+          -0.25716620683670044,
+          -1.0
+        ],
+        "final_values": [
+          -0.7903488874435425,
+          -0.8330411314964294,
+          -0.9375,
+          -0.14785045385360718,
+          -0.22933460772037506,
+          -0.25716620683670044,
+          -1.0
+        ]
+      },
+      {
+        "key": "action.q10",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.7448611855506897,
+          -0.7340742945671082,
+          -0.8117415308952332,
+          -0.10608023405075073,
+          -0.16714800894260406,
+          -0.21429407596588135,
+          -1.0
+        ],
+        "final_values": [
+          -0.7448611855506897,
+          -0.7340742945671082,
+          -0.8117415308952332,
+          -0.10608023405075073,
+          -0.16714800894260406,
+          -0.21429407596588135,
+          -1.0
+        ]
+      },
+      {
+        "key": "action.q50",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.2999035716056824,
+          -0.2116125077009201,
+          -0.3454349637031555,
+          -1.8378927052253857e-05,
+          -0.017136428505182266,
+          -0.06316199898719788,
+          0.9996268153190613
+        ],
+        "final_values": [
+          -0.2999035716056824,
+          -0.2116125077009201,
+          -0.3454349637031555,
+          -1.8378927052253857e-05,
+          -0.017136428505182266,
+          -0.06316199898719788,
+          0.9996268153190613
+        ]
+      },
+      {
+        "key": "action.q90",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.5355949401855469,
+          0.17133086919784546,
+          0.9372327923774719,
+          0.09322118014097214,
+          0.12747427821159363,
+          0.1124567985534668,
+          0.9999480843544006
+        ],
+        "final_values": [
+          0.5355949401855469,
+          0.17133086919784546,
+          0.9372327923774719,
+          0.09322118014097214,
+          0.12747427821159363,
+          0.1124567985534668,
+          0.9999480843544006
+        ]
+      },
+      {
+        "key": "action.q99",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9001870155334473,
+          0.3749380111694336,
+          0.9374732971191406,
+          0.1328253149986267,
+          0.22289854288101196,
+          0.1564456820487976,
+          0.9999948143959045
+        ],
+        "final_values": [
+          0.9001870155334473,
+          0.3749380111694336,
+          0.9374732971191406,
+          0.1328253149986267,
+          0.22289854288101196,
+          0.1564456820487976,
+          0.9999948143959045
+        ]
+      },
+      {
+        "key": "action.std",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.34247490763664246,
+          0.22492627799510956,
+          0.4848169982433319,
+          0.03003719635307789,
+          0.04405716434121132,
+          0.06197287142276764,
+          0.958367645740509
+        ],
+        "final_values": [
+          0.34247490763664246,
+          0.22492627799510956,
+          0.4848169982433319,
+          0.03003719635307789,
+          0.04405716434121132,
+          0.06197287142276764,
+          0.958367645740509
+        ]
+      },
+      {
+        "key": "episode_index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "episode_index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "frame_index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "observation.images.image.count",
+        "parent_shape": [
+          1,
+          1,
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "observation.images.image.max",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9921568632125854,
+          0.9921568632125854,
+          0.9921568632125854
+        ],
+        "final_values": [
+          0.9921568632125854,
+          0.9921568632125854,
+          0.9921568632125854
+        ]
+      },
+      {
+        "key": "observation.images.image.mean",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.3618318438529968,
+          0.3000006377696991,
+          0.22843070328235626
+        ],
+        "final_values": [
+          0.3618318438529968,
+          0.3000006377696991,
+          0.22843070328235626
+        ]
+      },
+      {
+        "key": "observation.images.image.min",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "key": "observation.images.image.q01",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ],
+        "final_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ]
+      },
+      {
+        "key": "observation.images.image.q10",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.1255033314228058,
+          0.1137557327747345,
+          0.09404756128787994
+        ],
+        "final_values": [
+          0.1255033314228058,
+          0.1137557327747345,
+          0.09404756128787994
+        ]
+      },
+      {
+        "key": "observation.images.image.q50",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.4038023352622986,
+          0.30968308448791504,
+          0.18039441108703613
+        ],
+        "final_values": [
+          0.4038023352622986,
+          0.30968308448791504,
+          0.18039441108703613
+        ]
+      },
+      {
+        "key": "observation.images.image.q90",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.48236608505249023,
+          0.4314414858818054,
+          0.4196346700191498
+        ],
+        "final_values": [
+          0.48236608505249023,
+          0.4314414858818054,
+          0.4196346700191498
+        ]
+      },
+      {
+        "key": "observation.images.image.q99",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.6274254322052002,
+          0.6235833168029785,
+          0.6235840320587158
+        ],
+        "final_values": [
+          0.6274254322052002,
+          0.6235833168029785,
+          0.6235840320587158
+        ]
+      },
+      {
+        "key": "observation.images.image.std",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.1362564116716385,
+          0.127071350812912,
+          0.13983671367168427
+        ],
+        "final_values": [
+          0.1362564116716385,
+          0.127071350812912,
+          0.13983671367168427
+        ]
+      },
+      {
+        "key": "observation.images.image2.count",
+        "parent_shape": [
+          1,
+          1,
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "observation.images.image2.max",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9215686321258545,
+          0.9058823585510254,
+          0.8941176533699036
+        ],
+        "final_values": [
+          0.9215686321258545,
+          0.9058823585510254,
+          0.8941176533699036
+        ]
+      },
+      {
+        "key": "observation.images.image2.mean",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.37409305572509766,
+          0.2809589207172394,
+          0.17675314843654633
+        ],
+        "final_values": [
+          0.37409305572509766,
+          0.2809589207172394,
+          0.17675314843654633
+        ]
+      },
+      {
+        "key": "observation.images.image2.min",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "key": "observation.images.image2.q01",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ],
+        "final_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ]
+      },
+      {
+        "key": "observation.images.image2.q10",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.04695180803537369,
+          0.03539177402853966,
+          0.03145546838641167
+        ],
+        "final_values": [
+          0.04695180803537369,
+          0.03539177402853966,
+          0.03145546838641167
+        ]
+      },
+      {
+        "key": "observation.images.image2.q50",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.4470894932746887,
+          0.31777501106262207,
+          0.18032002449035645
+        ],
+        "final_values": [
+          0.4470894932746887,
+          0.31777501106262207,
+          0.18032002449035645
+        ]
+      },
+      {
+        "key": "observation.images.image2.q90",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.5647012591362,
+          0.4197421967983246,
+          0.2510114014148712
+        ],
+        "final_values": [
+          0.5647012591362,
+          0.4197421967983246,
+          0.2510114014148712
+        ]
+      },
+      {
+        "key": "observation.images.image2.q99",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.6157325506210327,
+          0.4706137776374817,
+          0.39993494749069214
+        ],
+        "final_values": [
+          0.6157325506210327,
+          0.4706137776374817,
+          0.39993494749069214
+        ]
+      },
+      {
+        "key": "observation.images.image2.std",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.18824641406536102,
+          0.13010212779045105,
+          0.07253462821245193
+        ],
+        "final_values": [
+          0.18824641406536102,
+          0.13010212779045105,
+          0.07253462821245193
+        ]
+      },
+      {
+        "key": "observation.state.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "observation.state.max",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.1319044530391693,
+          0.04893389344215393,
+          1.2847110033035278,
+          3.356980562210083,
+          0.0938258245587349,
+          0.6901727318763733,
+          0.03989046812057495,
+          -0.009896269999444485
+        ],
+        "final_values": [
+          -0.1319044530391693,
+          0.04893389344215393,
+          1.2847110033035278,
+          3.356980562210083,
+          0.0938258245587349,
+          0.6901727318763733,
+          0.03989046812057495,
+          -0.009896269999444485
+        ]
+      },
+      {
+        "key": "observation.state.mean",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.25014325976371765,
+          -0.12954117357730865,
+          1.122333288192749,
+          3.044693946838379,
+          -0.6430191993713379,
+          -0.025820782408118248,
+          0.024028388783335686,
+          -0.025323251262307167
+        ],
+        "final_values": [
+          -0.25014325976371765,
+          -0.12954117357730865,
+          1.122333288192749,
+          3.044693946838379,
+          -0.6430191993713379,
+          -0.025820782408118248,
+          0.024028388783335686,
+          -0.025323251262307167
+        ]
+      },
+      {
+        "key": "observation.state.min",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.44103407859802246,
+          -0.33082816004753113,
+          0.9834851026535034,
+          2.6073622703552246,
+          -1.493219256401062,
+          -0.5793964266777039,
+          0.0015099652810022235,
+          -0.040775202214717865
+        ],
+        "final_values": [
+          -0.44103407859802246,
+          -0.33082816004753113,
+          0.9834851026535034,
+          2.6073622703552246,
+          -1.493219256401062,
+          -0.5793964266777039,
+          0.0015099652810022235,
+          -0.040775202214717865
+        ]
+      },
+      {
+        "key": "observation.state.q01",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.4387493431568146,
+          -0.32942134141921997,
+          0.9838464856147766,
+          2.607611656188965,
+          -1.4928715229034424,
+          -0.5787960886955261,
+          0.0017434100154787302,
+          -0.040381282567977905
+        ],
+        "final_values": [
+          -0.4387493431568146,
+          -0.32942134141921997,
+          0.9838464856147766,
+          2.607611656188965,
+          -1.4928715229034424,
+          -0.5787960886955261,
+          0.0017434100154787302,
+          -0.040381282567977905
+        ]
+      },
+      {
+        "key": "observation.state.q10",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.40554553270339966,
+          -0.2993200719356537,
+          0.9876247644424438,
+          2.6331944465637207,
+          -1.4647811651229858,
+          -0.5359797477722168,
+          0.00555931031703949,
+          -0.04000389575958252
+        ],
+        "final_values": [
+          -0.40554553270339966,
+          -0.2993200719356537,
+          0.9876247644424438,
+          2.6331944465637207,
+          -1.4647811651229858,
+          -0.5359797477722168,
+          0.00555931031703949,
+          -0.04000389575958252
+        ]
+      },
+      {
+        "key": "observation.state.q50",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.2511812746524811,
+          -0.2045535147190094,
+          1.1091647148132324,
+          2.893582820892334,
+          -1.2375550270080566,
+          -0.33538955450057983,
+          0.0134804118424654,
+          -0.030833043158054352
+        ],
+        "final_values": [
+          -0.2511812746524811,
+          -0.2045535147190094,
+          1.1091647148132324,
+          2.893582820892334,
+          -1.2375550270080566,
+          -0.33538955450057983,
+          0.0134804118424654,
+          -0.030833043158054352
+        ]
+      },
+      {
+        "key": "observation.state.q90",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.13637636601924896,
+          0.025854218751192093,
+          1.2703113555908203,
+          3.328605890274048,
+          0.050206661224365234,
+          0.6400932669639587,
+          0.0397564135491848,
+          -0.010196233168244362
+        ],
+        "final_values": [
+          -0.13637636601924896,
+          0.025854218751192093,
+          1.2703113555908203,
+          3.328605890274048,
+          0.050206661224365234,
+          0.6400932669639587,
+          0.0397564135491848,
+          -0.010196233168244362
+        ]
+      },
+      {
+        "key": "observation.state.q99",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.13193786144256592,
+          0.04804961383342743,
+          1.2846767902374268,
+          3.3568813800811768,
+          0.0839092880487442,
+          0.6895533204078674,
+          0.039880186319351196,
+          -0.009898532181978226
+        ],
+        "final_values": [
+          -0.13193786144256592,
+          0.04804961383342743,
+          1.2846767902374268,
+          3.3568813800811768,
+          0.0839092880487442,
+          0.6895533204078674,
+          0.039880186319351196,
+          -0.009898532181978226
+        ]
+      },
+      {
+        "key": "observation.state.std",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.07214141637086868,
+          0.10911699384450912,
+          0.07554254680871964,
+          0.10995753109455109,
+          0.37687599658966064,
+          0.17378371953964233,
+          0.01200412679463625,
+          0.011135483160614967
+        ],
+        "final_values": [
+          0.07214141637086868,
+          0.10911699384450912,
+          0.07554254680871964,
+          0.10995753109455109,
+          0.37687599658966064,
+          0.17378371953964233,
+          0.01200412679463625,
+          0.011135483160614967
+        ]
+      },
+      {
+        "key": "task_index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "task_index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      },
+      {
+        "key": "timestamp.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": false
+      }
+    ],
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": [
+      {
+        "key": "action.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "action.max",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9375,
+          0.375,
+          0.9375,
+          0.13285714387893677,
+          0.23571428656578064,
+          0.1574999988079071,
+          1.0
+        ],
+        "final_values": [
+          0.9375,
+          0.375,
+          0.9375,
+          0.13285714387893677,
+          0.23571428656578064,
+          0.1574999988079071,
+          1.0
+        ]
+      },
+      {
+        "key": "action.mean",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.09978508949279785,
+          -0.1911918967962265,
+          -0.10521361976861954,
+          -0.0016217533266171813,
+          -0.0014847256243228912,
+          -0.03806803375482559,
+          0.2855371832847595
+        ],
+        "final_values": [
+          -0.09978508949279785,
+          -0.1911918967962265,
+          -0.10521361976861954,
+          -0.0016217533266171813,
+          -0.0014847256243228912,
+          -0.03806803375482559,
+          0.2855371832847595
+        ]
+      },
+      {
+        "key": "action.min",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.7955357432365417,
+          -0.8383928537368774,
+          -0.9375,
+          -0.1542857140302658,
+          -0.2314285784959793,
+          -0.2582142949104309,
+          -1.0
+        ],
+        "final_values": [
+          -0.7955357432365417,
+          -0.8383928537368774,
+          -0.9375,
+          -0.1542857140302658,
+          -0.2314285784959793,
+          -0.2582142949104309,
+          -1.0
+        ]
+      },
+      {
+        "key": "action.q01",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.7903488874435425,
+          -0.8330411314964294,
+          -0.9375,
+          -0.14785045385360718,
+          -0.22933460772037506,
+          -0.25716620683670044,
+          -1.0
+        ],
+        "final_values": [
+          -0.7903488874435425,
+          -0.8330411314964294,
+          -0.9375,
+          -0.14785045385360718,
+          -0.22933460772037506,
+          -0.25716620683670044,
+          -1.0
+        ]
+      },
+      {
+        "key": "action.q10",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.7448611855506897,
+          -0.7340742945671082,
+          -0.8117415308952332,
+          -0.10608023405075073,
+          -0.16714800894260406,
+          -0.21429407596588135,
+          -1.0
+        ],
+        "final_values": [
+          -0.7448611855506897,
+          -0.7340742945671082,
+          -0.8117415308952332,
+          -0.10608023405075073,
+          -0.16714800894260406,
+          -0.21429407596588135,
+          -1.0
+        ]
+      },
+      {
+        "key": "action.q50",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.2999035716056824,
+          -0.2116125077009201,
+          -0.3454349637031555,
+          -1.8378927052253857e-05,
+          -0.017136428505182266,
+          -0.06316199898719788,
+          0.9996268153190613
+        ],
+        "final_values": [
+          -0.2999035716056824,
+          -0.2116125077009201,
+          -0.3454349637031555,
+          -1.8378927052253857e-05,
+          -0.017136428505182266,
+          -0.06316199898719788,
+          0.9996268153190613
+        ]
+      },
+      {
+        "key": "action.q90",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.5355949401855469,
+          0.17133086919784546,
+          0.9372327923774719,
+          0.09322118014097214,
+          0.12747427821159363,
+          0.1124567985534668,
+          0.9999480843544006
+        ],
+        "final_values": [
+          0.5355949401855469,
+          0.17133086919784546,
+          0.9372327923774719,
+          0.09322118014097214,
+          0.12747427821159363,
+          0.1124567985534668,
+          0.9999480843544006
+        ]
+      },
+      {
+        "key": "action.q99",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9001870155334473,
+          0.3749380111694336,
+          0.9374732971191406,
+          0.1328253149986267,
+          0.22289854288101196,
+          0.1564456820487976,
+          0.9999948143959045
+        ],
+        "final_values": [
+          0.9001870155334473,
+          0.3749380111694336,
+          0.9374732971191406,
+          0.1328253149986267,
+          0.22289854288101196,
+          0.1564456820487976,
+          0.9999948143959045
+        ]
+      },
+      {
+        "key": "action.std",
+        "parent_shape": [
+          7
+        ],
+        "final_shape": [
+          7
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.34247490763664246,
+          0.22492627799510956,
+          0.4848169982433319,
+          0.03003719635307789,
+          0.04405716434121132,
+          0.06197287142276764,
+          0.958367645740509
+        ],
+        "final_values": [
+          0.34247490763664246,
+          0.22492627799510956,
+          0.4848169982433319,
+          0.03003719635307789,
+          0.04405716434121132,
+          0.06197287142276764,
+          0.958367645740509
+        ]
+      },
+      {
+        "key": "episode_index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "episode_index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          39.0
+        ],
+        "final_values": [
+          39.0
+        ]
+      },
+      {
+        "key": "episode_index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          19.322933197021484
+        ],
+        "final_values": [
+          19.322933197021484
+        ]
+      },
+      {
+        "key": "episode_index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "episode_index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4.000000067449534e-16
+        ],
+        "final_values": [
+          4.000000067449534e-16
+        ]
+      },
+      {
+        "key": "episode_index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4.000000014509975e-15
+        ],
+        "final_values": [
+          4.000000014509975e-15
+        ]
+      },
+      {
+        "key": "episode_index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          1.99999996490334e-14
+        ],
+        "final_values": [
+          1.99999996490334e-14
+        ]
+      },
+      {
+        "key": "episode_index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          39.0
+        ],
+        "final_values": [
+          39.0
+        ]
+      },
+      {
+        "key": "episode_index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          39.0
+        ],
+        "final_values": [
+          39.0
+        ]
+      },
+      {
+        "key": "episode_index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          11.466032028198242
+        ],
+        "final_values": [
+          11.466032028198242
+        ]
+      },
+      {
+        "key": "frame_index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "frame_index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          144.0
+        ],
+        "final_values": [
+          144.0
+        ]
+      },
+      {
+        "key": "frame_index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          60.35537338256836
+        ],
+        "final_values": [
+          60.35537338256836
+        ]
+      },
+      {
+        "key": "frame_index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "frame_index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9831799864768982
+        ],
+        "final_values": [
+          0.9831799864768982
+        ]
+      },
+      {
+        "key": "frame_index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          9.999239921569824
+        ],
+        "final_values": [
+          9.999239921569824
+        ]
+      },
+      {
+        "key": "frame_index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          51.00559997558594
+        ],
+        "final_values": [
+          51.00559997558594
+        ]
+      },
+      {
+        "key": "frame_index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          129.98880004882812
+        ],
+        "final_values": [
+          129.98880004882812
+        ]
+      },
+      {
+        "key": "frame_index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          143.00784301757812
+        ],
+        "final_values": [
+          143.00784301757812
+        ]
+      },
+      {
+        "key": "frame_index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          35.545166015625
+        ],
+        "final_values": [
+          35.545166015625
+        ]
+      },
+      {
+        "key": "index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4839.0
+        ],
+        "final_values": [
+          4839.0
+        ]
+      },
+      {
+        "key": "index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          2419.5
+        ],
+        "final_values": [
+          2419.5
+        ]
+      },
+      {
+        "key": "index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.992680013179779
+        ],
+        "final_values": [
+          0.992680013179779
+        ]
+      },
+      {
+        "key": "index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          11.007800102233887
+        ],
+        "final_values": [
+          11.007800102233887
+        ]
+      },
+      {
+        "key": "index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          57.016998291015625
+        ],
+        "final_values": [
+          57.016998291015625
+        ]
+      },
+      {
+        "key": "index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4827.98681640625
+        ],
+        "final_values": [
+          4827.98681640625
+        ]
+      },
+      {
+        "key": "index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4837.99853515625
+        ],
+        "final_values": [
+          4837.99853515625
+        ]
+      },
+      {
+        "key": "index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          1397.1876220703125
+        ],
+        "final_values": [
+          1397.1876220703125
+        ]
+      },
+      {
+        "key": "observation.images.image.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4000.0
+        ],
+        "final_values": [
+          4000.0
+        ]
+      },
+      {
+        "key": "observation.images.image.max",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9921568632125854,
+          0.9921568632125854,
+          0.9921568632125854
+        ],
+        "final_values": [
+          0.9921568632125854,
+          0.9921568632125854,
+          0.9921568632125854
+        ]
+      },
+      {
+        "key": "observation.images.image.mean",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.3618318438529968,
+          0.3000006377696991,
+          0.22843070328235626
+        ],
+        "final_values": [
+          0.3618318438529968,
+          0.3000006377696991,
+          0.22843070328235626
+        ]
+      },
+      {
+        "key": "observation.images.image.min",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "key": "observation.images.image.q01",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ],
+        "final_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ]
+      },
+      {
+        "key": "observation.images.image.q10",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.1255033314228058,
+          0.1137557327747345,
+          0.09404756128787994
+        ],
+        "final_values": [
+          0.1255033314228058,
+          0.1137557327747345,
+          0.09404756128787994
+        ]
+      },
+      {
+        "key": "observation.images.image.q50",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.4038023352622986,
+          0.30968308448791504,
+          0.18039441108703613
+        ],
+        "final_values": [
+          0.4038023352622986,
+          0.30968308448791504,
+          0.18039441108703613
+        ]
+      },
+      {
+        "key": "observation.images.image.q90",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.48236608505249023,
+          0.4314414858818054,
+          0.4196346700191498
+        ],
+        "final_values": [
+          0.48236608505249023,
+          0.4314414858818054,
+          0.4196346700191498
+        ]
+      },
+      {
+        "key": "observation.images.image.q99",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.6274254322052002,
+          0.6235833168029785,
+          0.6235840320587158
+        ],
+        "final_values": [
+          0.6274254322052002,
+          0.6235833168029785,
+          0.6235840320587158
+        ]
+      },
+      {
+        "key": "observation.images.image.std",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.1362564116716385,
+          0.127071350812912,
+          0.13983671367168427
+        ],
+        "final_values": [
+          0.1362564116716385,
+          0.127071350812912,
+          0.13983671367168427
+        ]
+      },
+      {
+        "key": "observation.images.image2.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4000.0
+        ],
+        "final_values": [
+          4000.0
+        ]
+      },
+      {
+        "key": "observation.images.image2.max",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.9215686321258545,
+          0.9058823585510254,
+          0.8941176533699036
+        ],
+        "final_values": [
+          0.9215686321258545,
+          0.9058823585510254,
+          0.8941176533699036
+        ]
+      },
+      {
+        "key": "observation.images.image2.mean",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.37409305572509766,
+          0.2809589207172394,
+          0.17675314843654633
+        ],
+        "final_values": [
+          0.37409305572509766,
+          0.2809589207172394,
+          0.17675314843654633
+        ]
+      },
+      {
+        "key": "observation.images.image2.min",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "key": "observation.images.image2.q01",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ],
+        "final_values": [
+          -3.921568744649079e-13,
+          -3.921568744649079e-13,
+          -3.921568744649079e-13
+        ]
+      },
+      {
+        "key": "observation.images.image2.q10",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.04695180803537369,
+          0.03539177402853966,
+          0.03145546838641167
+        ],
+        "final_values": [
+          0.04695180803537369,
+          0.03539177402853966,
+          0.03145546838641167
+        ]
+      },
+      {
+        "key": "observation.images.image2.q50",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.4470894932746887,
+          0.31777501106262207,
+          0.18032002449035645
+        ],
+        "final_values": [
+          0.4470894932746887,
+          0.31777501106262207,
+          0.18032002449035645
+        ]
+      },
+      {
+        "key": "observation.images.image2.q90",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.5647012591362,
+          0.4197421967983246,
+          0.2510114014148712
+        ],
+        "final_values": [
+          0.5647012591362,
+          0.4197421967983246,
+          0.2510114014148712
+        ]
+      },
+      {
+        "key": "observation.images.image2.q99",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.6157325506210327,
+          0.4706137776374817,
+          0.39993494749069214
+        ],
+        "final_values": [
+          0.6157325506210327,
+          0.4706137776374817,
+          0.39993494749069214
+        ]
+      },
+      {
+        "key": "observation.images.image2.std",
+        "parent_shape": [
+          3,
+          1,
+          1
+        ],
+        "final_shape": [
+          3,
+          1,
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.18824641406536102,
+          0.13010212779045105,
+          0.07253462821245193
+        ],
+        "final_values": [
+          0.18824641406536102,
+          0.13010212779045105,
+          0.07253462821245193
+        ]
+      },
+      {
+        "key": "observation.state.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "observation.state.max",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.1319044530391693,
+          0.04893389344215393,
+          1.2847110033035278,
+          3.356980562210083,
+          0.0938258245587349,
+          0.6901727318763733,
+          0.03989046812057495,
+          -0.009896269999444485
+        ],
+        "final_values": [
+          -0.1319044530391693,
+          0.04893389344215393,
+          1.2847110033035278,
+          3.356980562210083,
+          0.0938258245587349,
+          0.6901727318763733,
+          0.03989046812057495,
+          -0.009896269999444485
+        ]
+      },
+      {
+        "key": "observation.state.mean",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.25014325976371765,
+          -0.12954117357730865,
+          1.122333288192749,
+          3.044693946838379,
+          -0.6430191993713379,
+          -0.025820782408118248,
+          0.024028388783335686,
+          -0.025323251262307167
+        ],
+        "final_values": [
+          -0.25014325976371765,
+          -0.12954117357730865,
+          1.122333288192749,
+          3.044693946838379,
+          -0.6430191993713379,
+          -0.025820782408118248,
+          0.024028388783335686,
+          -0.025323251262307167
+        ]
+      },
+      {
+        "key": "observation.state.min",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.44103407859802246,
+          -0.33082816004753113,
+          0.9834851026535034,
+          2.6073622703552246,
+          -1.493219256401062,
+          -0.5793964266777039,
+          0.0015099652810022235,
+          -0.040775202214717865
+        ],
+        "final_values": [
+          -0.44103407859802246,
+          -0.33082816004753113,
+          0.9834851026535034,
+          2.6073622703552246,
+          -1.493219256401062,
+          -0.5793964266777039,
+          0.0015099652810022235,
+          -0.040775202214717865
+        ]
+      },
+      {
+        "key": "observation.state.q01",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.4387493431568146,
+          -0.32942134141921997,
+          0.9838464856147766,
+          2.607611656188965,
+          -1.4928715229034424,
+          -0.5787960886955261,
+          0.0017434100154787302,
+          -0.040381282567977905
+        ],
+        "final_values": [
+          -0.4387493431568146,
+          -0.32942134141921997,
+          0.9838464856147766,
+          2.607611656188965,
+          -1.4928715229034424,
+          -0.5787960886955261,
+          0.0017434100154787302,
+          -0.040381282567977905
+        ]
+      },
+      {
+        "key": "observation.state.q10",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.40554553270339966,
+          -0.2993200719356537,
+          0.9876247644424438,
+          2.6331944465637207,
+          -1.4647811651229858,
+          -0.5359797477722168,
+          0.00555931031703949,
+          -0.04000389575958252
+        ],
+        "final_values": [
+          -0.40554553270339966,
+          -0.2993200719356537,
+          0.9876247644424438,
+          2.6331944465637207,
+          -1.4647811651229858,
+          -0.5359797477722168,
+          0.00555931031703949,
+          -0.04000389575958252
+        ]
+      },
+      {
+        "key": "observation.state.q50",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.2511812746524811,
+          -0.2045535147190094,
+          1.1091647148132324,
+          2.893582820892334,
+          -1.2375550270080566,
+          -0.33538955450057983,
+          0.0134804118424654,
+          -0.030833043158054352
+        ],
+        "final_values": [
+          -0.2511812746524811,
+          -0.2045535147190094,
+          1.1091647148132324,
+          2.893582820892334,
+          -1.2375550270080566,
+          -0.33538955450057983,
+          0.0134804118424654,
+          -0.030833043158054352
+        ]
+      },
+      {
+        "key": "observation.state.q90",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.13637636601924896,
+          0.025854218751192093,
+          1.2703113555908203,
+          3.328605890274048,
+          0.050206661224365234,
+          0.6400932669639587,
+          0.0397564135491848,
+          -0.010196233168244362
+        ],
+        "final_values": [
+          -0.13637636601924896,
+          0.025854218751192093,
+          1.2703113555908203,
+          3.328605890274048,
+          0.050206661224365234,
+          0.6400932669639587,
+          0.0397564135491848,
+          -0.010196233168244362
+        ]
+      },
+      {
+        "key": "observation.state.q99",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          -0.13193786144256592,
+          0.04804961383342743,
+          1.2846767902374268,
+          3.3568813800811768,
+          0.0839092880487442,
+          0.6895533204078674,
+          0.039880186319351196,
+          -0.009898532181978226
+        ],
+        "final_values": [
+          -0.13193786144256592,
+          0.04804961383342743,
+          1.2846767902374268,
+          3.3568813800811768,
+          0.0839092880487442,
+          0.6895533204078674,
+          0.039880186319351196,
+          -0.009898532181978226
+        ]
+      },
+      {
+        "key": "observation.state.std",
+        "parent_shape": [
+          8
+        ],
+        "final_shape": [
+          8
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.07214141637086868,
+          0.10911699384450912,
+          0.07554254680871964,
+          0.10995753109455109,
+          0.37687599658966064,
+          0.17378371953964233,
+          0.01200412679463625,
+          0.011135483160614967
+        ],
+        "final_values": [
+          0.07214141637086868,
+          0.10911699384450912,
+          0.07554254680871964,
+          0.10995753109455109,
+          0.37687599658966064,
+          0.17378371953964233,
+          0.01200412679463625,
+          0.011135483160614967
+        ]
+      },
+      {
+        "key": "task_index.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "task_index.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "task_index.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "task_index.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "task_index.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4.000000067449534e-16
+        ],
+        "final_values": [
+          4.000000067449534e-16
+        ]
+      },
+      {
+        "key": "task_index.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4.000000014509975e-15
+        ],
+        "final_values": [
+          4.000000014509975e-15
+        ]
+      },
+      {
+        "key": "task_index.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          1.99999996490334e-14
+        ],
+        "final_values": [
+          1.99999996490334e-14
+        ]
+      },
+      {
+        "key": "task_index.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          3.6000001401139195e-14
+        ],
+        "final_values": [
+          3.6000001401139195e-14
+        ]
+      },
+      {
+        "key": "task_index.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          3.959999984718722e-14
+        ],
+        "final_values": [
+          3.959999984718722e-14
+        ]
+      },
+      {
+        "key": "task_index.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "timestamp.count",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          4840.0
+        ],
+        "final_values": [
+          4840.0
+        ]
+      },
+      {
+        "key": "timestamp.max",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          7.199999809265137
+        ],
+        "final_values": [
+          7.199999809265137
+        ]
+      },
+      {
+        "key": "timestamp.mean",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          3.017768621444702
+        ],
+        "final_values": [
+          3.017768621444702
+        ]
+      },
+      {
+        "key": "timestamp.min",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.0
+        ],
+        "final_values": [
+          0.0
+        ]
+      },
+      {
+        "key": "timestamp.q01",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.04915900155901909
+        ],
+        "final_values": [
+          0.04915900155901909
+        ]
+      },
+      {
+        "key": "timestamp.q10",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          0.4999620020389557
+        ],
+        "final_values": [
+          0.4999620020389557
+        ]
+      },
+      {
+        "key": "timestamp.q50",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          2.5502800941467285
+        ],
+        "final_values": [
+          2.5502800941467285
+        ]
+      },
+      {
+        "key": "timestamp.q90",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          6.4994401931762695
+        ],
+        "final_values": [
+          6.4994401931762695
+        ]
+      },
+      {
+        "key": "timestamp.q99",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          7.150392055511475
+        ],
+        "final_values": [
+          7.150392055511475
+        ]
+      },
+      {
+        "key": "timestamp.std",
+        "parent_shape": [
+          1
+        ],
+        "final_shape": [
+          1
+        ],
+        "parent_dtype": "torch.float32",
+        "final_dtype": "torch.float32",
+        "equal_values": true,
+        "max_abs_difference": 0.0,
+        "parent_values": [
+          1.777258276939392
+        ],
+        "final_values": [
+          1.777258276939392
+        ]
+      }
+    ]
+  },
+  "policy_preprocessor.json": {
+    "same_config": true
+  },
+  "policy_postprocessor.json": {
+    "same_config": true
+  }
+}

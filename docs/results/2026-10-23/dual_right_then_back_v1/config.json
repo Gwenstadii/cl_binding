@@ -1,0 +1,131 @@
+{
+  "purpose": "exploratory_joint_left_front_then_right_then_back_fixed12000_paired20",
+  "seed": 20261021,
+  "old_goals": [
+    "back"
+  ],
+  "data": {
+    "train_per_goal": 40,
+    "fps": 20,
+    "image_size": 128,
+    "train_output": "datasets/stage1_single_back_train_aligned_v1",
+    "validation_output": "datasets/stage1_single_back_validation_aligned_v1",
+    "action_alignment": "post_action_obs_to_next_action",
+    "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1"
+  },
+  "model": {
+    "chunk_size": 50,
+    "n_action_steps": 10,
+    "flow_steps": 10
+  },
+  "training": {
+    "max_steps": 12000,
+    "samples_per_goal": 6,
+    "learning_rate": 0.0001,
+    "warmup_steps": 100,
+    "save_every": 3000,
+    "log_every": 25,
+    "num_workers": 0,
+    "walltime_hours": 3
+  },
+  "evaluation": {
+    "expert_replay_demos": [
+      "demo_0",
+      "demo_1",
+      "demo_2"
+    ],
+    "horizon": 400,
+    "settle_steps": 10,
+    "common_state_source_goal": "front",
+    "screen_indices": [
+      0,
+      1,
+      2
+    ],
+    "development_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "qualification_indices": [],
+    "paired_indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "reserve_indices": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "development_required_correct": 16,
+    "qualification_required_correct": 16
+  },
+  "sequential": {
+    "retained_goals": [
+      "left",
+      "front",
+      "right"
+    ],
+    "new_goal": "back",
+    "evaluation_goals": [
+      "front",
+      "left",
+      "right",
+      "back"
+    ],
+    "initial_checkpoint": "outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+    "initial_model_sha256": "8c2dc6c371958027239a8c709a346842291bfb631b5a0ac29f4c04c394b85249",
+    "fixed_endpoint_step": 12000,
+    "new_goal_descriptive_success_threshold": 16,
+    "replay": false,
+    "distillation": false,
+    "evaluation_attempts": 2,
+    "starting_point_status": "Exploratory joint-left/front then right endpoint; immediate left/front terminal0/20 each, right12/20; not formally qualified R0.",
+    "selection_disclosure": "User authorized fixed back12000 continuation; no selection using endpoint scores.",
+    "paired_set_history": "20-39 are historically reused paired states; not an unseen qualification set.",
+    "endpoint_rule": "Train exactly12000 back-only updates, then all four instructions20 each regardless of scores.",
+    "source_run": ".server/dual12000_then_right_20261023_01"
+  }
+}

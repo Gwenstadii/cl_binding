@@ -1,0 +1,30 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+MU_READY 21 810 B CUDA_PEAK_RESERVED 2583691264
+MU 21 native late native native 810 B ['right'] False 18.19
+MU 21 mu_only parent delayed_100 forward 810 B ['front'] True 27.78
+MU 21 v late delayed_100 forward 810 B ['right'] False 28.45
+MU 21 v parent delayed_100 forward 810 B [] False 32.71
+MU 21 v late delayed_100 reverse 810 B ['right'] False 28.02
+MU 21 v parent delayed_100 reverse 810 B ['front'] False 31.63
+MU 21 own late delayed_100 forward 810 B [] False 22.74
+MU 21 own parent delayed_100 forward 810 B [] False 29.29
+MU 21 mu_only parent full_400 forward 810 B ['front'] False 57.57
+MU 21 v late full_400 forward 810 B ['right'] False 50.49
+MU 21 v parent full_400 forward 810 B [] False 64.69
+MU 21 v late full_400 reverse 810 B ['right'] False 45.13
+MU 21 v parent full_400 reverse 810 B [] False 69.1
+MU 21 own late full_400 forward 810 B [] False 33.99
+MU 21 own parent full_400 forward 810 B [] False 55.59

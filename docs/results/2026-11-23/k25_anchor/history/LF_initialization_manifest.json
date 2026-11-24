@@ -1,0 +1,35 @@
+{
+  "curriculum": "Left+Front -> Right",
+  "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "seed": 20261021,
+  "steps": 1000,
+  "saves": [
+    30,
+    300,
+    1000
+  ],
+  "learning_rate": 0.0001,
+  "warmup": 100,
+  "batch_size": 6,
+  "data": "/home/lzx/cl_binding_stage2a/datasets/stage1_single_right_train_aligned_v1",
+  "conversion": {
+    "purpose": "R0_old_only",
+    "split": "train",
+    "split_sha256": "b925a1a23eee66a0a5354ca16bac5fb40d02d7d33c28fda7397c8d1b607b9730",
+    "goals": [
+      "right"
+    ],
+    "fps": 20,
+    "image_transform": "rotate_180",
+    "action_alignment": "post_action_obs_to_next_action",
+    "observation_offset": 0,
+    "action_offset": 1,
+    "terminal_observations_dropped_per_trajectory": 1
+  },
+  "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e",
+  "optimizer_reset": true,
+  "normalization": "inherit LF parent",
+  "replay": false,
+  "source_sha256": "64c782401b2a6f61c85d2bcf35623d2853b8c20760daa82a453a171a6ddbc1d8"
+}

@@ -1,0 +1,22 @@
+{
+  "lane": 2,
+  "lanes": 8,
+  "ids": [
+    802,
+    810,
+    818
+  ],
+  "gates": {
+    "single_model_roles": [
+      "F"
+    ],
+    "v_only_overlay_equal": true,
+    "weights_restored": true,
+    "mean_preserved_fp64": true,
+    "mean_cast_rms": 0.0005245912470854819,
+    "new_goal_bypass_bitwise": true
+  },
+  "rows_sha256": "96ccca56d317fcc76e2a2fbf9ab35e14314e9a67db08bf4daffdff1e022ca81b",
+  "protocol_sha256": "770aae0546bcac093ae9ae5091079d7d15455caf24fa6c5570412a8f1d314dda",
+  "source_sha256": "dd9723d93f9d77b67332b82c2bd632cddb8681266d1d1d01509bf5561a315b34"
+}

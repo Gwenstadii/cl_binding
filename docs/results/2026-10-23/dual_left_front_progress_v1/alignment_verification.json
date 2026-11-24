@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "git_commit": "addd9028e2529061fd3cc27905f95496acc3b559",
+  "split_sha256": "48ff917f2b85b39ff3942e590811f66ccd05b39d7f307498e1d987de9f29a6eb",
+  "splits": {
+    "train": {
+      "trajectories": 80,
+      "frames": 10937,
+      "all_state_action_pairs_exact": true,
+      "stats_means_checked": true,
+      "conversion_sha256": "a5814b9e8e0ebf21f56fdd923f1f189f6a9613a4e1b38ab8a2f40c326233ffdd"
+    },
+    "validation": {
+      "trajectories": 20,
+      "frames": 2649,
+      "all_state_action_pairs_exact": true,
+      "stats_means_checked": true,
+      "conversion_sha256": "eb3254e0dcf1e8aca4cea03c87944d2a22ef92a4e6db5347f74192b4b4306d0a"
+    }
+  },
+  "dataset_statistics_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "normalization_behavior_verified_here": false,
+  "back_goal_in_training": false,
+  "n1_in_training_or_stats": false
+}

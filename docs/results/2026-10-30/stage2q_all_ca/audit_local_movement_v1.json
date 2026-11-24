@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "scope": "local raw-file hashes, full matrix, independent movement recount and positive-policy identity",
+  "counts": {
+    "physical_steps": 168000,
+    "episodes": 420
+  },
+  "per_condition_rows": 105,
+  "positive_identity_action_max_abs": 0.0,
+  "verified_raw_files": {
+    "jobs.json": {
+      "bytes": 73915,
+      "sha256": "e1748bfa2eaa744e26198242b55348e1d9ccb23798e0d3fe5f8850d103e53d3d"
+    },
+    "engineering.json": {
+      "bytes": 48548,
+      "sha256": "909365f07e4655f983611ca7b9f97e9d60a5ae6feccbc3fed26f6808bb6a411b"
+    },
+    "events.jsonl.gz": {
+      "bytes": 33652777,
+      "sha256": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da"
+    },
+    "episodes.jsonl": {
+      "bytes": 278149,
+      "sha256": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055"
+    },
+    "replans.jsonl.gz": {
+      "bytes": 1599401,
+      "sha256": "2a22616ef17b57fe447c95a9e6c7d801709469832df4769978de6bb2f925aaec"
+    }
+  },
+  "server_only_raw_files": {
+    "norms.jsonl.gz": {
+      "bytes": 1353790533,
+      "sha256": "e9903234f9d8c0eaaab86ea0094c03d4dea23468f193df7c38db77bc10c8e37f"
+    }
+  },
+  "random_norm_audit": "server audit passed; not recomputed locally",
+  "server_random_norm_max_relative_difference": 0.004182279154901138
+}

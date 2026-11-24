@@ -1,0 +1,16 @@
+{
+  "pid": 20157,
+  "started_at": "2026-10-28T14:07:50.915432+00:00",
+  "registered_commit": "924e104977287dcd8e9c566f121ad02712b1f684",
+  "command": [
+    "/home/lzx/cl_binding/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_01/code/run_stage2m_cross_attention.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_01/code/stage2m_cross_attention_20261028.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_01/code",
+    "--registered-commit",
+    "924e104977287dcd8e9c566f121ad02712b1f684"
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "models": {
+    "base": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+    "parent": "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors",
+    "executor": "/home/lzx/cl_binding/.server/k26_multigoal_20261121_01/back/003000/trainable.safetensors"
+  },
+  "files": {
+    "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+    "/home/lzx/cl_binding/.server/k26_multigoal_20261121_01/back/003000/trainable.safetensors": "ccee300a0cfc2ae9755eb6a149e0e1dee1d1f57e6a1677584162bab61788ad83",
+    "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/model.safetensors": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+    "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/READY.json": "385f578ff0146e838438fc00db9d31e5e47b4390b4f197a5cc5e66f43a9c1817",
+    "/home/lzx/cl_binding/.server/k26_multigoal_20261121_01/back/003000/READY.json": "0ee416151f62716fca2f4ed59c5b6daf1c9a03ba56a8862f6023105f316c2055",
+    "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors": "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+    "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+  },
+  "sources": {
+    "parallel_four.py": "e75570890cdbe59ee6d240168402d1815774224269c03e98c4dd92215d38aef6",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  },
+  "old_sources": {
+    "parallel_reproduction.py": "c3428dfbaeb71b9a19b67ef762a15fcaf3851bf599470ab278e1c9993e621b9d",
+    "parallel_protocol.py": "71f3686ff3b5c64b4e9d41721a3b444cd065d58ad246df9b8e4576f4c1ae8cd0",
+    "v_timing_protocol.py": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+    "anchor_tensor_hash.py": "ffeb32f0f16a9ef027596e55dd7deb2f1f35c8eb98c7c609dd301f632b4ddc35"
+  },
+  "full_protocol_sha256": "bbeacc3542c4dd77c98043177c74a867595852fb4a71e3421c1a55244de329ba",
+  "cases_sha256": "0c233a96513e7ecde914761fb7d41b8c11e5de457a492854d407b0f996438969",
+  "plan_sha256": "22ad9936b2338100144dc605061d47b5e152026c373e735905917fc06bd51f97",
+  "geometry": {
+    "left": {
+      "site": "desk_caddy_1_left_contain_region",
+      "centre": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "front": {
+      "site": "desk_caddy_1_front_contain_region",
+      "centre": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "rotation": [
+        [
+          0.9999999999999998,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        [
+          -0.0,
+          -0.9999999999999998,
+          0.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.03595,
+        0.06216
+      ]
+    },
+    "right": {
+      "site": "desk_caddy_1_right_contain_region",
+      "centre": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "back": {
+      "site": "desk_caddy_1_back_contain_region",
+      "centre": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    }
+  },
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "old_goals": [
+    "left",
+    "front",
+    "right"
+  ],
+  "all_goals": [
+    "left",
+    "front",
+    "right",
+    "back"
+  ],
+  "arms": [
+    "parent",
+    "native",
+    "parallel150",
+    "parallel400"
+  ],
+  "expected": 320,
+  "horizon": 400,
+  "solver": {
+    "contrast": "Helmert, three old prompts",
+    "dtype": "float64",
+    "rcond": 1e-06,
+    "fit": "50x7",
+    "lift": "full32"
+  },
+  "checkpoint_choice": "original selected Back3000; no choice using new results",
+  "source_parent_commit": "e61358e0d1c203aea7d8cb57f0dfcadb986a8711"
+}

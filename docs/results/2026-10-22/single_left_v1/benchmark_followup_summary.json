@@ -1,0 +1,284 @@
+{
+  "status": "complete",
+  "fixed_endpoint_step": 6000,
+  "script_sha256": "b7634102a53a5fa21118b6d325c9a8bf43f88ebf03ac22eeec4b025edafcf451",
+  "underlying_git_commit": "6c9adc00a82cd713226bf06159218ac51130fb88",
+  "reason": "LIBERO reference metric accumulates success; 400-step terminal correctness is an additional retention-of-result criterion.",
+  "original_protocol_unchanged": true,
+  "development_success_ever": 10,
+  "development_total": 10,
+  "development_terminal_correct": 10,
+  "reused_original_paired_evaluation": true,
+  "base": {
+    "task_success_counts": {
+      "front": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "left": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "right": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "back": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      }
+    },
+    "first_target_matrix": {
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unreached": 10,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unreached": 10,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unreached": 10,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unreached": 10,
+        "ambiguous": 0
+      }
+    },
+    "terminal_summary": {
+      "trained_goal": "left",
+      "initial_states": 10,
+      "episodes": 40,
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 10,
+          "ambiguous": 0
+        }
+      },
+      "trained_instruction_correct": 0,
+      "other_instructions": {
+        "total": 30,
+        "requested_goal_correct": 0,
+        "trained_goal_terminal": 0,
+        "trained_goal_terminal_rate": 0.0
+      },
+      "conditioned_on_trained_instruction_success": {
+        "control_indices": [],
+        "total": 0,
+        "trained_goal_terminal": 0,
+        "trained_goal_terminal_rate": null
+      }
+    },
+    "other_instruction_intrusion": {
+      "total": 30,
+      "first_trained_goal": 0,
+      "trained_goal_ever_without_requested_success": 0,
+      "terminal_trained_goal": 0
+    },
+    "conditioned_on_trained_success_ever": {
+      "control_indices": [],
+      "total": 0,
+      "first_trained_goal": 0,
+      "trained_goal_ever_without_requested_success": 0,
+      "terminal_trained_goal": 0
+    }
+  },
+  "adapted": {
+    "task_success_counts": {
+      "front": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "left": {
+        "total": 10,
+        "success_ever": 10,
+        "terminal_correct": 9
+      },
+      "right": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      },
+      "back": {
+        "total": 10,
+        "success_ever": 0,
+        "terminal_correct": 0
+      }
+    },
+    "first_target_matrix": {
+      "front": {
+        "front": 0,
+        "left": 10,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "left": {
+        "front": 0,
+        "left": 10,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 10,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      },
+      "back": {
+        "front": 0,
+        "left": 10,
+        "right": 0,
+        "back": 0,
+        "unreached": 0,
+        "ambiguous": 0
+      }
+    },
+    "terminal_summary": {
+      "trained_goal": "left",
+      "initial_states": 10,
+      "episodes": 40,
+      "terminal_matrix": {
+        "front": {
+          "front": 0,
+          "left": 8,
+          "right": 0,
+          "back": 0,
+          "unfinished": 2,
+          "ambiguous": 0
+        },
+        "left": {
+          "front": 0,
+          "left": 9,
+          "right": 0,
+          "back": 0,
+          "unfinished": 1,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 8,
+          "right": 0,
+          "back": 0,
+          "unfinished": 2,
+          "ambiguous": 0
+        },
+        "back": {
+          "front": 0,
+          "left": 7,
+          "right": 0,
+          "back": 0,
+          "unfinished": 3,
+          "ambiguous": 0
+        }
+      },
+      "trained_instruction_correct": 9,
+      "other_instructions": {
+        "total": 30,
+        "requested_goal_correct": 0,
+        "trained_goal_terminal": 23,
+        "trained_goal_terminal_rate": 0.7666666666666667
+      },
+      "conditioned_on_trained_instruction_success": {
+        "control_indices": [
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39
+        ],
+        "total": 27,
+        "trained_goal_terminal": 23,
+        "trained_goal_terminal_rate": 0.8518518518518519
+      }
+    },
+    "other_instruction_intrusion": {
+      "total": 30,
+      "first_trained_goal": 30,
+      "trained_goal_ever_without_requested_success": 30,
+      "terminal_trained_goal": 23
+    },
+    "conditioned_on_trained_success_ever": {
+      "control_indices": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "total": 30,
+      "first_trained_goal": 30,
+      "trained_goal_ever_without_requested_success": 30,
+      "terminal_trained_goal": 23
+    }
+  },
+  "paired_success_ever": 10,
+  "paired_total": 10,
+  "high_success_by_accumulated_metric": true,
+  "result": "fixed_endpoint_four_instruction_probe_complete",
+  "seconds": 695.029370485805
+}

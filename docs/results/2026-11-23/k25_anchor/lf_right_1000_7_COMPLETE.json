@@ -1,0 +1,82 @@
+{
+  "line": "lf_right_1000",
+  "lane": 7,
+  "lanes": 8,
+  "ids": [
+    807,
+    815
+  ],
+  "episodes": 68,
+  "rows_sha256": "cb4b37f3087d817f523589576e2e2efb5de54c2c4ad2048a687b6985a2024ec7",
+  "source_sha256": "0beaa18a3a1b11ceeba42c6d18987af932ce0c5444d6ecf3f75604015fb61caf",
+  "spec_sha256": "2224cb14728824b142bf425ae542196d4329e73fd7265f3611564a458715cb63",
+  "protocol_sha256": "3e901986e74e1621c6ba7afa4b2c1ef926f317907146b26067e1b1c4c4dae460",
+  "weights_fingerprints": {
+    "0": "379c7b50494d89eb5758eec200a06e9684e426cc2bb6452d6d25ab6287549bdf",
+    "30": "9e87f18216852d9cfb1d072cc22b298ef9f407ba452cc2953676242bc339e3b3",
+    "1000": "9f4f62616aa07bd3eff6dfb2d158a97715fe977ebc5f25d46862eaadceda404f"
+  },
+  "delta_sha256": {
+    "0": "3e05a304adfb7fe6bcad0e803ee474df58b169726c16e9a780229b7d40869c73",
+    "30": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557"
+  },
+  "gates": [
+    {
+      "anchor": 0,
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008367784903384745,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "anchor": 0,
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004110052832402289,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "anchor": 30,
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0008809076389297843,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "anchor": 30,
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0004278997366782278,
+      "new_goal_bypass_bitwise": true
+    }
+  ],
+  "imported_condition_first_block_probes": 8,
+  "previous_parent_replays": 4,
+  "executed_episodes": 68,
+  "cached_original_episodes": 0,
+  "engineering_replay_episodes": 0,
+  "replay_key": null,
+  "replay_bitwise_equal": false,
+  "original_partial_file_sha256": null,
+  "cached_row_sha256": {}
+}

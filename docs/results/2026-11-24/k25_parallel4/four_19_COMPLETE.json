@@ -1,0 +1,52 @@
+{
+  "lane": 19,
+  "ids": [
+    819
+  ],
+  "episodes": 16,
+  "gates": [
+    {
+      "goal": "left",
+      "normal_equations_checked": true,
+      "rank": 2,
+      "condition": 1.1997603794059508,
+      "self_reconstruction_checked": true,
+      "actual_query_exact": true
+    },
+    {
+      "goal": "front",
+      "normal_equations_checked": true,
+      "rank": 2,
+      "condition": 1.1997603794059508,
+      "self_reconstruction_checked": true,
+      "actual_query_exact": true
+    },
+    {
+      "goal": "right",
+      "normal_equations_checked": true,
+      "rank": 2,
+      "condition": 1.1997603794059508,
+      "self_reconstruction_checked": true,
+      "actual_query_exact": true
+    },
+    {
+      "goal": "back",
+      "normal_equations_checked": true,
+      "rank": 2,
+      "condition": 1.1997603794059508,
+      "self_reconstruction_checked": true,
+      "actual_query_exact": false
+    }
+  ],
+  "weights_fingerprints": [
+    "f484f72c6863618e85ab89eab0b560597169755c6834a50595b788ec75f35826",
+    "b5b32929d7b09702c2d8b363a1e5fa809791fdd715a12f69469e7d71a7535a10"
+  ],
+  "weights_unchanged": true,
+  "rows_sha256": "d1bffdbbdae447a549423ceb63b0ed9e03822497b38ecc7c74aa1e34f2bca8d4",
+  "protocol_sha256": "84d75f098fbde0f4a73fe8a2d5ce9d462c34e84a2888c7ce9755e2096b15ef59",
+  "sources": {
+    "parallel_four.py": "e75570890cdbe59ee6d240168402d1815774224269c03e98c4dd92215d38aef6",
+    "parallel_subspace.py": "951542897ba56582eae68e0bda3788608b845d1659bcf5d694c536d3ace54ce4"
+  }
+}

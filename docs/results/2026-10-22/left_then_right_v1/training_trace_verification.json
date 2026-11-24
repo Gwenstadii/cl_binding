@@ -1,0 +1,65 @@
+{
+  "training_rows": 6000,
+  "continuous_steps_1_through_6000": true,
+  "loss_and_gradient_finite_all_steps": true,
+  "last_training_row": {
+    "step": 6000,
+    "loss": 0.20690783858299255,
+    "gradient_norm": 3.7299137115478516,
+    "lr": 0.0001,
+    "step_seconds": 0.12479600263759494,
+    "batch_indices": [
+      2717,
+      2902,
+      3078,
+      5535,
+      1041,
+      4861
+    ],
+    "samples_per_goal": 6
+  },
+  "checkpoint_verifications": {
+    "001000": {
+      "status": "pass",
+      "step": 1000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "002000": {
+      "status": "pass",
+      "step": 2000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "003000": {
+      "status": "pass",
+      "step": 3000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "004000": {
+      "status": "pass",
+      "step": 4000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "005000": {
+      "status": "pass",
+      "step": 5000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "006000": {
+      "status": "pass",
+      "step": 6000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    }
+  }
+}

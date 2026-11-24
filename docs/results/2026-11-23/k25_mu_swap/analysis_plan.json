@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-11-23T07:27:02.434053+00:00",
+  "locked_before_queue": true,
+  "question": "Does replacing late1000 mu with LF parent0 mu rescue the same fixed K25 V correction?",
+  "primary": "Anchor30, alpha5.294038631688923, residual beta1; mu late/parent x windows81-180/1-400 x forward/reverse. No outcome-based anchor, gain or window choice.",
+  "controls": "Native F; parent mu without V; late/parent mu with true-query F residual scaled by fixed historical beta2.959, without V. Each beta comparison changes only mu source.",
+  "parent": "LF two-old-task parent0; mean from fixed canonical Left and Front at same current observation, x and t. Actual q goes only to continued F, no donor target-specific output.",
+  "records": "600 actually executed 400-step episodes: 400 new conditions + 200 complete reference replays. Same20 reused states800-819, old A=Left/B=Front, no held-out claims.",
+  "endpoints": "Separately report first stable arrival, terminal400, ever, grasp, joint A/B success, reverse destinations, per-state gains/losses and pre-intervention events.",
+  "primary_interpretation": "Improvement of mu-parent vs mu-late at fixed V/gain/window/sign supports common-background compatibility. Joint first and terminal are separate; first-arrival rescue does not imply completed placement.",
+  "alternative": "Compare parent-mu-only and K14 own-residual controls to determine whether V correction is necessary for any improvement. No unique mu explanation or universal restoration claim from two fixed windows.",
+  "scope": "Two-policy diagnosis, not recovered standalone model. No new-task preservation, wording generalization, fresh initial-state holdout or independent training seeds measured."
+}

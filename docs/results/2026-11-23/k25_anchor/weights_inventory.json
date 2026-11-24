@@ -1,0 +1,191 @@
+{
+  "captured_at_utc": "2026-11-23T04:32:46.290422+00:00",
+  "source_sha256": "3ecf1af5d527420992055e6f23a2ea31a391d9757643b23163533f437e1192f7",
+  "lines": {
+    "lr_front_1000": {
+      "delta_sha256": {
+        "0": "3145ae798e67dc9588eed1536c630feb6a77a1b367a4d1d6884ec8a6c1438de3",
+        "30": "b1e94c0a140ee8078a2be24165f39602b7acbc425532a0ce6e90ed3df4e8cd27"
+      },
+      "norm_0_to_1000": 2.425628407267617,
+      "norm_30_to_1000": 2.375833240116112,
+      "norm_0_to_30": 0.2227110966221637,
+      "cosine_delta0_delta30": 0.9959117139708312,
+      "tensors": {
+        "model.vlm_with_expert.lm_expert.layers.1.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.07490021491969782,
+          "norm_30_to_1000": 0.8025116567990586,
+          "norm_0_to_1000": 0.8177558997667013
+        },
+        "model.vlm_with_expert.lm_expert.layers.11.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.07399164896868837,
+          "norm_30_to_1000": 0.8784905831077011,
+          "norm_0_to_1000": 0.8941365287109633
+        },
+        "model.vlm_with_expert.lm_expert.layers.13.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.08911703991271619,
+          "norm_30_to_1000": 0.820271581231091,
+          "norm_0_to_1000": 0.8400746323216951
+        },
+        "model.vlm_with_expert.lm_expert.layers.15.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.09956413486556145,
+          "norm_30_to_1000": 0.8092383394280888,
+          "norm_0_to_1000": 0.8324257391562124
+        },
+        "model.vlm_with_expert.lm_expert.layers.3.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.07478882506774318,
+          "norm_30_to_1000": 0.8230599315654976,
+          "norm_0_to_1000": 0.8429692983010667
+        },
+        "model.vlm_with_expert.lm_expert.layers.5.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.06971330041635948,
+          "norm_30_to_1000": 0.8282870425090383,
+          "norm_0_to_1000": 0.8461249888956286
+        },
+        "model.vlm_with_expert.lm_expert.layers.7.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.06749724010073183,
+          "norm_30_to_1000": 0.8907888596431264,
+          "norm_0_to_1000": 0.9075284088073672
+        },
+        "model.vlm_with_expert.lm_expert.layers.9.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.07517561081241983,
+          "norm_30_to_1000": 0.8626174678012286,
+          "norm_0_to_1000": 0.8756013818970511
+        }
+      }
+    },
+    "lf_right_1000": {
+      "delta_sha256": {
+        "0": "3e05a304adfb7fe6bcad0e803ee474df58b169726c16e9a780229b7d40869c73",
+        "30": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557"
+      },
+      "norm_0_to_1000": 2.4761873642205057,
+      "norm_30_to_1000": 2.4464397962448134,
+      "norm_0_to_30": 0.189571201311725,
+      "cosine_delta0_delta30": 0.9971068645417187,
+      "tensors": {
+        "model.vlm_with_expert.lm_expert.layers.1.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.058144341070851285,
+          "norm_30_to_1000": 0.8162175084778718,
+          "norm_0_to_1000": 0.8221240192965236
+        },
+        "model.vlm_with_expert.lm_expert.layers.11.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.06685916637044582,
+          "norm_30_to_1000": 0.9178615437146056,
+          "norm_0_to_1000": 0.9272069549880053
+        },
+        "model.vlm_with_expert.lm_expert.layers.13.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.08183925594697027,
+          "norm_30_to_1000": 0.8281671852646265,
+          "norm_0_to_1000": 0.8424790545199391
+        },
+        "model.vlm_with_expert.lm_expert.layers.15.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.08227189778940175,
+          "norm_30_to_1000": 0.8617056432602415,
+          "norm_0_to_1000": 0.8818795917433402
+        },
+        "model.vlm_with_expert.lm_expert.layers.3.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.05976401714369572,
+          "norm_30_to_1000": 0.8353787736951857,
+          "norm_0_to_1000": 0.8422397366255086
+        },
+        "model.vlm_with_expert.lm_expert.layers.5.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.056875166165137166,
+          "norm_30_to_1000": 0.9015600655944515,
+          "norm_0_to_1000": 0.90968608914893
+        },
+        "model.vlm_with_expert.lm_expert.layers.7.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.058583304321429205,
+          "norm_30_to_1000": 0.9276740459993029,
+          "norm_0_to_1000": 0.9374009285257181
+        },
+        "model.vlm_with_expert.lm_expert.layers.9.self_attn.v_proj.weight": {
+          "shape": [
+            320,
+            320
+          ],
+          "dtype": "torch.float32",
+          "norm_0_to_30": 0.06619269630368012,
+          "norm_30_to_1000": 0.8226432742460155,
+          "norm_0_to_1000": 0.8323482414597095
+        }
+      }
+    }
+  },
+  "interpretation": "Parameter norms are descriptive; they are not causal responsibility fractions or recovery qualifications"
+}

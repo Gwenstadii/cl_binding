@@ -1,0 +1,74 @@
+{
+  "line": "lf_right_1000",
+  "lane": 4,
+  "lanes": 8,
+  "ids": [
+    804,
+    812
+  ],
+  "gates": {
+    "single_model_roles": [
+      "F"
+    ],
+    "v_only_overlay_equal": true,
+    "weights_restored": true,
+    "mean_preserved_fp64": true,
+    "mean_cast_rms": 0.0004410733818076551,
+    "new_goal_bypass_bitwise": true
+  },
+  "protocol_sha256": "58e5eb1031804c97fa6a788f76bb365bad14a8b340d9a0b9768cf6f2fef8a159",
+  "source_sha256": "22958ab3ba4baa73362f5f7617caee820e87325b9129f818404f721b58eff1c7",
+  "spec_sha256": "b416d598ced5fae6952991eb61c93f447f9aa211c7a4ee55587be70cef736368",
+  "delta_sha256": "563f27172ea635021b140492c00a09d23aa1bedfdb5d786eb455431f66e08557",
+  "rows_sha256": "8d33f96b7db4bfc621fb22c5ca5aba35bb5cc33f05abc49a25573c872e1b4cbc",
+  "previous_replays": [
+    [
+      "native",
+      "native",
+      "A",
+      804
+    ],
+    [
+      "native",
+      "native",
+      "B",
+      804
+    ],
+    [
+      "native",
+      "native",
+      "A",
+      812
+    ],
+    [
+      "native",
+      "native",
+      "B",
+      812
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "A",
+      804
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "B",
+      804
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "A",
+      812
+    ],
+    [
+      "delayed_100",
+      "forward",
+      "B",
+      812
+    ]
+  ]
+}

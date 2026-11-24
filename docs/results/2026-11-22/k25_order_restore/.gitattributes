@@ -1,0 +1,2 @@
+# Preserve exact bytes used by completion markers and provenance hashes.
+* -text -whitespace

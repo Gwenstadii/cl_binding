@@ -1,0 +1,91 @@
+{
+  "created_at_utc": "2026-11-24T07:47:19.874250+00:00",
+  "source_parent_commit": "1c7ac293bafd0fa691d1d128f985095e599ae85e",
+  "question": "At fixed parent mean, gain, initial state, noise and duration, does retaining the full adapted residual helpBack or hurtold goals compared with projecting onto the parent old-task subspace?",
+  "comparison": {
+    "new_arms": [
+      "whole150",
+      "whole400"
+    ],
+    "reference_arms": [
+      "parallel150",
+      "parallel400"
+    ],
+    "new_episodes": 160,
+    "reused_reference_episodes": 160,
+    "extra_parent_native_context": 160,
+    "ids": [
+      800,
+      801,
+      802,
+      803,
+      804,
+      805,
+      806,
+      807,
+      808,
+      809,
+      810,
+      811,
+      812,
+      813,
+      814,
+      815,
+      816,
+      817,
+      818,
+      819
+    ],
+    "goals": [
+      "left",
+      "front",
+      "right",
+      "back"
+    ],
+    "horizon": 400,
+    "windows": [
+      [
+        0,
+        150
+      ],
+      [
+        0,
+        400
+      ]
+    ],
+    "models": "exact K19 three-old parent and original selected K26 Back3000",
+    "gain": "reuse exact parallel4 independent-dev norm-ratio alpha1.6349165456934696; same130 dev inputs and capped upper median; no retuning",
+    "unchanged": "parent and late means overthree old prompts, full actualF query, seven velocity queries at every denoising input, original episode, normalizers, sampling, dtype and full32 output; only field uses full residual instead of projected residual"
+  },
+  "formulas": {
+    "whole": "muP + alpha*(vF(q)-muF)",
+    "parallel": "muP + alpha*B32*pinv(B7)*(vF(q)-muF)7",
+    "active_difference": "alpha*(rF7-proj7(rF7)); whole32 difference retains all padded components too"
+  },
+  "precision": "float64 field construction then identical native dtype, matching parallel4; K15 strategy, not historical fixed2.959 dosage or original binary candidate set",
+  "predictions": [
+    "If whole improvesBack at fixed controls, discarded residual components supportBack undertheseconditions.",
+    "If whole hurtsold goals, discarded components can hurtold control undertheseconditions.",
+    "Both can hold: components can be goal- or phase-dependent, not globallynoise.",
+    "If neither helpsBack, common-mean mismatch and weak nativeBack remain possible; projection is not proven innocent or uniquelycausal."
+  ],
+  "endpoints": [
+    "unique correct lifted5-control first arrival",
+    "placed150",
+    "terminal400",
+    "ever",
+    "grasp",
+    "old-three joint",
+    "all-four joint",
+    "Front->Back chronology",
+    "per-start gains/losses"
+  ],
+  "audits": [
+    "20 shards x8 rollouts",
+    "80 within-method identical first150 prefixes",
+    "80 shared initial input diagnostics vsparallel4",
+    "full32 formula and whole-minus-projected component identities",
+    "unchanged155-parameter fingerprints and file identities"
+  ],
+  "scope": "One existing four-command training history, same20 reused starts. No new training, gain sweep, V, reverse, routing or wording tests. References remainfrozen. This isolates retaining/discarding the component at fixed muP and gain, not every causeof forgetting."
+}

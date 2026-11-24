@@ -1,0 +1,57 @@
+{
+  "lane": 7,
+  "lanes": 8,
+  "ids": [
+    907,
+    915
+  ],
+  "rows_sha256": "7ee0b0b500f13944e23601a8b08c52cab8e3f0087411fb64ee94e899ce12b055",
+  "gates": [
+    {
+      "gain": 0.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005206666537560523,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009359086980111897,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 1.0,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0009359086980111897,
+      "new_goal_bypass_bitwise": true
+    },
+    {
+      "gain": 5.294038631688923,
+      "single_model_roles": [
+        "F"
+      ],
+      "v_only_overlay_equal": true,
+      "weights_restored": true,
+      "mean_preserved_fp64": true,
+      "mean_cast_rms": 0.0005206666537560523,
+      "new_goal_bypass_bitwise": true
+    }
+  ],
+  "protocol_sha256": "715d8997762577392062f4a8cd2c951b433c3fa78c3930b895d0d9c4480bd043",
+  "source_sha256": "33df149f567fbac9cf7760e2747f161490c508b4210c33040cdee3189b8ccd44"
+}

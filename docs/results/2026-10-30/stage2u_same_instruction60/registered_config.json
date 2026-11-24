@@ -1,0 +1,220 @@
+{
+  "runtime_root": "/home/lzx/cl_binding_stage2a",
+  "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+  "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+  "expected_model_sources": {
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+  },
+  "gpu": 1,
+  "indices": [
+    0,
+    1
+  ],
+  "seeds": [
+    2026102801,
+    2026102802
+  ],
+  "horizon": 400,
+  "n_action_steps": 10,
+  "flow_steps": 10,
+  "noise_replan_stride": 1000003,
+  "random_seed_salt": 2026102905,
+  "identity_tolerance": 1e-05,
+  "parent_qualification": "historical exploratory LF12k, not formally qualified",
+  "output_root": "/home/lzx/cl_binding/.server/stage2u_same_instruction60_20261030_01",
+  "site": 1,
+  "intervention_steps": 120,
+  "save_videos": true,
+  "maximum_worker_minutes": 40,
+  "maximum_output_bytes": 1073741824,
+  "minimum_disk_free_bytes": 3221225472,
+  "total_deadline_seconds": 3600,
+  "primary_endpoint": "first transported target, whole path and continuation; commanded Cartesian delta and observed eef/book progress",
+  "movement_geometry": {
+    "canonical_scene_xml_sha256": "d09ebc89fc415015efa908a281c06e7b42499227cdcb752b31e55a0e1cf78050",
+    "sites": {
+      "left": {
+        "centre": [
+          -0.410197,
+          -0.28346499999999997,
+          0.95258
+        ],
+        "rotation": [
+          [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "half_size": [
+          0.06196,
+          0.06216,
+          0.06046
+        ]
+      },
+      "front": {
+        "centre": [
+          -0.372867,
+          -0.137315,
+          0.92754
+        ],
+        "rotation": [
+          [
+            0.9999999999999998,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.9999999999999998
+          ],
+          [
+            -0.0,
+            -0.9999999999999998,
+            0.0
+          ]
+        ],
+        "half_size": [
+          0.02775,
+          0.03595,
+          0.06216
+        ]
+      },
+      "right": {
+        "centre": [
+          -0.410197,
+          0.005434999999999995,
+          0.95258
+        ],
+        "rotation": [
+          [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "half_size": [
+          0.06196,
+          0.06216,
+          0.06046
+        ]
+      },
+      "back": {
+        "centre": [
+          -0.437527,
+          -0.137315,
+          0.97258
+        ],
+        "rotation": [
+          [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            -0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "half_size": [
+          0.02775,
+          0.06216,
+          0.06046
+        ]
+      }
+    },
+    "source": "native fixed geometry, reset only; no model loaded"
+  },
+  "scope": "same instruction FT4 native vs R0 first40 then FT4, three goals",
+  "source_reference_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+  "source_reference_hashes": {
+    "manifest.json": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3",
+    "episodes.jsonl": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055",
+    "events.jsonl.gz": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da",
+    "replans.jsonl.gz": "2a22616ef17b57fe447c95a9e6c7d801709469832df4769978de6bb2f925aaec"
+  },
+  "boundaries": [
+    60
+  ],
+  "source_models": [
+    "R0",
+    "FT4"
+  ],
+  "prefix_goals": [
+    "left",
+    "front"
+  ],
+  "continuation_models": [
+    "R0",
+    "FT4"
+  ],
+  "continuation_goals": [
+    "left",
+    "front"
+  ],
+  "expected_episodes": 24,
+  "expected_continuation_steps": 61440,
+  "expected_replayed_prefix_steps": 15360,
+  "expected_continuation_replans": 6144,
+  "snapshot_rule": "deterministic full original-prefix action replay for each branch; compare sim, controller, image hashes; no partial-state restore",
+  "goals": [
+    "left",
+    "front",
+    "right"
+  ],
+  "references": {
+    "q": {
+      "server_root": "/home/lzx/cl_binding/.server/stage2q_all_ca_overnight_20261029_01",
+      "files": {
+        "manifest.json": "dbbe35af263198150cf68ef7fc16855798e1256c69c6db715786f713b4d22ed3",
+        "episodes.jsonl": "a707752993bd07582691686566a4ecf29a9843db260e48967b59597f62da7055",
+        "events.jsonl.gz": "bf58491174148f2738b6540be87ab79f4e0fd7dd1d205c2ef487d2e36d4047da"
+      }
+    },
+    "r": {
+      "server_root": "/home/lzx/cl_binding/.server/stage2r_early_handoff_20261030_01",
+      "files": {
+        "manifest.json": "a17d5aceb7284c2dadc4c9324d49032ed28186572deda14abd027098ef6bd4f9",
+        "episodes.jsonl": "902e6349594f6c41d7980cc647048ab637f2d0fb723b75fb869e138807e4f008",
+        "events.jsonl.gz": "09e3741fa93d288ebc7c6cbb063dad810a5f27fc12182031dbc94645a5eff940"
+      }
+    }
+  },
+  "right_teacher_status": "R0 was not trained on Right; Right-prefix intervention is exploratory, not a qualified teacher or same-state instruction-switch test",
+  "direction_windows": [
+    10,
+    20,
+    40
+  ]
+}

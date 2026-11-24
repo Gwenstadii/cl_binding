@@ -1,0 +1,17 @@
+{
+  "pid": 59526,
+  "dispatched_at": "2026-10-30T06:35:49.574286+00:00",
+  "registered_commit": "abbeb24",
+  "source_bundle_sha256": "56f851f9327cf4f25df5386753f7d93909c7ee54f66179a0a8a52a11d1a1c6e4",
+  "command": [
+    "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding/.server/stage2s_same_instruction80_20261030_01/code/run_stage2s_same_instruction80.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/stage2s_same_instruction80_20261030_01/code/stage2s_same_instruction80_20261030.json",
+    "--code-dir",
+    "/home/lzx/cl_binding/.server/stage2s_same_instruction80_20261030_01/code",
+    "--registered-commit",
+    "abbeb24"
+  ]
+}

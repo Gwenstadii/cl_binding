@@ -1,0 +1,543 @@
+{
+  "status": "complete",
+  "started_at": "2026-10-23T11:54:18.624073+00:00",
+  "source_commit": "5514c303d5b516a5b565ef777972d69f5bf83480",
+  "initial_checkpoint": "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "initial_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "training_dir": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01",
+  "starting_point_status": "User-selected exploratory 12000-step joint model; development left19/front16/joint15 out of20; not a formally qualified R0.",
+  "selection_disclosure": "This is a new explicitly authorized exploratory branch selected after reviewing development; the original candidate protocol and its 18000-step endpoint are preserved.",
+  "normalization_source": "datasets/stage1_dual_left_front_train_aligned_v1",
+  "fixed_training_steps": 12000,
+  "evaluation_goals": [
+    "left",
+    "front",
+    "right"
+  ],
+  "episodes_each_before_and_after": 60,
+  "phases": [
+    {
+      "name": "data",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_data.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/config.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/data"
+      ],
+      "gpu": null,
+      "pid": 2082320,
+      "started_elapsed_s": 0.00033183628693223,
+      "returncode": 0,
+      "finished_elapsed_s": 3.068774773273617
+    },
+    {
+      "name": "alignment",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_alignment_verify.py",
+        "--audit",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/data/audit.json",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/alignment_verification.json"
+      ],
+      "gpu": null,
+      "pid": 2082329,
+      "started_elapsed_s": 3.069287132937461,
+      "returncode": 0,
+      "finished_elapsed_s": 3.391472448129207
+    },
+    {
+      "name": "train",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_train.py",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/config.json",
+        "--run-dir",
+        "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01",
+        "--init-checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000"
+      ],
+      "gpu": 0,
+      "pid": 2082341,
+      "started_elapsed_s": 3.392176026944071,
+      "returncode": 0,
+      "finished_elapsed_s": 2930.269361079205
+    },
+    {
+      "name": "before_attempt1_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "right",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/before_attempt1_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 2082342,
+      "started_elapsed_s": 3.3925527399405837,
+      "returncode": 0,
+      "finished_elapsed_s": 681.9614032409154
+    },
+    {
+      "name": "after_attempt1_part0",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "left",
+        "front",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after_attempt1_part0",
+        "--trace"
+      ],
+      "gpu": 0,
+      "pid": 3813097,
+      "started_elapsed_s": 2930.9528109501116,
+      "returncode": 0,
+      "finished_elapsed_s": 3376.0423074429855
+    },
+    {
+      "name": "after_attempt1_part1",
+      "command": [
+        "/home/lzx/cl_binding/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/scripts/stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+        "--partition",
+        "paired",
+        "--instruction-goals",
+        "right",
+        "--output",
+        "/home/lzx/cl_binding/.server/dual12000_then_right_20261023_01/after_attempt1_part1",
+        "--trace"
+      ],
+      "gpu": 1,
+      "pid": 3813098,
+      "started_elapsed_s": 2930.9612281713635,
+      "returncode": 0,
+      "finished_elapsed_s": 3376.042663732078
+    }
+  ],
+  "current_stage": "finished",
+  "before": {
+    "episodes": 60,
+    "initial_states": 20,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 4
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 16,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "front": 0,
+        "left": 16,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "front": {
+        "front": 16,
+        "left": 0,
+        "right": 0,
+        "back": 0,
+        "unfinished": 4,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 2,
+        "right": 0,
+        "back": 0,
+        "unfinished": 18,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct": 13,
+    "joint_old_terminal_correct_indices": [
+      22,
+      24,
+      25,
+      26,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "scope": "Exploratory checkpoint selected after development review; not a formally qualified R0."
+  },
+  "normalization_verified_unchanged": true,
+  "finished_at": "2026-10-23T12:50:34.677237+00:00",
+  "seconds": 3376.052284218371,
+  "final_checkpoint": "/home/lzx/cl_binding/outputs/sequential/dual12000_then_right_20261023_01/checkpoints/012000",
+  "final_model_sha256": "8c2dc6c371958027239a8c709a346842291bfb631b5a0ac29f4c04c394b85249",
+  "after": {
+    "episodes": 60,
+    "initial_states": 20,
+    "indices": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "task_success_counts": {
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0
+      },
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 13,
+        "terminal_correct": 12,
+        "correct_then_destroyed": 1
+      }
+    },
+    "terminal_matrix": {
+      "left": {
+        "front": 0,
+        "left": 0,
+        "right": 14,
+        "back": 0,
+        "unfinished": 6,
+        "ambiguous": 0
+      },
+      "front": {
+        "front": 0,
+        "left": 0,
+        "right": 11,
+        "back": 0,
+        "unfinished": 9,
+        "ambiguous": 0
+      },
+      "right": {
+        "front": 0,
+        "left": 0,
+        "right": 12,
+        "back": 0,
+        "unfinished": 8,
+        "ambiguous": 0
+      }
+    },
+    "joint_old_terminal_correct": 0,
+    "joint_old_terminal_correct_indices": [],
+    "scope": "Exploratory checkpoint selected after development review; not a formally qualified R0."
+  },
+  "comparison": {
+    "before": {
+      "episodes": 60,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "left": {
+          "total": 20,
+          "success_ever": 20,
+          "terminal_correct": 16,
+          "correct_then_destroyed": 4
+        },
+        "front": {
+          "total": 20,
+          "success_ever": 16,
+          "terminal_correct": 16,
+          "correct_then_destroyed": 0
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0
+        }
+      },
+      "terminal_matrix": {
+        "left": {
+          "front": 0,
+          "left": 16,
+          "right": 0,
+          "back": 0,
+          "unfinished": 4,
+          "ambiguous": 0
+        },
+        "front": {
+          "front": 16,
+          "left": 0,
+          "right": 0,
+          "back": 0,
+          "unfinished": 4,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 2,
+          "right": 0,
+          "back": 0,
+          "unfinished": 18,
+          "ambiguous": 0
+        }
+      },
+      "joint_old_terminal_correct": 13,
+      "joint_old_terminal_correct_indices": [
+        22,
+        24,
+        25,
+        26,
+        30,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "scope": "Exploratory checkpoint selected after development review; not a formally qualified R0."
+    },
+    "after": {
+      "episodes": 60,
+      "initial_states": 20,
+      "indices": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "task_success_counts": {
+        "left": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0
+        },
+        "front": {
+          "total": 20,
+          "success_ever": 0,
+          "terminal_correct": 0,
+          "correct_then_destroyed": 0
+        },
+        "right": {
+          "total": 20,
+          "success_ever": 13,
+          "terminal_correct": 12,
+          "correct_then_destroyed": 1
+        }
+      },
+      "terminal_matrix": {
+        "left": {
+          "front": 0,
+          "left": 0,
+          "right": 14,
+          "back": 0,
+          "unfinished": 6,
+          "ambiguous": 0
+        },
+        "front": {
+          "front": 0,
+          "left": 0,
+          "right": 11,
+          "back": 0,
+          "unfinished": 9,
+          "ambiguous": 0
+        },
+        "right": {
+          "front": 0,
+          "left": 0,
+          "right": 12,
+          "back": 0,
+          "unfinished": 8,
+          "ambiguous": 0
+        }
+      },
+      "joint_old_terminal_correct": 0,
+      "joint_old_terminal_correct_indices": [],
+      "scope": "Exploratory checkpoint selected after development review; not a formally qualified R0."
+    },
+    "matched_pairs": 60,
+    "old_goal_transitions": {
+      "left": {
+        "previously_successful_ever": {
+          "total": 20,
+          "retained": 0,
+          "lost": 20,
+          "lost_and_first_new_right": 14,
+          "lost_and_terminal_new_right": 14,
+          "lost_and_terminal_unfinished": 6,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "lost_and_first_new_right": 12,
+          "lost_and_terminal_new_right": 12,
+          "lost_and_terminal_unfinished": 4,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        }
+      },
+      "front": {
+        "previously_successful_ever": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "lost_and_first_new_right": 9,
+          "lost_and_terminal_new_right": 9,
+          "lost_and_terminal_unfinished": 7,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        },
+        "previously_terminal_correct": {
+          "total": 16,
+          "retained": 0,
+          "lost": 16,
+          "lost_and_first_new_right": 9,
+          "lost_and_terminal_new_right": 9,
+          "lost_and_terminal_unfinished": 7,
+          "lost_and_terminal_ambiguous": 0,
+          "lost_and_terminal_other_wrong": 0
+        }
+      }
+    },
+    "previously_joint_correct_states": {
+      "total": 13,
+      "retained_joint_terminal_correct": 0,
+      "both_old_instructions_terminal_new_right": 5
+    },
+    "interpretation": "Report each old skill on its actual pre-success denominator. Wrong-new-target, late result destruction and unfinished are distinct. This exploratory branch alone does not prove an internal causal pathway."
+  },
+  "accepted_evaluation_episodes": 120,
+  "new_task_reached_descriptive_threshold": false,
+  "actual_completed_worker_episodes_including_runtime_retries": 120
+}

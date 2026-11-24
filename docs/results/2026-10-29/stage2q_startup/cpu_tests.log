@@ -1,0 +1,10 @@
+test_all_sites_windows_and_controls_are_in_the_independent_matrix (test_stage2q_all_ca.OvernightProtocol.test_all_sites_windows_and_controls_are_in_the_independent_matrix) ... ok
+test_no_multi_layer_or_adaptive_combination_is_scheduled (test_stage2q_all_ca.OvernightProtocol.test_no_multi_layer_or_adaptive_combination_is_scheduled) ... ok
+test_positive_controls_include_both_windows_and_do_not_use_right_teacher (test_stage2q_all_ca.OvernightProtocol.test_positive_controls_include_both_windows_and_do_not_use_right_teacher) ... ok
+test_random_controls_share_directions_across_the_two_windows (test_stage2q_all_ca.OvernightProtocol.test_random_controls_share_directions_across_the_two_windows) ... ok
+test_registered_compute_budget_includes_random_calibration (test_stage2q_all_ca.OvernightProtocol.test_registered_compute_budget_includes_random_calibration) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

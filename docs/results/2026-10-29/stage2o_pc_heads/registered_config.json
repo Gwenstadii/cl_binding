@@ -1,0 +1,105 @@
+{
+  "registered_date": "2026-10-29",
+  "purpose": "step4 P/C factorization at fixed sites; true pre-W_O head screening; open loop only",
+  "runtime_root": "/home/lzx/cl_binding_stage2a",
+  "base_config": "/home/lzx/cl_binding/.server/stage2h_gate_20261027/configs/gcid.json",
+  "output_root": "/home/lzx/cl_binding/.server/stage2o_pc_heads_20261029_01",
+  "teacher": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+  "student": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+  "teacher_model_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+  "student_model_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+  "prior_baseline_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/baseline.jsonl",
+  "prior_baseline_sha256": "5e483cab3e81fabe029f3753fa01ec83dbd9d0cabcce9d649630d899d44eea33",
+  "prior_candidates_path": "/home/lzx/cl_binding/.server/stage2m_cross_attention_20261028_02/analysis/candidates.json",
+  "prior_candidates_sha256": "a9fca67dd7aa49a63c57eec8155ad8409cee850a62371d8d82b6364756ec3ac2",
+  "expected_model_sources": {
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/smolvlm_with_expert.py": "7a97d06b9aeb83d0f4a2990b32aec5086d38613feb2b39dd59105c9dc2f57141",
+    "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/policies/smolvla/modeling_smolvla.py": "a0dc3bce70ad33b828fbace3dee6357f44d422ee010b452b89a88a5277c6d155"
+  },
+  "gpu": 1,
+  "indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "seeds": [
+    2026102801,
+    2026102802,
+    2026102803
+  ],
+  "flow_indices": [
+    0,
+    4,
+    8
+  ],
+  "goals": [
+    "left",
+    "front"
+  ],
+  "candidate_sites": [
+    3,
+    9
+  ],
+  "control_site": 1,
+  "control_site_rule": "smallest actual CA site outside the two previous candidates",
+  "sites": [
+    1,
+    3,
+    9
+  ],
+  "modes": [
+    "self_pc",
+    "old_p_same",
+    "old_c_same",
+    "old_pc_same",
+    "old_p_wrong",
+    "old_c_wrong",
+    "old_pc_wrong",
+    "old_m_same",
+    "old_m_wrong",
+    "random_pc"
+  ],
+  "reference_goal_rule": "left if (physical_index + seed_position) % 2 == 0 else front",
+  "random_seed_rule": "stable SHA256 of anchor/model/goal/site plus fixed salt; one direction per cell, no score-based redraw",
+  "random_seed_salt": 2026102904,
+  "random_matching": "true pre-W_O readout head / action position delta matching; BF16 effective norms retained",
+  "engineering_anchor": {
+    "state_index": 0,
+    "noise_seed": 2026102801,
+    "flow_index": 0
+  },
+  "identity_tolerance": 1e-05,
+  "baseline_reproduction_tolerance": 1e-05,
+  "transfer_rms_floor": 1e-06,
+  "effective_action_dimensions": 7,
+  "primary_action_positions": 10,
+  "expected_baseline_count": 144,
+  "expected_patch_count": 5400,
+  "maximum_worker_minutes": 45,
+  "maximum_output_bytes": 536870912,
+  "minimum_disk_free_bytes": 2147483648,
+  "parent_qualification": "historical exploratory LF12k, not formally qualified",
+  "no_followup": [
+    "closed loop",
+    "training or replay",
+    "W_O parameter intervention",
+    "adaptive head selection",
+    "additional model or input"
+  ],
+  "scope_note": "The last two items are conditional subexperiments inside the broader step-3 plan; they are deferred rather than automatically added to this core batch.",
+  "expected_heads": 15,
+  "head_screen_seeds": [
+    2026102801
+  ],
+  "expected_norm_records": 2592,
+  "prior_patch_path": "/home/lzx/cl_binding/.server/stage2n_cross_checkpoint_20261029_01/analysis/patches.jsonl",
+  "prior_patch_sha256": "5336f6ecfa7b5364d37c6b47ca81a08425141321006b99689627236876b891d4",
+  "factor_arms_count": 10,
+  "head_modes": [
+    "head_same",
+    "head_wrong",
+    "head_random"
+  ],
+  "expected_head_dimension_rule": "actual PC width / actual query-head count; never infer from hidden size"
+}

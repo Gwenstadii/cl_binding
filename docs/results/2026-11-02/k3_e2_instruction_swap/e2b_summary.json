@@ -1,0 +1,293 @@
+{
+ "episodes": 180,
+ "expected": 180,
+ "cells": {
+  "scene2|R0|W1": {
+   "family": "scene2",
+   "model": "R0",
+   "key": "W1",
+   "instruction": "there is a book and a caddy on the desk",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.4,
+   "lifted": 0.6,
+   "first_target_distribution": {
+    "left": 3,
+    "none": 6,
+    "front": 1
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 134
+  },
+  "scene2|R0|W2": {
+   "family": "scene2",
+   "model": "R0",
+   "key": "W2",
+   "instruction": "pick up the book",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.3,
+   "lifted": 0.8,
+   "first_target_distribution": {
+    "left": 2,
+    "none": 7,
+    "front": 1
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 115
+  },
+  "scene2|R0|W3": {
+   "family": "scene2",
+   "model": "R0",
+   "key": "W3",
+   "instruction": "put the book in the caddy",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.6,
+   "lifted": 0.8,
+   "first_target_distribution": {
+    "left": 3,
+    "none": 4,
+    "front": 3
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 120
+  },
+  "scene2|FT4|W1": {
+   "family": "scene2",
+   "model": "FT4",
+   "key": "W1",
+   "instruction": "there is a book and a caddy on the desk",
+   "n": 10,
+   "capture": 0.5,
+   "any_target": 0.5,
+   "lifted": 0.8,
+   "first_target_distribution": {
+    "none": 5,
+    "right": 5
+   },
+   "success_new_goal": 0.3,
+   "median_first_target_step": 97
+  },
+  "scene2|FT4|W2": {
+   "family": "scene2",
+   "model": "FT4",
+   "key": "W2",
+   "instruction": "pick up the book",
+   "n": 10,
+   "capture": 0.5,
+   "any_target": 0.5,
+   "lifted": 0.7,
+   "first_target_distribution": {
+    "none": 5,
+    "right": 5
+   },
+   "success_new_goal": 0.1,
+   "median_first_target_step": 100
+  },
+  "scene2|FT4|W3": {
+   "family": "scene2",
+   "model": "FT4",
+   "key": "W3",
+   "instruction": "put the book in the caddy",
+   "n": 10,
+   "capture": 0.8,
+   "any_target": 0.8,
+   "lifted": 0.9,
+   "first_target_distribution": {
+    "right": 8,
+    "none": 2
+   },
+   "success_new_goal": 0.3,
+   "median_first_target_step": 105
+  },
+  "scene1b|R0|W1": {
+   "family": "scene1b",
+   "model": "R0",
+   "key": "W1",
+   "instruction": "there is a book and a caddy on the desk",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.2,
+   "lifted": 0.3,
+   "first_target_distribution": {
+    "none": 8,
+    "front": 2
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 167
+  },
+  "scene1b|R0|W2": {
+   "family": "scene1b",
+   "model": "R0",
+   "key": "W2",
+   "instruction": "pick up the book",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.0,
+   "lifted": 0.2,
+   "first_target_distribution": {
+    "none": 10
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": null
+  },
+  "scene1b|R0|W3": {
+   "family": "scene1b",
+   "model": "R0",
+   "key": "W3",
+   "instruction": "put the book in the caddy",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.2,
+   "lifted": 0.3,
+   "first_target_distribution": {
+    "none": 8,
+    "front": 2
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 147
+  },
+  "scene1b|FT4|W1": {
+   "family": "scene1b",
+   "model": "FT4",
+   "key": "W1",
+   "instruction": "there is a book and a caddy on the desk",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.0,
+   "lifted": 0.0,
+   "first_target_distribution": {
+    "none": 10
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": null
+  },
+  "scene1b|FT4|W2": {
+   "family": "scene1b",
+   "model": "FT4",
+   "key": "W2",
+   "instruction": "pick up the book",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.0,
+   "lifted": 0.0,
+   "first_target_distribution": {
+    "none": 10
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": null
+  },
+  "scene1b|FT4|W3": {
+   "family": "scene1b",
+   "model": "FT4",
+   "key": "W3",
+   "instruction": "put the book in the caddy",
+   "n": 10,
+   "capture": 0.1,
+   "any_target": 0.1,
+   "lifted": 0.1,
+   "first_target_distribution": {
+    "none": 9,
+    "right": 1
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 129
+  },
+  "goal|R0|W1": {
+   "family": "goal",
+   "model": "R0",
+   "key": "W1",
+   "instruction": "there is a bowl and a plate on the table",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.4,
+   "lifted": 0.7,
+   "first_target_distribution": {
+    "none": 6,
+    "front": 4
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 142
+  },
+  "goal|R0|W2": {
+   "family": "goal",
+   "model": "R0",
+   "key": "W2",
+   "instruction": "pick up the bowl",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.8,
+   "lifted": 0.9,
+   "first_target_distribution": {
+    "none": 2,
+    "left": 8
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 76
+  },
+  "goal|R0|W3": {
+   "family": "goal",
+   "model": "R0",
+   "key": "W3",
+   "instruction": "put the bowl on the table",
+   "n": 10,
+   "capture": 0.0,
+   "any_target": 0.8,
+   "lifted": 0.9,
+   "first_target_distribution": {
+    "none": 2,
+    "left": 8
+   },
+   "success_new_goal": 0.0,
+   "median_first_target_step": 73
+  },
+  "goal|FT4|W1": {
+   "family": "goal",
+   "model": "FT4",
+   "key": "W1",
+   "instruction": "there is a bowl and a plate on the table",
+   "n": 10,
+   "capture": 0.9,
+   "any_target": 0.9,
+   "lifted": 0.9,
+   "first_target_distribution": {
+    "none": 1,
+    "right": 9
+   },
+   "success_new_goal": 0.8,
+   "median_first_target_step": 61
+  },
+  "goal|FT4|W2": {
+   "family": "goal",
+   "model": "FT4",
+   "key": "W2",
+   "instruction": "pick up the bowl",
+   "n": 10,
+   "capture": 1.0,
+   "any_target": 1.0,
+   "lifted": 1.0,
+   "first_target_distribution": {
+    "right": 10
+   },
+   "success_new_goal": 1.0,
+   "median_first_target_step": 60
+  },
+  "goal|FT4|W3": {
+   "family": "goal",
+   "model": "FT4",
+   "key": "W3",
+   "instruction": "put the bowl on the table",
+   "n": 10,
+   "capture": 0.9,
+   "any_target": 0.9,
+   "lifted": 1.0,
+   "first_target_distribution": {
+    "right": 9,
+    "none": 1
+   },
+   "success_new_goal": 0.9,
+   "median_first_target_step": 60
+  }
+ }
+}

@@ -1,0 +1,434 @@
+{
+  "verified_at_utc": "2026-10-23T05:02:03.393681+00:00",
+  "source_commit": "16eab1328b7480700a647d1131b7370422aae9fb",
+  "source_file_hashes_verified": 30,
+  "matched_conditions_across_four_models": 80,
+  "same_reset_xml_seed_and_horizon": true,
+  "new_evaluation_episodes": 160,
+  "cached_baseline_episodes": 160,
+  "new_training_steps": 24000,
+  "all_ten_phases_exit_zero": true,
+  "whole_sequence_status": "complete",
+  "recomputed_metrics": {
+    "left": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 17,
+          "unfinished": 3
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 20,
+        "terminal_correct": 19,
+        "correct_then_destroyed": 1,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 19,
+          "unfinished": 1
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "left": 20
+        },
+        "terminal_targets": {
+          "left": 18,
+          "unfinished": 2
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "left": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "left": 16,
+          "unfinished": 4
+        }
+      }
+    },
+    "left_right": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 5,
+          "right": 15
+        },
+        "terminal_targets": {
+          "unfinished": 5,
+          "right": 15
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 6,
+          "right": 14
+        },
+        "terminal_targets": {
+          "unfinished": 6,
+          "right": 14
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 15,
+        "terminal_correct": 15,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 5,
+          "right": 15
+        },
+        "terminal_targets": {
+          "unfinished": 5,
+          "right": 15
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "unreached_or_ambiguous": 7,
+          "right": 13
+        },
+        "terminal_targets": {
+          "unfinished": 7,
+          "right": 13
+        }
+      }
+    },
+    "stage3_front": {
+      "front": {
+        "total": 20,
+        "success_ever": 19,
+        "terminal_correct": 16,
+        "correct_then_destroyed": 3,
+        "first_targets": {
+          "front": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "front": 16,
+          "unfinished": 4
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "front": 18,
+          "unreached_or_ambiguous": 2
+        },
+        "terminal_targets": {
+          "front": 16,
+          "unfinished": 4
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "front": 19,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "front": 17,
+          "unfinished": 3
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "front": 17,
+          "unreached_or_ambiguous": 3
+        },
+        "terminal_targets": {
+          "front": 15,
+          "unfinished": 5
+        }
+      }
+    },
+    "stage4_back": {
+      "front": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "back": 17,
+          "unreached_or_ambiguous": 3
+        },
+        "terminal_targets": {
+          "unfinished": 16,
+          "back": 4
+        }
+      },
+      "left": {
+        "total": 20,
+        "success_ever": 2,
+        "terminal_correct": 1,
+        "correct_then_destroyed": 1,
+        "first_targets": {
+          "back": 17,
+          "unreached_or_ambiguous": 2,
+          "left": 1
+        },
+        "terminal_targets": {
+          "back": 6,
+          "unfinished": 13,
+          "left": 1
+        }
+      },
+      "right": {
+        "total": 20,
+        "success_ever": 0,
+        "terminal_correct": 0,
+        "correct_then_destroyed": 0,
+        "first_targets": {
+          "back": 18,
+          "left": 1,
+          "unreached_or_ambiguous": 1
+        },
+        "terminal_targets": {
+          "back": 5,
+          "unfinished": 13,
+          "left": 2
+        }
+      },
+      "back": {
+        "total": 20,
+        "success_ever": 17,
+        "terminal_correct": 3,
+        "correct_then_destroyed": 14,
+        "first_targets": {
+          "back": 17,
+          "unreached_or_ambiguous": 2,
+          "left": 1
+        },
+        "terminal_targets": {
+          "unfinished": 14,
+          "back": 3,
+          "left": 2,
+          "front": 1
+        }
+      }
+    }
+  },
+  "recomputed_previous_and_acquisition_transitions": {
+    "stage3_front": {
+      "immediately_previous": {
+        "left": {
+          "previously_successful_ever": {
+            "total": 0,
+            "retained_success_ever": 0,
+            "lost_success_ever": 0,
+            "lost_and_first_new_goal": 0,
+            "lost_and_terminal_new_goal": 0,
+            "lost_and_terminal_unfinished": 0
+          },
+          "previously_terminal_correct": {
+            "total": 0,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 0,
+            "lost_and_terminal_new_goal": 0,
+            "lost_and_terminal_unfinished": 0
+          }
+        },
+        "right": {
+          "previously_successful_ever": {
+            "total": 15,
+            "retained_success_ever": 0,
+            "lost_success_ever": 15,
+            "lost_and_first_new_goal": 14,
+            "lost_and_terminal_new_goal": 12,
+            "lost_and_terminal_unfinished": 3
+          },
+          "previously_terminal_correct": {
+            "total": 15,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 15,
+            "lost_and_terminal_new_goal": 12,
+            "lost_and_terminal_unfinished": 3
+          }
+        }
+      },
+      "acquisition": {
+        "left": {
+          "previously_successful_ever": {
+            "total": 20,
+            "retained_success_ever": 0,
+            "lost_success_ever": 20,
+            "lost_and_first_new_goal": 18,
+            "lost_and_terminal_new_goal": 16,
+            "lost_and_terminal_unfinished": 4
+          },
+          "previously_terminal_correct": {
+            "total": 19,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 19,
+            "lost_and_terminal_new_goal": 16,
+            "lost_and_terminal_unfinished": 3
+          }
+        },
+        "right": {
+          "previously_successful_ever": {
+            "total": 15,
+            "retained_success_ever": 0,
+            "lost_success_ever": 15,
+            "lost_and_first_new_goal": 14,
+            "lost_and_terminal_new_goal": 12,
+            "lost_and_terminal_unfinished": 3
+          },
+          "previously_terminal_correct": {
+            "total": 15,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 15,
+            "lost_and_terminal_new_goal": 12,
+            "lost_and_terminal_unfinished": 3
+          }
+        }
+      }
+    },
+    "stage4_back": {
+      "immediately_previous": {
+        "left": {
+          "previously_successful_ever": {
+            "total": 0,
+            "retained_success_ever": 0,
+            "lost_success_ever": 0,
+            "lost_and_first_new_goal": 0,
+            "lost_and_terminal_new_goal": 0,
+            "lost_and_terminal_unfinished": 0
+          },
+          "previously_terminal_correct": {
+            "total": 0,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 0,
+            "lost_and_terminal_new_goal": 0,
+            "lost_and_terminal_unfinished": 0
+          }
+        },
+        "right": {
+          "previously_successful_ever": {
+            "total": 0,
+            "retained_success_ever": 0,
+            "lost_success_ever": 0,
+            "lost_and_first_new_goal": 0,
+            "lost_and_terminal_new_goal": 0,
+            "lost_and_terminal_unfinished": 0
+          },
+          "previously_terminal_correct": {
+            "total": 0,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 0,
+            "lost_and_terminal_new_goal": 0,
+            "lost_and_terminal_unfinished": 0
+          }
+        },
+        "front": {
+          "previously_successful_ever": {
+            "total": 19,
+            "retained_success_ever": 0,
+            "lost_success_ever": 19,
+            "lost_and_first_new_goal": 16,
+            "lost_and_terminal_new_goal": 4,
+            "lost_and_terminal_unfinished": 15
+          },
+          "previously_terminal_correct": {
+            "total": 16,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 16,
+            "lost_and_terminal_new_goal": 4,
+            "lost_and_terminal_unfinished": 12
+          }
+        }
+      },
+      "acquisition": {
+        "left": {
+          "previously_successful_ever": {
+            "total": 20,
+            "retained_success_ever": 2,
+            "lost_success_ever": 18,
+            "lost_and_first_new_goal": 16,
+            "lost_and_terminal_new_goal": 6,
+            "lost_and_terminal_unfinished": 12
+          },
+          "previously_terminal_correct": {
+            "total": 19,
+            "retained_terminal_correct": 1,
+            "lost_terminal_correct": 18,
+            "lost_and_terminal_new_goal": 6,
+            "lost_and_terminal_unfinished": 12
+          }
+        },
+        "right": {
+          "previously_successful_ever": {
+            "total": 15,
+            "retained_success_ever": 0,
+            "lost_success_ever": 15,
+            "lost_and_first_new_goal": 14,
+            "lost_and_terminal_new_goal": 3,
+            "lost_and_terminal_unfinished": 10
+          },
+          "previously_terminal_correct": {
+            "total": 15,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 15,
+            "lost_and_terminal_new_goal": 3,
+            "lost_and_terminal_unfinished": 10
+          }
+        },
+        "front": {
+          "previously_successful_ever": {
+            "total": 19,
+            "retained_success_ever": 0,
+            "lost_success_ever": 19,
+            "lost_and_first_new_goal": 16,
+            "lost_and_terminal_new_goal": 4,
+            "lost_and_terminal_unfinished": 15
+          },
+          "previously_terminal_correct": {
+            "total": 16,
+            "retained_terminal_correct": 0,
+            "lost_terminal_correct": 16,
+            "lost_and_terminal_new_goal": 4,
+            "lost_and_terminal_unfinished": 12
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+CAPACITY {'workers': 8, 'per_gpu': 4}
+START 1628298 0 lr_front_1000_0
+START 1628299 1 lf_right_1000_0
+START 1628300 1 lr_front_1000_1
+START 1628301 0 lf_right_1000_1
+START 1628302 0 lr_front_1000_2
+START 1628303 1 lf_right_1000_2
+START 1628304 1 lr_front_1000_3
+START 1628305 0 lf_right_1000_3
+FINISH lf_right_1000_3 1
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/run_anchor_check.py", line 73, in <module>
+    run(args.workers)
+  File "/home/lzx/cl_binding/.server/k25_anchor_20261123_01/run_anchor_check.py", line 55, in run
+    raise RuntimeError(failures)
+RuntimeError: [{'job': 'lf_right_1000_3', 'code': 1}]

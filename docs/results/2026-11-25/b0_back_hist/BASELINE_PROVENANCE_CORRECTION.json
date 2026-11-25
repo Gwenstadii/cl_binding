@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-11-25T08:32:15.611625+00:00",
+  "reason": "Original generic evaluator describes config training-data source. Archived B0 actually loads R1 pre/post-processors; correct that descriptive field, preserving all scores and episode bytes.",
+  "records": [
+    {
+      "step": 12000,
+      "old_descriptive_source": "datasets/stage1_single_back_train_aligned_v1",
+      "actual_processor_source": "/home/lzx/cl_binding_stage2a/datasets/stage1_dual_left_right_train_aligned_v1",
+      "episode_sha256_unchanged": "4084c11ef03e6b7bdc54e066888a5b688edd988d06964a1e78a3e45df42641c6"
+    },
+    {
+      "step": 24000,
+      "old_descriptive_source": "datasets/stage1_single_back_train_aligned_v1",
+      "actual_processor_source": "/home/lzx/cl_binding_stage2a/datasets/stage1_dual_left_right_train_aligned_v1",
+      "episode_sha256_unchanged": "1bb259f38f8d016aa8e07a0b90a19986b63e6764c9f97abc97617c255d78b4f9"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "complete",
+  "partition": "development",
+  "checkpoint": "/home/lzx/cl_binding/.server/k25_b0_back_20261125_01/012000/trainable.safetensors",
+  "policy_source": "archived_B0_all155_task_tensors",
+  "instruction_goals": [
+    "back"
+  ],
+  "gate_goals": [
+    "back"
+  ],
+  "normalization_source": "/home/lzx/cl_binding_stage2a/datasets/stage1_dual_left_right_train_aligned_v1",
+  "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+  "counts": {
+    "back": {
+      "total": 20,
+      "correct": 6
+    }
+  },
+  "passed_gate": false,
+  "seconds": 230.62832117266953,
+  "horizon": 400,
+  "n_action_steps": 10,
+  "step_traces": true,
+  "videos_first_init_per_goal": true,
+  "qualified_R0": false,
+  "frozen_container": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+  "reconstruction": {
+    "overwritten_task_tensors": 155,
+    "all_archived_B0_tensors_equal": true,
+    "container_trainable_weights_remaining": 0,
+    "processors": "R1 statistics, exactly as used by previous B0",
+    "no_parent_action_generation": true,
+    "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e"
+  },
+  "weights_sha256": "f6aaa316223e85f9422084595a64064c3955eaccb0b01fd55f42750f9c7ff20c",
+  "historical_eval_source_sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9",
+  "runtime_processor_checkpoint": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+  "evaluation_config_used_for_reset_and_partition_only": true
+}

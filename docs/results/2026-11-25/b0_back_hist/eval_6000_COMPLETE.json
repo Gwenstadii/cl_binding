@@ -1,0 +1,19 @@
+{
+  "step": 6000,
+  "qualified": false,
+  "groups": {
+    "dev": {
+      "n": 20,
+      "terminal": 5,
+      "ever": 20,
+      "first": 0,
+      "stable_released_final": 4,
+      "rows_sha256": "4e3ae2615894b916cbfb69bd4a2de817473ac9c2592618a89034b9c82a87abca",
+      "weights_sha256": "3c9e1084a03f47233b2aa7fe74096b258f4936fff1d939349c2ef6ac2c45ed2b"
+    }
+  },
+  "checkpoint": "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/training/checkpoints/006000",
+  "completed_at_utc": "2026-11-25T07:38:36.073691+00:00",
+  "weights_sha256": "3c9e1084a03f47233b2aa7fe74096b258f4936fff1d939349c2ef6ac2c45ed2b",
+  "evaluation_source_sha256": "a95e6c47736f41382409032372771956f1cddd19b3a7e930d5ac859393f50c28"
+}

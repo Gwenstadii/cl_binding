@@ -1,7 +1,7 @@
 """Evaluate an archived B0 partial checkpoint with the unchanged historical API.
 
-Used only for a matched comparison if the historical-state group passes while
-the random-reset group does not. It performs no training or action replacement.
+Provides the matched historical-protocol archived control. It performs no
+training or action replacement.
 """
 import argparse
 import hashlib
@@ -57,6 +57,9 @@ def main(run, step):
     with baseline.open('rb') as stream:
         weights_sha = hashlib.file_digest(stream, 'sha256').hexdigest()
     report.update(checkpoint=str(baseline), frozen_container=str(container),
+                  normalization_source=json.loads((container.parent.parent/'manifest.json').read_text())['normalization_source'],
+                  runtime_processor_checkpoint=str(container),
+                  evaluation_config_used_for_reset_and_partition_only=True,
                   policy_source='archived_B0_all155_task_tensors', reconstruction=proof,
                   weights_sha256=weights_sha,
                   historical_eval_source_sha256=hashlib.sha256(source.read_bytes()).hexdigest())

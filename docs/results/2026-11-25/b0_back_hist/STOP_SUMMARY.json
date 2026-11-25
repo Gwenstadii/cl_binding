@@ -1,0 +1,256 @@
+{
+  "status": "stopped_by_user",
+  "stop": {
+    "at_utc": "2026-11-25T08:28:10.185736+00:00",
+    "reason": "User explicitly requested stopping training and analyzing existing evidence",
+    "stopped_at_utc": "2026-11-25T08:28:25.716809+00:00",
+    "status": "stopped_by_user",
+    "last_training_step": 18960,
+    "saved_checkpoints": [
+      "006000",
+      "012000",
+      "018000",
+      "018960"
+    ],
+    "last_saved_checkpoint": "018960",
+    "trainers": [
+      2742597
+    ],
+    "stopped_controllers_evaluators": [
+      {
+        "pid": 714861,
+        "argv": [
+          "python3",
+          "-u",
+          "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/watch_hist.py"
+        ]
+      }
+    ],
+    "forced_trainer_termination": [],
+    "all_checkpoints_and_partial_evaluation_files_retained": true,
+    "completed_evaluation_markers": [
+      "dev_12000_COMPLETE.json",
+      "dev_18000_COMPLETE.json",
+      "dev_6000_COMPLETE.json",
+      "eval_12000_COMPLETE.json",
+      "eval_18000_COMPLETE.json",
+      "eval_6000_COMPLETE.json"
+    ],
+    "additional_controllers_evaluators_stopped": [
+      {
+        "pid": 530793,
+        "argv": [
+          "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+          "-u",
+          "back_first_historical_matrix.py"
+        ]
+      },
+      {
+        "pid": 1286962,
+        "argv": [
+          "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+          "-u",
+          "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/historical_stage1_r0_eval.py",
+          "evaluate",
+          "--config",
+          "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/config.json",
+          "--checkpoint",
+          "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/training/checkpoints/018000",
+          "--output",
+          "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/historical_dev_018000",
+          "--partition",
+          "development",
+          "--instruction-goals",
+          "back",
+          "--trace"
+        ]
+      }
+    ],
+    "all_owned_processes_exited_verified_at_utc": "2026-11-25T08:29:58.989221+00:00",
+    "remaining_owned_training_or_evaluation_processes": [],
+    "post_cancellation_scheduler_markers": [
+      "FAILED_controller.json"
+    ]
+  },
+  "primary_completed": {
+    "12000": {
+      "n": 20,
+      "terminal": 6,
+      "ever": 17,
+      "first": 0,
+      "stable_released_final": 4,
+      "rows_sha256": "788fc76e096dffa8cd50d61721e1a36a24a403870e505958d0335324067185c6",
+      "weights_sha256": "247bae11d6268819b0e5a54b0e7346dc90430a085ab11c8d778b061325ce0889"
+    },
+    "18000": {
+      "n": 20,
+      "terminal": 10,
+      "ever": 18,
+      "first": 0,
+      "stable_released_final": 3,
+      "rows_sha256": "78cec31462f99968fae57ce923a87344480f986c59e6ba1cdcba0a6ccb28f525",
+      "weights_sha256": "1f3a3cd87016bc976463793394efb4aead12bff0fdf65dc5654fece5164a3417"
+    },
+    "6000": {
+      "n": 20,
+      "terminal": 5,
+      "ever": 20,
+      "first": 0,
+      "stable_released_final": 4,
+      "rows_sha256": "4e3ae2615894b916cbfb69bd4a2de817473ac9c2592618a89034b9c82a87abca",
+      "weights_sha256": "3c9e1084a03f47233b2aa7fe74096b258f4936fff1d939349c2ef6ac2c45ed2b"
+    }
+  },
+  "historical_completed": {
+    "new": {
+      "6000": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/training/checkpoints/006000",
+        "policy_source": "checkpoint",
+        "instruction_goals": [
+          "back"
+        ],
+        "gate_goals": [
+          "back"
+        ],
+        "normalization_source": "datasets/stage1_single_back_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "back": {
+            "total": 20,
+            "correct": 8
+          }
+        },
+        "passed_gate": false,
+        "seconds": 227.19622352905571,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      },
+      "12000": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/training/checkpoints/012000",
+        "policy_source": "checkpoint",
+        "instruction_goals": [
+          "back"
+        ],
+        "gate_goals": [
+          "back"
+        ],
+        "normalization_source": "datasets/stage1_single_back_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "back": {
+            "total": 20,
+            "correct": 4
+          }
+        },
+        "passed_gate": false,
+        "seconds": 224.39750949293375,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false
+      }
+    },
+    "previous_B0": {
+      "12000": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding/.server/k25_b0_back_20261125_01/012000/trainable.safetensors",
+        "policy_source": "archived_B0_all155_task_tensors",
+        "instruction_goals": [
+          "back"
+        ],
+        "gate_goals": [
+          "back"
+        ],
+        "normalization_source": "/home/lzx/cl_binding_stage2a/datasets/stage1_dual_left_right_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "back": {
+            "total": 20,
+            "correct": 6
+          }
+        },
+        "passed_gate": false,
+        "seconds": 230.62832117266953,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false,
+        "frozen_container": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "reconstruction": {
+          "overwritten_task_tensors": 155,
+          "all_archived_B0_tensors_equal": true,
+          "container_trainable_weights_remaining": 0,
+          "processors": "R1 statistics, exactly as used by previous B0",
+          "no_parent_action_generation": true,
+          "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e"
+        },
+        "weights_sha256": "f6aaa316223e85f9422084595a64064c3955eaccb0b01fd55f42750f9c7ff20c",
+        "historical_eval_source_sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9",
+        "runtime_processor_checkpoint": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "evaluation_config_used_for_reset_and_partition_only": true
+      },
+      "24000": {
+        "status": "complete",
+        "partition": "development",
+        "checkpoint": "/home/lzx/cl_binding/.server/k25_b0_back_20261125_01/024000/trainable.safetensors",
+        "policy_source": "archived_B0_all155_task_tensors",
+        "instruction_goals": [
+          "back"
+        ],
+        "gate_goals": [
+          "back"
+        ],
+        "normalization_source": "/home/lzx/cl_binding_stage2a/datasets/stage1_dual_left_right_train_aligned_v1",
+        "git_commit": "98938339516d4a526a074ffda234df6234e413bd",
+        "counts": {
+          "back": {
+            "total": 20,
+            "correct": 7
+          }
+        },
+        "passed_gate": false,
+        "seconds": 232.72215830162168,
+        "horizon": 400,
+        "n_action_steps": 10,
+        "step_traces": true,
+        "videos_first_init_per_goal": true,
+        "qualified_R0": false,
+        "frozen_container": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "reconstruction": {
+          "overwritten_task_tensors": 155,
+          "all_archived_B0_tensors_equal": true,
+          "container_trainable_weights_remaining": 0,
+          "processors": "R1 statistics, exactly as used by previous B0",
+          "no_parent_action_generation": true,
+          "frozen_hash": "0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e"
+        },
+        "weights_sha256": "61b866ad4c2c45f89477439c586f105a3f87fa9032796d4d0e97b59832c3ec46",
+        "historical_eval_source_sha256": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9",
+        "runtime_processor_checkpoint": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "evaluation_config_used_for_reset_and_partition_only": true
+      }
+    },
+    "confirmations": {}
+  },
+  "partial_evaluations": [
+    {
+      "folder": "historical_dev_018000",
+      "completed_episodes": 8,
+      "expected": 20,
+      "excluded_from_complete_20_episode_comparisons": true
+    }
+  ],
+  "not_run_checkpoint_24000": true,
+  "final_saved_weights_evaluated": false,
+  "post_stop_scheduler_marker_interpretation": "Unfinished fixed budget after user cancellation, not a pre-stop model/training failure"
+}

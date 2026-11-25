@@ -1,0 +1,28 @@
+{
+  "version": "K25-native-event-v1",
+  "date": "2026-11-25",
+  "requested_goal_native_BDDL_predicate_required": true,
+  "success_latched_at_first_true": true,
+  "end_individual_episode_on_success": true,
+  "maximum_actions": 400,
+  "maximum_actions_is_project_setting": true,
+  "check_after_every_physical_action": true,
+  "require_terminal400": false,
+  "require_dwell": false,
+  "require_finger_contact_or_release_test": false,
+  "geometry_first_hit_is_auxiliary_only": true,
+  "official_reference": "https://github.com/Lifelong-Robot-Learning/LIBERO/blob/master/libero/lifelong/metric.py#L120-L144",
+  "official_vectorized_detail": "Success is latched per environment; a vector batch can continue until all environments succeed. Individual first-success termination gives the same binary success definition.",
+  "existing_400_step_trace_reanalysis": "An existing requested-goal native ever flag equals first-success scoring; original full-horizon traces remain unchanged.",
+  "new_training_steps": 0,
+  "new_simulated_episodes": 0,
+  "old_extended_stability_metrics": "Retained as separate diagnostics, not default LIBERO skill qualification",
+  "validation": {
+    "pure_termination_tests_passed": 6,
+    "mid_chunk_success_test": "Step81 terminates before step82; does not wait until step90",
+    "model_alias": "F4-B24",
+    "model_state_tensors_verified": 500,
+    "task_tensors_from_original_selected_checkpoint": 155,
+    "model_packaging_only_CPU_no_forward_no_training_no_simulation": true
+  }
+}

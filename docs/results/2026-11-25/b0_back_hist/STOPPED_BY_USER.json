@@ -1,0 +1,72 @@
+{
+  "at_utc": "2026-11-25T08:28:10.185736+00:00",
+  "reason": "User explicitly requested stopping training and analyzing existing evidence",
+  "stopped_at_utc": "2026-11-25T08:28:25.716809+00:00",
+  "status": "stopped_by_user",
+  "last_training_step": 18960,
+  "saved_checkpoints": [
+    "006000",
+    "012000",
+    "018000",
+    "018960"
+  ],
+  "last_saved_checkpoint": "018960",
+  "trainers": [
+    2742597
+  ],
+  "stopped_controllers_evaluators": [
+    {
+      "pid": 714861,
+      "argv": [
+        "python3",
+        "-u",
+        "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/watch_hist.py"
+      ]
+    }
+  ],
+  "forced_trainer_termination": [],
+  "all_checkpoints_and_partial_evaluation_files_retained": true,
+  "completed_evaluation_markers": [
+    "dev_12000_COMPLETE.json",
+    "dev_18000_COMPLETE.json",
+    "dev_6000_COMPLETE.json",
+    "eval_12000_COMPLETE.json",
+    "eval_18000_COMPLETE.json",
+    "eval_6000_COMPLETE.json"
+  ],
+  "additional_controllers_evaluators_stopped": [
+    {
+      "pid": 530793,
+      "argv": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "back_first_historical_matrix.py"
+      ]
+    },
+    {
+      "pid": 1286962,
+      "argv": [
+        "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+        "-u",
+        "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/historical_stage1_r0_eval.py",
+        "evaluate",
+        "--config",
+        "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/config.json",
+        "--checkpoint",
+        "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/training/checkpoints/018000",
+        "--output",
+        "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/historical_dev_018000",
+        "--partition",
+        "development",
+        "--instruction-goals",
+        "back",
+        "--trace"
+      ]
+    }
+  ],
+  "all_owned_processes_exited_verified_at_utc": "2026-11-25T08:29:58.989221+00:00",
+  "remaining_owned_training_or_evaluation_processes": [],
+  "post_cancellation_scheduler_markers": [
+    "FAILED_controller.json"
+  ]
+}

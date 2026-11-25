@@ -1,11 +1,13 @@
 """Read-only analysis of the Back-first historical-recipe run (no policy execution)."""
 import argparse
+import ast
 import gzip
 import hashlib
 import json
 import math
 from pathlib import Path
 import subprocess
+import inspect
 from datetime import datetime, timezone
 
 
@@ -35,9 +37,16 @@ def terminal_demo_statistics(root):
         episodes = [e for e in conversion['episodes'] if e['goal']==goal]
         assert len(episodes)==40
         rows = []
+        aligned_actions, aligned_states = [], []
         with h5py.File(source) as stream:
             for episode in episodes:
-                actions = stream['data'][episode['demo']]['actions'][:].astype(np.float64)
+                demo = stream['data'][episode['demo']]
+                actions = demo['actions'][:].astype(np.float64)
+                assert len(actions)==episode['frames']+1
+                if goal=='back':
+                    aligned_actions.append(actions[1:].astype(np.float32))
+                    aligned_states.append(np.concatenate((demo['obs']['ee_states'][:-1],
+                                                          demo['obs']['gripper_states'][:-1]),axis=1).astype(np.float32))
                 rows.append(dict(demo=episode['demo'], aligned_frames=episode['frames'], raw_actions=len(actions),
                     last_action=actions[-1].tolist(),
                     last_translation_l2=float(np.linalg.norm(actions[-1,:3])),
@@ -52,7 +61,36 @@ def terminal_demo_statistics(root):
             median_final_rotation_l2=float(np.median([r['last_rotation_l2'] for r in rows])),
             median_last10_translation_l2_mean=float(np.median([r['last10_translation_l2_mean'] for r in rows])),
             median_last10_rotation_l2_mean=float(np.median([r['last10_rotation_l2_mean'] for r in rows])), rows=rows)
+        if goal=='back':
+            metadata = read(conversions[goal].parent/'meta/stats.json')
+            checks = {}
+            for feature, values in [('action',aligned_actions),('observation.state',aligned_states)]:
+                array=np.concatenate(values).astype(np.float64)
+                for key,actual in [('mean',array.mean(0)),('std',array.std(0))]:
+                    expected=np.asarray(metadata[feature][key],dtype=np.float64)
+                    equal=bool(np.allclose(actual,expected,atol=1e-5,rtol=1e-5))
+                    assert equal,(feature,key,actual,expected)
+                    checks[feature+'.'+key]=dict(matches_raw_aligned_training_data=True,
+                        max_absolute_difference=float(np.max(np.abs(actual-expected))))
+            report[goal]['own_statistics_raw_training_data_verification']=checks
     return report
+
+
+def historical_helpers(root, commit):
+    import stage1_smoke
+    import stage1_protocol
+    result = {}
+    for module, name in [(stage1_smoke,'load_policy'), (stage1_smoke,'metadata_path'),
+                         (stage1_protocol,'balanced_indices')]:
+        relative = 'scripts/' + module.__name__ + '.py'
+        previous = subprocess.check_output(['git','-C',str(root),'show',commit+':'+relative],text=True)
+        old = next(n for n in ast.parse(previous).body if isinstance(n,ast.FunctionDef) and n.name==name)
+        current = ast.parse(inspect.getsource(getattr(module,name))).body[0]
+        equal = ast.dump(old,include_attributes=False)==ast.dump(current,include_attributes=False)
+        result[module.__name__+'.'+name] = dict(current_module=str(Path(module.__file__).resolve()),
+                current_module_sha256=sha(module.__file__), historical_function_ast_equal=equal)
+        assert equal, (module.__name__,name,'historical helper changed')
+    return result
 
 
 def audit(run):
@@ -68,6 +106,15 @@ def audit(run):
                     historical_manifest['git_commit'] + ':scripts/stage1_r0_train.py'])
     source_sha = hashlib.sha256(source).hexdigest()
     assert source_sha == sha(run / 'historical_stage1_r0_train.py')
+    eval_blob = subprocess.check_output(['git','-C',str(root),'show',
+                    historical_manifest['git_commit']+':scripts/stage1_r0_eval.py'])
+    eval_source_sha = hashlib.sha256(eval_blob).hexdigest()
+    assert eval_source_sha == sha(run/'historical_stage1_r0_eval.py')
+    helpers = historical_helpers(root, historical_manifest['git_commit'])
+    from stage1_smoke import find_model
+    public = Path(find_model('lerobot/smolvla_base'))
+    public_sha = sha(public/'model.safetensors')
+    assert public_sha == read(old/'manifest.json')['base_sha256']
     own_stats = read(root / config['data']['train_output'] / 'meta/stats.json')
     lr_stats = read(root / 'datasets/stage1_dual_left_right_train_aligned_v1/meta/stats.json')
     conversion = read(root / config['data']['train_output'] / 'r0_conversion.json')
@@ -93,6 +140,7 @@ def audit(run):
                              back_mean_in_lr_units=((bm-lm)/ls).tolist(),
                              back_std_over_lr_std=(bs/ls).tolist())
     checkpoints = {}
+    reference_config = read(history / 'checkpoints/024000/config.json')
     for cp in sorted((run / 'training/checkpoints').glob('*')):
         if not (cp / 'CHECKPOINT_COMPLETE.json').exists():
             continue
@@ -104,8 +152,15 @@ def audit(run):
                 expected = torch.tensor(own_stats[feature][key], dtype=value.dtype)
                 checks[f'{feature}.{key}'] = torch.equal(value.flatten(), expected.flatten())
         assert all(checks.values()), (cp, checks)
+        saved_config = read(cp / 'config.json')
+        config_keys = ['optimizer_betas','optimizer_eps','optimizer_weight_decay','optimizer_grad_clip_norm',
+                       'chunk_size','n_action_steps','num_steps','n_obs_steps','normalization_mapping',
+                       'max_action_dim','max_state_dim','adapt_to_pi_aloha','input_features','output_features']
+        config_checks = {k:saved_config.get(k)==reference_config.get(k) for k in config_keys}
+        assert all(config_checks.values()), (cp,config_checks)
         checkpoints[cp.name] = dict(marker=read(cp / 'CHECKPOINT_COMPLETE.json'),
                                    own_Back_training_statistics_bitwise=checks,
+                                   historical_model_optimizer_config_equal=config_checks,
                                    model_sha256=sha(cp / 'model.safetensors'),
                                    normalizer_sha256=sha(cp / 'policy_preprocessor_step_5_normalizer_processor.safetensors'))
     trace_summary = {}
@@ -118,7 +173,9 @@ def audit(run):
         items = []
         for row in rows:
             trace = row['trace']; times = [i for i, m in enumerate(trace['success']) if m & 8]
+            native_first = next((m for m in trace['success'] if m),0)
             items.append(dict(init=row['init'], first=row['first'], terminal=row['terminal']['back'],
+                first_native_predicate_mask=native_first, first_native_unique_Back=native_first==8,
                 ever=row['ever']['back'], stable=row['stable_released_final'],
                 first_grasp=row['first_grasp'], grasp_confirmed_step=row['grasp_confirmed_step'],
                 first_success_step=times[0]+1 if times else None,
@@ -130,6 +187,7 @@ def audit(run):
         trace_summary[label] = dict(rows=items, n=len(items), sha256=sha(path),
             terminal=sum(x['terminal'] for x in items), ever=sum(x['ever'] for x in items),
             stable=sum(x['stable'] for x in items),
+            first_native_unique_Back=sum(x['first_native_unique_Back'] for x in items),
             ever_but_failed_final=sum(x['ever'] and not x['terminal'] for x in items),
             first_success_both_contacts=sum(x['first_success_contacts']==3 for x in items))
     paired = {}
@@ -156,6 +214,11 @@ def audit(run):
     assert train_manifest['frozen_hash'] == '0c0f563fdbc566d8f9d7dd542776678eabd0ed9eb112ee4a8e3e9f7437dc4f5e'
     out = dict(audited_at_utc=datetime.now(timezone.utc).isoformat(),
         historical_trainer_git_blob_sha256=source_sha, historical_source_exact=True,
+        historical_evaluator_git_blob_sha256=eval_source_sha,historical_evaluator_source_exact=True,
+        historical_helpers=helpers,
+        public_base=dict(path=str(public), model_sha256=public_sha,
+                         config_sha256=sha(public/'config.json'),
+                         same_initial_weight_file_as_previous_B0=True),
         historical_commit=historical_manifest['git_commit'], previous_B0=prior,
         config=config, manifest=read(run / 'manifest.json'), training_manifest=train_manifest,
         trainable_parameters=trainable,

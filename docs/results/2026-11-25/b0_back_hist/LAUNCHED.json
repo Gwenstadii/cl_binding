@@ -1,0 +1,13 @@
+{
+  "pid": 2742597,
+  "command": [
+    "/home/lzx/cl_binding_stage2a/.venv/bin/python",
+    "-u",
+    "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/historical_stage1_r0_train.py",
+    "--config",
+    "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/config.json",
+    "--run-dir",
+    "/home/lzx/cl_binding/.server/k25_b0_back_hist_20261125_01/training"
+  ],
+  "started_at_utc": "2026-11-25T07:10:02.663457+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "locked_before_any_historical_evaluation": true,
+  "reason": "Separate exact historical reset/noise protocol from the paired B0 random-reset protocol.",
+  "primary_random_state_gate_unchanged": "terminal>=16/20 on640-659 and700-719",
+  "historical_development": {"source": "front", "indices": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19], "required_terminal": 16},
+  "historical_confirmation_if_only_historical_development_passes": {"source": "front", "indices": [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39], "required_terminal": 16},
+  "fixed_checkpoint": "same checkpoint chosen by the existing primary gate; otherwise24000",
+  "matched_comparison": "Do not compare new historical-state scores against previous B0 random-state scores; evaluate previous B0 under the same historical protocol before attributing an improvement.",
+  "matched_previous_B0_steps_if_needed": [12000,24000],
+  "no_training_changes": true
+}

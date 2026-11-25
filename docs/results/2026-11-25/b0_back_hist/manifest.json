@@ -1,0 +1,53 @@
+{
+  "code": "B0-Back-Hist",
+  "started_at_utc": "2026-11-25T07:10:02.662810+00:00",
+  "historical_run": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1",
+  "budget": 24000,
+  "checkpoints": [
+    6000,
+    12000,
+    18000,
+    24000
+  ],
+  "training_goals": [
+    "back"
+  ],
+  "initialization": "public lerobot/smolvla_base; no init-checkpoint and no resume",
+  "normalization": "fitted only from this Back training dataset by unchanged trainer",
+  "historical_recipe": {
+    "seed": 20261021,
+    "batch": 6,
+    "frame_uniform": true,
+    "warmup": 100,
+    "learning_rate": 0.0001,
+    "after_warmup": "constant",
+    "amp": "bfloat16"
+  },
+  "task_adaptations": [
+    "Left/Right data replaced with Back data and own training statistics",
+    "samples_per_goal 3->6 to preserve total batch of six",
+    "budget24000 from actually successful historical final checkpoint"
+  ],
+  "sources": {
+    "historical_stage1_protocol.py": "b9ba0fd4ecc0d9a98fc4348588b892bcb0e16e9479abe7d730b72ad79741eca6",
+    "historical_stage1_r0_train.py": "2806611bbc2974f05a9f1a9326b570963a6f585c67b5ac00bbc4e6c575352c3a",
+    "back_first_historical.py": "c74cd3d1a6ced79528c9bd03f158451fd641bd32d53a94559019b388012dc904",
+    "historical_stage1_r0_eval.py": "2193c39d66a464fd73843b8e0f754f50b7bb763104fb54c791728b3eda159fa9"
+  },
+  "config_sha256": "2f95746b2cfa4a582d740db2f23cc2c1c6daa1255858c29fadfca92435f38229",
+  "data_split_sha256": "a55e1c1c8d0796329fc21b196b4d0a0a9348a2a63efebe86679a3a2a0e1b54f0",
+  "gate": "native reset400: terminal Back >=16/20 on dev640-659 and confirm700-719",
+  "stable_metric": "reported separately; terminal plus >=45/last50 Back and no both-finger contact in last10",
+  "historical_evaluation": "unchanged stage1_r0_eval, front common states0-19, native select_action; separately reported",
+  "training_rng": "evaluation is a separate process on GPU1; no intermediate validation RNG consumption in trainer",
+  "no_automatic_extension": true,
+  "source_revisions": [
+    {
+      "at_utc": "2026-11-25T07:16:33.046537+00:00",
+      "source": "back_first_historical.py",
+      "launched_sha256": "c74cd3d1a6ced79528c9bd03f158451fd641bd32d53a94559019b388012dc904",
+      "evaluation_sha256": "a95e6c47736f41382409032372771956f1cddd19b3a7e930d5ac859393f50c28",
+      "reason": "Before any validation: first-goal reporting must compare list [back]; add evaluator source hash. Training, actions, terminal gate, and checkpoint schedule unchanged."
+    }
+  ]
+}

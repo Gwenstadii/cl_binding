@@ -1,0 +1,21 @@
+{
+  "requested_at_utc": "2026-11-25T06:50:35.919983+00:00",
+  "stopped_records": [
+    {
+      "pid": 460070,
+      "script": "back_stable_train.py",
+      "stopped_at_utc": "2026-11-25T06:50:35.919733+00:00",
+      "reason": "user requested terminating further Back training after failure to qualify",
+      "previous_status": {
+        "status": "training",
+        "step": 292550,
+        "loss": 0.014410814270377159,
+        "elapsed": 65449.6384779308
+      },
+      "last_saved_checkpoint": "292000",
+      "all_saved_checkpoints_retained": true,
+      "stopped": true
+    }
+  ],
+  "b0_finished_not_qualified": true
+}

@@ -1,0 +1,89 @@
+{
+  "code": "B0-Back",
+  "steps": 24000,
+  "qualified": false,
+  "attempts": [
+    {
+      "step": 1000,
+      "development": {
+        "n": 20,
+        "terminal": 1,
+        "ever": 7,
+        "stable_released_final": 0
+      }
+    },
+    {
+      "step": 2000,
+      "development": {
+        "n": 20,
+        "terminal": 3,
+        "ever": 10,
+        "stable_released_final": 3
+      }
+    },
+    {
+      "step": 3000,
+      "development": {
+        "n": 20,
+        "terminal": 3,
+        "ever": 13,
+        "stable_released_final": 3
+      }
+    },
+    {
+      "step": 4000,
+      "development": {
+        "n": 20,
+        "terminal": 1,
+        "ever": 8,
+        "stable_released_final": 1
+      }
+    },
+    {
+      "step": 8000,
+      "development": {
+        "n": 20,
+        "terminal": 4,
+        "ever": 16,
+        "stable_released_final": 4
+      }
+    },
+    {
+      "step": 12000,
+      "development": {
+        "n": 20,
+        "terminal": 6,
+        "ever": 16,
+        "stable_released_final": 6
+      }
+    },
+    {
+      "step": 16000,
+      "development": {
+        "n": 20,
+        "terminal": 4,
+        "ever": 17,
+        "stable_released_final": 4
+      }
+    },
+    {
+      "step": 20000,
+      "development": {
+        "n": 20,
+        "terminal": 5,
+        "ever": 15,
+        "stable_released_final": 5
+      }
+    },
+    {
+      "step": 24000,
+      "development": {
+        "n": 20,
+        "terminal": 4,
+        "ever": 15,
+        "stable_released_final": 4
+      }
+    }
+  ],
+  "finished_at_utc": "2026-11-25T06:31:12.845495+00:00"
+}

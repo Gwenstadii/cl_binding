@@ -1,0 +1,5 @@
+{
+  "public_subset_exact": true,
+  "trainable_tensors": 155,
+  "different_from_three_task_parent": 122
+}

@@ -1,0 +1,126 @@
+{
+  "started_at_utc": "2026-11-26T02:49:13.153442+00:00",
+  "model": {
+    "code": "F4-B24",
+    "description": "Existing Left+Right -> Front -> Back24000 policy, evaluated by first requested native success",
+    "status": "ready",
+    "checkpoint_dir": "/home/lzx/cl_binding/.server/k25_native_event_20261125_01/models/F4-B24",
+    "source_trainable": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/024000/trainable.safetensors",
+    "source_trainable_sha256": "d75b4df483e850c895ec203f48ff4ee4dd274ca2bfe7c7c0d20bdcb69bfccc47",
+    "frozen_model_and_processor_base": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+    "base_model_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+    "three_task_parent": "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors",
+    "three_task_parent_sha256": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+    "training_order": [
+      "R1 joint Left+Right24000",
+      "K19 replay_full Front1000",
+      "Back-only continuation24000 on original40 demonstrations"
+    ],
+    "normalization": "Inherited R1 Left/Right processors, identical to original K25-whole4-new inference",
+    "inference_settings": {
+      "chunk_size": 50,
+      "n_action_steps": 10,
+      "flow_steps": 10,
+      "image_size": 128,
+      "observation_state_dim": 8,
+      "physical_action_dim": 7,
+      "max_action_dim": 32,
+      "note": "Project stage1_smoke.load_policy resets n_action_steps to1; explicitly restore10 and num_steps10, as existing k1 make_runtime does. Still test success after every physical action."
+    },
+    "evaluation_protocol": {
+      "name": "K25-native-event-v1",
+      "horizon": 400,
+      "success": "requested task native BDDL predicate true at any executed step",
+      "stop_on_success": true,
+      "check_after_every_physical_action": true,
+      "require_terminal400": false,
+      "require_dwell_or_release": false,
+      "geometry_first_hit_is_not_task_success": true
+    },
+    "evidence": {
+      "mode": "retrospective first-event scoring of complete existing trajectories; no new rollouts",
+      "back_development_640_659": {
+        "success": 20,
+        "n": 20
+      },
+      "back_separate_formal_800_819": {
+        "success": 19,
+        "n": 20
+      },
+      "formal_all_goals": {
+        "left": 17,
+        "front": 0,
+        "right": 8,
+        "back": 19,
+        "n_per_goal": 20
+      },
+      "selection": "Keep the original latest-to-earliest order on the original40-demo standard-data continuation;24k passes first and ties maximum20/20. Other tied steps are2000 and22000. Separate formal results are reused existing records, not a new untouched test."
+    },
+    "legacy_400_step_release_gate_passed": false,
+    "new_native_event_back_gate_passed": true,
+    "training_restarted": false,
+    "full_checkpoint_model_sha256": "e872dd3567a06e929ebb8a4e8264e49103b4311acff45349316bcde2c691c52c",
+    "materialized_at_utc": "2026-11-25T10:11:11.791640+00:00",
+    "tensor_verification": {
+      "selected_task_tensors": 155,
+      "total_state_tensors": 500,
+      "all_tensors_bitwise_equal_to_selected_or_frozen_source": true,
+      "no_training_or_policy_forward_or_simulation": true,
+      "inference_checkpoint": true,
+      "optimizer_state_not_copied": true
+    },
+    "processor_sha256": {
+      "policy_preprocessor_step_5_normalizer_processor.safetensors": "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+      "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+    },
+    "evaluation_helper": "/home/lzx/cl_binding/.server/k25_native_event_20261125_01/native_event_protocol.py",
+    "selection_domain": "Original three-task->Back training branch, before the later3-demo release-extension branch",
+    "evaluation_reference": "https://github.com/Lifelong-Robot-Learning/LIBERO/blob/master/libero/lifelong/metric.py",
+    "report": "docs/K25-Back-LIBERO.md"
+  },
+  "arms": [
+    "parent",
+    "native",
+    "parallel150",
+    "parallel400"
+  ],
+  "goals": [
+    "left",
+    "front",
+    "right",
+    "back"
+  ],
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "expected": 320,
+  "maximum_actions": 400,
+  "stop_on_requested_native_success": true,
+  "alpha": 0.7814008479195439,
+  "calibration": "reuse fixed model-specific original independent130-input calibration; not tuned on results",
+  "calibration_sha256": "c7b890b41f6f64ecf1d20c63fde78a7331eb04a1740ea2702119971809e7739f",
+  "cases_sha256": "0c233a96513e7ecde914761fb7d41b8c11e5de457a492854d407b0f996438969",
+  "source_sha256": "97007b2cce1dbee0437a20fe37deca7ff672fa5e82b9065422c962752946f3b0",
+  "protocol_helper_sha256": "80a865134046c03cd53bb93db3719ce43a908df49c91176926ddedd407840c05",
+  "old_parallel_source_sha256": "e75570890cdbe59ee6d240168402d1815774224269c03e98c4dd92215d38aef6",
+  "new_training_steps": 0
+}

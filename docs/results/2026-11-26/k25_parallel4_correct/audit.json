@@ -1,0 +1,11 @@
+{
+  "/home/lzx/cl_binding/.server/k25_native_event_20261125_01/models/F4-B24/model.safetensors": "e872dd3567a06e929ebb8a4e8264e49103b4311acff45349316bcde2c691c52c",
+  "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+  "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/model.safetensors": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+  "validated_episodes": 320,
+  "non_chunk_end_successes": 186,
+  "archived_executed_prefix_equal_count": 320,
+  "matched_window_prefix_pairs": 80,
+  "parallel150_Back_success_during_intervention": 1,
+  "parallel150_Back_success_after_return_to_F": 9
+}

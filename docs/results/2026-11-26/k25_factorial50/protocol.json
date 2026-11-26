@@ -1,0 +1,414 @@
+{
+  "name": "K25-factorial50",
+  "created_utc": "2026-11-26T08:38:28.452745+00:00",
+  "profiles": {
+    "lr_front_1000": {
+      "kind": "three",
+      "old": [
+        "left",
+        "right"
+      ],
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "models": {
+        "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "executor": "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/001000/model.safetensors",
+        "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+        "executor_sha256": "082df3050cb7efde0ab8f27e56a234af90d56477bc04e668644b68b71206d41b",
+        "continuation_note": "K25 existing1000 stream"
+      },
+      "alpha": 1.2466351985931396,
+      "gain_source": {
+        "alpha": 1.2466351985931396,
+        "source": "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/calibration_lr_front_1000.json",
+        "sha256": "0bef43a73386dc59e3f30364b69b5ad4d7439549ffb378a99595b826253e1cf7",
+        "rule": "same K21 norm-ratio rule on independent development states; no evaluation outcomes"
+      },
+      "files": {
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/model.safetensors": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+        "/home/lzx/cl_binding/.server/k18_training_cause_20261111_01/train/checkpoints/001000/model.safetensors": "082df3050cb7efde0ab8f27e56a234af90d56477bc04e668644b68b71206d41b",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors": "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+      }
+    },
+    "lf_right_1000": {
+      "kind": "three",
+      "old": [
+        "left",
+        "front"
+      ],
+      "goals": [
+        "left",
+        "front",
+        "right"
+      ],
+      "models": {
+        "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "executor": "/home/lzx/cl_binding/.server/k25_order_restore_20261122_01/lf_right_train/001000.safetensors",
+        "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+        "executor_sha256": "366cb4413a26e8a1df333a50ea6b6d50be182ccee01da0de88fb2b520cce8c32",
+        "continuation_note": "K25 existing1000 stream"
+      },
+      "alpha": 1.2780091762542725,
+      "gain_source": {
+        "alpha": 1.2780091762542725,
+        "source": "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/calibration_lf_right_1000.json",
+        "sha256": "841a81152a9b9f786174c394e890f245b2ad170ac568ee1c085562fde20a4443",
+        "rule": "same K21 norm-ratio rule on independent development states; no evaluation outcomes"
+      },
+      "files": {
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/model.safetensors": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+        "/home/lzx/cl_binding/.server/k25_order_restore_20261122_01/lf_right_train/001000.safetensors": "366cb4413a26e8a1df333a50ea6b6d50be182ccee01da0de88fb2b520cce8c32",
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+      }
+    },
+    "lr_front_12000": {
+      "kind": "three",
+      "old": [
+        "left",
+        "right"
+      ],
+      "goals": [
+        "left",
+        "right",
+        "front"
+      ],
+      "models": {
+        "parent": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "executor": "/home/lzx/cl_binding/.server/r1_then_front_v1/train/checkpoints/012000",
+        "parent_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+        "executor_sha256": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515",
+        "continuation_note": "original K21/K22 endpoint; not assumed same continuation trajectory as1000"
+      },
+      "alpha": 2.959,
+      "gain_source": {
+        "alpha": 2.959,
+        "source": "original k21.py LINES[r1_front].alpha",
+        "sha256": "73a5d618f6ec957d3f74ec967a0fdbb9bcfab607c71f7c1251c45bda64ce55ef",
+        "rule": "reuse original fixed2.959"
+      },
+      "files": {
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/model.safetensors": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+        "/home/lzx/cl_binding/.server/r1_then_front_v1/train/checkpoints/012000/model.safetensors": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors": "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+      }
+    },
+    "lf_right_12000": {
+      "kind": "three",
+      "old": [
+        "left",
+        "front"
+      ],
+      "goals": [
+        "left",
+        "front",
+        "right"
+      ],
+      "models": {
+        "parent": "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000",
+        "executor": "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000",
+        "parent_sha256": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+        "executor_sha256": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+        "continuation_note": "original K21/K22 endpoint; not assumed same continuation trajectory as1000"
+      },
+      "alpha": 2.9485836029052734,
+      "gain_source": {
+        "alpha": 2.9485836029052734,
+        "source": "/home/lzx/cl_binding/.server/k21_transfer_20261113_01/lines/r0_s2/alpha.json",
+        "sha256": "6ec2dd4454e32fb75b7bd0e91146e4b922e345846c53caea9e0e24e468b657ce",
+        "rule": "reuse original K21 norm-ratio calibration"
+      },
+      "files": {
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/model.safetensors": "15df8ed2839c281ba5d55b411b43a15177013b4d12b0e5cb98baefdcd60313f7",
+        "/home/lzx/cl_binding_stage2a/outputs/stage2a/stage2a_ft4_er_20261024_01_ft4/checkpoints/012000/model.safetensors": "c67c3fc45763dd4ebd63d24354bd9b32aae830edb67892d44f199d1dd08ca54f",
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/policy_preprocessor_step_5_normalizer_processor.safetensors": "eec8c7f8798160290f434ee12a184d8b9f83ff1ff004248c9c452978741bf573",
+        "/home/lzx/cl_binding_stage2a/outputs/r0/dual_left_front_20261023_01/checkpoints/012000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "f1afa1207439005a7c9df12915138d89f6e1601a2100b242671b97773cf727f5"
+      }
+    },
+    "back3000": {
+      "kind": "four",
+      "old": [
+        "left",
+        "front",
+        "right"
+      ],
+      "goals": [
+        "left",
+        "front",
+        "right",
+        "back"
+      ],
+      "models": {
+        "base": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "parent": "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors",
+        "executor": "/home/lzx/cl_binding/.server/k26_multigoal_20261121_01/back/003000/trainable.safetensors"
+      },
+      "alpha": 1.6349165456934696,
+      "files": {
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/model.safetensors": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+        "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+        "/home/lzx/cl_binding/.server/k26_multigoal_20261121_01/back/003000/trainable.safetensors": "ccee300a0cfc2ae9755eb6a149e0e1dee1d1f57e6a1677584162bab61788ad83",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors": "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+      },
+      "gain_source": {
+        "path": "/home/lzx/cl_binding/.server/k25_parallel4_20261124_01/four_calibration.json",
+        "sha256": "858b92c37fffa6a8334c72ee9434a886fe75e2db1efc4a164b78b83f1c6aecc9"
+      }
+    },
+    "F4-B24": {
+      "kind": "four",
+      "old": [
+        "left",
+        "front",
+        "right"
+      ],
+      "goals": [
+        "left",
+        "front",
+        "right",
+        "back"
+      ],
+      "models": {
+        "base": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+        "parent": "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors",
+        "executor": "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/024000/trainable.safetensors"
+      },
+      "alpha": 0.7814008479195439,
+      "files": {
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/model.safetensors": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+        "/home/lzx/cl_binding/.server/k19_retention_20261111_01/runs/20261121_replay_full/001000/trainable.safetensors": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+        "/home/lzx/cl_binding/.server/k25_back_retrain_20261124_01/training/024000/trainable.safetensors": "d75b4df483e850c895ec203f48ff4ee4dd274ca2bfe7c7c0d20bdcb69bfccc47",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_preprocessor_step_5_normalizer_processor.safetensors": "ad8654a9d4a5dd011dd76190af0965c1f6abacf7b4d06097afff0af70d7b50e5",
+        "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000/policy_postprocessor_step_0_unnormalizer_processor.safetensors": "6e998051c2193de5ffb3fbc88beb5936dd40e728d83eb3baf0c0302e59182a9a"
+      },
+      "gain_source": {
+        "path": "/home/lzx/cl_binding/.server/k25_whole4_new_20261124_01/calibration.json",
+        "sha256": "c7b890b41f6f64ecf1d20c63fde78a7331eb04a1740ea2702119971809e7739f"
+      }
+    }
+  },
+  "ids": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819,
+    820,
+    821,
+    822,
+    823,
+    824,
+    825,
+    826,
+    827,
+    828,
+    829,
+    830,
+    831,
+    832,
+    833,
+    834,
+    835,
+    836,
+    837,
+    838,
+    839,
+    840,
+    841,
+    842,
+    843,
+    844,
+    845,
+    846,
+    847,
+    848,
+    849
+  ],
+  "arms": [
+    "native",
+    "mu150",
+    "mu400",
+    "scale150",
+    "scale400",
+    "whole150",
+    "whole400",
+    "parallel150",
+    "parallel400"
+  ],
+  "horizon": 400,
+  "stop_on_success": false,
+  "instructions": "pick up the book and place it in the {goal} compartment of the caddy",
+  "primary": [
+    "geometric_correct",
+    "final400_success"
+  ],
+  "auxiliary": [
+    "hold45of50",
+    "final50_fraction",
+    "ever"
+  ],
+  "terminal_definition": "native requested predicate at400; additionally report native predicate>=45/last50 AND at400; no release gate",
+  "intervention_windows": [
+    150,
+    400
+  ],
+  "native_shared_between_windows": true,
+  "geometry": {
+    "left": {
+      "site": "desk_caddy_1_left_contain_region",
+      "centre": [
+        -0.410197,
+        -0.28346499999999997,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "front": {
+      "site": "desk_caddy_1_front_contain_region",
+      "centre": [
+        -0.372867,
+        -0.137315,
+        0.92754
+      ],
+      "rotation": [
+        [
+          0.9999999999999998,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999998
+        ],
+        [
+          -0.0,
+          -0.9999999999999998,
+          0.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.03595,
+        0.06216
+      ]
+    },
+    "right": {
+      "site": "desk_caddy_1_right_contain_region",
+      "centre": [
+        -0.410197,
+        0.005434999999999995,
+        0.95258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.06196,
+        0.06216,
+        0.06046
+      ]
+    },
+    "back": {
+      "site": "desk_caddy_1_back_contain_region",
+      "centre": [
+        -0.437527,
+        -0.137315,
+        0.97258
+      ],
+      "rotation": [
+        [
+          1.0,
+          -0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "half_size": [
+        0.02775,
+        0.06216,
+        0.06046
+      ]
+    }
+  },
+  "source_sha256": "b6c28e2d7d10eb77ba7446e2be5413169ed1b4f8677786a0ea6ea993bd3b873f",
+  "historical_protocols": {
+    "/home/lzx/cl_binding/.server/k25_parallel_20261123_01/protocol.json": "cc7da16cc0c4315ab7a96c6fc69a6352ebb69092182674cb71b451d7232ecf1e",
+    "/home/lzx/cl_binding/.server/k25_parallel4_20261124_01/four_protocol.json": "84d75f098fbde0f4a73fe8a2d5ce9d462c34e84a2888c7ce9755e2096b15ef59",
+    "/home/lzx/cl_binding/.server/k25_whole4_new_20261124_01/protocol.json": "65ad670aa26ad777210315170eb707a762de2b990fb8d119d5104e136c91a1dd"
+  },
+  "missing_combinations": [
+    "three-task sets LRB/LFB/RFB and other unverified training orders",
+    "other four-task orders outside the six explicitly selected checkpoints"
+  ],
+  "legacy_inventory_note": "A separate old LF->Right->Back12000 branch exists; it is not one of the six approved checkpoint identities and is not silently substituted.",
+  "new_training_steps": 0,
+  "reuse_policy": "only exact model, normalization, gain, windows, initial state, seed and complete400 trace; no early-stop traces or K15 snapshots",
+  "expected_episodes": 9000,
+  "cases_sha256": "a67588fecc809a63a0ae8f3a2a0a3eaf0d46f348874c76ff4aa93216f0fecafc"
+}

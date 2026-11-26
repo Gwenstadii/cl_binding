@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-26T08:43:51.265891+00:00",
+  "controller_pid": 1307241,
+  "live_workers": 8,
+  "profiles_emitting_completed_rows": [
+    "F4-B24",
+    "back3000",
+    "lf_right_1000",
+    "lf_right_12000",
+    "lr_front_1000",
+    "lr_front_12000"
+  ],
+  "emitted_rows": {
+    "new_online_complete400": 33,
+    "reused_complete400": 16
+  },
+  "worker_rows": {
+    "worker_back3000_0.log": 7,
+    "worker_lf_right_1000_0.log": 6,
+    "worker_lr_front_1000_0.log": 6,
+    "worker_lf_right_1000_1.log": 6,
+    "worker_F4-B24_0.log": 7,
+    "worker_lf_right_12000_0.log": 6,
+    "worker_lr_front_12000_0.log": 5,
+    "worker_lr_front_1000_1.log": 6
+  },
+  "startup_gates": "All six profiles emitted RESULT after mandatory archive-prefix and real-tensor gates passed.",
+  "reused_locked": 1200,
+  "new_planned": 7800,
+  "total_expected": 9000,
+  "no_failure_files": true,
+  "protocol_sha256": "d103ee8a37a7597a4975b4c8286efb2c6ee13ea392e5cf34d98644da65b4f0a0",
+  "source_sha256": "b6c28e2d7d10eb77ba7446e2be5413169ed1b4f8677786a0ea6ea993bd3b873f"
+}

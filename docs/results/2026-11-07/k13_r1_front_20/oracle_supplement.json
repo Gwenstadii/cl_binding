@@ -1,0 +1,9 @@
+{
+  "reason": "Pilot init20 old mean alone still led to front; distinguish insufficient two-site contrast from inability to redirect after the adapted prefix.",
+  "added_before_full_main_results": true,
+  "condition": "oracle = mu_R1 +/- d_R1, exact native R1 velocity in the same 60-step window; adapted model before and after window",
+  "inits": "all 20..39, no selection based on success",
+  "episodes": 40,
+  "changes_to_main_protocol": "none",
+  "not_a_native_repair": "Requires donor R1 at inference; serves as full-response reference, not learned recovery."
+}

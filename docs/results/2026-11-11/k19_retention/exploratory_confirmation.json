@@ -1,0 +1,15 @@
+{
+  "candidate": "replay_full",
+  "reason": "Top-ranked arm preserved both old first-target counts and was one Front success short of the development threshold. Test two untouched training streams and locked fresh states as exploratory confirmation.",
+  "original_gate_preserved": true,
+  "development": [
+    20,
+    18,
+    12
+  ],
+  "minimum": [
+    16,
+    15,
+    13
+  ]
+}

@@ -1,0 +1,26 @@
+e4691e05115ae7e82494e5e13c304d231091e46ab5d2ed52990c9ab6f3b608f6  prereg/k14_prereg.json
+89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c  code/k14.py
+2026-11-08T15:39:24+08:00
+0ee416f4ca1f7440d3a003dd5da09e50be2424ef9868b0501d96e380f883afc9  code/k14_analyze.py
+(analysis script locked before any judgement was computed)
+c99c8d59ad8424edf16b34ac61ee5f9c6f80ca708965c6a5857f2e324e46175f  prereg/k14_s5_prereg.json
+cfbb23493b5ceb86582f327c5358f40d016d1dcb1c9cb3ebfe4f45a536113e20  code/k14s5.py
+2026-11-08T16:05:39+08:00
+b8b42e681c5694887263e67aec197633ac79e02bbf87fdfa20d524ead8de6eb8  prereg/k14_s5_prereg.json
+66c6c071072e9aa0daea68de0c4317376ce38a2c77efb92172381978daf96926  code/k14s5.py
+(amendment 1)
+de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e  code/k14s5.py
+fc15e8c50bfda9a9cb03b2b9deb05a2e603b7a6c208f5820c0ba52aa713874ae  code/k14s5_analyze.py
+de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e  code/k14s5.py
+5c0aca86bc739fc42a191adb1d5ed79aa4fbd3416f3ee742a0cfb28bc2c5cc92  s5/verified_templates.json
+(s5 analysis + kept templates locked before main)
+eb3429a3f92a02bde7a5916dc65781af7f1af52b8a3e96bf9d12764c40260b48  prereg/k14_prereg.json
+a13371311190c20085f367d291b61dfbbf4c0283050b446942ab5983eb6a1030  code/k14b2.py
+8a80ed29b1b61f2bbccc69148be4a711bdd60b11ca649453ad437c38cbe354d7  code/k14b2_analyze.py
+(batch-2 amendment 1 + code locked before any batch-2 episode) 2026-11-08T23:21:57+08:00
+ff1a9c8aed707f6bec44c24bfc7e04d2791beb72cf8de681bb32618511e3e9d5  prereg/k14_b3_prereg.json
+7bfacde1e337bccc8eedc9b32ef9e551409fbadaa594ebf55a74dbbfd7e3e91c  code/k14b3.py
+(batch-3 prereg + code locked before selection) 2026-11-08T23:42:41+08:00
+5f263b58881ee315f2caa1bc2a6cc6a06a164a6db6b9c8ba92952a25c238d5d3  code/k14b3_analyze.py
+b6c2d3f2e1f818f02d00e2db7b5040bf7dc502ad85437aa947c16b1ef57a74ce  batch3/b3_snapshots.json
+(batch-3 analysis + selected states locked before judgement) 2026-11-08T23:50:00+08:00

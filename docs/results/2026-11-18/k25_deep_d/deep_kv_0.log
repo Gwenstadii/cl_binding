@@ -1,0 +1,71 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+BASELINE_AND_PATCH_GATES 200 0
+deep_kv rollback 200 A ['left']
+deep_kv rollback 200 B ['right']
+deep_kv rollback 203 A ['left']
+deep_kv rollback 203 B ['front']
+deep_kv rollback 206 A ['left']
+deep_kv rollback 206 B ['front']
+deep_kv rollback 209 A ['left']
+deep_kv rollback 209 B ['front']
+deep_kv rollback 212 A ['left']
+deep_kv rollback 212 B ['front']
+deep_kv rollback 215 A ['left']
+deep_kv rollback 215 B ['right']
+deep_kv rollback 218 A ['left']
+deep_kv rollback 218 B ['front']
+deep_kv add_only 200 B []
+deep_kv add_only 203 B ['right']
+deep_kv add_only 206 B []
+deep_kv add_only 209 B ['right']
+deep_kv add_only 212 B ['right']
+deep_kv add_only 215 B ['right']
+deep_kv add_only 218 B ['right']
+deep_kv repair_d 200 B ['right']
+deep_kv repair_d 203 B ['front']
+deep_kv repair_d 206 B ['front']
+deep_kv repair_d 209 B ['back']
+deep_kv repair_d 212 B ['right']
+deep_kv repair_d 215 B ['right']
+deep_kv repair_d 218 B ['front']
+deep_kv reverse_d 200 B ['right']
+deep_kv reverse_d 203 B ['front']
+deep_kv reverse_d 206 B ['front']
+deep_kv reverse_d 209 B ['front']
+deep_kv reverse_d 212 B ['front']
+deep_kv reverse_d 215 B ['front']
+deep_kv reverse_d 218 B ['front']
+deep_kv repair_parallel 200 B ['right']
+deep_kv repair_parallel 203 B ['front']
+deep_kv repair_parallel 206 B ['front']
+deep_kv repair_parallel 209 B ['back']
+deep_kv repair_parallel 212 B ['right']
+deep_kv repair_parallel 215 B ['front']
+deep_kv repair_parallel 218 B ['front']
+deep_kv reverse_parallel 200 B ['right']
+deep_kv reverse_parallel 203 B ['front']
+deep_kv reverse_parallel 206 B ['front']
+deep_kv reverse_parallel 209 B ['front']
+deep_kv reverse_parallel 212 B ['front']
+deep_kv reverse_parallel 215 B ['front']
+deep_kv reverse_parallel 218 B ['front']
+deep_kv repair_mu 200 B ['right']
+deep_kv repair_mu 203 B ['front']
+deep_kv repair_mu 206 B ['front']
+deep_kv repair_mu 209 B ['front']
+deep_kv repair_mu 212 B ['front']
+deep_kv repair_mu 215 B ['front']
+deep_kv repair_mu 218 B ['front']

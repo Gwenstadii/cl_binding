@@ -1,0 +1,1502 @@
+{
+  "status": "descriptive follow-up, not causal mediation or training-update identification",
+  "key_comparisons": {
+    "R:H_to_HR": {
+      "after": "HR",
+      "before": "H",
+      "metrics": {
+        "L_first": {
+          "point": 0.05,
+          "ci95": [
+            0.0,
+            0.15
+          ]
+        },
+        "R_first": {
+          "point": 0.35,
+          "ci95": [
+            0.15,
+            0.55
+          ]
+        },
+        "L_ever": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "R_ever": {
+          "point": 0.25,
+          "ci95": [
+            0.1,
+            0.45
+          ]
+        },
+        "L_term": {
+          "point": 0.2,
+          "ci95": [
+            0.0,
+            0.45
+          ]
+        },
+        "R_term": {
+          "point": 0.25,
+          "ci95": [
+            0.1,
+            0.45
+          ]
+        },
+        "term": {
+          "point": 0.225,
+          "ci95": [
+            0.075,
+            0.375
+          ]
+        }
+      },
+      "transitions": {
+        "A": {
+          "first": {
+            "gained": [
+              22
+            ],
+            "lost": [],
+            "net": 1
+          },
+          "ever": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "terminal": {
+            "gained": [
+              22,
+              23,
+              25,
+              27,
+              39
+            ],
+            "lost": [
+              35
+            ],
+            "net": 4
+          },
+          "first_transitions": [
+            {
+              "before": "front",
+              "after": "left",
+              "n": 1
+            },
+            {
+              "before": "left",
+              "after": "left",
+              "n": 19
+            }
+          ]
+        },
+        "B": {
+          "first": {
+            "gained": [
+              20,
+              21,
+              24,
+              25,
+              26,
+              33,
+              35
+            ],
+            "lost": [],
+            "net": 7
+          },
+          "ever": {
+            "gained": [
+              21,
+              26,
+              27,
+              37,
+              38
+            ],
+            "lost": [],
+            "net": 5
+          },
+          "terminal": {
+            "gained": [
+              21,
+              26,
+              27,
+              37,
+              38
+            ],
+            "lost": [],
+            "net": 5
+          },
+          "first_transitions": [
+            {
+              "before": "front",
+              "after": "front",
+              "n": 1
+            },
+            {
+              "before": "front",
+              "after": "none",
+              "n": 2
+            },
+            {
+              "before": "front",
+              "after": "right",
+              "n": 1
+            },
+            {
+              "before": "none",
+              "after": "front",
+              "n": 1
+            },
+            {
+              "before": "none",
+              "after": "none",
+              "n": 5
+            },
+            {
+              "before": "none",
+              "after": "right",
+              "n": 6
+            },
+            {
+              "before": "right",
+              "after": "right",
+              "n": 4
+            }
+          ]
+        }
+      }
+    },
+    "Z:HR_to_HZR": {
+      "after": "HZR",
+      "before": "HR",
+      "metrics": {
+        "L_first": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "R_first": {
+          "point": 0.3,
+          "ci95": [
+            0.1,
+            0.5
+          ]
+        },
+        "L_ever": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "R_ever": {
+          "point": 0.3,
+          "ci95": [
+            0.1,
+            0.5
+          ]
+        },
+        "L_term": {
+          "point": -0.25,
+          "ci95": [
+            -0.45,
+            -0.1
+          ]
+        },
+        "R_term": {
+          "point": 0.2,
+          "ci95": [
+            0.0,
+            0.4
+          ]
+        },
+        "term": {
+          "point": -0.025,
+          "ci95": [
+            -0.175,
+            0.125
+          ]
+        }
+      },
+      "transitions": {
+        "A": {
+          "first": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "ever": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "terminal": {
+            "gained": [],
+            "lost": [
+              28,
+              30,
+              36,
+              37,
+              38
+            ],
+            "net": -5
+          },
+          "first_transitions": [
+            {
+              "before": "left",
+              "after": "left",
+              "n": 20
+            }
+          ]
+        },
+        "B": {
+          "first": {
+            "gained": [
+              28,
+              29,
+              30,
+              31,
+              32,
+              36
+            ],
+            "lost": [],
+            "net": 6
+          },
+          "ever": {
+            "gained": [
+              25,
+              30,
+              31,
+              32,
+              33,
+              35
+            ],
+            "lost": [],
+            "net": 6
+          },
+          "terminal": {
+            "gained": [
+              25,
+              30,
+              32,
+              33,
+              35
+            ],
+            "lost": [
+              27
+            ],
+            "net": 4
+          },
+          "first_transitions": [
+            {
+              "before": "front",
+              "after": "front",
+              "n": 1
+            },
+            {
+              "before": "front",
+              "after": "right",
+              "n": 1
+            },
+            {
+              "before": "none",
+              "after": "front",
+              "n": 1
+            },
+            {
+              "before": "none",
+              "after": "none",
+              "n": 1
+            },
+            {
+              "before": "none",
+              "after": "right",
+              "n": 5
+            },
+            {
+              "before": "right",
+              "after": "right",
+              "n": 11
+            }
+          ]
+        }
+      }
+    },
+    "G:HZR_to_HZRG": {
+      "after": "HZRG",
+      "before": "HZR",
+      "metrics": {
+        "L_first": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "R_first": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "L_ever": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "R_ever": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "L_term": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "R_term": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "term": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "transitions": {
+        "A": {
+          "first": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "ever": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "terminal": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "first_transitions": [
+            {
+              "before": "left",
+              "after": "left",
+              "n": 20
+            }
+          ]
+        },
+        "B": {
+          "first": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "ever": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "terminal": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "first_transitions": [
+            {
+              "before": "front",
+              "after": "front",
+              "n": 2
+            },
+            {
+              "before": "none",
+              "after": "none",
+              "n": 1
+            },
+            {
+              "before": "right",
+              "after": "right",
+              "n": 17
+            }
+          ]
+        }
+      }
+    },
+    "R:N_to_R": {
+      "after": "R",
+      "before": "N",
+      "metrics": {
+        "L_first": {
+          "point": -0.2,
+          "ci95": [
+            -0.45,
+            0.05
+          ]
+        },
+        "R_first": {
+          "point": 0.15,
+          "ci95": [
+            0.0,
+            0.35
+          ]
+        },
+        "L_ever": {
+          "point": -0.45,
+          "ci95": [
+            -0.7,
+            -0.15
+          ]
+        },
+        "R_ever": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "L_term": {
+          "point": -0.45,
+          "ci95": [
+            -0.7,
+            -0.2
+          ]
+        },
+        "R_term": {
+          "point": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "term": {
+          "point": -0.225,
+          "ci95": [
+            -0.35,
+            -0.1
+          ]
+        }
+      },
+      "transitions": {
+        "A": {
+          "first": {
+            "gained": [
+              22,
+              32
+            ],
+            "lost": [
+              25,
+              26,
+              27,
+              36,
+              37,
+              39
+            ],
+            "net": -4
+          },
+          "ever": {
+            "gained": [
+              22,
+              32
+            ],
+            "lost": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              31,
+              33,
+              35,
+              36,
+              37,
+              39
+            ],
+            "net": -9
+          },
+          "terminal": {
+            "gained": [
+              32
+            ],
+            "lost": [
+              23,
+              24,
+              25,
+              28,
+              31,
+              34,
+              35,
+              37,
+              38,
+              39
+            ],
+            "net": -9
+          },
+          "first_transitions": [
+            {
+              "before": "front",
+              "after": "left",
+              "n": 1
+            },
+            {
+              "before": "front",
+              "after": "none",
+              "n": 6
+            },
+            {
+              "before": "left",
+              "after": "left",
+              "n": 2
+            },
+            {
+              "before": "left",
+              "after": "none",
+              "n": 6
+            },
+            {
+              "before": "none",
+              "after": "left",
+              "n": 1
+            },
+            {
+              "before": "none",
+              "after": "none",
+              "n": 4
+            }
+          ]
+        },
+        "B": {
+          "first": {
+            "gained": [
+              24,
+              31,
+              37
+            ],
+            "lost": [],
+            "net": 3
+          },
+          "ever": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "terminal": {
+            "gained": [],
+            "lost": [],
+            "net": 0
+          },
+          "first_transitions": [
+            {
+              "before": "front",
+              "after": "front",
+              "n": 2
+            },
+            {
+              "before": "front",
+              "after": "none",
+              "n": 2
+            },
+            {
+              "before": "none",
+              "after": "front",
+              "n": 5
+            },
+            {
+              "before": "none",
+              "after": "none",
+              "n": 8
+            },
+            {
+              "before": "none",
+              "after": "right",
+              "n": 3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "H_rotation_interaction": {
+    "L_first": {
+      "point": 0.25,
+      "ci95": [
+        0.0,
+        0.5
+      ]
+    },
+    "R_first": {
+      "point": 0.2,
+      "ci95": [
+        -0.05,
+        0.45
+      ]
+    },
+    "L_term": {
+      "point": 0.65,
+      "ci95": [
+        0.3,
+        1.0
+      ]
+    },
+    "R_term": {
+      "point": 0.25,
+      "ci95": [
+        0.1,
+        0.45
+      ]
+    }
+  },
+  "height_left_losses": [
+    {
+      "init": 28,
+      "before": {
+        "condition": "HR",
+        "first": [
+          "left"
+        ],
+        "first_step": 123,
+        "boundary": 90,
+        "intervention_end": 150,
+        "first_success": 123,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": true,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.36332812169919704,
+          -0.2596413095959469,
+          0.9977736080622728
+        ],
+        "final_book_xyz": [
+          -0.3904723697678689,
+          -0.25839289320861725,
+          0.9617626324587834
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "left"
+        ],
+        "first_step": 124,
+        "boundary": 90,
+        "intervention_end": 150,
+        "first_success": 144,
+        "last_success": 350,
+        "success_exit_steps": [
+          351
+        ],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3842098534551286,
+          -0.2585977040541051,
+          1.005736088802148
+        ],
+        "final_book_xyz": [
+          -0.2706262424557194,
+          -0.266086444369064,
+          0.9214027748022134
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 30,
+      "before": {
+        "condition": "HR",
+        "first": [
+          "left"
+        ],
+        "first_step": 126,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 125,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": true,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.40952119669511344,
+          -0.299889656693394,
+          0.9205492094139994
+        ],
+        "final_book_xyz": [
+          -0.446828202476478,
+          -0.29900164141622226,
+          0.9042086984636171
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "left"
+        ],
+        "first_step": 120,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 129,
+        "last_success": 269,
+        "success_exit_steps": [
+          270
+        ],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.37812683574382266,
+          -0.24731966159949798,
+          0.9968167610178521
+        ],
+        "final_book_xyz": [
+          -0.2808522521423832,
+          -0.22283194396079603,
+          0.8999399207952399
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 36,
+      "before": {
+        "condition": "HR",
+        "first": [
+          "left"
+        ],
+        "first_step": 124,
+        "boundary": 90,
+        "intervention_end": 150,
+        "first_success": 124,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": true,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3634159441952482,
+          -0.253689461930149,
+          0.9908390415632732
+        ],
+        "final_book_xyz": [
+          -0.39577219739725195,
+          -0.2555464195371761,
+          0.9723584064054603
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "left"
+        ],
+        "first_step": 123,
+        "boundary": 90,
+        "intervention_end": 150,
+        "first_success": 131,
+        "last_success": 356,
+        "success_exit_steps": [
+          355,
+          357
+        ],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.38574463058249303,
+          -0.23017724708638324,
+          0.9892372755484552
+        ],
+        "final_book_xyz": [
+          -0.34413658707462214,
+          -0.21662416956772385,
+          0.9996391982696312
+        ],
+        "window_end_both_contacts": false,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 37,
+      "before": {
+        "condition": "HR",
+        "first": [
+          "left"
+        ],
+        "first_step": 135,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 134,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": true,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3681660327635667,
+          -0.278785920580123,
+          0.981068583259343
+        ],
+        "final_book_xyz": [
+          -0.4234826833675031,
+          -0.29898823133785873,
+          0.914259937073127
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "left"
+        ],
+        "first_step": 126,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 145,
+        "last_success": 307,
+        "success_exit_steps": [
+          308
+        ],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3782710793558623,
+          -0.24711084668580038,
+          1.0174453837728592
+        ],
+        "final_book_xyz": [
+          -0.2313565014679628,
+          -0.4051348338334746,
+          0.8989999207952398
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 38,
+      "before": {
+        "condition": "HR",
+        "first": [
+          "left"
+        ],
+        "first_step": 130,
+        "boundary": 90,
+        "intervention_end": 150,
+        "first_success": 149,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": true,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3939986979281806,
+          -0.27043023538479977,
+          1.0098792848534832
+        ],
+        "final_book_xyz": [
+          -0.43279717209706214,
+          -0.2870909758175038,
+          0.9145788673738144
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "left"
+        ],
+        "first_step": 132,
+        "boundary": 90,
+        "intervention_end": 150,
+        "first_success": 159,
+        "last_success": 239,
+        "success_exit_steps": [
+          240
+        ],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3959313639239247,
+          -0.24527625831167352,
+          1.0187474355253308
+        ],
+        "final_book_xyz": [
+          -0.2136881585877282,
+          -0.2150122251695269,
+          0.8989999207952398
+        ],
+        "window_end_both_contacts": false,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    }
+  ],
+  "height_right_terminal_changes": [
+    {
+      "init": 25,
+      "change": "gained",
+      "before": {
+        "condition": "HR",
+        "first": [
+          "right"
+        ],
+        "first_step": 123,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": null,
+        "last_success": null,
+        "success_exit_steps": [],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.35149950812773184,
+          -0.013199705303660127,
+          1.052241985492461
+        ],
+        "final_book_xyz": [
+          -0.33879055211102266,
+          -0.007190115457829677,
+          1.053987796862564
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "right"
+        ],
+        "first_step": 114,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 133,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": true,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.42624809409591286,
+          -0.01191931962117274,
+          0.962376440392409
+        ],
+        "final_book_xyz": [
+          -0.42408343031235884,
+          -0.015685219154229636,
+          0.8987781787231219
+        ],
+        "window_end_both_contacts": false,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 30,
+      "change": "gained",
+      "before": {
+        "condition": "HR",
+        "first": [],
+        "first_step": null,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": null,
+        "last_success": null,
+        "success_exit_steps": [],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.3403234596132536,
+          -0.018826735620841924,
+          1.052222090847948
+        ],
+        "final_book_xyz": [
+          -0.3321831055603646,
+          -0.0209834842464992,
+          1.0545168428014005
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "right"
+        ],
+        "first_step": 113,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 131,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": true,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.41976315091678496,
+          -0.0051598786344896315,
+          0.9582267837004022
+        ],
+        "final_book_xyz": [
+          -0.418163994049092,
+          -0.018612501107596525,
+          0.8986831215953678
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 32,
+      "change": "gained",
+      "before": {
+        "condition": "HR",
+        "first": [],
+        "first_step": null,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": null,
+        "last_success": null,
+        "success_exit_steps": [],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.34449968459937985,
+          -0.03446475937148097,
+          1.052312950994047
+        ],
+        "final_book_xyz": [
+          -0.3462779403610673,
+          -0.03382422438384446,
+          1.0538594599477655
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "right"
+        ],
+        "first_step": 115,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 138,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": true,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.42232989485351285,
+          -0.004114173545637515,
+          0.9992818982214553
+        ],
+        "final_book_xyz": [
+          -0.43828594719073444,
+          -0.014636315078397088,
+          0.9080441642319407
+        ],
+        "window_end_both_contacts": false,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 33,
+      "change": "gained",
+      "before": {
+        "condition": "HR",
+        "first": [
+          "right"
+        ],
+        "first_step": 110,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": null,
+        "last_success": null,
+        "success_exit_steps": [],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.37318389949379077,
+          0.0008453236302715806,
+          1.0432495653178397
+        ],
+        "final_book_xyz": [
+          -0.3731188337225627,
+          -0.00014363109702972813,
+          1.0443455640317252
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "right"
+        ],
+        "first_step": 109,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 122,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": true,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.414428318346191,
+          -0.01217319906183252,
+          0.9407165837093472
+        ],
+        "final_book_xyz": [
+          -0.4157120390068954,
+          -0.0122020672238814,
+          0.9025858397518826
+        ],
+        "window_end_both_contacts": false,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": false
+      }
+    },
+    {
+      "init": 35,
+      "change": "gained",
+      "before": {
+        "condition": "HR",
+        "first": [
+          "right"
+        ],
+        "first_step": 110,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": null,
+        "last_success": null,
+        "success_exit_steps": [],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.35916861479969625,
+          -0.025473700182170548,
+          1.0481497570843026
+        ],
+        "final_book_xyz": [
+          -0.36610923877663865,
+          -0.025723023678250682,
+          1.0538949321783242
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "right"
+        ],
+        "first_step": 107,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 166,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": true,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.39477134382213613,
+          -0.02351774852741199,
+          1.0482659731119914
+        ],
+        "final_book_xyz": [
+          -0.4193129168630099,
+          -0.01790152262167101,
+          0.8992203603792537
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      }
+    },
+    {
+      "init": 27,
+      "change": "lost",
+      "before": {
+        "condition": "HR",
+        "first": [
+          "right"
+        ],
+        "first_step": 119,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 137,
+        "last_success": 400,
+        "success_exit_steps": [],
+        "success_at_window_end": true,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": true,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.41545061701700625,
+          -0.014093005474223451,
+          0.9942746782410079
+        ],
+        "final_book_xyz": [
+          -0.41873206147726044,
+          -0.018495996674796702,
+          0.898668179671894
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": false,
+        "window_all_positive_gripper": true
+      },
+      "after": {
+        "condition": "HZR",
+        "first": [
+          "right"
+        ],
+        "first_step": 116,
+        "boundary": 80,
+        "intervention_end": 140,
+        "first_success": 159,
+        "last_success": 164,
+        "success_exit_steps": [
+          165
+        ],
+        "success_at_window_end": false,
+        "terminal_flags": {
+          "front": false,
+          "left": false,
+          "right": false,
+          "back": false
+        },
+        "window_end_book_xyz": [
+          -0.42525853904999783,
+          -0.01441647206695518,
+          1.0467800118661188
+        ],
+        "final_book_xyz": [
+          -0.4457079233838154,
+          -0.0004567471360446459,
+          1.047506786876974
+        ],
+        "window_end_both_contacts": true,
+        "final_both_contacts": true,
+        "window_all_positive_gripper": true
+      }
+    }
+  ],
+  "first_chunk_coupling": {
+    "R:H_to_HR": {
+      "outside_factor_changed_cases": 40,
+      "n_cases": 40,
+      "x_command_rms_delta": {
+        "n": 40,
+        "min": 0.010547453632986474,
+        "median": 0.06925095971122247,
+        "max": 0.20147306332452267
+      },
+      "y_command_rms_delta": {
+        "n": 40,
+        "min": 0.014001026520738554,
+        "median": 0.055405912263348414,
+        "max": 0.14461131718177136
+      },
+      "gripper_first_chunk_sign_changed_cases": 2,
+      "gripper_window_sign_changed_cases": 4
+    },
+    "Z:HR_to_HZR": {
+      "outside_factor_changed_cases": 40,
+      "n_cases": 40,
+      "x_command_rms_delta": {
+        "n": 40,
+        "min": 0.0014508486138908527,
+        "median": 0.010573520818585622,
+        "max": 0.0403114899251374
+      },
+      "y_command_rms_delta": {
+        "n": 40,
+        "min": 0.0011754898190548954,
+        "median": 0.008334055519037091,
+        "max": 0.026628394323629227
+      },
+      "gripper_first_chunk_sign_changed_cases": 1,
+      "gripper_window_sign_changed_cases": 6
+    },
+    "G:HZR_to_HZRG": {
+      "outside_factor_changed_cases": 40,
+      "n_cases": 40,
+      "x_command_rms_delta": {
+        "n": 40,
+        "min": 0.00054418263586299,
+        "median": 0.0010235820352393192,
+        "max": 0.006773216617971594
+      },
+      "y_command_rms_delta": {
+        "n": 40,
+        "min": 0.0005784679988227235,
+        "median": 0.0011548771591509573,
+        "max": 0.005862636589742519
+      },
+      "gripper_first_chunk_sign_changed_cases": 2,
+      "gripper_window_sign_changed_cases": 9
+    },
+    "R:N_to_R": {
+      "outside_factor_changed_cases": 40,
+      "n_cases": 40,
+      "x_command_rms_delta": {
+        "n": 40,
+        "min": 0.01070977263866589,
+        "median": 0.04138842531980913,
+        "max": 0.14956852671516666
+      },
+      "y_command_rms_delta": {
+        "n": 40,
+        "min": 0.002938369040866593,
+        "median": 0.03517955614658923,
+        "max": 0.1597438231260647
+      },
+      "gripper_first_chunk_sign_changed_cases": 2,
+      "gripper_window_sign_changed_cases": 2
+    }
+  },
+  "left_height_loss_cases_all_first_left_and_ever_success": true,
+  "left_height_loss_cases_last_exit_after_window_end": 5
+}

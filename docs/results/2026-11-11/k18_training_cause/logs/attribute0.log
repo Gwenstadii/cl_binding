@@ -1,0 +1,24 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+ATTRIBUTION marginal 0 0 {'channel': 0.002806565258651972, 'phase': 0.0027420069091022015} {'loss_delta': 0.0, 'preclip_norm_delta': 0.0, 'ids_match': True, 'lr_match': True}
+ATTRIBUTION marginal 0 13 {'channel': 0.0034148397389799356, 'phase': 0.0028714744839817286} None
+ATTRIBUTION marginal 0 41 {'channel': 0.005139046814292669, 'phase': 0.0032333966810256243} None
+ATTRIBUTION marginal 0 79 {'channel': 0.003060127841308713, 'phase': 0.002775102388113737} None
+ATTRIBUTION marginal 0 127 {'channel': 0.0024523551110178232, 'phase': 0.002658684505149722} None
+ATTRIBUTION marginal 0 193 {'channel': 0.008124498650431633, 'phase': 0.0028600140940397978} None
+ATTRIBUTION marginal 0 271 {'channel': 0.005112512037158012, 'phase': 0.0033530008513480425} None
+ATTRIBUTION marginal 0 389 {'channel': 0.0037493635900318623, 'phase': 0.003180766711011529} None

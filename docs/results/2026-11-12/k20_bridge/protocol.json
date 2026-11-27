@@ -1,0 +1,33 @@
+{
+  "purpose": "Connect K14-K19 same-draft mu/d responses to the K20 behavioral objective",
+  "prior": "k20_route_margin_20261112_01",
+  "training": {
+    "seeds": [20261021, 20261121],
+    "steps": 1000,
+    "paired_states": [220, 239],
+    "protected_quantity": "projection of paired first-block horizontal displacement d onto corresponding R1 d",
+    "projection_floor_ratio": 0.8,
+    "weight": 1.0,
+    "normalization_m": 0.01,
+    "check_every_steps": 6,
+    "old_queries": 334,
+    "forward_euler_steps": 10,
+    "backward_euler_steps": 2
+  },
+  "closed_loop": {
+    "dev_states": [20, 39],
+    "confirm_states": [200, 219],
+    "native_prompts": ["A", "B", "N"],
+    "patch_window_blocks": 4,
+    "patched_positions": [0, 9],
+    "patched_velocity_channels": [0, 1],
+    "same_draft_every_denoise": true,
+    "patch_arms": {
+      "swap_d": {"base": "full", "mu": "full", "d": "route", "prompts": "AB"},
+      "swap_mu": {"base": "full", "mu": "route", "d": "full", "prompts": "AB"},
+      "swap_both": {"base": "full", "mu": "route", "d": "route", "prompts": "B"},
+      "remove_d": {"base": "route", "mu": "route", "d": "full", "prompts": "B"}
+    }
+  }
+}
+

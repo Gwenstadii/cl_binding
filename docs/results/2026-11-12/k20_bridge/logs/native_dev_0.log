@@ -1,0 +1,44 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+native dev d_train 20 A []
+native dev d_train 20 B []
+native dev d_train 20 N []
+native dev d_train 22 A ['left']
+native dev d_train 22 B []
+native dev d_train 22 N ['front']
+native dev d_train 24 A ['left']
+native dev d_train 24 B []
+native dev d_train 24 N []
+native dev d_train 26 A ['left']
+native dev d_train 26 B ['right']
+native dev d_train 26 N ['front']
+native dev d_train 28 A ['left']
+native dev d_train 28 B ['right']
+native dev d_train 28 N ['front']
+native dev d_train 30 A []
+native dev d_train 30 B []
+native dev d_train 30 N ['front']
+native dev d_train 32 A []
+native dev d_train 32 B []
+native dev d_train 32 N ['front']
+native dev d_train 34 A ['left']
+native dev d_train 34 B ['right']
+native dev d_train 34 N []
+native dev d_train 36 A ['left']
+native dev d_train 36 B []
+native dev d_train 36 N ['front']
+native dev d_train 38 A ['left']
+native dev d_train 38 B ['right']
+native dev d_train 38 N ['front']

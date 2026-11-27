@@ -1,0 +1,107 @@
+{
+  "replay_steps": 6000,
+  "historical_steps": 12000,
+  "mismatches": {
+    "step": [],
+    "loss": [],
+    "gradient_norm": [],
+    "lr": [],
+    "batch_indices": [],
+    "samples_per_goal": []
+  },
+  "gpu_step_time_sum_seconds": 1042.411520539783,
+  "model_sha256": {
+    "R1": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+    "Front6000_historical": "42764112b7fba8c2f93455967050b71c898634414b0a30be142d904d7d422b43",
+    "Front12000_historical": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515",
+    "Front10_replay": "8e495fa514c9d017aadff83935af103d7a5b5905a1142fb3df10c79bb0693580",
+    "Front30_replay": "cf9d6a302ccd690fea0232d9a01e902cc65fb49fbd6c0fe55376b3f5c8d340b4",
+    "Front100_replay": "f9ef08415fabc3e59553a9b3927d37675a335d9d82fbaa959ab4d50b0319ef51",
+    "Front300_replay": "34135e5a0bfbc74c42b5848c8ff4e2fe1eae704fc69b7582d4960f892f35a5c3",
+    "Front1000_replay": "082df3050cb7efde0ab8f27e56a234af90d56477bc04e668644b68b71206d41b",
+    "Front3000_replay": "f283b28340afa8982f217b7cdb081b4f8184c13d00238f8589055f69554a3efb",
+    "Front6000_replay": "42764112b7fba8c2f93455967050b71c898634414b0a30be142d904d7d422b43"
+  },
+  "6000_model_sha256_equal": true,
+  "6000_model_tensors_equal": true,
+  "6000_training_state_equal": {
+    "step": true,
+    "config": true,
+    "optimizer": true,
+    "scheduler": true,
+    "torch_rng": true,
+    "cuda_rng": true
+  },
+  "saved_checkpoint_markers": {
+    "R1": {
+      "status": "pass",
+      "step": 24000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front6000_historical": {
+      "status": "pass",
+      "step": 6000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front12000_historical": {
+      "status": "pass",
+      "step": 12000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front10_replay": {
+      "status": "pass",
+      "step": 10,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front30_replay": {
+      "status": "pass",
+      "step": 30,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front100_replay": {
+      "status": "pass",
+      "step": 100,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front300_replay": {
+      "status": "pass",
+      "step": 300,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front1000_replay": {
+      "status": "pass",
+      "step": 1000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front3000_replay": {
+      "status": "pass",
+      "step": 3000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    },
+    "Front6000_replay": {
+      "status": "pass",
+      "step": 6000,
+      "reload_max_difference": 0.0,
+      "frozen_hash_unchanged": true,
+      "optimizer_and_rng_saved": true
+    }
+  }
+}

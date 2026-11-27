@@ -1,0 +1,1 @@
+{"lane": 2, "lanes": 6, "gate": 202, "plan": {"cross_k": "AB", "cross_v": "AB", "cross_kv": "AB", "deep_k": "B", "deep_v": "B", "mlp_gate": "B", "mlp_up": "AB", "mlp_down": "B", "mlp_gate_down": "AB"}}

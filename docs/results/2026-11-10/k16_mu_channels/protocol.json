@@ -1,0 +1,30 @@
+{
+  "experiment": "K16 full factorial of common-response channel sources under fixed adapted instruction amplification",
+  "date": "2026-11-10",
+  "locked_before_new_rollouts": true,
+  "source_k14": "/home/lzx/cl_binding/.server/k14_snapshot_batch1_20261108_01",
+  "source_k15": "/home/lzx/cl_binding/.server/k15_background_gain_20261109_01",
+  "inits": [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39],
+  "alpha": 2.959,
+  "blocks": {"H": [0,1], "S": [2,3,4,5,6], "P": [7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]},
+  "block_names": {"H": "first two executed action channels (horizontal translation after metadata validation)", "S": "remaining five executed channels (height, rotation, gripper after metadata validation), treated as a bundle", "P": "25 unexecuted denoising padding channels; may influence later denoising"},
+  "conditions": {"N": [], "H": ["H"], "S": ["S"], "HS": ["H","S"], "P": ["P"], "HP": ["H","P"], "SP": ["S","P"], "HSP": ["H","S","P"]},
+  "formula": "at the same current observation, draft x and flow time t: muM=(vM(canonical Left)+vM(canonical Right))/2; hybrid mean takes muR in the condition-selected coordinates and muF elsewhere; velocity=(hybrid_mean + 2.959*(vF(actual q)-muF)).cast(original velocity dtype)",
+  "target_routing": "actual q is forwarded directly to adapted model; never choose an external target-dependent sign or old target-specific contrast",
+  "timing": {"window": 60, "horizon": 400, "execute_per_replan": 10, "denoising_steps_per_chunk": 10, "after_window": "adapted native model with same actual q"},
+  "snapshots": "all 20 original K14 saved adapted-Front stable-grasp common snapshots, same control replay/signature/noise and global replan numbering; no outcome-dependent exclusion",
+  "episodes": {"new_hybrids": 240, "replication_controls": 80, "total": 320, "per_condition": 40},
+  "references": {"N": "exact K15 new_gain full400-step traces", "HSP": "exact K15 old_gain full400-step traces"},
+  "engineering_gates": "before full batch, init20 pilot must pass source/model/processor hashes, 16 common prefixes, exact N/HSP references; at inits20/21/22 same-input mixing selected coordinates must equal old-background output and unselected coordinates new-background output, with float32 formula and bf16 rounding documented; all blocks disjoint and exhaust32",
+  "same_input_probes": "descriptive predeclared probes: initial post-snapshot action chunk for both canonical q at all20 snapshots; follow N draft path for ten denoising steps, query old/new canonical responses at each identical input; summarize old-minus-new mean by coordinates and blocks over executed first10 vs full50 horizon positions. Not a physical effect attribution or an independent confirmation set.",
+  "primary_readouts": ["Left and Right first correct region separately", "paired correct split", "Left/Right ever requested-goal success", "Left/Right terminal requested-goal success", "front-first and none-first separately"],
+  "statistics": {"unit": "20 physical snapshot clusters; two requested goals resampled together", "bootstrap_replicates": 10000, "seed": 20261110, "interval": "95% percentile", "factor_edges": "all12 source-switch edges, preserving the other two block sources", "interactions": "H by S at both P levels; H by P at both S levels; S by P at both H levels; three-way interaction exploratory", "interpretation": "report paired effect sizes and intervals; development mechanism screen, no equivalence inference or uncorrected family-wide significance claim; no adaptive regrouping or retuning"},
+  "observational_diagnostics": "window-end lift, both-finger contact, displacement; per-channel arm versus gripper clipping separately. Correlation does not establish mediation.",
+  "limits": ["same development states and one parent/adapted pair", "fixed gain and60-step window only", "S is a heterogeneous bundle, not a localized module", "hybrid velocity coordinates can alter later action-draft and physical states", "cannot identify training update cause from inference-time output transplantation", "a channel effect is not evidence that semantic knowledge is stored in that channel"],
+  "source_sha256": {
+    "code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "snapshots/snapshots.json": "0ee8b429c5098aeb30ea2404968c1db068b894fe57407a47c5c92ac78329db5f"
+  },
+  "k15_script_sha256": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6"
+}

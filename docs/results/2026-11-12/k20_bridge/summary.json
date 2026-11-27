@@ -1,0 +1,1000 @@
+{
+  "dev": {
+    "seed": 20261021,
+    "new_episodes": 180,
+    "outcomes": {
+      "full": {
+        "A": {
+          "first": {
+            "none": 4,
+            "left": 16
+          },
+          "terminal": 12
+        },
+        "B": {
+          "first": {
+            "none": 12,
+            "front": 8
+          },
+          "terminal": 0
+        },
+        "N": {
+          "first": {
+            "none": 3,
+            "front": 17
+          },
+          "terminal": 15,
+          "grasp": 20,
+          "reached": 17
+        },
+        "both_old_first": 0
+      },
+      "route": {
+        "A": {
+          "first": {
+            "none": 3,
+            "left": 17
+          },
+          "terminal": 11
+        },
+        "B": {
+          "first": {
+            "none": 2,
+            "right": 18
+          },
+          "terminal": 8
+        },
+        "N": {
+          "first": {
+            "none": 5,
+            "front": 15
+          },
+          "terminal": 13,
+          "grasp": 20,
+          "reached": 15
+        },
+        "both_old_first": 16
+      },
+      "weak": {
+        "A": {
+          "first": {
+            "left": 20
+          },
+          "terminal": 12
+        },
+        "B": {
+          "first": {
+            "right": 18,
+            "front": 2
+          },
+          "terminal": 10
+        },
+        "N": {
+          "first": {
+            "none": 3,
+            "front": 17
+          },
+          "terminal": 12,
+          "grasp": 20,
+          "reached": 17
+        },
+        "both_old_first": 18
+      },
+      "replay_full": {
+        "A": {
+          "first": {
+            "left": 20
+          },
+          "terminal": 19
+        },
+        "B": {
+          "first": {
+            "right": 18,
+            "none": 1,
+            "front": 1
+          },
+          "terminal": 9
+        },
+        "N": {
+          "first": {
+            "none": 3,
+            "front": 16,
+            "left": 1
+          },
+          "terminal": 12,
+          "grasp": 20,
+          "reached": 17
+        },
+        "both_old_first": 18
+      },
+      "d_train": {
+        "A": {
+          "first": {
+            "none": 6,
+            "left": 14
+          },
+          "terminal": 11
+        },
+        "B": {
+          "first": {
+            "none": 7,
+            "right": 12,
+            "front": 1
+          },
+          "terminal": 5
+        },
+        "N": {
+          "first": {
+            "none": 5,
+            "front": 15
+          },
+          "terminal": 14,
+          "grasp": 20,
+          "reached": 15
+        },
+        "both_old_first": 10
+      },
+      "swap_d": {
+        "A": {
+          "first": {
+            "none": 6,
+            "left": 14
+          },
+          "terminal": 13
+        },
+        "B": {
+          "first": {
+            "none": 7,
+            "right": 13
+          },
+          "terminal": 8
+        },
+        "both_old_first": 11
+      },
+      "swap_mu": {
+        "A": {
+          "first": {
+            "front": 9,
+            "left": 10,
+            "none": 1
+          },
+          "terminal": 6
+        },
+        "B": {
+          "first": {
+            "none": 9,
+            "right": 10,
+            "front": 1
+          },
+          "terminal": 6
+        },
+        "both_old_first": 5
+      },
+      "swap_both": {
+        "B": {
+          "first": {
+            "none": 4,
+            "right": 16
+          },
+          "terminal": 12
+        }
+      },
+      "remove_d": {
+        "B": {
+          "first": {
+            "none": 3,
+            "right": 16,
+            "front": 1
+          },
+          "terminal": 6
+        }
+      }
+    },
+    "paired": {
+      "d_train:A": {
+        "none -> none": 3,
+        "left -> left": 13,
+        "none -> left": 1,
+        "left -> none": 3
+      },
+      "d_train:B": {
+        "none -> none": 6,
+        "front -> right": 6,
+        "front -> none": 1,
+        "none -> right": 6,
+        "front -> front": 1
+      },
+      "d_train:N": {
+        "none -> none": 3,
+        "front -> front": 15,
+        "front -> none": 2
+      },
+      "swap_d:A": {
+        "none -> none": 3,
+        "left -> left": 13,
+        "none -> left": 1,
+        "left -> none": 3
+      },
+      "swap_d:B": {
+        "none -> none": 5,
+        "front -> right": 6,
+        "front -> none": 2,
+        "none -> right": 7
+      },
+      "swap_mu:A": {
+        "none -> front": 4,
+        "left -> left": 10,
+        "left -> front": 5,
+        "left -> none": 1
+      },
+      "swap_mu:B": {
+        "none -> none": 6,
+        "front -> right": 4,
+        "front -> none": 3,
+        "none -> right": 6,
+        "front -> front": 1
+      },
+      "swap_both:B": {
+        "none -> none": 2,
+        "front -> right": 6,
+        "none -> right": 10,
+        "front -> none": 2
+      },
+      "remove_d:B": {
+        "none -> none": 1,
+        "right -> right": 15,
+        "none -> right": 1,
+        "right -> none": 2,
+        "right -> front": 1
+      }
+    },
+    "algebra_first_block": {
+      "A:full:full": {
+        "median_mm": 28.769708233430073,
+        "positive": 20
+      },
+      "A:full:route": {
+        "median_mm": 51.88251155312408,
+        "positive": 20
+      },
+      "A:route:full": {
+        "median_mm": 11.732581446889878,
+        "positive": 20
+      },
+      "A:route:route": {
+        "median_mm": 33.34638618319862,
+        "positive": 20
+      },
+      "B:full:full": {
+        "median_mm": -4.663277462116394,
+        "positive": 4
+      },
+      "B:full:route": {
+        "median_mm": 16.83939196298541,
+        "positive": 20
+      },
+      "B:route:full": {
+        "median_mm": 11.760548114964992,
+        "positive": 19
+      },
+      "B:route:route": {
+        "median_mm": 32.88834002308429,
+        "positive": 20
+      }
+    },
+    "axis_first_block": {
+      "full": {
+        "mu_toward_right_mm": -35.45277634207104,
+        "d_strength_mm": 28.78107800758993
+      },
+      "route": {
+        "mu_toward_right_mm": -9.044144969119907,
+        "d_strength_mm": 63.584442734348464
+      },
+      "weak": {
+        "mu_toward_right_mm": -28.42289392009729,
+        "d_strength_mm": 47.87069630366006
+      },
+      "replay_full": {
+        "mu_toward_right_mm": -28.885655602388034,
+        "d_strength_mm": 48.01287193984967
+      },
+      "route_minus_full_paired": {
+        "mu_toward_right_mm": 24.66787092012853,
+        "d_strength_mm": 35.175282676252934
+      },
+      "d_train": {
+        "mu_toward_right_mm": -41.37698491407105,
+        "d_strength_mm": 54.70703026326094
+      }
+    },
+    "patch_motion": {
+      "swap_d:A": {
+        "10": {
+          "median_mm": 40.76174061730849,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 84.37310381612383,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 109.7730717228124,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 122.06489414655657,
+          "positive": 20
+        }
+      },
+      "swap_d:B": {
+        "10": {
+          "median_mm": 16.170720456226583,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 34.85683843141242,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 50.35600594756057,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 58.21153414240132,
+          "positive": 20
+        }
+      },
+      "swap_mu:A": {
+        "10": {
+          "median_mm": 19.876853360746626,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 40.54716772505032,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 60.23556440154031,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 62.55308085992209,
+          "positive": 20
+        }
+      },
+      "swap_mu:B": {
+        "10": {
+          "median_mm": 9.583529263795743,
+          "positive": 18
+        },
+        "20": {
+          "median_mm": 22.626280525734703,
+          "positive": 19
+        },
+        "30": {
+          "median_mm": 32.2026777582131,
+          "positive": 19
+        },
+        "40": {
+          "median_mm": 37.88575881236467,
+          "positive": 20
+        }
+      },
+      "swap_both:B": {
+        "10": {
+          "median_mm": 32.8535145724204,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 63.74654714406554,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 75.69264122751403,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 87.68936870466065,
+          "positive": 20
+        }
+      },
+      "remove_d:B": {
+        "10": {
+          "median_mm": 10.052394916793133,
+          "positive": 18
+        },
+        "20": {
+          "median_mm": 24.953323567639185,
+          "positive": 19
+        },
+        "30": {
+          "median_mm": 29.322900992289902,
+          "positive": 19
+        },
+        "40": {
+          "median_mm": 40.29116032267611,
+          "positive": 20
+        }
+      }
+    },
+    "trained_motion": {
+      "A": {
+        "10": {
+          "median_mm": 49.671328283031016,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 96.0401988480302,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 115.26926622532667,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 125.92592240663913,
+          "positive": 20
+        }
+      },
+      "B": {
+        "10": {
+          "median_mm": 8.618602919427579,
+          "positive": 18
+        },
+        "20": {
+          "median_mm": 14.24477024014953,
+          "positive": 19
+        },
+        "30": {
+          "median_mm": 21.955001582921657,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 26.83626333715805,
+          "positive": 20
+        }
+      }
+    },
+    "training": {
+      "checks": 167,
+      "old_queries": 334,
+      "active": 5,
+      "first_front_loss_matches": true,
+      "all_front_batches_and_lr_match": true,
+      "frozen_unchanged": true,
+      "seconds": 380.37980954162776
+    },
+    "fixed_d_train": {
+      "10": {
+        "gain": 1.0768234931517415,
+        "cosine": 0.9681279319111069,
+        "gain_H": 1.1018808483270426,
+        "norm_ratio": 1.1032461624366154,
+        "mu_drift": {
+          "H": 0.5276198908686638,
+          "Z": 0.5929367989301682,
+          "R": 1.1190590858459473,
+          "G": 0.14568087831139565,
+          "P": 0.1383204460144043
+        }
+      },
+      "50": {
+        "gain": 0.9681938947654825,
+        "cosine": 0.9279305088826817,
+        "gain_H": 1.080598659201897,
+        "norm_ratio": 1.0381225981909095,
+        "mu_drift": {
+          "H": 0.5726645886898041,
+          "Z": 0.45478878915309906,
+          "R": 1.2934647500514984,
+          "G": 0.21267927438020706,
+          "P": 0.12933585792779922
+        }
+      }
+    }
+  },
+  "confirm": {
+    "seed": 20261121,
+    "new_episodes": 180,
+    "outcomes": {
+      "full": {
+        "A": {
+          "first": {
+            "left": 17,
+            "none": 3
+          },
+          "terminal": 8
+        },
+        "B": {
+          "first": {
+            "none": 10,
+            "front": 10
+          },
+          "terminal": 0
+        },
+        "N": {
+          "first": {
+            "none": 4,
+            "front": 16
+          },
+          "terminal": 7,
+          "grasp": 20,
+          "reached": 16
+        },
+        "both_old_first": 0
+      },
+      "route": {
+        "A": {
+          "first": {
+            "left": 18,
+            "none": 2
+          },
+          "terminal": 7
+        },
+        "B": {
+          "first": {
+            "none": 10,
+            "right": 9,
+            "front": 1
+          },
+          "terminal": 3
+        },
+        "N": {
+          "first": {
+            "none": 3,
+            "front": 17
+          },
+          "terminal": 11,
+          "grasp": 20,
+          "reached": 17
+        },
+        "both_old_first": 9
+      },
+      "weak": {
+        "A": {
+          "first": {
+            "left": 20
+          },
+          "terminal": 15
+        },
+        "B": {
+          "first": {
+            "right": 19,
+            "none": 1
+          },
+          "terminal": 4
+        },
+        "N": {
+          "first": {
+            "none": 5,
+            "front": 15
+          },
+          "terminal": 6,
+          "grasp": 19,
+          "reached": 15
+        },
+        "both_old_first": 19
+      },
+      "replay_full": {
+        "A": {
+          "first": {
+            "left": 20
+          },
+          "terminal": 15
+        },
+        "B": {
+          "first": {
+            "none": 2,
+            "right": 18
+          },
+          "terminal": 3
+        },
+        "N": {
+          "first": {
+            "none": 1,
+            "front": 19
+          },
+          "terminal": 13,
+          "grasp": 20,
+          "reached": 19
+        },
+        "both_old_first": 18
+      },
+      "d_train": {
+        "A": {
+          "first": {
+            "left": 17,
+            "none": 3
+          },
+          "terminal": 10
+        },
+        "B": {
+          "first": {
+            "none": 10,
+            "right": 3,
+            "front": 6,
+            "back": 1
+          },
+          "terminal": 0
+        },
+        "N": {
+          "first": {
+            "none": 4,
+            "front": 16
+          },
+          "terminal": 8,
+          "grasp": 20,
+          "reached": 16
+        },
+        "both_old_first": 3
+      },
+      "swap_d": {
+        "A": {
+          "first": {
+            "left": 19,
+            "none": 1
+          },
+          "terminal": 6
+        },
+        "B": {
+          "first": {
+            "none": 11,
+            "front": 8,
+            "right": 1
+          },
+          "terminal": 0
+        },
+        "both_old_first": 1
+      },
+      "swap_mu": {
+        "A": {
+          "first": {
+            "left": 14,
+            "front": 5,
+            "none": 1
+          },
+          "terminal": 5
+        },
+        "B": {
+          "first": {
+            "none": 12,
+            "front": 7,
+            "right": 1
+          },
+          "terminal": 0
+        },
+        "both_old_first": 0
+      },
+      "swap_both": {
+        "B": {
+          "first": {
+            "none": 15,
+            "right": 3,
+            "front": 2
+          },
+          "terminal": 0
+        }
+      },
+      "remove_d": {
+        "B": {
+          "first": {
+            "none": 8,
+            "front": 9,
+            "right": 3
+          },
+          "terminal": 0
+        }
+      }
+    },
+    "paired": {
+      "d_train:A": {
+        "left -> left": 16,
+        "none -> none": 2,
+        "none -> left": 1,
+        "left -> none": 1
+      },
+      "d_train:B": {
+        "none -> none": 8,
+        "front -> right": 2,
+        "front -> none": 2,
+        "front -> front": 5,
+        "none -> front": 1,
+        "front -> back": 1,
+        "none -> right": 1
+      },
+      "d_train:N": {
+        "none -> none": 3,
+        "front -> front": 15,
+        "none -> front": 1,
+        "front -> none": 1
+      },
+      "swap_d:A": {
+        "left -> left": 17,
+        "none -> none": 1,
+        "none -> left": 2
+      },
+      "swap_d:B": {
+        "none -> none": 9,
+        "front -> front": 7,
+        "none -> front": 1,
+        "front -> none": 2,
+        "front -> right": 1
+      },
+      "swap_mu:A": {
+        "left -> left": 13,
+        "none -> front": 1,
+        "none -> none": 1,
+        "none -> left": 1,
+        "left -> front": 4
+      },
+      "swap_mu:B": {
+        "none -> none": 10,
+        "front -> front": 7,
+        "front -> none": 2,
+        "front -> right": 1
+      },
+      "swap_both:B": {
+        "none -> none": 9,
+        "front -> right": 3,
+        "front -> none": 6,
+        "front -> front": 1,
+        "none -> front": 1
+      },
+      "remove_d:B": {
+        "none -> none": 7,
+        "right -> front": 7,
+        "front -> front": 1,
+        "none -> right": 2,
+        "right -> right": 1,
+        "none -> front": 1,
+        "right -> none": 1
+      }
+    },
+    "algebra_first_block": {
+      "A:full:full": {
+        "median_mm": 23.628877706707755,
+        "positive": 20
+      },
+      "A:full:route": {
+        "median_mm": 37.62818369283073,
+        "positive": 20
+      },
+      "A:route:full": {
+        "median_mm": 11.402849843185514,
+        "positive": 20
+      },
+      "A:route:route": {
+        "median_mm": 23.76362867153292,
+        "positive": 20
+      },
+      "B:full:full": {
+        "median_mm": -5.778073515781551,
+        "positive": 3
+      },
+      "B:full:route": {
+        "median_mm": 7.703666999716571,
+        "positive": 19
+      },
+      "B:route:full": {
+        "median_mm": 7.3217324164063236,
+        "positive": 18
+      },
+      "B:route:route": {
+        "median_mm": 20.554399333683484,
+        "positive": 19
+      }
+    },
+    "axis_first_block": {
+      "full": {
+        "mu_toward_right_mm": -31.030839418064808,
+        "d_strength_mm": 23.283926588318046
+      },
+      "route": {
+        "mu_toward_right_mm": -9.05516655063164,
+        "d_strength_mm": 44.91482701245372
+      },
+      "weak": {
+        "mu_toward_right_mm": -26.36940286222433,
+        "d_strength_mm": 42.659291369124944
+      },
+      "replay_full": {
+        "mu_toward_right_mm": -29.319692464166252,
+        "d_strength_mm": 47.97001858657206
+      },
+      "route_minus_full_paired": {
+        "mu_toward_right_mm": 20.57256007865664,
+        "d_strength_mm": 21.57715326277567
+      },
+      "d_train": {
+        "mu_toward_right_mm": -33.1084959645554,
+        "d_strength_mm": 54.27078896646667
+      }
+    },
+    "patch_motion": {
+      "swap_d:A": {
+        "10": {
+          "median_mm": 31.085641198724005,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 69.86995798316423,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 97.84442819211914,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 110.75029882830343,
+          "positive": 20
+        }
+      },
+      "swap_d:B": {
+        "10": {
+          "median_mm": 6.975738340329704,
+          "positive": 17
+        },
+        "20": {
+          "median_mm": 12.616422064343643,
+          "positive": 17
+        },
+        "30": {
+          "median_mm": 10.42690849473038,
+          "positive": 15
+        },
+        "40": {
+          "median_mm": 8.957149697383038,
+          "positive": 14
+        }
+      },
+      "swap_mu:A": {
+        "10": {
+          "median_mm": 15.678907225015818,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 36.64298624323938,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 58.2685873157513,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 66.61575651681555,
+          "positive": 20
+        }
+      },
+      "swap_mu:B": {
+        "10": {
+          "median_mm": 6.114019157363745,
+          "positive": 17
+        },
+        "20": {
+          "median_mm": 10.481500887501689,
+          "positive": 13
+        },
+        "30": {
+          "median_mm": 7.196994982016328,
+          "positive": 12
+        },
+        "40": {
+          "median_mm": 5.670570062628666,
+          "positive": 12
+        }
+      },
+      "swap_both:B": {
+        "10": {
+          "median_mm": 20.235313177499243,
+          "positive": 19
+        },
+        "20": {
+          "median_mm": 33.807610540113735,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 37.133638375375675,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 40.276059766465,
+          "positive": 20
+        }
+      },
+      "remove_d:B": {
+        "10": {
+          "median_mm": 6.913326815008503,
+          "positive": 17
+        },
+        "20": {
+          "median_mm": 11.47405381223368,
+          "positive": 18
+        },
+        "30": {
+          "median_mm": 8.548746843389965,
+          "positive": 14
+        },
+        "40": {
+          "median_mm": 5.724984021597115,
+          "positive": 13
+        }
+      }
+    },
+    "trained_motion": {
+      "A": {
+        "10": {
+          "median_mm": 46.27377841401266,
+          "positive": 20
+        },
+        "20": {
+          "median_mm": 92.7647860216363,
+          "positive": 20
+        },
+        "30": {
+          "median_mm": 116.30579730794294,
+          "positive": 20
+        },
+        "40": {
+          "median_mm": 127.28904863360674,
+          "positive": 20
+        }
+      },
+      "B": {
+        "10": {
+          "median_mm": 10.407088601406143,
+          "positive": 18
+        },
+        "20": {
+          "median_mm": 18.3613096676304,
+          "positive": 19
+        },
+        "30": {
+          "median_mm": 15.700799675471313,
+          "positive": 18
+        },
+        "40": {
+          "median_mm": 16.755160781851977,
+          "positive": 17
+        }
+      }
+    },
+    "training": {
+      "checks": 167,
+      "old_queries": 334,
+      "active": 5,
+      "first_front_loss_matches": true,
+      "all_front_batches_and_lr_match": true,
+      "frozen_unchanged": true,
+      "seconds": 387.77346271649003
+    },
+    "fixed_d_train": {
+      "10": {
+        "gain": 1.0456342646414813,
+        "cosine": 0.971817715143898,
+        "gain_H": 1.096054338082642,
+        "norm_ratio": 1.0735633599998564,
+        "mu_drift": {
+          "H": 0.4835013300180435,
+          "Z": 0.5039540454745293,
+          "R": 1.1496654748916626,
+          "G": 0.15255258232355118,
+          "P": 0.12978992983698845
+        }
+      },
+      "50": {
+        "gain": 0.9337281752600491,
+        "cosine": 0.9296532231000967,
+        "gain_H": 1.1126797146352267,
+        "norm_ratio": 1.0246083664498802,
+        "mu_drift": {
+          "H": 0.5576117783784866,
+          "Z": 0.4724814295768738,
+          "R": 1.290943205356598,
+          "G": 0.1992463693022728,
+          "P": 0.12808313965797424
+        }
+      }
+    }
+  }
+}

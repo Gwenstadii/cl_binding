@@ -1,0 +1,25 @@
+{
+  "shared_snapshot_sha256": "0ee8b429c5098aeb30ea2404968c1db068b894fe57407a47c5c92ac78329db5f",
+  "old_native_first_events_after_shared_prefix": true,
+  "endpoint_comparison_to_K14": {
+    "0": {
+      "compared": 40,
+      "mismatches": []
+    },
+    "12000": {
+      "compared": 40,
+      "mismatches": []
+    }
+  },
+  "original_and_channel_probe_equal": {
+    "probe_000000": true,
+    "probe_000010": true,
+    "probe_000030": true,
+    "probe_000100": true,
+    "probe_000300": true,
+    "probe_001000": true,
+    "probe_003000": true,
+    "probe_006000": true,
+    "probe_012000": true
+  }
+}

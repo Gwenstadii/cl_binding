@@ -1,0 +1,24 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+ATTRIBUTION joint 0 0 {'joint': 0.0034109887201339006} {'loss_delta': 0.0, 'preclip_norm_delta': 0.0, 'ids_match': True, 'lr_match': True}
+ATTRIBUTION joint 0 13 {'joint': 0.004104562569409609} None
+ATTRIBUTION joint 0 41 {'joint': 0.005181853659451008} None
+ATTRIBUTION joint 0 79 {'joint': 0.0036793986801058054} None
+ATTRIBUTION joint 0 127 {'joint': 0.0032808182295411825} None
+ATTRIBUTION joint 0 193 {'joint': 0.008511163294315338} None
+ATTRIBUTION joint 0 271 {'joint': 0.005581012461334467} None
+ATTRIBUTION joint 0 389 {'joint': 0.0041817850433290005} None

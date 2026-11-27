@@ -1,0 +1,68 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+NATIVE 000030_000100 early 22 A ['left']
+NATIVE 000030_000100 early 22 B ['right']
+NATIVE 000030_000100 early 22 N ['front']
+NATIVE 000030_000100 early 30 A ['left']
+NATIVE 000030_000100 early 30 B ['right']
+NATIVE 000030_000100 early 30 N ['front']
+NATIVE 000030_000100 early 38 A ['left']
+NATIVE 000030_000100 early 38 B ['right']
+NATIVE 000030_000100 early 38 N ['front']
+NATIVE 000030_000100 late 22 A ['left']
+NATIVE 000030_000100 late 22 B ['right']
+NATIVE 000030_000100 late 22 N ['front']
+NATIVE 000030_000100 late 30 A []
+NATIVE 000030_000100 late 30 B []
+NATIVE 000030_000100 late 30 N []
+NATIVE 000030_000100 late 38 A ['left']
+NATIVE 000030_000100 late 38 B ['right']
+NATIVE 000030_000100 late 38 N ['front']
+NATIVE 000030_000100 add:attention 22 A ['left']
+NATIVE 000030_000100 add:attention 22 B ['right']
+NATIVE 000030_000100 add:attention 22 N ['front']
+NATIVE 000030_000100 add:attention 30 A ['left']
+NATIVE 000030_000100 add:attention 30 B ['right']
+NATIVE 000030_000100 add:attention 30 N ['front']
+NATIVE 000030_000100 add:attention 38 A ['left']
+NATIVE 000030_000100 add:attention 38 B ['right']
+NATIVE 000030_000100 add:attention 38 N ['front']
+NATIVE 000030_000100 undo:attention 22 A ['left']
+NATIVE 000030_000100 undo:attention 22 B ['right']
+NATIVE 000030_000100 undo:attention 22 N ['front']
+NATIVE 000030_000100 undo:attention 30 A ['left']
+NATIVE 000030_000100 undo:attention 30 B ['right']
+NATIVE 000030_000100 undo:attention 30 N ['front']
+NATIVE 000030_000100 undo:attention 38 A ['left']
+NATIVE 000030_000100 undo:attention 38 B ['right']
+NATIVE 000030_000100 undo:attention 38 N ['front']
+NATIVE 000030_000100 random_add:attention 22 A ['left']
+NATIVE 000030_000100 random_add:attention 22 B ['right']
+NATIVE 000030_000100 random_add:attention 22 N ['front']
+NATIVE 000030_000100 random_add:attention 30 A ['left']
+NATIVE 000030_000100 random_add:attention 30 B ['right']
+NATIVE 000030_000100 random_add:attention 30 N ['front']
+NATIVE 000030_000100 random_add:attention 38 A ['left']
+NATIVE 000030_000100 random_add:attention 38 B ['right']
+NATIVE 000030_000100 random_add:attention 38 N ['front']
+NATIVE 000030_000100 random_replace:attention 22 A ['left']
+NATIVE 000030_000100 random_replace:attention 22 B ['right']
+NATIVE 000030_000100 random_replace:attention 22 N ['front']
+NATIVE 000030_000100 random_replace:attention 30 A ['left']
+NATIVE 000030_000100 random_replace:attention 30 B ['right']
+NATIVE 000030_000100 random_replace:attention 30 N ['front']
+NATIVE 000030_000100 random_replace:attention 38 A ['left']
+NATIVE 000030_000100 random_replace:attention 38 B ['right']
+NATIVE 000030_000100 random_replace:attention 38 N ['front']

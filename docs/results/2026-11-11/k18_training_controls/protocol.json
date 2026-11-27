@@ -1,0 +1,16 @@
+{
+  "lineage": "R1-24000 Left+Right -> Front",
+  "seeds": [20261021, 20261121, 20261122],
+  "arms": ["full", "no_rot", "random", "norm"],
+  "training_steps_per_arm": 1000,
+  "fixed_probe_steps": [30, 100, 300, 1000],
+  "masks": "remove 3 of 7 scalars at each valid action position; preserve original reduction; uniform random channel subset per position in random arm",
+  "norm_matching": "measure actual masked-arm weight delta L2 at every matched step; full-loss AdamW proposal followed by scalar rescaling and independently seeded stochastic BF16 rounding; retain AdamW moments from full supervision and log realized error",
+  "norm_tolerance_relative": 0.015,
+  "native_episodes_per_arm_per_seed_per_goal": 20,
+  "native_held_out": "first 20 new sampled physical states qualifying with locked Front12000 prefix and no K18-D predictions",
+  "native_metrics": ["first correct", "first Front", "no-region", "ever", "terminal", "paired old first correct"],
+  "front_fit": "ten independent validation demonstrations, all four channels and all geometric phases, matching action indices",
+  "decision": "source-specific evidence requires old Right routing advantage over both controls across seeds, alongside comparable Front quality; report observed trade-off if any; ten percentage points Front terminal drop is a descriptive screening threshold, not an equivalence proof",
+  "parameter_readout": "project each branch actual cross-attention K/V delta since its own step 30 onto historical step 30->100 delta"
+}

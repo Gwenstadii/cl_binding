@@ -1,0 +1,7 @@
+{
+  "conditions": [
+    "undo:attention",
+    "random_replace:attention"
+  ],
+  "lane": 3
+}

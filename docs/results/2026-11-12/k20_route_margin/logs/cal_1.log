@@ -1,0 +1,42 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+CALIB 221 parent A ['left']
+CALIB 221 parent B ['right']
+CALIB 221 full A []
+CALIB 221 full B []
+CALIB 225 parent A ['left']
+CALIB 225 parent B ['right']
+CALIB 225 full A ['left']
+CALIB 225 full B []
+CALIB 229 parent A ['left']
+CALIB 229 parent B ['right']
+CALIB 229 full A ['left']
+CALIB 229 full B []
+CALIB 233 parent A ['left']
+CALIB 233 parent B ['right']
+CALIB 233 full A []
+CALIB 233 full B []
+CALIB 237 parent A ['left']
+CALIB 237 parent B ['right']
+CALIB 237 full A []
+CALIB 237 full B []
+CALIB 241 parent A ['left']
+CALIB 241 parent B ['right']
+CALIB 241 full A ['left']
+CALIB 241 full B []
+CALIB 245 parent A ['left']
+CALIB 245 parent B ['right']
+CALIB 245 full A ['left']
+CALIB 245 full B ['front']

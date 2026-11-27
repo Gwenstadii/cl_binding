@@ -1,0 +1,13 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+K24 attribution 30 0 {'project': 'project_1', 'focused': 'focused_1', 'scale': 'scale_1'}
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 283, in <module>
+    run(p.parse_args().anchor)
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 214, in run
+    values = {m: select(full, names, fn, invert=m.startswith("without")) for m, fn in masks.items()}
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 117, in select
+    return [v if match(n) != invert else torch.zeros_like(v) for n, v in zip(names, delta, strict=True)]
+                                         ^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.57 GiB of which 93.38 MiB is free. Including non-PyTorch memory, this process has 22.83 GiB memory in use. Of the allocated memory 21.95 GiB is allocated by PyTorch, and 569.98 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

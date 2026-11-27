@@ -1,0 +1,3 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+K24 attribution 100 0 {'project': 'project_0.5', 'focused': 'focused_0.25', 'scale': 'scale_0.25'}

@@ -1,0 +1,14 @@
+{
+  "experiment": "K18 training origin of R1-to-Front response changes",
+  "status": "planned_not_executed",
+  "date": "2026-11-10",
+  "lineage": "R1 Left+Right24000 -> Front",
+  "stages": [
+    {"id":"A","purpose":"reproduce baseline and locate earliest changes","observation_steps":[0,10,30,100,300,1000,3000,6000],"existing_endpoints":[6000,12000],"checks":["historical recipe and optimizer reset","fixed obs/draft/time/noise bank","no RNG contamination by probes","matched shared physical prefixes","native Left/Right/Front readouts"]},
+    {"id":"B","purpose":"supervision source -> real AdamW step -> old response change","loss_channels":{"H":[0,1],"Z":[2],"R":[3,4,5],"G":[6]},"phase_labels":"Front-demo physical events; label future target positions with action_offset1; unknown kept","loss_reduction":"preserve original per-sample valid_time_x7 denominator; verify preclip additive reconstruction","local_forks":["full","onlyC","withoutC","explicit_zero_gradient_with_same_optimizer_state","no_step"],"nonadditive_optimizer_updates":true},
+    {"id":"C","purpose":"test which real parameter updates carry the functional changes","parameter_partitions":["state_projection","action_and_time_inputs","expert_attention","expert_MLP_and_norm","action_output_projection"],"interventions":["group_only_actual_delta","full_delta_minus_group","same_tensor_norm_random_sign_direction"],"limits":"full reconstruction on add-back is engineering consistency, not independent causal proof"},
+    {"id":"D","purpose":"native behavioral causality under controlled short training","start":"parentR1 plus freshAdamW from step0","arms":["full_front","remove_candidateC_fixed_denominator","matched_random_supervision_mask","full_front_actual_update_norm_matched"],"steps":"1000 or3000 selected by development timeline then locked","independent_continuation_streams":3,"coupling":"same batch/noise/time within each seed; optimizer trajectories evolve normally after common initialization","required_outcomes":["native old Left/Right perinstruction >=20","Front native and stage/channel heldout loss","mu and conditional-gain changes","paired per-state gains/losses"]}
+  ],
+  "key_limits": ["no inference-time output patches in primary trained-model behavior","rotation recovery does not identify rotation supervision as culprit","padding output losses were already excluded","current-gradient removal does not remove historic momentum","native skill preservation without Front learning is not selective causal evidence","discovery and confirmation data/seeds separated","40..49 alone are only10 physical states"],
+  "next_execution_package": "A+B first; choose source only from development evidence before C/D confirmation"
+}

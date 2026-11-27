@@ -1,0 +1,10 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+K24 attribution 100 0 {'project': 'project_0.5', 'focused': 'focused_0.25', 'scale': 'scale_0.25'}
+K24 attribution 100 17 {'project': 'project_0.5', 'focused': 'focused_0.5', 'scale': 'scale_0.25'}
+K24 attribution 100 53 {'project': 'project_0.5', 'focused': 'focused_0.5', 'scale': 'scale_0.25'}
+K24 attribution 100 89 {'project': 'project_0.25', 'focused': 'focused_0.5', 'scale': 'scale_0.25'}
+K24 attribution 100 137 {'project': 'project_0.5', 'focused': 'focused_0.5', 'scale': 'scale_0.25'}
+K24 attribution 100 211 {'project': 'project_0.5', 'focused': 'focused_0.5', 'scale': 'scale_0.5'}
+K24 attribution 100 293 {'project': 'project_0.5', 'focused': 'focused_0.5', 'scale': 'scale_0.25'}
+K24 attribution 100 433 {'project': 'project_0.5', 'focused': 'focused_0.5', 'scale': 'scale_0.5'}

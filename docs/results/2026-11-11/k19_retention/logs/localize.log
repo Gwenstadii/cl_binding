@@ -1,0 +1,62 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+LOCALIZE 000030_000100 add KV_1
+LOCALIZE 000030_000100 undo KV_1
+LOCALIZE 000030_000100 add KV_3
+LOCALIZE 000030_000100 undo KV_3
+LOCALIZE 000030_000100 add KV_5
+LOCALIZE 000030_000100 undo KV_5
+LOCALIZE 000030_000100 add KV_7
+LOCALIZE 000030_000100 undo KV_7
+LOCALIZE 000030_000100 add KV_9
+LOCALIZE 000030_000100 undo KV_9
+LOCALIZE 000030_000100 add KV_11
+LOCALIZE 000030_000100 undo KV_11
+LOCALIZE 000030_000100 add KV_13
+LOCALIZE 000030_000100 undo KV_13
+LOCALIZE 000030_000100 add KV_15
+LOCALIZE 000030_000100 undo KV_15
+LOCALIZE 000030_000100 add MLP_norm_0_3
+LOCALIZE 000030_000100 undo MLP_norm_0_3
+LOCALIZE 000030_000100 add MLP_norm_4_7
+LOCALIZE 000030_000100 undo MLP_norm_4_7
+LOCALIZE 000030_000100 add MLP_norm_8_11
+LOCALIZE 000030_000100 undo MLP_norm_8_11
+LOCALIZE 000030_000100 add MLP_norm_12_15
+LOCALIZE 000030_000100 undo MLP_norm_12_15
+LOCALIZE 000030_001000 add KV_1
+LOCALIZE 000030_001000 undo KV_1
+LOCALIZE 000030_001000 add KV_3
+LOCALIZE 000030_001000 undo KV_3
+LOCALIZE 000030_001000 add KV_5
+LOCALIZE 000030_001000 undo KV_5
+LOCALIZE 000030_001000 add KV_7
+LOCALIZE 000030_001000 undo KV_7
+LOCALIZE 000030_001000 add KV_9
+LOCALIZE 000030_001000 undo KV_9
+LOCALIZE 000030_001000 add KV_11
+LOCALIZE 000030_001000 undo KV_11
+LOCALIZE 000030_001000 add KV_13
+LOCALIZE 000030_001000 undo KV_13
+LOCALIZE 000030_001000 add KV_15
+LOCALIZE 000030_001000 undo KV_15
+LOCALIZE 000030_001000 add MLP_norm_0_3
+LOCALIZE 000030_001000 undo MLP_norm_0_3
+LOCALIZE 000030_001000 add MLP_norm_4_7
+LOCALIZE 000030_001000 undo MLP_norm_4_7
+LOCALIZE 000030_001000 add MLP_norm_8_11
+LOCALIZE 000030_001000 undo MLP_norm_8_11
+LOCALIZE 000030_001000 add MLP_norm_12_15
+LOCALIZE 000030_001000 undo MLP_norm_12_15

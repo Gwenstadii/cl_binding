@@ -1,0 +1,44 @@
+{
+ "experiment": "K14 §5 language routing: does the adapted model's own instruction response route the target once the common background is restored and the residual response is amplified by a FIXED gain, without code choosing +/- by target?",
+ "trigger": "batch-1 locked rule s5_language_routing_run = true (C_amp clearly better than B_mean on dir and place)",
+ "locked_at": "after batch-1 judgement, before any §5 episode",
+ "formula": "v(q) = mu_old + ALPHA * (v_new(q) - mu_new); mu_old = (v_R1(Left)+v_R1(Right))/2, mu_new = (v_F(Left)+v_F(Right))/2 on the canonical sentences, same input; all 32 dims; window 60 steps from the common snapshot, then adapted native with the same q until 400",
+ "alpha": "2.959 = median a_old/a_new on dev probe (inits 0-9, Front prefixes, boundaries 30-150, first Euler input); fixed for all q and states; per-state norm is NOT used (batch-1 C_amp is the per-state version for canonical q)",
+ "dependency_disclosure": "old model still supplies mu_old (common background) at inference; it supplies no q-specific difference",
+ "paraphrases": {
+  "P1": "put the book into the {s} compartment of the caddy",
+  "P2": "place the book in the caddy's {s} compartment",
+  "P3": "move the book to the {s} section of the caddy",
+  "P4": "pick up the book and put it in the {s} slot of the caddy",
+  "verification": "R1 native from reset on dev inits 0-9 (K1 noise), each template both sides; kept iff first==[side] >= 8/10 AND ever-success >= 7/10 on BOTH sides; first 3 passing in P1..P4 order; canonical run as reference only",
+  "never_used_for_alpha": true
+ },
+ "main_groups_per_snapshot": {
+  "S_canon": "corrected, canonical Left/Right",
+  "S_Pk": "corrected, kept paraphrase k Left/Right",
+  "N_Pk": "adapted native with paraphrase k (no correction)",
+  "S_neutral": "corrected with 'pick up the book and place it in the caddy' (no side)",
+  "S_front": "corrected with the canonical Front sentence"
+ },
+ "snapshots": "the 20 batch-1 common snapshots (inits 20-39, development)",
+ "readouts": "dir = paired split per snapshot (Left-q first==[left] AND Right-q first==[right]); place = ever native success of requested side /40; term = /40; neutral/front: distribution of first region and terminal; per-query projection of (v - mu_old) on d_old",
+ "statistics": "same as batch 1: cluster bootstrap over snapshots, delta 0.15, close 0.10",
+ "verdicts": {
+  "L1_canonical_fixed_gain": "S_canon clearly better than N-equivalent baseline A_nat (batch 1) on dir",
+  "L2_paraphrase_routing": "for each kept k: S_Pk clearly better than N_Pk on dir AND S_canon - S_Pk not clearly better on dir; supported if this holds for all kept templates (>=2 kept required), partial if for some",
+  "L3_fixed_sentence_only": "S_canon passes L1 but no kept template passes L2",
+  "neutral_check": "if S_neutral first region is the same side in >= 15/20, report a side bias of the correction itself; paired-split claims then rely on the split, not single-side success",
+  "front_check": "report where S_front goes (does the corrected field still follow the new instruction)",
+  "fewer_than_2_kept": "report insufficient verified wording; no new templates are added after seeing §5 results"
+ },
+ "amendments": [
+  {
+   "id": 1,
+   "when": "after verification round 1 (R1 from reset on dev inits 0-9), before any §5 main episode; no §5 outcome seen",
+   "seen": "round-1 verification only: canon L 10/10 first, R 10/10; P1 L5 R1; P2 L5 R8; P3 L4 R1; P4 L9 R10 (ever L9 R8) -> only P4 kept, below the 2 required",
+   "change": "add round-2 candidates Q1-Q4, each changing one element of the canonical sentence (noun / preposition / verb); same verification rule; kept = first 3 passing in order P1..P4, Q1..Q4",
+   "consequence": "kept wordings are near-template; any routing conclusion is limited to near-template paraphrases. The parent R1 itself does not execute freer paraphrases (P1, P3 right side 1/10), recorded as a finding about the parent",
+   "files": "round-1 records renamed verify_r1_w*.jsonl"
+  }
+ ]
+}

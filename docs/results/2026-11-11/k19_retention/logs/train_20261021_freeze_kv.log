@@ -1,0 +1,25 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+TRAIN 20261021 freeze_kv 1 1.35598 None None
+TRAIN 20261021 freeze_kv 2 1.32835 None None
+TRAIN 20261021 freeze_kv 3 1.51831 None None
+TRAIN 20261021 freeze_kv 50 1.00477 None None
+TRAIN 20261021 freeze_kv 100 0.64002 None None
+TRAIN 20261021 freeze_kv 150 0.52717 None None
+TRAIN 20261021 freeze_kv 200 0.3794 None None
+TRAIN 20261021 freeze_kv 250 0.28247 None None
+TRAIN 20261021 freeze_kv 300 0.29787 None None
+TRAIN 20261021 freeze_kv 350 0.37869 None None
+TRAIN 20261021 freeze_kv 400 0.31652 None None
+TRAIN 20261021 freeze_kv 450 0.2472 None None
+TRAIN 20261021 freeze_kv 500 0.34104 None None
+TRAIN 20261021 freeze_kv 550 0.37374 None None
+TRAIN 20261021 freeze_kv 600 0.41781 None None
+TRAIN 20261021 freeze_kv 650 0.1576 None None
+TRAIN 20261021 freeze_kv 700 0.23178 None None
+TRAIN 20261021 freeze_kv 750 0.24079 None None
+TRAIN 20261021 freeze_kv 800 0.21263 None None
+TRAIN 20261021 freeze_kv 850 0.20036 None None
+TRAIN 20261021 freeze_kv 900 0.2161 None None
+TRAIN 20261021 freeze_kv 950 0.26184 None None
+TRAIN 20261021 freeze_kv 1000 0.25267 None None

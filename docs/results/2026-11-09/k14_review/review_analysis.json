@@ -1,0 +1,244 @@
+{
+  "scope": "review of report, code and judgement JSON; no new rollouts or independent full-trace audit",
+  "late_T0_to_T5": {
+    "n": 26,
+    "before_success": 13,
+    "after_success": 14,
+    "gained": [
+      "24B",
+      "31B",
+      "38A"
+    ],
+    "lost": [
+      "32B",
+      "35A"
+    ],
+    "changed": 5,
+    "net": 1,
+    "clustered_ci": [
+      -0.125,
+      0.2
+    ]
+  },
+  "duration_I_to_J": {
+    "n": 40,
+    "before_success": 20,
+    "after_success": 21,
+    "gained": [
+      "34A",
+      "35A"
+    ],
+    "lost": [
+      "38A"
+    ],
+    "changed": 3,
+    "net": 1
+  },
+  "L_vs_J_gap_by_third_batch_selection": {
+    "all_40": {
+      "n": 40,
+      "before_success": 21,
+      "after_success": 30,
+      "gained": [
+        "28A",
+        "30A",
+        "37A",
+        "38A",
+        "22B",
+        "24B",
+        "31B",
+        "33B",
+        "36B"
+      ],
+      "lost": [],
+      "changed": 9,
+      "net": 9
+    },
+    "eligible_26": {
+      "n": 26,
+      "before_success": 13,
+      "after_success": 20,
+      "gained": [
+        "22B",
+        "24B",
+        "28A",
+        "31B",
+        "33B",
+        "37A",
+        "38A"
+      ],
+      "lost": [],
+      "changed": 7,
+      "net": 7
+    },
+    "excluded_14": {
+      "n": 14,
+      "before_success": 8,
+      "after_success": 10,
+      "gained": [
+        "30A",
+        "36B"
+      ],
+      "lost": [],
+      "changed": 2,
+      "net": 2
+    },
+    "early_advantage_rescued_by_late_switch": [
+      "24B",
+      "31B",
+      "38A"
+    ]
+  },
+  "excluded_reasons": [
+    {
+      "init": 20,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 135,
+      "b3": 140,
+      "reason": "already_placed"
+    },
+    {
+      "init": 30,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 119,
+      "b3": 130,
+      "reason": "already_placed"
+    },
+    {
+      "init": 21,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 123,
+      "b3": 130,
+      "reason": "already_placed"
+    },
+    {
+      "init": 23,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 133,
+      "b3": 140,
+      "reason": "already_placed"
+    },
+    {
+      "init": 23,
+      "goal": "B",
+      "requested": "right",
+      "t_arrive": null,
+      "b3": null,
+      "reason": "never_arrived"
+    },
+    {
+      "init": 34,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 137,
+      "b3": 150,
+      "reason": "already_placed"
+    },
+    {
+      "init": 34,
+      "goal": "B",
+      "requested": "right",
+      "t_arrive": null,
+      "b3": null,
+      "reason": "never_arrived"
+    },
+    {
+      "init": 25,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 123,
+      "b3": 130,
+      "reason": "already_placed"
+    },
+    {
+      "init": 36,
+      "goal": "B",
+      "requested": "right",
+      "t_arrive": 119,
+      "b3": 130,
+      "reason": "not_held_over_target"
+    },
+    {
+      "init": 27,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 123,
+      "b3": 130,
+      "reason": "already_placed"
+    },
+    {
+      "init": 29,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 130,
+      "b3": 140,
+      "reason": "already_placed"
+    },
+    {
+      "init": 29,
+      "goal": "B",
+      "requested": "right",
+      "t_arrive": null,
+      "b3": null,
+      "reason": "never_arrived"
+    },
+    {
+      "init": 39,
+      "goal": "A",
+      "requested": "left",
+      "t_arrive": 108,
+      "b3": 120,
+      "reason": "already_placed"
+    },
+    {
+      "init": 39,
+      "goal": "B",
+      "requested": "right",
+      "t_arrive": null,
+      "b3": null,
+      "reason": "never_arrived"
+    }
+  ],
+  "single_vector_geometry_examples_not_empirical_information_fractions": {
+    "0.75": {
+      "angle_degrees": 41.40962210927086,
+      "perpendicular_norm_over_old_norm": 0.6614378277661477,
+      "perpendicular_squared_norm_fraction": 0.4375,
+      "equal_norm_old_minus_candidate_norm_over_old": 0.7071067811865476
+    },
+    "0.77": {
+      "angle_degrees": 39.646111146973716,
+      "perpendicular_norm_over_old_norm": 0.6380438856379709,
+      "perpendicular_squared_norm_fraction": 0.4071,
+      "equal_norm_old_minus_candidate_norm_over_old": 0.6782329983125268
+    }
+  },
+  "padding_ratio_diagnostic": {
+    "C_amp": 0.39598132818937304,
+    "F_old": 0.24076587532957394
+  },
+  "source_sha256": {
+    "source_report.md": "081f6ca2da42dd33bdb7b3378c77a423f2080a53ff8b553a21c2e05ac3377ecd",
+    "b3_state_selection.json": "f2660ba2fcfb4f4e72ba30cf0378bd5818e56c27c46e07c90b57d15d7f1de097",
+    "judgement/k14_b2_judgement.json": "07f791e639c431d7cc5a893b11bdf5fb506a3c886c3f5aa26e1462817f150008",
+    "judgement/k14_b3_judgement.json": "3c4a120ebc81cfaec467f0d5fa406b737b8ff514dc3c924ef7f7ad59ecaef372",
+    "judgement/k14_judgement.json": "8cefa78f07588e567cb93aa23852da960530e5b4ef41498bbc742ad14a458dc6",
+    "judgement/k14_s5_judgement.json": "76d49f16833add766ad4f3f1686685198f2c704b7b96b38f67e18f694f5f8385",
+    "code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "code/k14_analyze.py": "0ee416f4ca1f7440d3a003dd5da09e50be2424ef9868b0501d96e380f883afc9",
+    "code/k14b2.py": "a13371311190c20085f367d291b61dfbbf4c0283050b446942ab5983eb6a1030",
+    "code/k14b2_analyze.py": "8a80ed29b1b61f2bbccc69148be4a711bdd60b11ca649453ad437c38cbe354d7",
+    "code/k14b3.py": "7bfacde1e337bccc8eedc9b32ef9e551409fbadaa594ebf55a74dbbfd7e3e91c",
+    "code/k14b3_analyze.py": "5f263b58881ee315f2caa1bc2a6cc6a06a164a6db6b9c8ba92952a25c238d5d3",
+    "code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "code/k14s5_analyze.py": "fc15e8c50bfda9a9cb03b2b9deb05a2e603b7a6c208f5820c0ba52aa713874ae",
+    "code/probe.py": "9bfc0b79384e301ef63f8731b18a2298eb148ac830bfe03dd00ac702f7a4430b",
+    "prereg/k14_b3_prereg.json": "ff1a9c8aed707f6bec44c24bfc7e04d2791beb72cf8de681bb32618511e3e9d5",
+    "prereg/k14_prereg.json": "eb3429a3f92a02bde7a5916dc65781af7f1af52b8a3e96bf9d12764c40260b48",
+    "prereg/k14_s5_prereg.json": "b8b42e681c5694887263e67aec197633ac79e02bbf87fdfa20d524ead8de6eb8"
+  }
+}

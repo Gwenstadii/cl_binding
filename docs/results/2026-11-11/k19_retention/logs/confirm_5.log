@@ -1,0 +1,59 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+NATIVE confirm 5 0 parent 205 A ['left']
+NATIVE confirm 5 0 parent 205 B ['right']
+NATIVE confirm 5 0 parent 205 N ['front']
+NATIVE confirm 5 0 parent 211 A ['left']
+NATIVE confirm 5 0 parent 211 B ['right']
+NATIVE confirm 5 0 parent 211 N ['front']
+NATIVE confirm 5 0 parent 217 A ['left']
+NATIVE confirm 5 0 parent 217 B ['right']
+NATIVE confirm 5 0 parent 217 N ['front']
+NATIVE confirm 5 20261121 full 205 A []
+NATIVE confirm 5 20261121 full 205 B []
+NATIVE confirm 5 20261121 full 205 N []
+NATIVE confirm 5 20261121 full 211 A ['left']
+NATIVE confirm 5 20261121 full 211 B ['front']
+NATIVE confirm 5 20261121 full 211 N ['front']
+NATIVE confirm 5 20261121 full 217 A ['left']
+NATIVE confirm 5 20261121 full 217 B ['front']
+NATIVE confirm 5 20261121 full 217 N ['front']
+NATIVE confirm 5 20261121 replay_full 205 A ['left']
+NATIVE confirm 5 20261121 replay_full 205 B ['right']
+NATIVE confirm 5 20261121 replay_full 205 N ['front']
+NATIVE confirm 5 20261121 replay_full 211 A ['left']
+NATIVE confirm 5 20261121 replay_full 211 B ['right']
+NATIVE confirm 5 20261121 replay_full 211 N ['front']
+NATIVE confirm 5 20261121 replay_full 217 A ['left']
+NATIVE confirm 5 20261121 replay_full 217 B ['right']
+NATIVE confirm 5 20261121 replay_full 217 N ['front']
+NATIVE confirm 5 20261122 full 205 A ['left']
+NATIVE confirm 5 20261122 full 205 B ['front']
+NATIVE confirm 5 20261122 full 205 N ['front']
+NATIVE confirm 5 20261122 full 211 A ['left']
+NATIVE confirm 5 20261122 full 211 B ['front']
+NATIVE confirm 5 20261122 full 211 N ['front']
+NATIVE confirm 5 20261122 full 217 A ['left']
+NATIVE confirm 5 20261122 full 217 B ['front']
+NATIVE confirm 5 20261122 full 217 N ['front']
+NATIVE confirm 5 20261122 replay_full 205 A ['left']
+NATIVE confirm 5 20261122 replay_full 205 B ['right']
+NATIVE confirm 5 20261122 replay_full 205 N []
+NATIVE confirm 5 20261122 replay_full 211 A ['left']
+NATIVE confirm 5 20261122 replay_full 211 B ['right']
+NATIVE confirm 5 20261122 replay_full 211 N ['front']
+NATIVE confirm 5 20261122 replay_full 217 A ['left']
+NATIVE confirm 5 20261122 replay_full 217 B ['right']
+NATIVE confirm 5 20261122 replay_full 217 N ['front']

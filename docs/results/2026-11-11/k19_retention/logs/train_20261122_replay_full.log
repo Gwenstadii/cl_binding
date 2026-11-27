@@ -1,0 +1,25 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+TRAIN 20261122 replay_full 1 2.17055 None None
+TRAIN 20261122 replay_full 2 1.14349 None None
+TRAIN 20261122 replay_full 3 2.2734 None None
+TRAIN 20261122 replay_full 50 0.68683 None None
+TRAIN 20261122 replay_full 100 0.49473 None None
+TRAIN 20261122 replay_full 150 0.60262 None None
+TRAIN 20261122 replay_full 200 0.5506 None None
+TRAIN 20261122 replay_full 250 0.50006 None None
+TRAIN 20261122 replay_full 300 0.42178 None None
+TRAIN 20261122 replay_full 350 0.45114 None None
+TRAIN 20261122 replay_full 400 0.38495 None None
+TRAIN 20261122 replay_full 450 0.39103 None None
+TRAIN 20261122 replay_full 500 0.43246 None None
+TRAIN 20261122 replay_full 550 0.30861 None None
+TRAIN 20261122 replay_full 600 0.28982 None None
+TRAIN 20261122 replay_full 650 0.17052 None None
+TRAIN 20261122 replay_full 700 0.29704 None None
+TRAIN 20261122 replay_full 750 0.57607 None None
+TRAIN 20261122 replay_full 800 0.34292 None None
+TRAIN 20261122 replay_full 850 0.34485 None None
+TRAIN 20261122 replay_full 900 0.28624 None None
+TRAIN 20261122 replay_full 950 0.2444 None None
+TRAIN 20261122 replay_full 1000 0.34882 None None

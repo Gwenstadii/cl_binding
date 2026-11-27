@@ -1,0 +1,1 @@
+{"arm":"replay_soft","timing":"added after complete sparse-replay and joint-constraint development outcomes showed routing recovery with reduced Front terminal success","recipe":"same full-data dynamic old replay as replay_full, with old supervised loss coefficient 0.35 instead of 1","selection":"same locked development gate and ranking"}

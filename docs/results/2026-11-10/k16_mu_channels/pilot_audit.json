@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "init": 20,
+  "exact_historical_episodes": 4,
+  "exact_historical_trace_steps": 1600,
+  "matched_current_prefixes": 16
+}

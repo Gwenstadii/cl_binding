@@ -1,0 +1,1337 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "init": 20,
+      "same_signature": true,
+      "alpha0_identity": true,
+      "alpha1_N_native": true,
+      "items": [
+        {
+          "goal": "A",
+          "condition": "N",
+          "selected_indices": [],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020639891736209393
+        },
+        {
+          "goal": "A",
+          "condition": "Z",
+          "selected_indices": [
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002109191380441189
+        },
+        {
+          "goal": "A",
+          "condition": "R",
+          "selected_indices": [
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002122258534654975
+        },
+        {
+          "goal": "A",
+          "condition": "ZR",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021662453655153513
+        },
+        {
+          "goal": "A",
+          "condition": "G",
+          "selected_indices": [
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021474133245646954
+        },
+        {
+          "goal": "A",
+          "condition": "ZG",
+          "selected_indices": [
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021908951457589865
+        },
+        {
+          "goal": "A",
+          "condition": "RG",
+          "selected_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002203477779403329
+        },
+        {
+          "goal": "A",
+          "condition": "ZRG",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0022458743769675493
+        },
+        {
+          "goal": "A",
+          "condition": "H",
+          "selected_indices": [
+            0,
+            1
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002283806912600994
+        },
+        {
+          "goal": "A",
+          "condition": "HZ",
+          "selected_indices": [
+            0,
+            1,
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023247390054166317
+        },
+        {
+          "goal": "A",
+          "condition": "HR",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023366010282188654
+        },
+        {
+          "goal": "A",
+          "condition": "HZR",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023766241502016783
+        },
+        {
+          "goal": "A",
+          "condition": "HG",
+          "selected_indices": [
+            0,
+            1,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023594717495143414
+        },
+        {
+          "goal": "A",
+          "condition": "HZG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023991132620722055
+        },
+        {
+          "goal": "A",
+          "condition": "HRG",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024106092751026154
+        },
+        {
+          "goal": "A",
+          "condition": "HZRG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024494233075529337
+        },
+        {
+          "goal": "B",
+          "condition": "N",
+          "selected_indices": [],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002228683326393366
+        },
+        {
+          "goal": "B",
+          "condition": "Z",
+          "selected_indices": [
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023406606633216143
+        },
+        {
+          "goal": "B",
+          "condition": "R",
+          "selected_indices": [
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001680145738646388
+        },
+        {
+          "goal": "B",
+          "condition": "ZR",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018260759534314275
+        },
+        {
+          "goal": "B",
+          "condition": "G",
+          "selected_indices": [
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023786479141563177
+        },
+        {
+          "goal": "B",
+          "condition": "ZG",
+          "selected_indices": [
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002483873860910535
+        },
+        {
+          "goal": "B",
+          "condition": "RG",
+          "selected_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018745202105492353
+        },
+        {
+          "goal": "B",
+          "condition": "ZRG",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020063624251633883
+        },
+        {
+          "goal": "B",
+          "condition": "H",
+          "selected_indices": [
+            0,
+            1
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002274618484079838
+        },
+        {
+          "goal": "B",
+          "condition": "HZ",
+          "selected_indices": [
+            0,
+            1,
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023844395764172077
+        },
+        {
+          "goal": "B",
+          "condition": "HR",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0017406174447387457
+        },
+        {
+          "goal": "B",
+          "condition": "HZR",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018818642711266875
+        },
+        {
+          "goal": "B",
+          "condition": "HG",
+          "selected_indices": [
+            0,
+            1,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002421740209683776
+        },
+        {
+          "goal": "B",
+          "condition": "HZG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0025251710321754217
+        },
+        {
+          "goal": "B",
+          "condition": "HRG",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0019289079355075955
+        },
+        {
+          "goal": "B",
+          "condition": "HZRG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020572675857692957
+        }
+      ]
+    },
+    {
+      "init": 21,
+      "same_signature": true,
+      "alpha0_identity": true,
+      "alpha1_N_native": true,
+      "items": [
+        {
+          "goal": "A",
+          "condition": "N",
+          "selected_indices": [],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0017689893720671535
+        },
+        {
+          "goal": "A",
+          "condition": "Z",
+          "selected_indices": [
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001920290756970644
+        },
+        {
+          "goal": "A",
+          "condition": "R",
+          "selected_indices": [
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001936475862748921
+        },
+        {
+          "goal": "A",
+          "condition": "ZR",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002075604163110256
+        },
+        {
+          "goal": "A",
+          "condition": "G",
+          "selected_indices": [
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018361067632213235
+        },
+        {
+          "goal": "A",
+          "condition": "ZG",
+          "selected_indices": [
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001982291927561164
+        },
+        {
+          "goal": "A",
+          "condition": "RG",
+          "selected_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0019979747012257576
+        },
+        {
+          "goal": "A",
+          "condition": "ZRG",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021330956369638443
+        },
+        {
+          "goal": "A",
+          "condition": "H",
+          "selected_indices": [
+            0,
+            1
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0019764560274779797
+        },
+        {
+          "goal": "A",
+          "condition": "HZ",
+          "selected_indices": [
+            0,
+            1,
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021129532251507044
+        },
+        {
+          "goal": "A",
+          "condition": "HR",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021276732441037893
+        },
+        {
+          "goal": "A",
+          "condition": "HZR",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002255035797134042
+        },
+        {
+          "goal": "A",
+          "condition": "HG",
+          "selected_indices": [
+            0,
+            1,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020367479883134365
+        },
+        {
+          "goal": "A",
+          "condition": "HZG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021694551687687635
+        },
+        {
+          "goal": "A",
+          "condition": "HRG",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021837942767888308
+        },
+        {
+          "goal": "A",
+          "condition": "HZRG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023080622777342796
+        },
+        {
+          "goal": "B",
+          "condition": "N",
+          "selected_indices": [],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0021953019313514233
+        },
+        {
+          "goal": "B",
+          "condition": "Z",
+          "selected_indices": [
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023721405304968357
+        },
+        {
+          "goal": "B",
+          "condition": "R",
+          "selected_indices": [
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0017548095202073455
+        },
+        {
+          "goal": "B",
+          "condition": "ZR",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001971562160179019
+        },
+        {
+          "goal": "B",
+          "condition": "G",
+          "selected_indices": [
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0022485917434096336
+        },
+        {
+          "goal": "B",
+          "condition": "ZG",
+          "selected_indices": [
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024215420708060265
+        },
+        {
+          "goal": "B",
+          "condition": "RG",
+          "selected_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018210356356576085
+        },
+        {
+          "goal": "B",
+          "condition": "ZRG",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002030731877312064
+        },
+        {
+          "goal": "B",
+          "condition": "H",
+          "selected_indices": [
+            0,
+            1
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002248456235975027
+        },
+        {
+          "goal": "B",
+          "condition": "HZ",
+          "selected_indices": [
+            0,
+            1,
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002421415876597166
+        },
+        {
+          "goal": "B",
+          "condition": "HR",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018208681140094995
+        },
+        {
+          "goal": "B",
+          "condition": "HZR",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020305814687162638
+        },
+        {
+          "goal": "B",
+          "condition": "HG",
+          "selected_indices": [
+            0,
+            1,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002300514839589596
+        },
+        {
+          "goal": "B",
+          "condition": "HZG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.00246983184479177
+        },
+        {
+          "goal": "B",
+          "condition": "HRG",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001884774537757039
+        },
+        {
+          "goal": "B",
+          "condition": "HZRG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020880792289972305
+        }
+      ]
+    },
+    {
+      "init": 22,
+      "same_signature": true,
+      "alpha0_identity": true,
+      "alpha1_N_native": true,
+      "items": [
+        {
+          "goal": "A",
+          "condition": "N",
+          "selected_indices": [],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002236391184851527
+        },
+        {
+          "goal": "A",
+          "condition": "Z",
+          "selected_indices": [
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023311274126172066
+        },
+        {
+          "goal": "A",
+          "condition": "R",
+          "selected_indices": [
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001832810346968472
+        },
+        {
+          "goal": "A",
+          "condition": "ZR",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0019472809508442879
+        },
+        {
+          "goal": "A",
+          "condition": "G",
+          "selected_indices": [
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024227402172982693
+        },
+        {
+          "goal": "A",
+          "condition": "ZG",
+          "selected_indices": [
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002510454272851348
+        },
+        {
+          "goal": "A",
+          "condition": "RG",
+          "selected_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002056068740785122
+        },
+        {
+          "goal": "A",
+          "condition": "ZRG",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002158733084797859
+        },
+        {
+          "goal": "A",
+          "condition": "H",
+          "selected_indices": [
+            0,
+            1
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0022797919809818268
+        },
+        {
+          "goal": "A",
+          "condition": "HZ",
+          "selected_indices": [
+            0,
+            1,
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0023727959487587214
+        },
+        {
+          "goal": "A",
+          "condition": "HR",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0018855235539376736
+        },
+        {
+          "goal": "A",
+          "condition": "HZR",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001996974926441908
+        },
+        {
+          "goal": "A",
+          "condition": "HG",
+          "selected_indices": [
+            0,
+            1,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024628592655062675
+        },
+        {
+          "goal": "A",
+          "condition": "HZG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002549193101003766
+        },
+        {
+          "goal": "A",
+          "condition": "HRG",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002103193663060665
+        },
+        {
+          "goal": "A",
+          "condition": "HZRG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0022036635782569647
+        },
+        {
+          "goal": "B",
+          "condition": "N",
+          "selected_indices": [],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024194137658923864
+        },
+        {
+          "goal": "B",
+          "condition": "Z",
+          "selected_indices": [
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002515512052923441
+        },
+        {
+          "goal": "B",
+          "condition": "R",
+          "selected_indices": [
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001540294149890542
+        },
+        {
+          "goal": "B",
+          "condition": "ZR",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001687229610979557
+        },
+        {
+          "goal": "B",
+          "condition": "G",
+          "selected_indices": [
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0025913724675774574
+        },
+        {
+          "goal": "B",
+          "condition": "ZG",
+          "selected_indices": [
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0026813147123903036
+        },
+        {
+          "goal": "B",
+          "condition": "RG",
+          "selected_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001798375160433352
+        },
+        {
+          "goal": "B",
+          "condition": "ZRG",
+          "selected_indices": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0019257182721048594
+        },
+        {
+          "goal": "B",
+          "condition": "H",
+          "selected_indices": [
+            0,
+            1
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0024876934476196766
+        },
+        {
+          "goal": "B",
+          "condition": "HZ",
+          "selected_indices": [
+            0,
+            1,
+            2
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.00258125108666718
+        },
+        {
+          "goal": "B",
+          "condition": "HR",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001645467127673328
+        },
+        {
+          "goal": "B",
+          "condition": "HZR",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0017837600316852331
+        },
+        {
+          "goal": "B",
+          "condition": "HG",
+          "selected_indices": [
+            0,
+            1,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002655233722180128
+        },
+        {
+          "goal": "B",
+          "condition": "HZG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.002743082819506526
+        },
+        {
+          "goal": "B",
+          "condition": "HRG",
+          "selected_indices": [
+            0,
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.001889234990812838
+        },
+        {
+          "goal": "B",
+          "condition": "HZRG",
+          "selected_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "mask_bitwise": true,
+          "dispatch_bitwise": true,
+          "finite32": true,
+          "roundoff_rms_real": 0.0020108323078602552
+        }
+      ]
+    }
+  ],
+  "executed_partition": {
+    "H": [
+      0,
+      1
+    ],
+    "Z": [
+      2
+    ],
+    "R": [
+      3,
+      4,
+      5
+    ],
+    "G": [
+      6
+    ]
+  },
+  "padding_always_new": true
+}

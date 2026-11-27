@@ -1,0 +1,1285 @@
+{
+ "n_states": 26,
+ "n_left": 11,
+ "n_right": 15,
+ "t0_reproduces_J": 26,
+ "summary": {
+  "T0_cand": {
+   "term": 13,
+   "ever": 17,
+   "L_term": 7,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  },
+  "T1_z": {
+   "term": 12,
+   "ever": 17,
+   "L_term": 6,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  },
+  "T2_rotgrip": {
+   "term": 13,
+   "ever": 17,
+   "L_term": 7,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  },
+  "T3_nonhoriz": {
+   "term": 12,
+   "ever": 17,
+   "L_term": 6,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  },
+  "T4_xy": {
+   "term": 12,
+   "ever": 17,
+   "L_term": 6,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  },
+  "T5_full": {
+   "term": 14,
+   "ever": 18,
+   "L_term": 7,
+   "R_term": 7,
+   "L_ever": 11,
+   "R_ever": 7
+  },
+  "T1r_z": {
+   "term": 12,
+   "ever": 17,
+   "L_term": 6,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  },
+  "T2r_rotgrip": {
+   "term": 12,
+   "ever": 16,
+   "L_term": 7,
+   "R_term": 5,
+   "L_ever": 11,
+   "R_ever": 5
+  },
+  "T3r_nonhoriz": {
+   "term": 13,
+   "ever": 17,
+   "L_term": 7,
+   "R_term": 6,
+   "L_ever": 11,
+   "R_ever": 6
+  }
+ },
+ "per_state": {
+  "T0_cand": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 1,
+   "36A": 0,
+   "37A": 0,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 0,
+   "32B": 1,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T1_z": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 0,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 0,
+   "32B": 1,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T2_rotgrip": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 1,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 0,
+   "32B": 1,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T3_nonhoriz": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 0,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 0,
+   "32B": 1,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T4_xy": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 0,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 1,
+   "32B": 0,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T5_full": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 0,
+   "38A": 1,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 1,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 1,
+   "32B": 0,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T1r_z": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 0,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 0,
+   "32B": 1,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T2r_rotgrip": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 1,
+   "36A": 0,
+   "37A": 0,
+   "38A": 0,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 0,
+   "32B": 0,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  },
+  "T3r_nonhoriz": {
+   "22A": 1,
+   "24A": 1,
+   "26A": 1,
+   "28A": 0,
+   "31A": 1,
+   "32A": 1,
+   "33A": 1,
+   "35A": 0,
+   "36A": 0,
+   "37A": 0,
+   "38A": 1,
+   "20B": 0,
+   "21B": 1,
+   "22B": 0,
+   "24B": 0,
+   "25B": 1,
+   "26B": 0,
+   "27B": 0,
+   "28B": 0,
+   "30B": 1,
+   "31B": 1,
+   "32B": 0,
+   "33B": 0,
+   "35B": 0,
+   "37B": 1,
+   "38B": 1
+  }
+ },
+ "comparisons": {
+  "T1_z>T0_cand:term": {
+   "x": "T1_z",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": -0.038461538461538464,
+   "gained": 0,
+   "lost": 1,
+   "ci": [
+    -0.12,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T1_z>T0_cand:term:A": {
+   "x": "T1_z",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": -0.09090909090909091,
+   "gained": 0,
+   "lost": 1
+  },
+  "T1_z>T0_cand:term:B": {
+   "x": "T1_z",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T1_z>T0_cand:ever": {
+   "x": "T1_z",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T1_z>T0_cand:ever:A": {
+   "x": "T1_z",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T1_z>T0_cand:ever:B": {
+   "x": "T1_z",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T2_rotgrip>T0_cand:term": {
+   "x": "T2_rotgrip",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1,
+   "ci": [
+    -0.1111111111111111,
+    0.1111111111111111
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T2_rotgrip>T0_cand:term:A": {
+   "x": "T2_rotgrip",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T2_rotgrip>T0_cand:term:B": {
+   "x": "T2_rotgrip",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T2_rotgrip>T0_cand:ever": {
+   "x": "T2_rotgrip",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T2_rotgrip>T0_cand:ever:A": {
+   "x": "T2_rotgrip",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T2_rotgrip>T0_cand:ever:B": {
+   "x": "T2_rotgrip",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T3_nonhoriz>T0_cand:term": {
+   "x": "T3_nonhoriz",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": -0.038461538461538464,
+   "gained": 0,
+   "lost": 1,
+   "ci": [
+    -0.12,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T3_nonhoriz>T0_cand:term:A": {
+   "x": "T3_nonhoriz",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": -0.09090909090909091,
+   "gained": 0,
+   "lost": 1
+  },
+  "T3_nonhoriz>T0_cand:term:B": {
+   "x": "T3_nonhoriz",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T3_nonhoriz>T0_cand:ever": {
+   "x": "T3_nonhoriz",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T3_nonhoriz>T0_cand:ever:A": {
+   "x": "T3_nonhoriz",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T3_nonhoriz>T0_cand:ever:B": {
+   "x": "T3_nonhoriz",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T4_xy>T0_cand:term": {
+   "x": "T4_xy",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": -0.038461538461538464,
+   "gained": 1,
+   "lost": 2,
+   "ci": [
+    -0.16666666666666666,
+    0.08333333333333333
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T4_xy>T0_cand:term:A": {
+   "x": "T4_xy",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": -0.09090909090909091,
+   "gained": 0,
+   "lost": 1
+  },
+  "T4_xy>T0_cand:term:B": {
+   "x": "T4_xy",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T4_xy>T0_cand:ever": {
+   "x": "T4_xy",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1,
+   "ci": [
+    -0.1111111111111111,
+    0.1111111111111111
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T4_xy>T0_cand:ever:A": {
+   "x": "T4_xy",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T4_xy>T0_cand:ever:B": {
+   "x": "T4_xy",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T5_full>T0_cand:term": {
+   "x": "T5_full",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 3,
+   "lost": 2,
+   "ci": [
+    -0.125,
+    0.2
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T0_cand:term:A": {
+   "x": "T5_full",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T5_full>T0_cand:term:B": {
+   "x": "T5_full",
+   "y": "T0_cand",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T5_full>T0_cand:ever": {
+   "x": "T5_full",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 2,
+   "lost": 1,
+   "ci": [
+    -0.08333333333333333,
+    0.16666666666666666
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T0_cand:ever:A": {
+   "x": "T5_full",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T5_full>T0_cand:ever:B": {
+   "x": "T5_full",
+   "y": "T0_cand",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T1_z>T1r_z:term": {
+   "x": "T1_z",
+   "y": "T1r_z",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T1_z>T1r_z:term:A": {
+   "x": "T1_z",
+   "y": "T1r_z",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T1_z>T1r_z:term:B": {
+   "x": "T1_z",
+   "y": "T1r_z",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T1_z>T1r_z:ever": {
+   "x": "T1_z",
+   "y": "T1r_z",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T1_z>T1r_z:ever:A": {
+   "x": "T1_z",
+   "y": "T1r_z",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T1_z>T1r_z:ever:B": {
+   "x": "T1_z",
+   "y": "T1r_z",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T2_rotgrip>T2r_rotgrip:term": {
+   "x": "T2_rotgrip",
+   "y": "T2r_rotgrip",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 2,
+   "lost": 1,
+   "ci": [
+    -0.08695652173913043,
+    0.16666666666666666
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T2_rotgrip>T2r_rotgrip:term:A": {
+   "x": "T2_rotgrip",
+   "y": "T2r_rotgrip",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T2_rotgrip>T2r_rotgrip:term:B": {
+   "x": "T2_rotgrip",
+   "y": "T2r_rotgrip",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 1,
+   "lost": 0
+  },
+  "T2_rotgrip>T2r_rotgrip:ever": {
+   "x": "T2_rotgrip",
+   "y": "T2r_rotgrip",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 1,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.12
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T2_rotgrip>T2r_rotgrip:ever:A": {
+   "x": "T2_rotgrip",
+   "y": "T2r_rotgrip",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T2_rotgrip>T2r_rotgrip:ever:B": {
+   "x": "T2_rotgrip",
+   "y": "T2r_rotgrip",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 1,
+   "lost": 0
+  },
+  "T3_nonhoriz>T3r_nonhoriz:term": {
+   "x": "T3_nonhoriz",
+   "y": "T3r_nonhoriz",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": -0.038461538461538464,
+   "gained": 1,
+   "lost": 2,
+   "ci": [
+    -0.16666666666666666,
+    0.08333333333333333
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T3_nonhoriz>T3r_nonhoriz:term:A": {
+   "x": "T3_nonhoriz",
+   "y": "T3r_nonhoriz",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": -0.09090909090909091,
+   "gained": 0,
+   "lost": 1
+  },
+  "T3_nonhoriz>T3r_nonhoriz:term:B": {
+   "x": "T3_nonhoriz",
+   "y": "T3r_nonhoriz",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T3_nonhoriz>T3r_nonhoriz:ever": {
+   "x": "T3_nonhoriz",
+   "y": "T3r_nonhoriz",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1,
+   "ci": [
+    -0.1111111111111111,
+    0.1111111111111111
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T3_nonhoriz>T3r_nonhoriz:ever:A": {
+   "x": "T3_nonhoriz",
+   "y": "T3r_nonhoriz",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T3_nonhoriz>T3r_nonhoriz:ever:B": {
+   "x": "T3_nonhoriz",
+   "y": "T3r_nonhoriz",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T5_full>T3_nonhoriz:term": {
+   "x": "T5_full",
+   "y": "T3_nonhoriz",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.07692307692307693,
+   "gained": 3,
+   "lost": 1,
+   "ci": [
+    -0.07407407407407407,
+    0.21739130434782608
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T3_nonhoriz:term:A": {
+   "x": "T5_full",
+   "y": "T3_nonhoriz",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.09090909090909091,
+   "gained": 1,
+   "lost": 0
+  },
+  "T5_full>T3_nonhoriz:term:B": {
+   "x": "T5_full",
+   "y": "T3_nonhoriz",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T5_full>T3_nonhoriz:ever": {
+   "x": "T5_full",
+   "y": "T3_nonhoriz",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 2,
+   "lost": 1,
+   "ci": [
+    -0.08333333333333333,
+    0.16666666666666666
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T3_nonhoriz:ever:A": {
+   "x": "T5_full",
+   "y": "T3_nonhoriz",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T5_full>T3_nonhoriz:ever:B": {
+   "x": "T5_full",
+   "y": "T3_nonhoriz",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T5_full>T4_xy:term": {
+   "x": "T5_full",
+   "y": "T4_xy",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.07692307692307693,
+   "gained": 2,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.18518518518518517
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T4_xy:term:A": {
+   "x": "T5_full",
+   "y": "T4_xy",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.09090909090909091,
+   "gained": 1,
+   "lost": 0
+  },
+  "T5_full>T4_xy:term:B": {
+   "x": "T5_full",
+   "y": "T4_xy",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 1,
+   "lost": 0
+  },
+  "T5_full>T4_xy:ever": {
+   "x": "T5_full",
+   "y": "T4_xy",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 1,
+   "lost": 0,
+   "ci": [
+    0.0,
+    0.12
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T4_xy:ever:A": {
+   "x": "T5_full",
+   "y": "T4_xy",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T5_full>T4_xy:ever:B": {
+   "x": "T5_full",
+   "y": "T4_xy",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 1,
+   "lost": 0
+  },
+  "T5_full>T1_z:term": {
+   "x": "T5_full",
+   "y": "T1_z",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.07692307692307693,
+   "gained": 3,
+   "lost": 1,
+   "ci": [
+    -0.07407407407407407,
+    0.21739130434782608
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T1_z:term:A": {
+   "x": "T5_full",
+   "y": "T1_z",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.09090909090909091,
+   "gained": 1,
+   "lost": 0
+  },
+  "T5_full>T1_z:term:B": {
+   "x": "T5_full",
+   "y": "T1_z",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T5_full>T1_z:ever": {
+   "x": "T5_full",
+   "y": "T1_z",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 2,
+   "lost": 1,
+   "ci": [
+    -0.08333333333333333,
+    0.16666666666666666
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T1_z:ever:A": {
+   "x": "T5_full",
+   "y": "T1_z",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T5_full>T1_z:ever:B": {
+   "x": "T5_full",
+   "y": "T1_z",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T5_full>T2_rotgrip:term": {
+   "x": "T5_full",
+   "y": "T2_rotgrip",
+   "metric": "term",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 3,
+   "lost": 2,
+   "ci": [
+    -0.125,
+    0.2
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T2_rotgrip:term:A": {
+   "x": "T5_full",
+   "y": "T2_rotgrip",
+   "metric": "term",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 1,
+   "lost": 1
+  },
+  "T5_full>T2_rotgrip:term:B": {
+   "x": "T5_full",
+   "y": "T2_rotgrip",
+   "metric": "term",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  },
+  "T5_full>T2_rotgrip:ever": {
+   "x": "T5_full",
+   "y": "T2_rotgrip",
+   "metric": "ever",
+   "side": "pooled",
+   "n": 26,
+   "point": 0.038461538461538464,
+   "gained": 2,
+   "lost": 1,
+   "ci": [
+    -0.08333333333333333,
+    0.16666666666666666
+   ],
+   "clearly_better": false,
+   "close": true
+  },
+  "T5_full>T2_rotgrip:ever:A": {
+   "x": "T5_full",
+   "y": "T2_rotgrip",
+   "metric": "ever",
+   "side": "A",
+   "n": 11,
+   "point": 0.0,
+   "gained": 0,
+   "lost": 0
+  },
+  "T5_full>T2_rotgrip:ever:B": {
+   "x": "T5_full",
+   "y": "T2_rotgrip",
+   "metric": "ever",
+   "side": "B",
+   "n": 15,
+   "point": 0.06666666666666667,
+   "gained": 2,
+   "lost": 1
+  }
+ },
+ "verdicts": {
+  "channel_z_carries_content": [],
+  "channel_rotgrip_carries_content": [],
+  "channel_nonhoriz_carries_content": [],
+  "xy_carries_content": [],
+  "not_channel_separable": false
+ },
+ "diagnostics": {
+  "T0_cand": {
+   "old_cos_full": 0.7138005422694342,
+   "norm_over_old": 1.0000000143492664,
+   "cap_hits": 0,
+   "clip_mean": 0.48832126947468313,
+   "min_z_rel_median": 0.06866634144398931
+  },
+  "T1_z": {
+   "delta_norm_over_old": 0.17585420567413856,
+   "old_cos_full": 0.7275386723024505,
+   "norm_over_old": 1.0032484795366015,
+   "cap_hits": 0,
+   "clip_mean": 0.4764098411839445,
+   "min_z_rel_median": 0.0835063541466009
+  },
+  "T2_rotgrip": {
+   "delta_norm_over_old": 0.6932965981549231,
+   "old_cos_full": 0.9175513273683088,
+   "norm_over_old": 0.9253661330257144,
+   "cap_hits": 0,
+   "clip_mean": 0.3882897948273914,
+   "min_z_rel_median": 0.0688383351702877
+  },
+  "T3_nonhoriz": {
+   "delta_norm_over_old": 0.7421120547015091,
+   "old_cos_full": 0.9358659957136427,
+   "norm_over_old": 0.9266674063823841,
+   "cap_hits": 0,
+   "clip_mean": 0.3885232852602533,
+   "min_z_rel_median": 0.08233314493516497
+  },
+  "T4_xy": {
+   "delta_norm_over_old": 0.3760540321469307,
+   "old_cos_full": 0.782042610006673,
+   "norm_over_old": 1.064863219084563,
+   "cap_hits": 0,
+   "clip_mean": 0.4655525309220096,
+   "min_z_rel_median": 0.08066933879452476
+  },
+  "T5_full": {
+   "old_cos_full": 1.0000000108932627,
+   "norm_over_old": 1.0,
+   "cap_hits": 0,
+   "clip_mean": 0.3727242227364762,
+   "min_z_rel_median": 0.0809156422537688
+  },
+  "T1r_z": {
+   "rand_cos_to_delta": 0.00017838466322116022,
+   "rand_norm_over_delta": 1.000000007876328,
+   "delta_norm_over_old": 0.16287754176762598,
+   "old_cos_full": 0.6646643131971359,
+   "norm_over_old": 1.014414570587022,
+   "cap_hits": 0,
+   "clip_mean": 0.48050130125366547,
+   "min_z_rel_median": 0.0848643666761657
+  },
+  "T2r_rotgrip": {
+   "rand_cos_to_delta": 0.0007611321557541722,
+   "rand_norm_over_delta": 1.0000000061733383,
+   "delta_norm_over_old": 0.7156956489597048,
+   "old_cos_full": 0.5696077101996967,
+   "norm_over_old": 1.2314849974853652,
+   "cap_hits": 0,
+   "clip_mean": 0.44822164473084203,
+   "min_z_rel_median": 0.08253643071302119
+  },
+  "T3r_nonhoriz": {
+   "rand_cos_to_delta": 0.001161572141931034,
+   "rand_norm_over_delta": 1.0000000057475908,
+   "delta_norm_over_old": 0.7080789137503196,
+   "old_cos_full": 0.5708509563335351,
+   "norm_over_old": 1.2270280083705638,
+   "cap_hits": 0,
+   "clip_mean": 0.46886905471843776,
+   "min_z_rel_median": 0.08222874766501609
+  }
+ }
+}

@@ -1,0 +1,36 @@
+{
+  "init": 35,
+  "n_episodes": 24,
+  "n_audit_reference_episodes": 0,
+  "model_sha256": {
+    "R": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+    "F": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515"
+  },
+  "processor_check": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F",
+        "R"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F",
+        "R"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    }
+  },
+  "script_sha256": "0b61f7b5b6021ef4869a096549403e3b2dca994c94e5c1e3bd89c43c3efc1d55",
+  "protocol_sha256": "8176bc0613bd1ace9e170861fa68991fe83564d9a34a4e872d0562b799dff64c",
+  "k16_script_sha256": "e0bdcc875cb1981a5625ee916c3a19295150cad02d3d2536ef637e255d4364cd",
+  "k15_script_sha256": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6",
+  "source_hashes": {
+    "code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "snapshots/snapshots.json": "0ee8b429c5098aeb30ea2404968c1db068b894fe57407a47c5c92ac78329db5f"
+  }
+}

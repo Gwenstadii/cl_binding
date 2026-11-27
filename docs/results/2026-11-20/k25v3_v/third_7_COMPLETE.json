@@ -1,0 +1,1 @@
+{"suite": "third", "lane": 7, "lanes": 10, "gate": {"init": 607, "identity_and_v3_endpoints_bitwise_for_both_prompts": true, "rotated_xy_same_norm_per_slot_and_perpendicular": true, "xy_and_remaining_reconstruct": true, "fp64_pair_mean_unchanged": true, "cast_pair_mean_delta_rms": 0.0007009234395809472}}

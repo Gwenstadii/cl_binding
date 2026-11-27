@@ -1,0 +1,11 @@
+{
+  "type": "exploratory closed-loop extension after observing the step 100 baselines and fixed-input ranking",
+  "reason": "Step 100 Right failures were mainly no-region events. Test whether attention changes also contribute to the more explicit move-to-Front substitution at step 1000.",
+  "window": [30, 1000],
+  "cases_per_condition_and_instruction": 20,
+  "new_conditions": ["undo:attention", "random_replace:attention"],
+  "reference_early": "K18-C step 30 unmodified native",
+  "reference_late": "K18-A step 1000 unmodified native, same physical states and noise protocol",
+  "held_constant": "same actual instructions, common-grasp prefix for Left and Right, Front from reset, 400 total steps",
+  "independence": "same training lineage and same 20 development scenes"
+}

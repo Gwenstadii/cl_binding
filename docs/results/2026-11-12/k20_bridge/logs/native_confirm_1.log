@@ -1,0 +1,44 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+native confirm d_train 201 A ['left']
+native confirm d_train 201 B ['right']
+native confirm d_train 201 N ['front']
+native confirm d_train 203 A ['left']
+native confirm d_train 203 B []
+native confirm d_train 203 N ['front']
+native confirm d_train 205 A ['left']
+native confirm d_train 205 B []
+native confirm d_train 205 N []
+native confirm d_train 207 A ['left']
+native confirm d_train 207 B ['front']
+native confirm d_train 207 N ['front']
+native confirm d_train 209 A []
+native confirm d_train 209 B ['front']
+native confirm d_train 209 N ['front']
+native confirm d_train 211 A ['left']
+native confirm d_train 211 B ['back']
+native confirm d_train 211 N ['front']
+native confirm d_train 213 A ['left']
+native confirm d_train 213 B ['right']
+native confirm d_train 213 N ['front']
+native confirm d_train 215 A ['left']
+native confirm d_train 215 B ['front']
+native confirm d_train 215 N ['front']
+native confirm d_train 217 A ['left']
+native confirm d_train 217 B ['right']
+native confirm d_train 217 N ['front']
+native confirm d_train 219 A ['left']
+native confirm d_train 219 B []
+native confirm d_train 219 N []

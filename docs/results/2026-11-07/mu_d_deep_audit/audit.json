@@ -1,0 +1,170 @@
+{
+  "scope": "one fixed input, R1/Front-12000, init21 adapted Right prefix at60, first flow time; no new rollout outcome",
+  "models": {
+    "R": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+    "F": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515"
+  },
+  "boundary_signature_match": true,
+  "four_native_outputs_unchanged_by_audit_hooks": true,
+  "alias_checks": [
+    {
+      "model": "R",
+      "goal": "A",
+      "site": "CA-7",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 3.8804855346679688
+    },
+    {
+      "model": "R",
+      "goal": "A",
+      "site": "MLP-9",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 5.971535682678223
+    },
+    {
+      "model": "R",
+      "goal": "B",
+      "site": "CA-7",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 4.029007434844971
+    },
+    {
+      "model": "R",
+      "goal": "B",
+      "site": "MLP-9",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 6.292781352996826
+    },
+    {
+      "model": "F",
+      "goal": "A",
+      "site": "CA-7",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 3.8346104621887207
+    },
+    {
+      "model": "F",
+      "goal": "A",
+      "site": "MLP-9",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 5.50285005569458
+    },
+    {
+      "model": "F",
+      "goal": "B",
+      "site": "CA-7",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 4.018688201904297
+    },
+    {
+      "model": "F",
+      "goal": "B",
+      "site": "MLP-9",
+      "alias_equals_post_residual": true,
+      "alias_equals_pure_module_output": false,
+      "shape": [
+        1,
+        50,
+        720
+      ],
+      "relative_change_after_hook": 5.2688140869140625
+    }
+  ],
+  "correction_comparison": {
+    "CA-7": {
+      "legacy_norm_over_fixed_norm": 1.9296897649765015,
+      "legacy_fixed_cosine": 0.4517439007759094,
+      "relative_difference": 1.7266209125518799
+    },
+    "MLP-9": {
+      "legacy_norm_over_fixed_norm": 2.9037718772888184,
+      "legacy_fixed_cosine": 0.4880710542201996,
+      "relative_difference": 2.568770170211792
+    }
+  },
+  "joint_projection": [
+    {
+      "implementation": "legacy",
+      "old_direction_projection": 0.578125,
+      "output_mean_roundoff_rms": 0.002124777529388666
+    },
+    {
+      "implementation": "capture_fixed",
+      "old_direction_projection": 0.51171875,
+      "output_mean_roundoff_rms": 0.000749515718780458
+    }
+  ],
+  "final_norm_single_input_observations": {
+    "R": {
+      "before": {
+        "mean_norm": 459.56695556640625,
+        "difference_norm": 48.44404602050781,
+        "difference_mean_cosine": -0.17894934117794037
+      },
+      "after": {
+        "mean_norm": 84.39599609375,
+        "difference_norm": 8.785445213317871,
+        "difference_mean_cosine": 0.00021336806821636856
+      }
+    },
+    "F": {
+      "before": {
+        "mean_norm": 532.1331176757812,
+        "difference_norm": 32.7181396484375,
+        "difference_mean_cosine": -0.12957768142223358
+      },
+      "after": {
+        "mean_norm": 84.68537902832031,
+        "difference_norm": 5.261582374572754,
+        "difference_mean_cosine": 0.00013533564924728125
+      }
+    }
+  },
+  "source_sha256": {
+    "/home/lzx/cl_binding/.server/k13_r1_front_20_20261107_01/k11_reference.py": "7add12361efdceb577744fbe68b3fd5696c59e33884084d4ce1ce5e80865f308",
+    "/home/lzx/cl_binding/.server/mu_d_deep_audit_20261107_01/k11_reference_capture_fixed.py": "45434a24134fc5cfa0304a189fe46576a33fb8518c7cc7f4ad9a30e774f17a6a",
+    "/home/lzx/cl_binding/.server/mu_d_deep_audit_20261107_01/audit_capture.py": "85129c7732e59688b81ce4ff3c05474cdd9d88a1e80a6e954efd7a8a0abea6d0"
+  }
+}

@@ -1,0 +1,46 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+ATTRIBUTION marginal 30 0 {'channel': 0.005007069557905197, 'phase': 0.004283438436686993} {'loss_delta': 0.0, 'preclip_norm_delta': 0.0, 'ids_match': True, 'lr_match': True}
+ATTRIBUTION marginal 30 13 {'channel': 0.008253284730017185, 'phase': 0.005362296011298895} None
+ATTRIBUTION marginal 30 41 {'channel': 0.005839550402015448, 'phase': 0.005917712580412626} None
+ATTRIBUTION marginal 30 79 {'channel': 0.006542377173900604, 'phase': 0.0027773636393249035} None
+ATTRIBUTION marginal 30 127 {'channel': 0.007528248243033886, 'phase': 0.004269435536116362} None
+ATTRIBUTION marginal 30 193 {'channel': 0.005563993472605944, 'phase': 0.004059936851263046} None
+ATTRIBUTION marginal 30 271 {'channel': 0.0041125062853097916, 'phase': 0.0029279713053256273} None
+ATTRIBUTION marginal 30 389 {'channel': 0.005319940857589245, 'phase': 0.003883800469338894} None
+ATTRIBUTION marginal 100 0 {'channel': 0.004410907626152039, 'phase': 0.005253200884908438} {'loss_delta': 0.0, 'preclip_norm_delta': 0.0, 'ids_match': True, 'lr_match': True}
+ATTRIBUTION marginal 100 13 {'channel': 0.004509833175688982, 'phase': 0.0038634268566966057} None
+ATTRIBUTION marginal 100 41 {'channel': 0.005843494087457657, 'phase': 0.002796746091917157} None
+ATTRIBUTION marginal 100 79 {'channel': 0.006604952272027731, 'phase': 0.005283063743263483} None
+ATTRIBUTION marginal 100 127 {'channel': 0.005042376462370157, 'phase': 0.0024583558551967144} None
+ATTRIBUTION marginal 100 193 {'channel': 0.0032284085173159838, 'phase': 0.002736496739089489} None
+ATTRIBUTION marginal 100 271 {'channel': 0.003225160064175725, 'phase': 0.0027846302837133408} None
+ATTRIBUTION marginal 100 389 {'channel': 0.004162495955824852, 'phase': 0.0033838774543255568} None
+ATTRIBUTION marginal 300 0 {'channel': 0.003268039785325527, 'phase': 0.002552015008404851} {'loss_delta': 0.0, 'preclip_norm_delta': 0.0, 'ids_match': True, 'lr_match': True}
+ATTRIBUTION marginal 300 13 {'channel': 0.005812846589833498, 'phase': 0.002832958707585931} None
+ATTRIBUTION marginal 300 41 {'channel': 0.003334017237648368, 'phase': 0.0029337271116673946} None
+ATTRIBUTION marginal 300 79 {'channel': 0.004103131592273712, 'phase': 0.004305822309106588} None
+ATTRIBUTION marginal 300 127 {'channel': 0.0036299650091677904, 'phase': 0.0028624611441046} None
+ATTRIBUTION marginal 300 193 {'channel': 0.005254583898931742, 'phase': 0.00265424232929945} None
+ATTRIBUTION marginal 300 271 {'channel': 0.00693518528714776, 'phase': 0.0025151511654257774} None
+ATTRIBUTION marginal 300 389 {'channel': 0.004677480086684227, 'phase': 0.0034530693665146828} None
+ATTRIBUTION marginal 3000 0 {'channel': 0.004332113079726696, 'phase': 0.004889380652457476} {'loss_delta': 0.0, 'preclip_norm_delta': 0.0, 'ids_match': True, 'lr_match': True}
+ATTRIBUTION marginal 3000 13 {'channel': 0.00853513553738594, 'phase': 0.003258424811065197} None
+ATTRIBUTION marginal 3000 41 {'channel': 0.0065103331580758095, 'phase': 0.004379692487418652} None
+ATTRIBUTION marginal 3000 79 {'channel': 0.004395168274641037, 'phase': 0.004346852656453848} None
+ATTRIBUTION marginal 3000 127 {'channel': 0.008370517753064632, 'phase': 0.003273025155067444} None
+ATTRIBUTION marginal 3000 193 {'channel': 0.0064629362896084785, 'phase': 0.0031778335105627775} None
+ATTRIBUTION marginal 3000 271 {'channel': 0.005483356770128012, 'phase': 0.003951642196625471} None
+ATTRIBUTION marginal 3000 389 {'channel': 0.006562716327607632, 'phase': 0.004693685565143824} None

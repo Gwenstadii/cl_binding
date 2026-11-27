@@ -1,0 +1,18 @@
+{
+  "reference_k16_summary.json": "5769daf761f1b3459b67e622ec6ad4843c4c47e1d64b4995f289d372e0d9b636",
+  "reference_episodes.jsonl": "6029048a403cdbeb306762cae92fd356b6ac59b186ef8619e13c6d63eacb916b",
+  "protocol.json": "8176bc0613bd1ace9e170861fa68991fe83564d9a34a4e872d0562b799dff64c",
+  "k17.py": "0b61f7b5b6021ef4869a096549403e3b2dca994c94e5c1e3bd89c43c3efc1d55",
+  "snapshots.json": "0ee8b429c5098aeb30ea2404968c1db068b894fe57407a47c5c92ac78329db5f",
+  "reference_k16.py": "e0bdcc875cb1981a5625ee916c3a19295150cad02d3d2536ef637e255d4364cd",
+  "reference_k15.py": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6",
+  "reference_traces.jsonl": "6dda7dc848877add14102873c66c85d7f692324e03a436bffce078874040749c",
+  "prepare_references.py": "65d3b2e34523a206a8d20f9acb090414e42be68c4d88c50d822269627779b870",
+  "live_action_metadata.json": "a856144aa89589c52002e65e5d7ecf4c665fc865fed89a8f418e75615d19ec20",
+  "geometry.json": "d5648a44ed036be12a88e6ea736bb681ead20856ca59fa9b51b987f6592ce49c",
+  "source_code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+  "source_code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+  "dependencies/k1_geometry.py": "32f59173cf9388141a45f68d5b9cb219eb3d1a116794aa4c51984a481cebe6ce",
+  "dependencies/k1_runtime.py": "e7dab14add08c9ff2e375db576a9b9557d2b975253a622ba2bfc842a189e2c79",
+  "dependencies/k1_main.py": "26d5cc2867f320e0bc5bae7f41a96941da27a6a319bede642c232a9d14ea5453"
+}

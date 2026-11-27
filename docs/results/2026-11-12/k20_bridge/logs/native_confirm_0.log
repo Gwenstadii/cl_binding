@@ -1,0 +1,44 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+native confirm d_train 200 A ['left']
+native confirm d_train 200 B []
+native confirm d_train 200 N []
+native confirm d_train 202 A []
+native confirm d_train 202 B []
+native confirm d_train 202 N ['front']
+native confirm d_train 204 A ['left']
+native confirm d_train 204 B []
+native confirm d_train 204 N ['front']
+native confirm d_train 206 A ['left']
+native confirm d_train 206 B ['front']
+native confirm d_train 206 N ['front']
+native confirm d_train 208 A ['left']
+native confirm d_train 208 B []
+native confirm d_train 208 N []
+native confirm d_train 210 A ['left']
+native confirm d_train 210 B []
+native confirm d_train 210 N ['front']
+native confirm d_train 212 A ['left']
+native confirm d_train 212 B []
+native confirm d_train 212 N ['front']
+native confirm d_train 214 A ['left']
+native confirm d_train 214 B ['front']
+native confirm d_train 214 N ['front']
+native confirm d_train 216 A ['left']
+native confirm d_train 216 B ['front']
+native confirm d_train 216 N ['front']
+native confirm d_train 218 A []
+native confirm d_train 218 B []
+native confirm d_train 218 N ['front']

@@ -1,0 +1,49 @@
+{
+  "coef": [
+    [
+      0.010859565797434051,
+      0.0010619127378697054
+    ],
+    [
+      0.000867182106274481,
+      0.012357234014741232
+    ]
+  ],
+  "fit_rows": 80,
+  "heldout_rows": 32,
+  "heldout_xy_rmse_m": 0.003915736350846915,
+  "scores": {
+    "proxy_progress": {
+      "correct": 22,
+      "front": 1,
+      "none": 9,
+      "auc_correct_vs_front": 1.0,
+      "auc_correct_vs_none": 0.803030303030303
+    },
+    "proxy_margin": {
+      "correct": 22,
+      "front": 1,
+      "none": 9,
+      "auc_correct_vs_front": 1.0,
+      "auc_correct_vs_none": 0.8535353535353535
+    },
+    "actual_progress": {
+      "correct": 22,
+      "front": 1,
+      "none": 9,
+      "auc_correct_vs_front": 1.0,
+      "auc_correct_vs_none": 0.7828282828282829
+    },
+    "actual_margin": {
+      "correct": 22,
+      "front": 1,
+      "none": 9,
+      "auc_correct_vs_front": 1.0,
+      "auc_correct_vs_none": 0.8434343434343434
+    }
+  },
+  "eligible_by_prompt": {
+    "A": 20,
+    "B": 20
+  }
+}

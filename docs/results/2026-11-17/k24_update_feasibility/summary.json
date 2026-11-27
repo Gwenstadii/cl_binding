@@ -1,0 +1,310 @@
+{
+  "anchor_000030": {
+    "batches": 8,
+    "active_projection": 0,
+    "arms": {
+      "actual": {
+        "accepted_arms": {
+          "actual": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 0,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 4,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.22842216854238964,
+          "mu_y": 0.12339094760704938,
+          "d_x": 0.08053300294837602,
+          "d_y": 0.261500236926319,
+          "left_progress": 0.3576320936057679,
+          "left_margin": 0.18156947152429362,
+          "right_progress": 0.2961737850834349,
+          "right_margin": 0.1390106109226963
+        },
+        "median_measured_right_margin_delta_mm": -0.2536848187446594,
+        "median_front_loss_change": -0.0339544415473938
+      },
+      "projected": {
+        "accepted_arms": {
+          "projected": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 0,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 4,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.22842216854238964,
+          "mu_y": 0.12339094760704938,
+          "d_x": 0.08053300294837602,
+          "d_y": 0.261500236926319,
+          "left_progress": 0.3576320936057679,
+          "left_margin": 0.18156947152429362,
+          "right_progress": 0.2961737850834349,
+          "right_margin": 0.1390106109226963
+        },
+        "median_measured_right_margin_delta_mm": -0.2536848187446594,
+        "median_front_loss_change": -0.0339544415473938
+      },
+      "scaled": {
+        "accepted_arms": {
+          "scaled": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 0,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 4,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.22842216854238964,
+          "mu_y": 0.12339094760704938,
+          "d_x": 0.08053300294837602,
+          "d_y": 0.261500236926319,
+          "left_progress": 0.3576320936057679,
+          "left_margin": 0.18156947152429362,
+          "right_progress": 0.2961737850834349,
+          "right_margin": 0.1390106109226963
+        },
+        "median_measured_right_margin_delta_mm": -0.2536848187446594,
+        "median_front_loss_change": -0.0339544415473938
+      }
+    }
+  },
+  "anchor_000100": {
+    "batches": 8,
+    "active_projection": 8,
+    "arms": {
+      "actual": {
+        "accepted_arms": {
+          "actual": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 7,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 16,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.5006120039752204,
+          "mu_y": 0.5590347053612277,
+          "d_x": 0.10831249348560353,
+          "d_y": 0.18810542483530904,
+          "left_progress": 0.7519676739017692,
+          "left_margin": 0.2640043366379056,
+          "right_progress": 0.3350376211415096,
+          "right_margin": 0.3494321752934108
+        },
+        "median_measured_right_margin_delta_mm": -0.3190040588378906,
+        "median_front_loss_change": -0.024094969034194946
+      },
+      "projected": {
+        "accepted_arms": {
+          "projected": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 7,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 16,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.4935907144840712,
+          "mu_y": 0.5540475400872916,
+          "d_x": 0.1078308154755329,
+          "d_y": 0.18731868748507927,
+          "left_progress": 0.7457249071194383,
+          "left_margin": 0.2609593887446711,
+          "right_progress": 0.3331325507550294,
+          "right_margin": 0.3455615417730466
+        },
+        "median_measured_right_margin_delta_mm": -0.3047436475753784,
+        "median_front_loss_change": -0.024113178253173828
+      },
+      "scaled": {
+        "accepted_arms": {
+          "scaled": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 7,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 16,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.5021404206786428,
+          "mu_y": 0.5554872978260997,
+          "d_x": 0.10686987095217167,
+          "d_y": 0.18539736368457702,
+          "left_progress": 0.7541326884468921,
+          "left_margin": 0.2616971402555161,
+          "right_progress": 0.33842949826142404,
+          "right_margin": 0.34707895908544134
+        },
+        "median_measured_right_margin_delta_mm": -0.3155171871185303,
+        "median_front_loss_change": -0.02415315806865692
+      }
+    }
+  },
+  "verified_000100": {
+    "batches": 8,
+    "active_projection": 8,
+    "arms": {
+      "actual": {
+        "accepted_arms": {
+          "actual": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 7,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 16,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.5006120039752204,
+          "mu_y": 0.5590347053612277,
+          "d_x": 0.10831249348560353,
+          "d_y": 0.18810542483530904,
+          "left_progress": 0.7519676739017692,
+          "left_margin": 0.2640043366379056,
+          "right_progress": 0.3350376211415096,
+          "right_margin": 0.3494321752934108
+        },
+        "median_measured_right_margin_delta_mm": -0.3190040588378906,
+        "median_front_loss_change": -0.024094969034194946
+      },
+      "projected": {
+        "accepted_arms": {
+          "projected": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 7,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 16,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.4935907144840712,
+          "mu_y": 0.5540475400872916,
+          "d_x": 0.1078308154755329,
+          "d_y": 0.18731868748507927,
+          "left_progress": 0.7457249071194383,
+          "left_margin": 0.2609593887446711,
+          "right_progress": 0.3331325507550294,
+          "right_margin": 0.3455615417730466
+        },
+        "median_measured_right_margin_delta_mm": -0.3047436475753784,
+        "median_front_loss_change": -0.024113178253173828
+      },
+      "scaled": {
+        "accepted_arms": {
+          "scaled": 8
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 7,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 16,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.5021404206786428,
+          "mu_y": 0.5554872978260997,
+          "d_x": 0.10686987095217167,
+          "d_y": 0.18539736368457702,
+          "left_progress": 0.7541326884468921,
+          "left_margin": 0.2616971402555161,
+          "right_progress": 0.33842949826142404,
+          "right_margin": 0.34707895908544134
+        },
+        "median_measured_right_margin_delta_mm": -0.3155171871185303,
+        "median_front_loss_change": -0.02415315806865692
+      },
+      "project_with_check": {
+        "accepted_arms": {
+          "corrected_0.5": 7,
+          "projected": 1
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 0,
+          "predicted": 2
+        },
+        "held_breaches": {
+          "measured": 2,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.15717991791082872,
+          "mu_y": 0.17576296791806575,
+          "d_x": 0.07980914958238827,
+          "d_y": 0.20644845714438512,
+          "left_progress": 0.23216687246000825,
+          "left_margin": 0.10115775659376898,
+          "right_progress": 0.2792439096689729,
+          "right_margin": 0.21171830470242034
+        },
+        "median_measured_right_margin_delta_mm": 0.567309558391571,
+        "median_front_loss_change": -0.012627765536308289
+      },
+      "scale_with_check": {
+        "accepted_arms": {
+          "original_0.5": 1,
+          "original_0.25": 4,
+          "original_0.125": 2,
+          "actual": 1
+        },
+        "nonzero_steps": 8,
+        "controlled_breaches": {
+          "measured": 0,
+          "predicted": 0
+        },
+        "held_breaches": {
+          "measured": 6,
+          "predicted": 0
+        },
+        "mae_mm": {
+          "mu_x": 0.115724192066106,
+          "mu_y": 0.17117527963013876,
+          "d_x": 0.06901571341984732,
+          "d_y": 0.10889532970696318,
+          "left_progress": 0.25472947740468044,
+          "left_margin": 0.11517763500989986,
+          "right_progress": 0.12106167271970965,
+          "right_margin": 0.06889248421752352
+        },
+        "median_measured_right_margin_delta_mm": -0.036112964153289795,
+        "median_front_loss_change": -0.0025434494018554688
+      }
+    }
+  }
+}

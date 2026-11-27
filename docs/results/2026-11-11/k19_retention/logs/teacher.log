@@ -1,0 +1,10 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+TEACHER 30
+TEACHER 60
+TEACHER 90
+TEACHER 120
+TEACHER 150
+TEACHER 180
+TEACHER 210
+TEACHER 240

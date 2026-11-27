@@ -1,0 +1,29 @@
+{
+  "experiment": "K15 missing cell: new common background plus fixed amplification of the adapted model's own instruction response",
+  "date": "2026-11-09",
+  "locked_before_new_rollouts": true,
+  "source_run": "/home/lzx/cl_binding/.server/k14_snapshot_batch1_20261108_01",
+  "inits": [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39],
+  "alpha": 2.959,
+  "conditions": {
+    "new_gain": "mu_new + alpha*(v_new(actual q)-mu_new); no old-model output used to produce the velocity",
+    "old_gain": "mu_old + alpha*(v_new(actual q)-mu_new); exact replication of K14 S5 canonical corrected group",
+    "native": "adapted native actual-q policy; exact replication of K14 A_nat"
+  },
+  "queries": "means from canonical Left/Right, actual q separately forwarded, same current observation/draft/time; never choose +/- by target",
+  "action_dimensions": "formula applied to all 32 denoising dimensions, matching K14 S5; only first7 physical dimensions executed",
+  "snapshots": "same 20 K14 saved Front-prefix stable-grasp common snapshots, exact full boundary signature",
+  "timing": "60 control steps from saved boundary; after window adapted native same q to absolute400",
+  "noise_and_refresh": "unchanged K14 snapshot seed, global replan index, execute10 then refresh observation",
+  "episodes": {"new_condition":40,"replication_controls":80,"total":120},
+  "readouts": ["Left/Right first horizontal region separately", "paired correct split", "ever native requested-goal success", "terminal requested-goal success", "new-front substitution and none separately", "clips and gain diagnostics"],
+  "analysis": "paired comparisons by physical snapshot, 10000 bootstrap resamples over20 snapshots, 95% interval; retain per-instruction counts",
+  "comparison_rules": "report new_gain-native and new_gain-old_gain; use delta0.15 and CI lower>0 as K14 clearly-better descriptive rule; point difference<=0.10 is descriptive closeness only, NOT equivalence",
+  "interpretation_limits": "development states; alpha fixed, no tuning if failed; cannot generalize to every gain, other tasks or semantic understanding",
+  "baseline_audit": "native and old_gain must reproduce archived K14 per-episode outcomes AND complete400-step traces; investigate mismatch before attributing new results",
+  "source_sha256": {
+    "code/k14.py":"89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "code/k14s5.py":"de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "snapshots/snapshots.json":"0ee8b429c5098aeb30ea2404968c1db068b894fe57407a47c5c92ac78329db5f"
+  }
+}

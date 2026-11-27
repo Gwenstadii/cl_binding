@@ -1,0 +1,53 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 282, in <module>
+    run(p.parse_args().anchor)
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 228, in run
+    out = measure(i) if i in applied else fixed(policy, bank[i], refs[i])
+          ^^^^^^^^^^
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 178, in measure
+    return torch.cat([fixed(policy, bank[i], refs[i]),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 63, in fixed
+    v = field(policy, pref, draft, t)[:, :10, :7].float()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/.server/k24_update_attribution_20261117_01/attribute_updates.py", line 37, in field
+    return policy.model.denoise_step(pad, copy.deepcopy(cache), draft.clone(), t)
+                                          ^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 196, in _deepcopy_list
+    append(deepcopy(a, memo))
+           ^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 162, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 259, in _reconstruct
+    state = deepcopy(state, memo)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 136, in deepcopy
+    y = copier(x, memo)
+        ^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 221, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/.local/share/uv/python/cpython-3.12.15-linux-x86_64-gnu/lib/python3.12/copy.py", line 143, in deepcopy
+    y = copier(memo)
+        ^^^^^^^^^^^^
+  File "/home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/torch/_tensor.py", line 145, in __deepcopy__
+    raise RuntimeError(
+RuntimeError: Only Tensors created explicitly by the user (graph leaves) support the deepcopy protocol at the moment.  If you were attempting to deepcopy a module, this may be because of a torch.nn.utils.weight_norm usage, see https://github.com/pytorch/pytorch/pull/103001

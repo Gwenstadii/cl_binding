@@ -1,0 +1,99 @@
+{
+  "rank": [
+    {
+      "arm": "replay_full",
+      "score": [
+        20,
+        18,
+        12
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.8,
+      "old_terminal": 28
+    },
+    {
+      "arm": "d",
+      "score": [
+        18,
+        14,
+        12
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.7368421052631579,
+      "old_terminal": 19
+    },
+    {
+      "arm": "replay_soft",
+      "score": [
+        20,
+        18,
+        11
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.7333333333333333,
+      "old_terminal": 25
+    },
+    {
+      "arm": "replay",
+      "score": [
+        20,
+        17,
+        10
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.6666666666666666,
+      "old_terminal": 23
+    },
+    {
+      "arm": "both_replay",
+      "score": [
+        20,
+        19,
+        8
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.5333333333333333,
+      "old_terminal": 26
+    },
+    {
+      "arm": "freeze_kv",
+      "score": [
+        18,
+        6,
+        12
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.3157894736842105,
+      "old_terminal": 13
+    },
+    {
+      "arm": "mu",
+      "score": [
+        20,
+        11,
+        4
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.26666666666666666,
+      "old_terminal": 17
+    },
+    {
+      "arm": "both",
+      "score": [
+        20,
+        18,
+        3
+      ],
+      "eligible": false,
+      "min_reference_ratio": 0.2,
+      "old_terminal": 26
+    }
+  ],
+  "candidate": "replay_full",
+  "passes_gate": false,
+  "reference": [
+    20,
+    19,
+    15
+  ]
+}

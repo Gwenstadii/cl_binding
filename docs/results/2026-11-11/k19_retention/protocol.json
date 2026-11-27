@@ -1,0 +1,15 @@
+{
+  "lineage": "R1-24000 Left+Right -> Front",
+  "screen_seed": 20261021,
+  "confirm_seeds": [20261121,20261122],
+  "steps": 1000,
+  "arms": ["freeze_kv","mu","d","both","replay","both_replay"],
+  "baseline": "K18-D full with identical Front stream and step budget",
+  "teacher": "R1 on 240 paired Left/Right inputs from 80 training demos, matched physical input, explicit shared draft and time; no evaluation data",
+  "lambda": 4.0,
+  "prescreen_gate": "at most 4 of 20 below parent for Left and Right first correct, and at most 2 of 20 below full for Front terminal; additionally report old terminal preservation",
+  "selection": "if eligible choose largest minimum of three endpoint ratios, old terminal as tie-break; if no eligible arm report screen and evaluate stronger old replay if feasible",
+  "confirmation": "candidate vs Full and R1 on separately generated and locked common-grasp simulator states, 20 per instruction",
+  "fixed_readout": "mu channel drift and d projection, norm, cosine at steps 30, 100, 300, 1000",
+  "attribution": "real checkpoint additions and withdrawals by layer block; matched raw Front vs old BC and teacher gradients; actual AdamW with history, zero-gradient, and fresh-history controls"
+}

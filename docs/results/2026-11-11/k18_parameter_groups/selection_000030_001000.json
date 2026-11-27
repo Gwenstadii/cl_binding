@@ -1,0 +1,12 @@
+{
+  "conditions": [
+    "early",
+    "late",
+    "add:attention",
+    "undo:attention",
+    "random_add:attention",
+    "random_replace:attention"
+  ],
+  "top_group": "attention",
+  "rule": "largest minimum of median paired H-gain loss on add and H-gain recovery on undo, before native scores"
+}

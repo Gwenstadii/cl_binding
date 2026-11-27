@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-10",
+  "scope": "read-only training records and historical-code audit for planning; no new training, optimizer step or model evaluation launched",
+  "lineage": "R1 Left+Right24000 -> Front-only12000",
+  "parent_model_sha256": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+  "existing_front_checkpoints": [6000,12000],
+  "optimizer_and_rng_states": "both checkpoints contain training_state.pt (412764936 bytes) and passed optimizer_and_rng_saved marker",
+  "initialization": {"parent_weights_and_normalizers_inherited":true,"optimizer_reset":true,"scheduler_reset":true},
+  "training": {"seed":20261021,"samples_per_step":6,"learning_rate":0.0001,"warmup_steps":100,"betas":[0.9,0.95],"eps":1e-8,"weight_decay":1e-10,"gradient_clip_norm":10.0,"normalization":"inherited R1 processors","action_alignment":"post_action_obs_to_next_action","action_offset":1},
+  "trainable": {"parameter_count":99880992,"tensor_count":155,"vlm_tensors":0,"families":["action expert attention/MLP/norm","state projection","action input projection","action output projection","action-time MLP"]},
+  "loss": {"directly_supervised_dimensions":[0,1,2,3,4,5,6],"padding_dimensions_not_directly_supervised":[7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],"reduction":"mean over samples of each sample's valid action time x7 mean","padding_action_positions":"excluded by action_is_pad"},
+  "code_versions": {"training_manifest_commit":"01be69b9ed577ef5e7fd0710fa54da2cc99f9680","inspected_server_head":"98938339516d4a526a074ffda234df6234e413bd","historical_model_policy_blob":"4f95769de16103deba2842802f2451b9a1e99678","current_model_policy_blob":"4f95769de16103deba2842802f2451b9a1e99678","historical_trainer_blob":"422eb143e6aceddef4d6541e17dfe45c0be15961","current_server_trainer_blob":"f3a5156c39ed40a286dee74ffdfa07abf3fc87ee","note":"historical trainer exported for reproduction; do not assume current HEAD is the original recipe. Git records do not alone exclude unrecorded historical working-tree changes; reproduction gates remain required."},
+  "historical_runtime": {"steps":12000,"seconds":3201.6708785239607,"note":"historical run, not a timing measurement of the proposed plan"},
+  "previous_training_experiments": {"lineage":"R0 Left+Front -> Right, not this R1 lineage","settings":["original text","single paraphrase","multiple paraphrases","mask50percent early-transport action positions","matched random-position mask"],"checkpoints":[3000,6000,9000,12000],"limit":"late checkpoints already show both shared-response drift and conditional attenuation; does not identify early cause in R1 or channel/optimizer-specific source"}
+}

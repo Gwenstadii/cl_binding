@@ -1,0 +1,20 @@
+{
+  "scope": "K18-C, development R1 Left+Right -> Front",
+  "primary_window": [30, 100],
+  "secondary_window": [30, 1000],
+  "secondary_purpose": "Check the ranking over a longer interval and evaluate it if the primary interval shows too little endpoint Right routing loss",
+  "groups": ["state", "action_time", "attention", "mlp_norm", "output"],
+  "fixed_input_scenes": [20, 39],
+  "fixed_denoising_drafts_per_scene": 6,
+  "fixed_denoising_positions": [0, 4, 8],
+  "primary_metric": "signed horizontal projection onto R1 contrast over first 10 action positions",
+  "ranking": "largest minimum of median paired loss on add and median paired recovery on undo, chosen before branch behavior",
+  "native_scenes": [20, 39],
+  "native_horizon": 400,
+  "native": ["early", "late", "add top group", "undo top group", "random add top group", "random replace top group"],
+  "native_prompts": ["Left", "Right", "Front"],
+  "secondary_native_trigger": "right-first-correct drop between step 30 and step 100 is less than 4 of 20",
+  "random": "per-coordinate random sign on observed delta, preserve original sign where reflection cannot represent the same magnitude in the checkpoint dtype, same draw in add and replace",
+  "seed_random_sign": 20261111,
+  "inference": "use each spliced model natively throughout; no changes to activations or predicted actions"
+}

@@ -1,0 +1,183 @@
+{
+  "init": 38,
+  "n_episodes": 16,
+  "model_sha256": {
+    "R": "225322ba28d0ad152fcced19950c43e3e40a435f1835cf64a664226da7830003",
+    "F": "8ff1bf8f372d728a3218101a3cc93fb6fb9d484e8fefb39c48d81a0c8ab2c515"
+  },
+  "model_paths": {
+    "R": "/home/lzx/cl_binding/.server/r1_left_right_20261104_01/train_r1/checkpoints/024000",
+    "F": "/home/lzx/cl_binding/.server/r1_then_front_v1/train/checkpoints/012000"
+  },
+  "processor_check": {
+    "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F",
+        "R"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    },
+    "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+      "compared_keys": 40,
+      "identical_across": [
+        "F",
+        "R"
+      ],
+      "bookkeeping_keys_differing_ignored": []
+    }
+  },
+  "alpha": 2.959,
+  "script_sha256": "e0bdcc875cb1981a5625ee916c3a19295150cad02d3d2536ef637e255d4364cd",
+  "source_hashes": {
+    "code/k14.py": "89e7a80342adc99cba7374696cf925139143141a10e7c518dcef6a5fd9a0bf2c",
+    "code/k14s5.py": "de5565c3bc6d971bd97f8d4d792251e73ae07c57b6c59b97c146ed6a40d8ba0e",
+    "snapshots/snapshots.json": "0ee8b429c5098aeb30ea2404968c1db068b894fe57407a47c5c92ac78329db5f"
+  },
+  "k15_script_sha256": "8e928d79232cf9346be64965fa77dfcf4c32b2906b3715e13bd278cf700c77a6",
+  "condition_old_indices": {
+    "N": [],
+    "H": [
+      0,
+      1
+    ],
+    "S": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "HS": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "P": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "HP": [
+      0,
+      1,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "SP": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "HSP": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "init": 20,
+      "alpha1_native_bitwise": true,
+      "alpha0_instruction_identity": true,
+      "amplified_mean_roundoff_rms": 0.0012928801588714123,
+      "same_snapshot_signature": true
+    },
+    {
+      "init": 21,
+      "alpha1_native_bitwise": true,
+      "alpha0_instruction_identity": true,
+      "amplified_mean_roundoff_rms": 0.0013705930905416608,
+      "same_snapshot_signature": true
+    },
+    {
+      "init": 22,
+      "alpha1_native_bitwise": true,
+      "alpha0_instruction_identity": true,
+      "amplified_mean_roundoff_rms": 0.0015947516076266766,
+      "same_snapshot_signature": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"lane": 1, "lanes": 2, "gate": {"init": 401, "same_query_is_native_bitwise": true, "action_output_cannot_change_fixed_query": true, "two_output_parts_reconstruct_query_transfer": true}}

@@ -1,0 +1,25 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+TRAIN 20261021 replay_soft 1 1.35598 None None
+TRAIN 20261021 replay_soft 2 1.32825 None None
+TRAIN 20261021 replay_soft 3 1.51723 None None
+TRAIN 20261021 replay_soft 50 0.94694 None None
+TRAIN 20261021 replay_soft 100 0.66295 None None
+TRAIN 20261021 replay_soft 150 0.51923 None None
+TRAIN 20261021 replay_soft 200 0.37214 None None
+TRAIN 20261021 replay_soft 250 0.29255 None None
+TRAIN 20261021 replay_soft 300 0.31457 None None
+TRAIN 20261021 replay_soft 350 0.36397 None None
+TRAIN 20261021 replay_soft 400 0.3145 None None
+TRAIN 20261021 replay_soft 450 0.25662 None None
+TRAIN 20261021 replay_soft 500 0.36333 None None
+TRAIN 20261021 replay_soft 550 0.37142 None None
+TRAIN 20261021 replay_soft 600 0.39828 None None
+TRAIN 20261021 replay_soft 650 0.17143 None None
+TRAIN 20261021 replay_soft 700 0.21707 None None
+TRAIN 20261021 replay_soft 750 0.22881 None None
+TRAIN 20261021 replay_soft 800 0.21402 None None
+TRAIN 20261021 replay_soft 850 0.20451 None None
+TRAIN 20261021 replay_soft 900 0.22398 None None
+TRAIN 20261021 replay_soft 950 0.26418 None None
+TRAIN 20261021 replay_soft 1000 0.27364 None None

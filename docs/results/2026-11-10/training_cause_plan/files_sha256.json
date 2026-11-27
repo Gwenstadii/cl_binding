@@ -1,0 +1,10 @@
+{
+  "audit_summary.json": "fb68f667fd987ae3035c2f5df1ac1e3aaeae0f7ddb64ea96deccc63bf4f7ace7",
+  "config.json": "e0d0f161225f350c7312534066d79ce1f200086fb72961e5bc8fc17d633105c7",
+  "historical_modeling_smolvla.py": "804a702dcecb671dd25042a1daf5f1e87556f2b55bdcbc43b54b0c10cffa960b",
+  "historical_train.py": "5c8f7f4b61f3bb037770f654f15a8f822b21dcdaa7cdfe7e2635bf67ca6c27bd",
+  "manifest.json": "195578969948ee47638692c888161978122caf3b582f6f4b5a2728b29e5c7451",
+  "plan.json": "77a7a8a4a1dbea7e5c537203e1b7f7b677af48609664308c41eae63ddaed4cfc",
+  "trainable_parameters.json": "b0de50e57a5fb096c528efda3b9076c3b68165e44b9f0b593b37cfb3fd1b46b1",
+  "training_finished_012000.json": "ca3d97a920809e2ddcefec4b7f7fbbd36f510d9bc58e0ce8d913cded358b9396"
+}

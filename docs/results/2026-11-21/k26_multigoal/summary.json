@@ -1,0 +1,5529 @@
+{
+  "rows": 1240,
+  "total_rollouts": 1300,
+  "ids": [
+    600,
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619
+  ],
+  "models": {
+    "R": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+    "F": "ccee300a0cfc2ae9755eb6a149e0e1dee1d1f57e6a1677584162bab61788ad83"
+  },
+  "cases_sha256": "ac28582c07150e1c8b0238ae7d806bf85ad98e0a169f8b185a47b7f752fc0f03",
+  "phases": {
+    "reset": {
+      "parent": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 19,
+              "none": 1
+            },
+            "first_correct": 19,
+            "first_correct_in_window": 19,
+            "ever_correct": 19,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 102
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 17,
+              "none": 3
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 17,
+            "ever_correct": 12,
+            "terminal_correct": 12,
+            "ever_by_target": {
+              "left": 0,
+              "front": 12,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 12,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 17,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 125
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "right": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 19,
+            "ever_correct": 15,
+            "terminal_correct": 15,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 15,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 15,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 20,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 102.0
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 15,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 16,
+          "left/right": 19,
+          "front/right": 17,
+          "left/front/right": 16,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 11,
+          "left/right": 13,
+          "front/right": 8,
+          "left/front/right": 7,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0
+      },
+      "native": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 17,
+              "none": 3
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 16,
+            "ever_correct": 16,
+            "terminal_correct": 9,
+            "ever_by_target": {
+              "left": 16,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 9,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 17,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 100
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 14,
+              "none": 6
+            },
+            "first_correct": 14,
+            "first_correct_in_window": 14,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 3,
+              "front": 0,
+              "right": 0,
+              "back": 11
+            },
+            "terminal_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 3,
+              "front": 14,
+              "right": 0,
+              "back": 12
+            },
+            "front_then_back": 12,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 103.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "front": 15,
+              "none": 4,
+              "back": 1
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 15
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 15,
+              "right": 0,
+              "back": 16
+            },
+            "front_then_back": 15,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 16,
+              "none": 4
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 14,
+            "terminal_correct": 2,
+            "ever_by_target": {
+              "left": 2,
+              "front": 0,
+              "right": 0,
+              "back": 14
+            },
+            "terminal_by_target": {
+              "left": 2,
+              "front": 0,
+              "right": 0,
+              "back": 2
+            },
+            "reached_by_target": {
+              "left": 2,
+              "front": 16,
+              "right": 0,
+              "back": 15
+            },
+            "front_then_back": 15,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 13,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 0,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0
+      },
+      "readout": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 19,
+              "none": 1
+            },
+            "first_correct": 19,
+            "first_correct_in_window": 19,
+            "ever_correct": 19,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 102
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 17,
+              "none": 3
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 17,
+            "ever_correct": 12,
+            "terminal_correct": 11,
+            "ever_by_target": {
+              "left": 0,
+              "front": 12,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 11,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 17,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 18,
+            "first_step_median_correct": 125
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "right": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 19,
+            "ever_correct": 15,
+            "terminal_correct": 15,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 15,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 15,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 20,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 13,
+            "first_step_median_correct": 102.0
+          }
+        },
+        "joint_first": {
+          "left/front": 16,
+          "left/right": 19,
+          "front/right": 17,
+          "left/front/right": 16
+        },
+        "joint_terminal": {
+          "left/front": 10,
+          "left/right": 13,
+          "front/right": 8,
+          "left/front/right": 7
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [
+              602,
+              607,
+              611
+            ],
+            "lost_first_correct": [
+              619
+            ],
+            "first_transitions": {
+              "left->left": 16,
+              "none->left": 3,
+              "left->none": 1
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [
+              602,
+              607,
+              609,
+              614
+            ],
+            "lost_first_correct": [
+              613
+            ],
+            "first_transitions": {
+              "front->front": 13,
+              "none->front": 4,
+              "none->none": 2,
+              "front->none": 1
+            }
+          },
+          "right": {
+            "from_back": [
+              612
+            ],
+            "back_to_goal": [
+              612
+            ],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              607,
+              608,
+              609,
+              610,
+              612,
+              613,
+              615,
+              616,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              607,
+              608,
+              609,
+              610,
+              612,
+              613,
+              615,
+              616,
+              618,
+              619
+            ],
+            "new_first_correct": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->right": 15,
+              "none->right": 4,
+              "back->right": 1
+            }
+          }
+        }
+      },
+      "oracle": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 19,
+              "none": 1
+            },
+            "first_correct": 19,
+            "first_correct_in_window": 19,
+            "ever_correct": 19,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 102
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 17,
+              "none": 3
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 17,
+            "ever_correct": 12,
+            "terminal_correct": 11,
+            "ever_by_target": {
+              "left": 0,
+              "front": 12,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 11,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 17,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 125
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "right": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 19,
+            "ever_correct": 15,
+            "terminal_correct": 15,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 15,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 15,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 20,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 102.0
+          }
+        },
+        "joint_first": {
+          "left/front": 16,
+          "left/right": 19,
+          "front/right": 17,
+          "left/front/right": 16
+        },
+        "joint_terminal": {
+          "left/front": 10,
+          "left/right": 13,
+          "front/right": 8,
+          "left/front/right": 7
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [
+              602,
+              607,
+              611
+            ],
+            "lost_first_correct": [
+              619
+            ],
+            "first_transitions": {
+              "left->left": 16,
+              "none->left": 3,
+              "left->none": 1
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [
+              602,
+              607,
+              609,
+              614
+            ],
+            "lost_first_correct": [
+              613
+            ],
+            "first_transitions": {
+              "front->front": 13,
+              "none->front": 4,
+              "none->none": 2,
+              "front->none": 1
+            }
+          },
+          "right": {
+            "from_back": [
+              612
+            ],
+            "back_to_goal": [
+              612
+            ],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              607,
+              608,
+              609,
+              610,
+              612,
+              613,
+              615,
+              616,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              607,
+              608,
+              609,
+              610,
+              612,
+              613,
+              615,
+              616,
+              618,
+              619
+            ],
+            "new_first_correct": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->right": 15,
+              "none->right": 4,
+              "back->right": 1
+            }
+          }
+        }
+      }
+    },
+    "grip": {
+      "parent": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 16,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 16,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 13,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "right": 18,
+              "none": 1,
+              "front": 1
+            },
+            "first_correct": 18,
+            "first_correct_in_window": 14,
+            "ever_correct": 6,
+            "terminal_correct": 5,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 6,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 5,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 18,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 117.0
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 1,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 16,
+              "right": 0,
+              "back": 1
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 16,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 1
+            },
+            "front_then_back": 1,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 18,
+          "front/right": 18,
+          "left/front/right": 18,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 10,
+          "left/right": 5,
+          "front/right": 4,
+          "left/front/right": 4,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0
+      },
+      "native": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 17,
+              "front": 3
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 10,
+            "ever_correct": 19,
+            "terminal_correct": 12,
+            "ever_by_target": {
+              "left": 19,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 12,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 3,
+              "right": 0,
+              "back": 2
+            },
+            "front_then_back": 2,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 135
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 19,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 19
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 4
+            },
+            "reached_by_target": {
+              "left": 1,
+              "front": 20,
+              "right": 0,
+              "back": 18
+            },
+            "front_then_back": 18,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 127.5
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 20
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 5
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 20
+            },
+            "front_then_back": 20,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 19,
+            "terminal_correct": 3,
+            "ever_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 19
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 1,
+              "front": 20,
+              "right": 0,
+              "back": 19
+            },
+            "front_then_back": 19,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 17,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 0,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0
+      },
+      "readout": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 17,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 17,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 14,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "none": 3,
+              "right": 16,
+              "front": 1
+            },
+            "first_correct": 16,
+            "first_correct_in_window": 14,
+            "ever_correct": 2,
+            "terminal_correct": 2,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 16,
+              "back": 1
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 19,
+            "first_step_median_correct": 116.0
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 16,
+          "front/right": 16,
+          "left/front/right": 16
+        },
+        "joint_terminal": {
+          "left/front": 10,
+          "left/right": 2,
+          "front/right": 2,
+          "left/front/right": 2
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              610,
+              612,
+              618
+            ],
+            "wrong_goal_to_correct": [
+              610,
+              612,
+              618
+            ],
+            "new_first_correct": [
+              610,
+              612,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 17,
+              "front->left": 3
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->none": 3,
+              "front->right": 16,
+              "front->front": 1
+            }
+          }
+        }
+      },
+      "oracle": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 17,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 17,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 14,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "none": 3,
+              "right": 16,
+              "front": 1
+            },
+            "first_correct": 16,
+            "first_correct_in_window": 14,
+            "ever_correct": 2,
+            "terminal_correct": 2,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 16,
+              "back": 1
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 116.0
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 16,
+          "front/right": 16,
+          "left/front/right": 16
+        },
+        "joint_terminal": {
+          "left/front": 10,
+          "left/right": 2,
+          "front/right": 2,
+          "left/front/right": 2
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              610,
+              612,
+              618
+            ],
+            "wrong_goal_to_correct": [
+              610,
+              612,
+              618
+            ],
+            "new_first_correct": [
+              610,
+              612,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 17,
+              "front->left": 3
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->none": 3,
+              "front->right": 16,
+              "front->front": 1
+            }
+          }
+        }
+      },
+      "readout_step": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 17,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 17,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 14,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "none": 3,
+              "right": 16,
+              "front": 1
+            },
+            "first_correct": 16,
+            "first_correct_in_window": 14,
+            "ever_correct": 2,
+            "terminal_correct": 2,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 16,
+              "back": 1
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 17,
+            "first_step_median_correct": 116.0
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 16,
+          "front/right": 16,
+          "left/front/right": 16
+        },
+        "joint_terminal": {
+          "left/front": 10,
+          "left/right": 2,
+          "front/right": 2,
+          "left/front/right": 2
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              610,
+              612,
+              618
+            ],
+            "wrong_goal_to_correct": [
+              610,
+              612,
+              618
+            ],
+            "new_first_correct": [
+              610,
+              612,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 17,
+              "front->left": 3
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->none": 3,
+              "front->right": 16,
+              "front->front": 1
+            }
+          }
+        }
+      },
+      "rotated": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": null
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "none": 1,
+              "right": 16,
+              "back": 1,
+              "front": 2
+            },
+            "first_correct": 2,
+            "first_correct_in_window": 1,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 4,
+              "back": 3
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 3,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 6,
+              "right": 16,
+              "back": 4
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 206.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 10,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 0,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0
+        },
+        "joint_terminal": {
+          "left/front": 0,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              610,
+              612,
+              618
+            ],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              611,
+              613,
+              614,
+              615,
+              616,
+              617,
+              619
+            ],
+            "first_transitions": {
+              "left->front": 17,
+              "front->front": 3
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [
+              600,
+              601,
+              602,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "first_transitions": {
+              "front->none": 1,
+              "front->right": 16,
+              "front->back": 1,
+              "front->front": 2
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->left": 20
+            }
+          }
+        }
+      },
+      "readout_alt": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 19,
+              "front": 1
+            },
+            "first_correct": 19,
+            "first_correct_in_window": 19,
+            "ever_correct": 20,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 1,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 17,
+            "first_step_median_correct": 123
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 18,
+            "ever_correct": 14,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 1
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 1
+            },
+            "front_then_back": 1,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 17,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 3
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 12,
+              "right": 0,
+              "back": 1
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 3
+            },
+            "front_then_back": 3,
+            "first_decoded": {
+              "front": 19,
+              "right": 1
+            },
+            "majority_decoded": {
+              "front": 19,
+              "right": 1
+            },
+            "any_route_matches": 6,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 19,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0
+        },
+        "joint_terminal": {
+          "left/front": 11,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              602,
+              603,
+              604,
+              605,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              603,
+              604,
+              605,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              618,
+              619
+            ],
+            "new_first_correct": [
+              600,
+              603,
+              604,
+              605,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              618,
+              619
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "none->left": 1,
+              "left->left": 4,
+              "front->front": 1,
+              "front->left": 14
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          }
+        }
+      },
+      "pair_left_front": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 17,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 17,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 14,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 130.0
+          }
+        },
+        "joint_first": {
+          "left/front": 20
+        },
+        "joint_terminal": {
+          "left/front": 10
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              610,
+              612,
+              618
+            ],
+            "wrong_goal_to_correct": [
+              610,
+              612,
+              618
+            ],
+            "new_first_correct": [
+              610,
+              612,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 17,
+              "front->left": 3
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          }
+        }
+      },
+      "pair_left_right": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 17,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 17,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "none": 3,
+              "right": 16,
+              "front": 1
+            },
+            "first_correct": 16,
+            "first_correct_in_window": 14,
+            "ever_correct": 2,
+            "terminal_correct": 2,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 16,
+              "back": 1
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 116.0
+          }
+        },
+        "joint_first": {
+          "left/right": 16
+        },
+        "joint_terminal": {
+          "left/right": 2
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              610,
+              612,
+              618
+            ],
+            "wrong_goal_to_correct": [
+              610,
+              612,
+              618
+            ],
+            "new_first_correct": [
+              610,
+              612,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 17,
+              "front->left": 3
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->none": 3,
+              "front->right": 16,
+              "front->front": 1
+            }
+          }
+        }
+      },
+      "pair_front_right": {
+        "per_goal": {
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 14,
+            "terminal_correct": 13,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 13,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "none": 3,
+              "right": 16,
+              "front": 1
+            },
+            "first_correct": 16,
+            "first_correct_in_window": 14,
+            "ever_correct": 2,
+            "terminal_correct": 2,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 2,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 16,
+              "back": 1
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 116.0
+          }
+        },
+        "joint_first": {
+          "front/right": 16
+        },
+        "joint_terminal": {
+          "front/right": 2
+        },
+        "changes": {
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->none": 3,
+              "front->right": 16,
+              "front->front": 1
+            }
+          }
+        }
+      },
+      "native_alt": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "none": 1,
+              "left": 4,
+              "front": 15
+            },
+            "first_correct": 4,
+            "first_correct_in_window": 0,
+            "ever_correct": 11,
+            "terminal_correct": 7,
+            "ever_by_target": {
+              "left": 11,
+              "front": 0,
+              "right": 0,
+              "back": 9
+            },
+            "terminal_by_target": {
+              "left": 7,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 16,
+              "front": 15,
+              "right": 0,
+              "back": 14
+            },
+            "front_then_back": 14,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 200.0
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 19,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 19
+            },
+            "terminal_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 1,
+              "front": 20,
+              "right": 0,
+              "back": 19
+            },
+            "front_then_back": 19,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 128.5
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 20
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 5
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 20
+            },
+            "front_then_back": 20,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 18,
+            "terminal_correct": 3,
+            "ever_by_target": {
+              "left": 2,
+              "front": 0,
+              "right": 0,
+              "back": 18
+            },
+            "terminal_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 2,
+              "front": 20,
+              "right": 0,
+              "back": 19
+            },
+            "front_then_back": 19,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 4,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 0,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0
+      },
+      "mixed_alt": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 5,
+            "terminal_correct": 5,
+            "ever_by_target": {
+              "left": 1,
+              "front": 5,
+              "right": 0,
+              "back": 9
+            },
+            "terminal_by_target": {
+              "left": 1,
+              "front": 5,
+              "right": 0,
+              "back": 1
+            },
+            "reached_by_target": {
+              "left": 1,
+              "front": 20,
+              "right": 0,
+              "back": 9
+            },
+            "front_then_back": 9,
+            "first_decoded": {
+              "back": 7,
+              "front": 13
+            },
+            "majority_decoded": {
+              "back": 8,
+              "front": 12
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 0,
+            "first_step_median_correct": 129.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "front": 19,
+              "right": 1
+            },
+            "first_correct": 1,
+            "first_correct_in_window": 1,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 0,
+              "back": 16
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 0,
+              "back": 6
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 19,
+              "right": 1,
+              "back": 16
+            },
+            "front_then_back": 15,
+            "first_decoded": {
+              "back": 13,
+              "right": 6,
+              "front": 1
+            },
+            "majority_decoded": {
+              "back": 13,
+              "front": 3,
+              "right": 4
+            },
+            "any_route_matches": 13,
+            "all_routes_match": 0,
+            "first_step_median_correct": 123
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 13,
+            "terminal_correct": 3,
+            "ever_by_target": {
+              "left": 1,
+              "front": 5,
+              "right": 0,
+              "back": 13
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 1,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 1,
+              "front": 20,
+              "right": 0,
+              "back": 14
+            },
+            "front_then_back": 14,
+            "first_decoded": {
+              "back": 17,
+              "front": 3
+            },
+            "majority_decoded": {
+              "back": 19,
+              "front": 1
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 1,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 1,
+          "front/right": 1,
+          "left/front/right": 1,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 5,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0,
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              602,
+              603,
+              604,
+              605,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              602,
+              603,
+              604,
+              605,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              618,
+              619
+            ],
+            "new_first_correct": [
+              600,
+              602,
+              603,
+              604,
+              605,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              618,
+              619
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "none->left": 1,
+              "left->left": 4,
+              "front->left": 15
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              613
+            ],
+            "new_first_correct": [
+              613
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 19,
+              "front->right": 1
+            }
+          },
+          "back": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          }
+        }
+      },
+      "native_alt2": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 11,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 11,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 1,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 125.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 18,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 17
+            },
+            "terminal_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 5
+            },
+            "reached_by_target": {
+              "left": 1,
+              "front": 20,
+              "right": 0,
+              "back": 17
+            },
+            "front_then_back": 17,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": 128.5
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 0,
+            "terminal_correct": 0,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 17
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 0,
+              "back": 5
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 20
+            },
+            "front_then_back": 20,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 0,
+            "first_correct_in_window": 0,
+            "ever_correct": 18,
+            "terminal_correct": 4,
+            "ever_by_target": {
+              "left": 4,
+              "front": 0,
+              "right": 0,
+              "back": 18
+            },
+            "terminal_by_target": {
+              "left": 1,
+              "front": 0,
+              "right": 0,
+              "back": 4
+            },
+            "reached_by_target": {
+              "left": 4,
+              "front": 20,
+              "right": 0,
+              "back": 19
+            },
+            "front_then_back": 19,
+            "first_decoded": {},
+            "majority_decoded": {},
+            "any_route_matches": 0,
+            "all_routes_match": 0,
+            "first_step_median_correct": null
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "joint_terminal": {
+          "left/front": 0,
+          "left/right": 0,
+          "front/right": 0,
+          "left/front/right": 0,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 0
+      },
+      "readout_alt2": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 14,
+            "terminal_correct": 14,
+            "ever_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 1
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 14,
+              "right": 0,
+              "back": 1
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 18,
+            "first_step_median_correct": 130.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "right": 17,
+              "front": 2,
+              "none": 1
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 14,
+            "ever_correct": 6,
+            "terminal_correct": 5,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 6,
+              "back": 1
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 5,
+              "back": 1
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 17,
+              "back": 3
+            },
+            "front_then_back": 2,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 12,
+            "first_step_median_correct": 116
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 17,
+          "front/right": 17,
+          "left/front/right": 17
+        },
+        "joint_terminal": {
+          "left/front": 12,
+          "left/right": 5,
+          "front/right": 2,
+          "left/front/right": 2
+        },
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 20
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              600,
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              600,
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->right": 17,
+              "front->front": 2,
+              "front->none": 1
+            }
+          }
+        }
+      },
+      "mixed_alt2": {
+        "per_goal": {
+          "left": {
+            "n": 20,
+            "first": {
+              "left": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 20,
+            "ever_correct": 20,
+            "terminal_correct": 18,
+            "ever_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "terminal_by_target": {
+              "left": 18,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "reached_by_target": {
+              "left": 20,
+              "front": 0,
+              "right": 0,
+              "back": 0
+            },
+            "front_then_back": 0,
+            "first_decoded": {
+              "left": 20
+            },
+            "majority_decoded": {
+              "left": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 20,
+            "first_step_median_correct": 122.5
+          },
+          "front": {
+            "n": 20,
+            "first": {
+              "front": 20
+            },
+            "first_correct": 20,
+            "first_correct_in_window": 17,
+            "ever_correct": 11,
+            "terminal_correct": 11,
+            "ever_by_target": {
+              "left": 0,
+              "front": 11,
+              "right": 0,
+              "back": 4
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 11,
+              "right": 0,
+              "back": 1
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 20,
+              "right": 0,
+              "back": 4
+            },
+            "front_then_back": 4,
+            "first_decoded": {
+              "front": 20
+            },
+            "majority_decoded": {
+              "front": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 5,
+            "first_step_median_correct": 129.0
+          },
+          "right": {
+            "n": 20,
+            "first": {
+              "right": 17,
+              "front": 2,
+              "none": 1
+            },
+            "first_correct": 17,
+            "first_correct_in_window": 14,
+            "ever_correct": 3,
+            "terminal_correct": 3,
+            "ever_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 3,
+              "back": 1
+            },
+            "terminal_by_target": {
+              "left": 0,
+              "front": 0,
+              "right": 3,
+              "back": 1
+            },
+            "reached_by_target": {
+              "left": 0,
+              "front": 2,
+              "right": 17,
+              "back": 3
+            },
+            "front_then_back": 2,
+            "first_decoded": {
+              "right": 20
+            },
+            "majority_decoded": {
+              "right": 20
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 11,
+            "first_step_median_correct": 116
+          },
+          "back": {
+            "n": 20,
+            "first": {
+              "front": 18,
+              "back": 1,
+              "left": 1
+            },
+            "first_correct": 1,
+            "first_correct_in_window": 0,
+            "ever_correct": 12,
+            "terminal_correct": 3,
+            "ever_by_target": {
+              "left": 3,
+              "front": 2,
+              "right": 0,
+              "back": 12
+            },
+            "terminal_by_target": {
+              "left": 2,
+              "front": 2,
+              "right": 0,
+              "back": 3
+            },
+            "reached_by_target": {
+              "left": 3,
+              "front": 19,
+              "right": 0,
+              "back": 13
+            },
+            "front_then_back": 12,
+            "first_decoded": {
+              "back": 16,
+              "front": 3,
+              "left": 1
+            },
+            "majority_decoded": {
+              "left": 2,
+              "back": 14,
+              "front": 3,
+              "right": 1
+            },
+            "any_route_matches": 20,
+            "all_routes_match": 0,
+            "first_step_median_correct": 218
+          }
+        },
+        "joint_first": {
+          "left/front": 20,
+          "left/right": 17,
+          "front/right": 17,
+          "left/front/right": 17,
+          "left/front/right/back": 1
+        },
+        "joint_terminal": {
+          "left/front": 9,
+          "left/right": 3,
+          "front/right": 2,
+          "left/front/right": 2,
+          "left/front/right/back": 0
+        },
+        "old_joint_first_and_back_terminal": 2,
+        "changes": {
+          "left": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "left->left": 20
+            }
+          },
+          "front": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [],
+            "wrong_goal_to_correct": [],
+            "new_first_correct": [],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 20
+            }
+          },
+          "right": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              600,
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "new_first_correct": [
+              600,
+              601,
+              603,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->right": 17,
+              "front->front": 2,
+              "front->none": 1
+            }
+          },
+          "back": {
+            "from_back": [],
+            "back_to_goal": [],
+            "back_to_other": [],
+            "back_to_none": [],
+            "from_wrong_goal": [
+              600,
+              601,
+              602,
+              603,
+              604,
+              605,
+              606,
+              607,
+              608,
+              609,
+              610,
+              611,
+              612,
+              613,
+              614,
+              615,
+              616,
+              617,
+              618,
+              619
+            ],
+            "wrong_goal_to_correct": [
+              613
+            ],
+            "new_first_correct": [
+              613
+            ],
+            "lost_first_correct": [],
+            "first_transitions": {
+              "front->front": 18,
+              "front->back": 1,
+              "front->left": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "probe": {
+    "reset/0/0": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "reset/0/1": {
+      "parent3": {
+        "left": {
+          "front": 19,
+          "left": 1
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "front": 1,
+          "left": 19
+        },
+        "front": {
+          "front": 18,
+          "left": 2
+        },
+        "right": {
+          "front": 18,
+          "left": 2
+        }
+      },
+      "late4": {
+        "left": {
+          "front": 3,
+          "left": 17
+        },
+        "front": {
+          "front": 18,
+          "left": 2
+        },
+        "right": {
+          "front": 18,
+          "left": 2
+        },
+        "back": {
+          "front": 17,
+          "left": 3
+        }
+      },
+      "left_front": {
+        "left": {
+          "front": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 19,
+          "right": 1
+        },
+        "right": {
+          "right": 12,
+          "left": 8
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      }
+    },
+    "reset/0/2": {
+      "parent3": {
+        "left": {
+          "front": 19,
+          "left": 1
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 19,
+          "left": 1
+        }
+      },
+      "late3": {
+        "left": {
+          "front": 3,
+          "left": 17
+        },
+        "front": {
+          "front": 19,
+          "left": 1
+        },
+        "right": {
+          "front": 11,
+          "left": 9
+        }
+      },
+      "late4": {
+        "left": {
+          "front": 3,
+          "left": 17
+        },
+        "front": {
+          "front": 19,
+          "left": 1
+        },
+        "right": {
+          "front": 11,
+          "left": 9
+        },
+        "back": {
+          "front": 14,
+          "left": 6
+        }
+      },
+      "left_front": {
+        "left": {
+          "front": 19,
+          "left": 1
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "right": 6,
+          "left": 14
+        },
+        "right": {
+          "right": 10,
+          "left": 10
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      }
+    },
+    "reset/4/0": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "reset/4/1": {
+      "parent3": {
+        "left": {
+          "left": 7,
+          "front": 13
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 19,
+          "right": 1
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        },
+        "back": {
+          "front": 19,
+          "left": 1
+        }
+      },
+      "left_front": {
+        "left": {
+          "front": 16,
+          "left": 4
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 19,
+          "right": 1
+        },
+        "right": {
+          "right": 15,
+          "left": 5
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      }
+    },
+    "reset/4/2": {
+      "parent3": {
+        "left": {
+          "front": 18,
+          "left": 2
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 18,
+          "right": 2
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 16,
+          "front": 4
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 18,
+          "right": 2
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 18,
+          "right": 2
+        },
+        "back": {
+          "front": 19,
+          "left": 1
+        }
+      },
+      "left_front": {
+        "left": {
+          "front": 18,
+          "left": 2
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 17,
+          "right": 3
+        },
+        "right": {
+          "right": 14,
+          "left": 6
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 18,
+          "right": 2
+        }
+      }
+    },
+    "reset/8/0": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "reset/8/1": {
+      "parent3": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 16,
+          "right": 4
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 16,
+          "front": 4
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        },
+        "back": {
+          "front": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 13,
+          "front": 7
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 15,
+          "left": 5
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      }
+    },
+    "reset/8/2": {
+      "parent3": {
+        "left": {
+          "front": 15,
+          "left": 5
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 15,
+          "front": 5
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 10,
+          "front": 10
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 17,
+          "front": 3
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 10,
+          "front": 10
+        },
+        "back": {
+          "front": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "front": 18,
+          "left": 2
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 19,
+          "right": 1
+        },
+        "right": {
+          "right": 18,
+          "left": 2
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 14,
+          "front": 6
+        }
+      }
+    },
+    "grip/0/0": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "grip/0/1": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 19,
+          "right": 1
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 17,
+          "right": 3
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "back": 7,
+          "front": 13
+        },
+        "right": {
+          "back": 13,
+          "front": 1,
+          "right": 6
+        },
+        "back": {
+          "back": 17,
+          "front": 3
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 15,
+          "front": 5
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 17,
+          "right": 3
+        }
+      }
+    },
+    "grip/0/2": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 16,
+          "front": 3,
+          "left": 1
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "grip/4/0": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "grip/4/1": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 14,
+          "right": 6
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 11,
+          "right": 9
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 13,
+          "back": 7
+        },
+        "right": {
+          "back": 11,
+          "right": 9
+        },
+        "back": {
+          "back": 14,
+          "front": 6
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 10,
+          "front": 10
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 19,
+          "right": 1
+        }
+      }
+    },
+    "grip/4/2": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 12,
+          "front": 8
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "grip/8/0": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 20
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    },
+    "grip/8/1": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 15,
+          "front": 5
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 15,
+          "back": 5
+        },
+        "right": {
+          "right": 19,
+          "back": 1
+        },
+        "back": {
+          "back": 13,
+          "front": 7
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 12,
+          "front": 8
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "front": 20
+        }
+      }
+    },
+    "grip/8/2": {
+      "parent3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late3": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "late4": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        },
+        "back": {
+          "back": 5,
+          "front": 10,
+          "left": 5
+        }
+      },
+      "left_front": {
+        "left": {
+          "left": 20
+        },
+        "front": {
+          "front": 20
+        }
+      },
+      "left_right": {
+        "left": {
+          "left": 20
+        },
+        "right": {
+          "right": 20
+        }
+      },
+      "front_right": {
+        "front": {
+          "front": 20
+        },
+        "right": {
+          "right": 20
+        }
+      }
+    }
+  },
+  "back_extension": {
+    "development": {
+      "3000": {
+        "rows": 20,
+        "checkpoint": {
+          "R": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+          "F": "ccee300a0cfc2ae9755eb6a149e0e1dee1d1f57e6a1677584162bab61788ad83"
+        },
+        "phases": {
+          "reset": {
+            "native": {
+              "per_goal": {
+                "back": {
+                  "n": 10,
+                  "first": {
+                    "front": 9,
+                    "none": 1
+                  },
+                  "first_correct": 0,
+                  "first_correct_in_window": 0,
+                  "ever_correct": 8,
+                  "terminal_correct": 1,
+                  "ever_by_target": {
+                    "left": 4,
+                    "front": 0,
+                    "right": 0,
+                    "back": 8
+                  },
+                  "terminal_by_target": {
+                    "left": 3,
+                    "front": 0,
+                    "right": 0,
+                    "back": 1
+                  },
+                  "reached_by_target": {
+                    "left": 4,
+                    "front": 9,
+                    "right": 0,
+                    "back": 8
+                  },
+                  "front_then_back": 8,
+                  "first_decoded": {},
+                  "majority_decoded": {},
+                  "any_route_matches": 0,
+                  "all_routes_match": 0,
+                  "first_step_median_correct": null
+                }
+              },
+              "joint_first": {},
+              "joint_terminal": {}
+            }
+          },
+          "grip": {
+            "native": {
+              "per_goal": {
+                "back": {
+                  "n": 10,
+                  "first": {
+                    "front": 10
+                  },
+                  "first_correct": 0,
+                  "first_correct_in_window": 0,
+                  "ever_correct": 10,
+                  "terminal_correct": 2,
+                  "ever_by_target": {
+                    "left": 1,
+                    "front": 0,
+                    "right": 0,
+                    "back": 10
+                  },
+                  "terminal_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 2
+                  },
+                  "reached_by_target": {
+                    "left": 1,
+                    "front": 10,
+                    "right": 0,
+                    "back": 10
+                  },
+                  "front_then_back": 10,
+                  "first_decoded": {},
+                  "majority_decoded": {},
+                  "any_route_matches": 0,
+                  "all_routes_match": 0,
+                  "first_step_median_correct": null
+                }
+              },
+              "joint_first": {},
+              "joint_terminal": {}
+            }
+          }
+        }
+      },
+      "6000": {
+        "rows": 20,
+        "checkpoint": {
+          "R": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+          "F": "fadac4f5fba1e517c5e83b9b9778cf06716c7236c096cf7693fc5e55e3d4b345"
+        },
+        "phases": {
+          "reset": {
+            "native": {
+              "per_goal": {
+                "back": {
+                  "n": 10,
+                  "first": {
+                    "front": 10
+                  },
+                  "first_correct": 0,
+                  "first_correct_in_window": 0,
+                  "ever_correct": 10,
+                  "terminal_correct": 2,
+                  "ever_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 10
+                  },
+                  "terminal_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 2
+                  },
+                  "reached_by_target": {
+                    "left": 0,
+                    "front": 10,
+                    "right": 0,
+                    "back": 10
+                  },
+                  "front_then_back": 10,
+                  "first_decoded": {},
+                  "majority_decoded": {},
+                  "any_route_matches": 0,
+                  "all_routes_match": 0,
+                  "first_step_median_correct": null
+                }
+              },
+              "joint_first": {},
+              "joint_terminal": {}
+            }
+          },
+          "grip": {
+            "native": {
+              "per_goal": {
+                "back": {
+                  "n": 10,
+                  "first": {
+                    "front": 10
+                  },
+                  "first_correct": 0,
+                  "first_correct_in_window": 0,
+                  "ever_correct": 9,
+                  "terminal_correct": 1,
+                  "ever_by_target": {
+                    "left": 0,
+                    "front": 1,
+                    "right": 0,
+                    "back": 9
+                  },
+                  "terminal_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 1
+                  },
+                  "reached_by_target": {
+                    "left": 0,
+                    "front": 10,
+                    "right": 0,
+                    "back": 9
+                  },
+                  "front_then_back": 9,
+                  "first_decoded": {},
+                  "majority_decoded": {},
+                  "any_route_matches": 0,
+                  "all_routes_match": 0,
+                  "first_step_median_correct": null
+                }
+              },
+              "joint_first": {},
+              "joint_terminal": {}
+            }
+          }
+        }
+      },
+      "9000": {
+        "rows": 20,
+        "checkpoint": {
+          "R": "f8bd197dc20886ee14873429c90a7b51ea00ccc2656c28fc542b625b1261772c",
+          "F": "905b0501207f7d0bc1496af4b310fcce73cc2e1b9fff0e00e8b3c356fc045ff3"
+        },
+        "phases": {
+          "reset": {
+            "native": {
+              "per_goal": {
+                "back": {
+                  "n": 10,
+                  "first": {
+                    "front": 9,
+                    "none": 1
+                  },
+                  "first_correct": 0,
+                  "first_correct_in_window": 0,
+                  "ever_correct": 8,
+                  "terminal_correct": 1,
+                  "ever_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 8
+                  },
+                  "terminal_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 1
+                  },
+                  "reached_by_target": {
+                    "left": 0,
+                    "front": 9,
+                    "right": 0,
+                    "back": 9
+                  },
+                  "front_then_back": 9,
+                  "first_decoded": {},
+                  "majority_decoded": {},
+                  "any_route_matches": 0,
+                  "all_routes_match": 0,
+                  "first_step_median_correct": null
+                }
+              },
+              "joint_first": {},
+              "joint_terminal": {}
+            }
+          },
+          "grip": {
+            "native": {
+              "per_goal": {
+                "back": {
+                  "n": 10,
+                  "first": {
+                    "front": 10
+                  },
+                  "first_correct": 0,
+                  "first_correct_in_window": 0,
+                  "ever_correct": 10,
+                  "terminal_correct": 3,
+                  "ever_by_target": {
+                    "left": 0,
+                    "front": 1,
+                    "right": 0,
+                    "back": 10
+                  },
+                  "terminal_by_target": {
+                    "left": 0,
+                    "front": 0,
+                    "right": 0,
+                    "back": 3
+                  },
+                  "reached_by_target": {
+                    "left": 0,
+                    "front": 10,
+                    "right": 0,
+                    "back": 10
+                  },
+                  "front_then_back": 10,
+                  "first_decoded": {},
+                  "majority_decoded": {},
+                  "any_route_matches": 0,
+                  "all_routes_match": 0,
+                  "first_step_median_correct": null
+                }
+              },
+              "joint_first": {},
+              "joint_terminal": {}
+            }
+          }
+        }
+      }
+    },
+    "verification": {}
+  }
+}

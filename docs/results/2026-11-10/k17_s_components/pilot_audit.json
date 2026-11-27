@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "exact_reference_episodes": 8,
+  "exact_reference_steps": 3200,
+  "same_input_mask_checks": 96,
+  "pilot_fresh_may_still_be_running": true,
+  "k17_script_sha256": "0b61f7b5b6021ef4869a096549403e3b2dca994c94e5c1e3bd89c43c3efc1d55"
+}

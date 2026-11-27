@@ -1,0 +1,54 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+NATIVE dev 20261021 weak 22 A ['left']
+NATIVE dev 20261021 weak 22 B ['right']
+NATIVE dev 20261021 weak 22 N ['front']
+NATIVE dev 20261021 weak 26 A ['left']
+NATIVE dev 20261021 weak 26 B ['right']
+NATIVE dev 20261021 weak 26 N ['front']
+NATIVE dev 20261021 weak 30 A ['left']
+NATIVE dev 20261021 weak 30 B ['right']
+NATIVE dev 20261021 weak 30 N []
+NATIVE dev 20261021 weak 34 A ['left']
+NATIVE dev 20261021 weak 34 B ['front']
+NATIVE dev 20261021 weak 34 N []
+NATIVE dev 20261021 weak 38 A ['left']
+NATIVE dev 20261021 weak 38 B ['right']
+NATIVE dev 20261021 weak 38 N ['front']
+NATIVE dev 20261021 full 22 N ['front']
+NATIVE dev 20261021 full 26 N ['front']
+NATIVE dev 20261021 full 30 N ['front']
+NATIVE dev 20261021 full 34 N []
+NATIVE dev 20261021 full 38 N ['front']
+NATIVE dev 20261021 replay_full 22 N ['front']
+NATIVE dev 20261021 replay_full 26 N ['front']
+NATIVE dev 20261021 replay_full 30 N []
+NATIVE dev 20261021 replay_full 34 N ['left']
+NATIVE dev 20261021 replay_full 38 N ['front']
+NATIVE dev 20261021 route 22 A ['left']
+NATIVE dev 20261021 route 22 B []
+NATIVE dev 20261021 route 22 N ['front']
+NATIVE dev 20261021 route 26 A ['left']
+NATIVE dev 20261021 route 26 B ['right']
+NATIVE dev 20261021 route 26 N ['front']
+NATIVE dev 20261021 route 30 A ['left']
+NATIVE dev 20261021 route 30 B ['right']
+NATIVE dev 20261021 route 30 N ['front']
+NATIVE dev 20261021 route 34 A ['left']
+NATIVE dev 20261021 route 34 B ['right']
+NATIVE dev 20261021 route 34 N []
+NATIVE dev 20261021 route 38 A ['left']
+NATIVE dev 20261021 route 38 B ['right']
+NATIVE dev 20261021 route 38 N ['front']

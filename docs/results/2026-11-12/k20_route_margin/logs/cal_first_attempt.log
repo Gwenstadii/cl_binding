@@ -1,0 +1,36 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Traceback (most recent call last):
+  File "/home/lzx/cl_binding/.server/k20_route_margin_20261112_01/calibrate.py", line 142, in <module>
+    gather(a.lane,a.lanes)
+  File "/home/lzx/cl_binding/.server/k20_route_margin_20261112_01/calibrate.py", line 29, in gather
+    origin=lab.rt.post["F"](probe)[0,0].float()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/processor/pipeline.py", line 319, in __call__
+    transformed_transition = self._forward(transition)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/processor/pipeline.py", line 336, in _forward
+    transition = processor_step(transition)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/processor/normalize_processor.py", line 552, in __call__
+    new_transition[TransitionKey.ACTION] = self._normalize_action(action, inverse=True)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/processor/normalize_processor.py", line 302, in _normalize_action
+    processed_action = self._apply_transform(action, ACTION, FeatureType.ACTION, inverse=inverse)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lzx/cl_binding/third_party/lerobot/src/lerobot/processor/normalize_processor.py", line 364, in _apply_transform
+    return tensor * std + mean
+           ~~~~~~~^~~~~
+RuntimeError: The size of tensor a (32) must match the size of tensor b (7) at non-singleton dimension 2

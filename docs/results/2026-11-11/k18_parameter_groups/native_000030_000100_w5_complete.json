@@ -1,0 +1,11 @@
+{
+  "conditions": [
+    "early",
+    "late",
+    "add:attention",
+    "undo:attention",
+    "random_add:attention",
+    "random_replace:attention"
+  ],
+  "lane": 5
+}

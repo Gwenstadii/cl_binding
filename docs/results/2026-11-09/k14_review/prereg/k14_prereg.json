@@ -1,0 +1,116 @@
+{
+ "experiment": "K14 batch 1: common Front-prefix snapshots; is the residual conditional difference too weak, or missing content? (R1-24000 left+right -> Front-12000)",
+ "source_plans": [
+  "2026-11-07_下一阶段机制实验与创新点计划.md §3-§4, §10",
+  "2026-11-07_μd替换有效性的深层机制与实现校正.md §6 (copy capture before patch comparisons)"
+ ],
+ "locked_at": "before snapshot screening and before any episode of this experiment",
+ "status": "development mechanism comparison (inits are development data); not a formal independent confirmation",
+ "models": {
+  "old R1": "r1_left_right_20261104_01/train_r1/checkpoints/024000 sha 225322ba...",
+  "adapted": "r1_then_front_v1/train/checkpoints/012000 sha 8ff1bf8f..."
+ },
+ "instructions": {
+  "A": "pick up the book and place it in the left compartment of the caddy",
+  "B": "... right compartment ...",
+  "N": "... front compartment ..."
+ },
+ "snapshot": {
+  "prefix": "adapted model executes N (Front, its learned new task) from reset; K1 scene2 noise stream (noise_seed('scene2', init), replan noise seed + 1000003*r)",
+  "pool": "inits 20-39 (main); if fewer than 20 qualify, supplement with inits 0-19 in ascending order until 20 qualify or exhausted; supplement inits are distinct physical states, no noise repeats",
+  "boundary_search": "planning boundaries b = 30,40,...,150; earliest b satisfying all criteria is the snapshot",
+  "criteria": {
+   "lifted": "book z - z0 > 3 cm on each of steps b-4..b",
+   "closed_cmd": "gripper command a[6] > 0 on steps b-4..b",
+   "near": "||book - eef|| < 0.15 m on steps b-4..b",
+   "both_contacts": "at step b both finger collision geoms (finger1/finger2 collision or pad) in MuJoCo contact with a book geom",
+   "stable_relpose": "book-to-eef relative position change over steps b-9..b < 0.5 cm and relative rotation change < 3 deg",
+   "pretarget": "no step 1..b has the lifted book inside any of the four compartment regions, and no native predicate true"
+  },
+  "criterion_calibration": "thresholds set on dev inits 0-9 (Front prefix only, no interventions): all 10 met all criteria at b=70-90 with ~0 relative drift, first region entry at steps 123-150",
+  "criterion_validation": "retention: lifted >3 cm and both contacts on every one of the 30 native-Front steps after b; criterion counts as validated if >=90% of qualified snapshots retain; otherwise reported as not validated (episodes still run, conclusions flagged)",
+  "integrity": "snapshot rebuilt 3x from reset by replaying executed controls; sim state, controller state and camera/proprio hashes and all prefix rows must match; raw sim state + images saved in snapshots/i<init>.npz",
+  "reporting": "all candidates, qualified count, failure reasons (never lifted / never both contacts / reached region before stable / unstable); no selection on parent or intervention success; F_old recoverability recorded, failures not removed"
+ },
+ "episode": {
+  "window": "60 control steps from b (6 replans x 10 Euler steps), then adapted model with the actual instruction until step 400",
+  "noise": "same replan noise per init across all groups",
+  "horizon": 400
+ },
+ "groups": {
+  "A_nat": "adapted native with actual instruction from b (no window) = mu_new +/- d_new",
+  "B_mean": "mu_old +/- d_new",
+  "C_amp": "mu_old +/- d_new * (a_old/a_new); a = L2 over 50 positions x 7 real dims; the full 32-dim vector is scaled (K1-06 convention, padding follows direction source); scale capped at 10, degenerate if a_new < 1e-4*||mu_old|| -> zero difference; cap hits and degeneracy recorded",
+  "D_hist": "mu_old +/- d_patch, CA-7 o_proj and MLP-9 outputs patched +/- (c_old - c_new) with c from the historical aliased capture (post in-place residual state); bitwise equal to K13 'joint' (gate)",
+  "D_pure": "same with copy capture (pure module outputs); bitwise equal to the 11-07 capture-fixed 'joint' (gate)",
+  "E_hist": "D_hist difference rescaled to a_old (same cap/degenerate rule)",
+  "E_pure": "D_pure difference rescaled to a_old",
+  "F_old": "mu_old +/- d_old = exact native R1 velocity (asserted every query)",
+  "G_rand": "mu_old +/- g; real 7 dims of g: per-channel random curve in the 5 lowest DCT bases over the 50 positions (d_old has median 97.9% energy there on dev probe), per-channel RMS matched to d_old, orthogonalised to d_old, rescaled to a_old; padding dims = d_old padding; seed = seed*10000 + r*100 + 2*iteration, identical for Left and Right (sign +/-)",
+  "R_full": "supplementary reference: native R1 from b until 400 with actual instruction (snapshot recoverability at full budget; equals batch-2 group L)",
+  "N_nat": "supplementary: adapted native Front from b (new-task competence on these snapshots)",
+  "count": "9 window/native groups x 2 prompts x 20 snapshots = 360, + R_full 40 + N_nat 20 = 420 episodes"
+ },
+ "padding_note": "dev probe: ||d_pad||/||d_real|| median 0.23 (old) and 0.43 (new); padding is fed back through the draft, so the rule above is fixed and pad ratio is logged per query",
+ "readouts": {
+  "dir": "paired first-arrival split per snapshot: Left first region = left AND Right first region = right (3 cm lift, 5 consecutive steps); /20",
+  "place": "old-task ever native success (requested goal predicate true at any step); /40 (Left+Right)",
+  "term": "old-task native success at step 400; /40",
+  "also": "Left/Right separately, first-to-front, failure types, window/overall clip rate, contacts at window end, per-query diagnostics (old-direction projection and cosine over 50x7 and 10x3, achieved norm ratio, cap hits, degeneracy, G cosine)"
+ },
+ "statistics": {
+  "unit": "physical snapshot (cluster); the two prompts of a snapshot are not independent",
+  "ci": "paired cluster bootstrap over snapshots, 10000 resamples, seed 20261108, 95% percentile",
+  "delta": 0.15,
+  "clearly_better": "X - Y >= 0.15 (point, as a fraction of the metric's denominator) AND bootstrap lower bound > 0",
+  "close": "|X - Y| <= 0.10 (point estimate only; not formal equivalence)"
+ },
+ "verdicts": {
+  "V1_amplitude_sufficient": "C close to F on place AND neither E_hist nor E_pure clearly better than C on place",
+  "V2_content_beyond_amplitude": "E_x clearly better than C on dir or place (reported separately for x = hist, pure)",
+  "V3_partial_content": "E_x close to F on dir AND F clearly better than E_x on place",
+  "V4_local_specificity_weak": "for each x: E_x is not clearly better than both B and G on any of dir/place",
+  "V5_snapshot_cannot_carry": "F place < 20/40: other groups' negatives are not interpreted as mechanism evidence; R_full is consulted",
+  "H_capture": "D_hist vs D_pure and E_hist vs E_pure compared with the same rules (historical 18/20 is not credited to the pure version)",
+  "G_check": "G must have |cos to d_old| < 1e-3 and norm ratio within 1e-3; else G is renamed and not used as an orthogonal control"
+ },
+ "next_entry": {
+  "batch2": "candidate = groups among {C, E_pure, E_hist, D_pure, D_hist} clearly better than both B and G on dir or place; pick highest place (ties: dir, then order C<E_pure<E_hist<D_pure<D_hist). Run batch 2 (H-L of the plan, old mean to step 400) only if a candidate exists AND F is clearly better than it on place",
+  "language_routing_s5": "only if C clearly better than B on dir or place",
+  "no_candidate": "stop and report; no extra searching for an expected result"
+ },
+ "gates": [
+  "3x snapshot rebuild",
+  "D_hist == K13 joint bitwise, D_pure == capture-fixed joint bitwise, B_mean == K13 mean bitwise on first window input of 3 snapshots (if not bitwise: max abs diff reported, < 1e-2 required)",
+  "F_old == native R1 bitwise",
+  "G orthogonality and norm",
+  "C norm ratio == 1 unless capped"
+ ],
+ "amendments": [
+  {
+   "id": 1,
+   "when": "2026-11-08, after batch-1 judgement and §5 results were seen; before any batch-2 episode",
+   "decision": "user approved opening batch 2 although the locked entry rule (F clearly better than candidate on place) was not met",
+   "reason": "F - C on place +0.05 (not clear) but on term +0.225 [0.125, 0.325] (clear); term is a pre-registered readout and is exactly the duration-vs-content question of plan §6",
+   "seen": "batch-1 full table and comparisons; §5 table",
+   "candidate": "C_amp (locked pick; unchanged)",
+   "groups": {
+    "H_new400": "mu_old +/- d_new to step 400",
+    "I_cand60": "mu_old to 400; C_amp difference for 60 steps then d_new",
+    "J_cand400": "mu_old +/- C_amp difference to 400",
+    "K_rand400": "mu_old +/- G_rand rule to 400",
+    "L": "batch-1 R_full (mu_old +/- d_old == native R1, asserted bitwise per query in batch 1)"
+   },
+   "count": "4 x 2 prompts x 20 snapshots = 160 episodes",
+   "primary_metric": "term (/40); place and dir reported",
+   "verdicts": {
+    "B2_duration": "J clearly better than I on term AND J clearly better than both H and K on term",
+    "B2_content_incomplete": "L clearly better than J on term",
+    "B2_nonspecific": "H or K close to J on term (|diff| <= 0.10)",
+    "B2_both_fail": "J term < 20/40 and L term < 20/40 -> recheck recoverability / budget",
+    "aux": "I vs batch-1 C (same 60-step window; after the window I keeps mu_old, C returns to the native adapted field) reported, not judged"
+   },
+   "statistics": "unchanged (cluster bootstrap over the 20 snapshots, delta 0.15, close 0.10)"
+  }
+ ]
+}

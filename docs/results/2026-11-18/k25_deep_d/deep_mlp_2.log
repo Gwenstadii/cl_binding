@@ -1,0 +1,63 @@
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+WARNING:robosuite_logs:No private macro file found!
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+WARNING:robosuite_logs:It is recommended to use a private macro file
+[robosuite WARNING] To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+WARNING:robosuite_logs:To setup, run: python /home/lzx/cl_binding_stage2a/.venv/lib/python3.12/site-packages/robosuite/scripts/setup_macros.py
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[info] using task orders [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+Local assets not found. Downloading from HuggingFace Hub...
+Assets already downloaded at /home/lzx/.cache/libero/assets
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+BASELINE_AND_PATCH_GATES 202 2
+deep_mlp rollback 202 A ['left']
+deep_mlp rollback 202 B ['front']
+deep_mlp rollback 205 A ['left']
+deep_mlp rollback 205 B ['front']
+deep_mlp rollback 208 A ['left']
+deep_mlp rollback 208 B ['front']
+deep_mlp rollback 211 A ['left']
+deep_mlp rollback 211 B ['front']
+deep_mlp rollback 214 A []
+deep_mlp rollback 214 B ['front']
+deep_mlp rollback 217 A ['left']
+deep_mlp rollback 217 B ['right']
+deep_mlp add_only 202 B ['right']
+deep_mlp add_only 205 B ['right']
+deep_mlp add_only 208 B ['right']
+deep_mlp add_only 211 B ['right']
+deep_mlp add_only 214 B []
+deep_mlp add_only 217 B ['right']
+deep_mlp repair_d 202 B ['front']
+deep_mlp repair_d 205 B ['front']
+deep_mlp repair_d 208 B ['front']
+deep_mlp repair_d 211 B ['front']
+deep_mlp repair_d 214 B ['front']
+deep_mlp repair_d 217 B ['right']
+deep_mlp reverse_d 202 B ['front']
+deep_mlp reverse_d 205 B ['front']
+deep_mlp reverse_d 208 B ['front']
+deep_mlp reverse_d 211 B ['front']
+deep_mlp reverse_d 214 B ['front']
+deep_mlp reverse_d 217 B ['right']
+deep_mlp repair_parallel 202 B ['front']
+deep_mlp repair_parallel 205 B ['front']
+deep_mlp repair_parallel 208 B ['front']
+deep_mlp repair_parallel 211 B ['front']
+deep_mlp repair_parallel 214 B ['front']
+deep_mlp repair_parallel 217 B ['right']
+deep_mlp reverse_parallel 202 B ['front']
+deep_mlp reverse_parallel 205 B ['front']
+deep_mlp reverse_parallel 208 B ['front']
+deep_mlp reverse_parallel 211 B ['front']
+deep_mlp reverse_parallel 214 B ['front']
+deep_mlp reverse_parallel 217 B ['right']
+deep_mlp repair_mu 202 B ['front']
+deep_mlp repair_mu 205 B ['front']
+deep_mlp repair_mu 208 B ['front']
+deep_mlp repair_mu 211 B ['front']
+deep_mlp repair_mu 214 B ['front']
+deep_mlp repair_mu 217 B ['right']

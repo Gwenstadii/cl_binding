@@ -1,0 +1,24 @@
+{
+  "experiment": "K13 R1(left+right)-24000 to Front-12000; K12 method transfer",
+  "frozen_before_rollouts": true,
+  "physical_scene": "scene2 same reset states 20..39 as K12",
+  "instructions": {"A": "left", "B": "right", "N": "front"},
+  "role_names": {"R": "R1-24000", "F": "R1->Front-12000"},
+  "conditions": {
+    "ft4": "native adapted from reset; ft4 is a legacy code identifier only",
+    "mean": "old R1 mean + native adapted difference",
+    "sites": "adapted mean + difference from correct CA-7/MLP-9 activation patches",
+    "joint": "old R1 mean + difference from correct CA-7/MLP-9 patches",
+    "anti": "old R1 mean + difference from sign-reversed patches",
+    "random": "old R1 mean + difference from per-site norm-matched random patches",
+    "r1": "native R1 from reset; supplementary base competence control"
+  },
+  "zero_based_sites": ["expert layer 7 self_attn.o_proj output", "expert layer 9 mlp output"],
+  "sites_selection": "transferred from R0->FT4 K10 unchanged; not reselected on R1",
+  "timing": "same as K12: onset60, init22 onset50, duration60 control steps, horizon400",
+  "prefix": "adapted model executes actual requested prompt from reset in every intervention; replayed exactly within same init/prompt",
+  "noise": "K1 scene2 init seed, same replan draft seed across conditions",
+  "replicates": "20 initial states x 6 conditions x 2 old prompts + 20 new prompt natives + 40 R1 natives = 300",
+  "readouts": ["first region with 3cm lift and 5 consecutive steps", "native terminal predicates", "paired old-prompt correctness", "fixed-input mean and difference diagnostics", "prefix and hash audit"],
+  "interpretation": "Test transfer, do not assume outcome. Shared mean algebra depends on left/right pair. Failure to reach a compartment is separate from substitution to front. First-region correctness is separate from terminal task success."
+}

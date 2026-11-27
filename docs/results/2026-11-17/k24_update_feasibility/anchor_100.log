@@ -1,0 +1,10 @@
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory
+K24 100 0 protected 224 dual [0.0, 0.0, 0.0, 0.0223564263433218]
+K24 100 13 protected 227 dual [0.0, 0.0, 0.0, 0.041656747460365295]
+K24 100 41 protected 230 dual [0.0, 0.0, 0.0, 0.04089777171611786]
+K24 100 79 protected 221 dual [0.0, 0.0, 0.0, 0.0010311471996828914]
+K24 100 127 protected 224 dual [0.0, 0.0, 0.010562323965132236, 0.0]
+K24 100 193 protected 227 dual [0.0, 0.0, 0.0, 0.029192304238677025]
+K24 100 271 protected 230 dual [0.0, 0.0, 0.0, 0.03961861878633499]
+K24 100 389 protected 221 dual [0.0, 0.0, 0.0, 0.05420932173728943]

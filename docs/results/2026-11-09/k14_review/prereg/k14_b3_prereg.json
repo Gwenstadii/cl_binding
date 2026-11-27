@@ -1,0 +1,27 @@
+{
+ "experiment": "K14 batch 3 (plan §7): which action channels of the old conditional difference carry the remaining placement/holding content?",
+ "trigger": "plan §7 entry: batch 2 showed the full old difference still clearly better (L - J term +0.225, CI [0.125, 0.325]) while extending the candidate (J vs I) did not help",
+ "locked_at": "after batch-2 judgement; before selecting batch-3 states and before any batch-3 episode",
+ "source_states": "batch-2 J_cand400 trajectories (fixed candidate policy: mu_old +/- d_new*a_old/a_new from the common snapshot to step 400), replayed exactly from the common snapshot by the recorded executed-action chunks (row-by-row equality asserted)",
+ "selection": "t_a = first step of the first 5-step lifted (>3 cm) run with the book horizontally inside the REQUESTED compartment; b3 = first planning boundary >= t_a + 4 (no lookahead); eligible iff at step b3 the book is lifted inside the requested region with both finger contacts and the requested native predicate was never true at steps <= b3. Exclusions reported by reason (never_arrived / already_placed / not_held_over_target / too_late). Selection uses only J trajectories up to b3, never batch-3 outcomes. Conclusions limited to 'over the target, not yet placed' states.",
+ "branch": "from b3 to step 400, every query recomputed from the current input (no trajectory playback); common trend mu_old throughout; same replan noise as J; requested instruction only",
+ "groups": {
+  "T0_cand": "candidate difference (= J continued; expected to reproduce J, checked not asserted)",
+  "T1_z": "candidate with channel 2 (vertical translation) replaced by d_old",
+  "T2_rotgrip": "candidate with channels 3-6 (rotation x/y/z, gripper) replaced by d_old",
+  "T3_nonhoriz": "candidate with channels 2-6 replaced by d_old (x, y from candidate)",
+  "T4_xy": "candidate with channels 0-1 replaced by d_old (complement of T3)",
+  "T5_full": "d_old (= native R1, asserted bitwise)",
+  "T1r_z / T2r_rotgrip / T3r_nonhoriz": "matched controls: same channels receive candidate + random low-frequency curves (5 lowest DCT bases) whose per-channel RMS equals that of the true correction delta = d_old - candidate on those channels; padding dims follow the candidate in all T0-T4 and controls, d_old in T5"
+ },
+ "readouts": {"primary": "requested native success at step 400 (term)", "secondary": "requested native success at any step after b3 (ever_after)", "also": "min book height after b3, contacts at end, clip rate, per-query diagnostics"},
+ "statistics": "unit = eligible state (init x side); comparisons within the same states; cluster bootstrap over inits (both sides of an init resampled together), 10000 resamples, seed 20261108; delta 0.15 (fraction of eligible states), clearly better = point >= 0.15 and lower bound > 0; close = |point| <= 0.10; reported pooled and per side (per-side descriptive only if n < 10)",
+ "verdicts": {
+  "channel_S_carries_content": "for S in {z, rotgrip, nonhoriz}: T_S clearly better than T0 AND clearly better than its matched control T_Sr (pooled, on term or ever_after)",
+  "xy_carries_content": "T4_xy clearly better than T0 (no matched control; interpreted with T3 as complement)",
+  "not_channel_separable": "T5 clearly better than T3_nonhoriz AND clearly better than T4_xy on term -> missing content is coupled across channels",
+  "single_channel_negative_caveat": "a negative single-channel result does not exclude joint function (plan §7)",
+  "next": "if some S restores requested success (T_S close to T5 or clearly better than T0 and T_Sr), the reverse test (insert the candidate's channel S into the old response) is the next batch; tracing to expert modules only after that"
+ },
+ "amendments": []
+}
